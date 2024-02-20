@@ -9,75 +9,75 @@
 9        android:targetSdkVersion="34" />
 10    <!-- Step Counter Permissions -->
 11    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-11-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:5:5-79
-11-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:5:22-76
+11-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:5:5-79
+11-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:5:22-76
 12    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-12-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:6:5-81
-12-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:6:22-78
+12-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:6:5-81
+12-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:6:22-78
 13    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-13-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:7:5-77
-13-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:7:22-74
+13-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:7:5-77
+13-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:7:22-74
 14    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_HEALTH" />
-14-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:8:5-84
-14-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:8:22-81
+14-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:8:5-84
+14-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:8:22-81
 15    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
-15-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:9:5-95
-15-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:9:22-92
+15-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:9:5-95
+15-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:9:22-92
 16    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
-16-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:10:5-79
-16-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:10:22-76
+16-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:10:5-79
+16-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:10:22-76
 17    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-17-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:11:5-77
-17-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:11:22-74
+17-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:11:5-77
+17-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:11:22-74
 18    <uses-permission android:name="android.permission.VIBRATE" />
-18-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:12:5-66
-18-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:12:22-63
+18-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:12:5-66
+18-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:12:22-63
 19    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
-19-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:13:5-81
-19-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:13:22-78
+19-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:13:5-81
+19-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:13:22-78
 20    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-20-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:14:5-81
-20-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:14:22-78
+20-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:14:5-81
+20-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:14:22-78
 21    <uses-permission android:name="android.permission.CAMERA" />
-21-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:15:5-65
-21-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:15:22-62
+21-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:15:5-65
+21-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:15:22-62
 22    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
-22-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:16:5-76
-22-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:16:22-73
+22-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:16:5-76
+22-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:16:22-73
 23    <uses-permission android:name="android.permission.HIGH_SAMPLING_RATE_SENSORS" />
-23-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:17:5-85
-23-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:17:22-82
+23-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:17:5-85
+23-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:17:22-82
 24    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
-24-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:18:5-78
-24-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:18:22-75
+24-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:18:5-78
+24-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:18:22-75
 25    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
-25-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:19:5-79
-25-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:19:22-76
+25-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:19:5-79
+25-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:19:22-76
 26    <uses-permission android:name="android.permission.USE_EXACT_ALARM" /> <!-- Show Alarm Screen -->
-26-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:20:5-74
-26-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:20:22-71
+26-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:20:5-74
+26-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:20:22-71
 27    <uses-permission android:name="android.permission.LOCK_DEVICE" />
-27-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:21:5-70
-27-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:21:22-67
+27-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:21:5-70
+27-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:21:22-67
 28    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
-28-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:22:5-75
-28-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:22:22-72
+28-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:22:5-75
+28-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:22:22-72
 29    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-29-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:23:5-78
-29-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:23:22-75
+29-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:23:5-78
+29-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:23:22-75
 30
 31    <uses-feature
-31-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:26:5-28:36
+31-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:26:5-28:36
 32        android:name="android.hardware.sensor.accelerometer"
-32-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:27:9-61
+32-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:27:9-61
 33        android:required="false" />
-33-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:28:9-33
+33-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:28:9-33
 34    <uses-feature
-34-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:29:5-31:36
+34-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:29:5-31:36
 35        android:name="android.hardware.sensor.stepcounter"
-35-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:30:9-59
+35-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:30:9-59
 36        android:required="false" />
-36-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:31:9-33
+36-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:31:9-33
 37
 38    <!-- Include required permissions for Google Mobile Ads to run -->
 39    <uses-permission android:name="android.permission.INTERNET" />
@@ -158,80 +158,80 @@
 75-->[androidx.core:core:1.12.0] C:\Users\Technest - Accounts\.gradle\caches\transforms-3\21095e89c7b218f5be30bc5922666689\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
 76
 77    <application
-77-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:33:5-215:19
+77-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:33:5-215:19
 78        android:name="com.fitzay.workouttracker.strengthtraining.core.AppController"
-78-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:34:9-43
+78-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:34:9-43
 79        android:allowBackup="true"
-79-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:35:9-35
+79-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:35:9-35
 80        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 80-->[androidx.core:core:1.12.0] C:\Users\Technest - Accounts\.gradle\caches\transforms-3\21095e89c7b218f5be30bc5922666689\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
 81        android:dataExtractionRules="@xml/data_extraction_rules"
-81-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:36:9-65
+81-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:36:9-65
 82        android:debuggable="true"
 83        android:extractNativeLibs="false"
 84        android:fullBackupContent="@xml/backup_rules"
-84-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:37:9-54
+84-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:37:9-54
 85        android:icon="@mipmap/ic_launcher"
-85-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:38:9-43
+85-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:38:9-43
 86        android:label="@string/app_name"
-86-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:39:9-41
+86-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:39:9-41
 87        android:supportsRtl="true"
-87-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:40:9-35
+87-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:40:9-35
 88        android:testOnly="true"
 89        android:theme="@style/Theme.FitnessApplication" >
-89-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:41:9-56
+89-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:41:9-56
 90        <activity
-90-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:44:9-48:51
+90-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:44:9-48:51
 91            android:name="com.fitzay.workouttracker.strengthtraining.ui.activities.ExitScreenActivity"
-91-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:45:13-61
+91-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:45:13-61
 92            android:exported="false"
-92-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:46:13-37
+92-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:46:13-37
 93            android:launchMode="singleTop"
-93-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:47:13-43
+93-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:47:13-43
 94            android:screenOrientation="portrait" />
-94-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:48:13-49
+94-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:48:13-49
 95        <activity
-95-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:49:9-52:51
+95-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:49:9-52:51
 96            android:name="com.fitzay.workouttracker.strengthtraining.ui.activities.PremiumActivity"
-96-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:50:13-58
+96-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:50:13-58
 97            android:exported="false"
-97-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:51:13-37
+97-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:51:13-37
 98            android:screenOrientation="portrait" />
-98-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:52:13-49
+98-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:52:13-49
 99        <activity
-99-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:54:9-56:40
+99-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:54:9-56:40
 100            android:name="com.fitzay.workouttracker.strengthtraining.ui.sleeptacker.SleepSummaryActivity"
-100-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:55:13-64
+100-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:55:13-64
 101            android:exported="false" />
-101-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:56:13-37
+101-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:56:13-37
 102        <activity
-102-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:57:9-59:40
+102-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:57:9-59:40
 103            android:name="com.fitzay.workouttracker.strengthtraining.ui.sleeptacker.SleepTrackerHomeScreen"
-103-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:58:13-66
+103-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:58:13-66
 104            android:exported="false" />
-104-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:59:13-37
+104-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:59:13-37
 105        <activity
-105-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:60:9-62:39
+105-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:60:9-62:39
 106            android:name="com.fitzay.workouttracker.strengthtraining.ui.sleeptacker.PlayAlarmActivity"
-106-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:61:13-61
+106-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:61:13-61
 107            android:exported="true" />
-107-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:62:13-36
+107-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:62:13-36
 108        <activity
-108-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:63:9-66:52
+108-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:63:9-66:52
 109            android:name="com.fitzay.workouttracker.strengthtraining.ui.activities.SingleExerciseActivity"
-109-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:64:13-65
+109-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:64:13-65
 110            android:exported="false"
-110-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:65:13-37
+110-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:65:13-37
 111            android:screenOrientation="portrait" />
-111-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:66:13-49
+111-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:66:13-49
 112        <activity
-112-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:67:9-76:20
+112-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:67:9-76:20
 113            android:name="com.fitzay.workouttracker.strengthtraining.ui.activities.LoadingActivity"
-113-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:68:13-58
+113-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:68:13-58
 114            android:exported="true"
-114-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:69:13-36
+114-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:69:13-36
 115            android:screenOrientation="portrait" >
-115-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:70:13-49
+115-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:70:13-49
 116
 117            <!-- <intent-filter> -->
 118            <!-- <action android:name="android.intent.action.MAIN" /> -->
@@ -239,13 +239,13 @@
 120            <!-- </intent-filter> -->
 121        </activity>
 122        <activity
-122-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:77:9-88:20
+122-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:77:9-88:20
 123            android:name="com.fitzay.workouttracker.strengthtraining.ui.sleeptacker.SleepTrackerActivity"
-123-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:78:13-64
+123-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:78:13-64
 124            android:exported="false"
-124-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:79:13-37
+124-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:79:13-37
 125            android:screenOrientation="portrait" >
-125-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:80:13-49
+125-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:80:13-49
 126
 127            <!-- <intent-filter> -->
 128            <!-- <action android:name="android.intent.action.MAIN" /> -->
@@ -255,85 +255,85 @@
 132            <!-- </intent-filter> -->
 133        </activity>
 134        <activity
-134-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:89:9-92:52
+134-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:89:9-92:52
 135            android:name="com.fitzay.workouttracker.strengthtraining.ui.quotes.DisplayQuoteActivity"
-135-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:90:13-59
+135-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:90:13-59
 136            android:exported="false"
-136-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:91:13-37
+136-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:91:13-37
 137            android:screenOrientation="portrait" />
-137-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:92:13-49
+137-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:92:13-49
 138        <activity
-138-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:93:9-96:52
+138-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:93:9-96:52
 139            android:name="com.fitzay.workouttracker.strengthtraining.ui.quotes.QuotesCategoryActivity"
-139-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:94:13-61
+139-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:94:13-61
 140            android:exported="false"
-140-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:95:13-37
+140-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:95:13-37
 141            android:screenOrientation="portrait" />
-141-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:96:13-49
+141-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:96:13-49
 142        <activity
-142-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:97:9-100:52
+142-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:97:9-100:52
 143            android:name="com.fitzay.workouttracker.strengthtraining.ui.waterintake.CupCapacityActivity"
-143-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:98:13-63
+143-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:98:13-63
 144            android:exported="false"
-144-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:99:13-37
+144-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:99:13-37
 145            android:screenOrientation="portrait" />
-145-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:100:13-49
+145-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:100:13-49
 146        <activity
-146-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:101:9-104:52
+146-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:101:9-104:52
 147            android:name="com.fitzay.workouttracker.strengthtraining.ui.waterintake.WaterIntakeActivity"
-147-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:102:13-63
+147-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:102:13-63
 148            android:exported="false"
-148-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:103:13-37
+148-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:103:13-37
 149            android:screenOrientation="portrait" />
-149-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:104:13-49
+149-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:104:13-49
 150        <activity
-150-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:105:9-108:52
+150-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:105:9-108:52
 151            android:name="com.fitzay.workouttracker.strengthtraining.ui.stepcounter.StepSummeryActivity"
-151-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:106:13-63
+151-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:106:13-63
 152            android:exported="false"
-152-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:107:13-37
+152-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:107:13-37
 153            android:screenOrientation="portrait" />
-153-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:108:13-49
+153-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:108:13-49
 154        <activity
-154-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:109:9-112:52
+154-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:109:9-112:52
 155            android:name="com.fitzay.workouttracker.strengthtraining.ui.stepcounter.StepCounterActivity"
-155-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:110:13-63
+155-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:110:13-63
 156            android:exported="false"
-156-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:111:13-37
+156-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:111:13-37
 157            android:screenOrientation="portrait" />
-157-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:112:13-49
+157-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:112:13-49
 158        <activity
-158-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:113:9-116:52
+158-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:113:9-116:52
 159            android:name="com.fitzay.workouttracker.strengthtraining.ui.activities.ExerciseActivity"
-159-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:114:13-59
+159-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:114:13-59
 160            android:exported="false"
-160-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:115:13-37
+160-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:115:13-37
 161            android:screenOrientation="portrait" />
-161-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:116:13-49
+161-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:116:13-49
 162        <activity
-162-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:117:9-120:52
+162-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:117:9-120:52
 163            android:name="com.fitzay.workouttracker.strengthtraining.ui.activities.DisplayWorkoutsActivity"
-163-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:118:13-66
+163-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:118:13-66
 164            android:exported="false"
-164-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:119:13-37
+164-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:119:13-37
 165            android:screenOrientation="portrait" />
-165-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:120:13-49
+165-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:120:13-49
 166        <activity
-166-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:121:9-124:52
+166-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:121:9-124:52
 167            android:name="com.fitzay.workouttracker.strengthtraining.ui.questions.start.TargetWeightActivity"
-167-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:122:13-68
+167-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:122:13-68
 168            android:exported="false"
-168-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:123:13-37
+168-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:123:13-37
 169            android:screenOrientation="portrait" />
-169-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:124:13-49
+169-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:124:13-49
 170        <activity
-170-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:125:9-136:20
+170-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:125:9-136:20
 171            android:name="com.fitzay.workouttracker.strengthtraining.ui.questions.start.GenderActivity"
-171-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:126:13-62
+171-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:126:13-62
 172            android:exported="true"
-172-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:127:13-36
+172-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:127:13-36
 173            android:screenOrientation="portrait" >
-173-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:128:13-49
+173-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:128:13-49
 174
 175            <!-- <intent-filter> -->
 176            <!-- <action android:name="android.intent.action.MAIN" /> -->
@@ -343,31 +343,31 @@
 180            <!-- </intent-filter> -->
 181        </activity>
 182        <activity
-182-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:137:9-140:52
+182-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:137:9-140:52
 183            android:name="com.fitzay.workouttracker.strengthtraining.ui.questions.start.AskingWeightActivity"
-183-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:138:13-68
+183-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:138:13-68
 184            android:exported="false"
-184-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:139:13-37
+184-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:139:13-37
 185            android:screenOrientation="portrait" />
-185-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:140:13-49
+185-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:140:13-49
 186        <activity
-186-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:141:9-144:52
+186-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:141:9-144:52
 187            android:name="com.fitzay.workouttracker.strengthtraining.ui.questions.start.AskingAgeActivity"
-187-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:142:13-65
+187-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:142:13-65
 188            android:exported="true"
-188-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:143:13-36
+188-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:143:13-36
 189            android:screenOrientation="portrait" />
-189-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:144:13-49
+189-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:144:13-49
 190        <activity
-190-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:145:9-156:20
+190-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:145:9-156:20
 191            android:name="com.fitzay.workouttracker.strengthtraining.ui.questions.start.FirstNameActivity"
-191-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:146:13-65
+191-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:146:13-65
 192            android:exported="false"
-192-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:147:13-37
+192-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:147:13-37
 193            android:screenOrientation="portrait"
-193-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:148:13-49
+193-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:148:13-49
 194            android:windowSoftInputMode="adjustPan" >
-194-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:149:13-52
+194-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:149:13-52
 195
 196            <!-- <intent-filter> -->
 197            <!-- <action android:name="android.intent.action.MAIN" /> -->
@@ -377,13 +377,13 @@
 201            <!-- </intent-filter> -->
 202        </activity>
 203        <activity
-203-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:157:9-168:20
+203-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:157:9-168:20
 204            android:name="com.fitzay.workouttracker.strengthtraining.ui.questions.start.AskingHeightActivity"
-204-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:158:13-68
+204-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:158:13-68
 205            android:exported="false"
-205-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:159:13-37
+205-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:159:13-37
 206            android:screenOrientation="portrait" >
-206-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:160:13-49
+206-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:160:13-49
 207
 208            <!-- <intent-filter> -->
 209            <!-- <action android:name="android.intent.action.MAIN" /> -->
@@ -393,86 +393,86 @@
 213            <!-- </intent-filter> -->
 214        </activity>
 215        <activity
-215-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:169:9-181:20
+215-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:169:9-181:20
 216            android:name="com.fitzay.workouttracker.strengthtraining.ui.MainActivity"
-216-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:170:13-44
+216-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:170:13-44
 217            android:exported="true"
-217-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:171:13-36
+217-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:171:13-36
 218            android:screenOrientation="portrait" >
-218-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:172:13-49
+218-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:172:13-49
 219            <intent-filter>
-219-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:174:25-179:54
+219-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:174:25-179:54
 220                <action android:name="android.intent.action.MAIN" />
-220-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:175:38-90
-220-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:175:46-87
+220-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:175:38-90
+220-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:175:46-87
 221
 222                <category android:name="android.intent.category.LAUNCHER" />
-222-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:178:38-98
-222-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:178:48-95
+222-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:178:38-98
+222-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:178:48-95
 223            </intent-filter>
 224        </activity>
 225
 226        <meta-data
-226-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:183:9-185:57
+226-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:183:9-185:57
 227            android:name="preloaded_fonts"
-227-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:184:13-43
+227-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:184:13-43
 228            android:resource="@array/preloaded_fonts" />
-228-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:185:13-54
+228-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:185:13-54
 229
 230        <service
-230-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:187:9-191:54
+230-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:187:9-191:54
 231            android:name="com.fitzay.workouttracker.strengthtraining.ui.stepcounter.StepCounterSensor"
-231-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:188:13-61
+231-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:188:13-61
 232            android:enabled="true"
-232-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:189:13-35
+232-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:189:13-35
 233            android:exported="false"
-233-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:190:13-37
+233-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:190:13-37
 234            android:foregroundServiceType="health" />
-234-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:191:13-51
+234-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:191:13-51
 235
 236        <receiver
-236-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:193:9-199:20
+236-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:193:9-199:20
 237            android:name="com.fitzay.workouttracker.strengthtraining.core.utils.AlarmReceiver"
-237-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:194:13-53
+237-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:194:13-53
 238            android:exported="true" >
-238-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:195:13-36
+238-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:195:13-36
 239            <intent-filter>
-239-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:196:13-198:29
+239-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:196:13-198:29
 240                <action android:name="com.fitzay.workouttracker.strengthtraining.CUSTOM_INTENT" />
-240-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:197:17-99
-240-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:197:25-96
+240-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:197:17-99
+240-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:197:25-96
 241            </intent-filter>
 242        </receiver>
 243
 244        <meta-data
-244-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:201:9-203:53
+244-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:201:9-203:53
 245            android:name="com.google.android.gms.ads.APPLICATION_ID"
-245-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:202:13-69
+245-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:202:13-69
 246            android:value="@string/fitzay_app_id" />
-246-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:203:13-50
+246-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:203:13-50
 247        <meta-data
-247-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:204:9-206:36
+247-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:204:9-206:36
 248            android:name="firebase_messaging_auto_init_enabled"
-248-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:205:13-64
+248-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:205:13-64
 249            android:value="true" />
-249-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:206:13-33
+249-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:206:13-33
 250        <meta-data
-250-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:207:9-209:36
+250-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:207:9-209:36
 251            android:name="firebase_analytics_collection_enabled"
-251-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:208:13-65
+251-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:208:13-65
 252            android:value="true" />
-252-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:209:13-33
+252-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:209:13-33
 253
 254        <activity
-254-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:211:9-214:45
+254-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:211:9-214:45
 255            android:name="com.google.android.gms.ads.AdActivity"
-255-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:212:13-65
+255-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:212:13-65
 256            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
 256-->[com.google.android.gms:play-services-ads-lite:22.5.0] C:\Users\Technest - Accounts\.gradle\caches\transforms-3\e2d4d3c3093e2fd43ae9a352414a6dd1\transformed\jetified-play-services-ads-lite-22.5.0\AndroidManifest.xml:58:13-122
 257            android:exported="false"
 257-->[com.google.android.gms:play-services-ads-lite:22.5.0] C:\Users\Technest - Accounts\.gradle\caches\transforms-3\e2d4d3c3093e2fd43ae9a352414a6dd1\transformed\jetified-play-services-ads-lite-22.5.0\AndroidManifest.xml:59:13-37
 258            android:theme="@style/AdTheme" />
-258-->C:\Users\Technest - Accounts\Desktop\Fitzay\app\src\main\AndroidManifest.xml:213:13-43
+258-->E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:213:13-43
 259
 260        <service
 260-->[com.google.firebase:firebase-messaging-ktx:23.3.1] C:\Users\Technest - Accounts\.gradle\caches\transforms-3\3636dac5300a9a5216bd7289ddc61df2\transformed\jetified-firebase-messaging-ktx-23.3.1\AndroidManifest.xml:23:9-29:19

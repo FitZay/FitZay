@@ -311,7 +311,7 @@ class WeeklyFragment : Fragment(), OnChartValueSelectedListener {
                         barData.setBarWidth(0.2f); // Adjust the width as needed
                         xAxis.setDrawGridLines(false);
                         dataSet.setDrawValues(false)
-
+                        sleepChartWeekly.axisLeft.axisMinimum = 0f
                         sleepChartWeekly.axisLeft.isEnabled = true
                         sleepChartWeekly.axisRight.isEnabled = false
                         sleepChartWeekly.setScaleEnabled(false)

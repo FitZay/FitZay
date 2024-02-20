@@ -77,7 +77,6 @@ class MainActivity : AppCompatActivity() {
         FitnessInterstitialAd.getInstance(this)!!.loadAdMobInterAd()
         navClicks()
 
-        //............
         binding.apply {
             appBarHome.icMenu.setOnClickListener {
                 drawerOpen = if (!drawerOpen) {
