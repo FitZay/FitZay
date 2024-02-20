@@ -61,11 +61,11 @@ class UnlockPremiumBottomFragment : BottomSheetDialogFragment() {
 
     }
 
-//    override fun onDismiss(dialog: DialogInterface) {
-//        super.onDismiss(dialog)
-//        if (closeactivity)
-////            requireActivity().finish()
-//    }
+    override fun onDismiss(dialog: DialogInterface) {
+        super.onDismiss(dialog)
+        if (closeactivity)
+            requireActivity().finish()
+    }
 
     companion object {
 
@@ -114,6 +114,7 @@ class UnlockPremiumBottomFragment : BottomSheetDialogFragment() {
                     override fun onAdLoaded(ad: RewardedAd) {
                         Log.d(TAG, "Ad was loaded.")
                         rewardedAd = ad
+                        closeactivity = false
                         waiting_dialog?.dismiss()
                         showRewardedAd()
                     }
@@ -126,7 +127,6 @@ class UnlockPremiumBottomFragment : BottomSheetDialogFragment() {
         rewardedAd?.let { ad ->
             ad.show(requireActivity()) { rewardItem ->
                 Log.d(TAG, "User earned the reward.")
-                closeactivity = false
                 dismiss()
             }
         } ?: run {

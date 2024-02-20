@@ -91,8 +91,9 @@ com.fitzay.workouttracker.strengthtraining.app-pngs-89 D:\Izhar\Final Release Fi
 com.fitzay.workouttracker.strengthtraining.app-resValues-90 D:\Izhar\Final Release FitnessApplication\app\build\generated\res\resValues\debug
 com.fitzay.workouttracker.strengthtraining.app-packageDebugResources-91 D:\Izhar\Final Release FitnessApplication\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
 com.fitzay.workouttracker.strengthtraining.app-packageDebugResources-92 D:\Izhar\Final Release FitnessApplication\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.fitzay.workouttracker.strengthtraining.app-merged_res-93 D:\Izhar\Final Release FitnessApplication\app\build\intermediates\merged_res\debug
-com.fitzay.workouttracker.strengthtraining.app-debug-94 D:\Izhar\Final Release FitnessApplication\app\src\debug\res
-com.fitzay.workouttracker.strengthtraining.app-main-95 D:\Izhar\Final Release FitnessApplication\app\src\main\res
-com.fitzay.workouttracker.strengthtraining.app-packaged_res-96 D:\Izhar\Final Release FitnessApplication\nativetemplates\build\intermediates\packaged_res\debug
-com.fitzay.workouttracker.strengthtraining.app-packaged_res-97 D:\Izhar\Final Release FitnessApplication\wheelpicker\build\intermediates\packaged_res\debug
+com.fitzay.workouttracker.strengthtraining.app-merged-not-compiled-resources-93 D:\Izhar\Final Release FitnessApplication\app\build\intermediates\merged-not-compiled-resources\debug
+com.fitzay.workouttracker.strengthtraining.app-merged_res-94 D:\Izhar\Final Release FitnessApplication\app\build\intermediates\merged_res\debug
+com.fitzay.workouttracker.strengthtraining.app-debug-95 D:\Izhar\Final Release FitnessApplication\app\src\debug\res
+com.fitzay.workouttracker.strengthtraining.app-main-96 D:\Izhar\Final Release FitnessApplication\app\src\main\res
+com.fitzay.workouttracker.strengthtraining.app-packaged_res-97 D:\Izhar\Final Release FitnessApplication\nativetemplates\build\intermediates\packaged_res\debug
+com.fitzay.workouttracker.strengthtraining.app-packaged_res-98 D:\Izhar\Final Release FitnessApplication\wheelpicker\build\intermediates\packaged_res\debug

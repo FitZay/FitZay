@@ -454,6 +454,16 @@ ADDED from D:\Izhar\Final Release FitnessApplication\app\src\main\AndroidManifes
 		ADDED from D:\Izhar\Final Release FitnessApplication\app\src\main\AndroidManifest.xml:69:13-36
 	android:name
 		ADDED from D:\Izhar\Final Release FitnessApplication\app\src\main\AndroidManifest.xml:68:13-58
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\Izhar\Final Release FitnessApplication\app\src\main\AndroidManifest.xml:72:14-75:30
+action#android.intent.action.MAIN
+ADDED from D:\Izhar\Final Release FitnessApplication\app\src\main\AndroidManifest.xml:73:14-66
+	android:name
+		ADDED from D:\Izhar\Final Release FitnessApplication\app\src\main\AndroidManifest.xml:73:22-63
+category#android.intent.category.LAUNCHER
+ADDED from D:\Izhar\Final Release FitnessApplication\app\src\main\AndroidManifest.xml:74:14-74
+	android:name
+		ADDED from D:\Izhar\Final Release FitnessApplication\app\src\main\AndroidManifest.xml:74:24-71
 activity#com.fitzay.workouttracker.strengthtraining.ui.sleeptacker.SleepTrackerActivity
 ADDED from D:\Izhar\Final Release FitnessApplication\app\src\main\AndroidManifest.xml:77:9-88:20
 	android:screenOrientation
@@ -584,16 +594,6 @@ ADDED from D:\Izhar\Final Release FitnessApplication\app\src\main\AndroidManifes
 		ADDED from D:\Izhar\Final Release FitnessApplication\app\src\main\AndroidManifest.xml:172:13-36
 	android:name
 		ADDED from D:\Izhar\Final Release FitnessApplication\app\src\main\AndroidManifest.xml:171:13-44
-intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\Izhar\Final Release FitnessApplication\app\src\main\AndroidManifest.xml:174:13-178:29
-action#android.intent.action.MAIN
-ADDED from D:\Izhar\Final Release FitnessApplication\app\src\main\AndroidManifest.xml:175:17-69
-	android:name
-		ADDED from D:\Izhar\Final Release FitnessApplication\app\src\main\AndroidManifest.xml:175:25-66
-category#android.intent.category.LAUNCHER
-ADDED from D:\Izhar\Final Release FitnessApplication\app\src\main\AndroidManifest.xml:177:17-77
-	android:name
-		ADDED from D:\Izhar\Final Release FitnessApplication\app\src\main\AndroidManifest.xml:177:27-74
 meta-data#preloaded_fonts
 ADDED from D:\Izhar\Final Release FitnessApplication\app\src\main\AndroidManifest.xml:181:9-183:57
 	android:resource
