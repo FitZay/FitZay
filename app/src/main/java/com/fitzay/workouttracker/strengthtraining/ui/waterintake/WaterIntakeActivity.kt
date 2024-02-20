@@ -4,6 +4,7 @@ import android.app.Dialog
 import android.content.Intent
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
+import android.util.Log
 import android.view.Window
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -15,6 +16,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.ComposeView
+import androidx.datastore.preferences.protobuf.StringValue
 import androidx.lifecycle.ViewModelProvider
 import com.fitzay.workouttracker.strengthtraining.R
 import com.fitzay.workouttracker.strengthtraining.core.utils.WavesLoadingIndicator
@@ -96,10 +98,8 @@ class WaterIntakeActivity : AppCompatActivity() {
 
         binding.layoutAdd.setOnClickListener {
 
-            Component.preference.totalDrink =
-                Component.preference.totalDrink + Component.preference.cupCapacity
-            val pro: Float =
-                ((Component.preference.totalDrink).toFloat() / Component.preference.waterGoal.toFloat()) / 10
+            Component.preference.totalDrink = Component.preference.totalDrink + Component.preference.cupCapacity
+            val pro: Float = ((Component.preference.totalDrink).toFloat() / Component.preference.waterGoal.toFloat()) / 5
             counter += pro
             binding.txtDrink.text = Component.preference.totalDrink.toString()
             Component.preference.currentProgress = counter
@@ -113,24 +113,53 @@ class WaterIntakeActivity : AppCompatActivity() {
                 ).show()
             }
 
+            Log.i("TAG", "Greeting: "+Component.preference.totalDrink+"-"+Component.preference.cupCapacity+"--"+Component.preference.totalDrink)
+
         }
 
         binding.changeGoal.setOnClickListener {
             addWater()
         }
 
-        binding.layoutSub.setOnClickListener {
+//        binding.layoutSub.setOnClickListener {
+//
+//            Component.preference.totalDrink = Component.preference.totalDrink - Component.preference.cupCapacity
+//            val pro: Float = ((Component.preference.totalDrink).toFloat() / Component.preference.waterGoal.toFloat()) / 10
+//            counter -= pro
+//            binding.txtDrink.text = Component.preference.totalDrink.toString()
+//            counter -= 0.02f
+//            Component.preference.saveWater = counter
+//
+//        }
 
-            Component.preference.totalDrink =
-                Component.preference.totalDrink - Component.preference.cupCapacity
-            val pro: Float =
-                ((Component.preference.totalDrink).toFloat() / Component.preference.waterGoal.toFloat()) / 10
-            counter -= pro
-            binding.txtDrink.text = Component.preference.totalDrink.toString()
-            counter -= 0.02f
-            Component.preference.saveWater = counter
+        binding.layoutSub.setOnClickListener {
+            val cupCapacity = Component.preference.cupCapacity
+            val waterGoal = Component.preference.waterGoal
+            var i=0
+
+            if (Component.preference.totalDrink >= cupCapacity) {
+                Component.preference.totalDrink -= cupCapacity
+                val pro: Float = (Component.preference.totalDrink.toFloat() / waterGoal.toFloat()) / 5
+                counter = (counter - pro).coerceAtLeast(0f) // Ensure counter doesn't go below 0
+                binding.txtDrink.text = Component.preference.totalDrink.toString()
+                Component.preference.currentProgress = counter
+                Component.preference.saveWater = counter
+
+                Log.i("TAG", "out: " + Component.preference.saveWater.toString() + "-" + counter)
+
+                 i=binding.txtDrink.text.toString().toInt()
+                if (i==0) {
+                    counter=0f
+                    Component.preference.currentProgress = counter
+                    Component.preference.saveWater=counter
+                    Log.i("TAG", "if: " + Component.preference.saveWater.toString() + "-" + counter)
+                }
+            }
+
 
         }
+
+
     }
 
     val lightThemeColors = lightColors(
