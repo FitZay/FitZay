@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+           
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_main"
+        android:id="@+id/root"
+        tools:context=".ui.sleeptacker.SleepSummaryActivity" android:tag="layout/activity_sleep_summary_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/materialToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                android:id="@+id/txtToolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Summary"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+        </com.google.android.material.appbar.MaterialToolbar>
+
+        <LinearLayout
+            android:id="@+id/layoutChoice"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/materialToolbar"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/selected_bg"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtDaily"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/bg_selected"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text="Daily"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/txtWeekly"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text="Weekly"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/txtMonthly"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:text="Monthly"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp" />
+
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:id="@+id/dailyContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            app:layout_constraintTop_toBottomOf="@id/layoutChoice"
+            app:layout_constraintBottom_toTopOf="@id/alarmRv">
+
+        </FrameLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/alarmRv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:layout_constraintBottom_toTopOf="@+id/clAds"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dailyContainer"
+            app:layout_constraintVertical_bias="0.0"
+            tools:itemCount="3"
+            tools:listitem="@layout/schedule_alarm_show_item_list" />
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clAds"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_6sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/bg_selected_options"
+            android:visibility="gone">
+
+            <aglibs.loading.skeleton.layout.SkeletonRelativeLayout
+                android:id="@+id/skeletonLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_2sdp"
+                app:clipToText="false"
+                app:customDuration="1000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shimmerBlurWidth="20dp"
+                app:shimmerStrokeWidth="100dp"
+                app:skeletonColor="#5A5A5A">
+
+                <ImageView
+                    android:id="@+id/img001"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="0dp" />
+
+                <TextView
+                    android:id="@+id/text001"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:lines="1"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_toEndOf="@+id/img001" />
+
+                <TextView
+                    android:id="@+id/textlay"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:lines="1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toEndOf="@+id/img001" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/cta"
+                    android:layout_width="@dimen/_65sdp"
+                    android:layout_height="@dimen/_28sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:background="@drawable/gnt_rounded_corners_shape"
+                    android:lines="1"
+                    android:backgroundTint="@color/transparent"
+                    android:textColor="@color/gnt_white"
+                    android:textSize="@dimen/_10sdp"
+                    android:textStyle="normal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </aglibs.loading.skeleton.layout.SkeletonRelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutAd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.ads.nativetemplates.TemplateView
+                    android:id="@+id/plannerTemplateUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    app:gnt_template_type="@layout/gnt_small_banner_template" />
+
+
+                <com.google.android.ads.nativetemplates.TemplateView
+                    android:id="@+id/plannerTemplateDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="visible"
+                    app:gnt_template_type="@layout/gnt_small_banner_template" />
+
+            </RelativeLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+         
