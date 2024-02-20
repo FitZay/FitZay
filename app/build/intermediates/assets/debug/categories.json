@@ -1,0 +1,77 @@
+[
+  {
+    "cat_id": "1",
+    "cat_name": "ABS",
+    "cat_type": "BEGINNER"
+  },
+  {
+    "cat_id": "2",
+    "cat_name": "ABS",
+    "cat_type": "INTERMEDIATE"
+  },
+  {
+    "cat_id": "3",
+    "cat_name": "ABS",
+    "cat_type": "ADVANCE"
+  },
+  {
+    "cat_id": "4",
+    "cat_name": "CHEST",
+    "cat_type": "BEGINNER"
+  },
+  {
+    "cat_id": "5",
+    "cat_name": "CHEST",
+    "cat_type": "INTERMEDIATE"
+  },
+  {
+    "cat_id": "6",
+    "cat_name": "CHEST",
+    "cat_type": "ADVANCE"
+  },
+  {
+    "cat_id": "7",
+    "cat_name": "ARM",
+    "cat_type": "BEGINNER"
+  },
+  {
+    "cat_id": "8",
+    "cat_name": "ARM",
+    "cat_type": "INTERMEDIATE"
+  },
+  {
+    "cat_id": "9",
+    "cat_name": "ARM",
+    "cat_type": "ADVANCE"
+  },
+  {
+    "cat_id": "10",
+    "cat_name": "LEG",
+    "cat_type": "BEGINNER"
+  },
+  {
+    "cat_id": "11",
+    "cat_name": "LEG",
+    "cat_type": "INTERMEDIATE"
+  },
+  {
+    "cat_id": "12",
+    "cat_name": "LEG",
+    "cat_type": "ADVANCE"
+  },
+  {
+    "cat_id": "13",
+    "cat_name": "SHOULDER & BACK",
+    "cat_type": "BEGINNER"
+  },
+  {
+    "cat_id": "14",
+    "cat_name": "SHOULDER & BACK",
+    "cat_type": "INTERMEDIATE"
+  },
+  {
+    "cat_id": "15",
+    "cat_name": "SHOULDER & BACK",
+    "cat_type": "ADVANCE"
+  }
+]

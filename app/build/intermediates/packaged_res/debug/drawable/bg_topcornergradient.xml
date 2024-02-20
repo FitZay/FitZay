@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Set the angle attribute to a valid value (e.g., 0, 45, 90, etc.) -->
+    <gradient
+        android:startColor="#2B2935"
+        android:endColor="#080612"
+        android:angle="270" /> <!-- Example: Set the angle to 45 degrees -->
+
+    <corners
+        android:topLeftRadius="@dimen/_25sdp"
+        android:topRightRadius="@dimen/_25sdp" />
+
+</shape>
