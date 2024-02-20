@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="gnt_white">#FFFFFF</color>
+    <color name="gnt_red">#FF0000</color>
+    <color name="gnt_blue">#9CB135</color>
+    <color name="gnt_black">#000</color>
+    <color name="gnt_gray">#353535</color>
+
+</resources>

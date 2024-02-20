@@ -1,0 +1,66 @@
+{
+  "FitzayInterstitialSplash": {
+    "fizayid": "ca-app-pub-1286371018386376/2328746529",
+    "fitzayshow": true
+  },
+  "FitzayInterstitialMain": {
+    "fizayid": "ca-app-pub-1286371018386376/6631239024",
+    "fitzayshow": true
+  },
+  "FitzayNativeSplash": {
+    "fizayid": "ca-app-pub-1286371018386376/5660491024",
+    "fitzayshow": true
+  },
+  "FitzayNativeGender": {
+    "fizayid": "ca-app-pub-1286371018386376/9736917500",
+    "fitzayshow": true
+  },
+  "FitzayNativeName": {
+    "fizayid": "ca-app-pub-1286371018386376/9736917500",
+    "fitzayshow": true
+  },
+  "FitzayNativeAge": {
+    "fizayid": "ca-app-pub-1286371018386376/4293019138",
+    "fitzayshow": true
+  },
+  "FitzayNativeHeight": {
+    "fizayid": "ca-app-pub-1286371018386376/4293019138",
+    "fitzayshow": true
+  },
+  "FitzayNativeWeight": {
+    "fizayid": "ca-app-pub-1286371018386376/3686926194",
+    "fitzayshow": true
+  },
+  "FitzayNativeTargetWeight": {
+    "fizayid": "ca-app-pub-1286371018386376/3686926194",
+    "fitzayshow": true
+  },
+  "FitzayNativeSleepTracker": {
+    "fizayid": "ca-app-pub-1286371018386376/8519166611",
+    "fitzayshow": true
+  },
+  "FitzayNativeStepCounter": {
+    "fizayid": "ca-app-pub-1286371018386376/4676162514",
+    "fitzayshow": true
+  },
+  "FitzayNativeDailyMotivation": {
+    "fizayid": "ca-app-pub-1286371018386376/2846423134",
+    "fitzayshow": true
+  },
+  "FitzayNativeExercise": {
+    "fizayid": "ca-app-pub-1286371018386376/9437534606",
+    "fitzayshow": true
+  },
+  "FitzayNativeStats": {
+    "fizayid": "ca-app-pub-1286371018386376/6180815874",
+    "fitzayshow": true
+  },
+  "FitzayNativeStartExercise": {
+    "fizayid": "ca-app-pub-1286371018386376/1942187967",
+    "fitzayshow": true
+  },
+  "FitzayAppOpen": {
+    "fizayid": "ca-app-pub-1286371018386376/6782001000",
+    "fitzayshow": true
+  }
+}

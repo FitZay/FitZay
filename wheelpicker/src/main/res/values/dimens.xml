@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="wp_min_height">300dp</dimen>
+    <dimen name="wp_divider_height">1dp</dimen>
+    <dimen name="wp_item_margin">@dimen/_8sdp</dimen>
+    <dimen name="wp_item_height">@dimen/_30sdp</dimen>
+    <dimen name="wp_v_padding">@dimen/_5sdp</dimen>
+    <dimen name="wp_h_padding">@dimen/_12sdp</dimen>
+    <dimen name="wp_txt_size">@dimen/_12sdp</dimen>
+</resources>

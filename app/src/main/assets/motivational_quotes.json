@@ -1,0 +1,502 @@
+[
+  {
+    "type": "Motivation",
+    "text": "If you want something you’ve never had, you must be willing to do something you’ve never done.",
+    "author": "Thomas Jefferson"
+  },
+  {
+    "type": "Motivation",
+    "text": "The body achieves what the mind believes.",
+    "author": "Erin Gray"
+  },
+  {
+    "type": "Motivation",
+    "text": "Once you are exercising regularly, the hardest thing is to stop it.",
+    "author": "Erin Gray"
+  },
+  {
+    "type": "Health",
+    "text": "If you don’t make time for exercise, you’ll probably have to make time for illness.",
+    "author": "Robin Sharma"
+  },
+  {
+    "type": "Motivation",
+    "text": "Rome wasn’t built in a day, but they worked on it every single day.",
+    "author": "Michael John Bobak"
+  },
+  {
+    "type": "Motivation",
+    "text": "All progress takes place outside the comfort zone.",
+    "author": "Michael John Bobak"
+  },
+  {
+    "type": "Motivation",
+    "text": "Never give up on a dream just because of the time it will take to accomplish it. The time will pass anyway.",
+    "author": "Earl Nightingale"
+  },
+  {
+    "type": "Fitness",
+    "text": "I don’t count my sit-ups. I only start counting when it starts hurting because they’re the only ones that count.",
+    "author": "Muhammad Ali"
+  },
+  {
+    "type": "Motivation",
+    "text": "Go the extra mile. It’s never crowded.",
+    "author": "Wayne Dyer"
+  },
+  {
+    "type": "Health",
+    "text": "Take care of your body. It’s the only place you have to live.",
+    "author": "Jim Rohn"
+  },
+  {
+    "type": "Motivation",
+    "text": "Do something today that your future self will thank you for.",
+    "author": "Sean Patrick Flanery"
+  },
+  {
+    "type": "Health",
+    "text": "Your health account, your bank account, they’re the same thing. The more you put in, the more you can take out.",
+    "author": "Jack LaLanne"
+  },
+  {
+    "type": "Motivation",
+    "text": "Don’t say ‘I can’t.’ Say, ‘I presently struggle with’.",
+    "author": "Tony Horton"
+  },
+  {
+    "type": "Motivation",
+    "text": "Motivation is what gets you started. Habit is what keeps you going.",
+    "author": "Jim Ryun"
+  },
+  {
+    "type": "Fitness",
+    "text": "Your body can stand almost anything. It's your mind that you have to convince.",
+    "author": "Andrew Murphy"
+  },
+  {
+    "type": "Motivation",
+    "text": "Nobody who ever gave his best regretted it.",
+    "author": "George Halas"
+  },
+  {
+    "type": "Success",
+    "text": "Ability is what you’re capable of doing. Motivation determines what you do. Attitude determines how well you do it.",
+    "author": "Lou Holtz"
+  },
+  {
+    "type": "Motivation",
+    "text": "I hated every minute of training, but I said, 'Don't quit. Suffer now and live the rest of your life as a champion.'",
+    "author": "Muhammad Ali"
+  },
+  {
+    "type": "Health",
+    "text": "To keep the body in good health is a duty… otherwise we shall not be able to keep our mind strong and clear.",
+    "author": "Buddha"
+  },
+  {
+    "type": "Fitness",
+    "text": "When it comes to eating right and exercising, there is no ‘I’ll start tomorrow’.",
+    "author": "VL Allineare"
+  },
+  {
+    "type": "Fitness",
+    "text": "We do not stop exercising because we grow old- we grow old because we stop exercising.",
+    "author": "Dr. Kenneth Cooper"
+  },
+  {
+    "type": "Fitness",
+    "text": "The mind is the most important part of achieving any fitness goal. Mental change always comes before physical change.",
+    "author": "Matt McGorry"
+  },
+  {
+    "type": "Success",
+    "text": "It always seems impossible until it is done.",
+    "author": "Nelson Mandela"
+  },
+  {
+    "type": "Fitness",
+    "text": "You don’t have to be good at it, you just have to do it.",
+    "author": "Karine Candice Kong"
+  },
+  {
+    "type": "Fitness",
+    "text": "In training, you listen to your body. In competition, you tell your body to shut up.",
+    "author": "Rich Froning Jr."
+  },
+  {
+    "type": "Fitness",
+    "text": "You’re going to have to let it hurt. Let it suck. The harder you work, the better you will look. Your appearance isn’t parallel to how heavy you lift, it’s parallel to how hard you work.",
+    "author": "Joe Mangianello"
+  },
+  {
+    "type": "Motivation",
+    "text": "Don’t limit your challenges. Challenge your limits.",
+    "author": "Jerry Dunn"
+  },
+  {
+    "type": "Motivation",
+    "text": "Believe in yourself and all that you are. Know that there is something inside of you that is greater than any obstacle.",
+    "author": "Christian D. Larson"
+  },
+  {
+    "type": "Motivation",
+    "text": "Once you learn to quit, it becomes a habit.",
+    "author": "Vince Lombardi Jr"
+  },
+  {
+    "type": "Motivation",
+    "text": "A year from now you may wish you had started today.",
+    "author": "Karen Lamb"
+  },
+  {
+    "type": "Motivation",
+    "text": "Don’t give up on your dreams, or your dreams will give up on you.",
+    "author": "John Wooden"
+  },
+  {
+    "type": "Success",
+    "text": "Most people fail, not because of lack of desire, but, because of lack of commitment.",
+    "author": "Vince Lombardi"
+  },
+  {
+    "type": "Fitness",
+    "text": "Exercise is labor without weariness.",
+    "author": "Samuel Johnson"
+  },
+  {
+    "type": "Humor",
+    "text": "The first time I see a jogger smiling, I'll consider it.",
+    "author": "Joan Rivers"
+  },
+  {
+    "type": "Motivation",
+    "text": "All progress takes place outside the comfort zone.",
+    "author": "Michal Joan Bobak"
+  },
+  {
+    "type": "Motivation",
+    "text": "Look in the mirror. That’s your competition.",
+    "author": "John Assaraf"
+  },
+  {
+    "type": "Motivation",
+    "text": "Put all excuses aside and remember this: You are capable.",
+    "author": "Zig Ziglar"
+  },
+  {
+    "type": "Health",
+    "text": "If we could give every individual the right amount of nourishment and exercise, not too little and not too much, we would have found the safest way to health.",
+    "author": "Hippocrates"
+  },
+  {
+    "type": "Fitness",
+    "text": "If you think lifting is dangerous, try being weak. Being weak is dangerous.",
+    "author": "Bret Contreras"
+  },
+  {
+    "type": "Health",
+    "text": "There is a moment when you get older when your metabolism slows down and you don't feel like working out anymore, so you don't want to keep yourself fit anymore, but that's your decision. Why should you be judged for it?",
+    "author": "Janet Jackson"
+  },
+  {
+    "type": "Fitness",
+    "text": "The human body is the best picture of the human soul.",
+    "author": "Ludwig Wittgenstein"
+  },
+  {
+    "type": "Health",
+    "text": "Our bodies are our gardens – our wills are our gardeners.",
+    "author": "William Shakespeare"
+  },
+  {
+    "type": "Motivation",
+    "text": "The clock is ticking. Are you becoming the person you want to be?",
+    "author": "Greg Plitt"
+  },
+  {
+    "type": "Fitness",
+    "text": "Exercise is king. Nutrition is queen. Put them together and you’ve got a kingdom.",
+    "author": "Jack LaLanne"
+  },
+  {
+    "type": "Success",
+    "text": "Success is what comes after your stop making excuses.",
+    "author": "Luis Galarza"
+  },
+  {
+    "type": "Health",
+    "text": "Here's what I tell anybody and this is what I believe. The greatest gift we have is the gift of life. We understand that. That comes from our Creator. We're given a body. Now you may not like it, but you can maximize that body the best it can be maximized.",
+    "author": "Mike Ditka"
+  },
+  {
+    "type": "Fitness",
+    "text": "The pain you feel today will be the strength you feel tomorrow.",
+    "author": "Arnold Schwarzenegger"
+  },
+  {
+    "type": "Fitness",
+    "text": "I'm not a waif-y girl and never will be. I think it's healthy when fitness experts encourage fitness rather than getting a certain body shape.",
+    "author": "Sophia Bush"
+  },
+  {
+    "type": "Health",
+    "text": "Your body is the church where Nature asks to be reverenced.",
+    "author": "Marquis de Sade"
+  },
+  {
+    "type": "Health",
+    "text": "The only way for a rich man to be healthy is by exercise and abstinence, to live as if he were poor.",
+    "author": "William Temple"
+  },
+  {
+    "type": "Success",
+    "text": "All our dreams can come true if we have the courage to pursue them.",
+    "author": "Walt Disney"
+  },
+  {
+    "type": "Motivation",
+    "text": "A champion is someone who gets up when they can’t.",
+    "author": "Jack Dempsey"
+  },
+  {
+    "type": "Health",
+    "text": "Number one, like yourself. Number two, you have to eat healthy. And number three, you've got to squeeze your buns. That's my formula.",
+    "author": "Richard Simmons"
+  },
+  {
+    "type": "Motivation",
+    "text": "Today I will do what others won’t, so tomorrow I can accomplish what others can’t.",
+    "author": "Jerry Rice"
+  },
+  {
+    "type": "Motivation",
+    "text": "Nothing will work unless you do.",
+    "author": "Maya Angelou"
+  },
+  {
+    "type": "Fitness",
+    "text": "The muscle and the mind must become one. One without the other is zero.",
+    "author": "Lee Haney"
+  },
+  {
+    "type": "Health",
+    "text": "Living a healthy lifestyle will only deprive you of poor health, lethargy, and fat.",
+    "author": "Jill Johnson"
+  },
+  {
+    "type": "Fitness",
+    "text": "If you don’t find the time, if you don’t do the work, you don’t get the results.",
+    "author": "Arnold Schwarzenegger"
+  },
+  {
+    "type": "Fitness",
+    "text": "Exercise should be regarded as tribute to the heart.",
+    "author": "Gene Tunney"
+  },
+  {
+    "type": "Motivation",
+    "text": "Just believe in yourself. Even if you don’t, just pretend that you do and at some point, you will.",
+    "author": "Venus Williams"
+  },
+  {
+    "type": "Motivation",
+    "text": "A house divided against itself cannot stand.",
+    "author": "Abraham Lincoln"
+  },
+  {
+    "type": "Success",
+    "text": "Ideas are the beginning points of all fortunes.",
+    "author": "Napoleon Hill"
+  },
+  {
+    "type": "Motivation",
+    "text": "Trust yourself. You know more than you think you do.",
+    "author": "Benjamin Spock"
+  },
+  {
+    "type": "Motivation",
+    "text": "Once you choose hope, anything's possible.",
+    "author": "Christopher Reeve"
+  },
+  {
+    "type": "Motivation",
+    "text": "Be as you wish to seem.",
+    "author": "Socrates"
+  },
+  {
+    "type": "Motivation",
+    "text": "Talk doesn't cook rice.",
+    "author": "Chinese proverb"
+  },
+  {
+    "type": "Success",
+    "text": "A goal without a plan is just a wish.",
+    "author": "Larry Elder"
+  },
+  {
+    "type": "Success",
+    "text": "Don't wait. The time will never be just right.",
+    "author": "Napoleon Hill"
+  },
+  {
+    "type": "Motivation",
+    "text": "The undertaking of a new action brings new strength.",
+    "author": "Richard Evans"
+  },
+  {
+    "type": "Motivation",
+    "text": "All know the way; few actually walk it.",
+    "author": "Bodhidharma"
+  },
+  {
+    "type": "Fitness",
+    "text": "Life is movement-we breathe, we eat, we walk, we move!",
+    "author": "John Pierrakos"
+  },
+  {
+    "type": "Motivation",
+    "text": "Do something wonderful, people may imitate it.",
+    "author": "Albert Schweitzer"
+  },
+  {
+    "type": "Motivation",
+    "text": "Yesterday I dared to struggle. Today I dare to win.",
+    "author": "Bernadette Devlin"
+  },
+  {
+    "type": "Motivation",
+    "text": "You have to believe in yourself.",
+    "author": "Sun Tzu"
+  },
+  {
+    "type": "Success",
+    "text": "Life isn't about finding yourself. Life is about creating yourself.",
+    "author": "Bernard Shaw"
+  },
+  {
+    "type": "Motivation",
+    "text": "So long as a person is capable of self-renewal they are a living being.",
+    "author": "Henri-Frederic Amiel"
+  },
+  {
+    "type": "Motivation",
+    "text": "How we spend our days is, of course, how we spend our lives.",
+    "author": "Annie Dillard"
+  },
+  {
+    "type": "Success",
+    "text": "If you think you can, you can. And if you think you can't, you're right.",
+    "author": "Henry Ford"
+  },
+  {
+    "type": "Motivation",
+    "text": "If you spend too much time thinking about a thing, you'll never get it done.",
+    "author": "Bruce Lee"
+  },
+  {
+    "type": "Motivation",
+    "text": "If you change the way you look at things, the things you look at change.",
+    "author": "Wayne Dyer"
+  },
+  {
+    "type": "Success",
+    "text": "If you cannot do great things, do small things in a great way.",
+    "author": "Napoleon Hill"
+  },
+  {
+    "type": "Success",
+    "text": "Make the best use of what is in your power, and take the rest as it happens.",
+    "author": "Epictetus"
+  },
+  {
+    "type": "Health",
+    "text": "There is only one corner of the universe you can be certain of improving, and that's your own self.",
+    "author": "Aldous Huxley"
+  },
+  {
+    "type": "Success",
+    "text": "Those who try to do something and fail are infinitely better than those who try nothing and succeed.",
+    "author": "Lloyd Jones"
+  },
+  {
+    "type": "Success",
+    "text": "Self-trust is the first secret of success.",
+    "author": "Ralph Emerson"
+  },
+  {
+    "type": "Motivation",
+    "text": "Life's challenges are not supposed to paralyze you, they're supposed to help you discover who you are.",
+    "author": "Bernice Reagon"
+  },
+  {
+    "type": "Success",
+    "text": "Success is getting what you want. Happiness is wanting what you get.",
+    "author": "Dale Carnegie"
+  },
+  {
+    "type": "Success",
+    "text": "Most powerful is he who has himself in his own power.",
+    "author": "Seneca"
+  },
+  {
+    "type": "Success",
+    "text": "You always succeed in producing a result.",
+    "author": "Tony Robbins"
+  },
+  {
+    "type": "Motivation",
+    "text": "Who we are never changes. Who we think we are does.",
+    "author": "Mary Almanac"
+  },
+  {
+    "type": "Health",
+    "text": "Your body is precious. It is our vehicle for awakening. Treat it with care.",
+    "author": "Buddha"
+  },
+  {
+    "type": "Success",
+    "text": "What separates the winners from the losers is how a person reacts to each new twist of fate.",
+    "author": "Donald Trump"
+  },
+  {
+    "type": "Success",
+    "text": "Action is the foundational key to all success.",
+    "author": "Pablo Picasso"
+  },
+  {
+    "type": "Motivation",
+    "text": "A champion is someone who gets up when they can’t.",
+    "author": "Jack Dempsey"
+  },
+  {
+    "type": "Health",
+    "text": "Early to bed and early to rise makes a man healthy, wealthy and wise.",
+    "author": "Benjamin Franklin"
+  },
+  {
+    "type": "Health",
+    "text": "Sleep is that golden chain that ties health and our bodies together.",
+    "author": "Thomas Dekker"
+  },
+  {
+    "type": "Health",
+    "text": "An early-morning walk is a blessing for the whole day.",
+    "author": "Henry David Thoreau"
+  },
+  {
+    "type": "Fitness",
+    "text": "You would be surprised what two hours of daily exercise and five hundred stomach crunches can do for you.",
+    "author": "Justina Chen Headley"
+  },
+  {
+    "type": "Motivation",
+    "text": "I don’t stop when I’m tired. I only stop when I’m done.",
+    "author": "Marshawn Lynch"
+  },
+  {
+    "type": "Motivation",
+    "text": "I’m not telling you it’s going to be easy, I’m telling you it’s going to be worth it.",
+    "author": "Art Williams"
+  }
+]
