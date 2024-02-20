@@ -8,10 +8,12 @@ import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.media.MediaPlayer
 import android.net.Uri
+import android.os.Build
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.provider.Settings
+import android.provider.Settings.ACTION_REQUEST_SCHEDULE_EXACT_ALARM
 import android.text.InputType
 import android.util.Log
 import android.view.View
@@ -70,7 +72,6 @@ class SleepTrackerActivity : AppCompatActivity(), ShowRingToneItemClick {
 
     private var lastSelectedItemPosition = RecyclerView.NO_POSITION
     var pos = 0
-//    var clickswitch = false
 
 
     var ringToneList = ArrayList<RingTone>()
@@ -92,6 +93,7 @@ class SleepTrackerActivity : AppCompatActivity(), ShowRingToneItemClick {
     var list = ArrayList<Int>()
 
     var default = false
+    var alreadySet = false
 
     var onBack=""
 
@@ -167,7 +169,12 @@ class SleepTrackerActivity : AppCompatActivity(), ShowRingToneItemClick {
                 alarmOnOffSwitch.setOnCheckedChangeListener { buttonView, isChecked ->
                     if (isChecked) {
 
-                        if (!Settings.canDrawOverlays(this@SleepTrackerActivity)) {
+                        if (Settings.canDrawOverlays(this@SleepTrackerActivity))
+                        {
+                            layoutVisible()
+                        }
+                        else
+                        {
                             AlertDialog.Builder(this@SleepTrackerActivity)
                                 .setTitle("Permission Required")
                                 .setMessage("Draw Over Other apps permission is required to show alarm")
@@ -181,9 +188,9 @@ class SleepTrackerActivity : AppCompatActivity(), ShowRingToneItemClick {
                                     )
                                     startActivityForResult(intent,987)
                                 }.show()
-
                         }
-                        layoutVisible()
+
+
 
                     } else {
                         layoutInvisible()
@@ -587,13 +594,17 @@ class SleepTrackerActivity : AppCompatActivity(), ShowRingToneItemClick {
                                                 }, 1200)
 
                                             } else {
-                                                withContext(Dispatchers.Main) {
-                                                    Toast.makeText(
-                                                        this@SleepTrackerActivity,
-                                                        "Already Set this Day",
-                                                        Toast.LENGTH_SHORT
-                                                    ).show()
+                                                if (!alreadySet) {
+                                                    alreadySet = true
+                                                    withContext(Dispatchers.Main) {
+                                                        Toast.makeText(
+                                                            this@SleepTrackerActivity,
+                                                            "Already Set this Day",
+                                                            Toast.LENGTH_SHORT
+                                                        ).show()
+                                                    }
                                                 }
+
 
 
                                             }
@@ -630,12 +641,15 @@ class SleepTrackerActivity : AppCompatActivity(), ShowRingToneItemClick {
 
 
                                             } else {
-                                                withContext(Dispatchers.Main) {
-                                                    Toast.makeText(
-                                                        this@SleepTrackerActivity,
-                                                        "Already Set this Day",
-                                                        Toast.LENGTH_SHORT
-                                                    ).show()
+                                                if (!alreadySet) {
+                                                    alreadySet = true
+                                                    withContext(Dispatchers.Main) {
+                                                        Toast.makeText(
+                                                            this@SleepTrackerActivity,
+                                                            "Already Set this Day",
+                                                            Toast.LENGTH_SHORT
+                                                        ).show()
+                                                    }
                                                 }
 
 
@@ -700,16 +714,18 @@ class SleepTrackerActivity : AppCompatActivity(), ShowRingToneItemClick {
                     for (model in result) {
                         if (model.isEnabled)
                         {
-                            alarmOnOffSwitch.isChecked = true
+
                             withContext(Dispatchers.Main) {
                                 layoutVisible()
+                                alarmOnOffSwitch.isChecked = true
                             }
                         }
                         else
                         {
-                            alarmOnOffSwitch.isChecked = false
+
                             withContext(Dispatchers.Main) {
                                 layoutInvisible()
+                                alarmOnOffSwitch.isChecked = false
                             }
                         }
                     }
@@ -2038,14 +2054,15 @@ class SleepTrackerActivity : AppCompatActivity(), ShowRingToneItemClick {
             if (Settings.canDrawOverlays(this@SleepTrackerActivity))
             {
                 Log.i("TAG", "else if  OK: ")
-                permissionSave=true
+                binding.alarmOnOffSwitch.isChecked=true
+                layoutVisible()
             }
 
             else
             {
                 Log.i("TAG", "else else: ")
-                permissionSave=false
                 binding.alarmOnOffSwitch.isChecked=false
+                layoutInvisible()
             }
         }
 
@@ -2059,16 +2076,32 @@ class SleepTrackerActivity : AppCompatActivity(), ShowRingToneItemClick {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults)
 
         if (requestCode == 987) {
-            if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                Log.i("TAG", "Granted: ")
-                permissionSave=true
-            } else {
+//            if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+//                Log.i("TAG", "Granted: ")
+//                permissionSave=true
+//            } else {
+//
+//                Log.i("TAG", "not-Granted: ")
+//                permissionSave=false
+//
+//            }
 
-                Log.i("TAG", "not-Granted: ")
-                permissionSave=false
-
+        }
+        else
+        {
+            if (Settings.canDrawOverlays(this@SleepTrackerActivity))
+            {
+                Log.i("TAG", "Below Andorid 10 if  OK: ")
+                binding.alarmOnOffSwitch.isChecked=true
+                layoutVisible()
             }
 
+            else
+            {
+                Log.i("TAG", "Below Andorid 10 else else: ")
+                binding.alarmOnOffSwitch.isChecked=false
+                layoutInvisible()
+            }
         }
 
     }

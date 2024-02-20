@@ -272,7 +272,6 @@
                     android:paddingTop="@dimen/_6sdp"
                     android:paddingBottom="@dimen/_6sdp"
                     android:text="@string/ft"
-
                     android:textColor="@color/white"
                     android:textSize="@dimen/_12sdp" />
 
@@ -291,8 +290,6 @@
                     android:fontFamily="@font/poppins_medium"
                     android:gravity="center"
                     android:hint="0"
-                    android:focusable="true"
-                    android:focusableInTouchMode="true"
                     android:inputType="number"
                     android:maxLength="2"
                     android:padding="@dimen/_6sdp"
@@ -320,7 +317,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:visibility="visible"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

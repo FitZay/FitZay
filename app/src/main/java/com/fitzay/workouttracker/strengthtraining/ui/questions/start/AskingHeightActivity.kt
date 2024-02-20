@@ -83,9 +83,9 @@ class AskingHeightActivity : AppCompatActivity() {
 
                 }
                 etInputFeet.requestFocus();
-                etInputInch.requestFocus();
+//                etInputInch.requestFocus();
                 etInputFeet.setSelection(etInputFeet.length())
-                etInputInch.setSelection(etInputInch.length())
+//                etInputInch.setSelection(etInputInch.length())
 
             }
             rbCm.setOnClickListener {
@@ -107,8 +107,8 @@ class AskingHeightActivity : AppCompatActivity() {
                         Log.i("TAG", "888888888: ")
 
                     }
-                    etInputCm.requestFocus();
-                    etInputCm.setSelection(etInputCm.length())
+//                    etInputCm.requestFocus();
+//                    etInputCm.setSelection(etInputCm.length())
                 } catch (e:Exception)
                 {
                     Log.i("TAG", "onCreate: "+e.message)
