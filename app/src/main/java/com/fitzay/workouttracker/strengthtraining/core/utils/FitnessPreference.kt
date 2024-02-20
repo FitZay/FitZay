@@ -168,7 +168,7 @@ class FitnessPreference {
         }
 
     var currentProgress: Float
-        get() = prefernece.getFloat(CURRENT_PROGRESS, 1f)
+        get() = prefernece.getFloat(CURRENT_PROGRESS, 0.1f)
         set(currentProgress) {
             editor.putFloat(CURRENT_PROGRESS, currentProgress)
             editor.apply()
