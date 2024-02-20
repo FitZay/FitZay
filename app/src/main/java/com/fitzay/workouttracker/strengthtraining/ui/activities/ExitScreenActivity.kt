@@ -46,6 +46,10 @@ class ExitScreenActivity : AppCompatActivity() {
             }
         }
 
+        binding?.backpressBtn?.setOnClickListener {
+            finish()
+        }
+
         binding?.toohardBtn?.setOnClickListener {
             resetimages()
             binding?.toohardimg?.setImageDrawable(ContextCompat.getDrawable(this , R.drawable.too_hard))

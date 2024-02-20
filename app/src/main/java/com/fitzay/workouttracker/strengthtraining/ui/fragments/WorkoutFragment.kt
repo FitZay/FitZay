@@ -1,5 +1,6 @@
 package com.fitzay.workouttracker.strengthtraining.ui.fragments
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -17,6 +18,7 @@ import com.fitzay.workouttracker.strengthtraining.core.utils.getFitzayRemoteStri
 import com.fitzay.workouttracker.strengthtraining.databinding.FragmentWorkoutBinding
 import com.fitzay.workouttracker.strengthtraining.di.Component
 import com.fitzay.workouttracker.strengthtraining.domain.models.CategoriesModel
+import com.fitzay.workouttracker.strengthtraining.ui.activities.FullbodyWorkoutActivity
 import com.fitzay.workouttracker.strengthtraining.ui.activities.LoadingActivity
 import com.fitzay.workouttracker.strengthtraining.ui.adapters.CategoriesAdapter
 import com.google.android.gms.ads.AdListener
@@ -97,6 +99,10 @@ class WorkoutFragment : Fragment() {
                         "ADVANCE"
                     ) as ArrayList<CategoriesModel> , "ADVANCE"
                 )
+            }
+
+            fullbodychBtn.setOnClickListener {
+                startActivity(Intent(requireActivity() , FullbodyWorkoutActivity :: class.java))
             }
         }
 
