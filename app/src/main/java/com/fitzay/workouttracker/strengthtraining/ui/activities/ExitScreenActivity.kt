@@ -34,6 +34,9 @@ class ExitScreenActivity : AppCompatActivity() {
         binding = ActivityExitScreenBinding.inflate(layoutInflater)
         setContentView(binding?.root)
 
+
+        Log.d("ActivityCreation" , "oncreate")
+
         waiting_dialog = Dialog(this)
 
         binding?.doneBtn?.setOnClickListener {

@@ -57,6 +57,7 @@ class ExerciseActivity : AppCompatActivity() {
     var mSplashInterstitial: InterstitialAd? = null
     private var loadinginterstitial = false
     private var nativeAd : NativeAd? = null
+    private var moveactivity = true
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -297,14 +298,21 @@ class ExerciseActivity : AppCompatActivity() {
                             }
                         } catch (e: IndexOutOfBoundsException) {
                             e.printStackTrace()
-                            startActivity(Intent(this@ExerciseActivity , ExitScreenActivity :: class.java))
-                            finish()
+                            if (moveactivity){
+                                moveactivity = false
+                                startActivity(Intent(this@ExerciseActivity , ExitScreenActivity :: class.java))
+                                finish()
+                            }
+
                         }
                     }.start()
                 } catch (e: IndexOutOfBoundsException) {
                     e.printStackTrace()
-                    startActivity(Intent(this@ExerciseActivity , ExitScreenActivity :: class.java))
-                    finish()
+                    if (moveactivity){
+                        moveactivity = false
+                        startActivity(Intent(this@ExerciseActivity , ExitScreenActivity :: class.java))
+                        finish()
+                    }
                 }
             }
         }

@@ -182,6 +182,7 @@ class MainActivity : AppCompatActivity() {
                     drawerOpen = true
                 }
             }
+            //
             customDrawer.fitMoreApps.setOnClickListener {
                 if (!isClicked) {
                     isClicked = true

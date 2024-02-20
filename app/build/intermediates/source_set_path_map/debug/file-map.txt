@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 com.fitzay.workouttracker.strengthtraining.app-jetified-ui-util-1.1.0-alpha04-0 C:\Users\Technest - Accounts\.gradle\caches\transforms-3\01263107921749c6355ba6c2a18fbc06\transformed\jetified-ui-util-1.1.0-alpha04\res
 com.fitzay.workouttracker.strengthtraining.app-media-1.0.0-1 C:\Users\Technest - Accounts\.gradle\caches\transforms-3\028f1499358abc514ed78bfa7554c170\transformed\media-1.0.0\res
 com.fitzay.workouttracker.strengthtraining.app-jetified-startup-runtime-1.1.1-2 C:\Users\Technest - Accounts\.gradle\caches\transforms-3\03725e938ba6e581275ac95f1adfde85\transformed\jetified-startup-runtime-1.1.1\res
@@ -96,3 +97,104 @@ com.fitzay.workouttracker.strengthtraining.app-debug-94 E:\Rafaqat Mehmood\Fitne
 com.fitzay.workouttracker.strengthtraining.app-main-95 E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\res
 com.fitzay.workouttracker.strengthtraining.app-packaged_res-96 E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\nativetemplates\build\intermediates\packaged_res\debug
 com.fitzay.workouttracker.strengthtraining.app-packaged_res-97 E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\wheelpicker\build\intermediates\packaged_res\debug
+=======
+com.fitzay.workouttracker.strengthtraining.app-jetified-ui-util-1.1.0-alpha04-0 C:\Users\DELL\.gradle\caches\transforms-3\01263107921749c6355ba6c2a18fbc06\transformed\jetified-ui-util-1.1.0-alpha04\res
+com.fitzay.workouttracker.strengthtraining.app-media-1.0.0-1 C:\Users\DELL\.gradle\caches\transforms-3\028f1499358abc514ed78bfa7554c170\transformed\media-1.0.0\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-startup-runtime-1.1.1-2 C:\Users\DELL\.gradle\caches\transforms-3\03725e938ba6e581275ac95f1adfde85\transformed\jetified-startup-runtime-1.1.1\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-material-1.1.0-alpha04-3 C:\Users\DELL\.gradle\caches\transforms-3\09ce0dd1822d43426ee4d7ecf37661c2\transformed\jetified-material-1.1.0-alpha04\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-savedstate-1.2.1-4 C:\Users\DELL\.gradle\caches\transforms-3\129a32e4d464302c0d5e9389c51bd06f\transformed\jetified-savedstate-1.2.1\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-WheelPicker-1.0.3-5 C:\Users\DELL\.gradle\caches\transforms-3\1415e88cda0b051e8515beb7bed4e006\transformed\jetified-WheelPicker-1.0.3\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-material-icons-core-1.1.0-alpha04-6 C:\Users\DELL\.gradle\caches\transforms-3\14e6b62830c5a429800cc3f943ab8cf9\transformed\jetified-material-icons-core-1.1.0-alpha04\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-lifecycle-process-2.6.2-7 C:\Users\DELL\.gradle\caches\transforms-3\163c2e4dc0b6d04839ec734cd7cae08f\transformed\jetified-lifecycle-process-2.6.2\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-datastore-preferences-1.0.0-8 C:\Users\DELL\.gradle\caches\transforms-3\16d23e93a9bbc4d5ac06f40822614ffa\transformed\jetified-datastore-preferences-1.0.0\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-play-services-base-18.0.1-9 C:\Users\DELL\.gradle\caches\transforms-3\197429ee016b62132c777806148d8d13\transformed\jetified-play-services-base-18.0.1\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-activity-compose-1.8.0-10 C:\Users\DELL\.gradle\caches\transforms-3\1a17ad8ed6e7dfcd13dd3d17762dc155\transformed\jetified-activity-compose-1.8.0\res
+com.fitzay.workouttracker.strengthtraining.app-preference-1.1.1-11 C:\Users\DELL\.gradle\caches\transforms-3\1a2ad1dceb873e96883907106f159aa0\transformed\preference-1.1.1\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-ui-unit-1.1.0-alpha04-12 C:\Users\DELL\.gradle\caches\transforms-3\1ba57235965458ebefb1e330a29d81d9\transformed\jetified-ui-unit-1.1.0-alpha04\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-glide-4.15.1-13 C:\Users\DELL\.gradle\caches\transforms-3\1fd8c5a1bcda1bed7cbfccf7faf4078c\transformed\jetified-glide-4.15.1\res
+com.fitzay.workouttracker.strengthtraining.app-core-1.12.0-14 C:\Users\DELL\.gradle\caches\transforms-3\21095e89c7b218f5be30bc5922666689\transformed\core-1.12.0\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-lifecycle-viewmodel-ktx-2.6.2-15 C:\Users\DELL\.gradle\caches\transforms-3\2330e67b1ab15ded74e4753e153b0d8a\transformed\jetified-lifecycle-viewmodel-ktx-2.6.2\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-annotation-experimental-1.3.0-16 C:\Users\DELL\.gradle\caches\transforms-3\271ff6a381ec4dd980f969c6ed49a68d\transformed\jetified-annotation-experimental-1.3.0\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-core-common-2.0.3-17 C:\Users\DELL\.gradle\caches\transforms-3\29ad2ebd59ff02e6a9b31bc8fe7e1f29\transformed\jetified-core-common-2.0.3\res
+com.fitzay.workouttracker.strengthtraining.app-work-runtime-2.7.0-18 C:\Users\DELL\.gradle\caches\transforms-3\2e1ba98f89524df4d38adb9ef7ab0151\transformed\work-runtime-2.7.0\res
+com.fitzay.workouttracker.strengthtraining.app-browser-1.4.0-19 C:\Users\DELL\.gradle\caches\transforms-3\30919fcaa20602f0215f4148d5fc6256\transformed\browser-1.4.0\res
+com.fitzay.workouttracker.strengthtraining.app-lifecycle-livedata-core-2.6.2-20 C:\Users\DELL\.gradle\caches\transforms-3\33f99d3bb4e9e04026ca9de409be3ca5\transformed\lifecycle-livedata-core-2.6.2\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-paging-runtime-ktx-3.2.1-21 C:\Users\DELL\.gradle\caches\transforms-3\357c8870d30364bc36f37c9106dfd2b0\transformed\jetified-paging-runtime-ktx-3.2.1\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-material-ripple-1.1.0-alpha04-22 C:\Users\DELL\.gradle\caches\transforms-3\3873d0c01ea5cc09070501f4c63ebc82\transformed\jetified-material-ripple-1.1.0-alpha04\res
+com.fitzay.workouttracker.strengthtraining.app-cardview-1.0.0-23 C:\Users\DELL\.gradle\caches\transforms-3\40682d5cdf66702e8d5c2845d33a3877\transformed\cardview-1.0.0\res
+com.fitzay.workouttracker.strengthtraining.app-lifecycle-viewmodel-2.6.2-24 C:\Users\DELL\.gradle\caches\transforms-3\40f39cf12d19b51622ba3cd33846a930\transformed\lifecycle-viewmodel-2.6.2\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-ui-tooling-preview-1.1.0-alpha04-25 C:\Users\DELL\.gradle\caches\transforms-3\420ca9e4152ed8989bddb073bf100936\transformed\jetified-ui-tooling-preview-1.1.0-alpha04\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-TapHoldUpButton-0.1.2-26 C:\Users\DELL\.gradle\caches\transforms-3\42ba299817eb5b37b78ee936eda07e5b\transformed\jetified-TapHoldUpButton-0.1.2\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-ui-tooling-data-1.1.0-alpha04-27 C:\Users\DELL\.gradle\caches\transforms-3\43d7b4ae57dc254e44c801b965bd9343\transformed\jetified-ui-tooling-data-1.1.0-alpha04\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-runtime-1.1.0-alpha04-28 C:\Users\DELL\.gradle\caches\transforms-3\458d57655fa76212fce8114ee044ce07\transformed\jetified-runtime-1.1.0-alpha04\res
+com.fitzay.workouttracker.strengthtraining.app-drawerlayout-1.1.1-29 C:\Users\DELL\.gradle\caches\transforms-3\47ff81779a8034afdb45a3a4706f4541\transformed\drawerlayout-1.1.1\res
+com.fitzay.workouttracker.strengthtraining.app-sqlite-2.3.1-30 C:\Users\DELL\.gradle\caches\transforms-3\4bde1a18b8b24b3f98feceb85c05778c\transformed\sqlite-2.3.1\res
+com.fitzay.workouttracker.strengthtraining.app-databinding-runtime-8.2.2-31 C:\Users\DELL\.gradle\caches\transforms-3\4e2598c3b103f56dbb868bea1779e278\transformed\databinding-runtime-8.2.2\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-runtime-saveable-1.1.0-alpha04-32 C:\Users\DELL\.gradle\caches\transforms-3\4f6fb0b5d45ce3a5990b9b233dd2a8ea\transformed\jetified-runtime-saveable-1.1.0-alpha04\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-core-ktx-1.12.0-33 C:\Users\DELL\.gradle\caches\transforms-3\5464343c2e3ad2909378028363b090e9\transformed\jetified-core-ktx-1.12.0\res
+com.fitzay.workouttracker.strengthtraining.app-recyclerview-1.2.1-34 C:\Users\DELL\.gradle\caches\transforms-3\5a1f814e8e2486682e64564a7ecb9204\transformed\recyclerview-1.2.1\res
+com.fitzay.workouttracker.strengthtraining.app-constraintlayout-2.1.4-35 C:\Users\DELL\.gradle\caches\transforms-3\5dbeb51a599d4f6396f98ec632fe84ec\transformed\constraintlayout-2.1.4\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-ads-adservices-1.0.0-beta05-36 C:\Users\DELL\.gradle\caches\transforms-3\5dfccca04aba6476bca11c2adc19ad5c\transformed\jetified-ads-adservices-1.0.0-beta05\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-lifecycle-livedata-core-ktx-2.6.2-37 C:\Users\DELL\.gradle\caches\transforms-3\62f0768714c0293f9eef47b594a408fa\transformed\jetified-lifecycle-livedata-core-ktx-2.6.2\res
+com.fitzay.workouttracker.strengthtraining.app-material-1.10.0-38 C:\Users\DELL\.gradle\caches\transforms-3\67941510f0d2af6cfaf0aadce02b42e2\transformed\material-1.10.0\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-play-services-ads-22.5.0-39 C:\Users\DELL\.gradle\caches\transforms-3\6fc4fb8e5d4addce77a8587535dd0e0b\transformed\jetified-play-services-ads-22.5.0\res
+com.fitzay.workouttracker.strengthtraining.app-core-runtime-2.2.0-40 C:\Users\DELL\.gradle\caches\transforms-3\71d2fae2bedb04def885bdb463848ebf\transformed\core-runtime-2.2.0\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-animation-core-1.1.0-alpha04-41 C:\Users\DELL\.gradle\caches\transforms-3\72be2e33004a7aebb6d3315e2b55023e\transformed\jetified-animation-core-1.1.0-alpha04\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-ssp-android-1.1.0-42 C:\Users\DELL\.gradle\caches\transforms-3\741ce5435a42cdd802654c0547549e0d\transformed\jetified-ssp-android-1.1.0\res
+com.fitzay.workouttracker.strengthtraining.app-fragment-1.3.6-43 C:\Users\DELL\.gradle\caches\transforms-3\7d3073ae32bd387cc0c80283d003ac50\transformed\fragment-1.3.6\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-viewpager2-1.0.0-44 C:\Users\DELL\.gradle\caches\transforms-3\845897dfa76c009d819843d301380582\transformed\jetified-viewpager2-1.0.0\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-timerangepicker-1.0.0-45 C:\Users\DELL\.gradle\caches\transforms-3\84bd5cc84dc4de1c69f11b1f93d97868\transformed\jetified-timerangepicker-1.0.0\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-lifecycle-runtime-ktx-2.6.2-46 C:\Users\DELL\.gradle\caches\transforms-3\8c2e4cf38626e7aae0c27b0d4e9b5dd4\transformed\jetified-lifecycle-runtime-ktx-2.6.2\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-activity-ktx-1.8.0-47 C:\Users\DELL\.gradle\caches\transforms-3\8c489ab7c891916a45c9c203d9e5781a\transformed\jetified-activity-ktx-1.8.0\res
+com.fitzay.workouttracker.strengthtraining.app-lifecycle-livedata-2.6.2-48 C:\Users\DELL\.gradle\caches\transforms-3\8e70959ba227efa4d67a7dd83f81040e\transformed\lifecycle-livedata-2.6.2\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-room-ktx-2.5.2-49 C:\Users\DELL\.gradle\caches\transforms-3\8fb7186e1f75535b587d60c01bfa9aec\transformed\jetified-room-ktx-2.5.2\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-emoji2-1.2.0-50 C:\Users\DELL\.gradle\caches\transforms-3\947953bfe2dea94970bb694f86e3e223\transformed\jetified-emoji2-1.2.0\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-datastore-1.0.0-51 C:\Users\DELL\.gradle\caches\transforms-3\9543c1419f6a4345815d62863f591133\transformed\jetified-datastore-1.0.0\res
+com.fitzay.workouttracker.strengthtraining.app-paging-runtime-3.2.1-52 C:\Users\DELL\.gradle\caches\transforms-3\96d50616340aea3ceae0ae5b2763c4ac\transformed\paging-runtime-3.2.1\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-lifecycle-livedata-ktx-2.6.2-53 C:\Users\DELL\.gradle\caches\transforms-3\97aefdc1b3514b5db4c02503cadb1cad\transformed\jetified-lifecycle-livedata-ktx-2.6.2\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-foundation-layout-1.1.0-alpha04-54 C:\Users\DELL\.gradle\caches\transforms-3\9a68e9954911f9b8939bf0d2e943d1b9\transformed\jetified-foundation-layout-1.1.0-alpha04\res
+com.fitzay.workouttracker.strengthtraining.app-databinding-adapters-8.2.2-55 C:\Users\DELL\.gradle\caches\transforms-3\9c920cabe28d60ff7f1cef3b2bac2caa\transformed\databinding-adapters-8.2.2\res
+com.fitzay.workouttracker.strengthtraining.app-lifecycle-runtime-2.6.2-56 C:\Users\DELL\.gradle\caches\transforms-3\9e781669734e32068db99a90d8b2cbbc\transformed\lifecycle-runtime-2.6.2\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-lifecycle-viewmodel-savedstate-2.6.2-57 C:\Users\DELL\.gradle\caches\transforms-3\a3c1307ca489517e877b4158a4ed5588\transformed\jetified-lifecycle-viewmodel-savedstate-2.6.2\res
+com.fitzay.workouttracker.strengthtraining.app-appcompat-1.6.1-58 C:\Users\DELL\.gradle\caches\transforms-3\a4065bb5ae3b7388f5a264b21d16ff38\transformed\appcompat-1.6.1\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-material-icons-extended-1.1.0-alpha04-59 C:\Users\DELL\.gradle\caches\transforms-3\ab99e87907790b7178b59b51ff044da5\transformed\jetified-material-icons-extended-1.1.0-alpha04\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-ui-geometry-1.1.0-alpha04-60 C:\Users\DELL\.gradle\caches\transforms-3\ac4f65639cc9216765885eac7d5a4b67\transformed\jetified-ui-geometry-1.1.0-alpha04\res
+com.fitzay.workouttracker.strengthtraining.app-transition-1.2.0-61 C:\Users\DELL\.gradle\caches\transforms-3\b09266654e45127dbb7187f701afe292\transformed\transition-1.2.0\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-lottie-5.2.0-62 C:\Users\DELL\.gradle\caches\transforms-3\b8ee5da0bb10e57d3b5aac5315d7cd4b\transformed\jetified-lottie-5.2.0\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-ui-text-1.1.0-alpha04-63 C:\Users\DELL\.gradle\caches\transforms-3\badd89ca4533f0cc7a256dbf1d60d866\transformed\jetified-ui-text-1.1.0-alpha04\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-firebase-messaging-23.3.1-64 C:\Users\DELL\.gradle\caches\transforms-3\bcd3132af63ed1f805833faed909b092\transformed\jetified-firebase-messaging-23.3.1\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-appcompat-resources-1.6.1-65 C:\Users\DELL\.gradle\caches\transforms-3\bd0ad459a953014d51cca6d95afc36dc\transformed\jetified-appcompat-resources-1.6.1\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-savedstate-ktx-1.2.1-66 C:\Users\DELL\.gradle\caches\transforms-3\bf09c7f1e738c911362135fc51e6cdcc\transformed\jetified-savedstate-ktx-1.2.1\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-animation-1.1.0-alpha04-67 C:\Users\DELL\.gradle\caches\transforms-3\bfec507d022cd5de8c59f5dbd3e9f72d\transformed\jetified-animation-1.1.0-alpha04\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-ui-graphics-1.1.0-alpha04-68 C:\Users\DELL\.gradle\caches\transforms-3\d1df3a4a12814d7c66ee24f64438f6e4\transformed\jetified-ui-graphics-1.1.0-alpha04\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-foundation-1.1.0-alpha04-69 C:\Users\DELL\.gradle\caches\transforms-3\d493b182b33beff934f9b067a9adbc38\transformed\jetified-foundation-1.1.0-alpha04\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-emoji2-views-helper-1.2.0-70 C:\Users\DELL\.gradle\caches\transforms-3\d7cb71dce081998d510938f3a29716ef\transformed\jetified-emoji2-views-helper-1.2.0\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-ads-adservices-java-1.0.0-beta05-71 C:\Users\DELL\.gradle\caches\transforms-3\d9990f54ba05722dd2aeaec205b3eb73\transformed\jetified-ads-adservices-java-1.0.0-beta05\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-play-services-basement-18.2.0-72 C:\Users\DELL\.gradle\caches\transforms-3\dcb55880e6c9350b41ba31c6d7b66d53\transformed\jetified-play-services-basement-18.2.0\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-play-services-ads-lite-22.5.0-73 C:\Users\DELL\.gradle\caches\transforms-3\e2d4d3c3093e2fd43ae9a352414a6dd1\transformed\jetified-play-services-ads-lite-22.5.0\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-ui-1.1.0-alpha04-74 C:\Users\DELL\.gradle\caches\transforms-3\e2f5f8bd65d2404150a6dde8afc6eab9\transformed\jetified-ui-1.1.0-alpha04\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-lifecycle-service-2.6.2-75 C:\Users\DELL\.gradle\caches\transforms-3\e4b5e765dce623cc8e27d7c8aa878fa9\transformed\jetified-lifecycle-service-2.6.2\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-activity-1.8.0-76 C:\Users\DELL\.gradle\caches\transforms-3\ec7800037da74df9a330c705d6c708f8\transformed\jetified-activity-1.8.0\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-ui-tooling-1.1.0-alpha04-77 C:\Users\DELL\.gradle\caches\transforms-3\eee5df9ab7518bcf636f1e117915e8ad\transformed\jetified-ui-tooling-1.1.0-alpha04\res
+com.fitzay.workouttracker.strengthtraining.app-coordinatorlayout-1.1.0-78 C:\Users\DELL\.gradle\caches\transforms-3\f0446f8c980116a98cb047cc10daaebb\transformed\coordinatorlayout-1.1.0\res
+com.fitzay.workouttracker.strengthtraining.app-sqlite-framework-2.3.1-79 C:\Users\DELL\.gradle\caches\transforms-3\f08570fbdefa68fe53fdf0ad4aaeba05\transformed\sqlite-framework-2.3.1\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-play-services-measurement-api-21.5.0-80 C:\Users\DELL\.gradle\caches\transforms-3\f169b2e42004ab34c013609f344391f5\transformed\jetified-play-services-measurement-api-21.5.0\res
+com.fitzay.workouttracker.strengthtraining.app-room-runtime-2.5.2-81 C:\Users\DELL\.gradle\caches\transforms-3\f30d0f385bb27e5c26409a0faadf024d\transformed\room-runtime-2.5.2\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-AGSkeletonLoading-1.2-82 C:\Users\DELL\.gradle\caches\transforms-3\f4b85efe72cacac422668a0cfdffd966\transformed\jetified-AGSkeletonLoading-1.2\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-sdp-android-1.1.0-83 C:\Users\DELL\.gradle\caches\transforms-3\f64246449f321e21a7c5cdb71604b32d\transformed\jetified-sdp-android-1.1.0\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-profileinstaller-1.3.0-84 C:\Users\DELL\.gradle\caches\transforms-3\fa678d0d2ad9ea3bbd7f30736f6a0586\transformed\jetified-profileinstaller-1.3.0\res
+com.fitzay.workouttracker.strengthtraining.app-jetified-firebase-common-20.4.2-85 C:\Users\DELL\.gradle\caches\transforms-3\ff96e61539c2879306667e62f02dee60\transformed\jetified-firebase-common-20.4.2\res
+com.fitzay.workouttracker.strengthtraining.app-packaged_res-86 D:\Izhar\Final Release FitnessApplication\MPChartLib\build\intermediates\packaged_res\debug
+com.fitzay.workouttracker.strengthtraining.app-res-87 D:\Izhar\Final Release FitnessApplication\app\build\generated\crashlytics\res\debug
+com.fitzay.workouttracker.strengthtraining.app-google-services-88 D:\Izhar\Final Release FitnessApplication\app\build\generated\res\google-services\debug
+com.fitzay.workouttracker.strengthtraining.app-pngs-89 D:\Izhar\Final Release FitnessApplication\app\build\generated\res\pngs\debug
+com.fitzay.workouttracker.strengthtraining.app-resValues-90 D:\Izhar\Final Release FitnessApplication\app\build\generated\res\resValues\debug
+com.fitzay.workouttracker.strengthtraining.app-packageDebugResources-91 D:\Izhar\Final Release FitnessApplication\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
+com.fitzay.workouttracker.strengthtraining.app-packageDebugResources-92 D:\Izhar\Final Release FitnessApplication\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
+com.fitzay.workouttracker.strengthtraining.app-merged-not-compiled-resources-93 D:\Izhar\Final Release FitnessApplication\app\build\intermediates\merged-not-compiled-resources\debug
+com.fitzay.workouttracker.strengthtraining.app-merged_res-94 D:\Izhar\Final Release FitnessApplication\app\build\intermediates\merged_res\debug
+com.fitzay.workouttracker.strengthtraining.app-debug-95 D:\Izhar\Final Release FitnessApplication\app\src\debug\res
+com.fitzay.workouttracker.strengthtraining.app-main-96 D:\Izhar\Final Release FitnessApplication\app\src\main\res
+com.fitzay.workouttracker.strengthtraining.app-packaged_res-97 D:\Izhar\Final Release FitnessApplication\nativetemplates\build\intermediates\packaged_res\debug
+com.fitzay.workouttracker.strengthtraining.app-packaged_res-98 D:\Izhar\Final Release FitnessApplication\wheelpicker\build\intermediates\packaged_res\debug
+>>>>>>> 83724aad954916bcb94cdd4531f382d5ccdf5673
