@@ -34,7 +34,13 @@ public final class ActivityFullbodyWorkoutBinding implements ViewBinding {
   public final CollapsingToolbarLayout collapsingToolbar;
 
   @NonNull
+  public final ConstraintLayout constraintLayout10;
+
+  @NonNull
   public final ConstraintLayout constraintLayout11;
+
+  @NonNull
+  public final ConstraintLayout constraintLayout21;
 
   @NonNull
   public final FrameLayout frameLayout;
@@ -55,6 +61,30 @@ public final class ActivityFullbodyWorkoutBinding implements ViewBinding {
   public final MaterialCardView materialCardView14;
 
   @NonNull
+  public final MaterialCardView materialCardView21;
+
+  @NonNull
+  public final MaterialCardView materialCardView22;
+
+  @NonNull
+  public final MaterialCardView materialCardView23;
+
+  @NonNull
+  public final MaterialCardView materialCardView24;
+
+  @NonNull
+  public final MaterialCardView materialCardView25;
+
+  @NonNull
+  public final MaterialCardView materialCardView26;
+
+  @NonNull
+  public final MaterialCardView materialCardView27;
+
+  @NonNull
+  public final MaterialCardView materialCardView28;
+
+  @NonNull
   public final MaterialCardView materialCardView4;
 
   @NonNull
@@ -70,6 +100,9 @@ public final class ActivityFullbodyWorkoutBinding implements ViewBinding {
   public final TextView textView22;
 
   @NonNull
+  public final TextView textView27;
+
+  @NonNull
   public final TextView textView6;
 
   @NonNull
@@ -78,29 +111,45 @@ public final class ActivityFullbodyWorkoutBinding implements ViewBinding {
   private ActivityFullbodyWorkoutBinding(@NonNull ConstraintLayout rootView,
       @NonNull AppBarLayout appBarLayout, @NonNull ImageView backpressBtn,
       @NonNull CollapsingToolbarLayout collapsingToolbar,
-      @NonNull ConstraintLayout constraintLayout11, @NonNull FrameLayout frameLayout,
+      @NonNull ConstraintLayout constraintLayout10, @NonNull ConstraintLayout constraintLayout11,
+      @NonNull ConstraintLayout constraintLayout21, @NonNull FrameLayout frameLayout,
       @NonNull MaterialCardView materialCardView10, @NonNull MaterialCardView materialCardView11,
       @NonNull MaterialCardView materialCardView12, @NonNull MaterialCardView materialCardView13,
-      @NonNull MaterialCardView materialCardView14, @NonNull MaterialCardView materialCardView4,
+      @NonNull MaterialCardView materialCardView14, @NonNull MaterialCardView materialCardView21,
+      @NonNull MaterialCardView materialCardView22, @NonNull MaterialCardView materialCardView23,
+      @NonNull MaterialCardView materialCardView24, @NonNull MaterialCardView materialCardView25,
+      @NonNull MaterialCardView materialCardView26, @NonNull MaterialCardView materialCardView27,
+      @NonNull MaterialCardView materialCardView28, @NonNull MaterialCardView materialCardView4,
       @NonNull MaterialCardView materialCardView8, @NonNull MaterialCardView materialCardView9,
-      @NonNull TextView textView20, @NonNull TextView textView22, @NonNull TextView textView6,
-      @NonNull ImageView toolBarImage) {
+      @NonNull TextView textView20, @NonNull TextView textView22, @NonNull TextView textView27,
+      @NonNull TextView textView6, @NonNull ImageView toolBarImage) {
     this.rootView = rootView;
     this.appBarLayout = appBarLayout;
     this.backpressBtn = backpressBtn;
     this.collapsingToolbar = collapsingToolbar;
+    this.constraintLayout10 = constraintLayout10;
     this.constraintLayout11 = constraintLayout11;
+    this.constraintLayout21 = constraintLayout21;
     this.frameLayout = frameLayout;
     this.materialCardView10 = materialCardView10;
     this.materialCardView11 = materialCardView11;
     this.materialCardView12 = materialCardView12;
     this.materialCardView13 = materialCardView13;
     this.materialCardView14 = materialCardView14;
+    this.materialCardView21 = materialCardView21;
+    this.materialCardView22 = materialCardView22;
+    this.materialCardView23 = materialCardView23;
+    this.materialCardView24 = materialCardView24;
+    this.materialCardView25 = materialCardView25;
+    this.materialCardView26 = materialCardView26;
+    this.materialCardView27 = materialCardView27;
+    this.materialCardView28 = materialCardView28;
     this.materialCardView4 = materialCardView4;
     this.materialCardView8 = materialCardView8;
     this.materialCardView9 = materialCardView9;
     this.textView20 = textView20;
     this.textView22 = textView22;
+    this.textView27 = textView27;
     this.textView6 = textView6;
     this.toolBarImage = toolBarImage;
   }
@@ -150,9 +199,21 @@ public final class ActivityFullbodyWorkoutBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.constraintLayout10;
+      ConstraintLayout constraintLayout10 = ViewBindings.findChildViewById(rootView, id);
+      if (constraintLayout10 == null) {
+        break missingId;
+      }
+
       id = R.id.constraintLayout11;
       ConstraintLayout constraintLayout11 = ViewBindings.findChildViewById(rootView, id);
       if (constraintLayout11 == null) {
+        break missingId;
+      }
+
+      id = R.id.constraintLayout21;
+      ConstraintLayout constraintLayout21 = ViewBindings.findChildViewById(rootView, id);
+      if (constraintLayout21 == null) {
         break missingId;
       }
 
@@ -192,6 +253,54 @@ public final class ActivityFullbodyWorkoutBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.materialCardView21;
+      MaterialCardView materialCardView21 = ViewBindings.findChildViewById(rootView, id);
+      if (materialCardView21 == null) {
+        break missingId;
+      }
+
+      id = R.id.materialCardView22;
+      MaterialCardView materialCardView22 = ViewBindings.findChildViewById(rootView, id);
+      if (materialCardView22 == null) {
+        break missingId;
+      }
+
+      id = R.id.materialCardView23;
+      MaterialCardView materialCardView23 = ViewBindings.findChildViewById(rootView, id);
+      if (materialCardView23 == null) {
+        break missingId;
+      }
+
+      id = R.id.materialCardView24;
+      MaterialCardView materialCardView24 = ViewBindings.findChildViewById(rootView, id);
+      if (materialCardView24 == null) {
+        break missingId;
+      }
+
+      id = R.id.materialCardView25;
+      MaterialCardView materialCardView25 = ViewBindings.findChildViewById(rootView, id);
+      if (materialCardView25 == null) {
+        break missingId;
+      }
+
+      id = R.id.materialCardView26;
+      MaterialCardView materialCardView26 = ViewBindings.findChildViewById(rootView, id);
+      if (materialCardView26 == null) {
+        break missingId;
+      }
+
+      id = R.id.materialCardView27;
+      MaterialCardView materialCardView27 = ViewBindings.findChildViewById(rootView, id);
+      if (materialCardView27 == null) {
+        break missingId;
+      }
+
+      id = R.id.materialCardView28;
+      MaterialCardView materialCardView28 = ViewBindings.findChildViewById(rootView, id);
+      if (materialCardView28 == null) {
+        break missingId;
+      }
+
       id = R.id.materialCardView4;
       MaterialCardView materialCardView4 = ViewBindings.findChildViewById(rootView, id);
       if (materialCardView4 == null) {
@@ -222,6 +331,12 @@ public final class ActivityFullbodyWorkoutBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.textView27;
+      TextView textView27 = ViewBindings.findChildViewById(rootView, id);
+      if (textView27 == null) {
+        break missingId;
+      }
+
       id = R.id.textView6;
       TextView textView6 = ViewBindings.findChildViewById(rootView, id);
       if (textView6 == null) {
@@ -235,10 +350,13 @@ public final class ActivityFullbodyWorkoutBinding implements ViewBinding {
       }
 
       return new ActivityFullbodyWorkoutBinding((ConstraintLayout) rootView, appBarLayout,
-          backpressBtn, collapsingToolbar, constraintLayout11, frameLayout, materialCardView10,
-          materialCardView11, materialCardView12, materialCardView13, materialCardView14,
-          materialCardView4, materialCardView8, materialCardView9, textView20, textView22,
-          textView6, toolBarImage);
+          backpressBtn, collapsingToolbar, constraintLayout10, constraintLayout11,
+          constraintLayout21, frameLayout, materialCardView10, materialCardView11,
+          materialCardView12, materialCardView13, materialCardView14, materialCardView21,
+          materialCardView22, materialCardView23, materialCardView24, materialCardView25,
+          materialCardView26, materialCardView27, materialCardView28, materialCardView4,
+          materialCardView8, materialCardView9, textView20, textView22, textView27, textView6,
+          toolBarImage);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

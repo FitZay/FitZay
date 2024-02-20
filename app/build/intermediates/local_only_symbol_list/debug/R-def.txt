@@ -310,11 +310,13 @@ id closeBtn
 id cm
 id collapsingToolbar
 id constraintLayout
+id constraintLayout10
 id constraintLayout11
 id constraintLayout13
 id constraintLayout14
 id constraintLayout16
 id constraintLayout2
+id constraintLayout21
 id constraintLayout3
 id constraintLayout4
 id constraintLayout5
@@ -489,6 +491,14 @@ id materialCardView12
 id materialCardView13
 id materialCardView14
 id materialCardView2
+id materialCardView21
+id materialCardView22
+id materialCardView23
+id materialCardView24
+id materialCardView25
+id materialCardView26
+id materialCardView27
+id materialCardView28
 id materialCardView3
 id materialCardView4
 id materialCardView5
@@ -605,6 +615,7 @@ id textView23
 id textView24
 id textView25
 id textView26
+id textView27
 id textView3
 id textView4
 id textView5
