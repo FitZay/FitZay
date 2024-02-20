@@ -42,6 +42,12 @@ public final class FragmentWorkoutBinding implements ViewBinding {
   public final FrameLayout frameBannerContainer;
 
   @NonNull
+  public final TextView fullBodyDesc;
+
+  @NonNull
+  public final RelativeLayout fullbodychBtn;
+
+  @NonNull
   public final ImageView img0001;
 
   @NonNull
@@ -58,6 +64,9 @@ public final class FragmentWorkoutBinding implements ViewBinding {
 
   @NonNull
   public final LinearLayout linearLayoutAds;
+
+  @NonNull
+  public final TextView lowerBodyDesc;
 
   @NonNull
   public final TemplateView plannerTemplateDown;
@@ -106,10 +115,11 @@ public final class FragmentWorkoutBinding implements ViewBinding {
 
   private FragmentWorkoutBinding(@NonNull ConstraintLayout rootView, @NonNull CardView cardRecent,
       @NonNull ConstraintLayout clAds, @NonNull AppCompatButton cta,
-      @NonNull FrameLayout frameBannerContainer, @NonNull ImageView img0001,
-      @NonNull ImageView img001, @NonNull RelativeLayout layoutAd,
-      @NonNull LinearLayout layoutShowBannerAds, @NonNull LinearLayout layoutloading,
-      @NonNull LinearLayout linearLayoutAds, @NonNull TemplateView plannerTemplateDown,
+      @NonNull FrameLayout frameBannerContainer, @NonNull TextView fullBodyDesc,
+      @NonNull RelativeLayout fullbodychBtn, @NonNull ImageView img0001, @NonNull ImageView img001,
+      @NonNull RelativeLayout layoutAd, @NonNull LinearLayout layoutShowBannerAds,
+      @NonNull LinearLayout layoutloading, @NonNull LinearLayout linearLayoutAds,
+      @NonNull TextView lowerBodyDesc, @NonNull TemplateView plannerTemplateDown,
       @NonNull TemplateView plannerTemplateUp, @NonNull CircularProgressIndicator progressBar,
       @NonNull TextView recentEx, @NonNull TextView recentExCat, @NonNull TextView recentExPercent,
       @NonNull RecyclerView recyclerview, @NonNull SkeletonRelativeLayout skeletonLayout,
@@ -121,12 +131,15 @@ public final class FragmentWorkoutBinding implements ViewBinding {
     this.clAds = clAds;
     this.cta = cta;
     this.frameBannerContainer = frameBannerContainer;
+    this.fullBodyDesc = fullBodyDesc;
+    this.fullbodychBtn = fullbodychBtn;
     this.img0001 = img0001;
     this.img001 = img001;
     this.layoutAd = layoutAd;
     this.layoutShowBannerAds = layoutShowBannerAds;
     this.layoutloading = layoutloading;
     this.linearLayoutAds = linearLayoutAds;
+    this.lowerBodyDesc = lowerBodyDesc;
     this.plannerTemplateDown = plannerTemplateDown;
     this.plannerTemplateUp = plannerTemplateUp;
     this.progressBar = progressBar;
@@ -195,6 +208,18 @@ public final class FragmentWorkoutBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.fullBodyDesc;
+      TextView fullBodyDesc = ViewBindings.findChildViewById(rootView, id);
+      if (fullBodyDesc == null) {
+        break missingId;
+      }
+
+      id = R.id.fullbodychBtn;
+      RelativeLayout fullbodychBtn = ViewBindings.findChildViewById(rootView, id);
+      if (fullbodychBtn == null) {
+        break missingId;
+      }
+
       id = R.id.img0001;
       ImageView img0001 = ViewBindings.findChildViewById(rootView, id);
       if (img0001 == null) {
@@ -228,6 +253,12 @@ public final class FragmentWorkoutBinding implements ViewBinding {
       id = R.id.linearLayoutAds;
       LinearLayout linearLayoutAds = ViewBindings.findChildViewById(rootView, id);
       if (linearLayoutAds == null) {
+        break missingId;
+      }
+
+      id = R.id.lowerBodyDesc;
+      TextView lowerBodyDesc = ViewBindings.findChildViewById(rootView, id);
+      if (lowerBodyDesc == null) {
         break missingId;
       }
 
@@ -322,10 +353,11 @@ public final class FragmentWorkoutBinding implements ViewBinding {
       }
 
       return new FragmentWorkoutBinding((ConstraintLayout) rootView, cardRecent, clAds, cta,
-          frameBannerContainer, img0001, img001, layoutAd, layoutShowBannerAds, layoutloading,
-          linearLayoutAds, plannerTemplateDown, plannerTemplateUp, progressBar, recentEx,
-          recentExCat, recentExPercent, recyclerview, skeletonLayout, skeletonLayout1, text0001,
-          text001, txtAdvance, txtBeginner, txtIntermediate, txtRecent);
+          frameBannerContainer, fullBodyDesc, fullbodychBtn, img0001, img001, layoutAd,
+          layoutShowBannerAds, layoutloading, linearLayoutAds, lowerBodyDesc, plannerTemplateDown,
+          plannerTemplateUp, progressBar, recentEx, recentExCat, recentExPercent, recyclerview,
+          skeletonLayout, skeletonLayout1, text0001, text001, txtAdvance, txtBeginner,
+          txtIntermediate, txtRecent);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

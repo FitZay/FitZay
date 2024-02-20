@@ -88,6 +88,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.FitnessApplication" >
         <activity
+            android:name="com.fitzay.workouttracker.strengthtraining.ui.activities.FullbodyWorkoutActivity"
+            android:exported="false" />
+        <activity
             android:name="com.fitzay.workouttracker.strengthtraining.ui.activities.ExitScreenActivity"
             android:exported="false"
             android:launchMode="singleTop"

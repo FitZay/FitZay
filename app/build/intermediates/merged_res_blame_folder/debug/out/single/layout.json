@@ -132,6 +132,10 @@
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/alarm_show_item_list.xml"
     },
     {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/activity_fullbody_workout.xml",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/activity_fullbody_workout.xml"
+    },
+    {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/dialog_step_goal.xml",
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/dialog_step_goal.xml"
     },

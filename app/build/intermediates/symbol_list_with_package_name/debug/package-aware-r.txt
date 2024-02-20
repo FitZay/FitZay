@@ -3960,6 +3960,7 @@ drawable baseline_cancel_24
 drawable baseline_keyboard_arrow_right_24
 drawable baseline_lock_24
 drawable bed_time_new_icon
+drawable bg__4_
 drawable bg_circle
 drawable bg_circle_water
 drawable bg_circle_yellow
@@ -4046,6 +4047,7 @@ drawable design_snackbar_background
 drawable edittext_modified_states
 drawable fitzay_icon_splash
 drawable full_body
+drawable full_body_workout
 drawable full_bodyexit
 drawable gnt_outline_shape
 drawable gnt_rounded_corners_shape
@@ -4497,6 +4499,7 @@ id compress
 id confirm_button
 id constraint
 id constraintLayout
+id constraintLayout11
 id constraintLayout13
 id constraintLayout14
 id constraintLayout16
@@ -4637,6 +4640,7 @@ id ftPrivacy
 id ftRate
 id ftShareApp
 id fullBodyDesc
+id fullbodychBtn
 id fullscreen_header
 id ghost_view
 id ghost_view_holder
@@ -4798,6 +4802,7 @@ id ll_wp
 id loadingProgress
 id longCycle
 id lottie_layer_name
+id lowerBodyDesc
 id m3_side_sheet
 id main
 id mainconstraint
@@ -4807,11 +4812,19 @@ id masked
 id match_constraint
 id match_parent
 id materialCardView
+id materialCardView10
+id materialCardView11
+id materialCardView12
+id materialCardView13
+id materialCardView14
 id materialCardView2
 id materialCardView3
+id materialCardView4
 id materialCardView5
 id materialCardView6
 id materialCardView7
+id materialCardView8
+id materialCardView9
 id materialToolbar
 id material_clock_display
 id material_clock_display_and_toggle
@@ -5136,7 +5149,9 @@ id textView17
 id textView18
 id textView19
 id textView2
+id textView20
 id textView21
+id textView22
 id textView23
 id textView24
 id textView25
@@ -5144,6 +5159,7 @@ id textView26
 id textView3
 id textView4
 id textView5
+id textView6
 id textView7
 id textView8
 id textView9
@@ -5438,6 +5454,7 @@ layout activity_exercise
 layout activity_exit_screen
 layout activity_first_name
 layout activity_fit_you
+layout activity_fullbody_workout
 layout activity_gender
 layout activity_loading
 layout activity_main
