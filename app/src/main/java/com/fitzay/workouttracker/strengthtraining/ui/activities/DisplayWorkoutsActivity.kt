@@ -2,6 +2,8 @@ package com.fitzay.workouttracker.strengthtraining.ui.activities
 
 import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
@@ -24,15 +26,23 @@ class DisplayWorkoutsActivity : AppCompatActivity() {
     private lateinit var binding: ActivityDisplayWorkoutsBinding
     private var TAG = "_displayactivity"
 
+    companion object {
+        var listofworkmodel :ArrayList<WorkOutModel> = arrayListOf()
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityDisplayWorkoutsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val activitytype = intent.getStringExtra("EXTRA_Activity")
         val name = intent.getStringExtra("EXTRA_NAME")!!
         val id = intent.getStringExtra("EXTRA_ID")
         val type = intent.getStringExtra("EXTRA_TYPE")!!
         val excersidetype = intent.getStringExtra("EXTRA_EXERCISE")
+        val week = intent.getStringExtra("EXTRA_WEEk")
+        val exerciseId = intent.getStringExtra("EXTRA_EXERCISE_ID")
+
 
         if (excersidetype == "INTERMEDIATE" || excersidetype == "ADVANCE" ) {
             UnlockPremiumBottomFragment.show(supportFragmentManager)
@@ -80,15 +90,42 @@ class DisplayWorkoutsActivity : AppCompatActivity() {
                 }
             }
 
-            recyclerview.adapter = DisplayWorkOutAdapter(this@DisplayWorkoutsActivity,
-                Component.workOutViewModel.getWorkouts(
-                    this@DisplayWorkoutsActivity,
-                    id.toString()
-                ) as ArrayList<WorkOutModel>
-            )
+            if (activitytype == "category"){
+                recyclerview.adapter = DisplayWorkOutAdapter(this@DisplayWorkoutsActivity,
+                    Component.workOutViewModel.getWorkouts(
+                        this@DisplayWorkoutsActivity,
+                        id.toString()
+                    ) as ArrayList<WorkOutModel>
+                )
+            }
+            else {
+
+                FullbodyWorkoutActivity.listoffullbodies.forEach {
+                    listofworkmodel.addAll(it.cat_id?.let { it1 ->
+                        it.ex_id?.toInt()?.let { it2 ->
+                            Component.workOutViewModel.getFullbodyWorkouts(
+                                this@DisplayWorkoutsActivity,
+                                it1,
+                                it2
+                            )
+                        }
+                    } as ArrayList<WorkOutModel>)
+                }
+
+                Handler(Looper.getMainLooper()).postDelayed({
+                    recyclerview.adapter = DisplayWorkOutAdapter(this@DisplayWorkoutsActivity ,listofworkmodel)
+                },1000)
+            }
 
             //Work out Listener
+
             cardStart.setOnClickListener {
+                if (activitytype == "category"){
+                    ExerciseActivity.activityType = "category"
+                }
+                else{
+                    ExerciseActivity.activityType = ""
+                }
                 val intent = Intent(this@DisplayWorkoutsActivity, ExerciseActivity::class.java).apply {
                     putExtra("EXTRA_CATEGORY", name)
                     putExtra("EXTRA_TYPE", type)

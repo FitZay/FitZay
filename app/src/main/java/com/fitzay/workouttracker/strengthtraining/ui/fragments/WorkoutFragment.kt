@@ -50,7 +50,7 @@ class WorkoutFragment : Fragment() {
 
 
         binding.apply {
-            txtBeginner.setBackgroundResource(R.drawable.bg_selected_options)
+            txtBeginner.setBackgroundResource(R.drawable.bg_selected_options_tab)
             val adapter = CategoriesAdapter(
                 Component.workOutViewModel.getCat(
                     requireContext(),
@@ -69,7 +69,7 @@ class WorkoutFragment : Fragment() {
 
             txtBeginner.setOnClickListener {
                 unSelect()
-                txtBeginner.setBackgroundResource(R.drawable.bg_selected_options)
+                txtBeginner.setBackgroundResource(R.drawable.bg_selected_options_tab)
                 recyclerview.adapter = CategoriesAdapter(
                     Component.workOutViewModel.getCat(
                         requireContext(),
@@ -80,7 +80,7 @@ class WorkoutFragment : Fragment() {
 
             txtIntermediate.setOnClickListener {
                 unSelect()
-                txtIntermediate.setBackgroundResource(R.drawable.bg_selected_options)
+                txtIntermediate.setBackgroundResource(R.drawable.bg_selected_options_tab)
                 recyclerview.adapter = CategoriesAdapter(
                     Component.workOutViewModel.getCat(
                         requireContext(),
@@ -92,7 +92,7 @@ class WorkoutFragment : Fragment() {
 
             txtAdvance.setOnClickListener {
                 unSelect()
-                txtAdvance.setBackgroundResource(R.drawable.bg_selected_options)
+                txtAdvance.setBackgroundResource(R.drawable.bg_selected_options_tab)
                 recyclerview.adapter = CategoriesAdapter(
                     Component.workOutViewModel.getCat(
                         requireContext(),

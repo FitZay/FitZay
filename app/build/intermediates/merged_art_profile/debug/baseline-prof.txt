@@ -9177,10 +9177,6 @@ Landroidx/compose/ui/text/intl/AndroidLocale;
 HSPLandroidx/compose/ui/text/intl/AndroidLocale;-><init>(Ljava/util/Locale;)V
 HSPLandroidx/compose/ui/text/intl/AndroidLocale;->getJavaLocale()Ljava/util/Locale;
 HSPLandroidx/compose/ui/text/intl/AndroidLocale;->toLanguageTag()Ljava/lang/String;
-Landroidx/compose/ui/text/intl/AndroidLocaleDelegateAPI23;
-HSPLandroidx/compose/ui/text/intl/AndroidLocaleDelegateAPI23;-><init>()V
-HSPLandroidx/compose/ui/text/intl/AndroidLocaleDelegateAPI23;->getCurrent()Ljava/util/List;
-HSPLandroidx/compose/ui/text/intl/AndroidLocaleDelegateAPI23;->parseLanguageTag(Ljava/lang/String;)Landroidx/compose/ui/text/intl/PlatformLocale;
 Landroidx/compose/ui/text/intl/AndroidLocaleDelegateAPI24;
 HSPLandroidx/compose/ui/text/intl/AndroidLocaleDelegateAPI24;-><init>()V
 HSPLandroidx/compose/ui/text/intl/AndroidLocaleDelegateAPI24;->getCurrent()Ljava/util/List;
@@ -9189,7 +9185,6 @@ Landroidx/compose/ui/text/intl/AndroidPlatformLocale_androidKt;
 Landroidx/compose/ui/text/intl/Locale$Companion;
 HSPLandroidx/compose/ui/text/intl/Locale$Companion;-><init>()V
 HSPLandroidx/compose/ui/text/intl/Locale$Companion;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
-HSPLandroidx/compose/ui/text/intl/Locale$Companion;->getCurrent()Landroidx/compose/ui/text/intl/Locale;
 Landroidx/compose/ui/text/intl/Locale;
 HSPLandroidx/compose/ui/text/intl/Locale;-><clinit>()V
 HSPLandroidx/compose/ui/text/intl/Locale;-><init>(Landroidx/compose/ui/text/intl/PlatformLocale;)V
@@ -10456,14 +10451,8 @@ HSPLandroidx/activity/ComponentActivity$$ExternalSyntheticLambda3;-><init>(Landr
 Landroidx/appcompat/widget/Toolbar$$ExternalSyntheticLambda0;
 HSPLandroidx/appcompat/widget/Toolbar$$ExternalSyntheticLambda0;-><init>(Landroidx/appcompat/widget/Toolbar;)V
 HSPLandroidx/appcompat/widget/Toolbar$$ExternalSyntheticLambda0;->run()V
-Landroidx/compose/animation/core/ComplexDouble$$ExternalSyntheticBackport0;
-HSPLandroidx/compose/animation/core/ComplexDouble$$ExternalSyntheticBackport0;->m(D)I
 Landroidx/compose/animation/core/MutatorMutex$$ExternalSyntheticBackportWithForwarding0;
 HSPLandroidx/compose/animation/core/MutatorMutex$$ExternalSyntheticBackportWithForwarding0;->m(Ljava/util/concurrent/atomic/AtomicReference;Ljava/lang/Object;Ljava/lang/Object;)Z
-Landroidx/compose/animation/core/StartOffset$$ExternalSyntheticBackport0;
-HSPLandroidx/compose/animation/core/StartOffset$$ExternalSyntheticBackport0;->m(J)I
-Landroidx/compose/foundation/layout/BoxChildData$$ExternalSyntheticBackport0;
-HSPLandroidx/compose/foundation/layout/BoxChildData$$ExternalSyntheticBackport0;->m(Z)I
 Landroidx/compose/ui/graphics/AndroidImageBitmap_androidKt$$ExternalSyntheticApiModelOutline0;
 HSPLandroidx/compose/ui/graphics/AndroidImageBitmap_androidKt$$ExternalSyntheticApiModelOutline0;->m()Landroid/graphics/Bitmap$Config;
 Landroidx/compose/ui/graphics/AndroidImageBitmap_androidKt$$ExternalSyntheticApiModelOutline1;
@@ -10540,12 +10529,6 @@ Landroidx/compose/ui/text/android/StaticLayoutFactory26$$ExternalSyntheticApiMod
 HSPLandroidx/compose/ui/text/android/StaticLayoutFactory26$$ExternalSyntheticApiModelOutline0;->m(Landroid/text/StaticLayout$Builder;I)Landroid/text/StaticLayout$Builder;
 Landroidx/compose/ui/text/android/StaticLayoutFactory28$$ExternalSyntheticApiModelOutline0;
 HSPLandroidx/compose/ui/text/android/StaticLayoutFactory28$$ExternalSyntheticApiModelOutline0;->m(Landroid/text/StaticLayout$Builder;Z)Landroid/text/StaticLayout$Builder;
-Landroidx/compose/ui/text/intl/AndroidLocaleDelegateAPI24$$ExternalSyntheticApiModelOutline0;
-HSPLandroidx/compose/ui/text/intl/AndroidLocaleDelegateAPI24$$ExternalSyntheticApiModelOutline0;->m()Landroid/os/LocaleList;
-Landroidx/compose/ui/text/intl/AndroidLocaleDelegateAPI24$$ExternalSyntheticApiModelOutline1;
-HSPLandroidx/compose/ui/text/intl/AndroidLocaleDelegateAPI24$$ExternalSyntheticApiModelOutline1;->m(Landroid/os/LocaleList;)I
-Landroidx/compose/ui/text/intl/AndroidLocaleDelegateAPI24$$ExternalSyntheticApiModelOutline2;
-HSPLandroidx/compose/ui/text/intl/AndroidLocaleDelegateAPI24$$ExternalSyntheticApiModelOutline2;->m(Landroid/os/LocaleList;I)Ljava/util/Locale;
 Landroidx/compose/ui/text/platform/TypefaceAdapterHelperMethods$$ExternalSyntheticApiModelOutline0;
 HSPLandroidx/compose/ui/text/platform/TypefaceAdapterHelperMethods$$ExternalSyntheticApiModelOutline0;->m(Landroid/graphics/Typeface;IZ)Landroid/graphics/Typeface;
 Landroidx/lifecycle/ProcessLifecycleOwner$$ExternalSyntheticLambda0;

@@ -22,6 +22,7 @@ import com.fitzay.workouttracker.strengthtraining.core.utils.downloadmanager.Dow
 import com.fitzay.workouttracker.strengthtraining.core.utils.downloadmanager.OnDownloadProgressListener
 import com.fitzay.workouttracker.strengthtraining.di.Component
 import com.fitzay.workouttracker.strengthtraining.domain.models.CategoriesModel
+import com.fitzay.workouttracker.strengthtraining.domain.models.FullbodyCategoriesModel
 import com.fitzay.workouttracker.strengthtraining.domain.models.QuotesModel
 import com.fitzay.workouttracker.strengthtraining.domain.models.RingTone
 import com.fitzay.workouttracker.strengthtraining.domain.models.WorkOutModel
@@ -464,6 +465,14 @@ fun Context.categories(): ArrayList<CategoriesModel> {
     val gson = Gson()
     val listPersonType = object : TypeToken<List<CategoriesModel>>() {}.type
     val jsonFileString = this.getJsonDataFromAsset("categories.json")
+    return gson.fromJson(jsonFileString, listPersonType)
+}
+
+
+fun Context.fullcategoriesbegginer(): ArrayList<FullbodyCategoriesModel> {
+    val gson = Gson()
+    val listPersonType = object : TypeToken<List<FullbodyCategoriesModel>>() {}.type
+    val jsonFileString = this.getJsonDataFromAsset("fullbody_weekly_beginner.json")
     return gson.fromJson(jsonFileString, listPersonType)
 }
 

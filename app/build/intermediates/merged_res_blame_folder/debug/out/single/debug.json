@@ -3004,6 +3004,10 @@
         "source": "com.fitzay.workouttracker.strengthtraining.app-core-1.12.0-14:/drawable/notification_bg.xml"
     },
     {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-94:/drawable_ic_goalcap.xml.flat",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-main-96:/drawable/ic_goalcap.xml"
+    },
+    {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-94:/color-v31_m3_ref_palette_dynamic_neutral96.xml.flat",
         "source": "com.fitzay.workouttracker.strengthtraining.app-material-1.10.0-38:/color-v31/m3_ref_palette_dynamic_neutral96.xml"
     },
@@ -4718,6 +4722,10 @@
     {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-94:/drawable_bg_topcornered.xml.flat",
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-96:/drawable/bg_topcornered.xml"
+    },
+    {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-94:/drawable_bg_selected_options_tab.xml.flat",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-main-96:/drawable/bg_selected_options_tab.xml"
     },
     {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-94:/drawable-xxxhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",

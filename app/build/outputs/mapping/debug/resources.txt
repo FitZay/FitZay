@@ -381,7 +381,11 @@ Marking id:tvTitle:2131362751 reachable: referenced from D:\Izhar\Final Release 
 Marking layout:dialog_step_goal:2131558480 reachable: referenced from D:\Izhar\Final Release FitnessApplication\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking id:constraintLayout10:2131362010 reachable: referenced from D:\Izhar\Final Release FitnessApplication\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking id:constraintLayout11:2131362011 reachable: referenced from D:\Izhar\Final Release FitnessApplication\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
+Marking id:constraintLayout12:2131362851 reachable: referenced from D:\Izhar\Final Release FitnessApplication\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
+Marking id:constraintLayout15:2131362862 reachable: referenced from D:\Izhar\Final Release FitnessApplication\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking id:constraintLayout21:2131362016 reachable: referenced from D:\Izhar\Final Release FitnessApplication\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
+Marking id:constraintLayout29:2131362852 reachable: referenced from D:\Izhar\Final Release FitnessApplication\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
+Marking id:constraintLayout30:2131362863 reachable: referenced from D:\Izhar\Final Release FitnessApplication\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking id:materialCardView10:2131362325 reachable: referenced from D:\Izhar\Final Release FitnessApplication\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking id:materialCardView11:2131362326 reachable: referenced from D:\Izhar\Final Release FitnessApplication\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking id:materialCardView12:2131362327 reachable: referenced from D:\Izhar\Final Release FitnessApplication\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
@@ -395,13 +399,31 @@ Marking id:materialCardView25:2131362335 reachable: referenced from D:\Izhar\Fin
 Marking id:materialCardView26:2131362336 reachable: referenced from D:\Izhar\Final Release FitnessApplication\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking id:materialCardView27:2131362337 reachable: referenced from D:\Izhar\Final Release FitnessApplication\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking id:materialCardView28:2131362338 reachable: referenced from D:\Izhar\Final Release FitnessApplication\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
-Marking id:materialCardView4:2131362340 reachable: referenced from D:\Izhar\Final Release FitnessApplication\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
+Marking id:materialCardView31:2131362853 reachable: referenced from D:\Izhar\Final Release FitnessApplication\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
+Marking id:materialCardView32:2131362854 reachable: referenced from D:\Izhar\Final Release FitnessApplication\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
+Marking id:materialCardView33:2131362855 reachable: referenced from D:\Izhar\Final Release FitnessApplication\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
+Marking id:materialCardView34:2131362856 reachable: referenced from D:\Izhar\Final Release FitnessApplication\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
+Marking id:materialCardView35:2131362857 reachable: referenced from D:\Izhar\Final Release FitnessApplication\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
+Marking id:materialCardView36:2131362858 reachable: referenced from D:\Izhar\Final Release FitnessApplication\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
+Marking id:materialCardView37:2131362859 reachable: referenced from D:\Izhar\Final Release FitnessApplication\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
+Marking id:materialCardView38:2131362860 reachable: referenced from D:\Izhar\Final Release FitnessApplication\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking id:materialCardView8:2131362344 reachable: referenced from D:\Izhar\Final Release FitnessApplication\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking id:materialCardView9:2131362345 reachable: referenced from D:\Izhar\Final Release FitnessApplication\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking id:textView20:2131362670 reachable: referenced from D:\Izhar\Final Release FitnessApplication\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking id:textView22:2131362672 reachable: referenced from D:\Izhar\Final Release FitnessApplication\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking id:textView27:2131362677 reachable: referenced from D:\Izhar\Final Release FitnessApplication\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
+Marking id:textView30:2131362861 reachable: referenced from D:\Izhar\Final Release FitnessApplication\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
+Marking id:textView31:2131362872 reachable: referenced from D:\Izhar\Final Release FitnessApplication\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking id:textView6:2131362681 reachable: referenced from D:\Izhar\Final Release FitnessApplication\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
+Marking id:weekonedayoneBtn:2131362873 reachable: referenced from D:\Izhar\Final Release FitnessApplication\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
+Marking id:weekonedayoneBtn1:2131362874 reachable: referenced from D:\Izhar\Final Release FitnessApplication\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
+Marking id:weekonedayoneBtn2:2131362875 reachable: referenced from D:\Izhar\Final Release FitnessApplication\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
+Marking id:weekonedayoneBtn3:2131362876 reachable: referenced from D:\Izhar\Final Release FitnessApplication\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
+Marking id:weekonedayoneBtn4:2131362877 reachable: referenced from D:\Izhar\Final Release FitnessApplication\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
+Marking id:weekonedayoneBtn5:2131362878 reachable: referenced from D:\Izhar\Final Release FitnessApplication\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
+Marking id:weekonedayoneBtn6:2131362879 reachable: referenced from D:\Izhar\Final Release FitnessApplication\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
+Marking id:weekonedayoneBtn7:2131362880 reachable: referenced from D:\Izhar\Final Release FitnessApplication\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
+Marking id:weekonedayoneBtn8:2131362881 reachable: referenced from D:\Izhar\Final Release FitnessApplication\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking layout:activity_fullbody_workout:2131558438 reachable: referenced from D:\Izhar\Final Release FitnessApplication\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking string:allow_required_permissions:2131951646 reachable: referenced from D:\Izhar\Final Release FitnessApplication\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking id:btnDay1:2131361928 reachable: referenced from D:\Izhar\Final Release FitnessApplication\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
@@ -472,6 +494,7 @@ Marking drawable:to_easy:2131231176 reachable: referenced from D:\Izhar\Final Re
 Marking drawable:too_hard_dim:2131231180 reachable: referenced from D:\Izhar\Final Release FitnessApplication\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking drawable:to_easy_dim:2131231177 reachable: referenced from D:\Izhar\Final Release FitnessApplication\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking drawable:just_right_dim:2131231085 reachable: referenced from D:\Izhar\Final Release FitnessApplication\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
+Marking drawable:bg_selected_options_tab:2131231192 reachable: referenced from D:\Izhar\Final Release FitnessApplication\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking layout:marker_view_line_chart:2131558511 reachable: referenced from D:\Izhar\Final Release FitnessApplication\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking drawable:bg_graph:2131230883 reachable: referenced from D:\Izhar\Final Release FitnessApplication\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking font:eina_02_regular:2131296258 reachable: referenced from D:\Izhar\Final Release FitnessApplication\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
@@ -985,6 +1008,7 @@ API_NOT_CONNECTED
 rows
 setNativeStrokeMiterLimit
 WidthMask
+getDay
 getOwner$ui_release
 Array
 TaggingLibraryJsInterface.getClickSig...
@@ -1083,6 +1107,7 @@ getColumnIndexOrThrow
 groupGet
 onBufferOverflow
 decrypt
+fullcategoriesbegginer
 ordinal
 CANCEL_BUTTON_TAG
 getCheckType
@@ -1228,6 +1253,7 @@ AacUtil
 fadeIn
 setThumbIconSize
 /adMuted
+fullbodygetCat
 producerIndex
 linkToDeath
 gmp_version
@@ -1577,12 +1603,14 @@ WeeklyFragment.kt
 adapter_v
 traverseTime
 superDescriptor.original
+getListofworkmodel
 minimum_fetch_interval_in_seconds
 stepEntity
 trimToSize
 measurables
 cup100
 KEY_NOTIFICATION_ID
+fullbody_weekly_beginner.json
 os_version
 SetTextI18n
 TYPE_FOR_COMPILER_EXCEPTION
@@ -1828,7 +1856,6 @@ getOnDragStopped
 hue2rgb
 numbers
 isReturnTypeMoreSpecific
-DrawableDelegate
 ACTION_CANCEL_WORK
 getInType
 clickToExpandAllowed
@@ -2157,7 +2184,6 @@ typeAliasExpansion
 BM
 BN
 Chip
-VectorDrawableCompat
 BO
 C1
 BQ
@@ -3516,7 +3542,6 @@ manual_install
 pn
 sourceUnit
 pp
-valueTo
 region.bounds
 commitCorrection
 stepDao
@@ -4224,6 +4249,7 @@ createFailure
 gads:inspector:credentials_enabled
 GPSTrackRef
 extra
+setDay
 UNINFERRED_LAMBDA_PARAMETER_TYPE
 _endInclusive
 classDescriptor.constructors
@@ -4398,6 +4424,7 @@ endX
 gads:signals:attestation_token:enabled
 com.google.android.gms.signin.interna...
 INDECISIVE
+getFullbodyWorkouts
 setExId
 consent_status
 measurement.link_sst_to_sid
@@ -4472,6 +4499,7 @@ surface$delegate
 longPressTimeoutMillis
 onPerformRelocation
 reverse
+weekonedayoneBtn
 threadLocalIsSet
 FIXED32_LIST
 setRemoteFitzayConfig
@@ -4585,7 +4613,6 @@ Dream
 classProto.constructorList
 Freestyle
 java.vendor.url
-propertyValuesHolder
 _absentArguments
 layoutChildren$ui_release
 migrationStartAndEndVersions
@@ -4940,8 +4967,8 @@ setList
 alarmSnoozeTime
 functionDescriptor
 jvmType.primitiveType
-propertyName
 oldest
+propertyName
 getModuleData
 WorkProgress
 rowIndex
@@ -5215,6 +5242,7 @@ utm_creative_format
 getCalculateNestedScrollScope$ui_release
 writeData
 gads:recursive:adapter_response_info:...
+EXTRA_Activity
 invalidateStack
 androidx.datastore.core.SimpleActor$o...
 userProfilePath
@@ -5390,7 +5418,6 @@ _clockTickColor$delegate
 androidx.compose.material.SwipeableSt...
 custom_close
 location_id
-addLikelySubtags
 number
 getCaller
 newPending
@@ -5512,7 +5539,6 @@ gads:safe_browsing:api_key
 GIONEE_WBL5708
 propagated.returnType
 ERAS
-OP_POST_NOTIFICATION
 sendBroadcast
 getMutableIterator
 registerWebSource
@@ -5795,6 +5821,7 @@ gads:http_assets_cache:regex
 gads:sdk_csi_server
 gads:load_with_overview_mode:enabled
 etNameInput
+constraintLayout29
 cancelHandler
 getConsumed
 getKeyInfos
@@ -5815,9 +5842,11 @@ Grunge
 prefernece
 gads:native:engine_url_with_protocol
 UncloseableOutputStream
+constraintLayout12
 birthDateDay
 startObserving$ui_release
 journal.tmp
+constraintLayout15
 constraintLayout14
 limited_ad_tracking
 dependsOnTypeConstructors
@@ -5932,6 +5961,7 @@ gads:rtb_logging:regex
 substringBeforeLast
 impression_reporting
 getWrappedBy$ui_release
+movetonextActivity
 thisParams
 kotlin.annotations.jvm.Mutable
 ga_session_number
@@ -5946,6 +5976,7 @@ androidx/lifecycle/SavedStateHandleSu...
 RMFragment
 canLoadSynchronously
 endsWith
+setActivityType
 notification_flow_disabled
 gads:msa:experiments:enabled
 estimateCriticallyDamped
@@ -6033,6 +6064,7 @@ beginTransaction
 previousMoveTo
 setFocused
 getOetf
+constraintLayout30
 DefaultColor
 loadParameterTypes
 AD_PERSONALIZATION
@@ -6281,6 +6313,7 @@ period_start_time
 getAngleStart
 getMatrix
 measurement.rb.attribution.service
+getEx_id
 SuggestionsAdapter
 _lifecycleRegistry
 MinFocusHeight
@@ -6564,6 +6597,7 @@ INCOMPATIBLE
 scrollHorizontallyBy
 com.google.android.gms.permission.AD_ID
 CameraSettingsIFDPointer
+week
 aeh2
 configurationChangeObserver
 developmentPlatform
@@ -6650,16 +6684,24 @@ transformFirst
 /videoClicked
 txtToolbar
 androidx/compose/ui/node/LayoutNode$m...
+weekonedayoneBtn8
 toState
 onBackPressedCallbacks
 kotlin/sequences/SequencesKt___Sequen...
 key_action_priority
 NumberPassword
+weekonedayoneBtn2
+weekonedayoneBtn3
 getOrElse
+weekonedayoneBtn1
 constructor.parameterTypes
+weekonedayoneBtn6
 gads:loaded_adapter_response_response...
+weekonedayoneBtn7
 measurement.lifecycle.app_backgrounde...
 initTasks
+weekonedayoneBtn4
+weekonedayoneBtn5
 getRereading
 getSelectedItemTxtColor
 userTargetWightType
@@ -7310,6 +7352,7 @@ gads:video:metric_reporting_enabled
 record
 parentStates
 parentScope
+listoffullbodies
 sai_timeout
 getFullName
 setItemPos
@@ -7399,6 +7442,7 @@ NativeJavascriptExecutor.initializeEn...
 BirthDateMonth
 migrationsNotRequiredFrom
 /pcs/click
+getListoffullbodies
 down
 gads:nonagon:interstitial:enabled
 decimalHours
@@ -7599,7 +7643,6 @@ millis
 getYAxisLabel
 UNDISPATCHED
 emitter
-objectAnimator
 LambdaLast
 UNRESOLVED_DECLARATION
 getSliderWidth
@@ -7664,7 +7707,6 @@ CLOCK_HOUR_OF_DAY
 patch
 positionInRoot
 sizes
-valueType
 $this$connect
 migrationNotRequiredFrom
 height
@@ -7839,6 +7881,7 @@ taskExecutor
 onActivityPreSaveInstanceState
 deferred_attribution_cache_timestamp
 android.os.WorkSource$WorkChain
+EXTRA_EXERCISE_ID
 Z12_PRO
 WorkProgressUpdater
 LOW
@@ -7943,7 +7986,6 @@ noBackupDirectory
 androidx.core.view.inputmethod.Editor...
 kotlin/text/StringsKt___StringsKt
 statistic_name
-AnimatedVDCompat
 parent_ad_config
 LTE
 requestUptimeMs
@@ -8560,6 +8602,7 @@ workerFactory
 kotlinx.coroutines.bufferedChannel.ex...
 updateLayerParameters
 p212
+getActivityType
 Api24Impl
 getSUPPORT_MISSING$annotations
 ACTION_REQUEST_PERMISSIONS
@@ -9151,7 +9194,6 @@ correctPrev
 Mon
 View
 Dispatchers.Main.immediate
-valueFrom
 invalidatedTablesIds
 enqueue
 completed_requests
@@ -9377,7 +9419,6 @@ optional
 com.google.android.gms.ads.internal.m...
 gads:content_vertical_fingerprint_bits
 ad_event_id
-keyframe
 currentValue$delegate
 app_last_background_time_ms
 mapNotNull
@@ -9583,7 +9624,6 @@ getCollectToFun$kotlinx_coroutines_core
 httpTimeoutMillis
 bindDouble
 requireIndexInRange
-ICUCompat
 com.google.android.c2dm.intent.RECEIVE
 Phantom6
 createRootScopeDefinition$koin_core
@@ -9824,7 +9864,6 @@ gads:get_request_signals_cld:enabled
 _closeCause
 .vtt
 createProgram
-AvdcInflateDelegate
 gads:pause_time_update_when_video_com...
 onRewardedAdClosed
 CctTransportBackend
@@ -10040,6 +10079,7 @@ doBeforeTextChanged
 getInvisibleToUser$annotations
 addFontFromAssetManager
 $this$setFrom
+fullbody
 BUY_INTENT
 getSize
 getPrimitiveArrayClassDescriptor
@@ -10091,7 +10131,6 @@ setShadowElevation
 getValueClassPropertyType
 cancellation
 originalTimeoutMillis
-interpolator
 requestLayout
 isAntiAlias
 androidx/compose/ui/graphics/colorspa...
@@ -10314,7 +10353,6 @@ EmojiCompat.MetadataRepo.create
 layout/activity_sleep_summary_0
 TransitionAnimationState
 gads:afs:csa:experiment_id
-AsldcInflateDelegate
 onClick
 instance
 setGraphicsDensity$ui_release
@@ -10721,6 +10759,7 @@ androidx.compose.runtime.Recomposer$j...
 remAssign
 mutableCollisionRemove
 FirstPartyNativeAdCore.performCustomC...
+setCat_id
 SHA256
 processBoundsWithoutCycles
 performance
@@ -10728,6 +10767,7 @@ copyOfRangeImpl
 IDLE
 serif
 interCallback
+activityType
 DATA_DISK_CACHE
 getArrayType
 getTableIdLookup$room_runtime_release
@@ -10921,6 +10961,7 @@ placementBlock
 emitAbort
 c.module.builtIns.defaultBound
 containerApplicabilityType
+setWeek
 setEquals$kotlin_stdlib
 FocalLengthIn35mmFilm
 rememberCompositionContext
@@ -11056,6 +11097,7 @@ fitnessViewModelModule
 projectionComputer
 publisherProvidedId
 getHolderToLayoutNode
+setListofworkmodel
 getOnAutoCloseCallback$room_runtime_r...
 isShowingAd
 recordPreviousList$runtime_release
@@ -12005,6 +12047,7 @@ collectParameterInformation
 gads:video:metric_frame_hash_times
 token
 doesReceiverFitForProtectedVisibility
+listofworkmodel
 formattedPrice
 LocalTextToolbar
 bytecodeVersion
@@ -12058,7 +12101,6 @@ getMainAxisMax
 _scopes.values
 get_source$annotations
 extra_time_goal
-libcore.icu.ICU
 ScrollBy
 Screen
 /ByteArray
@@ -12115,7 +12157,6 @@ _typeParameters
 Infinite
 doneComposing
 tel
-setBase
 request_info_keys
 SDK
 com.google.firebase.common.prefs:
@@ -12180,7 +12221,6 @@ getSessionIndex
 val$foregroundFuture
 resolve
 setSliderRangeGradientStartRes
-propertyXName
 mergedReadObserver
 isAnonymousFunction
 click_urls
@@ -13850,7 +13890,6 @@ google.afma.config.fetchAppSettings
 getBottomBorder
 dialogInterface
 getEnd$annotations
-startOffset
 includeReplacedSemantics
 mediaview_graphics_matrix
 getFinishRequested
@@ -13947,7 +13986,6 @@ double
 baseAddress
 materialCardView5
 GET_PARSER
-materialCardView4
 INSTANCE
 mutableStateOf
 materialCardView9
@@ -15040,7 +15078,6 @@ TypefaceCompatApi24Impl
 getByteType
 PRETTY
 toWrap
-0_resource_name_obfuscated
 Unreachable
 RewardedAdLoader.onFailure
 onFrame
@@ -15242,7 +15279,6 @@ stopTrackingTable
 setRemoveOnCancelPolicy
 subList
 pool_key
-checkOpNoThrow
 HMACSHA384
 getMinDimension$annotations
 onInvalidateRipple
@@ -15880,6 +15916,7 @@ OS_NAME
 transferParameters
 getBoundsInRoot
 vpr2
+setEx_id
 propagateMinConstraints
 isLazy
 temporal
@@ -16014,7 +16051,6 @@ isSetOrNullableSet
 fitAdTotal
 setClipToScreenEnabled
 四
-getMaxAvailableHeight
 Pair
 native_media_orientation
 DEVELOPER
@@ -16815,7 +16851,6 @@ realValueParams
 vectorSize
 personFamilyName
 coroutines
-VdcInflateDelegate
 MainContent
 adapter_init_started
 layoutSnooze2
@@ -16831,7 +16866,6 @@ layout_constraintEnd_toStartOf
 allocateList
 createEnumValueOfMethod
 NO_UNSUPPORTED_DRM
-propertyYName
 finishComposingText
 e_id
 InvalidNullConversion
@@ -17672,6 +17706,7 @@ object
 frameLayout
 destinationFile
 produceFile
+EXTRA_WEEk
 setNextSelectedPositionInt
 WorkForegroundRunnable
 EXTRA_DESCRIPTORS
@@ -19697,7 +19732,6 @@ velRingCounter
 common_google_play_services_resolutio...
 video/webm
 etWeightInput
-ordering
 setBuiltInsModule
 MAX_VALUE
 shouldBeRegistered
@@ -20070,6 +20104,7 @@ horizontalScrollAxisRange
 etAgeInput
 onSessionChanged
 groupsSize
+getCat_id
 getArgumentRange
 getCause
 cancellable
@@ -20287,6 +20322,7 @@ newTail
 getCONDITION_FALSE$annotations
 androidx/compose/foundation/layout/Ar...
 boolean
+setListoffullbodies
 com.google.firebase.remoteconfig.Fire...
 DataBinding
 gads:app_open_precache_pool:count
@@ -20650,6 +20686,8 @@ param_name
 rcpResponse
 StateFlow.kt
 packagePartProvider
+materialCardView37
+materialCardView38
 dispatchOnPositionedCallbacks$ui_release
 gad:interstitial_ad_stay_active_in_mu...
 startCoroutine
@@ -20828,11 +20866,17 @@ getSelected
 readIndices
 _si
 androidx/compose/ui/platform/Accessib...
+materialCardView33
+materialCardView34
 CONFIG_UPDATE_UNAVAILABLE
+materialCardView35
 getIdd
+materialCardView36
 _sn
 custom_assets
+materialCardView31
 FULL_WIDTH
+materialCardView32
 _sr
 ApertureValue
 isNullableAny
@@ -21000,6 +21044,7 @@ getValues
 upperSet
 getRingToneList
 createExtensionReceiverParameterForCa...
+getWeek
 entriesIterator$kotlin_stdlib
 removeGroups
 mAttachInfo
@@ -21272,7 +21317,10 @@ com.google.android.gms.ads.MobileAdsS...
 androidx/compose/ui/graphics/colorspa...
 session_user_engagement
 intercepted
+textView31
 coerceAtLeast
+textView30
+Gotitintheface
 ᠌ ဇဈဈဈ
 getFirebaseInstallationId
 mVisibleInsets
@@ -25673,6 +25721,7 @@ Marking drawable:btn_radio_off_mtrl:2131230918 used because it matches string po
 Marking drawable:btn_radio_off_to_on_mtrl_animation:2131230919 used because it matches string pool constant b
 Marking drawable:btn_radio_on_mtrl:2131230920 used because it matches string pool constant b
 Marking drawable:btn_radio_on_to_off_mtrl_animation:2131230921 used because it matches string pool constant b
+Marking drawable:bg_selected_options_tab:2131231192 used because it matches string pool constant b
 Marking font:bebas_neue:2131296256 used because it matches string pool constant b
 Marking id:back_dialog:2131361902 used because it matches string pool constant b
 Marking id:background:2131361903 used because it matches string pool constant b
@@ -26120,6 +26169,10 @@ Marking id:customDrawer:2131362043 used because it matches string pool constant 
 Marking id:customLayout:2131362044 used because it matches string pool constant c
 Marking id:customPanel:2131362045 used because it matches string pool constant c
 Marking id:cut:2131362046 used because it matches string pool constant c
+Marking id:constraintLayout12:2131362851 used because it matches string pool constant c
+Marking id:constraintLayout29:2131362852 used because it matches string pool constant c
+Marking id:constraintLayout15:2131362862 used because it matches string pool constant c
+Marking id:constraintLayout30:2131362863 used because it matches string pool constant c
 Marking integer:cancel_button_image_alpha:2131427332 used because it matches string pool constant c
 Marking integer:config_tooltipAnimTime:2131427333 used because it matches string pool constant c
 Marking layout:categories_layout:2131558459 used because it matches string pool constant c
@@ -26969,6 +27022,7 @@ Marking drawable:img_strength:2131231080 used because it matches string pool con
 Marking drawable:img_water_reminder:2131231081 used because it matches string pool constant i
 Marking drawable:img_women_skinny:2131231082 used because it matches string pool constant i
 Marking drawable:img_women_thighs:2131231083 used because it matches string pool constant i
+Marking drawable:ic_goalcap:2131231193 used because it matches string pool constant i
 Marking id:icCopy:2131362180 used because it matches string pool constant i
 Marking id:icExNext:2131362181 used because it matches string pool constant i
 Marking id:icExPrevious:2131362182 used because it matches string pool constant i
@@ -28755,7 +28809,6 @@ Marking id:materialCardView26:2131362336 used because it matches string pool con
 Marking id:materialCardView27:2131362337 used because it matches string pool constant m
 Marking id:materialCardView28:2131362338 used because it matches string pool constant m
 Marking id:materialCardView3:2131362339 used because it matches string pool constant m
-Marking id:materialCardView4:2131362340 used because it matches string pool constant m
 Marking id:materialCardView5:2131362341 used because it matches string pool constant m
 Marking id:materialCardView6:2131362342 used because it matches string pool constant m
 Marking id:materialCardView7:2131362343 used because it matches string pool constant m
@@ -28834,6 +28887,14 @@ Marking id:mtrl_picker_title_text:2131362415 used because it matches string pool
 Marking id:mtrl_view_tag_bottom_padding:2131362416 used because it matches string pool constant m
 Marking id:multiply:2131362417 used because it matches string pool constant m
 Marking id:my_composable:2131362418 used because it matches string pool constant m
+Marking id:materialCardView31:2131362853 used because it matches string pool constant m
+Marking id:materialCardView32:2131362854 used because it matches string pool constant m
+Marking id:materialCardView33:2131362855 used because it matches string pool constant m
+Marking id:materialCardView34:2131362856 used because it matches string pool constant m
+Marking id:materialCardView35:2131362857 used because it matches string pool constant m
+Marking id:materialCardView36:2131362858 used because it matches string pool constant m
+Marking id:materialCardView37:2131362859 used because it matches string pool constant m
+Marking id:materialCardView38:2131362860 used because it matches string pool constant m
 Marking integer:m3_badge_max_number:2131427338 used because it matches string pool constant m
 Marking integer:m3_btn_anim_delay_ms:2131427339 used because it matches string pool constant m
 Marking integer:m3_btn_anim_duration_ms:2131427340 used because it matches string pool constant m
@@ -30138,6 +30199,8 @@ Marking id:txtWednesday:2131362795 used because it matches string pool constant 
 Marking id:txtWeekly:2131362796 used because it matches string pool constant t
 Marking id:txtmin:2131362797 used because it matches string pool constant t
 Marking id:typeName:2131362798 used because it matches string pool constant t
+Marking id:textView30:2131362861 used because it matches string pool constant t
+Marking id:textView31:2131362872 used because it matches string pool constant t
 Marking layout:text_layout:2131558608 used because it matches string pool constant t
 Marking raw:task_complete:2131886082 used because it matches string pool constant t
 Marking string:tab:2131951992 used because it matches string pool constant t
@@ -30307,6 +30370,15 @@ Marking id:wrap:2131362843 used because it matches string pool constant w
 Marking id:wrap_content:2131362844 used because it matches string pool constant w
 Marking id:wrap_content_constrained:2131362845 used because it matches string pool constant w
 Marking id:wrapped_composition_tag:2131362846 used because it matches string pool constant w
+Marking id:weekonedayoneBtn:2131362873 used because it matches string pool constant w
+Marking id:weekonedayoneBtn1:2131362874 used because it matches string pool constant w
+Marking id:weekonedayoneBtn2:2131362875 used because it matches string pool constant w
+Marking id:weekonedayoneBtn3:2131362876 used because it matches string pool constant w
+Marking id:weekonedayoneBtn4:2131362877 used because it matches string pool constant w
+Marking id:weekonedayoneBtn5:2131362878 used because it matches string pool constant w
+Marking id:weekonedayoneBtn6:2131362879 used because it matches string pool constant w
+Marking id:weekonedayoneBtn7:2131362880 used because it matches string pool constant w
+Marking id:weekonedayoneBtn8:2131362881 used because it matches string pool constant w
 Marking string:water_reminder:2131952038 used because it matches string pool constant w
 Marking string:watermark_label_prefix:2131952039 used because it matches string pool constant w
 Marking string:wednesday:2131952040 used because it matches string pool constant w
@@ -31625,6 +31697,7 @@ Marking drawable:ic_tick:2131231074 used because it matches string pool constant
 Marking drawable:ic_video_unlock:2131231075 used because it matches string pool constant ic
 Marking drawable:ic_water_edit:2131231076 used because it matches string pool constant ic
 Marking drawable:ic_water_yellow:2131231077 used because it matches string pool constant ic
+Marking drawable:ic_goalcap:2131231193 used because it matches string pool constant ic
 Marking id:icCopy:2131362180 used because it matches string pool constant ic
 Marking id:icExNext:2131362181 used because it matches string pool constant ic
 Marking id:icExPrevious:2131362182 used because it matches string pool constant ic
@@ -32151,7 +32224,6 @@ Marking id:materialCardView26:2131362336 used because it matches string pool con
 Marking id:materialCardView27:2131362337 used because it matches string pool constant ma
 Marking id:materialCardView28:2131362338 used because it matches string pool constant ma
 Marking id:materialCardView3:2131362339 used because it matches string pool constant ma
-Marking id:materialCardView4:2131362340 used because it matches string pool constant ma
 Marking id:materialCardView5:2131362341 used because it matches string pool constant ma
 Marking id:materialCardView6:2131362342 used because it matches string pool constant ma
 Marking id:materialCardView7:2131362343 used because it matches string pool constant ma
@@ -32179,6 +32251,14 @@ Marking id:material_timepicker_ok_button:2131362364 used because it matches stri
 Marking id:material_timepicker_view:2131362365 used because it matches string pool constant ma
 Marking id:material_value_index:2131362366 used because it matches string pool constant ma
 Marking id:matrix:2131362367 used because it matches string pool constant ma
+Marking id:materialCardView31:2131362853 used because it matches string pool constant ma
+Marking id:materialCardView32:2131362854 used because it matches string pool constant ma
+Marking id:materialCardView33:2131362855 used because it matches string pool constant ma
+Marking id:materialCardView34:2131362856 used because it matches string pool constant ma
+Marking id:materialCardView35:2131362857 used because it matches string pool constant ma
+Marking id:materialCardView36:2131362858 used because it matches string pool constant ma
+Marking id:materialCardView37:2131362859 used because it matches string pool constant ma
+Marking id:materialCardView38:2131362860 used because it matches string pool constant ma
 Marking integer:material_motion_duration_long_1:2131427367 used because it matches string pool constant ma
 Marking integer:material_motion_duration_long_2:2131427368 used because it matches string pool constant ma
 Marking integer:material_motion_duration_medium_1:2131427369 used because it matches string pool constant ma
@@ -32827,6 +32907,16 @@ Marking id:reverse:2131362526 used because it matches string pool constant rever
 Marking attr:reverseLayout:2130969570 used because it matches string pool constant reverse
 Marking id:reverse:2131362526 used because it matches string pool constant reverse
 Marking id:reverseSawtooth:2131362527 used because it matches string pool constant reverse
+Marking id:weekonedayoneBtn:2131362873 used because it matches string pool constant weekonedayoneBtn
+Marking id:weekonedayoneBtn:2131362873 used because it matches string pool constant weekonedayoneBtn
+Marking id:weekonedayoneBtn1:2131362874 used because it matches string pool constant weekonedayoneBtn
+Marking id:weekonedayoneBtn2:2131362875 used because it matches string pool constant weekonedayoneBtn
+Marking id:weekonedayoneBtn3:2131362876 used because it matches string pool constant weekonedayoneBtn
+Marking id:weekonedayoneBtn4:2131362877 used because it matches string pool constant weekonedayoneBtn
+Marking id:weekonedayoneBtn5:2131362878 used because it matches string pool constant weekonedayoneBtn
+Marking id:weekonedayoneBtn6:2131362879 used because it matches string pool constant weekonedayoneBtn
+Marking id:weekonedayoneBtn7:2131362880 used because it matches string pool constant weekonedayoneBtn
+Marking id:weekonedayoneBtn8:2131362881 used because it matches string pool constant weekonedayoneBtn
 Marking id:chart:2131361969 used because it matches string pool constant char
 Marking string:character_counter_content_description:2131951681 used because it matches string pool constant char
 Marking string:character_counter_overflowed_content_description:2131951682 used because it matches string pool constant char
@@ -32972,8 +33062,14 @@ Marking id:layoutText:2131362285 used because it matches string pool constant la
 Marking id:layoutText:2131362285 used because it matches string pool constant layoutText
 Marking id:etNameInput:2131362110 used because it matches string pool constant etNameInput
 Marking id:etNameInput:2131362110 used because it matches string pool constant etNameInput
+Marking id:constraintLayout29:2131362852 used because it matches string pool constant constraintLayout29
+Marking id:constraintLayout29:2131362852 used because it matches string pool constant constraintLayout29
 Marking id:constraintLayout21:2131362016 used because it matches string pool constant constraintLayout21
 Marking id:constraintLayout21:2131362016 used because it matches string pool constant constraintLayout21
+Marking id:constraintLayout12:2131362851 used because it matches string pool constant constraintLayout12
+Marking id:constraintLayout12:2131362851 used because it matches string pool constant constraintLayout12
+Marking id:constraintLayout15:2131362862 used because it matches string pool constant constraintLayout15
+Marking id:constraintLayout15:2131362862 used because it matches string pool constant constraintLayout15
 Marking id:constraintLayout14:2131362013 used because it matches string pool constant constraintLayout14
 Marking id:constraintLayout14:2131362013 used because it matches string pool constant constraintLayout14
 Marking id:constraintLayout16:2131362014 used because it matches string pool constant constraintLayout16
@@ -32992,6 +33088,8 @@ Marking id:view2:2131362815 used because it matches string pool constant view2
 Marking id:view2:2131362815 used because it matches string pool constant view2
 Marking id:view3:2131362816 used because it matches string pool constant view3
 Marking id:view3:2131362816 used because it matches string pool constant view3
+Marking id:constraintLayout30:2131362863 used because it matches string pool constant constraintLayout30
+Marking id:constraintLayout30:2131362863 used because it matches string pool constant constraintLayout30
 Marking id:etGenderInput:2131362103 used because it matches string pool constant etGenderInput
 Marking id:etGenderInput:2131362103 used because it matches string pool constant etGenderInput
 Marking attr:layout_constraintBottom_toTopOf:2130969248 used because it matches string pool constant layout_constraintBottom_toTopOf
@@ -33045,6 +33143,17 @@ Marking color:foreground_material_dark:2131099760 used because it matches string
 Marking color:foreground_material_light:2131099761 used because it matches string pool constant foreground
 Marking id:doIt:2131362075 used because it matches string pool constant doIt
 Marking id:doIt:2131362075 used because it matches string pool constant doIt
+Marking id:weeklyBtn:2131362830 used because it matches string pool constant week
+Marking id:weeklytext:2131362831 used because it matches string pool constant week
+Marking id:weekonedayoneBtn:2131362873 used because it matches string pool constant week
+Marking id:weekonedayoneBtn1:2131362874 used because it matches string pool constant week
+Marking id:weekonedayoneBtn2:2131362875 used because it matches string pool constant week
+Marking id:weekonedayoneBtn3:2131362876 used because it matches string pool constant week
+Marking id:weekonedayoneBtn4:2131362877 used because it matches string pool constant week
+Marking id:weekonedayoneBtn5:2131362878 used because it matches string pool constant week
+Marking id:weekonedayoneBtn6:2131362879 used because it matches string pool constant week
+Marking id:weekonedayoneBtn7:2131362880 used because it matches string pool constant week
+Marking id:weekonedayoneBtn8:2131362881 used because it matches string pool constant week
 Marking raw:firebase_common_keep:2131886080 used because it matches string pool constant firebase_
 Marking id:left:2131362290 used because it matches string pool constant left
 Marking id:left:2131362290 used because it matches string pool constant left
@@ -33053,6 +33162,22 @@ Marking id:layoutAlarmSound2:2131362259 used because it matches string pool cons
 Marking id:layoutAlarmSound2:2131362259 used because it matches string pool constant layoutAlarmSound2
 Marking id:txtToolbar:2131362791 used because it matches string pool constant txtToolbar
 Marking id:txtToolbar:2131362791 used because it matches string pool constant txtToolbar
+Marking id:weekonedayoneBtn8:2131362881 used because it matches string pool constant weekonedayoneBtn8
+Marking id:weekonedayoneBtn8:2131362881 used because it matches string pool constant weekonedayoneBtn8
+Marking id:weekonedayoneBtn2:2131362875 used because it matches string pool constant weekonedayoneBtn2
+Marking id:weekonedayoneBtn2:2131362875 used because it matches string pool constant weekonedayoneBtn2
+Marking id:weekonedayoneBtn3:2131362876 used because it matches string pool constant weekonedayoneBtn3
+Marking id:weekonedayoneBtn3:2131362876 used because it matches string pool constant weekonedayoneBtn3
+Marking id:weekonedayoneBtn1:2131362874 used because it matches string pool constant weekonedayoneBtn1
+Marking id:weekonedayoneBtn1:2131362874 used because it matches string pool constant weekonedayoneBtn1
+Marking id:weekonedayoneBtn6:2131362879 used because it matches string pool constant weekonedayoneBtn6
+Marking id:weekonedayoneBtn6:2131362879 used because it matches string pool constant weekonedayoneBtn6
+Marking id:weekonedayoneBtn7:2131362880 used because it matches string pool constant weekonedayoneBtn7
+Marking id:weekonedayoneBtn7:2131362880 used because it matches string pool constant weekonedayoneBtn7
+Marking id:weekonedayoneBtn4:2131362877 used because it matches string pool constant weekonedayoneBtn4
+Marking id:weekonedayoneBtn4:2131362877 used because it matches string pool constant weekonedayoneBtn4
+Marking id:weekonedayoneBtn5:2131362878 used because it matches string pool constant weekonedayoneBtn5
+Marking id:weekonedayoneBtn5:2131362878 used because it matches string pool constant weekonedayoneBtn5
 Marking string:app_name:2131951650 used because it matches string pool constant app_name
 Marking string:app_name:2131951650 used because it matches string pool constant app_name
 Marking id:ringToneTime:2131362534 used because it matches string pool constant ringToneTime
@@ -33848,6 +33973,10 @@ Marking id:constraintLayout6:2131362020 used because it matches string pool cons
 Marking id:constraintLayout7:2131362021 used because it matches string pool constant const
 Marking id:constraintLayout8:2131362022 used because it matches string pool constant const
 Marking id:constraintLayout9:2131362023 used because it matches string pool constant const
+Marking id:constraintLayout12:2131362851 used because it matches string pool constant const
+Marking id:constraintLayout29:2131362852 used because it matches string pool constant const
+Marking id:constraintLayout15:2131362862 used because it matches string pool constant const
+Marking id:constraintLayout30:2131362863 used because it matches string pool constant const
 Marking string:in_progress:2131951786 used because it matches string pool constant in_progress
 Marking string:in_progress:2131951786 used because it matches string pool constant in_progress
 Marking id:layoutWater:2131362287 used because it matches string pool constant layoutWater
@@ -33867,6 +33996,7 @@ Marking id:clear_text:2131361996 used because it matches string pool constant cl
 Marking string:clear_text_end_icon_content_description:2131951685 used because it matches string pool constant clear
 Marking attr:methodName:2130969413 used because it matches string pool constant methodName
 Marking attr:methodName:2130969413 used because it matches string pool constant methodName
+Marking id:fullbodychBtn:2131362153 used because it matches string pool constant fullbody
 Marking id:imgAlarm22:2131362206 used because it matches string pool constant imgAlarm22
 Marking id:imgAlarm22:2131362206 used because it matches string pool constant imgAlarm22
 Marking attr:alpha:2130968630 used because it matches string pool constant alpha
@@ -34569,6 +34699,8 @@ Marking id:textinput_placeholder:2131362692 used because it matches string pool 
 Marking id:textinput_prefix_text:2131362693 used because it matches string pool constant text
 Marking id:textinput_suffix_text:2131362694 used because it matches string pool constant text
 Marking id:textlay:2131362695 used because it matches string pool constant text
+Marking id:textView30:2131362861 used because it matches string pool constant text
+Marking id:textView31:2131362872 used because it matches string pool constant text
 Marking layout:text_layout:2131558608 used because it matches string pool constant text
 Marking id:TOP_END:2131361809 used because it matches string pool constant TOP
 Marking id:TOP_START:2131361810 used because it matches string pool constant TOP
@@ -34758,8 +34890,6 @@ Marking color:green:2131099767 used because it matches string pool constant gree
 Marking color:green:2131099767 used because it matches string pool constant green
 Marking id:materialCardView5:2131362341 used because it matches string pool constant materialCardView5
 Marking id:materialCardView5:2131362341 used because it matches string pool constant materialCardView5
-Marking id:materialCardView4:2131362340 used because it matches string pool constant materialCardView4
-Marking id:materialCardView4:2131362340 used because it matches string pool constant materialCardView4
 Marking id:materialCardView9:2131362345 used because it matches string pool constant materialCardView9
 Marking id:materialCardView9:2131362345 used because it matches string pool constant materialCardView9
 Marking id:materialCardView8:2131362344 used because it matches string pool constant materialCardView8
@@ -34893,6 +35023,8 @@ Marking id:textView6:2131362681 used because it matches string pool constant tex
 Marking id:textView7:2131362682 used because it matches string pool constant textView
 Marking id:textView8:2131362683 used because it matches string pool constant textView
 Marking id:textView9:2131362684 used because it matches string pool constant textView
+Marking id:textView30:2131362861 used because it matches string pool constant textView
+Marking id:textView31:2131362872 used because it matches string pool constant textView
 Marking style:DefaultSkeletonView:2132017444 used because it matches string pool constant Default
 Marking attr:thumbIconSize:2130969811 used because it matches string pool constant thumbIconSize
 Marking attr:thumbIconSize:2130969811 used because it matches string pool constant thumbIconSize
@@ -34913,8 +35045,10 @@ Marking attr:elevationOverlayEnabled:2130969015 used because it matches string p
 Marking id:constraintLayout2:2131362015 used because it matches string pool constant constraintLayout2
 Marking id:constraintLayout2:2131362015 used because it matches string pool constant constraintLayout2
 Marking id:constraintLayout21:2131362016 used because it matches string pool constant constraintLayout2
+Marking id:constraintLayout29:2131362852 used because it matches string pool constant constraintLayout2
 Marking id:constraintLayout3:2131362017 used because it matches string pool constant constraintLayout3
 Marking id:constraintLayout3:2131362017 used because it matches string pool constant constraintLayout3
+Marking id:constraintLayout30:2131362863 used because it matches string pool constant constraintLayout3
 Marking id:constraintLayout4:2131362018 used because it matches string pool constant constraintLayout4
 Marking id:constraintLayout4:2131362018 used because it matches string pool constant constraintLayout4
 Marking id:constraintLayout5:2131362019 used because it matches string pool constant constraintLayout5
@@ -34982,6 +35116,10 @@ Marking id:constraintLayout6:2131362020 used because it matches string pool cons
 Marking id:constraintLayout7:2131362021 used because it matches string pool constant constraintLayout
 Marking id:constraintLayout8:2131362022 used because it matches string pool constant constraintLayout
 Marking id:constraintLayout9:2131362023 used because it matches string pool constant constraintLayout
+Marking id:constraintLayout12:2131362851 used because it matches string pool constant constraintLayout
+Marking id:constraintLayout29:2131362852 used because it matches string pool constant constraintLayout
+Marking id:constraintLayout15:2131362862 used because it matches string pool constant constraintLayout
+Marking id:constraintLayout30:2131362863 used because it matches string pool constant constraintLayout
 Marking id:firstGuide:2131362129 used because it matches string pool constant firstGuide
 Marking id:firstGuide:2131362129 used because it matches string pool constant firstGuide
 Marking id:skeletonLayout1:2131362581 used because it matches string pool constant skeletonLayout1
@@ -35159,6 +35297,8 @@ Marking id:etInputFeet:2131362107 used because it matches string pool constant e
 Marking id:etInputInch:2131362108 used because it matches string pool constant etInput
 Marking id:textView3:2131362678 used because it matches string pool constant textView3
 Marking id:textView3:2131362678 used because it matches string pool constant textView3
+Marking id:textView30:2131362861 used because it matches string pool constant textView3
+Marking id:textView31:2131362872 used because it matches string pool constant textView3
 Marking id:miles:2131362383 used because it matches string pool constant miles
 Marking id:miles:2131362383 used because it matches string pool constant miles
 Marking id:btnDay3:2131361930 used because it matches string pool constant btnDay3
@@ -35378,6 +35518,10 @@ Marking id:constraintLayout6:2131362020 used because it matches string pool cons
 Marking id:constraintLayout7:2131362021 used because it matches string pool constant constraint
 Marking id:constraintLayout8:2131362022 used because it matches string pool constant constraint
 Marking id:constraintLayout9:2131362023 used because it matches string pool constant constraint
+Marking id:constraintLayout12:2131362851 used because it matches string pool constant constraint
+Marking id:constraintLayout29:2131362852 used because it matches string pool constant constraint
+Marking id:constraintLayout15:2131362862 used because it matches string pool constant constraint
+Marking id:constraintLayout30:2131362863 used because it matches string pool constant constraint
 Marking id:packed:2131362473 used because it matches string pool constant pack
 Marking id:tvSound2:2131362746 used because it matches string pool constant tvSound2
 Marking id:tvSound2:2131362746 used because it matches string pool constant tvSound2
@@ -35588,7 +35732,6 @@ Marking id:skeletonLayout:2131362580 used because it matches string pool constan
 Marking id:skeletonLayout1:2131362581 used because it matches string pool constant skeletonLayout
 Marking id:etWeightInput:2131362113 used because it matches string pool constant etWeightInput
 Marking id:etWeightInput:2131362113 used because it matches string pool constant etWeightInput
-Marking attr:orderingFromXml:2130969494 used because it matches string pool constant ordering
 Marking attr:counterEnabled:2130968932 used because it matches string pool constant counter
 Marking attr:counterMaxLength:2130968933 used because it matches string pool constant counter
 Marking attr:counterOverflowTextAppearance:2130968934 used because it matches string pool constant counter
@@ -35700,6 +35843,10 @@ Marking id:txtWednesday:2131362795 used because it matches string pool constant 
 Marking id:txtWednesday:2131362795 used because it matches string pool constant txtWednesday
 Marking id:toohardtext:2131362710 used because it matches string pool constant toohardtext
 Marking id:toohardtext:2131362710 used because it matches string pool constant toohardtext
+Marking id:materialCardView37:2131362859 used because it matches string pool constant materialCardView37
+Marking id:materialCardView37:2131362859 used because it matches string pool constant materialCardView37
+Marking id:materialCardView38:2131362860 used because it matches string pool constant materialCardView38
+Marking id:materialCardView38:2131362860 used because it matches string pool constant materialCardView38
 Marking attr:passwordToggleContentDescription:2130969509 used because it matches string pool constant password
 Marking attr:passwordToggleDrawable:2130969510 used because it matches string pool constant password
 Marking attr:passwordToggleEnabled:2130969511 used because it matches string pool constant password
@@ -35750,6 +35897,18 @@ Marking id:materialCardView27:2131362337 used because it matches string pool con
 Marking id:materialCardView28:2131362338 used because it matches string pool constant materialCardView28
 Marking id:materialCardView28:2131362338 used because it matches string pool constant materialCardView28
 Marking attr:rotationCenterId:2130969572 used because it matches string pool constant rotation
+Marking id:materialCardView33:2131362855 used because it matches string pool constant materialCardView33
+Marking id:materialCardView33:2131362855 used because it matches string pool constant materialCardView33
+Marking id:materialCardView34:2131362856 used because it matches string pool constant materialCardView34
+Marking id:materialCardView34:2131362856 used because it matches string pool constant materialCardView34
+Marking id:materialCardView35:2131362857 used because it matches string pool constant materialCardView35
+Marking id:materialCardView35:2131362857 used because it matches string pool constant materialCardView35
+Marking id:materialCardView36:2131362858 used because it matches string pool constant materialCardView36
+Marking id:materialCardView36:2131362858 used because it matches string pool constant materialCardView36
+Marking id:materialCardView31:2131362853 used because it matches string pool constant materialCardView31
+Marking id:materialCardView31:2131362853 used because it matches string pool constant materialCardView31
+Marking id:materialCardView32:2131362854 used because it matches string pool constant materialCardView32
+Marking id:materialCardView32:2131362854 used because it matches string pool constant materialCardView32
 Marking id:tooeasyBtn:2131362705 used because it matches string pool constant tooeasyBtn
 Marking id:tooeasyBtn:2131362705 used because it matches string pool constant tooeasyBtn
 Marking id:group_divider:2131362166 used because it matches string pool constant group
@@ -35798,6 +35957,10 @@ Marking id:montlyBtn:2131362392 used because it matches string pool constant mon
 Marking id:montlyBtn:2131362392 used because it matches string pool constant montlyBtn
 Marking id:FORMAT_12:2131361797 used because it matches string pool constant FORMAT_12
 Marking id:FORMAT_12:2131361797 used because it matches string pool constant FORMAT_12
+Marking id:textView31:2131362872 used because it matches string pool constant textView31
+Marking id:textView31:2131362872 used because it matches string pool constant textView31
+Marking id:textView30:2131362861 used because it matches string pool constant textView30
+Marking id:textView30:2131362861 used because it matches string pool constant textView30
 Marking id:FORMAT_24:2131361798 used because it matches string pool constant FORMAT_24
 Marking id:FORMAT_24:2131361798 used because it matches string pool constant FORMAT_24
 Marking id:fill:2131362125 used because it matches string pool constant fill
@@ -36387,6 +36550,10 @@ Marking id:constraintLayout6:2131362020 used because it matches string pool cons
 Marking id:constraintLayout7:2131362021 used because it matches string pool constant constrain
 Marking id:constraintLayout8:2131362022 used because it matches string pool constant constrain
 Marking id:constraintLayout9:2131362023 used because it matches string pool constant constrain
+Marking id:constraintLayout12:2131362851 used because it matches string pool constant constrain
+Marking id:constraintLayout29:2131362852 used because it matches string pool constant constrain
+Marking id:constraintLayout15:2131362862 used because it matches string pool constant constrain
+Marking id:constraintLayout30:2131362863 used because it matches string pool constant constrain
 Marking id:progressTwo:2131362503 used because it matches string pool constant progressTwo
 Marking id:progressTwo:2131362503 used because it matches string pool constant progressTwo
 Marking id:linearLayout:2131362297 used because it matches string pool constant linearLayout
@@ -41719,6 +41886,8 @@ Marking layout:fragment_workout:2131558494 used because it matches string pool c
     @color/bottom_nav_bg
 @drawable/bg_selected_circle : reachable=true
 @drawable/bg_selected_options : reachable=true
+@drawable/bg_selected_options_tab : reachable=true
+    @color/green
 @drawable/bg_selected_wheel_picker : reachable=true
 @drawable/bg_spinner : reachable=true
     @color/white
@@ -41952,6 +42121,7 @@ Marking layout:fragment_workout:2131558494 used because it matches string pool c
     @color/start_btn_color
 @drawable/ic_glass_change : reachable=true
     @drawable/$ic_glass_change__0
+@drawable/ic_goalcap : reachable=true
 @drawable/ic_inverted_commas : reachable=true
 @drawable/ic_keyboard_black_24dp : reachable=true
 @drawable/ic_launcher_background : reachable=true
@@ -42581,12 +42751,16 @@ Marking layout:fragment_workout:2131558494 used because it matches string pool c
 @id/constraintLayout : reachable=true
 @id/constraintLayout10 : reachable=true
 @id/constraintLayout11 : reachable=true
+@id/constraintLayout12 : reachable=true
 @id/constraintLayout13 : reachable=true
 @id/constraintLayout14 : reachable=true
+@id/constraintLayout15 : reachable=true
 @id/constraintLayout16 : reachable=true
 @id/constraintLayout2 : reachable=true
 @id/constraintLayout21 : reachable=true
+@id/constraintLayout29 : reachable=true
 @id/constraintLayout3 : reachable=true
+@id/constraintLayout30 : reachable=true
 @id/constraintLayout4 : reachable=true
 @id/constraintLayout5 : reachable=true
 @id/constraintLayout6 : reachable=true
@@ -42909,7 +43083,14 @@ Marking layout:fragment_workout:2131558494 used because it matches string pool c
 @id/materialCardView27 : reachable=true
 @id/materialCardView28 : reachable=true
 @id/materialCardView3 : reachable=true
-@id/materialCardView4 : reachable=true
+@id/materialCardView31 : reachable=true
+@id/materialCardView32 : reachable=true
+@id/materialCardView33 : reachable=true
+@id/materialCardView34 : reachable=true
+@id/materialCardView35 : reachable=true
+@id/materialCardView36 : reachable=true
+@id/materialCardView37 : reachable=true
+@id/materialCardView38 : reachable=true
 @id/materialCardView5 : reachable=true
 @id/materialCardView6 : reachable=true
 @id/materialCardView7 : reachable=true
@@ -43248,6 +43429,8 @@ Marking layout:fragment_workout:2131558494 used because it matches string pool c
 @id/textView26 : reachable=true
 @id/textView27 : reachable=true
 @id/textView3 : reachable=true
+@id/textView30 : reachable=true
+@id/textView31 : reachable=true
 @id/textView4 : reachable=true
 @id/textView5 : reachable=true
 @id/textView6 : reachable=true
@@ -43401,6 +43584,15 @@ Marking layout:fragment_workout:2131558494 used because it matches string pool c
 @id/watchadBtn : reachable=true
 @id/weeklyBtn : reachable=true
 @id/weeklytext : reachable=true
+@id/weekonedayoneBtn : reachable=true
+@id/weekonedayoneBtn1 : reachable=true
+@id/weekonedayoneBtn2 : reachable=true
+@id/weekonedayoneBtn3 : reachable=true
+@id/weekonedayoneBtn4 : reachable=true
+@id/weekonedayoneBtn5 : reachable=true
+@id/weekonedayoneBtn6 : reachable=true
+@id/weekonedayoneBtn7 : reachable=true
+@id/weekonedayoneBtn8 : reachable=true
 @id/weightToggle : reachable=true
 @id/west : reachable=true
 @id/wheel_picker : reachable=true
@@ -43968,26 +44160,27 @@ Marking layout:fragment_workout:2131558494 used because it matches string pool c
     @dimen/_50sdp
     @drawable/ic_forward
 @layout/activity_fullbody_workout : reachable=true
+    @string/appbar_scrolling_view_behavior
+    @drawable/bg_main
     @style/ThemeOverlay_AppCompat_Dark_ActionBar
     @color/bg_navigation
     @drawable/full_body_workout
     @attr/actionBarSize
     @style/ThemeOverlay_AppCompat_Dark
-    @dimen/_50sdp
-    @drawable/ic_back
-    @dimen/_1sdp
-    @dimen/_10sdp
-    @dimen/_6sdp
-    @dimen/_25sdp
     @drawable/bg_topcornered
     @dimen/_15sdp
     @dimen/_16sdp
     @color/white
     @dimen/_14sdp
+    @dimen/_10sdp
+    @dimen/_13sdp
     @color/green
     @dimen/_60sdp
     @color/transparent
+    @dimen/_6sdp
     @dimen/_7sdp
+    @drawable/ic_goalcap
+    @dimen/_12sdp
 @layout/activity_gender : reachable=true
     @drawable/bg_main
     @attr/actionBarSize
@@ -44833,7 +45026,9 @@ Marking layout:fragment_workout:2131558494 used because it matches string pool c
     @drawable/lower_body
     @string/lower_body
     @string/workout_categories
+    @dimen/_35sdp
     @attr/actionBarSize
+    @drawable/bg_selected_options_tab
     @string/beginner
     @string/intermediate
     @string/advance
@@ -59248,6 +59443,8 @@ The root reachable resources are:
  drawable:water_cup_300_ml:2131231189
  drawable:water_cup_500_ml:2131231190
  drawable:water_cup_50_ml:2131231191
+ drawable:bg_selected_options_tab:2131231192
+ drawable:ic_goalcap:2131231193
  font:bebas_neue:2131296256
  font:digital_dismay:2131296257
  font:eina_02_regular:2131296258
@@ -59802,7 +59999,6 @@ The root reachable resources are:
  id:materialCardView27:2131362337
  id:materialCardView28:2131362338
  id:materialCardView3:2131362339
- id:materialCardView4:2131362340
  id:materialCardView5:2131362341
  id:materialCardView6:2131362342
  id:materialCardView7:2131362343
@@ -60313,6 +60509,29 @@ The root reachable resources are:
  id:x_right:2131362848
  id:yearlyBtn:2131362849
  id:yearlytext:2131362850
+ id:constraintLayout12:2131362851
+ id:constraintLayout29:2131362852
+ id:materialCardView31:2131362853
+ id:materialCardView32:2131362854
+ id:materialCardView33:2131362855
+ id:materialCardView34:2131362856
+ id:materialCardView35:2131362857
+ id:materialCardView36:2131362858
+ id:materialCardView37:2131362859
+ id:materialCardView38:2131362860
+ id:textView30:2131362861
+ id:constraintLayout15:2131362862
+ id:constraintLayout30:2131362863
+ id:textView31:2131362872
+ id:weekonedayoneBtn:2131362873
+ id:weekonedayoneBtn1:2131362874
+ id:weekonedayoneBtn2:2131362875
+ id:weekonedayoneBtn3:2131362876
+ id:weekonedayoneBtn4:2131362877
+ id:weekonedayoneBtn5:2131362878
+ id:weekonedayoneBtn6:2131362879
+ id:weekonedayoneBtn7:2131362880
+ id:weekonedayoneBtn8:2131362881
  integer:abc_config_activityDefaultDur:2131427328
  integer:abc_config_activityShortDur:2131427329
  integer:app_bar_elevation_anim_duration:2131427330
@@ -62225,4 +62444,4 @@ The root reachable resources are:
  xml:image_share_filepaths:2132148228
 Unused resources are: 
  style:Platform_Widget_AppCompat_Spinner:2132017480
-Resource shrinking did not work (grew from 22582561 to 22597865); using original instead
+Resource shrinking did not work (grew from 22587472 to 22602808); using original instead
