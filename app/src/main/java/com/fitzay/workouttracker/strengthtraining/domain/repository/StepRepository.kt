@@ -1,6 +1,8 @@
 package com.fitzay.workouttracker.strengthtraining.domain.repository
 
+import com.fitzay.workouttracker.strengthtraining.domain.entities.AlarmEntity
 import com.fitzay.workouttracker.strengthtraining.domain.entities.StepEntity
+import kotlinx.coroutines.flow.Flow
 
 
 interface StepRepository {
@@ -14,4 +16,7 @@ interface StepRepository {
     suspend fun getAllStepCount(): Int
     suspend fun getAverageStepCount(): Int
     suspend fun isDateExist(date: String): Boolean
+
+    suspend fun getAllRecordsF(pageSize: Int) : Flow<List<StepEntity>>
+
 }

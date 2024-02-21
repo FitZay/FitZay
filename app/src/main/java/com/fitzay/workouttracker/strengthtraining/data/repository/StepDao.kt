@@ -4,6 +4,7 @@ import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
+import com.fitzay.workouttracker.strengthtraining.data.model.Alarm
 import com.fitzay.workouttracker.strengthtraining.data.model.Step
 
 @Dao
@@ -13,6 +14,9 @@ interface StepDao {
 
     @Query("SELECT * FROM Step ORDER BY id DESC")
     suspend fun getAllRecords(): List<Step>
+
+    @Query("SELECT * FROM Step ORDER BY id DESC")
+    fun getPaging(): List<Step>
 
     @Query("SELECT * FROM Step WHERE date = :date")
     fun isStepStepExists(date: String): Step?

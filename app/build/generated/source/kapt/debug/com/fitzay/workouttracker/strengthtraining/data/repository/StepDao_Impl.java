@@ -209,6 +209,69 @@ public final class StepDao_Impl implements StepDao {
   }
 
   @Override
+  public List<Step> getPaging() {
+    final String _sql = "SELECT * FROM Step ORDER BY id DESC";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
+    __db.assertNotSuspendingTransaction();
+    final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
+    try {
+      final int _cursorIndexOfSteps = CursorUtil.getColumnIndexOrThrow(_cursor, "steps");
+      final int _cursorIndexOfTime = CursorUtil.getColumnIndexOrThrow(_cursor, "time");
+      final int _cursorIndexOfCalories = CursorUtil.getColumnIndexOrThrow(_cursor, "calories");
+      final int _cursorIndexOfDistance = CursorUtil.getColumnIndexOrThrow(_cursor, "distance");
+      final int _cursorIndexOfDate = CursorUtil.getColumnIndexOrThrow(_cursor, "date");
+      final int _cursorIndexOfStepGoal = CursorUtil.getColumnIndexOrThrow(_cursor, "stepGoal");
+      final int _cursorIndexOfCaloriesGoal = CursorUtil.getColumnIndexOrThrow(_cursor, "caloriesGoal");
+      final int _cursorIndexOfDistanceGoal = CursorUtil.getColumnIndexOrThrow(_cursor, "distanceGoal");
+      final int _cursorIndexOfTimeGoal = CursorUtil.getColumnIndexOrThrow(_cursor, "timeGoal");
+      final int _cursorIndexOfId = CursorUtil.getColumnIndexOrThrow(_cursor, "id");
+      final List<Step> _result = new ArrayList<Step>(_cursor.getCount());
+      while(_cursor.moveToNext()) {
+        final Step _item;
+        final int _tmpSteps;
+        _tmpSteps = _cursor.getInt(_cursorIndexOfSteps);
+        final String _tmpTime;
+        if (_cursor.isNull(_cursorIndexOfTime)) {
+          _tmpTime = null;
+        } else {
+          _tmpTime = _cursor.getString(_cursorIndexOfTime);
+        }
+        final double _tmpCalories;
+        _tmpCalories = _cursor.getDouble(_cursorIndexOfCalories);
+        final double _tmpDistance;
+        _tmpDistance = _cursor.getDouble(_cursorIndexOfDistance);
+        final String _tmpDate;
+        if (_cursor.isNull(_cursorIndexOfDate)) {
+          _tmpDate = null;
+        } else {
+          _tmpDate = _cursor.getString(_cursorIndexOfDate);
+        }
+        final int _tmpStepGoal;
+        _tmpStepGoal = _cursor.getInt(_cursorIndexOfStepGoal);
+        final double _tmpCaloriesGoal;
+        _tmpCaloriesGoal = _cursor.getDouble(_cursorIndexOfCaloriesGoal);
+        final double _tmpDistanceGoal;
+        _tmpDistanceGoal = _cursor.getDouble(_cursorIndexOfDistanceGoal);
+        final String _tmpTimeGoal;
+        if (_cursor.isNull(_cursorIndexOfTimeGoal)) {
+          _tmpTimeGoal = null;
+        } else {
+          _tmpTimeGoal = _cursor.getString(_cursorIndexOfTimeGoal);
+        }
+        _item = new Step(_tmpSteps,_tmpTime,_tmpCalories,_tmpDistance,_tmpDate,_tmpStepGoal,_tmpCaloriesGoal,_tmpDistanceGoal,_tmpTimeGoal);
+        final int _tmpId;
+        _tmpId = _cursor.getInt(_cursorIndexOfId);
+        _item.setId(_tmpId);
+        _result.add(_item);
+      }
+      return _result;
+    } finally {
+      _cursor.close();
+      _statement.release();
+    }
+  }
+
+  @Override
   public Step isStepStepExists(final String date) {
     final String _sql = "SELECT * FROM Step WHERE date = ?";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);

@@ -5519,6 +5519,9 @@ layout fragment_graph
 layout fragment_monthly
 layout fragment_plan
 layout fragment_profile
+layout fragment_step_daily
+layout fragment_step_monthly
+layout fragment_step_weekly
 layout fragment_unlock_premium_bottom
 layout fragment_weekly
 layout fragment_workout
