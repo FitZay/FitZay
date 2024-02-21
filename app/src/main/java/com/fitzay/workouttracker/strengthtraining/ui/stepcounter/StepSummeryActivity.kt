@@ -20,6 +20,7 @@ import com.fitzay.workouttracker.strengthtraining.core.utils.convertTimeToSecond
 import com.fitzay.workouttracker.strengthtraining.core.utils.getWeekDayWithDateA
 import com.fitzay.workouttracker.strengthtraining.databinding.ActivityStepSummeryBinding
 import com.fitzay.workouttracker.strengthtraining.di.Component
+import com.fitzay.workouttracker.strengthtraining.ui.fragments.DailyFragment
 import com.github.mikephil.charting.charts.LineChart
 import com.github.mikephil.charting.components.Description
 import com.github.mikephil.charting.components.Legend
@@ -62,35 +63,48 @@ class StepSummeryActivity : AppCompatActivity(), OnChartValueSelectedListener {
 
         hideAllLayouts()
         binding.layoutToday.visibility = View.VISIBLE
-        dailyReport(1)
+//        dailyReport(1)
 
         binding.txtAverage.text = "DAILY AVERAGE"
-        binding.txtMiles.text =
-            "" + (Component.preference.stepGoal * 100) / Component.preference.stepGoal + " Steps"
+        binding.txtMiles.text = "" + (Component.preference.stepGoal * 100) / Component.preference.stepGoal + " Steps"
 
 
-        binding.ivBack.setOnClickListener { onBackPressed() }
+        binding.apply {
 
-        binding.txtDaily.setOnClickListener {
-            unSelect()
-            binding.txtDaily.setBackgroundResource(R.drawable.bg_selected)
-            typeClicked = "Daily"
-            binding.txtAverage.text = "DAILY AVERAGE"
-            binding.txtMiles.text =
-                "" + (Component.preference.stepGoal * 100) / Component.preference.stepGoal + " Steps"
+            ivBack.setOnClickListener { onBackPressed() }
 
-            binding.imgStep.performClick()
+            supportFragmentManager.beginTransaction().replace(R.id.container, StepDailyFragment()).commit()
+
+
+            txtDaily.setOnClickListener {
+                unSelect()
+                txtDaily.setBackgroundResource(R.drawable.bg_selected)
+                typeClicked = "Daily"
+                txtAverage.text = "DAILY AVERAGE"
+                txtMiles.text = "" + (Component.preference.stepGoal * 100) / Component.preference.stepGoal + " Steps"
+                imgStep.performClick()
+
+                supportFragmentManager.beginTransaction().replace(R.id.container, StepDailyFragment()).commit()
+
+            }
+
+            txtWeekly.setOnClickListener {
+                unSelect()
+                txtWeekly.setBackgroundResource(R.drawable.bg_selected)
+                typeClicked = "Weekly"
+                txtAverage.text = "WEEKLY AVERAGE"
+                imgStep.performClick()
+
+                supportFragmentManager.beginTransaction().replace(R.id.container, StepWeeklyFragment()).commit()
+
+            }
 
         }
 
-        binding.txtWeekly.setOnClickListener {
-            unSelect()
-            binding.txtWeekly.setBackgroundResource(R.drawable.bg_selected)
-            typeClicked = "Weekly"
-            binding.txtAverage.text = "WEEKLY AVERAGE"
-            binding.imgStep.performClick()
 
-        }
+
+
+
 
         binding.txtMonthly.setOnClickListener {
             unSelect()
@@ -98,29 +112,31 @@ class StepSummeryActivity : AppCompatActivity(), OnChartValueSelectedListener {
             typeClicked = "Monthly"
             binding.txtAverage.text = "MONTHLY AVERAGE"
             binding.imgStep.performClick()
+            supportFragmentManager.beginTransaction().replace(R.id.container, StepMonthlyFragment()).commit()
+
         }
 
-        binding.imgStep.setOnClickListener {
-            unSelectSub()
-            binding.imgStep.setBackgroundResource(R.drawable.bg_selected)
-            clickedButton(1)
-        }
-        binding.imgLocation.setOnClickListener {
-            unSelectSub()
-            binding.imgLocation.setBackgroundResource(R.drawable.bg_selected)
-            clickedButton(2)
-        }
-        binding.imgCalories.setOnClickListener {
-            unSelectSub()
-            binding.imgCalories.setBackgroundResource(R.drawable.bg_selected)
-            clickedButton(3)
-        }
-
-        binding.imgTime.setOnClickListener {
-            unSelectSub()
-            binding.imgTime.setBackgroundResource(R.drawable.bg_selected)
-            clickedButton(4)
-        }
+//        binding.imgStep.setOnClickListener {
+//            unSelectSub()
+//            binding.imgStep.setBackgroundResource(R.drawable.bg_selected)
+//            clickedButton(1)
+//        }
+//        binding.imgLocation.setOnClickListener {
+//            unSelectSub()
+//            binding.imgLocation.setBackgroundResource(R.drawable.bg_selected)
+//            clickedButton(2)
+//        }
+//        binding.imgCalories.setOnClickListener {
+//            unSelectSub()
+//            binding.imgCalories.setBackgroundResource(R.drawable.bg_selected)
+//            clickedButton(3)
+//        }
+//
+//        binding.imgTime.setOnClickListener {
+//            unSelectSub()
+//            binding.imgTime.setBackgroundResource(R.drawable.bg_selected)
+//            clickedButton(4)
+//        }
 
     }
 
@@ -131,7 +147,7 @@ class StepSummeryActivity : AppCompatActivity(), OnChartValueSelectedListener {
             "Daily" -> {
                 hideAllLayouts()
                 binding.layoutToday.visibility = View.VISIBLE
-                dailyReport(isChoice)
+                //dailyReport(isChoice)
             }
 
             "Weekly" -> {
@@ -154,12 +170,12 @@ class StepSummeryActivity : AppCompatActivity(), OnChartValueSelectedListener {
         binding.txtMonthly.setBackgroundResource(R.drawable.bg_unselected_options)
     }
 
-    private fun unSelectSub() {
-        binding.imgStep.setBackgroundResource(R.drawable.bg_unselected_options)
-        binding.imgLocation.setBackgroundResource(R.drawable.bg_unselected_options)
-        binding.imgCalories.setBackgroundResource(R.drawable.bg_unselected_options)
-        binding.imgTime.setBackgroundResource(R.drawable.bg_unselected_options)
-    }
+//    private fun unSelectSub() {
+//        binding.imgStep.setBackgroundResource(R.drawable.bg_unselected_options)
+//        binding.imgLocation.setBackgroundResource(R.drawable.bg_unselected_options)
+//        binding.imgCalories.setBackgroundResource(R.drawable.bg_unselected_options)
+//        binding.imgTime.setBackgroundResource(R.drawable.bg_unselected_options)
+//    }
 
     private fun hideAllLayouts() {
         binding.layoutToday.visibility = View.GONE
@@ -464,78 +480,77 @@ class StepSummeryActivity : AppCompatActivity(), OnChartValueSelectedListener {
         }
     }
 
-    private fun dailyReport(isChoice: Int) {
-
-        val currentDate = Date()
-        val dateFormat = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
-        val today = dateFormat.format(currentDate)
-
-        Component.stepModel.getDailyRecord(today).observe(this) {
-            when (it.status) {
-                CurrentStatus.SUCCESS -> {
-
-                    val animZoomIn = AnimationUtils.loadAnimation(this, R.anim.zoom_in)
-
-                    when (isChoice) {
-                        1 -> {
-                            it.data!!.forEach { it1 ->
-                                val progress =
-                                    (it1.steps.toDouble() / it1.stepGoal.toDouble()) * 100
-                                binding.stepProgress.progress = progress.toInt()
-                                binding.typeName.text = "STEPS"
-                                binding.userSteps.text = Component.preference.stepCount.toString()
-                                binding.userSteps.startAnimation(animZoomIn)
-                                binding.userGoal.text =
-                                    "Goal :" + Component.preference.stepGoal.toString()
-                            }
-                        }
-
-                        2 -> {
-                            it.data!!.forEach { it1 ->
-                                val progress = (it1.distance / it1.distanceGoal) * 100
-                                binding.stepProgress.progress = progress.toInt()
-                                binding.typeName.text = "DISTANCE"
-                                binding.userSteps.text = it1.distance.toString()
-                                binding.userSteps.startAnimation(animZoomIn)
-                                binding.userGoal.text =
-                                    "Goal: " + it1.distanceGoal.toString()
-                            }
-                        }
-
-                        3 -> {
-                            it.data!!.forEach { it1 ->
-                                val progress = (it1.calories / it1.caloriesGoal) * 100
-                                binding.stepProgress.progress = progress.toInt()
-                                binding.typeName.text = "CALORIES"
-                                binding.userSteps.text = it1.calories.toString()
-                                binding.userSteps.startAnimation(animZoomIn)
-                                binding.userGoal.text =
-                                    "Goal :" + it1.caloriesGoal.toString()
-                            }
-                        }
-
-                        4 -> {
-                            it.data!!.forEach { it1 ->
-                                val progress = (it1.time.convertTimeToSeconds()
-                                    .toDouble() / it1.timeGoal.convertTimeToSeconds()
-                                    .toDouble()) * 100
-                                binding.stepProgress.progress = progress.toInt()
-                                binding.typeName.text = "TIME"
-                                binding.userSteps.text = it1.time.toString()
-                                binding.userSteps.startAnimation(animZoomIn)
-                                binding.userGoal.text = "Goal: " + it1.timeGoal.toString()
-                            }
-                        }
-                    }
-
-                }
-
-                CurrentStatus.ERROR -> {
-
-                }
-            }
-        }
-    }
+//    private fun dailyReport(isChoice: Int) {
+//
+//        val currentDate = Date()
+//        val dateFormat = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
+//        val today = dateFormat.format(currentDate)
+//
+//        Component.stepModel.getDailyRecord(today).observe(this) {
+//            when (it.status) {
+//                CurrentStatus.SUCCESS -> {
+//
+//                    val animZoomIn = AnimationUtils.loadAnimation(this, R.anim.zoom_in)
+//
+//                    when (isChoice) {
+//                        1 -> {
+//                            it.data!!.forEach { it1 ->
+//                                val progress = (it1.steps.toDouble() / it1.stepGoal.toDouble()) * 100
+//                                binding.stepProgress.progress = progress.toInt()
+//                                binding.typeName.text = "STEPS"
+//                                binding.userSteps.text = Component.preference.stepCount.toString()
+//                                binding.userSteps.startAnimation(animZoomIn)
+//                                binding.userGoal.text =
+//                                    "Goal :" + Component.preference.stepGoal.toString()
+//                            }
+//                        }
+//
+//                        2 -> {
+//                            it.data!!.forEach { it1 ->
+//                                val progress = (it1.distance / it1.distanceGoal) * 100
+//                                binding.stepProgress.progress = progress.toInt()
+//                                binding.typeName.text = "DISTANCE"
+//                                binding.userSteps.text = it1.distance.toString()
+//                                binding.userSteps.startAnimation(animZoomIn)
+//                                binding.userGoal.text =
+//                                    "Goal: " + it1.distanceGoal.toString()
+//                            }
+//                        }
+//
+//                        3 -> {
+//                            it.data!!.forEach { it1 ->
+//                                val progress = (it1.calories / it1.caloriesGoal) * 100
+//                                binding.stepProgress.progress = progress.toInt()
+//                                binding.typeName.text = "CALORIES"
+//                                binding.userSteps.text = it1.calories.toString()
+//                                binding.userSteps.startAnimation(animZoomIn)
+//                                binding.userGoal.text =
+//                                    "Goal :" + it1.caloriesGoal.toString()
+//                            }
+//                        }
+//
+//                        4 -> {
+//                            it.data!!.forEach { it1 ->
+//                                val progress = (it1.time.convertTimeToSeconds()
+//                                    .toDouble() / it1.timeGoal.convertTimeToSeconds()
+//                                    .toDouble()) * 100
+//                                binding.stepProgress.progress = progress.toInt()
+//                                binding.typeName.text = "TIME"
+//                                binding.userSteps.text = it1.time.toString()
+//                                binding.userSteps.startAnimation(animZoomIn)
+//                                binding.userGoal.text = "Goal: " + it1.timeGoal.toString()
+//                            }
+//                        }
+//                    }
+//
+//                }
+//
+//                CurrentStatus.ERROR -> {
+//
+//                }
+//            }
+//        }
+//    }
 
 
     private fun setData(values: ArrayList<Entry>) {

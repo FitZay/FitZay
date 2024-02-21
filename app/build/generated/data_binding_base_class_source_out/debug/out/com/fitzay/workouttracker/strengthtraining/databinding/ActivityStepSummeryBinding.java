@@ -4,6 +4,7 @@ package com.fitzay.workouttracker.strengthtraining.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
@@ -26,6 +27,9 @@ public final class ActivityStepSummeryBinding implements ViewBinding {
 
   @NonNull
   public final LineChart chart;
+
+  @NonNull
+  public final FrameLayout container;
 
   @NonNull
   public final LinearLayout dateLayout;
@@ -94,17 +98,18 @@ public final class ActivityStepSummeryBinding implements ViewBinding {
   public final TextView userSteps;
 
   private ActivityStepSummeryBinding(@NonNull RelativeLayout rootView, @NonNull LineChart chart,
-      @NonNull LinearLayout dateLayout, @NonNull ImageView imgCalories, @NonNull ImageView imgDot,
-      @NonNull ImageView imgLocation, @NonNull ImageView imgStep, @NonNull ImageView imgTime,
-      @NonNull ImageView ivBack, @NonNull LinearLayout layoutCharts,
-      @NonNull LinearLayout layoutChoice, @NonNull RelativeLayout layoutToday,
-      @NonNull MaterialToolbar materialToolbar, @NonNull CircularProgressIndicator stepProgress,
-      @NonNull TextView txtAverage, @NonNull TextView txtDaily, @NonNull TextView txtDate,
-      @NonNull TextView txtMiles, @NonNull TextView txtMonthly, @NonNull TextView txtToolbar,
-      @NonNull TextView txtWeekly, @NonNull TextView typeName, @NonNull TextView userGoal,
-      @NonNull TextView userSteps) {
+      @NonNull FrameLayout container, @NonNull LinearLayout dateLayout,
+      @NonNull ImageView imgCalories, @NonNull ImageView imgDot, @NonNull ImageView imgLocation,
+      @NonNull ImageView imgStep, @NonNull ImageView imgTime, @NonNull ImageView ivBack,
+      @NonNull LinearLayout layoutCharts, @NonNull LinearLayout layoutChoice,
+      @NonNull RelativeLayout layoutToday, @NonNull MaterialToolbar materialToolbar,
+      @NonNull CircularProgressIndicator stepProgress, @NonNull TextView txtAverage,
+      @NonNull TextView txtDaily, @NonNull TextView txtDate, @NonNull TextView txtMiles,
+      @NonNull TextView txtMonthly, @NonNull TextView txtToolbar, @NonNull TextView txtWeekly,
+      @NonNull TextView typeName, @NonNull TextView userGoal, @NonNull TextView userSteps) {
     this.rootView = rootView;
     this.chart = chart;
+    this.container = container;
     this.dateLayout = dateLayout;
     this.imgCalories = imgCalories;
     this.imgDot = imgDot;
@@ -159,6 +164,12 @@ public final class ActivityStepSummeryBinding implements ViewBinding {
       id = R.id.chart;
       LineChart chart = ViewBindings.findChildViewById(rootView, id);
       if (chart == null) {
+        break missingId;
+      }
+
+      id = R.id.container;
+      FrameLayout container = ViewBindings.findChildViewById(rootView, id);
+      if (container == null) {
         break missingId;
       }
 
@@ -294,7 +305,7 @@ public final class ActivityStepSummeryBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityStepSummeryBinding((RelativeLayout) rootView, chart, dateLayout,
+      return new ActivityStepSummeryBinding((RelativeLayout) rootView, chart, container, dateLayout,
           imgCalories, imgDot, imgLocation, imgStep, imgTime, ivBack, layoutCharts, layoutChoice,
           layoutToday, materialToolbar, stepProgress, txtAverage, txtDaily, txtDate, txtMiles,
           txtMonthly, txtToolbar, txtWeekly, typeName, userGoal, userSteps);

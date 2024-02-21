@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-Ц■ТgсfфJс█ЭKДVМ▓ЧqС├АRАRАRХRЦRэRэRэRэRТRГUдVэRэRэRэRэRэRэRъSцvЖkъdПnНо
-=======
-Е■ыgхgЙIЪ█ГIбU
->>>>>>> 83724aad954916bcb94cdd4531f382d5ccdf5673
+Х■ЗiЯiвMЖ²ж]НK

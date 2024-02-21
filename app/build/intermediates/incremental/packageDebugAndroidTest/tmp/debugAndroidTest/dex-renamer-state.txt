@@ -1,4 +1,0 @@
-#Tue Feb 20 16:14:25 PKT 2024
-base.0=D\:\\Izhar\\Final Release FitnessApplication\\app\\build\\intermediates\\dex\\debugAndroidTest\\minifyDebugAndroidTestWithR8\\classes.dex
-path.0=classes.dex
-renamed.0=classes.dex

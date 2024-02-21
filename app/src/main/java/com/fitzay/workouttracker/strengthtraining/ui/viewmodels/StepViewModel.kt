@@ -1,13 +1,17 @@
 package com.fitzay.workouttracker.strengthtraining.ui.viewmodels
 
+import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.liveData
 import com.fitzay.workouttracker.strengthtraining.core.utils.UpdateStatus
 import com.fitzay.workouttracker.strengthtraining.domain.entities.StepEntity
 import com.fitzay.workouttracker.strengthtraining.domain.repository.StepRepository
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.flow
+import kotlinx.coroutines.flow.flowOn
 
-class StepViewModel(private val stepRepository: StepRepository) : ViewModel() {
+class StepViewModel(val stepRepository: StepRepository) : ViewModel() {
 
     fun insertSteps(stepEntity: StepEntity) = liveData(Dispatchers.IO) {
         try {
@@ -87,5 +91,17 @@ class StepViewModel(private val stepRepository: StepRepository) : ViewModel() {
             emit(UpdateStatus.error(null, "an error $e"))
         }
     }
+
+
+//    fun getAllRecordsFF(pageSize: Int): Flow<List<StepEntity>> = flow {
+//        try {
+//            emit(UpdateStatus.success(stepRepository.getAllRecordsF(i)))
+//        }
+//        catch (e:Exception)
+//        {
+//            Log.i("TAG", "getStep-Error-Catch: "+e.message)
+//        }
+//    }.flowOn(Dispatchers.IO)
+
 
 }

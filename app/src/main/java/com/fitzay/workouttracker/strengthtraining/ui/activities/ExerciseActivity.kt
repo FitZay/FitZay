@@ -59,6 +59,10 @@ class ExerciseActivity : AppCompatActivity() {
     private var nativeAd : NativeAd? = null
     private var moveactivity = true
 
+    companion object {
+        var activityType = ""
+    }
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -66,6 +70,7 @@ class ExerciseActivity : AppCompatActivity() {
         setContentView(binding.root)
         quitdialog = Dialog(this)
         waiting_dialog = Dialog(this)
+
 
         arr = ArrayList()
         loadingHandler = Handler(Looper.getMainLooper()!!)
@@ -85,10 +90,17 @@ class ExerciseActivity : AppCompatActivity() {
                 categoryType = intent.getStringExtra("EXTRA_TYPE").toString()
 
 
-                arr = Component.workOutViewModel.getWorkouts(
-                    this@ExerciseActivity,
-                    id.toString()
-                ) as ArrayList<WorkOutModel>
+                if (activityType == "category"){
+                    arr = Component.workOutViewModel.getWorkouts(
+                        this@ExerciseActivity,
+                        id.toString()
+                    ) as ArrayList<WorkOutModel>
+                }
+
+
+                else {
+                    arr = DisplayWorkoutsActivity.listofworkmodel
+                }
 
                 exName.text = arr[arrIndex].exTitle
                 exNameTwo.text = arr[arrIndex].exTitle
