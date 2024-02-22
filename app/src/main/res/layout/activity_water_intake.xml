@@ -36,7 +36,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_medium"
-                android:text="Water Intake"
+                android:text="water_intake"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_12sdp" />
 

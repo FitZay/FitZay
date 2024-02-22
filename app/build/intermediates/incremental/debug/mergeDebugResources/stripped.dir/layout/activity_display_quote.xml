@@ -29,7 +29,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_20sdp"
             android:fontFamily="@font/poppins_medium"
-            android:text="Daily Motivation"
+            android:text="@string/daily_motivation"
             android:textColor="@color/white"
             android:textSize="@dimen/_12sdp" />
 

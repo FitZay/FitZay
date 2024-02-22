@@ -58,7 +58,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/poppins"
-                            android:text="Abs Beginner"
+                            android:text="@string/abs_beginner"
                             android:textColor="@color/white"
                             android:textSize="@dimen/_14sdp" />
 
@@ -68,7 +68,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="bottom"
                             android:fontFamily="@font/poppins"
-                            android:text="Jumping Jack"
+                            android:text="@string/jumping_jack"
                             android:textColor="@color/white"
                             android:textSize="@dimen/_9sdp" />
 

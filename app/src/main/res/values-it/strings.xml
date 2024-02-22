@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FitZay</string>
+
+    <!-- Splash Screen Text Name -->
+    <string name="wish_it">Desideralo</string>
+    <string name="want_it">Vuoi</string>
+    <string name="do_it">FalIo</string>
+
+    <!-- First Name Screen Text Name -->
+    <string name="what_name">Qual è il tuo nome?</string>
+    <string name="enter_here">Inserisci qui...</string>
+
+    <!-- Gender Screen Text Name -->
+    <string name="welcome_fitness">Benvenuto su FitZay</string>
+    <string name="what_gender">Qual è il tuo genere?</string>
+    <string name="male">Maschio</string>
+    <string name="female">Femmina</string>
+
+    <!-- Weight Screen Text Name -->
+    <string name="what_your_weight">Qual è il tuo peso?</string>
+    <string name="what_your_target_weight">Va bene, adesso il tuo peso obiettivo.</string>
+    <string name="lbs">libbre</string>
+    <string name="kg">kg</string>
+    <!-- Height Screen Text Name -->
+    <string name="how_tall_you">Quanto sei alto?</string>
+    <string name="feet">ft&amp;in</string>
+    <string name="cm">cm</string>
+    <string name="ft">ft</string>
+    <string name="in">in</string>
+
+    <!-- Age Screen Text Name -->
+    <string name="how_old_you">Quanti anni hai?</string>
+    <!-- Main Screen Text Name -->
+    <string name="plan">Piano</string>
+    <string name="workout">Allenamento</string>
+    <string name="stats">Statistiche</string>
+    <string name="food">Cibo</string>
+    <string name="profile">Profilo</string>
+
+    <string name="water_reminder">Assunzione di Acqua</string>
+    <string name="lower_body">Parte Inferiore del Corpo</string>
+    <string name="upper_body">Parte Superiore del Corpo</string>
+    <string name="abs_core">Addominali e Core</string>
+    <string name="steps">Passi</string>
+    <!-- Work out Screen Text Name -->
+    <string name="abs_beginner">Addominali Principianti</string>
+    <string name="jumping_jack">Jumping Jack</string>
+    <string name="beginner">Principiante</string>
+    <string name="intermediate">Intermedio</string>
+    <string name="advance">Avanzato</string>
+    <string name="workout_categories">Categorie di Allenamento</string>
+    <string name="recent_exercise">Esercizi Recenti</string>
+    <string name="monthly_workout_plans">Piani di Allenamento Mensili</string>
+    <!-- Graph Screen Text Name -->
+    <string name="sleep_tracker">Monitoraggio del Sonno</string>
+    <string name="time_in_bed">Tempo a Letto</string>
+    <string name="step_counter">Contatore Passi</string>
+    <string name="today">Oggi</string>
+
+    <!-- Display Work Out Screen Text Name -->
+    <string name="start">INIZIA</string>
+    <!-- Exercise Screen Text Name -->
+    <string name="take_a_rest">Fai Una Pausa</string>
+    <!-- Exit Screen Text Name -->
+    <string name="complete_ex">"Bene, hai completato l'esercizio!</string>
+    <string name="exercise">Esercizio</string>
+    <string name="calories">Calorie</string>
+    <string name="time">Tempo</string>
+    <string name="do_you_feel">Come ti senti</string>
+    <string name="workout_feedback">Il tuo feedback ci aiuterà a fornirti allenamenti più adatti a te</string>
+    <string name="too_hard">Troppo difficile</string>
+    <string name="too_easy">Troppo facile</string>
+    <string name="just_right">Esattamente giusto</string>
+    <string name="done">Fatto</string>
+
+    <!-- Full Body Work out Screen Text Name -->
+    <string name="full_body">Corpo Intero</string>
+    <!-- Monthly Challenge -->
+    <string name="monthly_challenge">Sfida Mensile</string>
+    <string name="daily_challenge">Sfida Quotidiana</string>
+    <string name="daily_average">Media Giornaliera</string>
+
+    <!-- Premium Screen Text Name -->
+    <string name="be_premium">Diventa Premium</string>
+    <string name="unlimited_access">Ottieni Accesso Illimitato</string>
+    <string name="remove_ads">Rimuovi Pubblicità</string>
+    <string name="unlimited_workout_plans">Piani di Allenamento Illimitati</string>
+    <string name="unlock_all_plans">Sblocca Tutti i Piani</string>
+    <string name="week_of_membership">1 settimana di abbonamento</string>
+    <string name="month_of_membership">1 mese di abbonamento</string>
+    <string name="year_of_membership">1 anno di abbonamento</string>
+    <!-- Subscribe -->
+    <string name="subscribe">Abbonati</string>
+    <string name="cancel_anytime">Annulla in qualsiasi momento</string>
+
+    <!-- Single Exercise Screen Text Name -->
+    <string name="ready_to_go">Pronto a partire!</string>
+
+
+
+    <!-- Unlock Premium Bottom Screen Text Name -->
+<!--    <string name="unlock_pri">SBLOCCA\nALLENAMENTO PREMIUM</string>-->
+<!--    <string name="unlock_pri_sub">Guarda un breve video per sbloccare l'allenamento premium gratuitamente una volta</string>-->
+<!--    <string name="watch_ad">guarda pubblicità</string>-->
+<!--    <string name="go_premium">Diventa Premium</string>-->
+
+<!--    &lt;!&ndash; Quote Screen Text Name &ndash;&gt;-->
+<!--    <string name="daily_motivation">Motivazione Quotidiana</string>-->
+
+<!--    &lt;!&ndash; Common Screen Text Name &ndash;&gt;-->
+<!--    <string name="skip">Salta</string>-->
+<!--    <string name="daily">MEDIA GIORNALIERA</string>-->
+<!--    <string name="weekly">MEDIA SETTIMANALE</string>-->
+<!--    <string name="monthly">MEDIA MENSILE</string>-->
+
+<!--    <string name="daily_">Giornaliero </string>-->
+<!--    <string name="weekly_">Settimanale </string>-->
+<!--    <string name="monthly_">Mensile </string>-->
+<!--    <string name="summary">Riepilogo </string>-->
+
+<!--    &lt;!&ndash; Sleep Tracker Screen Text Name &ndash;&gt;-->
+<!--    <string name="bed_time">Ora di Andare a Letto</string>-->
+<!--    <string name="wake_time">Ora di Svegliarsi</string>-->
+<!--    <string name="alarm">Sveglia</string>-->
+<!--    <string name="sound">Suono</string>-->
+<!--    <string name="label">Etichetta</string>-->
+<!--    <string name="abs">ABC</string>-->
+<!--    <string name="snooze">Snooze</string>-->
+<!--    <string name="vibration">Vibrazione</string>-->
+
+<!--    <string name="cup_capacity">Capacità della Tazza</string>-->
+<!--    <string name="water_intake">Assunzione di Acqua</string>-->
+
+
+</resources>

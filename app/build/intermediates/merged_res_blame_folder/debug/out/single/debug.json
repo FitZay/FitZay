@@ -32,6 +32,10 @@
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/drawable/snooze_new_icon.xml"
     },
     {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-xhdpi_japanese.png.flat",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-pngs-89:/drawable-xhdpi/japanese.png"
+    },
+    {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-hdpi_arm_index.png.flat",
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/drawable-hdpi/arm_index.png"
     },
@@ -50,6 +54,10 @@
     {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable_bg_square.xml.flat",
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/drawable/bg_square.xml"
+    },
+    {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-hdpi_portugal.png.flat",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-pngs-89:/drawable-hdpi/portugal.png"
     },
     {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-hdpi_ic_quote_copy.png.flat",
@@ -108,6 +116,10 @@
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/drawable-ldpi/leg_index.png"
     },
     {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-ldpi_portugal.png.flat",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-pngs-89:/drawable-ldpi/portugal.png"
+    },
+    {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/layout_activity_step_summery.xml.flat",
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/activity_step_summery.xml"
     },
@@ -138,6 +150,14 @@
     {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/mipmap-hdpi_ic_launcher_foreground.png.flat",
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/mipmap-hdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-hdpi_russian.png.flat",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-pngs-89:/drawable-hdpi/russian.png"
+    },
+    {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-xxhdpi_japanese.png.flat",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-pngs-89:/drawable-xxhdpi/japanese.png"
     },
     {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable_bg_options.xml.flat",
@@ -256,6 +276,10 @@
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/activity_exit_screen.xml"
     },
     {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-anydpi-v24_japanese.xml.flat",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-pngs-89:/drawable-anydpi-v24/japanese.xml"
+    },
+    {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-hdpi_ic_premiumicon.png.flat",
         "source": "com.fitzay.workouttracker.strengthtraining.app-pngs-89:/drawable-hdpi/ic_premiumicon.png"
     },
@@ -292,6 +316,10 @@
         "source": "com.fitzay.workouttracker.strengthtraining.app-pngs-89:/drawable-xxxhdpi/ic_quote_copy.png"
     },
     {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-ldpi_russian.png.flat",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-pngs-89:/drawable-ldpi/russian.png"
+    },
+    {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-xxhdpi_water_cup_200_ml.png.flat",
         "source": "com.fitzay.workouttracker.strengthtraining.app-pngs-89:/drawable-xxhdpi/water_cup_200_ml.png"
     },
@@ -326,6 +354,14 @@
     {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable_to_easy.xml.flat",
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/drawable/to_easy.xml"
+    },
+    {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-xxxhdpi_italy__it__1.png.flat",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-pngs-89:/drawable-xxxhdpi/italy__it__1.png"
+    },
+    {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-mdpi_arabic.png.flat",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-pngs-89:/drawable-mdpi/arabic.png"
     },
     {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-xxxhdpi_chest_index.png.flat",
@@ -390,6 +426,10 @@
     {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-xxxhdpi_ic_glass_change.png.flat",
         "source": "com.fitzay.workouttracker.strengthtraining.app-pngs-89:/drawable-xxxhdpi/ic_glass_change.png"
+    },
+    {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-xxxhdpi_arabic.png.flat",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-pngs-89:/drawable-xxxhdpi/arabic.png"
     },
     {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-xhdpi_ic_premiumicon.png.flat",
@@ -492,6 +532,10 @@
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/drawable-ldpi/shoulder_index.png"
     },
     {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-anydpi-v24_arabic.xml.flat",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-pngs-89:/drawable-anydpi-v24/arabic.xml"
+    },
+    {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/mipmap-hdpi_ic_launcher.png.flat",
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/mipmap-hdpi/ic_launcher.png"
     },
@@ -532,12 +576,20 @@
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/drawable/edittext_modified_states.xml"
     },
     {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-xhdpi_russian.png.flat",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-pngs-89:/drawable-xhdpi/russian.png"
+    },
+    {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-xxhdpi_water_cup_300_ml.png.flat",
         "source": "com.fitzay.workouttracker.strengthtraining.app-pngs-89:/drawable-xxhdpi/water_cup_300_ml.png"
     },
     {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable_ic_camera_open.xml.flat",
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/drawable/ic_camera_open.xml"
+    },
+    {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-ldpi_arabic.png.flat",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-pngs-89:/drawable-ldpi/arabic.png"
     },
     {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-xxhdpi_ic_quote_save.png.flat",
@@ -568,6 +620,14 @@
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/drawable/bg_square_yellow.xml"
     },
     {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-xxhdpi_italy__it__1.png.flat",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-pngs-89:/drawable-xxhdpi/italy__it__1.png"
+    },
+    {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/layout_activity_language.xml.flat",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/activity_language.xml"
+    },
+    {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/layout_activity_play_alarm.xml.flat",
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/activity_play_alarm.xml"
     },
@@ -588,6 +648,10 @@
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/drawable/ic_step_cal_white.xml"
     },
     {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-hdpi_arabic.png.flat",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-pngs-89:/drawable-hdpi/arabic.png"
+    },
+    {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable_ic_not_checked_days.xml.flat",
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/drawable/ic_not_checked_days.xml"
     },
@@ -606,6 +670,10 @@
     {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable_ic_arrow_next.xml.flat",
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/drawable/ic_arrow_next.xml"
+    },
+    {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-mdpi_russian.png.flat",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-pngs-89:/drawable-mdpi/russian.png"
     },
     {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable_baseline_lock_24.xml.flat",
@@ -634,6 +702,10 @@
     {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-mdpi_water_cup_200_ml.png.flat",
         "source": "com.fitzay.workouttracker.strengthtraining.app-pngs-89:/drawable-mdpi/water_cup_200_ml.png"
+    },
+    {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-hdpi_japanese.png.flat",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-pngs-89:/drawable-hdpi/japanese.png"
     },
     {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/mipmap-xxxhdpi_ic_launcher.png.flat",
@@ -668,12 +740,16 @@
         "source": "com.fitzay.workouttracker.strengthtraining.app-pngs-89:/drawable-hdpi/ic_glass_change.png"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-hdpi_ic_profile.png.flat",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-pngs-89:/drawable-hdpi/ic_profile.png"
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-xxhdpi_arabic.png.flat",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-pngs-89:/drawable-xxhdpi/arabic.png"
     },
     {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-ldpi_abs_index.png.flat",
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/drawable-ldpi/abs_index.png"
+    },
+    {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-hdpi_ic_profile.png.flat",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-pngs-89:/drawable-hdpi/ic_profile.png"
     },
     {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable_bg_premiumbtn.xml.flat",
@@ -730,6 +806,10 @@
     {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable_fitzay_icon_splash.xml.flat",
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/drawable/fitzay_icon_splash.xml"
+    },
+    {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable_french.xml.flat",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/drawable/french.xml"
     },
     {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/layout_activity_sleep_tracker.xml.flat",
@@ -856,8 +936,16 @@
         "source": "com.fitzay.workouttracker.strengthtraining.app-pngs-89:/drawable-ldpi/ic_quote_save_selected.png"
     },
     {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-mdpi_portugal.png.flat",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-pngs-89:/drawable-mdpi/portugal.png"
+    },
+    {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-mdpi_ic_step_shoes.png.flat",
         "source": "com.fitzay.workouttracker.strengthtraining.app-pngs-89:/drawable-mdpi/ic_step_shoes.png"
+    },
+    {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-anydpi-v24_portugal.xml.flat",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-pngs-89:/drawable-anydpi-v24/portugal.xml"
     },
     {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/font_eina_02_regular.ttf.flat",
@@ -908,6 +996,10 @@
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/drawable/ic_menu_how_to_use.xml"
     },
     {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-mdpi_japanese.png.flat",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-pngs-89:/drawable-mdpi/japanese.png"
+    },
+    {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable_app_icon_for.png.flat",
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/drawable/app_icon_for.png"
     },
@@ -924,12 +1016,12 @@
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/drawable/bg_main.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable_ic_gallery_open.xml.flat",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/drawable/ic_gallery_open.xml"
-    },
-    {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/layout_activity_asking_weight.xml.flat",
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/activity_asking_weight.xml"
+    },
+    {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable_ic_gallery_open.xml.flat",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/drawable/ic_gallery_open.xml"
     },
     {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-xhdpi_ic_quote_copy.png.flat",
@@ -972,12 +1064,20 @@
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/drawable/img_women_thighs.png"
     },
     {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-xxxhdpi_russian.png.flat",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-pngs-89:/drawable-xxxhdpi/russian.png"
+    },
+    {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/raw_personalized_workouts.gif.flat",
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/raw/personalized_workouts.gif"
     },
     {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-xxhdpi_ic_quote_copy.png.flat",
         "source": "com.fitzay.workouttracker.strengthtraining.app-pngs-89:/drawable-xxhdpi/ic_quote_copy.png"
+    },
+    {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-mdpi_italy__it__1.png.flat",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-pngs-89:/drawable-mdpi/italy__it__1.png"
     },
     {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable_baseline_keyboard_arrow_right_24.xml.flat",
@@ -1020,12 +1120,12 @@
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/fragment_unlock_premium_bottom.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-ldpi_absbeginnercircular.png.flat",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/drawable-ldpi/absbeginnercircular.png"
-    },
-    {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-mdpi_chest_index.png.flat",
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/drawable-mdpi/chest_index.png"
+    },
+    {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-ldpi_absbeginnercircular.png.flat",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/drawable-ldpi/absbeginnercircular.png"
     },
     {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/layout_activity_sleep_summary.xml.flat",
@@ -1052,12 +1152,20 @@
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/drawable/ic_menu_run.xml"
     },
     {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-xxhdpi_russian.png.flat",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-pngs-89:/drawable-xxhdpi/russian.png"
+    },
+    {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-ldpi_ic_premium.png.flat",
         "source": "com.fitzay.workouttracker.strengthtraining.app-pngs-89:/drawable-ldpi/ic_premium.png"
     },
     {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable_ic_selected_weight_loss.xml.flat",
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/drawable/ic_selected_weight_loss.xml"
+    },
+    {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-anydpi-v24_russian.xml.flat",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-pngs-89:/drawable-anydpi-v24/russian.xml"
     },
     {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable_ic_nav_illustration.xml.flat",
@@ -1088,12 +1196,20 @@
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/drawable/ic_launcher_background.xml"
     },
     {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable_english__usa_.xml.flat",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/drawable/english__usa_.xml"
+    },
+    {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-ldpi_ic_quote_copy.png.flat",
         "source": "com.fitzay.workouttracker.strengthtraining.app-pngs-89:/drawable-ldpi/ic_quote_copy.png"
     },
     {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable_ic_nav_more_apps.xml.flat",
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/drawable/ic_nav_more_apps.xml"
+    },
+    {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable_mandarin_chinese.xml.flat",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/drawable/mandarin_chinese.xml"
     },
     {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-mdpi_shoulder_index.png.flat",
@@ -1160,6 +1276,10 @@
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/activity_asking_height.xml"
     },
     {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/layout_language_show_list.xml.flat",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/language_show_list.xml"
+    },
+    {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable_bg_selected_circle.xml.flat",
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/drawable/bg_selected_circle.xml"
     },
@@ -1186,6 +1306,10 @@
     {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-xxxhdpi_full_bodyexit.png.flat",
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/drawable-xxxhdpi/full_bodyexit.png"
+    },
+    {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable_spanish.xml.flat",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/drawable/spanish.xml"
     },
     {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable_ic_inverted_commas.xml.flat",
@@ -1256,16 +1380,20 @@
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/fragment_step_daily.xml"
     },
     {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-xhdpi_italy__it__1.png.flat",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-pngs-89:/drawable-xhdpi/italy__it__1.png"
+    },
+    {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-xhdpi_shoulder_index.png.flat",
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/drawable-xhdpi/shoulder_index.png"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable_baseline_cancel_24.xml.flat",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/drawable/baseline_cancel_24.xml"
-    },
-    {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-xxhdpi_lower_body.png.flat",
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/drawable-xxhdpi/lower_body.png"
+    },
+    {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable_baseline_cancel_24.xml.flat",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/drawable/baseline_cancel_24.xml"
     },
     {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/anim_slide_in_right.xml.flat",
@@ -1308,6 +1436,10 @@
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/color/toggle_text_color.xml"
     },
     {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-xhdpi_portugal.png.flat",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-pngs-89:/drawable-xhdpi/portugal.png"
+    },
+    {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable_bg_selected.xml.flat",
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/drawable/bg_selected.xml"
     },
@@ -1340,6 +1472,10 @@
         "source": "com.fitzay.workouttracker.strengthtraining.app-pngs-89:/drawable-ldpi/water_cup_100_ml.png"
     },
     {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable_india__in__1.xml.flat",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/drawable/india__in__1.xml"
+    },
+    {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable_ic_thumbs_up.xml.flat",
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/drawable/ic_thumbs_up.xml"
     },
@@ -1350,6 +1486,10 @@
     {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable_ic_close.xml.flat",
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/drawable/ic_close.xml"
+    },
+    {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-xhdpi_arabic.png.flat",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-pngs-89:/drawable-xhdpi/arabic.png"
     },
     {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable_height_weight_selected_box.xml.flat",
@@ -1388,6 +1528,10 @@
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/drawable/bg__4_.xml"
     },
     {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-xxhdpi_portugal.png.flat",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-pngs-89:/drawable-xxhdpi/portugal.png"
+    },
+    {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable_constant.xml.flat",
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/drawable/constant.xml"
     },
@@ -1404,6 +1548,10 @@
         "source": "com.fitzay.workouttracker.strengthtraining.app-pngs-89:/drawable-xhdpi/ic_drop_down.png"
     },
     {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-ldpi_japanese.png.flat",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-pngs-89:/drawable-ldpi/japanese.png"
+    },
+    {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-xxhdpi_ic_quote_copy_selected.png.flat",
         "source": "com.fitzay.workouttracker.strengthtraining.app-pngs-89:/drawable-xxhdpi/ic_quote_copy_selected.png"
     },
@@ -1416,12 +1564,12 @@
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/drawable/ic_menu_rate_us.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable_bg_training_options.xml.flat",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/drawable/bg_training_options.xml"
-    },
-    {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/layout_activity_step_counter.xml.flat",
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/activity_step_counter.xml"
+    },
+    {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable_bg_training_options.xml.flat",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/drawable/bg_training_options.xml"
     },
     {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-hdpi_ic_premium.png.flat",
@@ -1556,6 +1704,10 @@
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/activity_fullbody_workout.xml"
     },
     {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-xxxhdpi_portugal.png.flat",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-pngs-89:/drawable-xxxhdpi/portugal.png"
+    },
+    {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/xml_backup_rules.xml.flat",
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/xml/backup_rules.xml"
     },
@@ -1582,6 +1734,10 @@
     {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-xxxhdpi_absbeginnercircular.png.flat",
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/drawable-xxxhdpi/absbeginnercircular.png"
+    },
+    {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-hdpi_italy__it__1.png.flat",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-pngs-89:/drawable-hdpi/italy__it__1.png"
     },
     {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/layout_ringtone_show_list.xml.flat",
@@ -1716,12 +1872,20 @@
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/activity_target_weight.xml"
     },
     {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-ldpi_italy__it__1.png.flat",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-pngs-89:/drawable-ldpi/italy__it__1.png"
+    },
+    {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable_custom_thumb_on.xml.flat",
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/drawable/custom_thumb_on.xml"
     },
     {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-xxhdpi_ic_quote_save_selected.png.flat",
         "source": "com.fitzay.workouttracker.strengthtraining.app-pngs-89:/drawable-xxhdpi/ic_quote_save_selected.png"
+    },
+    {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-anydpi-v24_italy__it__1.xml.flat",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-pngs-89:/drawable-anydpi-v24/italy__it__1.xml"
     },
     {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable_linear_foreground.xml.flat",
@@ -1734,6 +1898,10 @@
     {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-hdpi_leg_index.png.flat",
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/drawable-hdpi/leg_index.png"
+    },
+    {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-xxxhdpi_japanese.png.flat",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-pngs-89:/drawable-xxxhdpi/japanese.png"
     },
     {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable_ic_menu.xml.flat",

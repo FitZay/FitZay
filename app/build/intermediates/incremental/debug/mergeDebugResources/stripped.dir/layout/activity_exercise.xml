@@ -348,7 +348,7 @@
                     android:layout_centerHorizontal="true"
                     android:layout_gravity="center_horizontal"
                     android:fontFamily="@font/poppins_medium"
-                    android:text="Take A Rest"
+                    android:text="@string/take_a_rest"
                     android:textColor="@color/white"
                     android:textSize="@dimen/_14sdp"
                     app:layout_constraintBottom_toTopOf="@+id/txtReadyNext"
@@ -418,7 +418,7 @@
                         android:layout_gravity="center"
                         android:fontFamily="@font/poppins_medium"
                         android:gravity="center"
-                        android:text="Skip"
+                        android:text="@string/skip"
                         android:textColor="@color/white"
                         android:textSize="@dimen/_14sdp" />
 

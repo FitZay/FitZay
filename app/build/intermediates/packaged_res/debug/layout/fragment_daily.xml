@@ -35,7 +35,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="@dimen/_5sdp"
-                android:text="DAILY AVERAGE"
+                android:text="@string/daily"
                 android:textColor="@color/tab_not_selected"
                 android:textSize="@dimen/_11sdp"
                 app:layout_constraintBottom_toBottomOf="parent"

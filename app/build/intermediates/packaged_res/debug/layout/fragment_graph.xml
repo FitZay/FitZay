@@ -39,7 +39,7 @@
                 android:layout_marginHorizontal="@dimen/_5sdp"
                 android:layout_marginTop="@dimen/_5sdp"
                 android:fontFamily="@font/poppins"
-                android:text="Sleep tracker"
+                android:text="@string/sleep_tracker"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_14sdp" />
 
@@ -63,7 +63,7 @@
             android:layout_marginHorizontal="@dimen/_15sdp"
             android:layout_marginBottom="@dimen/_10sdp"
             android:fontFamily="@font/poppins"
-            android:text="Time in Bed"
+            android:text="@string/time_in_bed"
             android:textColor="@color/tab_not_selected"
             android:textSize="@dimen/_10sdp" />
 
@@ -101,7 +101,7 @@
                 android:layout_marginHorizontal="@dimen/_5sdp"
                 android:layout_marginTop="@dimen/_5sdp"
                 android:fontFamily="@font/poppins"
-                android:text="Step Counter"
+                android:text="@string/step_counter"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_14sdp" />
 
@@ -126,7 +126,7 @@
             android:layout_marginHorizontal="@dimen/_15sdp"
             android:layout_marginBottom="@dimen/_10sdp"
             android:fontFamily="@font/poppins"
-            android:text="Today"
+            android:text="@string/today"
             android:textColor="@color/tab_not_selected"
             android:textSize="@dimen/_10sdp" />
 
@@ -184,7 +184,7 @@
             android:layout_marginHorizontal="@dimen/_15sdp"
             android:layout_marginBottom="@dimen/_10sdp"
             android:fontFamily="@font/poppins"
-            android:text="Time in Bed"
+            android:text="@string/time_in_bed"
             android:textColor="@color/tab_not_selected"
             android:textSize="@dimen/_10sdp" />
 
