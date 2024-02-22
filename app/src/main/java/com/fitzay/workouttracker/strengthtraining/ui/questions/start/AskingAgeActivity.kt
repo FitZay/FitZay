@@ -10,6 +10,7 @@ import com.fitzay.workouttracker.strengthtraining.core.AppController
 import com.fitzay.workouttracker.strengthtraining.core.utils.getFitzayRemoteString
 import com.fitzay.workouttracker.strengthtraining.databinding.ActivityAskingAgeBinding
 import com.fitzay.workouttracker.strengthtraining.di.Component
+import com.google.android.ads.nativetemplates.TemplateView
 import com.google.android.gms.ads.AdListener
 import com.google.android.gms.ads.AdLoader
 import com.google.android.gms.ads.AdRequest
@@ -23,12 +24,13 @@ class AskingAgeActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        TemplateView.ctacolor = AppController.fitzayModel?.FitzayNativeAge?.ctacolor
         binding = ActivityAskingAgeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.apply {
             if (AppController.fitzayModel != null && AppController.fitzayModel!!.FitzayNativeAge.showAd) {
+                clAds.visibility = View.VISIBLE
                 loadAdaptiveNative()
             } else {
                 clAds.visibility = View.GONE
@@ -67,7 +69,7 @@ class AskingAgeActivity : AppCompatActivity() {
         binding.apply {
             layoutAd.visibility = View.GONE
 
-            val template = if (getFitzayRemoteString("fitzay_cta_location") == "up") {
+            val template = if (AppController.fitzayModel!!.FitzayNativeAge.ctalocation == "up") {
                 binding.plannerTemplateDown.visibility = View.GONE
                 binding.plannerTemplateUp.visibility = View.VISIBLE
                 binding.plannerTemplateUp

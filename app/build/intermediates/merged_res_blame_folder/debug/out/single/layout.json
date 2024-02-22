@@ -56,6 +56,10 @@
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/custom_tooltip.xml"
     },
     {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/activity_push_ups_do.xml",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/activity_push_ups_do.xml"
+    },
+    {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/display_workouts_layout.xml",
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/display_workouts_layout.xml"
     },
@@ -94,6 +98,10 @@
     {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/dialog_edit_bed_time.xml",
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/dialog_edit_bed_time.xml"
+    },
+    {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/activity_part_should_focus.xml",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/activity_part_should_focus.xml"
     },
     {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/schedule_alarm_show_item_list.xml",

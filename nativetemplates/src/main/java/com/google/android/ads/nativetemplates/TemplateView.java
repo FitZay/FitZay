@@ -47,7 +47,7 @@ public class TemplateView extends FrameLayout {
     private NativeAd nativeAd;
     private NativeAdView nativeAdView;
 
-    public static String remoteColor = "#9CB135";
+    public static String ctacolor = "#9CB135";
 
     private TextView primaryView;
     private TextView secondaryView;
@@ -298,11 +298,23 @@ public class TemplateView extends FrameLayout {
 
         callToActionView = findViewById(R.id.cta);
 
+        int backgroundColor;
+        if (ctacolor != null) {
+            try {
+                backgroundColor = Color.parseColor(ctacolor.trim());
+            }
+            catch (Exception e){
+                ctacolor = "#"+ctacolor;
+                backgroundColor = Color.parseColor(ctacolor.trim());
+            }
+
+        } else {
+
+            backgroundColor = Color.WHITE;
+        }
 
         Drawable drawable = callToActionView.getBackground();
-        int backgroundColor = Color.parseColor(remoteColor.trim());
         drawable.setColorFilter(backgroundColor, android.graphics.PorterDuff.Mode.SRC);
-
         callToActionView.setBackground(drawable);
 
         iconView = findViewById(R.id.icon);
