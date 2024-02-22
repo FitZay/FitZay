@@ -76,7 +76,7 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_marginVertical="@dimen/_10sdp"
                     android:fontFamily="@font/poppins_medium"
-                    android:text="Ready to go!"
+                    android:text="@string/ready_to_go"
                     android:textColor="@color/ready_color"
                     android:textSize="@dimen/_16sdp" />
 
@@ -249,7 +249,7 @@
                         android:layout_height="wrap_content"
                         android:layout_centerInParent="true"
                         android:fontFamily="@font/poppins"
-                        android:text="DONE"
+                        android:text="@string/done"
                         android:textColor="@color/white"
                         android:textSize="@dimen/_14sdp" />
 

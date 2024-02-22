@@ -6,9 +6,11 @@ import android.view.View;
 import androidx.databinding.DataBinderMapper;
 import androidx.databinding.DataBindingComponent;
 import androidx.databinding.ViewDataBinding;
+import com.fitzay.workouttracker.strengthtraining.databinding.ActivityLanguageBindingImpl;
 import com.fitzay.workouttracker.strengthtraining.databinding.ActivitySleepSummaryBindingImpl;
 import com.fitzay.workouttracker.strengthtraining.databinding.ActivitySleepTrackerHomeScreenBindingImpl;
 import com.fitzay.workouttracker.strengthtraining.databinding.AlarmShowItemListBindingImpl;
+import com.fitzay.workouttracker.strengthtraining.databinding.LanguageShowListBindingImpl;
 import com.fitzay.workouttracker.strengthtraining.databinding.LayoutWeekdaysBindingImpl;
 import com.fitzay.workouttracker.strengthtraining.databinding.RingtoneShowListBindingImpl;
 import com.fitzay.workouttracker.strengthtraining.databinding.ScheduleAlarmShowItemListBindingImpl;
@@ -23,24 +25,30 @@ import java.util.HashMap;
 import java.util.List;
 
 public class DataBinderMapperImpl extends DataBinderMapper {
-  private static final int LAYOUT_ACTIVITYSLEEPSUMMARY = 1;
+  private static final int LAYOUT_ACTIVITYLANGUAGE = 1;
 
-  private static final int LAYOUT_ACTIVITYSLEEPTRACKERHOMESCREEN = 2;
+  private static final int LAYOUT_ACTIVITYSLEEPSUMMARY = 2;
 
-  private static final int LAYOUT_ALARMSHOWITEMLIST = 3;
+  private static final int LAYOUT_ACTIVITYSLEEPTRACKERHOMESCREEN = 3;
 
-  private static final int LAYOUT_LAYOUTWEEKDAYS = 4;
+  private static final int LAYOUT_ALARMSHOWITEMLIST = 4;
 
-  private static final int LAYOUT_RINGTONESHOWLIST = 5;
+  private static final int LAYOUT_LANGUAGESHOWLIST = 5;
 
-  private static final int LAYOUT_SCHEDULEALARMSHOWITEMLIST = 6;
+  private static final int LAYOUT_LAYOUTWEEKDAYS = 6;
 
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(6);
+  private static final int LAYOUT_RINGTONESHOWLIST = 7;
+
+  private static final int LAYOUT_SCHEDULEALARMSHOWITEMLIST = 8;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(8);
 
   static {
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.fitzay.workouttracker.strengthtraining.R.layout.activity_language, LAYOUT_ACTIVITYLANGUAGE);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.fitzay.workouttracker.strengthtraining.R.layout.activity_sleep_summary, LAYOUT_ACTIVITYSLEEPSUMMARY);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.fitzay.workouttracker.strengthtraining.R.layout.activity_sleep_tracker_home_screen, LAYOUT_ACTIVITYSLEEPTRACKERHOMESCREEN);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.fitzay.workouttracker.strengthtraining.R.layout.alarm_show_item_list, LAYOUT_ALARMSHOWITEMLIST);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.fitzay.workouttracker.strengthtraining.R.layout.language_show_list, LAYOUT_LANGUAGESHOWLIST);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.fitzay.workouttracker.strengthtraining.R.layout.layout_weekdays, LAYOUT_LAYOUTWEEKDAYS);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.fitzay.workouttracker.strengthtraining.R.layout.ringtone_show_list, LAYOUT_RINGTONESHOWLIST);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.fitzay.workouttracker.strengthtraining.R.layout.schedule_alarm_show_item_list, LAYOUT_SCHEDULEALARMSHOWITEMLIST);
@@ -55,6 +63,12 @@ public class DataBinderMapperImpl extends DataBinderMapper {
         throw new RuntimeException("view must have a tag");
       }
       switch(localizedLayoutId) {
+        case  LAYOUT_ACTIVITYLANGUAGE: {
+          if ("layout/activity_language_0".equals(tag)) {
+            return new ActivityLanguageBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for activity_language is invalid. Received: " + tag);
+        }
         case  LAYOUT_ACTIVITYSLEEPSUMMARY: {
           if ("layout/activity_sleep_summary_0".equals(tag)) {
             return new ActivitySleepSummaryBindingImpl(component, view);
@@ -72,6 +86,12 @@ public class DataBinderMapperImpl extends DataBinderMapper {
             return new AlarmShowItemListBindingImpl(component, view);
           }
           throw new IllegalArgumentException("The tag for alarm_show_item_list is invalid. Received: " + tag);
+        }
+        case  LAYOUT_LANGUAGESHOWLIST: {
+          if ("layout/language_show_list_0".equals(tag)) {
+            return new LanguageShowListBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for language_show_list is invalid. Received: " + tag);
         }
         case  LAYOUT_LAYOUTWEEKDAYS: {
           if ("layout/layout_weekdays_0".equals(tag)) {
@@ -146,12 +166,14 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(6);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(8);
 
     static {
+      sKeys.put("layout/activity_language_0", com.fitzay.workouttracker.strengthtraining.R.layout.activity_language);
       sKeys.put("layout/activity_sleep_summary_0", com.fitzay.workouttracker.strengthtraining.R.layout.activity_sleep_summary);
       sKeys.put("layout/activity_sleep_tracker_home_screen_0", com.fitzay.workouttracker.strengthtraining.R.layout.activity_sleep_tracker_home_screen);
       sKeys.put("layout/alarm_show_item_list_0", com.fitzay.workouttracker.strengthtraining.R.layout.alarm_show_item_list);
+      sKeys.put("layout/language_show_list_0", com.fitzay.workouttracker.strengthtraining.R.layout.language_show_list);
       sKeys.put("layout/layout_weekdays_0", com.fitzay.workouttracker.strengthtraining.R.layout.layout_weekdays);
       sKeys.put("layout/ringtone_show_list_0", com.fitzay.workouttracker.strengthtraining.R.layout.ringtone_show_list);
       sKeys.put("layout/schedule_alarm_show_item_list_0", com.fitzay.workouttracker.strengthtraining.R.layout.schedule_alarm_show_item_list);

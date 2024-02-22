@@ -44,7 +44,7 @@
             android:layout_toEndOf="@id/icShoes"
             android:fontFamily="@font/poppins"
             android:gravity="center_vertical"
-            android:text="Steps"
+            android:text="@string/steps"
             android:textColor="@color/start_btn_color"
             android:textSize="@dimen/_15sdp" />
 
