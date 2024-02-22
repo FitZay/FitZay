@@ -4180,6 +4180,7 @@ drawable just_right
 drawable just_right_dim
 drawable label_new_icon
 drawable label_new_icon_light
+drawable lang
 drawable leg_index
 drawable linear_foreground
 drawable lower_body
@@ -4778,6 +4779,7 @@ id label
 id label2
 id labelName
 id labeled
+id lang
 id langName
 id langTxt
 id languageRv

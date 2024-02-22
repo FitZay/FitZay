@@ -63,7 +63,7 @@
     <!-- Exercise Screen Text Name -->
     <string name="take_a_rest">Fai Una Pausa</string>
     <!-- Exit Screen Text Name -->
-    <string name="complete_ex">"Bene, hai completato l'esercizio!</string>
+    <string name="complete_ex">"Bene, hai completato l\'esercizio!</string>
     <string name="exercise">Esercizio</string>
     <string name="calories">Calorie</string>
     <string name="time">Tempo</string>
@@ -99,38 +99,212 @@
 
 
 
-    <!-- Unlock Premium Bottom Screen Text Name -->
-<!--    <string name="unlock_pri">SBLOCCA\nALLENAMENTO PREMIUM</string>-->
-<!--    <string name="unlock_pri_sub">Guarda un breve video per sbloccare l'allenamento premium gratuitamente una volta</string>-->
-<!--    <string name="watch_ad">guarda pubblicità</string>-->
-<!--    <string name="go_premium">Diventa Premium</string>-->
+<!--     Unlock Premium Bottom Screen Text Name -->
+    <string name="unlock_pri">SBLOCCA\nALLENAMENTO PREMIUM</string>
+    <string name="unlock_pri_sub">Guarda un breve video per sbloccare l\'allenamento premium gratuitamente una volta</string>
+    <string name="watch_ad">guarda pubblicità</string>
+    <string name="go_premium">Diventa Premium</string>
 
-<!--    &lt;!&ndash; Quote Screen Text Name &ndash;&gt;-->
-<!--    <string name="daily_motivation">Motivazione Quotidiana</string>-->
+    <!-- Quote Screen Text Name -->
+    <string name="daily_motivation">Motivazione Quotidiana</string>
 
-<!--    &lt;!&ndash; Common Screen Text Name &ndash;&gt;-->
-<!--    <string name="skip">Salta</string>-->
-<!--    <string name="daily">MEDIA GIORNALIERA</string>-->
-<!--    <string name="weekly">MEDIA SETTIMANALE</string>-->
-<!--    <string name="monthly">MEDIA MENSILE</string>-->
+    <!-- Common Screen Text Name -->
+    <string name="skip">Salta</string>
+    <string name="daily">MEDIA GIORNALIERA</string>
+    <string name="weekly">MEDIA SETTIMANALE</string>
+    <string name="monthly">MEDIA MENSILE</string>
 
-<!--    <string name="daily_">Giornaliero </string>-->
-<!--    <string name="weekly_">Settimanale </string>-->
-<!--    <string name="monthly_">Mensile </string>-->
-<!--    <string name="summary">Riepilogo </string>-->
+    <string name="daily_">Giornaliero </string>
+    <string name="weekly_">Settimanale </string>
+    <string name="monthly_">Mensile </string>
+    <string name="summary">Riepilogo </string>
 
-<!--    &lt;!&ndash; Sleep Tracker Screen Text Name &ndash;&gt;-->
-<!--    <string name="bed_time">Ora di Andare a Letto</string>-->
-<!--    <string name="wake_time">Ora di Svegliarsi</string>-->
-<!--    <string name="alarm">Sveglia</string>-->
-<!--    <string name="sound">Suono</string>-->
-<!--    <string name="label">Etichetta</string>-->
-<!--    <string name="abs">ABC</string>-->
-<!--    <string name="snooze">Snooze</string>-->
-<!--    <string name="vibration">Vibrazione</string>-->
+    <!-- Sleep Tracker Screen Text Name -->
+    <string name="bed_time">Ora di Andare a Letto</string>
+    <string name="wake_time">Ora di Svegliarsi</string>
+    <string name="alarm">Sveglia</string>
+    <string name="sound">Suono</string>
+    <string name="label">Etichetta</string>
+    <string name="abs">ABC</string>
+    <string name="snooze">Snooze</string>
+    <string name="vibration">Vibrazione</string>
 
-<!--    <string name="cup_capacity">Capacità della Tazza</string>-->
-<!--    <string name="water_intake">Assunzione di Acqua</string>-->
+    <string name="cup_capacity">Capacità della Tazza</string>
+    <string name="water_intake">Assunzione di Acqua</string>
 
+    <string name="what_does_your_typical_day">Com\'è una giornata tipica per te?</string>
+    <string name="mostly_working_active">Principalmente lavoro e attività</string>
+    <string name="mostly_foot">Principalmente a piedi</string>
+    <string name="mostly_seated">Principalmente seduto</string>
+    <string name="home_mostly_inactive">Principalmente a casa, inattivo</string>
 
+    <string name="do_you_relate_following_statement">Ti rispecchi nella seguente affermazione?</string>
+    <string name="relate_following_statement">Ho paura che fare esercizio e pianificare i pasti mi porti via troppo tempo libero.</string>
+    <string name="yes">Sì</string>
+    <string name="no">No</string>
+
+    <string name="any_bad_habits">Hai qualche cattiva abitudine?</string>
+    <string name="have_sweet_tooth">Ho una voglia di dolci</string>
+    <string name="love_sugary_drinks">Amo le bevande zuccherate</string>
+    <string name="not_sleep_enough">Non dormo abbastanza</string>
+    <string name="enjoy_fast_food">Mi piace il fast food</string>
+    <string name="eat_late_night">Mangio fino a tarda notte</string>
+
+    <string name="how_much_walk_daily">Quanto cammini ogni giorno?</string>
+    <string name="more_than_two_hours">Più di 2 ore</string>
+    <string name="one_two_hours">1–2 ore</string>
+    <string name="less_one_hour">Meno di 1 ora</string>
+    <string name="how_energy_levels_during_day">Come sono i tuoi livelli di energia durante il giorno?</string>
+    <string name="stable_throughout_day">Stabili durante il giorno</string>
+    <string name="feel_tired_around_lunchtime">Mi sento stanco intorno all\'ora di pranzo</string>
+    <string name="need_nap_after_meals">Ho bisogno di fare un pisolino dopo i pasti</string>
+
+    <string name="how_much_sleep_every_night">Quanto dormi ogni notte?</string>
+    <string name="more_than_8_hours">Più di 8 ore</string>
+    <string name="txt_7_8_hours">7–8 ore</string>
+    <string name="txt_6_7_hours">6–7 ore</string>
+    <string name="less_6_hours">Meno di 6 ore</string>
+
+    <string name="how_often_feel_stressed">Quanto spesso ti senti stressato?</string>
+    <string name="not_much_all">Non molto per niente</string>
+    <string name="few_times_week">Alcune volte alla settimana</string>
+    <string name="multiple_times_a_day">Più volte al giorno</string>
+
+    <string name="what_motivates_you_most">Cosa ti motiva di più?</string>
+    <string name="feeling_confident">Sentirmi sicuro di me</string>
+    <string name="being_active">Essere attivo</string>
+    <string name="boosting_immunity">Potenziare l\'immunità</string>
+    <string name="improving_sleep">Migliorare il sonno</string>
+    <string name="feeling_happier">Sentirmi più felice</string>
+    <string name="boosting_energy">Aumentare l\'energia</string>
+    <string name="how_motivated_you_start">Quanto sei motivato a iniziare?</string>
+    <string name="very_motivated">Sono molto motivato!</string>
+    <string name="motivated">Sono motivato</string>
+    <string name="not_so_much">Non molto</string>
+
+    <string name="how_long_ready_commit">Per quanto tempo sei pronto a impegnarti?</string>
+    <string name="at_least_year">Almeno un anno</string>
+    <string name="at_least_3_months">Almeno 3 mesi</string>
+    <string name="at_least_month">Almeno un mese</string>
+
+    <string name="how_hear_about_fitness">Come hai sentito parlare di fitness?</string>
+    <string name="google_play">Google Play</string>
+    <string name="tv">TV</string>
+    <string name="radio_podcast">Radio o podcast</string>
+    <string name="friends_family">Amici o familiari</string>
+    <string name="facebook">Facebook</string>
+    <string name="instagram">Instagram</string>
+    <string name="google_search">Ricerca Google</string>
+
+    <string name="what_daily_water_intake">Qual è il tuo consumo giornaliero di acqua?</string>
+    <string name="more_6_glasses">Più di 6 bicchieri</string>
+    <string name="txt_3_6_glasses">Da 3 a 6 bicchieri</string>
+    <string name="txt_2_glasses">2 bicchieri</string>
+    <string name="txt_only_drink_soda_coffee">Bevo solo soda o caffè</string>
+
+    <string name="how_fit_are_you">Quanto sei in forma?</string>
+    <string name="very_fit">Sono molto in forma</string>
+    <string name="fit">Sono in forma</string>
+    <string name="not_very_fit">Non sono molto in forma</string>
+
+    <string name="item_not_found">Elemento non trovato</string>
+    <string name="purchase_cancel_by_user">Acquisto cancellato dall\'utente</string>
+    <string name="make_right_nutrition_choices">Fai le scelte alimentari corrette</string>
+    <string name="txt_right_nutrition_choices">Una grande routine di allenamento senza le giuste scelte alimentari non funzionerà. \n \nIl nostro libro di cucina ti aiuterà a trovare alternative salutari alle scelte alimentari non proprio sane.</string>
+    <string name="thanks_for_sharing">Grazie per la condivisione!</string>
+    <string name="txt_thanks_sharing">Ci sono forti prove scientifiche che dimostrano che essere fisicamente attivi può aiutarti a condurre una vita più sana e più felice.</string>
+    <string name="your_commitment">Il tuo impegno</string>
+    <string name="txt_your_commitment">Ho deciso di essere pronto a mettermi in forma e a rimanere in forma. \n \nLavorerò costantemente per raggiungere i miei obiettivi di fitness. Sarò paziente con me stesso e con i miei progressi.</string>
+    <string name="tap_hold">Tocca e tieni premuto</string>
+    <string name="tap_hold_continue">Tocca e tieni premuto il pulsante per continuare.</string>
+    <string name="what_your_goal">Qual è il tuo obiettivo?</string>
+    <string name="weight_lose">Perdere peso</string>
+    <string name="weight_gain">Aumentare di peso</string>
+    <string name="weight_maintain">Mantenere il peso</string>
+    <string name="gain_muscle">Aumentare la massa muscolare</string>
+    <string name="what_your_body_type">Qual è il tuo tipo di corpo?</string>
+    <string name="skinny">Magro</string>
+    <string name="ideal">Ideale</string>
+    <string name="flabby">Flaccido</string>
+    <string name="heavier">Più pesante</string>
+
+    <string name="how_often_you_exercise">Quanto spesso fai esercizio?</string>
+    <string name="more_than_workouts_week">Più di 4 allenamenti a settimana</string>
+    <string name="txt_3_4_workouts_week">3-4 allenamenti a settimana</string>
+    <string name="txt_1_2_workouts_week">1-2 allenamenti a settimana</string>
+    <string name="which_parts_should_focus_on">Su quali parti dovremmo concentrarci?</string>
+    <string name="arms">Braccia</string>
+    <string name="chest">Petto</string>
+    <string name="belly">Addome</string>
+    <string name="thighs">Cosce</string>
+
+    <string name="you_are_good_hands">Sei in buone mani</string>
+    <string name="txt_you_are_good_hands">E non sei solo!</string>
+    <string name="hint_you_are_good_hands">L\'anno scorso, 1.792.153 persone da tutto il mondo hanno scelto di aumentare la massa muscolare con il fitness.</string>
+
+    <string name="any_previous_workout_experience">Hai esperienza di allenamento precedente?</string>
+    <string name="yes_workout_regularly">Sì, faccio regolarmente esercizio</string>
+    <string name="yes_less_year_ago">Sì, meno di un anno fa</string>
+    <string name="yes_more_year_ago">Sì, più di 1 anno fa</string>
+    <string name="no_have_any">No, non ne ho</string>
+
+    <string name="personalized_workouts">Allenamenti personalizzati</string>
+    <string name="txt_personalized_workouts">Qualunque sia il tuo livello di fitness, il Fitness si adatterà sempre alle tue capacità e aspettative per ottenere i migliori risultati!</string>
+
+    <string name="do_suffer_from_knee_pain">Soffri di dolore al ginocchio?</string>
+
+    <string name="how_many_pushups_you_do">Quanti flessioni riesci a fare?</string>
+    <string name="txt_30">30+</string>
+    <string name="txt_15_29">15-29</string>
+    <string name="txt_6_29">6-29</string>
+    <string name="txt_less_than_5">Meno di 5</string>
+    <string name="do_relate_following_statement">Ti identifichi con la seguente affermazione?</string>
+    <string name="wish_feel_confident_myself">Vorrei sentirmi più sicuro di me stesso.</string>
+    <string name="what_pace_prefer_your_plan">Quale ritmo preferiresti nel tuo piano?</string>
+    <string name="as_fast_as_possible">Il più veloce possibile</string>
+    <string name="balanced_pace">Ritmo equilibrato</string>
+    <string name="slowly_steadily">Lentamente ma costantemente</string>
+    <string name="awesome_choice">Scelta fantastica!</string>
+    <string name="txt_awesome_choice">Impegnarsi per almeno un anno è il modo perfetto per costruire abitudini salutari e raggiungere i tuoi obiettivi di fitness!</string>
+    <string name="pick_training_days">Scegli i giorni di allenamento!</string>
+    <string name="txt_pick_training_days">Fantastico! In base ai tuoi dati, ti consigliamo 4 allenamenti a settimana.</string>
+
+    <string name="reminders">Promemoria</string>
+    <string name="txt_reminders">Crea una routine e non perdere mai il giorno del tuo allenamento!</string>
+    <string name="fitness">Fitness</string>
+    <string name="how_to_use">Come Usare</string>
+    <string name="rate_us">Valutaci</string>
+    <string name="share_app">Condividi app</string>
+    <string name="privacy_policy">Informativa sulla privacy</string>
+    <string name="more_apps">Altre App (Pubblicità)</string>
+    <string name="txt_profile">Profilo</string>
+    <string name="txt_save">Salva</string>
+    <string name="txt_full_name">Nome completo</string>
+    <string name="txt_gender">Sesso</string>
+    <string name="txt_age">Età</string>
+    <string name="txt_height">Altezza</string>
+    <string name="txt_weight">Peso</string>
+    <string name="txt_target_weight">Peso obiettivo</string>
+    <string name="txt_target_goal">Obiettivo</string>
+    <string name="txt_edit_bed_time">Modifica ora di andare a letto</string>
+    <string name="txt_bed_time">Ora di andare a letto</string>
+    <string name="txt_cancel">Annulla</string>
+    <string name="notification_title">FitZay-Contatore di Passi</string>
+    <string name="notification_text">Passi totali oggi: %1$d</string>
+    <string name="channel_name">Canale Contatore di Passi</string>
+    <string name="channel_description">Canale per visualizzare le notifiche del conteggio dei passi</string>
+    <string name="permission_toast">Consenti il permesso richiesto per utilizzare la funzione del contatore di passi.</string>
+    <string name="step_goal_runtime">/%1$s passi</string>
+    <string name="sleep">Sonno</string>
+    <string name="allow_req_permissions">Consenti tutti i permessi richiesti</string>
+    <string name="goto_settings">Apri Impostazioni</string>
+    <string name="need_permission">Permesso Richiesto</string>
+    <string name="need_per_title">Questo permesso è richiesto per utilizzare questa funzione.</string>
+    <string name="cancel">Annulla</string>
+    <string name="camera">Fotocamera</string>
+    <string name="gallery">Galleria</string>
+    <string name="allow_required_permissions">Permesso richiesto per salvare le citazioni nella galleria.</string>
+    <string name="delete_account"><u>Elimina Account</u></string>
+    <string name="premium_features_details">Dettagli delle Funzionalità Premium</string>
+    <string name="sub_des">Le sottoscrizioni si rinnovano automaticamente a meno che tu non cancelli o annulli l\'iscrizione prima della fine del periodo corrente. Il tuo account verrà addebitato per il rinnovo entro 24 ore prima della fine del periodo di abbonamento corrente.</string>
 </resources>

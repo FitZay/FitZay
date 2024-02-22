@@ -17,6 +17,7 @@ import com.fitzay.workouttracker.strengthtraining.core.AppController
 import com.fitzay.workouttracker.strengthtraining.core.ads.FitnessInterstitialAd
 import com.fitzay.workouttracker.strengthtraining.core.utils.getFitzayRemoteLong
 import com.fitzay.workouttracker.strengthtraining.databinding.ActivityMainBinding
+import com.fitzay.workouttracker.strengthtraining.ui.activities.LanguageAct
 import com.fitzay.workouttracker.strengthtraining.ui.activities.PremiumActivity
 import com.fitzay.workouttracker.strengthtraining.ui.fragments.GraphFragment
 import com.fitzay.workouttracker.strengthtraining.ui.fragments.PlanFragment
@@ -196,6 +197,20 @@ class MainActivity : AppCompatActivity() {
                     drawerOpen = true
                 }
             }
+
+            customDrawer.lang.setOnClickListener {
+                if (!isClicked) {
+                    isClicked = true
+                    val intent = Intent(this@MainActivity, LanguageAct::class.java)
+                    intent.putExtra("invisibleKey","")
+                    intent.flags = Intent.FLAG_ACTIVITY_SINGLE_TOP
+                    startActivity(intent)
+                    finish()
+                    drawerLayout.closeDrawer(GravityCompat.START)
+                    drawerOpen = true
+                }
+            }
+
         }
 
     }

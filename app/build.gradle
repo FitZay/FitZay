@@ -59,10 +59,17 @@ android {
         viewBinding true
         compose true
     }
+    bundle {
+        language {
+            enableSplit = false
+        }
+    }
     composeOptions {
         kotlinCompilerExtensionVersion '1.4.1'
         kotlinCompilerVersion '1.5.30'
     }
+
+
 }
 
 dependencies {

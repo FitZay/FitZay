@@ -723,3 +723,31 @@ fun Context.getDate(milliSeconds: Long, dateFormat: String?): String {
     calendar.timeInMillis = milliSeconds
     return formatter.format(calendar.time)
 }
+
+fun Context.setLocale(context:Context?,lang: String) {
+    updateBaseContextLocale(context, lang)
+}
+private fun updateBaseContextLocale(context: Context?, language: String): Context {
+    val locale = Locale(language)
+    Locale.setDefault(locale)
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+        updateResourcesLocale(context!!, locale)
+        return updateResourcesLocaleLegacy(context, locale)
+    }
+    return updateResourcesLocaleLegacy(context!!, locale)
+}
+
+
+private fun updateResourcesLocale(context: Context, locale: Locale): Context {
+    val configuration = context.resources.configuration
+    configuration.setLocale(locale)
+    return context.createConfigurationContext(configuration)
+}
+
+private fun updateResourcesLocaleLegacy(context: Context, locale: Locale): Context {
+    val resources = context.resources
+    val configuration = resources.configuration
+    configuration.locale = locale
+    resources.updateConfiguration(configuration, resources.displayMetrics)
+    return context
+}

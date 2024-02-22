@@ -1,6 +1,7 @@
 package com.fitzay.workouttracker.strengthtraining.ui.activities
 
 import android.app.ActivityOptions
+import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
@@ -15,6 +16,7 @@ import com.fitzay.workouttracker.strengthtraining.R
 
 import com.fitzay.workouttracker.strengthtraining.core.utils.InAppPurchaseUtil
 import com.fitzay.workouttracker.strengthtraining.core.utils.checkForInternet
+import com.fitzay.workouttracker.strengthtraining.core.utils.setLocale
 import com.fitzay.workouttracker.strengthtraining.databinding.ActivityLoadingBinding
 import com.fitzay.workouttracker.strengthtraining.di.Component
 import com.fitzay.workouttracker.strengthtraining.ui.MainActivity
@@ -54,6 +56,13 @@ class LoadingActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityLoadingBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        val sharedPref = applicationContext.getSharedPreferences("myPrefs", Context.MODE_PRIVATE)
+        val lan = sharedPref.getString("key", "en")
+
+        setLocale(this@LoadingActivity,lan!!)
+
+
         isStarted = true
         InAppPurchaseUtil.isPurchaseSubscribed(this)
         handlerLoading = Handler(Looper.getMainLooper())
@@ -186,7 +195,8 @@ class LoadingActivity : AppCompatActivity() {
     private fun loadNext() {
         if (isStarted) {
             if (!Component.preference.isIntro) {
-                val intent = Intent(this@LoadingActivity, GenderActivity::class.java)
+                val intent = Intent(this@LoadingActivity, LanguageAct::class.java)
+                intent.putExtra("invisibleKey","invisible")
                 intent.flags = Intent.FLAG_ACTIVITY_SINGLE_TOP
                 startActivity(intent)
                 finish()
