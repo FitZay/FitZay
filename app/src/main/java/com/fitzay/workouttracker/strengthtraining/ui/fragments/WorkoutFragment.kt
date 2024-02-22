@@ -21,6 +21,7 @@ import com.fitzay.workouttracker.strengthtraining.domain.models.CategoriesModel
 import com.fitzay.workouttracker.strengthtraining.ui.activities.FullbodyWorkoutActivity
 import com.fitzay.workouttracker.strengthtraining.ui.activities.LoadingActivity
 import com.fitzay.workouttracker.strengthtraining.ui.adapters.CategoriesAdapter
+import com.google.android.ads.nativetemplates.TemplateView
 import com.google.android.gms.ads.AdListener
 import com.google.android.gms.ads.AdLoader
 import com.google.android.gms.ads.AdRequest
@@ -39,6 +40,7 @@ class WorkoutFragment : Fragment() {
         savedInstanceState: Bundle?,
     ): View {
         // Inflate the layout for this fragment
+        TemplateView.ctacolor = AppController.fitzayModel?.FitzayNativeExercise?.ctacolor
         _binding = FragmentWorkoutBinding.inflate(inflater, container, false)
         if (AppController.fitzayModel != null && AppController.fitzayModel!!.FitzayBannerWorkout.showAd && checkForInternet() && !LoadingActivity.ispurchased) {
             binding?.linearLayoutAds?.visibility = View.VISIBLE

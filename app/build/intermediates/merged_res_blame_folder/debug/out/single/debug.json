@@ -1052,6 +1052,10 @@
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/drawable/ic_menu_run.xml"
     },
     {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/layout_activity_push_ups_do.xml.flat",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/activity_push_ups_do.xml"
+    },
+    {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-ldpi_ic_premium.png.flat",
         "source": "com.fitzay.workouttracker.strengthtraining.app-pngs-89:/drawable-ldpi/ic_premium.png"
     },
@@ -1270,6 +1274,10 @@
     {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/anim_slide_in_right.xml.flat",
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/anim/slide_in_right.xml"
+    },
+    {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-xxxhdpi_img_men_model.png.flat",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/drawable-xxxhdpi/img_men_model.png"
     },
     {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/layout_activity_cup_capacity.xml.flat",
@@ -1598,6 +1606,10 @@
     {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable-hdpi_full_body_workout.png.flat",
         "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/drawable-hdpi/full_body_workout.png"
+    },
+    {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/layout_activity_part_should_focus.xml.flat",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/activity_part_should_focus.xml"
     },
     {
         "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/drawable_vibrate_off_icon.xml.flat",
