@@ -21,6 +21,7 @@ import com.fitzay.workouttracker.strengthtraining.core.utils.clickWithThrottle
 import com.fitzay.workouttracker.strengthtraining.databinding.ActivityExerciseBinding
 import com.fitzay.workouttracker.strengthtraining.di.Component
 import com.fitzay.workouttracker.strengthtraining.domain.models.WorkOutModel
+import com.google.android.ads.nativetemplates.TemplateView
 import com.google.android.gms.ads.AdError
 import com.google.android.gms.ads.AdListener
 import com.google.android.gms.ads.AdLoader
@@ -66,6 +67,7 @@ class ExerciseActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        TemplateView.ctacolor = AppController.fitzayModel?.FitzayNativeStartExercise?.ctacolor
         binding = ActivityExerciseBinding.inflate(layoutInflater)
         setContentView(binding.root)
         quitdialog = Dialog(this)

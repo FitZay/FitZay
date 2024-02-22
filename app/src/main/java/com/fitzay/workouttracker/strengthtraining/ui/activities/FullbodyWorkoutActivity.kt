@@ -51,9 +51,9 @@ class FullbodyWorkoutActivity : AppCompatActivity() {
                 DisplayWorkoutsActivity::class.java
             ).apply {
 
-                putExtra("EXTRA_NAME", "full")
+                putExtra("EXTRA_NAME", "Full Body Challenge")
                 putExtra("EXTRA_ID","")
-                putExtra("EXTRA_TYPE", "mData[position].catType")
+                putExtra("EXTRA_TYPE", "")
                 putExtra("EXTRA_EXERCISE", "excercisetype")
                 putExtra("EXTRA_Activity", "fullbody")
                 putExtra("EXTRA_WEEk", week)

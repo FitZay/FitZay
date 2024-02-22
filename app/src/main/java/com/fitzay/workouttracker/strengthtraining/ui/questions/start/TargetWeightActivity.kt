@@ -12,6 +12,7 @@ import com.fitzay.workouttracker.strengthtraining.core.utils.*
 import com.fitzay.workouttracker.strengthtraining.databinding.ActivityTargetWeightBinding
 import com.fitzay.workouttracker.strengthtraining.di.Component
 import com.fitzay.workouttracker.strengthtraining.ui.MainActivity
+import com.google.android.ads.nativetemplates.TemplateView
 import com.google.android.gms.ads.AdListener
 import com.google.android.gms.ads.AdLoader
 import com.google.android.gms.ads.AdRequest
@@ -25,7 +26,7 @@ class TargetWeightActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        TemplateView.ctacolor = AppController.fitzayModel?.FitzayNativeTargetWeight?.ctacolor
         binding = ActivityTargetWeightBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -46,6 +47,7 @@ class TargetWeightActivity : AppCompatActivity() {
 
 
             if (AppController.fitzayModel != null && AppController.fitzayModel!!.FitzayNativeTargetWeight.showAd) {
+                clAds.visibility = View.VISIBLE
                 loadAdaptiveNative()
             } else {
                clAds.visibility = View.GONE
@@ -114,7 +116,7 @@ class TargetWeightActivity : AppCompatActivity() {
         binding.apply {
             layoutAd.visibility = View.GONE
 
-            val template = if (getFitzayRemoteString("fitzay_cta_location") == "up") {
+            val template = if (AppController.fitzayModel!!.FitzayNativeTargetWeight.ctalocation == "up") {
                 plannerTemplateDown.visibility = View.GONE
                 plannerTemplateUp.visibility = View.VISIBLE
                 plannerTemplateUp

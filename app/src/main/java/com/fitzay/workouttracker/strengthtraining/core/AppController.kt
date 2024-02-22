@@ -18,7 +18,7 @@ import com.fitzay.workouttracker.strengthtraining.di.fitnessRepository
 import com.fitzay.workouttracker.strengthtraining.di.fitnessViewModelModule
 import com.fitzay.workouttracker.strengthtraining.domain.remote.FitzayModel
 import com.fitzay.workouttracker.strengthtraining.domain.remote.FitzayRemote
-import com.google.android.ads.nativetemplates.TemplateView.remoteColor
+import com.google.android.ads.nativetemplates.TemplateView.ctacolor
 import com.google.firebase.FirebaseApp
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig
 import com.google.firebase.remoteconfig.FirebaseRemoteConfigSettings
@@ -128,8 +128,6 @@ class AppController : Application() {
                                     "Fitzay Color Code: " + getFitzayRemoteString("fitzay_cta_color")
                                 )
                                 Log.e(TAG, "Fitzay Location : " + getFitzayRemoteString("fitzay_cta_location"))
-
-                                remoteColor = getFitzayRemoteString("fitzay_cta_color")
 
                             } ?: Log.e(TAG, "RemoteFail")
                         }

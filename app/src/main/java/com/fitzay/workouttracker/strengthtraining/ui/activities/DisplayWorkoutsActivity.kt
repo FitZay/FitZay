@@ -18,6 +18,7 @@ import com.fitzay.workouttracker.strengthtraining.di.Component
 import com.fitzay.workouttracker.strengthtraining.domain.models.WorkOutModel
 import com.fitzay.workouttracker.strengthtraining.ui.adapters.DisplayWorkOutAdapter
 import com.fitzay.workouttracker.strengthtraining.ui.fragments.UnlockPremiumBottomFragment
+import com.google.android.ads.nativetemplates.TemplateView
 import com.google.android.gms.ads.*
 import com.google.android.gms.ads.nativead.NativeAdOptions
 
@@ -32,6 +33,7 @@ class DisplayWorkoutsActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        TemplateView.ctacolor = AppController.fitzayModel?.FitzayNativeStartExercise?.ctacolor
         binding = ActivityDisplayWorkoutsBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -99,7 +101,6 @@ class DisplayWorkoutsActivity : AppCompatActivity() {
                 )
             }
             else {
-
                 FullbodyWorkoutActivity.listoffullbodies.forEach {
                     listofworkmodel.addAll(it.cat_id?.let { it1 ->
                         it.ex_id?.toInt()?.let { it2 ->
@@ -112,9 +113,10 @@ class DisplayWorkoutsActivity : AppCompatActivity() {
                     } as ArrayList<WorkOutModel>)
                 }
 
+                recyclerview.adapter = DisplayWorkOutAdapter(this@DisplayWorkoutsActivity ,listofworkmodel)
                 Handler(Looper.getMainLooper()).postDelayed({
-                    recyclerview.adapter = DisplayWorkOutAdapter(this@DisplayWorkoutsActivity ,listofworkmodel)
-                },1000)
+
+                },500)
             }
 
             //Work out Listener

@@ -24,6 +24,7 @@ import com.fitzay.workouttracker.strengthtraining.ui.sleeptacker.SleepTrackerAct
 import com.fitzay.workouttracker.strengthtraining.ui.sleeptacker.SleepTrackerHomeScreen
 import com.fitzay.workouttracker.strengthtraining.ui.stepcounter.StepCounterActivity
 import com.fitzay.workouttracker.strengthtraining.ui.waterintake.WaterIntakeActivity
+import com.google.android.ads.nativetemplates.TemplateView
 import com.google.android.gms.ads.AdListener
 import com.google.android.gms.ads.AdLoader
 import com.google.android.gms.ads.AdRequest
@@ -42,6 +43,7 @@ class PlanFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?,
     ): View? {
+
       _binding = FragmentPlanBinding.inflate(inflater, container, false)
 
         binding.clStepCounter.setOnClickListener {

@@ -13,6 +13,7 @@ import com.fitzay.workouttracker.strengthtraining.core.utils.getFitzayRemoteStri
 import com.fitzay.workouttracker.strengthtraining.core.utils.showToast
 import com.fitzay.workouttracker.strengthtraining.databinding.ActivityFirstNameBinding
 import com.fitzay.workouttracker.strengthtraining.di.Component
+import com.google.android.ads.nativetemplates.TemplateView
 import com.google.android.gms.ads.AdListener
 import com.google.android.gms.ads.AdLoader
 import com.google.android.gms.ads.AdRequest
@@ -25,7 +26,7 @@ class FirstNameActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        TemplateView.ctacolor = AppController.fitzayModel?.FitzayNativeName?.ctacolor
         binding = ActivityFirstNameBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -37,7 +38,8 @@ class FirstNameActivity : AppCompatActivity() {
                 onBackPressed()
             }
 
-            if (AppController.fitzayModel != null && AppController.fitzayModel!!.FitzayNativeName.showAd) {
+            if (AppController.fitzayModel != null && AppController.fitzayModel?.FitzayNativeName?.showAd == true) {
+                clAds.visibility = View.VISIBLE
                 loadAdaptiveNative()
             } else {
                 clAds.visibility = View.GONE
@@ -106,7 +108,7 @@ class FirstNameActivity : AppCompatActivity() {
         binding.apply {
             layoutAd.visibility = View.GONE
 
-            val template = if (getFitzayRemoteString("fitzay_cta_location") == "up") {
+            val template = if (AppController.fitzayModel?.FitzayNativeName?.ctalocation == "up") {
                 plannerTemplateDown.visibility = View.GONE
                plannerTemplateUp.visibility = View.VISIBLE
                 plannerTemplateUp
