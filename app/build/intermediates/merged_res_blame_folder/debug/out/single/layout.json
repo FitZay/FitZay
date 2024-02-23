@@ -1,270 +1,278 @@
 [
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/activity_loading.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/activity_loading.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\activity_language.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\activity_language.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/activity_display_workouts.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/activity_display_workouts.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\fragment_abs_unfinish_bottom.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\fragment_abs_unfinish_bottom.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/fragment_monthly.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/fragment_monthly.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\fragment_weekly.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\fragment_weekly.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/marker_view_line_chart.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/marker_view_line_chart.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\activity_qoutes_category.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\activity_qoutes_category.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/language_show_list.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/language_show_list.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\fragment_workout.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\fragment_workout.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/navigation_header_view.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/navigation_header_view.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\display_workouts_layout.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\display_workouts_layout.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/fragment_daily.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/fragment_daily.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\fragment_monthly.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\fragment_monthly.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/fragment_graph.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/fragment_graph.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\activity_loading.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\activity_loading.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/snooze_dialog.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/snooze_dialog.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\activity_push_ups_do.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\activity_push_ups_do.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/activity_target_weight.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/activity_target_weight.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\language_show_list.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\language_show_list.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/display_quote_layout.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/display_quote_layout.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\activity_exercise.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\activity_exercise.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/selector_dialog.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/selector_dialog.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\activity_fit_you.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\activity_fit_you.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/activity_fit_you.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/activity_fit_you.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\marker_view_line_chart.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\marker_view_line_chart.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/custom_tooltip.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/custom_tooltip.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\activity_sleep_tracker_home_screen.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\activity_sleep_tracker_home_screen.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/activity_push_ups_do.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/activity_push_ups_do.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\layout_weekdays.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\layout_weekdays.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/display_workouts_layout.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/display_workouts_layout.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\navigation_header_view.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\navigation_header_view.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/activity_sleep_tracker_home_screen.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/activity_sleep_tracker_home_screen.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\activity_display_workouts.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\activity_display_workouts.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/activity_step_summery.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/activity_step_summery.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\activity_main.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/activity_water_intake.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/activity_water_intake.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\display_quote_layout.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\display_quote_layout.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/text_layout.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/text_layout.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\fragment_step_monthly.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\fragment_step_monthly.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/fragment_abs_unfinish_bottom.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/fragment_abs_unfinish_bottom.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\quitdialog.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\quitdialog.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/activity_profile.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/activity_profile.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\activity_single_exercise.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\activity_single_exercise.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/activity_main.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/activity_main.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\custom_drawer.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\custom_drawer.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/activity_sleep_summary.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/activity_sleep_summary.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\activity_play_alarm.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\activity_play_alarm.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/activity_asking_age.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/activity_asking_age.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\activity_exit_screen.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\activity_exit_screen.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/dialog_edit_bed_time.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/dialog_edit_bed_time.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\activity_fullbody_workout.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\activity_fullbody_workout.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/activity_part_should_focus.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/activity_part_should_focus.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\activity_profile.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\activity_profile.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/schedule_alarm_show_item_list.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/schedule_alarm_show_item_list.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\schedule_alarm_show_item_list.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\schedule_alarm_show_item_list.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/layout_weekdays.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/layout_weekdays.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\ringtone_show_list.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\ringtone_show_list.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/activity_first_name.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/activity_first_name.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\activity_part_should_focus.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\activity_part_should_focus.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/categories_layout.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/categories_layout.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\activity_display_quote.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\activity_display_quote.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/activity_cup_capacity.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/activity_cup_capacity.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\activity_asking_height.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\activity_asking_height.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/activity_exit_screen.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/activity_exit_screen.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\activity_sleep_tracker.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\activity_sleep_tracker.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/activity_qoutes_category.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/activity_qoutes_category.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\fragment_plan.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\fragment_plan.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/activity_gender.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/activity_gender.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\fragment_step_daily.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\fragment_step_daily.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/activity_sleep_tracker.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/activity_sleep_tracker.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\activity_target_weight.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\activity_target_weight.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/alarm_show_item_list.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/alarm_show_item_list.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\ringtone_show_dialog.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\ringtone_show_dialog.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/activity_fullbody_workout.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/activity_fullbody_workout.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\categories_layout.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\categories_layout.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/dialog_step_goal.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/dialog_step_goal.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\custom_tooltip.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\custom_tooltip.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/ringtone_show_list.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/ringtone_show_list.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\app_bar_layout.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\app_bar_layout.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/fragment_profile.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/fragment_profile.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\activity_first_name.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\activity_first_name.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/fragment_step_monthly.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/fragment_step_monthly.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\quotes_category_layout.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\quotes_category_layout.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/fragment_step_weekly.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/fragment_step_weekly.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\fragment_step_weekly.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\fragment_step_weekly.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/activity_premium.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/activity_premium.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\activity_water_intake.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\activity_water_intake.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/activity_asking_weight.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/activity_asking_weight.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\custom_step_notification.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\custom_step_notification.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/quotes_category_layout.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/quotes_category_layout.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\activity_step_summery.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\activity_step_summery.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/quitdialog.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/quitdialog.xml"
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:/layout/activity_heightand_weight.xml",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-main-96:/layout/activity_heightand_weight.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/remote_notification.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/remote_notification.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\remote_notification.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\remote_notification.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/fragment_step_daily.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/fragment_step_daily.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\selector_dialog.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\selector_dialog.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/fragment_unlock_premium_bottom.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/fragment_unlock_premium_bottom.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\fragment_daily.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\fragment_daily.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/custom_drawer.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/custom_drawer.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\alarm_show_item_list.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\alarm_show_item_list.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/activity_asking_height.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/activity_asking_height.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\activity_asking_weight.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\activity_asking_weight.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/activity_step_counter.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/activity_step_counter.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\activity_cup_capacity.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\activity_cup_capacity.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/ringtone_show_dialog.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/ringtone_show_dialog.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\activity_step_counter.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\activity_step_counter.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/activity_personalized_work.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/activity_personalized_work.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\ad_loading_dialog.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\ad_loading_dialog.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/dialog_water_capacity.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/dialog_water_capacity.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\text_layout.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\text_layout.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/activity_language.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/activity_language.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\activity_asking_age.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\activity_asking_age.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/fragment_weekly.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/fragment_weekly.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\fragment_profile.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\fragment_profile.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/activity_exercise.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/activity_exercise.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\dialog_step_goal.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\dialog_step_goal.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/activity_play_alarm.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/activity_play_alarm.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\activity_gender.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\activity_gender.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/custom_step_notification.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/custom_step_notification.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\dialog_water_capacity.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\dialog_water_capacity.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/fragment_plan.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/fragment_plan.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\snooze_dialog.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\snooze_dialog.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/app_bar_layout.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/app_bar_layout.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\fragment_unlock_premium_bottom.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\fragment_unlock_premium_bottom.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/activity_single_exercise.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/activity_single_exercise.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\activity_sleep_summary.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\activity_sleep_summary.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/fragment_workout.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/fragment_workout.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\activity_personalized_work.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\activity_personalized_work.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/activity_display_quote.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/activity_display_quote.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\activity_premium.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\activity_premium.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/ad_loading_dialog.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/ad_loading_dialog.xml"
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\activity_heightand_weight.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\activity_heightand_weight.xml"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\fragment_graph.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\fragment_graph.xml"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-93:\\layout\\dialog_edit_bed_time.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-96:\\layout\\dialog_edit_bed_time.xml"
     }
 ]

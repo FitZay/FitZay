@@ -40,8 +40,20 @@
         android:theme="@style/Theme.FitnessApplication"
         tools:targetApi="31">
         <activity
+            android:name=".ui.questions.start.HeightandWeightAct"
+            android:exported="false" />
+        <activity
             android:name=".ui.activities.PersonalizedWorkAct"
-            android:exported="true" >
+            android:exported="false"></activity>
+        <activity
+            android:name=".ui.activities.ProfileAct"
+            android:exported="true"></activity>
+        <activity
+            android:name=".ui.questions.start.PushUpsDoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.questions.start.PartShouldFocusActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -49,20 +61,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.activities.ProfileAct"
-            android:exported="true">
-        </activity>
-        <activity
-            android:name=".ui.questions.start.PushUpsDoActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ui.questions.start.PartShouldFocusActivity"
-            android:exported="false" />
-        <activity
             android:name=".ui.activities.LanguageAct"
-            android:exported="false" >
-
-        </activity>
+            android:exported="false"></activity>
         <activity
             android:name=".ui.activities.FullbodyWorkoutActivity"
             android:exported="false" />
@@ -91,9 +91,7 @@
         <activity
             android:name=".ui.activities.LoadingActivity"
             android:exported="true"
-            android:screenOrientation="portrait">
-
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".ui.sleeptacker.SleepTrackerActivity"
             android:exported="false"
@@ -145,9 +143,7 @@
         <activity
             android:name=".ui.questions.start.GenderActivity"
             android:exported="true"
-            android:screenOrientation="portrait">
-
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".ui.questions.start.AskingWeightActivity"
             android:exported="false"

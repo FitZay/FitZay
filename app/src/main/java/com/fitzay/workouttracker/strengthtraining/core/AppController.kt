@@ -39,7 +39,7 @@ class AppController : Application() {
         var weeklyvalue = ""
         var monthlyvalue = ""
         var yearlyvalue = ""
-        var inappflow = ""
+        var inappflow = false
 
     }
 
@@ -120,7 +120,7 @@ class AppController : Application() {
                                 val remoteJson = Gson().toJson(it)
                                 fitzayModel = Gson().fromJson(remoteJson, FitzayModel::class.java)
                                 inappflow =
-                                    remoteFitzayConfig?.getString("FitZay_contries_for_inapp").toString()
+                                    remoteFitzayConfig?.getBoolean("FitZay_contries_for_inapp") == true
 
                                 Log.e(
                                     TAG,
