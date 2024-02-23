@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.fitzay.workouttracker.strengthtraining.R
 import com.fitzay.workouttracker.strengthtraining.databinding.ActivityPartShouldFocusBinding
 import com.fitzay.workouttracker.strengthtraining.databinding.ActivityPushUpsDoBinding
+import com.fitzay.workouttracker.strengthtraining.ui.activities.PersonalizedWorkAct
 
 class PushUpsDoActivity : AppCompatActivity() {
 
@@ -17,7 +18,7 @@ class PushUpsDoActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding?.btnNext?.setOnClickListener {
-            startActivity(Intent(this , FirstNameActivity :: class.java))
+            startActivity(Intent(this , PersonalizedWorkAct :: class.java))
             finish()
         }
     }

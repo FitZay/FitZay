@@ -15,6 +15,8 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.fitzay.workouttracker.strengthtraining.R;
+import com.google.android.material.button.MaterialButton;
+import com.google.android.material.progressindicator.CircularProgressIndicator;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 import java.lang.NullPointerException;
@@ -27,6 +29,15 @@ public final class ActivityProfileBinding implements ViewBinding {
 
   @NonNull
   public final ImageView back;
+
+  @NonNull
+  public final MaterialButton btnNext;
+
+  @NonNull
+  public final CircularProgressIndicator circularProgressIndicator;
+
+  @NonNull
+  public final ConstraintLayout clBottomNext;
 
   @NonNull
   public final RadioButton cm;
@@ -101,19 +112,24 @@ public final class ActivityProfileBinding implements ViewBinding {
   public final RadioGroup weightToggle;
 
   private ActivityProfileBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView back,
-      @NonNull RadioButton cm, @NonNull ConstraintLayout constraintLayout,
-      @NonNull TextInputEditText etAgeInput, @NonNull TextInputEditText etGenderInput,
-      @NonNull TextInputEditText etHeightInput, @NonNull TextInputEditText etTargetGoalInput,
-      @NonNull TextInputEditText etTargetWeightInput, @NonNull TextInputEditText etWeightInput,
-      @NonNull RadioButton ft, @NonNull RadioGroup heightToggle, @NonNull ImageView ivCamera,
-      @NonNull ImageView ivProfile, @NonNull RadioButton kg, @NonNull RadioButton lbs,
-      @NonNull TextView profile, @NonNull RelativeLayout saveItems, @NonNull TextInputLayout tvAge,
+      @NonNull MaterialButton btnNext, @NonNull CircularProgressIndicator circularProgressIndicator,
+      @NonNull ConstraintLayout clBottomNext, @NonNull RadioButton cm,
+      @NonNull ConstraintLayout constraintLayout, @NonNull TextInputEditText etAgeInput,
+      @NonNull TextInputEditText etGenderInput, @NonNull TextInputEditText etHeightInput,
+      @NonNull TextInputEditText etTargetGoalInput, @NonNull TextInputEditText etTargetWeightInput,
+      @NonNull TextInputEditText etWeightInput, @NonNull RadioButton ft,
+      @NonNull RadioGroup heightToggle, @NonNull ImageView ivCamera, @NonNull ImageView ivProfile,
+      @NonNull RadioButton kg, @NonNull RadioButton lbs, @NonNull TextView profile,
+      @NonNull RelativeLayout saveItems, @NonNull TextInputLayout tvAge,
       @NonNull TextInputEditText tvFullName, @NonNull TextInputLayout tvGender,
       @NonNull TextInputLayout tvHeight, @NonNull TextInputLayout tvTargetGoal,
       @NonNull TextInputLayout tvTargetWeight, @NonNull TextInputLayout tvWeight,
       @NonNull RadioGroup weightToggle) {
     this.rootView = rootView;
     this.back = back;
+    this.btnNext = btnNext;
+    this.circularProgressIndicator = circularProgressIndicator;
+    this.clBottomNext = clBottomNext;
     this.cm = cm;
     this.constraintLayout = constraintLayout;
     this.etAgeInput = etAgeInput;
@@ -170,6 +186,24 @@ public final class ActivityProfileBinding implements ViewBinding {
       id = R.id.back;
       ImageView back = ViewBindings.findChildViewById(rootView, id);
       if (back == null) {
+        break missingId;
+      }
+
+      id = R.id.btnNext;
+      MaterialButton btnNext = ViewBindings.findChildViewById(rootView, id);
+      if (btnNext == null) {
+        break missingId;
+      }
+
+      id = R.id.circularProgressIndicator;
+      CircularProgressIndicator circularProgressIndicator = ViewBindings.findChildViewById(rootView, id);
+      if (circularProgressIndicator == null) {
+        break missingId;
+      }
+
+      id = R.id.clBottomNext;
+      ConstraintLayout clBottomNext = ViewBindings.findChildViewById(rootView, id);
+      if (clBottomNext == null) {
         break missingId;
       }
 
@@ -317,10 +351,11 @@ public final class ActivityProfileBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityProfileBinding((ConstraintLayout) rootView, back, cm, constraintLayout,
-          etAgeInput, etGenderInput, etHeightInput, etTargetGoalInput, etTargetWeightInput,
-          etWeightInput, ft, heightToggle, ivCamera, ivProfile, kg, lbs, profile, saveItems, tvAge,
-          tvFullName, tvGender, tvHeight, tvTargetGoal, tvTargetWeight, tvWeight, weightToggle);
+      return new ActivityProfileBinding((ConstraintLayout) rootView, back, btnNext,
+          circularProgressIndicator, clBottomNext, cm, constraintLayout, etAgeInput, etGenderInput,
+          etHeightInput, etTargetGoalInput, etTargetWeightInput, etWeightInput, ft, heightToggle,
+          ivCamera, ivProfile, kg, lbs, profile, saveItems, tvAge, tvFullName, tvGender, tvHeight,
+          tvTargetGoal, tvTargetWeight, tvWeight, weightToggle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

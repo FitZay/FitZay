@@ -105,6 +105,12 @@ class ProfileAct : AppCompatActivity() {
                 }
             }
 
+            btnNext.setOnClickListener {
+                val intent = Intent(this@ProfileAct, BmiAct::class.java).apply {
+                    Intent.FLAG_ACTIVITY_SINGLE_TOP
+                }
+                startActivity(intent)
+            }
         }
 
         setDefaults()
@@ -117,8 +123,6 @@ class ProfileAct : AppCompatActivity() {
 
         binding.apply {
             Log.e(TAG, "setDefaults: " + Component.preference.userHeight)
-
-
 
             if (Component.preference.userName != "empty") {
                 tvFullName.setText(Component.preference.userName)

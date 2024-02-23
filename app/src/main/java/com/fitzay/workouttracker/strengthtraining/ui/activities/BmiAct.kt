@@ -1,5 +1,6 @@
 package com.fitzay.workouttracker.strengthtraining.ui.activities
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.fitzay.workouttracker.strengthtraining.R
@@ -15,6 +16,10 @@ class BmiAct : AppCompatActivity() {
 
         binding.apply {
             btnNext.setOnClickListener {
+                val intent = Intent(this@BmiAct, PersonalizedWorkAct::class.java).apply {
+                    Intent.FLAG_ACTIVITY_SINGLE_TOP
+                }
+                startActivity(intent)
             }
         }
     }

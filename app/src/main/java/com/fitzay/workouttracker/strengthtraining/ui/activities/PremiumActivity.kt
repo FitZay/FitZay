@@ -27,6 +27,7 @@ class PremiumActivity : AppCompatActivity() {
 
         binding?.cancelBtn?.setOnClickListener {
             onBackPressed()
+
         }
 
         if (AppController.weeklyvalue != ""){

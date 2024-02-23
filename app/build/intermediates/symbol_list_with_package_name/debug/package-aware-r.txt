@@ -1088,6 +1088,14 @@ attr rippleColor
 attr rotationCenterId
 attr round
 attr roundPercent
+attr rulerAccentColor
+attr rulerBackgroundColor
+attr rulerDigits
+attr rulerMaxValue
+attr rulerPlaceValue
+attr rulerPointerBackgroundColor
+attr rulerPointerOutlineColor
+attr rulerPrimaryColor
 attr saturation
 attr scaleFromTextSize
 attr scopeUris
@@ -1608,6 +1616,7 @@ color green
 color grey
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color lightgrey
 color m3_appbar_overlay_color
 color m3_assist_chip_icon_tint_color
 color m3_assist_chip_stroke_color
@@ -2269,6 +2278,7 @@ color tab_selected
 color text_color
 color text_field_outline
 color text_gray
+color textcolor
 color toggle_text_color
 color tooltip_background_dark
 color tooltip_background_light
@@ -3998,6 +4008,7 @@ drawable bg_wheel_picker
 drawable blur_bg
 drawable blur_effect
 drawable bmi_loading
+drawable bodytype
 drawable bottom_nav_selector
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
@@ -4269,11 +4280,13 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable parts_focus
+drawable pointer
 drawable portugal
 drawable preference_list_divider_material
 drawable premiumheader
 drawable progress_gradient
 drawable rounded_corners_shape_permission
+drawable roundview
 drawable russian
 drawable selected_bg
 drawable shoulder_index
@@ -4386,7 +4399,10 @@ id addViewIcon
 id adjust_height
 id adjust_width
 id ageH
+id ageText
 id ageValue
+id ageminusBtn
+id ageplusBtn
 id alarmIc
 id alarmIcon
 id alarmLabel
@@ -4509,13 +4525,16 @@ id cl30
 id cl629Week
 id clAds
 id clArms
+id clBelly
 id clBottomLayout
 id clBottomNext
+id clChest
 id clDailyMotivation
 id clFemale
 id clFit
 id clGenderSelection
 id clInput
+id clLeg
 id clLess5
 id clMale
 id clNotVeryFit
@@ -4530,6 +4549,8 @@ id clockwise
 id closeBtn
 id closest
 id cm
+id cmBtn
+id cmText
 id collapseActionView
 id collapsingToolbar
 id compose_view_saveable_id_tag
@@ -4548,7 +4569,9 @@ id constraintLayout17
 id constraintLayout18
 id constraintLayout19
 id constraintLayout2
+id constraintLayout20
 id constraintLayout21
+id constraintLayout22
 id constraintLayout29
 id constraintLayout3
 id constraintLayout30
@@ -4684,11 +4707,13 @@ id frameBannerContainer
 id frameLayout
 id frost
 id ft
+id ftBtn
 id ftConsent
 id ftHowToUse
 id ftPrivacy
 id ftRate
 id ftShareApp
+id ftText
 id fullBodyDesc
 id fullbodychBtn
 id fullscreen_header
@@ -4719,6 +4744,7 @@ id home
 id homeAsUp
 id honorRequest
 id horizontal_only
+id hundreds
 id icCopy
 id icExNext
 id icExPrevious
@@ -4742,7 +4768,6 @@ id imageView2
 id imageView3
 id imageView4
 id imageView5
-id imageView7
 id img0001
 id img001
 id imgAlarm
@@ -4853,6 +4878,7 @@ id linear
 id linearLayout
 id linearLayout2
 id linearLayout3
+id linearLayout4
 id linearLayoutAds
 id listMode
 id list_item
@@ -4873,6 +4899,7 @@ id m3_side_sheet
 id main
 id mainT
 id mainV
+id main_unit
 id mainconstraint
 id manageSubscriptionBtn
 id marquee
@@ -4885,6 +4912,8 @@ id materialCardView11
 id materialCardView12
 id materialCardView13
 id materialCardView14
+id materialCardView15
+id materialCardView16
 id materialCardView2
 id materialCardView21
 id materialCardView22
@@ -4894,6 +4923,7 @@ id materialCardView25
 id materialCardView26
 id materialCardView27
 id materialCardView28
+id materialCardView29
 id materialCardView3
 id materialCardView31
 id materialCardView32
@@ -4908,6 +4938,7 @@ id materialCardView6
 id materialCardView7
 id materialCardView8
 id materialCardView9
+id materialCardageminusBtn
 id materialToolbar
 id material_clock_display
 id material_clock_display_and_toggle
@@ -4980,6 +5011,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id myScrollingValuePicker
 id my_composable
 id native_ad_view
 id nav_consent_form
@@ -5018,6 +5050,7 @@ id on
 id onAttachStateChangeListener
 id onDateChanged
 id onInterceptTouchReturnSwipe
+id ones
 id open_search_bar_text_view
 id open_search_view_background
 id open_search_view_clear_button
@@ -5213,7 +5246,12 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
+id targetweightText
+id targetweightminusBtn
+id targetweightplusBtn
+id ten
 id tenMinutes
+id tens
 id text
 id text0001
 id text001
@@ -5243,9 +5281,14 @@ id textView24
 id textView25
 id textView26
 id textView27
+id textView29
 id textView3
 id textView30
 id textView31
+id textView33
+id textView35
+id textView37
+id textView38
 id textView4
 id textView5
 id textView6
@@ -5265,6 +5308,7 @@ id textinput_suffix_text
 id textlay
 id thirdGuide
 id thirtyMinutes
+id thousands
 id tick
 id time
 id timePicker
@@ -5334,6 +5378,8 @@ id tvVeryFit
 id tvWakeTime
 id tvWeight
 id tvWelcome
+id twelve
+id twelves
 id twentyFiveMinutes
 id twentyMinutes
 id txtAdvance
@@ -5378,6 +5424,7 @@ id txtmin
 id typeName
 id unchecked
 id uniform
+id unit_value
 id unlabeled
 id up
 id updateStepGoal
@@ -5386,6 +5433,7 @@ id userAge
 id userGoal
 id userSteps
 id v
+id value_text
 id vb
 id vb2
 id vertical_only
@@ -5419,8 +5467,11 @@ id weekonedayoneBtn6
 id weekonedayoneBtn7
 id weekonedayoneBtn8
 id weightH
+id weightText
 id weightToggle
 id weightValue
+id weightminlusBtn
+id weightplusBtn
 id west
 id wheel_picker
 id wide
@@ -5567,6 +5618,7 @@ layout activity_first_name
 layout activity_fit_you
 layout activity_fullbody_workout
 layout activity_gender
+layout activity_heightand_weight
 layout activity_language
 layout activity_loading
 layout activity_main
@@ -5745,6 +5797,7 @@ layout sp_example
 layout ssp_example
 layout support_simple_spinner_dropdown_item
 layout text_layout
+layout units
 menu drawer_menu
 menu menu_main_bottom
 mipmap ic_launcher
@@ -7554,6 +7607,7 @@ styleable RangeSlider minSeparation values
 styleable RecycleListView paddingBottomNoButtons paddingTopNoTitle
 styleable RecyclerView android_orientation android_clipToPadding android_descendantFocusability fastScrollEnabled fastScrollHorizontalThumbDrawable fastScrollHorizontalTrackDrawable fastScrollVerticalThumbDrawable fastScrollVerticalTrackDrawable layoutManager reverseLayout spanCount stackFromEnd
 styleable ScrimInsetsFrameLayout insetForeground
+styleable ScrollingValuePicker rulerAccentColor rulerBackgroundColor rulerDigits rulerMaxValue rulerPlaceValue rulerPointerBackgroundColor rulerPointerOutlineColor rulerPrimaryColor
 styleable ScrollingViewBehavior_Layout behavior_overlapTop
 styleable SearchBar android_textAppearance android_text android_hint backgroundTint defaultMarginsEnabled defaultScrollFlagsEnabled elevation forceDefaultNavigationOnClickListener hideNavigationIcon navigationIconTint strokeColor strokeWidth tintNavigationIcon
 styleable SearchView android_textAppearance android_focusable android_maxWidth android_text android_hint android_inputType android_imeOptions animateMenuItems animateNavigationIcon autoShowKeyboard backHandlingEnabled backgroundTint closeIcon commitIcon defaultQueryHint goIcon headerLayout hideNavigationIcon iconifiedByDefault layout queryBackground queryHint searchHintIcon searchIcon searchPrefixText submitBackground suggestionRowLayout useDrawerArrowDrawable voiceIcon

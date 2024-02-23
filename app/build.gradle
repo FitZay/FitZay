@@ -185,4 +185,6 @@ dependencies {
     ////for Graph Ad
     implementation project(':MPChartLib')
 
+    implementation 'com.github.KasemJaffer:android-ruler:1.0.1'
+
 }

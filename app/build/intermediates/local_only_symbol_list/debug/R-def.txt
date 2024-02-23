@@ -19,6 +19,7 @@ color dark_gray
 color dim_black
 color green
 color grey
+color lightgrey
 color on_primary
 color outline_color
 color primary
@@ -32,6 +33,7 @@ color tab_selected
 color text_color
 color text_field_outline
 color text_gray
+color textcolor
 color toggle_text_color
 color transparent
 color white
@@ -88,6 +90,7 @@ drawable bg_wheel_picker
 drawable blur_bg
 drawable blur_effect
 drawable bmi_loading
+drawable bodytype
 drawable bottom_nav_selector
 drawable btn_next_circle_bg
 drawable btn_next_press
@@ -229,6 +232,7 @@ drawable parts_focus
 drawable portugal
 drawable premiumheader
 drawable progress_gradient
+drawable roundview
 drawable russian
 drawable selected_bg
 drawable shoulder_index
@@ -258,7 +262,10 @@ font poppins_light
 font poppins_medium
 id addViewIcon
 id ageH
+id ageText
 id ageValue
+id ageminusBtn
+id ageplusBtn
 id alarmIc
 id alarmIcon
 id alarmLabel
@@ -327,13 +334,16 @@ id cl30
 id cl629Week
 id clAds
 id clArms
+id clBelly
 id clBottomLayout
 id clBottomNext
+id clChest
 id clDailyMotivation
 id clFemale
 id clFit
 id clGenderSelection
 id clInput
+id clLeg
 id clLess5
 id clMale
 id clNotVeryFit
@@ -343,6 +353,8 @@ id clVeryFit
 id clWaterReminder
 id closeBtn
 id cm
+id cmBtn
+id cmText
 id collapsingToolbar
 id constraintLayout
 id constraintLayout10
@@ -356,7 +368,9 @@ id constraintLayout17
 id constraintLayout18
 id constraintLayout19
 id constraintLayout2
+id constraintLayout20
 id constraintLayout21
+id constraintLayout22
 id constraintLayout29
 id constraintLayout3
 id constraintLayout30
@@ -416,11 +430,13 @@ id fragmentContainer
 id frameBannerContainer
 id frameLayout
 id ft
+id ftBtn
 id ftConsent
 id ftHowToUse
 id ftPrivacy
 id ftRate
 id ftShareApp
+id ftText
 id fullBodyDesc
 id fullbodychBtn
 id goalProgress
@@ -442,7 +458,6 @@ id imageView2
 id imageView3
 id imageView4
 id imageView5
-id imageView7
 id img0001
 id img001
 id imgAlarm
@@ -532,6 +547,7 @@ id line
 id linearLayout
 id linearLayout2
 id linearLayout3
+id linearLayout4
 id linearLayoutAds
 id ll
 id llButtons
@@ -554,6 +570,8 @@ id materialCardView11
 id materialCardView12
 id materialCardView13
 id materialCardView14
+id materialCardView15
+id materialCardView16
 id materialCardView2
 id materialCardView21
 id materialCardView22
@@ -563,6 +581,7 @@ id materialCardView25
 id materialCardView26
 id materialCardView27
 id materialCardView28
+id materialCardView29
 id materialCardView3
 id materialCardView31
 id materialCardView32
@@ -577,6 +596,7 @@ id materialCardView6
 id materialCardView7
 id materialCardView8
 id materialCardView9
+id materialCardageminusBtn
 id materialToolbar
 id menuFood
 id menuPlan
@@ -591,6 +611,7 @@ id midGuide4
 id miles
 id monthlytext
 id montlyBtn
+id myScrollingValuePicker
 id my_composable
 id nav_consent_form
 id nav_how_to_use
@@ -666,6 +687,9 @@ id steps
 id submitBtn
 id swOnOff
 id swOnOff2
+id targetweightText
+id targetweightminusBtn
+id targetweightplusBtn
 id tenMinutes
 id text
 id text0001
@@ -690,9 +714,14 @@ id textView24
 id textView25
 id textView26
 id textView27
+id textView29
 id textView3
 id textView30
 id textView31
+id textView33
+id textView35
+id textView37
+id textView38
 id textView4
 id textView5
 id textView6
@@ -803,6 +832,7 @@ id userAge
 id userGoal
 id userSteps
 id v
+id value_text
 id vb
 id vb2
 id vibration
@@ -827,8 +857,11 @@ id weekonedayoneBtn6
 id weekonedayoneBtn7
 id weekonedayoneBtn8
 id weightH
+id weightText
 id weightToggle
 id weightValue
+id weightminlusBtn
+id weightplusBtn
 id wishIt
 id yearlyBtn
 id yearlytext
@@ -845,6 +878,7 @@ layout activity_first_name
 layout activity_fit_you
 layout activity_fullbody_workout
 layout activity_gender
+layout activity_heightand_weight
 layout activity_language
 layout activity_loading
 layout activity_main

@@ -97,7 +97,7 @@ class LanguageAct : AppCompatActivity(),LanguageItemClick {
 
                 if (la=="invisible")
                 {
-                    val intent = Intent(this@LanguageAct, GenderActivity::class.java).apply {
+                    val intent = Intent(this@LanguageAct, ProfileAct::class.java).apply {
                         Intent.FLAG_ACTIVITY_SINGLE_TOP
                     }
                     startActivity(intent)

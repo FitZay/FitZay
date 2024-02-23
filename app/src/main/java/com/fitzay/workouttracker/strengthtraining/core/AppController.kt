@@ -39,8 +39,8 @@ class AppController : Application() {
         var weeklyvalue = ""
         var monthlyvalue = ""
         var yearlyvalue = ""
-        var inappflow = ""
         var inappScenario = "1"
+        var inappflow = false
 
     }
 
@@ -120,8 +120,8 @@ class AppController : Application() {
                                 Log.e(TAG, "RemoteSuccess")
                                 val remoteJson = Gson().toJson(it)
                                 fitzayModel = Gson().fromJson(remoteJson, FitzayModel::class.java)
-                                inappflow = remoteFitzayConfig?.getString("FitZay_contries_for_inapp").toString()
                                 inappScenario = remoteFitzayConfig?.getString("inapp_flow").toString()
+                                inappflow = remoteFitzayConfig?.getBoolean("FitZay_contries_for_inapp") == true
 
                                 Log.i(TAG, "fetchAndActivate: "+inappflow)
                                 Log.e(

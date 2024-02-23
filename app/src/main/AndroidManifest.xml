@@ -41,34 +41,44 @@
         tools:targetApi="31">
         <activity
             android:name=".ui.activities.BmiAct"
-            android:exported="true" >
-                         <intent-filter>
-                         <action android:name="android.intent.action.MAIN" />
+            android:exported="true" />
 
 
-                         <category android:name="android.intent.category.LAUNCHER" />
-                         </intent-filter>
-        </activity>
-        <activity
-            android:name=".ui.activities.PersonalizedWorkAct"
-            android:exported="true">
-
-<!--             <intent-filter>-->
-<!--             <action android:name="android.intent.action.MAIN" />-->
-
-
-<!--             <category android:name="android.intent.category.LAUNCHER" />-->
-<!--             </intent-filter>-->
-        </activity>
         <activity
             android:name=".ui.activities.ProfileAct"
+            android:exported="true"></activity>
+        <activity
+            android:name=".ui.questions.start.HeightandWeightAct"
             android:exported="true"></activity>
         <activity
             android:name=".ui.questions.start.PushUpsDoActivity"
             android:exported="false" />
         <activity
             android:name=".ui.questions.start.PartShouldFocusActivity"
-            android:exported="false" />
+            android:exported="true">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+        <activity
+            android:name=".ui.activities.PersonalizedWorkAct"
+            android:exported="true">
+
+            <!--             <intent-filter>-->
+            <!--             <action android:name="android.intent.action.MAIN" />-->
+
+
+            <!--             <category android:name="android.intent.category.LAUNCHER" />-->
+            <!--             </intent-filter>-->
+        </activity>
+        <activity
+
+            android:name=".ui.activities.ProfileAct"
+            android:exported="true"></activity>
+
+
         <activity
             android:name=".ui.activities.LanguageAct"
             android:exported="false"></activity>
@@ -100,13 +110,16 @@
         <activity
             android:name=".ui.activities.LoadingActivity"
             android:exported="true"
-            android:screenOrientation="portrait">
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
 
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
+            android:screenOrientation="portrait">
+                        <intent-filter>
+                            <action android:name="android.intent.action.MAIN" />
+
+                            <category android:name="android.intent.category.LAUNCHER" />
+                        </intent-filter>
         </activity>
+
+
         <activity
             android:name=".ui.sleeptacker.SleepTrackerActivity"
             android:exported="false"

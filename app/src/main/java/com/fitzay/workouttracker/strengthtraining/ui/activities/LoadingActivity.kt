@@ -196,14 +196,37 @@ class LoadingActivity : AppCompatActivity() {
     private fun loadNext() {
         if (isStarted) {
             if (!Component.preference.isIntro) {
-                if (AppController.inappScenario == "1"){
+                if (AppController.inappScenario == "5"){
+                    val intent = Intent(this@LoadingActivity, GenderActivity::class.java)
+                    intent.putExtra("invisibleKey","invisible")
+                    intent.flags = Intent.FLAG_ACTIVITY_SINGLE_TOP
+                    startActivity(intent)
+                    finish()
+                }
+                else if ("2" == "2")
+                {
                     val intent = Intent(this@LoadingActivity, LanguageAct::class.java)
                     intent.putExtra("invisibleKey","invisible")
                     intent.flags = Intent.FLAG_ACTIVITY_SINGLE_TOP
                     startActivity(intent)
                     finish()
                 }
-
+                else if (AppController.inappScenario == "3")
+                {
+                    val intent = Intent(this@LoadingActivity, GenderActivity::class.java)
+                    intent.putExtra("invisibleKey","invisible")
+                    intent.flags = Intent.FLAG_ACTIVITY_SINGLE_TOP
+                    startActivity(intent)
+                    finish()
+                }
+                else
+                {
+                    val intent = Intent(this@LoadingActivity, GenderActivity::class.java)
+                    intent.putExtra("invisibleKey","invisible")
+                    intent.flags = Intent.FLAG_ACTIVITY_SINGLE_TOP
+                    startActivity(intent)
+                    finish()
+                }
 
             } else {
                 val intent = Intent(this@LoadingActivity, MainActivity::class.java)
