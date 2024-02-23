@@ -243,7 +243,7 @@
     <string name="txt_3_4_workouts_week">3–4 workouts a week</string>
     <string name="txt_1_2_workouts_week">1–2 workouts a week</string>
     <string name="never">Never</string>
-    <string name="which_parts_should_focus_on">Which parts should we focus on?</string>
+    <string name="which_parts_should_focus_on">Which parts should we\n focus on?</string>
     <string name="arms">Arms</string>
     <string name="chest">Chest</string>
     <string name="belly">Belly</string>

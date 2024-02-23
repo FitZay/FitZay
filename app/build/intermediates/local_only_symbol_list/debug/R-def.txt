@@ -206,6 +206,8 @@ drawable img_strength
 drawable img_water_reminder
 drawable img_women_skinny
 drawable img_women_thighs
+drawable imgarms
+drawable imgchest
 drawable india__in__1
 drawable italy__it__1
 drawable japanese
@@ -219,6 +221,7 @@ drawable lower_body
 drawable main_plan_image
 drawable mandarin_chinese
 drawable next_date
+drawable parts_focus
 drawable portugal
 drawable premiumheader
 drawable progress_gradient
@@ -310,10 +313,8 @@ id cl30
 id cl629Week
 id clAds
 id clArms
-id clBelly
 id clBottomLayout
 id clBottomNext
-id clChest
 id clDailyMotivation
 id clFemale
 id clFit
@@ -321,11 +322,9 @@ id clGenderSelection
 id clInput
 id clLess5
 id clMale
-id clMenuBottomLayout
 id clNotVeryFit
 id clSleepTracker
 id clStepCounter
-id clThighs
 id clVeryFit
 id clWaterReminder
 id closeBtn
@@ -339,6 +338,9 @@ id constraintLayout13
 id constraintLayout14
 id constraintLayout15
 id constraintLayout16
+id constraintLayout17
+id constraintLayout18
+id constraintLayout19
 id constraintLayout2
 id constraintLayout21
 id constraintLayout29
@@ -417,10 +419,12 @@ id icShare
 id icShoes
 id icTime
 id ic_pause
+id imageView
 id imageView2
 id imageView3
 id imageView4
 id imageView5
+id imageView7
 id img0001
 id img001
 id imgAlarm
@@ -444,17 +448,16 @@ id ivDailyMotivation
 id ivFemale
 id ivFitChecked
 id ivIllustration
+id ivLeg
 id ivLess5Checked
 id ivMain
 id ivMale
-id ivModel
 id ivNotVeryFitChecked
 id ivPremium
 id ivProfile
 id ivSave
 id ivSleepTracker
 id ivStepCounter
-id ivThighs
 id ivVeryFitChecked
 id ivWaterReminder
 id iv_close
@@ -563,8 +566,6 @@ id midGuide1
 id midGuide2
 id midGuide3
 id midGuide4
-id midHorizontalGuide
-id midVerticalGuide
 id miles
 id monthlytext
 id montlyBtn
@@ -710,6 +711,7 @@ id tvGender
 id tvHeight
 id tvLabel
 id tvLabel2
+id tvLeg
 id tvLess5
 id tvMale
 id tvNotVeryFit
@@ -722,7 +724,6 @@ id tvSound2
 id tvStepGoal
 id tvTargetGoal
 id tvTargetWeight
-id tvThighs
 id tvTime
 id tvTitle
 id tvValue

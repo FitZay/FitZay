@@ -16,8 +16,8 @@
 
         <ImageView
             android:id="@+id/ivBack"
-            android:layout_width="@dimen/_30sdp"
-            android:layout_height="@dimen/_30sdp"
+            android:layout_width="@dimen/_26sdp"
+            android:layout_height="@dimen/_26sdp"
             android:paddingStart="0dp"
             android:paddingTop="@dimen/_5sdp"
             android:paddingEnd="@dimen/_5sdp"
@@ -26,9 +26,9 @@
 
     </com.google.android.material.appbar.MaterialToolbar>
 
-    <com.google.android.material.textview.MaterialTextView
+    <TextView
         android:id="@+id/tvQuestion"
-        android:layout_width="match_parent"
+        android:layout_width="@dimen/_210sdp"
         android:layout_height="wrap_content"
         android:fontFamily="@font/bebas_neue"
         android:paddingStart="@dimen/_18sdp"
@@ -38,47 +38,65 @@
         android:text="@string/which_parts_should_focus_on"
         android:textColor="@color/white"
         android:textSize="@dimen/_23sdp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
+
+
+
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/clMenuBottomLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/_18sdp"
-        android:layout_marginTop="@dimen/_12sdp"
-        android:layout_marginEnd="@dimen/_18sdp"
-        android:padding="@dimen/_4sdp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/clBottomNext"
         app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        app:layout_constraintHeight_percent="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvQuestion"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toBottomOf="@+id/tvQuestion">
+
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="@dimen/_152sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:elevation="@dimen/_1sdp"
+            android:src="@drawable/imgarms"
+            app:layout_constraintBottom_toBottomOf="@+id/clArms"
+            app:layout_constraintStart_toEndOf="@id/clArms"
+            app:layout_constraintTop_toBottomOf="@+id/clArms" />
+
+
+        <ImageView
+            android:layout_width="@dimen/_110sdp"
+            android:layout_height="@dimen/_43sdp"
+            android:layout_marginEnd="@dimen/_50sdp"
+            android:elevation="@dimen/_1sdp"
+            android:src="@drawable/imgchest"
+            app:layout_constraintBottom_toBottomOf="@+id/constraintLayout17"
+            app:layout_constraintEnd_toEndOf="@+id/imageView7"
+            app:layout_constraintStart_toEndOf="@+id/constraintLayout17"
+            app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/clArms"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_35sdp"
             android:background="@drawable/bg_options"
             android:orientation="horizontal"
-            app:layout_constraintBottom_toTopOf="@+id/midHorizontalGuide"
-            app:layout_constraintEnd_toStartOf="@+id/midVerticalGuide"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout17"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
             <TextView
                 android:id="@+id/tvArms"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_medium"
                 android:gravity="center_vertical"
-                android:padding="@dimen/_10sdp"
                 android:text="@string/arms"
                 android:textColor="@color/white"
-                android:textSize="@dimen/_14sdp"
+                android:textSize="@dimen/_13sdp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/ivArms"
                 app:layout_constraintStart_toStartOf="parent"
@@ -86,9 +104,10 @@
 
             <ImageView
                 android:id="@+id/ivArms"
-                android:layout_width="@dimen/_40sdp"
-                android:layout_height="@dimen/_40sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
                 android:layout_gravity="end"
+                android:layout_margin="@dimen/_3sdp"
                 android:padding="@dimen/_10sdp"
                 android:src="@drawable/ic_tick"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -97,29 +116,26 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
+
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/clChest"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_5sdp"
+            android:id="@+id/constraintLayout17"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_35sdp"
             android:background="@drawable/bg_options"
             android:orientation="horizontal"
-            app:layout_constraintBottom_toTopOf="@+id/midHorizontalGuide"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/midVerticalGuide"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout18"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/clArms">
 
             <TextView
                 android:id="@+id/tvChest"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_medium"
                 android:gravity="center_vertical"
-                android:padding="@dimen/_10sdp"
-                android:text="@string/chest"
+                android:text="@string/arms"
                 android:textColor="@color/white"
-                android:textSize="@dimen/_14sdp"
+                android:textSize="@dimen/_13sdp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/ivChest"
                 app:layout_constraintStart_toStartOf="parent"
@@ -127,9 +143,10 @@
 
             <ImageView
                 android:id="@+id/ivChest"
-                android:layout_width="@dimen/_40sdp"
-                android:layout_height="@dimen/_40sdp"
-
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="end"
+                android:layout_margin="@dimen/_3sdp"
                 android:padding="@dimen/_10sdp"
                 android:src="@drawable/ic_tick"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -138,38 +155,26 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/midVerticalGuide"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.5" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/clBelly"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="@dimen/_5sdp"
-            android:layout_marginBottom="8dp"
+            android:id="@+id/constraintLayout18"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_35sdp"
             android:background="@drawable/bg_options"
             android:orientation="horizontal"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/midVerticalGuide"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout19"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/midHorizontalGuide">
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout17">
 
             <TextView
                 android:id="@+id/tvBelly"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_medium"
                 android:gravity="center_vertical"
-                android:padding="@dimen/_10sdp"
-                android:text="@string/belly"
+                android:text="@string/arms"
                 android:textColor="@color/white"
-                android:textSize="@dimen/_14sdp"
+                android:textSize="@dimen/_13sdp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/ivBelly"
                 app:layout_constraintStart_toStartOf="parent"
@@ -177,9 +182,10 @@
 
             <ImageView
                 android:id="@+id/ivBelly"
-                android:layout_width="@dimen/_40sdp"
-                android:layout_height="@dimen/_40sdp"
-
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="end"
+                android:layout_margin="@dimen/_3sdp"
                 android:padding="@dimen/_10sdp"
                 android:src="@drawable/ic_tick"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -188,47 +194,38 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/midHorizontalGuide"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.5" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/clThighs"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_5sdp"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
+            android:id="@+id/constraintLayout19"
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_35sdp"
             android:background="@drawable/bg_options"
             android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/_55sdp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/midVerticalGuide"
-            app:layout_constraintTop_toTopOf="@+id/midHorizontalGuide">
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout18">
 
             <TextView
-                android:id="@+id/tvThighs"
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_gravity="center"
+                android:id="@+id/tvLeg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:fontFamily="@font/poppins_medium"
                 android:gravity="center_vertical"
-                android:padding="@dimen/_10sdp"
-                android:text="@string/thighs"
+                android:text="@string/arms"
                 android:textColor="@color/white"
-                android:textSize="@dimen/_14sdp"
+                android:textSize="@dimen/_13sdp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/ivThighs"
+                app:layout_constraintEnd_toStartOf="@+id/ivLeg"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
-                android:id="@+id/ivThighs"
-                android:layout_width="@dimen/_40sdp"
-                android:layout_height="@dimen/_40sdp"
+                android:id="@+id/ivLeg"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="end"
+                android:layout_margin="@dimen/_3sdp"
                 android:padding="@dimen/_10sdp"
                 android:src="@drawable/ic_tick"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -237,35 +234,17 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/parts_focus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/_250sdp"
-        android:padding="@dimen/_16sdp"
-        android:src="@drawable/img_men_model"
-        app:layout_constraintBottom_toTopOf="@+id/clBottomNext"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/clMenuBottomLayout">
-
-        <ImageView
-            android:id="@+id/ivModel"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:padding="@dimen/_16sdp"
-            android:src="@drawable/img_men_model"
-            app:layout_constraintBottom_toTopOf="@+id/clBottomNext"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/clMenuBottomLayout" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-    </FrameLayout>
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -278,17 +257,18 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <com.google.android.material.progressindicator.CircularProgressIndicator
-            android:layout_width="@dimen/_60sdp"
-            android:layout_height="@dimen/_60sdp"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
             android:indeterminate="false"
-            android:progress="16"
-            app:indicatorColor="@color/secondary"
+            android:progress="20"
+            app:indicatorColor="@color/white"
             app:indicatorSize="@dimen/_60sdp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:trackColor="#D7D7D7"
+            app:trackColor="@color/secondary"
+
             app:trackThickness="@dimen/_3sdp" />
 
         <com.google.android.material.button.MaterialButton
@@ -308,8 +288,9 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
+            app:layout_constraintTop_toTopOf="parent"
+            app:rippleColor="@color/ready_color" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

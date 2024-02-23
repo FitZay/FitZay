@@ -9,13 +9,11 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.constraintlayout.widget.Guideline;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.fitzay.workouttracker.strengthtraining.R;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.button.MaterialButton;
-import com.google.android.material.textview.MaterialTextView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -31,19 +29,22 @@ public final class ActivityPartShouldFocusBinding implements ViewBinding {
   public final ConstraintLayout clArms;
 
   @NonNull
-  public final ConstraintLayout clBelly;
-
-  @NonNull
   public final ConstraintLayout clBottomNext;
 
   @NonNull
-  public final ConstraintLayout clChest;
+  public final ConstraintLayout constraintLayout17;
 
   @NonNull
-  public final ConstraintLayout clMenuBottomLayout;
+  public final ConstraintLayout constraintLayout18;
 
   @NonNull
-  public final ConstraintLayout clThighs;
+  public final ConstraintLayout constraintLayout19;
+
+  @NonNull
+  public final ImageView imageView;
+
+  @NonNull
+  public final ImageView imageView7;
 
   @NonNull
   public final ImageView ivArms;
@@ -58,16 +59,7 @@ public final class ActivityPartShouldFocusBinding implements ViewBinding {
   public final ImageView ivChest;
 
   @NonNull
-  public final ImageView ivModel;
-
-  @NonNull
-  public final ImageView ivThighs;
-
-  @NonNull
-  public final Guideline midHorizontalGuide;
-
-  @NonNull
-  public final Guideline midVerticalGuide;
+  public final ImageView ivLeg;
 
   @NonNull
   public final MaterialToolbar toolbar;
@@ -82,43 +74,40 @@ public final class ActivityPartShouldFocusBinding implements ViewBinding {
   public final TextView tvChest;
 
   @NonNull
-  public final MaterialTextView tvQuestion;
+  public final TextView tvLeg;
 
   @NonNull
-  public final TextView tvThighs;
+  public final TextView tvQuestion;
 
   private ActivityPartShouldFocusBinding(@NonNull ConstraintLayout rootView,
       @NonNull MaterialButton btnNext, @NonNull ConstraintLayout clArms,
-      @NonNull ConstraintLayout clBelly, @NonNull ConstraintLayout clBottomNext,
-      @NonNull ConstraintLayout clChest, @NonNull ConstraintLayout clMenuBottomLayout,
-      @NonNull ConstraintLayout clThighs, @NonNull ImageView ivArms, @NonNull ImageView ivBack,
-      @NonNull ImageView ivBelly, @NonNull ImageView ivChest, @NonNull ImageView ivModel,
-      @NonNull ImageView ivThighs, @NonNull Guideline midHorizontalGuide,
-      @NonNull Guideline midVerticalGuide, @NonNull MaterialToolbar toolbar,
-      @NonNull TextView tvArms, @NonNull TextView tvBelly, @NonNull TextView tvChest,
-      @NonNull MaterialTextView tvQuestion, @NonNull TextView tvThighs) {
+      @NonNull ConstraintLayout clBottomNext, @NonNull ConstraintLayout constraintLayout17,
+      @NonNull ConstraintLayout constraintLayout18, @NonNull ConstraintLayout constraintLayout19,
+      @NonNull ImageView imageView, @NonNull ImageView imageView7, @NonNull ImageView ivArms,
+      @NonNull ImageView ivBack, @NonNull ImageView ivBelly, @NonNull ImageView ivChest,
+      @NonNull ImageView ivLeg, @NonNull MaterialToolbar toolbar, @NonNull TextView tvArms,
+      @NonNull TextView tvBelly, @NonNull TextView tvChest, @NonNull TextView tvLeg,
+      @NonNull TextView tvQuestion) {
     this.rootView = rootView;
     this.btnNext = btnNext;
     this.clArms = clArms;
-    this.clBelly = clBelly;
     this.clBottomNext = clBottomNext;
-    this.clChest = clChest;
-    this.clMenuBottomLayout = clMenuBottomLayout;
-    this.clThighs = clThighs;
+    this.constraintLayout17 = constraintLayout17;
+    this.constraintLayout18 = constraintLayout18;
+    this.constraintLayout19 = constraintLayout19;
+    this.imageView = imageView;
+    this.imageView7 = imageView7;
     this.ivArms = ivArms;
     this.ivBack = ivBack;
     this.ivBelly = ivBelly;
     this.ivChest = ivChest;
-    this.ivModel = ivModel;
-    this.ivThighs = ivThighs;
-    this.midHorizontalGuide = midHorizontalGuide;
-    this.midVerticalGuide = midVerticalGuide;
+    this.ivLeg = ivLeg;
     this.toolbar = toolbar;
     this.tvArms = tvArms;
     this.tvBelly = tvBelly;
     this.tvChest = tvChest;
+    this.tvLeg = tvLeg;
     this.tvQuestion = tvQuestion;
-    this.tvThighs = tvThighs;
   }
 
   @Override
@@ -160,33 +149,39 @@ public final class ActivityPartShouldFocusBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.clBelly;
-      ConstraintLayout clBelly = ViewBindings.findChildViewById(rootView, id);
-      if (clBelly == null) {
-        break missingId;
-      }
-
       id = R.id.clBottomNext;
       ConstraintLayout clBottomNext = ViewBindings.findChildViewById(rootView, id);
       if (clBottomNext == null) {
         break missingId;
       }
 
-      id = R.id.clChest;
-      ConstraintLayout clChest = ViewBindings.findChildViewById(rootView, id);
-      if (clChest == null) {
+      id = R.id.constraintLayout17;
+      ConstraintLayout constraintLayout17 = ViewBindings.findChildViewById(rootView, id);
+      if (constraintLayout17 == null) {
         break missingId;
       }
 
-      id = R.id.clMenuBottomLayout;
-      ConstraintLayout clMenuBottomLayout = ViewBindings.findChildViewById(rootView, id);
-      if (clMenuBottomLayout == null) {
+      id = R.id.constraintLayout18;
+      ConstraintLayout constraintLayout18 = ViewBindings.findChildViewById(rootView, id);
+      if (constraintLayout18 == null) {
         break missingId;
       }
 
-      id = R.id.clThighs;
-      ConstraintLayout clThighs = ViewBindings.findChildViewById(rootView, id);
-      if (clThighs == null) {
+      id = R.id.constraintLayout19;
+      ConstraintLayout constraintLayout19 = ViewBindings.findChildViewById(rootView, id);
+      if (constraintLayout19 == null) {
+        break missingId;
+      }
+
+      id = R.id.imageView;
+      ImageView imageView = ViewBindings.findChildViewById(rootView, id);
+      if (imageView == null) {
+        break missingId;
+      }
+
+      id = R.id.imageView7;
+      ImageView imageView7 = ViewBindings.findChildViewById(rootView, id);
+      if (imageView7 == null) {
         break missingId;
       }
 
@@ -214,27 +209,9 @@ public final class ActivityPartShouldFocusBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.ivModel;
-      ImageView ivModel = ViewBindings.findChildViewById(rootView, id);
-      if (ivModel == null) {
-        break missingId;
-      }
-
-      id = R.id.ivThighs;
-      ImageView ivThighs = ViewBindings.findChildViewById(rootView, id);
-      if (ivThighs == null) {
-        break missingId;
-      }
-
-      id = R.id.midHorizontalGuide;
-      Guideline midHorizontalGuide = ViewBindings.findChildViewById(rootView, id);
-      if (midHorizontalGuide == null) {
-        break missingId;
-      }
-
-      id = R.id.midVerticalGuide;
-      Guideline midVerticalGuide = ViewBindings.findChildViewById(rootView, id);
-      if (midVerticalGuide == null) {
+      id = R.id.ivLeg;
+      ImageView ivLeg = ViewBindings.findChildViewById(rootView, id);
+      if (ivLeg == null) {
         break missingId;
       }
 
@@ -262,22 +239,22 @@ public final class ActivityPartShouldFocusBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tvLeg;
+      TextView tvLeg = ViewBindings.findChildViewById(rootView, id);
+      if (tvLeg == null) {
+        break missingId;
+      }
+
       id = R.id.tvQuestion;
-      MaterialTextView tvQuestion = ViewBindings.findChildViewById(rootView, id);
+      TextView tvQuestion = ViewBindings.findChildViewById(rootView, id);
       if (tvQuestion == null) {
         break missingId;
       }
 
-      id = R.id.tvThighs;
-      TextView tvThighs = ViewBindings.findChildViewById(rootView, id);
-      if (tvThighs == null) {
-        break missingId;
-      }
-
       return new ActivityPartShouldFocusBinding((ConstraintLayout) rootView, btnNext, clArms,
-          clBelly, clBottomNext, clChest, clMenuBottomLayout, clThighs, ivArms, ivBack, ivBelly,
-          ivChest, ivModel, ivThighs, midHorizontalGuide, midVerticalGuide, toolbar, tvArms,
-          tvBelly, tvChest, tvQuestion, tvThighs);
+          clBottomNext, constraintLayout17, constraintLayout18, constraintLayout19, imageView,
+          imageView7, ivArms, ivBack, ivBelly, ivChest, ivLeg, toolbar, tvArms, tvBelly, tvChest,
+          tvLeg, tvQuestion);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

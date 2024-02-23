@@ -4172,6 +4172,8 @@ int drawable img_strength 0x7f08016e
 int drawable img_water_reminder 0x7f08016f
 int drawable img_women_skinny 0x7f080170
 int drawable img_women_thighs 0x7f080171
+int drawable imgarms 0x7f0801e5
+int drawable imgchest 0x7f0801e6
 int drawable india__in__1 0x7f080172
 int drawable italy__it__1 0x7f080173
 int drawable japanese 0x7f080174
@@ -4258,6 +4260,7 @@ int drawable notification_template_icon_bg 0x7f0801c4
 int drawable notification_template_icon_low_bg 0x7f0801c5
 int drawable notification_tile_bg 0x7f0801c6
 int drawable notify_panel_notification_icon_bg 0x7f0801c7
+int drawable parts_focus 0x7f0801e7
 int drawable portugal 0x7f0801c8
 int drawable preference_list_divider_material 0x7f0801c9
 int drawable premiumheader 0x7f0801ca
@@ -4488,10 +4491,8 @@ int id cl30 0x7f0a00bf
 int id cl629Week 0x7f0a00c0
 int id clAds 0x7f0a00c1
 int id clArms 0x7f0a00c2
-int id clBelly 0x7f0a00c3
 int id clBottomLayout 0x7f0a00c4
 int id clBottomNext 0x7f0a00c5
-int id clChest 0x7f0a00c6
 int id clDailyMotivation 0x7f0a00c7
 int id clFemale 0x7f0a00c8
 int id clFit 0x7f0a00c9
@@ -4499,11 +4500,9 @@ int id clGenderSelection 0x7f0a00ca
 int id clInput 0x7f0a00cb
 int id clLess5 0x7f0a00cc
 int id clMale 0x7f0a00cd
-int id clMenuBottomLayout 0x7f0a00ce
 int id clNotVeryFit 0x7f0a00cf
 int id clSleepTracker 0x7f0a00d0
 int id clStepCounter 0x7f0a00d1
-int id clThighs 0x7f0a00d2
 int id clVeryFit 0x7f0a00d3
 int id clWaterReminder 0x7f0a00d4
 int id clear_text 0x7f0a00d5
@@ -4527,6 +4526,9 @@ int id constraintLayout13 0x7f0a00e6
 int id constraintLayout14 0x7f0a00e7
 int id constraintLayout15 0x7f0a00e8
 int id constraintLayout16 0x7f0a00e9
+int id constraintLayout17 0x7f0a045a
+int id constraintLayout18 0x7f0a045b
+int id constraintLayout19 0x7f0a045c
 int id constraintLayout2 0x7f0a00ea
 int id constraintLayout21 0x7f0a00eb
 int id constraintLayout29 0x7f0a00ec
@@ -4713,10 +4715,12 @@ int id ifRoom 0x7f0a01a0
 int id ignore 0x7f0a01a1
 int id ignoreRequest 0x7f0a01a2
 int id image 0x7f0a01a3
+int id imageView 0x7f0a045d
 int id imageView2 0x7f0a01a4
 int id imageView3 0x7f0a01a5
 int id imageView4 0x7f0a01a6
 int id imageView5 0x7f0a01a7
+int id imageView7 0x7f0a045e
 int id img0001 0x7f0a01a8
 int id img001 0x7f0a01a9
 int id imgAlarm 0x7f0a01aa
@@ -4749,17 +4753,16 @@ int id ivDailyMotivation 0x7f0a01c4
 int id ivFemale 0x7f0a01c5
 int id ivFitChecked 0x7f0a01c6
 int id ivIllustration 0x7f0a01c7
+int id ivLeg 0x7f0a045f
 int id ivLess5Checked 0x7f0a01c8
 int id ivMain 0x7f0a01c9
 int id ivMale 0x7f0a01ca
-int id ivModel 0x7f0a01cb
 int id ivNotVeryFitChecked 0x7f0a01cc
 int id ivPremium 0x7f0a01cd
 int id ivProfile 0x7f0a01ce
 int id ivSave 0x7f0a01cf
 int id ivSleepTracker 0x7f0a01d0
 int id ivStepCounter 0x7f0a01d1
-int id ivThighs 0x7f0a01d2
 int id ivVeryFitChecked 0x7f0a01d3
 int id ivWaterReminder 0x7f0a01d4
 int id iv_close 0x7f0a01d5
@@ -4915,8 +4918,6 @@ int id midGuide1 0x7f0a026a
 int id midGuide2 0x7f0a026b
 int id midGuide3 0x7f0a026c
 int id midGuide4 0x7f0a026d
-int id midHorizontalGuide 0x7f0a026e
-int id midVerticalGuide 0x7f0a026f
 int id middle 0x7f0a0270
 int id miles 0x7f0a0271
 int id mini 0x7f0a0272
@@ -5284,6 +5285,7 @@ int id tvGender 0x7f0a03db
 int id tvHeight 0x7f0a03dc
 int id tvLabel 0x7f0a03dd
 int id tvLabel2 0x7f0a03de
+int id tvLeg 0x7f0a0460
 int id tvLess5 0x7f0a03df
 int id tvMale 0x7f0a03e0
 int id tvNotVeryFit 0x7f0a03e1
@@ -5296,7 +5298,6 @@ int id tvSound2 0x7f0a03e7
 int id tvStepGoal 0x7f0a03e8
 int id tvTargetGoal 0x7f0a03e9
 int id tvTargetWeight 0x7f0a03ea
-int id tvThighs 0x7f0a03eb
 int id tvTime 0x7f0a03ec
 int id tvTitle 0x7f0a03ed
 int id tvValue 0x7f0a03ee

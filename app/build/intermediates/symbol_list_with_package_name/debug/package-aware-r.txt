@@ -4173,6 +4173,8 @@ drawable img_strength
 drawable img_water_reminder
 drawable img_women_skinny
 drawable img_women_thighs
+drawable imgarms
+drawable imgchest
 drawable india__in__1
 drawable italy__it__1
 drawable japanese
@@ -4259,6 +4261,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable parts_focus
 drawable portugal
 drawable preference_list_divider_material
 drawable premiumheader
@@ -4489,10 +4492,8 @@ id cl30
 id cl629Week
 id clAds
 id clArms
-id clBelly
 id clBottomLayout
 id clBottomNext
-id clChest
 id clDailyMotivation
 id clFemale
 id clFit
@@ -4500,11 +4501,9 @@ id clGenderSelection
 id clInput
 id clLess5
 id clMale
-id clMenuBottomLayout
 id clNotVeryFit
 id clSleepTracker
 id clStepCounter
-id clThighs
 id clVeryFit
 id clWaterReminder
 id clear_text
@@ -4528,6 +4527,9 @@ id constraintLayout13
 id constraintLayout14
 id constraintLayout15
 id constraintLayout16
+id constraintLayout17
+id constraintLayout18
+id constraintLayout19
 id constraintLayout2
 id constraintLayout21
 id constraintLayout29
@@ -4714,10 +4716,12 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageView
 id imageView2
 id imageView3
 id imageView4
 id imageView5
+id imageView7
 id img0001
 id img001
 id imgAlarm
@@ -4750,17 +4754,16 @@ id ivDailyMotivation
 id ivFemale
 id ivFitChecked
 id ivIllustration
+id ivLeg
 id ivLess5Checked
 id ivMain
 id ivMale
-id ivModel
 id ivNotVeryFitChecked
 id ivPremium
 id ivProfile
 id ivSave
 id ivSleepTracker
 id ivStepCounter
-id ivThighs
 id ivVeryFitChecked
 id ivWaterReminder
 id iv_close
@@ -4916,8 +4919,6 @@ id midGuide1
 id midGuide2
 id midGuide3
 id midGuide4
-id midHorizontalGuide
-id midVerticalGuide
 id middle
 id miles
 id mini
@@ -5285,6 +5286,7 @@ id tvGender
 id tvHeight
 id tvLabel
 id tvLabel2
+id tvLeg
 id tvLess5
 id tvMale
 id tvNotVeryFit
@@ -5297,7 +5299,6 @@ id tvSound2
 id tvStepGoal
 id tvTargetGoal
 id tvTargetWeight
-id tvThighs
 id tvTime
 id tvTitle
 id tvValue
