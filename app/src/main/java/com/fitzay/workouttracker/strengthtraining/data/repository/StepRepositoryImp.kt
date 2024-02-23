@@ -1,10 +1,30 @@
 package com.fitzay.workouttracker.strengthtraining.data.repository
 
+import android.util.Log
 import com.fitzay.workouttracker.strengthtraining.data.model.Step
+import com.fitzay.workouttracker.strengthtraining.domain.entities.AlarmEntity
+import com.fitzay.workouttracker.strengthtraining.domain.entities.SleepEntity
 import com.fitzay.workouttracker.strengthtraining.domain.entities.StepEntity
 import com.fitzay.workouttracker.strengthtraining.domain.repository.StepRepository
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.flow
+import kotlinx.coroutines.flow.flowOn
 
 class StepRepositoryImp(private val stepDao: StepDao) : StepRepository {
+
+    override suspend fun getAllRecordsF(pageSize: Int): Flow<List<StepEntity>> = flow {
+        try {
+            val a = stepDao.getPaging().map {
+                it.toDomain()
+            }
+            emit(a)
+        }
+        catch (e:Exception)
+        {
+            Log.i("TAG", "getAlarms-Error-Catch: "+e.message)
+        }
+    }.flowOn(Dispatchers.IO)
 
     override suspend fun getAllStepCount(): Int {
         return stepDao.getAllStepsCount()
@@ -63,5 +83,6 @@ class StepRepositoryImp(private val stepDao: StepDao) : StepRepository {
             it.toDomain()
         }
     }
+
 
 }

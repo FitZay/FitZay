@@ -16,9 +16,7 @@ import java.time.LocalTime
 import java.util.*
 import java.util.stream.LongStream
 
-class AlarmViewModel(
-    val alarmRepository: AlarmRepository
-) : ViewModel(), LifecycleObserver {
+class AlarmViewModel(val alarmRepository: AlarmRepository) : ViewModel(), LifecycleObserver {
 
     var alarm: AlarmEntity? = null
     var isCreateMode: Boolean = true

@@ -263,7 +263,7 @@ class DailyFragment : Fragment(), OnChartValueSelectedListener {
             sleepChart.axisLeft.isEnabled = true
             sleepChart.axisRight.isEnabled = false
             barDataSet!!.setDrawValues(false)
-
+            sleepChart.axisLeft.axisMinimum = 0f
             sleepChart.axisLeft.textColor = android.graphics.Color.parseColor("#939292")
             xAxis.textColor = android.graphics.Color.parseColor("#939292")
 

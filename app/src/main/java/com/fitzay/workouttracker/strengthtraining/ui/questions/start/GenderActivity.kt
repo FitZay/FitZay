@@ -14,6 +14,7 @@ import com.fitzay.workouttracker.strengthtraining.core.AppController
 import com.fitzay.workouttracker.strengthtraining.core.utils.getFitzayRemoteString
 import com.fitzay.workouttracker.strengthtraining.databinding.ActivityGenderBinding
 import com.fitzay.workouttracker.strengthtraining.di.Component
+import com.google.android.ads.nativetemplates.TemplateView
 import com.google.android.gms.ads.AdListener
 import com.google.android.gms.ads.AdLoader
 import com.google.android.gms.ads.AdRequest
@@ -29,14 +30,13 @@ class GenderActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        TemplateView.ctacolor = AppController.fitzayModel?.FitzayNativeGender?.ctacolor
         binding = ActivityGenderBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-
         binding.apply {
 
             if (AppController.fitzayModel != null && AppController.fitzayModel!!.FitzayNativeGender.showAd) {
+                clAds.visibility = View.VISIBLE
                 loadAdaptiveNative()
             } else {
                 clAds.visibility = View.GONE
@@ -45,7 +45,7 @@ class GenderActivity : AppCompatActivity() {
 
             //Skip Button Listener
             txtSkip.setOnClickListener {
-                val intent = Intent(this@GenderActivity, FirstNameActivity::class.java).apply {
+                val intent = Intent(this@GenderActivity, PartShouldFocusActivity::class.java).apply {
                     Intent.FLAG_ACTIVITY_SINGLE_TOP
                 }
                 val anim = ActivityOptions.makeCustomAnimation(this@GenderActivity, R.anim.slide_in_right, R.anim.slide_out_left).toBundle()
@@ -81,7 +81,7 @@ class GenderActivity : AppCompatActivity() {
 
 
 
-                val intent = Intent(this@GenderActivity, FirstNameActivity::class.java).apply {
+                val intent = Intent(this@GenderActivity, PartShouldFocusActivity::class.java).apply {
                     Intent.FLAG_ACTIVITY_SINGLE_TOP
                 }
                 val anim = ActivityOptions.makeCustomAnimation(this@GenderActivity, R.anim.slide_in_right, R.anim.slide_out_left).toBundle()
@@ -113,7 +113,7 @@ class GenderActivity : AppCompatActivity() {
         binding.apply {
            layoutAd.visibility = View.GONE
 
-            val template = if (getFitzayRemoteString("fitzay_cta_location") == "up") {
+            val template = if (AppController.fitzayModel!!.FitzayNativeGender.ctalocation == "up") {
                 plannerTemplateDown.visibility = View.GONE
                 plannerTemplateUp.visibility = View.VISIBLE
                 plannerTemplateUp

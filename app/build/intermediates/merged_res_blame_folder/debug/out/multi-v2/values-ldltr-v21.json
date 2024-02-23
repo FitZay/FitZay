@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-91:/values-ldltr-v21/values-ldltr-v21.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-3\\a4065bb5ae3b7388f5a264b21d16ff38\\transformed\\appcompat-1.6.1\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "112",
+                        "endOffsets": "163"
+                    }
+                }
+            ]
+        }
+    ]
+}

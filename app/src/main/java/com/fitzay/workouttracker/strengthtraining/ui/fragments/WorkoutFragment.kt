@@ -1,5 +1,6 @@
 package com.fitzay.workouttracker.strengthtraining.ui.fragments
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -17,8 +18,10 @@ import com.fitzay.workouttracker.strengthtraining.core.utils.getFitzayRemoteStri
 import com.fitzay.workouttracker.strengthtraining.databinding.FragmentWorkoutBinding
 import com.fitzay.workouttracker.strengthtraining.di.Component
 import com.fitzay.workouttracker.strengthtraining.domain.models.CategoriesModel
+import com.fitzay.workouttracker.strengthtraining.ui.activities.FullbodyWorkoutActivity
 import com.fitzay.workouttracker.strengthtraining.ui.activities.LoadingActivity
 import com.fitzay.workouttracker.strengthtraining.ui.adapters.CategoriesAdapter
+import com.google.android.ads.nativetemplates.TemplateView
 import com.google.android.gms.ads.AdListener
 import com.google.android.gms.ads.AdLoader
 import com.google.android.gms.ads.AdRequest
@@ -37,6 +40,7 @@ class WorkoutFragment : Fragment() {
         savedInstanceState: Bundle?,
     ): View {
         // Inflate the layout for this fragment
+        TemplateView.ctacolor = AppController.fitzayModel?.FitzayNativeExercise?.ctacolor
         _binding = FragmentWorkoutBinding.inflate(inflater, container, false)
         if (AppController.fitzayModel != null && AppController.fitzayModel!!.FitzayBannerWorkout.showAd && checkForInternet() && !LoadingActivity.ispurchased) {
             binding?.linearLayoutAds?.visibility = View.VISIBLE
@@ -48,7 +52,7 @@ class WorkoutFragment : Fragment() {
 
 
         binding.apply {
-            txtBeginner.setBackgroundResource(R.drawable.bg_selected_options)
+            txtBeginner.setBackgroundResource(R.drawable.bg_selected_options_tab)
             val adapter = CategoriesAdapter(
                 Component.workOutViewModel.getCat(
                     requireContext(),
@@ -67,7 +71,7 @@ class WorkoutFragment : Fragment() {
 
             txtBeginner.setOnClickListener {
                 unSelect()
-                txtBeginner.setBackgroundResource(R.drawable.bg_selected_options)
+                txtBeginner.setBackgroundResource(R.drawable.bg_selected_options_tab)
                 recyclerview.adapter = CategoriesAdapter(
                     Component.workOutViewModel.getCat(
                         requireContext(),
@@ -78,7 +82,7 @@ class WorkoutFragment : Fragment() {
 
             txtIntermediate.setOnClickListener {
                 unSelect()
-                txtIntermediate.setBackgroundResource(R.drawable.bg_selected_options)
+                txtIntermediate.setBackgroundResource(R.drawable.bg_selected_options_tab)
                 recyclerview.adapter = CategoriesAdapter(
                     Component.workOutViewModel.getCat(
                         requireContext(),
@@ -90,13 +94,17 @@ class WorkoutFragment : Fragment() {
 
             txtAdvance.setOnClickListener {
                 unSelect()
-                txtAdvance.setBackgroundResource(R.drawable.bg_selected_options)
+                txtAdvance.setBackgroundResource(R.drawable.bg_selected_options_tab)
                 recyclerview.adapter = CategoriesAdapter(
                     Component.workOutViewModel.getCat(
                         requireContext(),
                         "ADVANCE"
                     ) as ArrayList<CategoriesModel> , "ADVANCE"
                 )
+            }
+
+            fullbodychBtn.setOnClickListener {
+                startActivity(Intent(requireActivity() , FullbodyWorkoutActivity :: class.java))
             }
         }
 

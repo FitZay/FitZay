@@ -1,0 +1,2744 @@
+[
+  {
+    "week": 1,
+    "day": 1,
+    "cat_id": "2",
+    "ex_id": 17
+  },
+  {
+    "week": 1,
+    "day": 1,
+    "cat_id": "14",
+    "ex_id": 293
+  },
+  {
+    "week": 1,
+    "day": 1,
+    "cat_id": "5",
+    "ex_id": 71
+  },
+  {
+    "week": 1,
+    "day": 1,
+    "cat_id": "5",
+    "ex_id": 72
+  },
+  {
+    "week": 1,
+    "day": 1,
+    "cat_id": "5",
+    "ex_id": 73
+  },
+  {
+    "week": 1,
+    "day": 1,
+    "cat_id": "14",
+    "ex_id": 293
+  },
+  {
+    "week": 1,
+    "day": 1,
+    "cat_id": "5",
+    "ex_id": 71
+  },
+  {
+    "week": 1,
+    "day": 1,
+    "cat_id": "5",
+    "ex_id": 72
+  },
+  {
+    "week": 1,
+    "day": 1,
+    "cat_id": "5",
+    "ex_id": 73
+  },
+  {
+    "week": 1,
+    "day": 1,
+    "cat_id": "5",
+    "ex_id": 81
+  },
+  {
+    "week": 1,
+    "day": 1,
+    "cat_id": "5",
+    "ex_id": 83
+  },
+  {
+    "week": 1,
+    "day": 2,
+    "cat_id": "2",
+    "ex_id": 27
+  },
+  {
+    "week": 1,
+    "day": 2,
+    "cat_id": "1",
+    "ex_id": 3
+  },
+  {
+    "week": 1,
+    "day": 2,
+    "cat_id": "2",
+    "ex_id": 20
+  },
+  {
+    "week": 1,
+    "day": 2,
+    "cat_id": "2",
+    "ex_id": 26
+  },
+  {
+    "week": 1,
+    "day": 2,
+    "cat_id": "2",
+    "ex_id": 30
+  },
+  {
+    "week": 1,
+    "day": 2,
+    "cat_id": "2",
+    "ex_id": 28
+  },
+  {
+    "week": 1,
+    "day": 2,
+    "cat_id": "2",
+    "ex_id": 27
+  },
+  {
+    "week": 1,
+    "day": 2,
+    "cat_id": "1",
+    "ex_id": 3
+  },
+  {
+    "week": 1,
+    "day": 2,
+    "cat_id": "2",
+    "ex_id": 20
+  },
+  {
+    "week": 1,
+    "day": 2,
+    "cat_id": "2",
+    "ex_id": 26
+  },
+  {
+    "week": 1,
+    "day": 2,
+    "cat_id": "2",
+    "ex_id": 30
+  },
+  {
+    "week": 1,
+    "day": 2,
+    "cat_id": "2",
+    "ex_id": 28
+  },
+  {
+    "week": 1,
+    "day": 2,
+    "cat_id": "2",
+    "ex_id": 35
+  },
+  {
+    "week": 1,
+    "day": 2,
+    "cat_id": "2",
+    "ex_id": 36
+  },
+  {
+    "week": 1,
+    "day": 2,
+    "cat_id": "2",
+    "ex_id": 37
+  },
+  {
+    "week": 1,
+    "day": 3,
+    "cat_id": "7",
+    "ex_id": 100
+  },
+  {
+    "week": 1,
+    "day": 3,
+    "cat_id": "14",
+    "ex_id": 294
+  },
+  {
+    "week": 1,
+    "day": 3,
+    "cat_id": "7",
+    "ex_id": 101
+  },
+  {
+    "week": 1,
+    "day": 3,
+    "cat_id": "5",
+    "ex_id": 77
+  },
+  {
+    "week": 1,
+    "day": 3,
+    "cat_id": "7",
+    "ex_id": 113
+  },
+  {
+    "week": 1,
+    "day": 3,
+    "cat_id": "13",
+    "ex_id": 279
+  },
+  {
+    "week": 1,
+    "day": 3,
+    "cat_id": "13",
+    "ex_id": 280
+  },
+  {
+    "week": 1,
+    "day": 3,
+    "cat_id": "8",
+    "ex_id": 136
+  },
+  {
+    "week": 1,
+    "day": 3,
+    "cat_id": "14",
+    "ex_id": 294
+  },
+  {
+    "week": 1,
+    "day": 3,
+    "cat_id": "7",
+    "ex_id": 101
+  },
+  {
+    "week": 1,
+    "day": 3,
+    "cat_id": "5",
+    "ex_id": 71
+  },
+  {
+    "week": 1,
+    "day": 3,
+    "cat_id": "14",
+    "ex_id": 296
+  },
+  {
+    "week": 1,
+    "day": 3,
+    "cat_id": "13",
+    "ex_id": 286
+  },
+  {
+    "week": 1,
+    "day": 3,
+    "cat_id": "13",
+    "ex_id": 287
+  },
+  {
+    "week": 1,
+    "day": 3,
+    "cat_id": "13",
+    "ex_id": 286
+  },
+  {
+    "week": 1,
+    "day": 3,
+    "cat_id": "13",
+    "ex_id": 287
+  },
+  {
+    "week": 1,
+    "day": 3,
+    "cat_id": "14",
+    "ex_id": 307
+  },
+  {
+    "week": 1,
+    "day": 4,
+    "cat_id": "2",
+    "ex_id": 17
+  },
+  {
+    "week": 1,
+    "day": 4,
+    "cat_id": "5",
+    "ex_id": 72
+  },
+  {
+    "week": 1,
+    "day": 4,
+    "cat_id": "5",
+    "ex_id": 73
+  },
+  {
+    "week": 1,
+    "day": 4,
+    "cat_id": "5",
+    "ex_id": 76
+  },
+  {
+    "week": 1,
+    "day": 4,
+    "cat_id": "5",
+    "ex_id": 75
+  },
+  {
+    "week": 1,
+    "day": 4,
+    "cat_id": "5",
+    "ex_id": 72
+  },
+  {
+    "week": 1,
+    "day": 4,
+    "cat_id": "5",
+    "ex_id": 73
+  },
+  {
+    "week": 1,
+    "day": 4,
+    "cat_id": "5",
+    "ex_id": 76
+  },
+  {
+    "week": 1,
+    "day": 4,
+    "cat_id": "5",
+    "ex_id": 79
+  },
+  {
+    "week": 1,
+    "day": 4,
+    "cat_id": "5",
+    "ex_id": 81
+  },
+  {
+    "week": 1,
+    "day": 4,
+    "cat_id": "5",
+    "ex_id": 83
+  },
+  {
+    "week": 1,
+    "day": 5,
+    "cat_id": "1",
+    "ex_id": 9
+  },
+  {
+    "week": 1,
+    "day": 5,
+    "cat_id": "2",
+    "ex_id": 30
+  },
+  {
+    "week": 1,
+    "day": 5,
+    "cat_id": "2",
+    "ex_id": 23
+  },
+  {
+    "week": 1,
+    "day": 5,
+    "cat_id": "2",
+    "ex_id": 21
+  },
+  {
+    "week": 1,
+    "day": 5,
+    "cat_id": "2",
+    "ex_id": 22
+  },
+  {
+    "week": 1,
+    "day": 5,
+    "cat_id": "2",
+    "ex_id": 27
+  },
+  {
+    "week": 1,
+    "day": 5,
+    "cat_id": "1",
+    "ex_id": 9
+  },
+  {
+    "week": 1,
+    "day": 5,
+    "cat_id": "2",
+    "ex_id": 30
+  },
+  {
+    "week": 1,
+    "day": 5,
+    "cat_id": "2",
+    "ex_id": 23
+  },
+  {
+    "week": 1,
+    "day": 5,
+    "cat_id": "2",
+    "ex_id": 21
+  },
+  {
+    "week": 1,
+    "day": 5,
+    "cat_id": "2",
+    "ex_id": 22
+  },
+  {
+    "week": 1,
+    "day": 5,
+    "cat_id": "2",
+    "ex_id": 25
+  },
+  {
+    "week": 1,
+    "day": 5,
+    "cat_id": "5",
+    "ex_id": 76
+  },
+  {
+    "week": 1,
+    "day": 5,
+    "cat_id": "5",
+    "ex_id": 81
+  },
+  {
+    "week": 1,
+    "day": 5,
+    "cat_id": "2",
+    "ex_id": 36
+  },
+  {
+    "week": 1,
+    "day": 5,
+    "cat_id": "2",
+    "ex_id": 37
+  },
+  {
+    "week": 1,
+    "day": 6,
+    "cat_id": "8",
+    "ex_id": 136
+  },
+  {
+    "week": 1,
+    "day": 6,
+    "cat_id": "14",
+    "ex_id": 294
+  },
+  {
+    "week": 1,
+    "day": 6,
+    "cat_id": "14",
+    "ex_id": 292
+  },
+  {
+    "week": 1,
+    "day": 6,
+    "cat_id": "14",
+    "ex_id": 293
+  },
+  {
+    "week": 1,
+    "day": 6,
+    "cat_id": "14",
+    "ex_id": 301
+  },
+  {
+    "week": 1,
+    "day": 6,
+    "cat_id": "14",
+    "ex_id": 302
+  },
+  {
+    "week": 1,
+    "day": 6,
+    "cat_id": "7",
+    "ex_id": 100
+  },
+  {
+    "week": 1,
+    "day": 6,
+    "cat_id": "14",
+    "ex_id": 294
+  },
+  {
+    "week": 1,
+    "day": 6,
+    "cat_id": "7",
+    "ex_id": 113
+  },
+  {
+    "week": 1,
+    "day": 6,
+    "cat_id": "14",
+    "ex_id": 292
+  },
+  {
+    "week": 1,
+    "day": 6,
+    "cat_id": "14",
+    "ex_id": 293
+  },
+  {
+    "week": 1,
+    "day": 6,
+    "cat_id": "14",
+    "ex_id": 296
+  },
+  {
+    "week": 1,
+    "day": 6,
+    "cat_id": "13",
+    "ex_id": 286
+  },
+  {
+    "week": 1,
+    "day": 6,
+    "cat_id": "13",
+    "ex_id": 287
+  },
+  {
+    "week": 1,
+    "day": 6,
+    "cat_id": "13",
+    "ex_id": 286
+  },
+  {
+    "week": 1,
+    "day": 6,
+    "cat_id": "13",
+    "ex_id": 287
+  },
+  {
+    "week": 1,
+    "day": 6,
+    "cat_id": "14",
+    "ex_id": 307
+  },
+  {
+    "week": 1,
+    "day": 7,
+    "cat_id": "2",
+    "ex_id": 17
+  },
+  {
+    "week": 1,
+    "day": 7,
+    "cat_id": "14",
+    "ex_id": 293
+  },
+  {
+    "week": 1,
+    "day": 7,
+    "cat_id": "5",
+    "ex_id": 73
+  },
+  {
+    "week": 1,
+    "day": 7,
+    "cat_id": "5",
+    "ex_id": 76
+  },
+  {
+    "week": 1,
+    "day": 7,
+    "cat_id": "5",
+    "ex_id": 75
+  },
+  {
+    "week": 1,
+    "day": 7,
+    "cat_id": "5",
+    "ex_id": 79
+  },
+  {
+    "week": 1,
+    "day": 7,
+    "cat_id": "5",
+    "ex_id": 73
+  },
+  {
+    "week": 1,
+    "day": 7,
+    "cat_id": "5",
+    "ex_id": 76
+  },
+  {
+    "week": 1,
+    "day": 7,
+    "cat_id": "5",
+    "ex_id": 75
+  },
+  {
+    "week": 1,
+    "day": 7,
+    "cat_id": "5",
+    "ex_id": 79
+  },
+  {
+    "week": 1,
+    "day": 7,
+    "cat_id": "5",
+    "ex_id": 81
+  },
+  {
+    "week": 1,
+    "day": 7,
+    "cat_id": "5",
+    "ex_id": 83
+  },
+  {
+    "week": 2,
+    "day": 1,
+    "cat_id": "2",
+    "ex_id": 27
+  },
+  {
+    "week": 2,
+    "day": 1,
+    "cat_id": "3",
+    "ex_id": 51
+  },
+  {
+    "week": 2,
+    "day": 1,
+    "cat_id": "2",
+    "ex_id": 28
+  },
+  {
+    "week": 2,
+    "day": 1,
+    "cat_id": "2",
+    "ex_id": 23
+  },
+  {
+    "week": 2,
+    "day": 1,
+    "cat_id": "2",
+    "ex_id": 19
+  },
+  {
+    "week": 2,
+    "day": 1,
+    "cat_id": "2",
+    "ex_id": 21
+  },
+  {
+    "week": 2,
+    "day": 1,
+    "cat_id": "2",
+    "ex_id": 22
+  },
+  {
+    "week": 2,
+    "day": 1,
+    "cat_id": "2",
+    "ex_id": 24
+  },
+  {
+    "week": 2,
+    "day": 1,
+    "cat_id": "2",
+    "ex_id": 27
+  },
+  {
+    "week": 2,
+    "day": 1,
+    "cat_id": "3",
+    "ex_id": 51
+  },
+  {
+    "week": 2,
+    "day": 1,
+    "cat_id": "2",
+    "ex_id": 28
+  },
+  {
+    "week": 2,
+    "day": 1,
+    "cat_id": "2",
+    "ex_id": 21
+  },
+  {
+    "week": 2,
+    "day": 1,
+    "cat_id": "2",
+    "ex_id": 22
+  },
+  {
+    "week": 2,
+    "day": 1,
+    "cat_id": "2",
+    "ex_id": 24
+  },
+  {
+    "week": 2,
+    "day": 1,
+    "cat_id": "2",
+    "ex_id": 32
+  },
+  {
+    "week": 2,
+    "day": 1,
+    "cat_id": "2",
+    "ex_id": 35
+  },
+  {
+    "week": 2,
+    "day": 1,
+    "cat_id": "2",
+    "ex_id": 36
+  },
+  {
+    "week": 2,
+    "day": 1,
+    "cat_id": "2",
+    "ex_id": 37
+  },
+  {
+    "week": 2,
+    "day": 2,
+    "cat_id": "13",
+    "ex_id": 283
+  },
+  {
+    "week": 2,
+    "day": 2,
+    "cat_id": "14",
+    "ex_id": 292
+  },
+  {
+    "week": 2,
+    "day": 2,
+    "cat_id": "14",
+    "ex_id": 293
+  },
+  {
+    "week": 2,
+    "day": 2,
+    "cat_id": "15",
+    "ex_id": 309
+  },
+  {
+    "week": 2,
+    "day": 2,
+    "cat_id": "13",
+    "ex_id": 279
+  },
+  {
+    "week": 2,
+    "day": 2,
+    "cat_id": "13",
+    "ex_id": 280
+  },
+  {
+    "week": 2,
+    "day": 2,
+    "cat_id": "7",
+    "ex_id": 101
+  },
+  {
+    "week": 2,
+    "day": 2,
+    "cat_id": "15",
+    "ex_id": 312
+  },
+  {
+    "week": 2,
+    "day": 2,
+    "cat_id": "14",
+    "ex_id": 292
+  },
+  {
+    "week": 2,
+    "day": 2,
+    "cat_id": "14",
+    "ex_id": 293
+  },
+  {
+    "week": 2,
+    "day": 2,
+    "cat_id": "15",
+    "ex_id": 309
+  },
+  {
+    "week": 2,
+    "day": 2,
+    "cat_id": "14",
+    "ex_id": 296
+  },
+  {
+    "week": 2,
+    "day": 2,
+    "cat_id": "13",
+    "ex_id": 289
+  },
+  {
+    "week": 2,
+    "day": 2,
+    "cat_id": "15",
+    "ex_id": 320
+  },
+  {
+    "week": 2,
+    "day": 2,
+    "cat_id": "13",
+    "ex_id": 289
+  },
+  {
+    "week": 2,
+    "day": 2,
+    "cat_id": "15",
+    "ex_id": 320
+  },
+  {
+    "week": 2,
+    "day": 2,
+    "cat_id": "14",
+    "ex_id": 307
+  },
+  {
+    "week": 2,
+    "day": 3,
+    "cat_id": "5",
+    "ex_id": 70
+  },
+  {
+    "week": 2,
+    "day": 3,
+    "cat_id": "14",
+    "ex_id": 298
+  },
+  {
+    "week": 2,
+    "day": 3,
+    "cat_id": "5",
+    "ex_id": 73
+  },
+  {
+    "week": 2,
+    "day": 3,
+    "cat_id": "5",
+    "ex_id": 76
+  },
+  {
+    "week": 2,
+    "day": 3,
+    "cat_id": "5",
+    "ex_id": 75
+  },
+  {
+    "week": 2,
+    "day": 3,
+    "cat_id": "5",
+    "ex_id": 79
+  },
+  {
+    "week": 2,
+    "day": 3,
+    "cat_id": "5",
+    "ex_id": 73
+  },
+  {
+    "week": 2,
+    "day": 3,
+    "cat_id": "5",
+    "ex_id": 76
+  },
+  {
+    "week": 2,
+    "day": 3,
+    "cat_id": "5",
+    "ex_id": 75
+  },
+  {
+    "week": 2,
+    "day": 3,
+    "cat_id": "5",
+    "ex_id": 79
+  },
+  {
+    "week": 2,
+    "day": 3,
+    "cat_id": "5",
+    "ex_id": 81
+  },
+  {
+    "week": 2,
+    "day": 3,
+    "cat_id": "5",
+    "ex_id": 83
+  },
+  {
+    "week": 2,
+    "day": 4,
+    "cat_id": "3",
+    "ex_id": 39
+  },
+  {
+    "week": 2,
+    "day": 4,
+    "cat_id": "2",
+    "ex_id": 27
+  },
+  {
+    "week": 2,
+    "day": 4,
+    "cat_id": "3",
+    "ex_id": 51
+  },
+  {
+    "week": 2,
+    "day": 4,
+    "cat_id": "2",
+    "ex_id": 28
+  },
+  {
+    "week": 2,
+    "day": 4,
+    "cat_id": "2",
+    "ex_id": 23
+  },
+  {
+    "week": 2,
+    "day": 4,
+    "cat_id": "2",
+    "ex_id": 21
+  },
+  {
+    "week": 2,
+    "day": 4,
+    "cat_id": "2",
+    "ex_id": 22
+  },
+  {
+    "week": 2,
+    "day": 4,
+    "cat_id": "2",
+    "ex_id": 24
+  },
+  {
+    "week": 2,
+    "day": 4,
+    "cat_id": "2",
+    "ex_id": 27
+  },
+  {
+    "week": 2,
+    "day": 4,
+    "cat_id": "3",
+    "ex_id": 51
+  },
+  {
+    "week": 2,
+    "day": 4,
+    "cat_id": "2",
+    "ex_id": 28
+  },
+  {
+    "week": 2,
+    "day": 4,
+    "cat_id": "2",
+    "ex_id": 23
+  },
+  {
+    "week": 2,
+    "day": 4,
+    "cat_id": "2",
+    "ex_id": 21
+  },
+  {
+    "week": 2,
+    "day": 4,
+    "cat_id": "2",
+    "ex_id": 22
+  },
+  {
+    "week": 2,
+    "day": 4,
+    "cat_id": "2",
+    "ex_id": 24
+  },
+  {
+    "week": 2,
+    "day": 4,
+    "cat_id": "2",
+    "ex_id": 32
+  },
+  {
+    "week": 2,
+    "day": 4,
+    "cat_id": "2",
+    "ex_id": 35
+  },
+  {
+    "week": 2,
+    "day": 4,
+    "cat_id": "2",
+    "ex_id": 36
+  },
+  {
+    "week": 2,
+    "day": 4,
+    "cat_id": "2",
+    "ex_id": 37
+  },
+  {
+    "week": 2,
+    "day": 5,
+    "cat_id": "14",
+    "ex_id": 292
+  },
+  {
+    "week": 2,
+    "day": 5,
+    "cat_id": "14",
+    "ex_id": 293
+  },
+  {
+    "week": 2,
+    "day": 5,
+    "cat_id": "15",
+    "ex_id": 309
+  },
+  {
+    "week": 2,
+    "day": 5,
+    "cat_id": "4",
+    "ex_id": 63
+  },
+  {
+    "week": 2,
+    "day": 5,
+    "cat_id": "13",
+    "ex_id": 279
+  },
+  {
+    "week": 2,
+    "day": 5,
+    "cat_id": "13",
+    "ex_id": 280
+  },
+  {
+    "week": 2,
+    "day": 5,
+    "cat_id": "14",
+    "ex_id": 292
+  },
+  {
+    "week": 2,
+    "day": 5,
+    "cat_id": "14",
+    "ex_id": 293
+  },
+  {
+    "week": 2,
+    "day": 5,
+    "cat_id": "15",
+    "ex_id": 309
+  },
+  {
+    "week": 2,
+    "day": 5,
+    "cat_id": "4",
+    "ex_id": 63
+  },
+  {
+    "week": 2,
+    "day": 5,
+    "cat_id": "14",
+    "ex_id": 296
+  },
+  {
+    "week": 2,
+    "day": 5,
+    "cat_id": "14",
+    "ex_id": 304
+  },
+  {
+    "week": 2,
+    "day": 5,
+    "cat_id": "15",
+    "ex_id": 320
+  },
+  {
+    "week": 2,
+    "day": 5,
+    "cat_id": "15",
+    "ex_id": 309
+  },
+  {
+    "week": 2,
+    "day": 5,
+    "cat_id": "14",
+    "ex_id": 304
+  },
+  {
+    "week": 2,
+    "day": 5,
+    "cat_id": "15",
+    "ex_id": 320
+  },
+  {
+    "week": 2,
+    "day": 5,
+    "cat_id": "15",
+    "ex_id": 309
+  },
+  {
+    "week": 2,
+    "day": 5,
+    "cat_id": "14",
+    "ex_id": 307
+  },
+  {
+    "week": 2,
+    "day": 6,
+    "cat_id": "5",
+    "ex_id": 70
+  },
+  {
+    "week": 2,
+    "day": 6,
+    "cat_id": "5",
+    "ex_id": 72
+  },
+  {
+    "week": 2,
+    "day": 6,
+    "cat_id": "5",
+    "ex_id": 73
+  },
+  {
+    "week": 2,
+    "day": 6,
+    "cat_id": "5",
+    "ex_id": 76
+  },
+  {
+    "week": 2,
+    "day": 6,
+    "cat_id": "5",
+    "ex_id": 75
+  },
+  {
+    "week": 2,
+    "day": 6,
+    "cat_id": "5",
+    "ex_id": 74
+  },
+  {
+    "week": 2,
+    "day": 6,
+    "cat_id": "5",
+    "ex_id": 72
+  },
+  {
+    "week": 2,
+    "day": 6,
+    "cat_id": "5",
+    "ex_id": 73
+  },
+  {
+    "week": 2,
+    "day": 6,
+    "cat_id": "5",
+    "ex_id": 76
+  },
+  {
+    "week": 2,
+    "day": 6,
+    "cat_id": "5",
+    "ex_id": 75
+  },
+  {
+    "week": 2,
+    "day": 6,
+    "cat_id": "5",
+    "ex_id": 79
+  },
+  {
+    "week": 2,
+    "day": 6,
+    "cat_id": "5",
+    "ex_id": 80
+  },
+  {
+    "week": 2,
+    "day": 6,
+    "cat_id": "5",
+    "ex_id": 81
+  },
+  {
+    "week": 2,
+    "day": 6,
+    "cat_id": "5",
+    "ex_id": 83
+  },
+  {
+    "week": 2,
+    "day": 7,
+    "cat_id": "2",
+    "ex_id": 18
+  },
+  {
+    "week": 2,
+    "day": 7,
+    "cat_id": "2",
+    "ex_id": 30
+  },
+  {
+    "week": 2,
+    "day": 7,
+    "cat_id": "2",
+    "ex_id": 29
+  },
+  {
+    "week": 2,
+    "day": 7,
+    "cat_id": "2",
+    "ex_id": 21
+  },
+  {
+    "week": 2,
+    "day": 7,
+    "cat_id": "2",
+    "ex_id": 22
+  },
+  {
+    "week": 2,
+    "day": 7,
+    "cat_id": "2",
+    "ex_id": 24
+  },
+  {
+    "week": 2,
+    "day": 7,
+    "cat_id": "2",
+    "ex_id": 25
+  },
+  {
+    "week": 2,
+    "day": 7,
+    "cat_id": "2",
+    "ex_id": 27
+  },
+  {
+    "week": 2,
+    "day": 7,
+    "cat_id": "3",
+    "ex_id": 51
+  },
+  {
+    "week": 2,
+    "day": 7,
+    "cat_id": "2",
+    "ex_id": 30
+  },
+  {
+    "week": 2,
+    "day": 7,
+    "cat_id": "2",
+    "ex_id": 31
+  },
+  {
+    "week": 2,
+    "day": 7,
+    "cat_id": "2",
+    "ex_id": 32
+  },
+  {
+    "week": 2,
+    "day": 7,
+    "cat_id": "2",
+    "ex_id": 33
+  },
+  {
+    "week": 2,
+    "day": 7,
+    "cat_id": "2",
+    "ex_id": 35
+  },
+  {
+    "week": 2,
+    "day": 7,
+    "cat_id": "2",
+    "ex_id": 36
+  },
+  {
+    "week": 2,
+    "day": 7,
+    "cat_id": "2",
+    "ex_id": 37
+  },
+  {
+    "week": 3,
+    "day": 1,
+    "cat_id": "14",
+    "ex_id": 292
+  },
+  {
+    "week": 3,
+    "day": 1,
+    "cat_id": "14",
+    "ex_id": 293
+  },
+  {
+    "week": 3,
+    "day": 1,
+    "cat_id": "15",
+    "ex_id": 309
+  },
+  {
+    "week": 3,
+    "day": 1,
+    "cat_id": "7",
+    "ex_id": 102
+  },
+  {
+    "week": 3,
+    "day": 1,
+    "cat_id": "13",
+    "ex_id": 279
+  },
+  {
+    "week": 3,
+    "day": 1,
+    "cat_id": "13",
+    "ex_id": 280
+  },
+  {
+    "week": 3,
+    "day": 1,
+    "cat_id": "14",
+    "ex_id": 292
+  },
+  {
+    "week": 3,
+    "day": 1,
+    "cat_id": "14",
+    "ex_id": 293
+  },
+  {
+    "week": 3,
+    "day": 1,
+    "cat_id": "15",
+    "ex_id": 309
+  },
+  {
+    "week": 3,
+    "day": 1,
+    "cat_id": "7",
+    "ex_id": 102
+  },
+  {
+    "week": 3,
+    "day": 1,
+    "cat_id": "14",
+    "ex_id": 296
+  },
+  {
+    "week": 3,
+    "day": 1,
+    "cat_id": "14",
+    "ex_id": 304
+  },
+  {
+    "week": 3,
+    "day": 1,
+    "cat_id": "15",
+    "ex_id": 320
+  },
+  {
+    "week": 3,
+    "day": 1,
+    "cat_id": "15",
+    "ex_id": 309
+  },
+  {
+    "week": 3,
+    "day": 1,
+    "cat_id": "14",
+    "ex_id": 304
+  },
+  {
+    "week": 3,
+    "day": 1,
+    "cat_id": "15",
+    "ex_id": 320
+  },
+  {
+    "week": 3,
+    "day": 1,
+    "cat_id": "15",
+    "ex_id": 309
+  },
+  {
+    "week": 3,
+    "day": 1,
+    "cat_id": "14",
+    "ex_id": 307
+  },
+  {
+    "week": 3,
+    "day": 2,
+    "cat_id": "5",
+    "ex_id": 70
+  },
+  {
+    "week": 3,
+    "day": 2,
+    "cat_id": "5",
+    "ex_id": 72
+  },
+  {
+    "week": 3,
+    "day": 2,
+    "cat_id": "5",
+    "ex_id": 76
+  },
+  {
+    "week": 3,
+    "day": 2,
+    "cat_id": "5",
+    "ex_id": 75
+  },
+  {
+    "week": 3,
+    "day": 2,
+    "cat_id": "5",
+    "ex_id": 74
+  },
+  {
+    "week": 3,
+    "day": 2,
+    "cat_id": "7",
+    "ex_id": 105
+  },
+  {
+    "week": 3,
+    "day": 2,
+    "cat_id": "6",
+    "ex_id": 94
+  },
+  {
+    "week": 3,
+    "day": 2,
+    "cat_id": "5",
+    "ex_id": 72
+  },
+  {
+    "week": 3,
+    "day": 2,
+    "cat_id": "5",
+    "ex_id": 73
+  },
+  {
+    "week": 3,
+    "day": 2,
+    "cat_id": "5",
+    "ex_id": 75
+  },
+  {
+    "week": 3,
+    "day": 2,
+    "cat_id": "5",
+    "ex_id": 79
+  },
+  {
+    "week": 3,
+    "day": 2,
+    "cat_id": "5",
+    "ex_id": 80
+  },
+  {
+    "week": 3,
+    "day": 2,
+    "cat_id": "5",
+    "ex_id": 81
+  },
+  {
+    "week": 3,
+    "day": 2,
+    "cat_id": "5",
+    "ex_id": 83
+  },
+  {
+    "week": 3,
+    "day": 3,
+    "cat_id": "3",
+    "ex_id": 39
+  },
+  {
+    "week": 3,
+    "day": 3,
+    "cat_id": "2",
+    "ex_id": 27
+  },
+  {
+    "week": 3,
+    "day": 3,
+    "cat_id": "2",
+    "ex_id": 20
+  },
+  {
+    "week": 3,
+    "day": 3,
+    "cat_id": "2",
+    "ex_id": 18
+  },
+  {
+    "week": 3,
+    "day": 3,
+    "cat_id": "2",
+    "ex_id": 30
+  },
+  {
+    "week": 3,
+    "day": 3,
+    "cat_id": "2",
+    "ex_id": 28
+  },
+  {
+    "week": 3,
+    "day": 3,
+    "cat_id": "2",
+    "ex_id": 23
+  },
+  {
+    "week": 3,
+    "day": 3,
+    "cat_id": "2",
+    "ex_id": 21
+  },
+  {
+    "week": 3,
+    "day": 3,
+    "cat_id": "2",
+    "ex_id": 22
+  },
+  {
+    "week": 3,
+    "day": 3,
+    "cat_id": "2",
+    "ex_id": 25
+  },
+  {
+    "week": 3,
+    "day": 3,
+    "cat_id": "2",
+    "ex_id": 27
+  },
+  {
+    "week": 3,
+    "day": 3,
+    "cat_id": "2",
+    "ex_id": 20
+  },
+  {
+    "week": 3,
+    "day": 3,
+    "cat_id": "2",
+    "ex_id": 26
+  },
+  {
+    "week": 3,
+    "day": 3,
+    "cat_id": "2",
+    "ex_id": 30
+  },
+  {
+    "week": 3,
+    "day": 3,
+    "cat_id": "2",
+    "ex_id": 28
+  },
+  {
+    "week": 3,
+    "day": 3,
+    "cat_id": "2",
+    "ex_id": 23
+  },
+  {
+    "week": 3,
+    "day": 3,
+    "cat_id": "2",
+    "ex_id": 25
+  },
+  {
+    "week": 3,
+    "day": 3,
+    "cat_id": "2",
+    "ex_id": 35
+  },
+  {
+    "week": 3,
+    "day": 3,
+    "cat_id": "2",
+    "ex_id": 36
+  },
+  {
+    "week": 3,
+    "day": 3,
+    "cat_id": "2",
+    "ex_id": 37
+  },
+  {
+    "week": 3,
+    "day": 4,
+    "cat_id": "14",
+    "ex_id": 292
+  },
+  {
+    "week": 3,
+    "day": 4,
+    "cat_id": "14",
+    "ex_id": 295
+  },
+  {
+    "week": 3,
+    "day": 4,
+    "cat_id": "15",
+    "ex_id": 310
+  },
+  {
+    "week": 3,
+    "day": 4,
+    "cat_id": "15",
+    "ex_id": 311
+  },
+  {
+    "week": 3,
+    "day": 4,
+    "cat_id": "14",
+    "ex_id": 301
+  },
+  {
+    "week": 3,
+    "day": 4,
+    "cat_id": "14",
+    "ex_id": 302
+  },
+  {
+    "week": 3,
+    "day": 4,
+    "cat_id": "8",
+    "ex_id": 121
+  },
+  {
+    "week": 3,
+    "day": 4,
+    "cat_id": "15",
+    "ex_id": 310
+  },
+  {
+    "week": 3,
+    "day": 4,
+    "cat_id": "15",
+    "ex_id": 311
+  },
+  {
+    "week": 3,
+    "day": 4,
+    "cat_id": "14",
+    "ex_id": 296
+  },
+  {
+    "week": 3,
+    "day": 4,
+    "cat_id": "15",
+    "ex_id": 320
+  },
+  {
+    "week": 3,
+    "day": 4,
+    "cat_id": "15",
+    "ex_id": 309
+  },
+  {
+    "week": 3,
+    "day": 4,
+    "cat_id": "14",
+    "ex_id": 303
+  },
+  {
+    "week": 3,
+    "day": 4,
+    "cat_id": "15",
+    "ex_id": 323
+  },
+  {
+    "week": 3,
+    "day": 4,
+    "cat_id": "15",
+    "ex_id": 320
+  },
+  {
+    "week": 3,
+    "day": 4,
+    "cat_id": "15",
+    "ex_id": 309
+  },
+  {
+    "week": 3,
+    "day": 4,
+    "cat_id": "14",
+    "ex_id": 303
+  },
+  {
+    "week": 3,
+    "day": 4,
+    "cat_id": "15",
+    "ex_id": 323
+  },
+  {
+    "week": 3,
+    "day": 4,
+    "cat_id": "14",
+    "ex_id": 307
+  },
+  {
+    "week": 3,
+    "day": 5,
+    "cat_id": "11",
+    "ex_id": 194
+  },
+  {
+    "week": 3,
+    "day": 5,
+    "cat_id": "8",
+    "ex_id": 134
+  },
+  {
+    "week": 3,
+    "day": 5,
+    "cat_id": "5",
+    "ex_id": 73
+  },
+  {
+    "week": 3,
+    "day": 5,
+    "cat_id": "5",
+    "ex_id": 76
+  },
+  {
+    "week": 3,
+    "day": 5,
+    "cat_id": "6",
+    "ex_id": 91
+  },
+  {
+    "week": 3,
+    "day": 5,
+    "cat_id": "6",
+    "ex_id": 94
+  },
+  {
+    "week": 3,
+    "day": 5,
+    "cat_id": "8",
+    "ex_id": 134
+  },
+  {
+    "week": 3,
+    "day": 5,
+    "cat_id": "5",
+    "ex_id": 76
+  },
+  {
+    "week": 3,
+    "day": 5,
+    "cat_id": "5",
+    "ex_id": 79
+  },
+  {
+    "week": 3,
+    "day": 5,
+    "cat_id": "5",
+    "ex_id": 78
+  },
+  {
+    "week": 3,
+    "day": 5,
+    "cat_id": "6",
+    "ex_id": 91
+  },
+  {
+    "week": 3,
+    "day": 5,
+    "cat_id": "6",
+    "ex_id": 94
+  },
+  {
+    "week": 3,
+    "day": 5,
+    "cat_id": "5",
+    "ex_id": 80
+  },
+  {
+    "week": 3,
+    "day": 5,
+    "cat_id": "5",
+    "ex_id": 81
+  },
+  {
+    "week": 3,
+    "day": 5,
+    "cat_id": "5",
+    "ex_id": 83
+  },
+  {
+    "week": 3,
+    "day": 6,
+    "cat_id": "2",
+    "ex_id": 27
+  },
+  {
+    "week": 3,
+    "day": 6,
+    "cat_id": "3",
+    "ex_id": 51
+  },
+  {
+    "week": 3,
+    "day": 6,
+    "cat_id": "2",
+    "ex_id": 20
+  },
+  {
+    "week": 3,
+    "day": 6,
+    "cat_id": "2",
+    "ex_id": 30
+  },
+  {
+    "week": 3,
+    "day": 6,
+    "cat_id": "2",
+    "ex_id": 19
+  },
+  {
+    "week": 3,
+    "day": 6,
+    "cat_id": "2",
+    "ex_id": 24
+  },
+  {
+    "week": 3,
+    "day": 6,
+    "cat_id": "2",
+    "ex_id": 27
+  },
+  {
+    "week": 3,
+    "day": 6,
+    "cat_id": "3",
+    "ex_id": 51
+  },
+  {
+    "week": 3,
+    "day": 6,
+    "cat_id": "2",
+    "ex_id": 20
+  },
+  {
+    "week": 3,
+    "day": 6,
+    "cat_id": "2",
+    "ex_id": 30
+  },
+  {
+    "week": 3,
+    "day": 6,
+    "cat_id": "2",
+    "ex_id": 19
+  },
+  {
+    "week": 3,
+    "day": 6,
+    "cat_id": "2",
+    "ex_id": 24
+  },
+  {
+    "week": 3,
+    "day": 6,
+    "cat_id": "2",
+    "ex_id": 25
+  },
+  {
+    "week": 3,
+    "day": 6,
+    "cat_id": "2",
+    "ex_id": 32
+  },
+  {
+    "week": 3,
+    "day": 6,
+    "cat_id": "2",
+    "ex_id": 35
+  },
+  {
+    "week": 3,
+    "day": 6,
+    "cat_id": "2",
+    "ex_id": 36
+  },
+  {
+    "week": 3,
+    "day": 6,
+    "cat_id": "2",
+    "ex_id": 37
+  },
+  {
+    "week": 3,
+    "day": 7,
+    "cat_id": "8",
+    "ex_id": 121
+  },
+  {
+    "week": 3,
+    "day": 7,
+    "cat_id": "15",
+    "ex_id": 310
+  },
+  {
+    "week": 3,
+    "day": 7,
+    "cat_id": "15",
+    "ex_id": 311
+  },
+  {
+    "week": 3,
+    "day": 7,
+    "cat_id": "13",
+    "ex_id": 279
+  },
+  {
+    "week": 3,
+    "day": 7,
+    "cat_id": "13",
+    "ex_id": 280
+  },
+  {
+    "week": 3,
+    "day": 7,
+    "cat_id": "8",
+    "ex_id": 121
+  },
+  {
+    "week": 3,
+    "day": 7,
+    "cat_id": "15",
+    "ex_id": 310
+  },
+  {
+    "week": 3,
+    "day": 7,
+    "cat_id": "15",
+    "ex_id": 311
+  },
+  {
+    "week": 3,
+    "day": 7,
+    "cat_id": "14",
+    "ex_id": 296
+  },
+  {
+    "week": 3,
+    "day": 7,
+    "cat_id": "15",
+    "ex_id": 321
+  },
+  {
+    "week": 3,
+    "day": 7,
+    "cat_id": "15",
+    "ex_id": 320
+  },
+  {
+    "week": 3,
+    "day": 7,
+    "cat_id": "14",
+    "ex_id": 303
+  },
+  {
+    "week": 3,
+    "day": 7,
+    "cat_id": "15",
+    "ex_id": 323
+  },
+  {
+    "week": 3,
+    "day": 7,
+    "cat_id": "15",
+    "ex_id": 321
+  },
+  {
+    "week": 3,
+    "day": 7,
+    "cat_id": "15",
+    "ex_id": 322
+  },
+  {
+    "week": 3,
+    "day": 7,
+    "cat_id": "14",
+    "ex_id": 303
+  },
+  {
+    "week": 3,
+    "day": 7,
+    "cat_id": "15",
+    "ex_id": 323
+  },
+  {
+    "week": 3,
+    "day": 7,
+    "cat_id": "14",
+    "ex_id": 307
+  },
+  {
+    "week": 4,
+    "day": 1,
+    "cat_id": "11",
+    "ex_id": 194
+  },
+  {
+    "week": 4,
+    "day": 1,
+    "cat_id": "8",
+    "ex_id": 119
+  },
+  {
+    "week": 4,
+    "day": 1,
+    "cat_id": "8",
+    "ex_id": 130
+  },
+  {
+    "week": 4,
+    "day": 1,
+    "cat_id": "5",
+    "ex_id": 75
+  },
+  {
+    "week": 4,
+    "day": 1,
+    "cat_id": "5",
+    "ex_id": 78
+  },
+  {
+    "week": 4,
+    "day": 1,
+    "cat_id": "6",
+    "ex_id": 91
+  },
+  {
+    "week": 4,
+    "day": 1,
+    "cat_id": "6",
+    "ex_id": 94
+  },
+  {
+    "week": 4,
+    "day": 1,
+    "cat_id": "5",
+    "ex_id": 72
+  },
+  {
+    "week": 4,
+    "day": 1,
+    "cat_id": "5",
+    "ex_id": 75
+  },
+  {
+    "week": 4,
+    "day": 1,
+    "cat_id": "5",
+    "ex_id": 79
+  },
+  {
+    "week": 4,
+    "day": 1,
+    "cat_id": "5",
+    "ex_id": 78
+  },
+  {
+    "week": 4,
+    "day": 1,
+    "cat_id": "6",
+    "ex_id": 94
+  },
+  {
+    "week": 4,
+    "day": 1,
+    "cat_id": "5",
+    "ex_id": 80
+  },
+  {
+    "week": 4,
+    "day": 1,
+    "cat_id": "5",
+    "ex_id": 81
+  },
+  {
+    "week": 4,
+    "day": 1,
+    "cat_id": "5",
+    "ex_id": 83
+  },
+  {
+    "week": 4,
+    "day": 2,
+    "cat_id": "3",
+    "ex_id": 39
+  },
+  {
+    "week": 4,
+    "day": 2,
+    "cat_id": "2",
+    "ex_id": 27
+  },
+  {
+    "week": 4,
+    "day": 2,
+    "cat_id": "2",
+    "ex_id": 20
+  },
+  {
+    "week": 4,
+    "day": 2,
+    "cat_id": "2",
+    "ex_id": 26
+  },
+  {
+    "week": 4,
+    "day": 2,
+    "cat_id": "2",
+    "ex_id": 28
+  },
+  {
+    "week": 4,
+    "day": 2,
+    "cat_id": "2",
+    "ex_id": 23
+  },
+  {
+    "week": 4,
+    "day": 2,
+    "cat_id": "2",
+    "ex_id": 21
+  },
+  {
+    "week": 4,
+    "day": 2,
+    "cat_id": "2",
+    "ex_id": 22
+  },
+  {
+    "week": 4,
+    "day": 2,
+    "cat_id": "2",
+    "ex_id": 25
+  },
+  {
+    "week": 4,
+    "day": 2,
+    "cat_id": "2",
+    "ex_id": 27
+  },
+  {
+    "week": 4,
+    "day": 2,
+    "cat_id": "2",
+    "ex_id": 20
+  },
+  {
+    "week": 4,
+    "day": 2,
+    "cat_id": "2",
+    "ex_id": 26
+  },
+  {
+    "week": 4,
+    "day": 2,
+    "cat_id": "2",
+    "ex_id": 30
+  },
+  {
+    "week": 4,
+    "day": 2,
+    "cat_id": "2",
+    "ex_id": 23
+  },
+  {
+    "week": 4,
+    "day": 2,
+    "cat_id": "2",
+    "ex_id": 25
+  },
+  {
+    "week": 4,
+    "day": 2,
+    "cat_id": "2",
+    "ex_id": 32
+  },
+  {
+    "week": 4,
+    "day": 2,
+    "cat_id": "2",
+    "ex_id": 33
+  },
+  {
+    "week": 4,
+    "day": 2,
+    "cat_id": "2",
+    "ex_id": 34
+  },
+  {
+    "week": 4,
+    "day": 2,
+    "cat_id": "2",
+    "ex_id": 35
+  },
+  {
+    "week": 4,
+    "day": 2,
+    "cat_id": "2",
+    "ex_id": 36
+  },
+  {
+    "week": 4,
+    "day": 2,
+    "cat_id": "2",
+    "ex_id": 37
+  },
+  {
+    "week": 4,
+    "day": 3,
+    "cat_id": "8",
+    "ex_id": 121
+  },
+  {
+    "week": 4,
+    "day": 3,
+    "cat_id": "15",
+    "ex_id": 310
+  },
+  {
+    "week": 4,
+    "day": 3,
+    "cat_id": "15",
+    "ex_id": 311
+  },
+  {
+    "week": 4,
+    "day": 3,
+    "cat_id": "14",
+    "ex_id": 301
+  },
+  {
+    "week": 4,
+    "day": 3,
+    "cat_id": "14",
+    "ex_id": 302
+  },
+  {
+    "week": 4,
+    "day": 3,
+    "cat_id": "8",
+    "ex_id": 121
+  },
+  {
+    "week": 4,
+    "day": 3,
+    "cat_id": "15",
+    "ex_id": 310
+  },
+  {
+    "week": 4,
+    "day": 3,
+    "cat_id": "15",
+    "ex_id": 311
+  },
+  {
+    "week": 4,
+    "day": 3,
+    "cat_id": "14",
+    "ex_id": 296
+  },
+  {
+    "week": 4,
+    "day": 3,
+    "cat_id": "15",
+    "ex_id": 320
+  },
+  {
+    "week": 4,
+    "day": 3,
+    "cat_id": "15",
+    "ex_id": 309
+  },
+  {
+    "week": 4,
+    "day": 3,
+    "cat_id": "14",
+    "ex_id": 303
+  },
+  {
+    "week": 4,
+    "day": 3,
+    "cat_id": "15",
+    "ex_id": 323
+  },
+  {
+    "week": 4,
+    "day": 3,
+    "cat_id": "15",
+    "ex_id": 320
+  },
+  {
+    "week": 4,
+    "day": 3,
+    "cat_id": "15",
+    "ex_id": 309
+  },
+  {
+    "week": 4,
+    "day": 3,
+    "cat_id": "14",
+    "ex_id": 303
+  },
+  {
+    "week": 4,
+    "day": 3,
+    "cat_id": "15",
+    "ex_id": 323
+  },
+  {
+    "week": 4,
+    "day": 3,
+    "cat_id": "14",
+    "ex_id": 307
+  },
+  {
+    "week": 4,
+    "day": 4,
+    "cat_id": "2",
+    "ex_id": 17
+  },
+  {
+    "week": 4,
+    "day": 4,
+    "cat_id": "6",
+    "ex_id": 85
+  },
+  {
+    "week": 4,
+    "day": 4,
+    "cat_id": "8",
+    "ex_id": 135
+  },
+  {
+    "week": 4,
+    "day": 4,
+    "cat_id": "5",
+    "ex_id": 73
+  },
+  {
+    "week": 4,
+    "day": 4,
+    "cat_id": "5",
+    "ex_id": 75
+  },
+  {
+    "week": 4,
+    "day": 4,
+    "cat_id": "5",
+    "ex_id": 79
+  },
+  {
+    "week": 4,
+    "day": 4,
+    "cat_id": "5",
+    "ex_id": 78
+  },
+  {
+    "week": 4,
+    "day": 4,
+    "cat_id": "6",
+    "ex_id": 91
+  },
+  {
+    "week": 4,
+    "day": 4,
+    "cat_id": "6",
+    "ex_id": 94
+  },
+  {
+    "week": 4,
+    "day": 4,
+    "cat_id": "8",
+    "ex_id": 134
+  },
+  {
+    "week": 4,
+    "day": 4,
+    "cat_id": "8",
+    "ex_id": 130
+  },
+  {
+    "week": 4,
+    "day": 4,
+    "cat_id": "6",
+    "ex_id": 91
+  },
+  {
+    "week": 4,
+    "day": 4,
+    "cat_id": "6",
+    "ex_id": 94
+  },
+  {
+    "week": 4,
+    "day": 4,
+    "cat_id": "5",
+    "ex_id": 80
+  },
+  {
+    "week": 4,
+    "day": 4,
+    "cat_id": "5",
+    "ex_id": 81
+  },
+  {
+    "week": 4,
+    "day": 4,
+    "cat_id": "5",
+    "ex_id": 83
+  },
+  {
+    "week": 4,
+    "day": 5,
+    "cat_id": "2",
+    "ex_id": 27
+  },
+  {
+    "week": 4,
+    "day": 5,
+    "cat_id": "3",
+    "ex_id": 51
+  },
+  {
+    "week": 4,
+    "day": 5,
+    "cat_id": "2",
+    "ex_id": 20
+  },
+  {
+    "week": 4,
+    "day": 5,
+    "cat_id": "2",
+    "ex_id": 30
+  },
+  {
+    "week": 4,
+    "day": 5,
+    "cat_id": "2",
+    "ex_id": 29
+  },
+  {
+    "week": 4,
+    "day": 5,
+    "cat_id": "2",
+    "ex_id": 31
+  },
+  {
+    "week": 4,
+    "day": 5,
+    "cat_id": "2",
+    "ex_id": 27
+  },
+  {
+    "week": 4,
+    "day": 5,
+    "cat_id": "3",
+    "ex_id": 51
+  },
+  {
+    "week": 4,
+    "day": 5,
+    "cat_id": "2",
+    "ex_id": 20
+  },
+  {
+    "week": 4,
+    "day": 5,
+    "cat_id": "2",
+    "ex_id": 30
+  },
+  {
+    "week": 4,
+    "day": 5,
+    "cat_id": "2",
+    "ex_id": 29
+  },
+  {
+    "week": 4,
+    "day": 5,
+    "cat_id": "2",
+    "ex_id": 31
+  },
+  {
+    "week": 4,
+    "day": 5,
+    "cat_id": "2",
+    "ex_id": 32
+  },
+  {
+    "week": 4,
+    "day": 5,
+    "cat_id": "2",
+    "ex_id": 33
+  },
+  {
+    "week": 4,
+    "day": 5,
+    "cat_id": "2",
+    "ex_id": 34
+  },
+  {
+    "week": 4,
+    "day": 5,
+    "cat_id": "2",
+    "ex_id": 35
+  },
+  {
+    "week": 4,
+    "day": 5,
+    "cat_id": "2",
+    "ex_id": 36
+  },
+  {
+    "week": 4,
+    "day": 5,
+    "cat_id": "2",
+    "ex_id": 37
+  },
+  {
+    "week": 4,
+    "day": 6,
+    "cat_id": "8",
+    "ex_id": 121
+  },
+  {
+    "week": 4,
+    "day": 6,
+    "cat_id": "15",
+    "ex_id": 310
+  },
+  {
+    "week": 4,
+    "day": 6,
+    "cat_id": "15",
+    "ex_id": 311
+  },
+  {
+    "week": 4,
+    "day": 6,
+    "cat_id": "14",
+    "ex_id": 301
+  },
+  {
+    "week": 4,
+    "day": 6,
+    "cat_id": "14",
+    "ex_id": 302
+  },
+  {
+    "week": 4,
+    "day": 6,
+    "cat_id": "8",
+    "ex_id": 121
+  },
+  {
+    "week": 4,
+    "day": 6,
+    "cat_id": "15",
+    "ex_id": 310
+  },
+  {
+    "week": 4,
+    "day": 6,
+    "cat_id": "15",
+    "ex_id": 311
+  },
+  {
+    "week": 4,
+    "day": 6,
+    "cat_id": "14",
+    "ex_id": 296
+  },
+  {
+    "week": 4,
+    "day": 6,
+    "cat_id": "15",
+    "ex_id": 320
+  },
+  {
+    "week": 4,
+    "day": 6,
+    "cat_id": "15",
+    "ex_id": 309
+  },
+  {
+    "week": 4,
+    "day": 6,
+    "cat_id": "14",
+    "ex_id": 303
+  },
+  {
+    "week": 4,
+    "day": 6,
+    "cat_id": "15",
+    "ex_id": 323
+  },
+  {
+    "week": 4,
+    "day": 6,
+    "cat_id": "15",
+    "ex_id": 320
+  },
+  {
+    "week": 4,
+    "day": 6,
+    "cat_id": "15",
+    "ex_id": 309
+  },
+  {
+    "week": 4,
+    "day": 6,
+    "cat_id": "14",
+    "ex_id": 303
+  },
+  {
+    "week": 4,
+    "day": 6,
+    "cat_id": "15",
+    "ex_id": 323
+  },
+  {
+    "week": 4,
+    "day": 6,
+    "cat_id": "14",
+    "ex_id": 307
+  },
+  {
+    "week": 4,
+    "day": 7,
+    "cat_id": "5",
+    "ex_id": 70
+  },
+  {
+    "week": 4,
+    "day": 7,
+    "cat_id": "6",
+    "ex_id": 85
+  },
+  {
+    "week": 4,
+    "day": 7,
+    "cat_id": "5",
+    "ex_id": 80
+  },
+  {
+    "week": 4,
+    "day": 7,
+    "cat_id": "8",
+    "ex_id": 135
+  },
+  {
+    "week": 4,
+    "day": 7,
+    "cat_id": "8",
+    "ex_id": 138
+  },
+  {
+    "week": 4,
+    "day": 7,
+    "cat_id": "5",
+    "ex_id": 76
+  },
+  {
+    "week": 4,
+    "day": 7,
+    "cat_id": "6",
+    "ex_id": 91
+  },
+  {
+    "week": 4,
+    "day": 7,
+    "cat_id": "6",
+    "ex_id": 94
+  },
+  {
+    "week": 4,
+    "day": 7,
+    "cat_id": "8",
+    "ex_id": 138
+  },
+  {
+    "week": 4,
+    "day": 7,
+    "cat_id": "5",
+    "ex_id": 76
+  },
+  {
+    "week": 4,
+    "day": 7,
+    "cat_id": "5",
+    "ex_id": 79
+  },
+  {
+    "week": 4,
+    "day": 7,
+    "cat_id": "5",
+    "ex_id": 78
+  },
+  {
+    "week": 4,
+    "day": 7,
+    "cat_id": "6",
+    "ex_id": 91
+  },
+  {
+    "week": 4,
+    "day": 7,
+    "cat_id": "6",
+    "ex_id": 94
+  },
+  {
+    "week": 4,
+    "day": 7,
+    "cat_id": "5",
+    "ex_id": 80
+  },
+  {
+    "week": 4,
+    "day": 7,
+    "cat_id": "5",
+    "ex_id": 81
+  },
+  {
+    "week": 4,
+    "day": 7,
+    "cat_id": "5",
+    "ex_id": 83
+  }
+]

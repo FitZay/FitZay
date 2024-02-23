@@ -18,7 +18,7 @@ import com.fitzay.workouttracker.strengthtraining.di.fitnessRepository
 import com.fitzay.workouttracker.strengthtraining.di.fitnessViewModelModule
 import com.fitzay.workouttracker.strengthtraining.domain.remote.FitzayModel
 import com.fitzay.workouttracker.strengthtraining.domain.remote.FitzayRemote
-import com.google.android.ads.nativetemplates.TemplateView.remoteColor
+import com.google.android.ads.nativetemplates.TemplateView.ctacolor
 import com.google.firebase.FirebaseApp
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig
 import com.google.firebase.remoteconfig.FirebaseRemoteConfigSettings
@@ -39,6 +39,7 @@ class AppController : Application() {
         var weeklyvalue = ""
         var monthlyvalue = ""
         var yearlyvalue = ""
+        var inappflow = ""
 
     }
 
@@ -118,6 +119,8 @@ class AppController : Application() {
                                 Log.e(TAG, "RemoteSuccess")
                                 val remoteJson = Gson().toJson(it)
                                 fitzayModel = Gson().fromJson(remoteJson, FitzayModel::class.java)
+                                inappflow =
+                                    remoteFitzayConfig?.getString("FitZay_contries_for_inapp").toString()
 
                                 Log.e(
                                     TAG,
@@ -128,8 +131,6 @@ class AppController : Application() {
                                     "Fitzay Color Code: " + getFitzayRemoteString("fitzay_cta_color")
                                 )
                                 Log.e(TAG, "Fitzay Location : " + getFitzayRemoteString("fitzay_cta_location"))
-
-                                remoteColor = getFitzayRemoteString("fitzay_cta_color")
 
                             } ?: Log.e(TAG, "RemoteFail")
                         }

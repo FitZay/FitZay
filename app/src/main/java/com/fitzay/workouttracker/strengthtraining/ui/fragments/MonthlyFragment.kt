@@ -50,7 +50,6 @@ class MonthlyFragment : Fragment(),OnChartValueSelectedListener {
     //    private lateinit var lineView: View
     lateinit var calendar: Calendar
     lateinit var calendar_2: Calendar
-    lateinit var currentMonth: LocalDate
     lateinit var calendarCopy: Calendar
     lateinit var calendarCopy2: Calendar
     lateinit var dateFormat: SimpleDateFormat
@@ -76,7 +75,7 @@ class MonthlyFragment : Fragment(),OnChartValueSelectedListener {
 
 
 
-            currentMonth = LocalDate.now()
+
             calendar = Calendar.getInstance()
             calendar_2 = Calendar.getInstance()
             calendarCopy = Calendar.getInstance()
@@ -168,6 +167,7 @@ class MonthlyFragment : Fragment(),OnChartValueSelectedListener {
                             sleepChartMonthly.setScaleEnabled(false)
                             sleepChartMonthly.setPinchZoom(false)
                             dataSet.setDrawValues(false)
+                            sleepChartMonthly.axisLeft.axisMinimum = 0f
                             sleepChartMonthly.setDrawBorders(false)   //All Line Remove
                             sleepChartMonthly.axisLeft.textColor =
                                 android.graphics.Color.parseColor("#939292")
@@ -225,7 +225,7 @@ class MonthlyFragment : Fragment(),OnChartValueSelectedListener {
                             sleepChartMonthly.setScaleEnabled(false)
                             sleepChartMonthly.setPinchZoom(false)
                             dataSet.setDrawValues(false)
-
+                            sleepChartMonthly.axisLeft.axisMinimum = 0f
                             sleepChartMonthly.setDrawBorders(false)   //All Line Remove
                             sleepChartMonthly.axisLeft.textColor =
                                 android.graphics.Color.parseColor("#939292")
@@ -366,7 +366,7 @@ class MonthlyFragment : Fragment(),OnChartValueSelectedListener {
                             sleepChartMonthly.setScaleEnabled(false)
                             sleepChartMonthly.setPinchZoom(false)
                             dataSet.setDrawValues(false)
-
+                            sleepChartMonthly.axisLeft.axisMinimum = 0f
                             sleepChartMonthly.setDrawBorders(false)   //All Line Remove
                             sleepChartMonthly.axisLeft.textColor =
                                 android.graphics.Color.parseColor("#939292")
@@ -431,6 +431,7 @@ class MonthlyFragment : Fragment(),OnChartValueSelectedListener {
                                 sleepChartMonthly.axisLeft.isEnabled = true
                                 sleepChartMonthly.axisRight.isEnabled = false
 
+                                sleepChartMonthly.axisLeft.axisMinimum = 0f
 
                                 sleepChartMonthly.setScaleEnabled(false)
                                 sleepChartMonthly.setPinchZoom(false)

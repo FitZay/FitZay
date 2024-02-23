@@ -74,6 +74,7 @@ class CategoriesAdapter(
                     putExtra("EXTRA_ID", mData[position].catId)
                     putExtra("EXTRA_TYPE", mData[position].catType)
                     putExtra("EXTRA_EXERCISE", excercisetype)
+                    putExtra("EXTRA_Activity", "category")
 
                 }
             intent.flags = Intent.FLAG_ACTIVITY_SINGLE_TOP

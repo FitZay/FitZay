@@ -22,7 +22,6 @@
     <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 
-
     <uses-feature
         android:name="android.hardware.sensor.accelerometer"
         android:required="false" />
@@ -40,17 +39,42 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FitnessApplication"
         tools:targetApi="31">
+        <activity
+            android:name=".ui.activities.PersonalizedWorkAct"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.ProfileAct"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".ui.questions.start.PushUpsDoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.questions.start.PartShouldFocusActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.LanguageAct"
+            android:exported="false" >
+
+        </activity>
+        <activity
+            android:name=".ui.activities.FullbodyWorkoutActivity"
+            android:exported="false" />
         <activity
             android:name=".ui.activities.ExitScreenActivity"
             android:exported="false"
             android:launchMode="singleTop"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ui.activities.PremiumActivity"
             android:exported="false"
-            android:screenOrientation="portrait"/>
-
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ui.sleeptacker.SleepSummaryActivity"
             android:exported="false" />
@@ -69,10 +93,6 @@
             android:exported="true"
             android:screenOrientation="portrait">
 
-<!--             <intent-filter>-->
-<!--             <action android:name="android.intent.action.MAIN" />-->
-<!--             <category android:name="android.intent.category.LAUNCHER" />-->
-<!--             </intent-filter>-->
         </activity>
         <activity
             android:name=".ui.sleeptacker.SleepTrackerActivity"
@@ -127,12 +147,6 @@
             android:exported="true"
             android:screenOrientation="portrait">
 
-<!--             <intent-filter>-->
-<!--             <action android:name="android.intent.action.MAIN" />-->
-
-
-<!--             <category android:name="android.intent.category.LAUNCHER" />-->
-<!--             </intent-filter>-->
         </activity>
         <activity
             android:name=".ui.questions.start.AskingWeightActivity"
@@ -146,13 +160,14 @@
             android:name=".ui.questions.start.FirstNameActivity"
             android:exported="false"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan" >
-<!--            <intent-filter>-->
-<!--                         <action android:name="android.intent.action.MAIN" />-->
+            android:windowSoftInputMode="adjustPan">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
 
 
-<!--                         <category android:name="android.intent.category.LAUNCHER" />-->
-<!--                         </intent-filter>-->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity
             android:name=".ui.questions.start.AskingHeightActivity"
@@ -171,13 +186,12 @@
             android:exported="true"
             android:screenOrientation="portrait">
 
-                        <intent-filter>
-                                     <action android:name="android.intent.action.MAIN" />
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
 
 
-                                     <category android:name="android.intent.category.LAUNCHER" />
-                                     </intent-filter>
-
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
 
         <meta-data

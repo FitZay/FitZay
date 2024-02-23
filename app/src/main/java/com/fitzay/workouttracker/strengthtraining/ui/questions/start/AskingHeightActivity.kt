@@ -14,6 +14,7 @@ import com.fitzay.workouttracker.strengthtraining.core.AppController
 import com.fitzay.workouttracker.strengthtraining.core.utils.*
 import com.fitzay.workouttracker.strengthtraining.databinding.ActivityAskingHeightBinding
 import com.fitzay.workouttracker.strengthtraining.di.Component
+import com.google.android.ads.nativetemplates.TemplateView
 import com.google.android.gms.ads.AdListener
 import com.google.android.gms.ads.AdLoader
 import com.google.android.gms.ads.AdRequest
@@ -36,7 +37,7 @@ class AskingHeightActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        TemplateView.ctacolor = AppController.fitzayModel?.FitzayNativeHeight?.ctacolor
         binding = ActivityAskingHeightBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -46,6 +47,7 @@ class AskingHeightActivity : AppCompatActivity() {
             }
 
             if (AppController.fitzayModel != null && AppController.fitzayModel!!.FitzayNativeHeight.showAd) {
+                clAds.visibility = View.VISIBLE
                 loadAdaptiveNative()
             } else {
                 clAds.visibility = View.GONE
@@ -83,9 +85,9 @@ class AskingHeightActivity : AppCompatActivity() {
 
                 }
                 etInputFeet.requestFocus();
-                etInputInch.requestFocus();
+//                etInputInch.requestFocus();
                 etInputFeet.setSelection(etInputFeet.length())
-                etInputInch.setSelection(etInputInch.length())
+//                etInputInch.setSelection(etInputInch.length())
 
             }
             rbCm.setOnClickListener {
@@ -107,8 +109,8 @@ class AskingHeightActivity : AppCompatActivity() {
                         Log.i("TAG", "888888888: ")
 
                     }
-                    etInputCm.requestFocus();
-                    etInputCm.setSelection(etInputCm.length())
+//                    etInputCm.requestFocus();
+//                    etInputCm.setSelection(etInputCm.length())
                 } catch (e:Exception)
                 {
                     Log.i("TAG", "onCreate: "+e.message)
@@ -299,7 +301,7 @@ class AskingHeightActivity : AppCompatActivity() {
         binding.apply {
             layoutAd.visibility = View.GONE
 
-            val template = if (getFitzayRemoteString("fitzay_cta_location") == "up") {
+            val template = if (AppController.fitzayModel!!.FitzayNativeHeight.ctalocation == "up") {
                 plannerTemplateDown.visibility = View.GONE
                 plannerTemplateUp.visibility = View.VISIBLE
                 plannerTemplateUp

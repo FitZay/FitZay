@@ -21,6 +21,7 @@ import com.fitzay.workouttracker.strengthtraining.core.utils.clickWithThrottle
 import com.fitzay.workouttracker.strengthtraining.databinding.ActivityExerciseBinding
 import com.fitzay.workouttracker.strengthtraining.di.Component
 import com.fitzay.workouttracker.strengthtraining.domain.models.WorkOutModel
+import com.google.android.ads.nativetemplates.TemplateView
 import com.google.android.gms.ads.AdError
 import com.google.android.gms.ads.AdListener
 import com.google.android.gms.ads.AdLoader
@@ -57,14 +58,21 @@ class ExerciseActivity : AppCompatActivity() {
     var mSplashInterstitial: InterstitialAd? = null
     private var loadinginterstitial = false
     private var nativeAd : NativeAd? = null
+    private var moveactivity = true
+
+    companion object {
+        var activityType = ""
+    }
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        TemplateView.ctacolor = AppController.fitzayModel?.FitzayNativeStartExercise?.ctacolor
         binding = ActivityExerciseBinding.inflate(layoutInflater)
         setContentView(binding.root)
         quitdialog = Dialog(this)
         waiting_dialog = Dialog(this)
+
 
         arr = ArrayList()
         loadingHandler = Handler(Looper.getMainLooper()!!)
@@ -84,10 +92,17 @@ class ExerciseActivity : AppCompatActivity() {
                 categoryType = intent.getStringExtra("EXTRA_TYPE").toString()
 
 
-                arr = Component.workOutViewModel.getWorkouts(
-                    this@ExerciseActivity,
-                    id.toString()
-                ) as ArrayList<WorkOutModel>
+                if (activityType == "category"){
+                    arr = Component.workOutViewModel.getWorkouts(
+                        this@ExerciseActivity,
+                        id.toString()
+                    ) as ArrayList<WorkOutModel>
+                }
+
+
+                else {
+                    arr = DisplayWorkoutsActivity.listofworkmodel
+                }
 
                 exName.text = arr[arrIndex].exTitle
                 exNameTwo.text = arr[arrIndex].exTitle
@@ -297,14 +312,21 @@ class ExerciseActivity : AppCompatActivity() {
                             }
                         } catch (e: IndexOutOfBoundsException) {
                             e.printStackTrace()
-                            startActivity(Intent(this@ExerciseActivity , ExitScreenActivity :: class.java))
-                            finish()
+                            if (moveactivity){
+                                moveactivity = false
+                                startActivity(Intent(this@ExerciseActivity , ExitScreenActivity :: class.java))
+                                finish()
+                            }
+
                         }
                     }.start()
                 } catch (e: IndexOutOfBoundsException) {
                     e.printStackTrace()
-                    startActivity(Intent(this@ExerciseActivity , ExitScreenActivity :: class.java))
-                    finish()
+                    if (moveactivity){
+                        moveactivity = false
+                        startActivity(Intent(this@ExerciseActivity , ExitScreenActivity :: class.java))
+                        finish()
+                    }
                 }
             }
         }

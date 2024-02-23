@@ -1,5 +1,151 @@
 <resources>
+
     <string name="app_name">FitZay</string>
+
+    <!--    Splash Screen Text Name-->
+    <string name="wish_it">Wish it</string>
+    <string name="want_it">Want it</string>
+    <string name="do_it">Do it</string>
+
+    <!--    First Name Screen  Text Name-->
+    <string name="what_name">What\'s your name?</string>
+    <string name="enter_here">Enter here...</string>
+
+    <!--    Gender Screen Text Name-->
+    <string name="welcome_fitness">Welcome to FitZay</string>
+    <string name="what_gender">What\'s your gender?</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+
+    <!--    Weight Screen Text Name-->
+    <string name="what_your_weight">What is your weight?</string>
+    <string name="what_your_target_weight">Alright, now your target weight.</string>
+    <string name="lbs">lbs</string>
+    <string name="kg">kg</string>
+
+    <!--    Height Screen Text Name-->
+    <string name="how_tall_you">How tall are you?</string>
+    <string name="feet">ft&amp;in</string>
+    <string name="cm">cm</string>
+    <string name="ft">ft</string>
+    <string name="in">in</string>
+
+    <!--    Age Screen Text Name-->
+    <string name="how_old_you">How old are you?</string>
+
+    <!--    Main Screen Text Name-->
+    <string name="plan">Plan</string>
+    <string name="workout">Workout</string>
+    <string name="stats">Stats</string>
+    <string name="food">Food</string>
+    <string name="profile">Profile</string>
+
+    <string name="water_reminder">Water Intake</string>
+    <string name="lower_body">Lower Body</string>
+    <string name="upper_body">Upper Body</string>
+    <string name="abs_core">Abs &amp; Core</string>
+    <string name="steps">Steps</string>
+
+    <!--    Work out Screen Text Name-->
+    <string name="abs_beginner">Abs Beginner</string>
+    <string name="jumping_jack">Jumping Jack</string>
+    <string name="beginner">Beginner</string>
+    <string name="intermediate">Intermediate</string>
+    <string name="advance">Advance</string>
+    <string name="workout_categories">Workout Categories</string>
+    <string name="recent_exercise">Recent Exercise</string>
+    <string name="monthly_workout_plans">Monthly Workout Plans</string>
+
+
+    <!--    Graph Screen Text Name-->
+    <string name="sleep_tracker">Sleep tracker</string>
+    <string name="time_in_bed">Time in Bed</string>
+    <string name="step_counter">Step Counter</string>
+    <string name="today">Today</string>
+
+    <!--    Display Work Out Screen Text Name-->
+    <string name="start">START</string>
+
+
+    <!--    Exercise Screen Text Name-->
+    <string name="take_a_rest">Take A Rest</string>
+
+    <!--    Exit Screen Text Name-->
+    <string name="complete_ex">"Nice, you've completed exercise!</string>
+    <string name="exercise">Exercise</string>
+    <string name="calories">"Calorie</string>
+    <string name="time">Time</string>
+    <string name="do_you_feel">How do you feel</string>
+    <string name="workout_feedback">Your feedback will help us provide more suitable workouts for you</string>
+    <string name="too_hard">Too hard</string>
+    <string name="too_easy">Too hard</string>
+    <string name="just_right">Just right</string>
+    <string name="done">Done</string>
+
+    <!--    Full Body Work out Screen Text Name-->
+    <string name="full_body">Full Body</string>
+    <string name="monthly_challenge">Monthly Challenge</string>
+    <string name="daily_challenge">Daily Challenge</string>
+    <string name="daily_average">Daily Average</string>
+
+    <!--    Premium Screen Text Name-->
+    <string name="be_premium">Be Premium</string>
+    <string name="unlimited_access">Get Unlimited access</string>
+    <string name="remove_ads">Remove Ads</string>
+    <string name="unlimited_workout_plans">Unlimited workout plans</string>
+    <string name="unlock_all_plans">Unlock all plans</string>
+    <string name="week_of_membership">1 week of membership</string>
+    <string name="month_of_membership">1 month of membership</string>
+    <string name="year_of_membership">1 year of membership</string>
+    <string name="subscribe">Subscribe</string>
+    <string name="cancel_anytime">Cancel Anytime</string>
+
+
+    <!--    Single Exercise Screen Text Name-->
+    <string name="ready_to_go">Ready to go!</string>
+
+    <!--    AbsUnfinishBottom Fragment Screen Text Name-->
+    <string name="unfinish">Continue the unfinished\nworkout?</string>
+    <string name="unfinish_">Continue</string>
+
+
+    <!--    Unlock Premium Bottom Screen Text Name-->
+    <string name="unlock_pri">UNLOCK PREMIUM\nWORKOUT</string>
+    <string name="unlock_pri_sub">Watch a short video to unlock the\npremium workout once for free</string>
+    <string name="watch_ad">watch ad</string>
+    <string name="go_premium">Go Premium</string>
+
+    <!--    Quote Screen  Text Name-->
+    <string name="daily_motivation">Daily Motivation</string>
+
+    <!--    Common Screen  Text Name-->
+    <string name="skip">Skip</string>
+    <string name="daily">DAILY AVERAGE</string>
+    <string name="weekly">WEEKLY AVERAGE</string>
+    <string name="monthly">MONTHLY AVERAGE</string>
+
+    <string name="daily_">Daily </string>
+    <string name="weekly_">Weekly </string>
+    <string name="monthly_">Monthly </string>
+    <string name="summary">Summary </string>
+
+    <!--    Personalized Screen  Text Name-->
+    <string name="personalized_des">Wait while your personal trainer is making your tailored exercise routine.</string>
+
+
+    <!--    Sleep Tracker Screen  Text Name-->
+    <string name="bed_time">Bed Time</string>
+    <string name="wake_time">Wake up Time</string>
+    <string name="alarm">Alarm</string>
+    <string name="sound">Sound</string>
+    <string name="label">Label</string>
+    <string name="abs">ABC</string>
+    <string name="snooze">Snooze</string>
+    <string name="vibration">Vibration</string>
+
+    <string name="cup_capacity">Cup Capacity</string>
+    <string name="water_intake">Water Intake</string>
+
 
     <string name="what_does_your_typical_day">What does your typical day look like?</string>
     <string name="mostly_working_active">Mostly working and active</string>
@@ -72,136 +218,75 @@
     <string name="txt_3_6_glasses">3 to 6 glasses</string>
     <string name="txt_2_glasses">2 glasses</string>
     <string name="txt_only_drink_soda_coffee">I only drink soda or coffee</string>
-
     <string name="how_fit_are_you">How fit are you?</string>
     <string name="very_fit">I\'m very fit</string>
     <string name="fit">I\'m fit</string>
     <string name="not_very_fit">I\'m not very fit</string>
-
-    <string name="welcome_fitness">Welcome to FitZay</string>
-    <string name="what_gender">What\'s your gender?</string>
-    <string name="male">Male</string>
-    <string name="female">Female</string>
-
-    <string name="what_name">What\'s your name?</string>
-    <string name="enter_here">Enter here...</string>
-
-    <string name="how_old_you">How old are you?</string>
-
-    <string name="how_tall_you">How tall are you?</string>
-    <string name="feet">ft&amp;in</string>
-    <string name="cm">cm</string>
-    <string name="ft">ft</string>
-    <string name="in">in</string>
-
-    <string name="what_your_weight">What is your weight?</string>
-    <string name="what_your_target_weight">Alright, now your target weight.</string>
-    <string name="lbs">lbs</string>
-    <string name="kg">kg</string>
-
     <string name="item_not_found">Item not found</string>
     <string name="purchase_cancel_by_user">Purchase Cancel by user</string>
     <string name="make_right_nutrition_choices">Make the right nutrition choices</string>
     <string name="txt_right_nutrition_choices">A great workout routine without the right food choices won\'t do. \n \nOur cookbook will help you find healthy alternatives to not-so-great food choices.</string>
-
     <string name="thanks_for_sharing">Thanks for sharing!</string>
     <string name="txt_thanks_sharing">There\'s strong scientific evidence that being physically active can help you lead a healthier and happier life.</string>
-
     <string name="your_commitment">Your commitment</string>
     <string name="txt_your_commitment">I have decided I am ready to get fit and stay fit. \n \nI will work consistently towards reaching my fitness goals. I will remain patient with myself and my progress.</string>
     <string name="tap_hold">Tap hold</string>
     <string name="tap_hold_continue">Tap and hold the button to continue.</string>
-
     <string name="what_your_goal">What\'s your goal?</string>
     <string name="weight_lose">Weight Lose</string>
     <string name="weight_gain">Weight Gain</string>
     <string name="weight_maintain">Maintain Weight</string>
     <string name="gain_muscle">Gain muscle</string>
-
     <string name="what_your_body_type">What\'s your body type?</string>
     <string name="skinny">Skinny</string>
     <string name="ideal">Ideal</string>
     <string name="flabby">Flabby</string>
     <string name="heavier">Heavier</string>
-
     <string name="how_often_you_exercise">How often do you exercise?</string>
     <string name="more_than_workouts_week">More than 4 workouts a week</string>
     <string name="txt_3_4_workouts_week">3–4 workouts a week</string>
     <string name="txt_1_2_workouts_week">1–2 workouts a week</string>
     <string name="never">Never</string>
-
-    <string name="which_parts_should_focus_on">Which parts should we focus on?</string>
+    <string name="which_parts_should_focus_on">Which parts should we\n focus on?</string>
     <string name="arms">Arms</string>
     <string name="chest">Chest</string>
     <string name="belly">Belly</string>
     <string name="thighs">Thighs</string>
-
     <string name="you_are_good_hands">You are in good hands</string>
     <string name="txt_you_are_good_hands">And you are not alone!</string>
     <string name="hint_you_are_good_hands">Last year, 1,792 153 people from all over the world chose to gain muscle with fitness.</string>
-
     <string name="any_previous_workout_experience">Any previous workout experience?</string>
     <string name="yes_workout_regularly">Yes, I workout regularly</string>
     <string name="yes_less_year_ago">Yes, less than a year ago</string>
     <string name="yes_more_year_ago">Yes, more than 1 year ago</string>
     <string name="no_have_any">No, I don\'t have any</string>
-
-
-    <string name="personalized_workouts">Personalized workouts</string>
+    <string name="personalized_workouts">Personalized workout</string>
     <string name="txt_personalized_workouts">Whatever your fitness level, Fitness will always adopt to your skills and expectations to get you the best results!</string>
-
     <string name="do_suffer_from_knee_pain">Do you suffer from knee pain?</string>
-
     <string name="how_many_pushups_you_do">How many push-ups can you do?</string>
     <string name="txt_30">30+</string>
     <string name="txt_15_29">15–29</string>
     <string name="txt_6_29">6–29</string>
     <string name="txt_less_than_5">Less than 5</string>
-
     <string name="do_relate_following_statement">Do you relate to the following statement?</string>
     <string name="wish_feel_confident_myself">I wish to feel more confident in my self.</string>
-
     <string name="what_pace_prefer_your_plan">What pace would you prefer in your plan?</string>
     <string name="as_fast_as_possible">As fast as possible</string>
     <string name="balanced_pace">Balanced pace</string>
     <string name="slowly_steadily">Slowly but steadily</string>
-
     <string name="awesome_choice">Awesome choice!</string>
     <string name="txt_awesome_choice">Committing to at least a year is the perfect way to build healthy habits and reach your fitness goals!</string>
-
     <string name="pick_training_days">Pick Training days!</string>
     <string name="txt_pick_training_days">Great! Based on your data, we recommend 4 workouts per week.</string>
-    <string name="sunday">Sun</string>
-    <string name="monday">Mon</string>
-    <string name="tuesday">Tue</string>
-    <string name="wednesday">Wed</string>
-    <string name="thursday">Thu</string>
-    <string name="friday">Fri</string>
-    <string name="saturday">Sat</string>
+
     <string name="reminders">Reminders</string>
     <string name="txt_reminders">Build a habit and never miss your workout day!</string>
-
-    <string name="plan">Plan</string>
-    <string name="workout">Workout</string>
-    <string name="stats">Stats</string>
-    <string name="food">Food</string>
-    <string name="profile">Profile</string>
-
     <string name="fitness">Fitness</string>
     <string name="how_to_use">How to Use</string>
     <string name="rate_us">Rate Us</string>
     <string name="share_app">Share app</string>
     <string name="privacy_policy">Privacy Policy</string>
     <string name="more_apps">More Apps (Ad)</string>
-
-    <string name="sleep_tracker">Sleep Tracker</string>
-    <string name="step_counter">Step Counter</string>
-    <string name="water_reminder">Water Intake</string>
-    <string name="daily_motivation">Daily Motivation</string>
-    <string name="lower_body">Lower Body</string>
-    <string name="upper_body">Upper Body</string>
-    <string name="abs_core">Abs &amp; Core</string>
-
     <string name="txt_profile">Profile</string>
     <string name="txt_save">Save</string>
     <string name="txt_full_name">Full Name</string>
@@ -211,12 +296,30 @@
     <string name="txt_weight">Weight</string>
     <string name="txt_target_weight">Target weight</string>
     <string name="txt_target_goal">Target goal</string>
-
     <string name="txt_edit_bed_time">Edit bed time</string>
     <string name="txt_bed_time">Bed time</string>
     <string name="txt_cancel">Cancel</string>
+    <string name="notification_title">FitZay-Step Counter</string>
+    <string name="notification_text">Total steps today: %1$d</string>
+    <string name="channel_name">Step Counter Channel</string>
+    <string name="channel_description">Channel for displaying step count notifications</string>
+    <string name="permission_toast">Allow Required Permission to Use Step Counter Feature.</string>
+    <string name="step_goal_runtime">/%1$s steps</string>
+    <string name="sleep">Sleep</string>
+    <string name="allow_req_permissions">Allow all required permissions</string>
+    <string name="goto_settings">Open Settings</string>
+    <string name="need_permission">Permission Required</string>
+    <string name="need_per_title">This permission is required to use this feature.</string>
+    <string name="cancel">Cancel</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="allow_required_permissions">Permission required to save quotes in gallery.</string>
+    <string name="delete_account"><u> Delete Account </u></string>
+    <string name="premium_features_details">Premium Features Details</string>
+    <string name="sub_des">Subscriptions renew automatically unless you cancel or unsubscribe before the end of your current period. Your account will be charged for renewal within 24 hours prior to the end of current subscription period.</string>
 
-
+    <string name="language">Language</string>
+    <string name="manage_subscriptions">Manage Subscriptions</string>
     <string-array name="age">
         <item>10</item>
         <item>11</item>
@@ -309,38 +412,5 @@
         <item>98</item>
         <item>99</item>
     </string-array>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="beginner">Beginner</string>
-    <string name="intermediate">Intermediate</string>
-    <string name="advance">Advance</string>
-    <string name="workout_categories">Workout Categories</string>
-    <string name="recent_exercise">Recent Exercise</string>
-    <string name="monthly_workout_plans">Monthly Workout Plans</string>
-    <string name="full_body">Full Body</string>
-    <string name="monthly_challenge">Monthly Challenge</string>
-    <string name="daily_challenge">Daily Challenge</string>
-    <string name="daily_average">Daily Average</string>
-
-
-    <string name="notification_title">FitZay-Step Counter</string>
-    <string name="notification_text">Total steps today: %1$d</string>
-    <string name="channel_name">Step Counter Channel</string>
-    <string name="channel_description">Channel for displaying step count notifications</string>
-    <string name="permission_toast">Allow Required Permission to Use Step Counter Feature.</string>
-    <string name="step_goal_runtime">/%1$s steps</string>
-    <string name="sleep">Sleep</string>
-    <string name="allow_req_permissions">Allow all required permissions</string>
-    <string name="goto_settings">Open Settings</string>
-    <string name="need_permission">Permission Required</string>
-    <string name="need_per_title">This permission is required to use this feature.</string>
-    <string name="cancel">Cancel</string>
-    <string name="camera">Camera</string>
-    <string name="gallery">Gallery</string>
-    <string name="allow_required_permissions">Permission required to save quotes in gallery.</string>
-    <string name="delete_account"><u> Delete Account </u></string>
-    <string name="premium_features_details">Premium Features Details</string>
-    <string name="subscriptions_renew_automatically_unless_you_cancel_or_unsubscribe_before_the_end_of_your_current_period_your_account_will_be_charged_for_renewal_within_24_hours_prior_to_the_end_of_current_subscription_period">Subscriptions renew automatically unless you cancel or unsubscribe before the end of your current period. Your account will be charged for renewal within 24 hours prior to the end of current subscription period.</string>
-
 
 </resources>

@@ -22,6 +22,7 @@ import com.fitzay.workouttracker.strengthtraining.core.utils.downloadmanager.Dow
 import com.fitzay.workouttracker.strengthtraining.core.utils.downloadmanager.OnDownloadProgressListener
 import com.fitzay.workouttracker.strengthtraining.di.Component
 import com.fitzay.workouttracker.strengthtraining.domain.models.CategoriesModel
+import com.fitzay.workouttracker.strengthtraining.domain.models.FullbodyCategoriesModel
 import com.fitzay.workouttracker.strengthtraining.domain.models.QuotesModel
 import com.fitzay.workouttracker.strengthtraining.domain.models.RingTone
 import com.fitzay.workouttracker.strengthtraining.domain.models.WorkOutModel
@@ -467,6 +468,14 @@ fun Context.categories(): ArrayList<CategoriesModel> {
     return gson.fromJson(jsonFileString, listPersonType)
 }
 
+
+fun Context.fullcategoriesbegginer(): ArrayList<FullbodyCategoriesModel> {
+    val gson = Gson()
+    val listPersonType = object : TypeToken<List<FullbodyCategoriesModel>>() {}.type
+    val jsonFileString = this.getJsonDataFromAsset("fullbody_weekly_beginner.json")
+    return gson.fromJson(jsonFileString, listPersonType)
+}
+
 fun Context.motivationQuotes(): ArrayList<QuotesModel> {
     val gson = Gson()
     val listPersonType = object : TypeToken<List<QuotesModel>>() {}.type
@@ -713,4 +722,32 @@ fun Context.getDate(milliSeconds: Long, dateFormat: String?): String {
     val calendar = Calendar.getInstance()
     calendar.timeInMillis = milliSeconds
     return formatter.format(calendar.time)
+}
+
+fun Context.setLocale(context:Context?,lang: String) {
+    updateBaseContextLocale(context, lang)
+}
+private fun updateBaseContextLocale(context: Context?, language: String): Context {
+    val locale = Locale(language)
+    Locale.setDefault(locale)
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+        updateResourcesLocale(context!!, locale)
+        return updateResourcesLocaleLegacy(context, locale)
+    }
+    return updateResourcesLocaleLegacy(context!!, locale)
+}
+
+
+private fun updateResourcesLocale(context: Context, locale: Locale): Context {
+    val configuration = context.resources.configuration
+    configuration.setLocale(locale)
+    return context.createConfigurationContext(configuration)
+}
+
+private fun updateResourcesLocaleLegacy(context: Context, locale: Locale): Context {
+    val resources = context.resources
+    val configuration = resources.configuration
+    configuration.locale = locale
+    resources.updateConfiguration(configuration, resources.displayMetrics)
+    return context
 }
