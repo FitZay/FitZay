@@ -126,7 +126,6 @@
                 android:fontFamily="@font/poppins"
                 android:layout_marginTop="@dimen/_2sdp"
                 android:text="@string/language"
-                android:textAllCaps="false"
                 android:textColor="@color/text_gray"
                 android:textSize="@dimen/_13sdp" />
 

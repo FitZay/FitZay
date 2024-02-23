@@ -306,5 +306,8 @@
     <string name="delete_account"><u> Excluir Conta </u></string>
     <string name="premium_features_details">Detalhes dos Recursos Premium</string>
     <string name="sub_des">As assinaturas são renovadas automaticamente, a menos que você cancele ou se desinscreva antes do final do seu período atual. Sua conta será cobrada pela renovação dentro de 24 horas antes do final do período de assinatura atual.</string>
+    <string name="language">Linguagem</string>
+    <string name="manage_subscriptions">Gerenciar assinaturas</string>
+    <string name="personalized_des">Espere enquanto seu personal trainer cria sua rotina de exercícios personalizada</string>
 
 </resources>

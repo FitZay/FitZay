@@ -24,10 +24,10 @@
     <string name="kg">kg</string>
     <!-- Height Screen Text Name -->
     <string name="how_tall_you">Quanto sei alto?</string>
-    <string name="feet">ft&amp;in</string>
+    <string name="feet">piedi&amp;nella</string>
     <string name="cm">cm</string>
-    <string name="ft">ft</string>
-    <string name="in">in</string>
+    <string name="ft">piedi</string>
+    <string name="in">nella</string>
 
     <!-- Age Screen Text Name -->
     <string name="how_old_you">Quanti anni hai?</string>
@@ -307,4 +307,8 @@
     <string name="delete_account"><u>Elimina Account</u></string>
     <string name="premium_features_details">Dettagli delle Funzionalità Premium</string>
     <string name="sub_des">Le sottoscrizioni si rinnovano automaticamente a meno che tu non cancelli o annulli l\'iscrizione prima della fine del periodo corrente. Il tuo account verrà addebitato per il rinnovo entro 24 ore prima della fine del periodo di abbonamento corrente.</string>
+    <string name="language">lingua</string>
+    <string name="manage_subscriptions">Gestisci abbonamenti</string>
+    <string name="personalized_des">Attendi mentre il tuo personal trainer sta preparando la tua routine di esercizi su misura</string>
+
 </resources>

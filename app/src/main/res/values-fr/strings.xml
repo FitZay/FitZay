@@ -25,7 +25,7 @@
 
     <!-- Height Screen Text Name -->
     <string name="how_tall_you">Quelle est votre taille ?</string>
-    <string name="feet">pi&amp;in</string>
+    <string name="feet">pi&amp;po</string>
     <string name="cm">cm</string>
     <string name="ft">pi</string>
     <string name="in">po</string>
@@ -318,5 +318,8 @@
     <string name="delete_account"><u>Supprimer le compte</u></string>
     <string name="premium_features_details">Détails des fonctionnalités Premium</string>
     <string name="sub_des">Les abonnements se renouvellent automatiquement sauf si vous annulez ou vous désabonnez avant la fin de la période en cours. Votre compte sera débité pour le renouvellement dans les 24 heures précédant la fin de la période d\'abonnement en cours.</string>
+    <string name="language">langue</string>
+    <string name="manage_subscriptions">Gérer les abonnements</string>
+    <string name="personalized_des">Attendez pendant que votre entraîneur personnel élabore votre programme d\'exercices sur mesure</string>
 
 </resources>

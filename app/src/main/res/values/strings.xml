@@ -129,6 +129,10 @@
     <string name="monthly_">Monthly </string>
     <string name="summary">Summary </string>
 
+    <!--    Personalized Screen  Text Name-->
+    <string name="personalized_des">Wait while your personal trainer is making your tailored exercise routine.</string>
+
+
     <!--    Sleep Tracker Screen  Text Name-->
     <string name="bed_time">Bed Time</string>
     <string name="wake_time">Wake up Time</string>
@@ -256,7 +260,7 @@
     <string name="yes_less_year_ago">Yes, less than a year ago</string>
     <string name="yes_more_year_ago">Yes, more than 1 year ago</string>
     <string name="no_have_any">No, I don\'t have any</string>
-    <string name="personalized_workouts">Personalized workouts</string>
+    <string name="personalized_workouts">Personalized workout</string>
     <string name="txt_personalized_workouts">Whatever your fitness level, Fitness will always adopt to your skills and expectations to get you the best results!</string>
     <string name="do_suffer_from_knee_pain">Do you suffer from knee pain?</string>
     <string name="how_many_pushups_you_do">How many push-ups can you do?</string>
@@ -314,7 +318,8 @@
     <string name="premium_features_details">Premium Features Details</string>
     <string name="sub_des">Subscriptions renew automatically unless you cancel or unsubscribe before the end of your current period. Your account will be charged for renewal within 24 hours prior to the end of current subscription period.</string>
 
-    <string name="language">LANGUAGE</string>
+    <string name="language">Language</string>
+    <string name="manage_subscriptions">Manage Subscriptions</string>
     <string-array name="age">
         <item>10</item>
         <item>11</item>

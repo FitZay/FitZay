@@ -88,6 +88,19 @@
         android:testOnly="true"
         android:theme="@style/Theme.FitnessApplication" >
         <activity
+            android:name="com.fitzay.workouttracker.strengthtraining.ui.activities.PersonalizedWorkAct"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.fitzay.workouttracker.strengthtraining.ui.activities.ProfileAct"
+            android:exported="true" >
+        </activity>
+        <activity
             android:name="com.fitzay.workouttracker.strengthtraining.ui.questions.start.PushUpsDoActivity"
             android:exported="false" />
         <activity

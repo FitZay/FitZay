@@ -315,6 +315,9 @@
     <string name="premium_features_details">تفاصيل الميزات الرئيسية</string>
     <string name="sub_des">يتجدد الاشتراك تلقائيًا ما لم تقم بالإلغاء أو الإلغاء قبل نهاية الفترة الحالية. سيتم محاسبة حسابك للتجديد في غضون 24 ساعة قبل نهاية فترة الاشتراك الحالية.</string>
 
+    <string name="language">لغة</string>
+    <string name="manage_subscriptions">إدارة الاشتراكات</string>
+    <string name="personalized_des">انتظر حتى يقوم مدربك الشخصي بإعداد روتين التمرين المخصص لك</string>
 
 
 </resources>

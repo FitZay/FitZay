@@ -205,7 +205,6 @@ class MainActivity : AppCompatActivity() {
                     intent.putExtra("invisibleKey","")
                     intent.flags = Intent.FLAG_ACTIVITY_SINGLE_TOP
                     startActivity(intent)
-                    finish()
                     drawerLayout.closeDrawer(GravityCompat.START)
                     drawerOpen = true
                 }

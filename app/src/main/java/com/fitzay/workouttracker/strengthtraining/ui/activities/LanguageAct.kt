@@ -76,17 +76,18 @@ class LanguageAct : AppCompatActivity(),LanguageItemClick {
         languageRv.adapter = adapter
 
             tick.setOnClickListener {
-                when(lang) {
-                    "English" -> lang = "en"
-                    "Arabic" -> lang = "ar"
-                    "Hindi" -> lang = "hi"
-                    "Mandarin Chinese" -> lang = "zh"
-                    "Spanish" -> lang = "en"
-                    "French" -> lang = "fr"
-                    "Italian" -> lang = "it"
-                    "Russian" -> lang = "ru"
-                    "Portuguese" -> lang = "pt"
-                    "Japanese" -> lang = "ja"
+                when(SharedPreferencesHelper(this@LanguageAct).getPosition()) {
+
+                    0 -> lang = "en"
+                    1 -> lang = "ar"
+                    2 -> lang = "hi"
+                    3 -> lang = "zh"
+                    4 -> lang = "es"
+                    5 -> lang = "fr"
+                    6 -> lang = "it"
+                    7 -> lang = "ru"
+                    8 -> lang = "pt"
+                    9 -> lang = "ja"
 
                 }
                 setLocale(this@LanguageAct,lang)
@@ -94,11 +95,27 @@ class LanguageAct : AppCompatActivity(),LanguageItemClick {
                 editor.putString("key", lang)
                 editor.apply()
 
-                val intent = Intent(this@LanguageAct, GenderActivity::class.java).apply {
-                    Intent.FLAG_ACTIVITY_SINGLE_TOP
+                if (la=="invisible")
+                {
+                    val intent = Intent(this@LanguageAct, GenderActivity::class.java).apply {
+                        Intent.FLAG_ACTIVITY_SINGLE_TOP
+                    }
+                    startActivity(intent)
                 }
-                startActivity(intent)
+                else {
+                    val intent = Intent(this@LanguageAct, MainActivity::class.java).apply {
+                        Intent.FLAG_ACTIVITY_SINGLE_TOP
+                    }
+                    startActivity(intent)
+                    finish()
+                }
 
+
+
+            }
+
+            ivBack.setOnClickListener {
+               onBackPressed()
             }
 
 
@@ -114,32 +131,4 @@ class LanguageAct : AppCompatActivity(),LanguageItemClick {
         lang=model.languageName
     }
 
-//    private fun setLocale(lang: String) {
-//        updateBaseContextLocale(this@LanguageAct, lang)
-//    }
-//
-//    private fun updateBaseContextLocale(context: Context?, language: String): Context {
-//        val locale = Locale(language)
-//        Locale.setDefault(locale)
-//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-//            updateResourcesLocale(context!!, locale)
-//            return updateResourcesLocaleLegacy(context, locale)
-//        }
-//        return updateResourcesLocaleLegacy(context!!, locale)
-//    }
-//
-//
-//    private fun updateResourcesLocale(context: Context, locale: Locale): Context {
-//        val configuration = context.resources.configuration
-//        configuration.setLocale(locale)
-//        return context.createConfigurationContext(configuration)
-//    }
-//
-//    private fun updateResourcesLocaleLegacy(context: Context, locale: Locale): Context {
-//        val resources = context.resources
-//        val configuration = resources.configuration
-//        configuration.locale = locale
-//        resources.updateConfiguration(configuration, resources.displayMetrics)
-//        return context
-//    }
 }

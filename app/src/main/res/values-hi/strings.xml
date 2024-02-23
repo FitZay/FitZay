@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">FitZay</string>
+    <string name="app_name">फिटज़े</string>
     <string name="wish_it">काश!</string>
     <string name="want_it">यह चाहिए</string>
     <string name="do_it">यह करें</string>
@@ -265,7 +265,9 @@
     <string name="premium_features_details">प्रीमियम सुविधाओं का विवरण</string>
     <string name="sub_des">सदस्यता स्वचालित रूप से पुनः नवीनीकृत होती है यदि आप अपने वर्तमान अवधि के अंत से पहले रद्द या अन सब्सक्राइब नहीं करते हैं, तो आपके खाते को वर्तमान सदस्यता अवधि के अंत से 24 घंटे पूर्व नवीनीकरण के लिए धनात्मक किया जाएगा।</string>
 
-
+    <string name="language">भाषा</string>
+    <string name="manage_subscriptions">सदस्यता प्रबंधित करें</string>
+    <string name="personalized_des">तब तक प्रतीक्षा करें जब तक आपका निजी प्रशिक्षक आपके अनुरूप व्यायाम की दिनचर्या बना रहा हो</string>
 
 
 </resources>
