@@ -360,6 +360,7 @@ id constraintLayout2
 id constraintLayout20
 id constraintLayout21
 id constraintLayout22
+id constraintLayout23
 id constraintLayout29
 id constraintLayout3
 id constraintLayout30
@@ -427,7 +428,9 @@ id ftText
 id fullBodyDesc
 id fullbodychBtn
 id goalProgress
+id heightPlusBtn
 id heightToggle
+id heightminusBtn
 id icCopy
 id icExNext
 id icExPrevious
@@ -592,7 +595,6 @@ id midGuide4
 id miles
 id monthlytext
 id montlyBtn
-id myScrollingValuePicker
 id my_composable
 id nav_consent_form
 id nav_how_to_use

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools" >
     <!-- Step Counter Permissions -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -38,22 +38,25 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.FitnessApplication"
-        tools:targetApi="31">
+        tools:targetApi="31" >
+        <activity
+            android:name=".ui.activities.VerticalRulerView"
+            android:exported="false" />
         <activity
             android:name=".ui.questions.start.HeightandWeightAct"
             android:exported="false" />
         <activity
             android:name=".ui.activities.PersonalizedWorkAct"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".ui.activities.ProfileAct"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".ui.questions.start.PushUpsDoActivity"
             android:exported="false" />
         <activity
             android:name=".ui.questions.start.PartShouldFocusActivity"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -62,7 +65,7 @@
         </activity>
         <activity
             android:name=".ui.activities.LanguageAct"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".ui.activities.FullbodyWorkoutActivity"
             android:exported="false" />
@@ -91,11 +94,11 @@
         <activity
             android:name=".ui.activities.LoadingActivity"
             android:exported="true"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ui.sleeptacker.SleepTrackerActivity"
             android:exported="false"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait" >
 
             <!-- <intent-filter> -->
             <!-- <action android:name="android.intent.action.MAIN" /> -->
@@ -143,7 +146,7 @@
         <activity
             android:name=".ui.questions.start.GenderActivity"
             android:exported="true"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ui.questions.start.AskingWeightActivity"
             android:exported="false"
@@ -156,7 +159,7 @@
             android:name=".ui.questions.start.FirstNameActivity"
             android:exported="false"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan">
+            android:windowSoftInputMode="adjustPan" >
 
             <!-- <intent-filter> -->
             <!-- <action android:name="android.intent.action.MAIN" /> -->
@@ -168,7 +171,7 @@
         <activity
             android:name=".ui.questions.start.AskingHeightActivity"
             android:exported="false"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait" >
 
             <!-- <intent-filter> -->
             <!-- <action android:name="android.intent.action.MAIN" /> -->
@@ -180,7 +183,7 @@
         <activity
             android:name=".ui.MainActivity"
             android:exported="true"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait" >
 
             <!-- <intent-filter> -->
             <!-- <action android:name="android.intent.action.MAIN" /> -->
@@ -202,7 +205,7 @@
 
         <receiver
             android:name=".core.utils.AlarmReceiver"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="com.fitzay.workouttracker.strengthtraining.CUSTOM_INTENT" />
             </intent-filter>

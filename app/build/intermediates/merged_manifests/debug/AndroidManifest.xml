@@ -88,6 +88,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.FitnessApplication" >
         <activity
+            android:name="com.fitzay.workouttracker.strengthtraining.ui.activities.VerticalRulerView"
+            android:exported="false" />
+        <activity
             android:name="com.fitzay.workouttracker.strengthtraining.ui.questions.start.HeightandWeightAct"
             android:exported="false" />
         <activity
