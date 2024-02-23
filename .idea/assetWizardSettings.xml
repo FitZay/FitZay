@@ -14,13 +14,8 @@
                         <option name="values">
                           <map>
                             <entry key="assetSourceType" value="FILE" />
-<<<<<<< HEAD
-                            <entry key="outputName" value="imgchest" />
-                            <entry key="sourceFile" value="C:\Users\DELL\Downloads\Chest.svg" />
-=======
-                            <entry key="outputName" value="coach_man" />
-                            <entry key="sourceFile" value="C:\Users\Technest - Accounts\Downloads\coach.svg" />
->>>>>>> ed5eda90cefaf17bdd5a714578a54092ab9b34a0
+                            <entry key="outputName" value="bmi_loading" />
+                            <entry key="sourceFile" value="C:\Users\Technest - Accounts\Downloads\bmi progress bar (1).svg" />
                           </map>
                         </option>
                       </PersistentState>

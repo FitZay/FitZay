@@ -48,6 +48,7 @@ drawable app_icon
 drawable app_icon_for
 drawable arabic
 drawable arm_index
+drawable bar_bg
 drawable baseline_cancel_24
 drawable baseline_keyboard_arrow_right_24
 drawable baseline_lock_24
@@ -86,6 +87,7 @@ drawable bg_watchad
 drawable bg_wheel_picker
 drawable blur_bg
 drawable blur_effect
+drawable bmi_loading
 drawable bottom_nav_selector
 drawable btn_next_circle_bg
 drawable btn_next_press
@@ -255,6 +257,8 @@ font poppins
 font poppins_light
 font poppins_medium
 id addViewIcon
+id ageH
+id ageValue
 id alarmIc
 id alarmIcon
 id alarmLabel
@@ -272,6 +276,13 @@ id backpressBtn
 id bannerTypeTempalte
 id bedIcon
 id bgWeekdays
+id bmiExtreme
+id bmiLow
+id bmiNormal
+id bmiObese
+id bmiOverweight
+id bmiValue
+id bmiloader
 id bottomNavigation
 id btOpen
 id btnCancel
@@ -371,6 +382,7 @@ id dailyContainer
 id dateLayout
 id dayName
 id daysLayout
+id des
 id description
 id doIt
 id doneBtn
@@ -395,6 +407,7 @@ id exNameThree
 id exNameTwo
 id exTime
 id fifteenMinutes
+id finalVal
 id firstGuide
 id fitMoreApps
 id fiveMinutes
@@ -411,7 +424,9 @@ id ftShareApp
 id fullBodyDesc
 id fullbodychBtn
 id goalProgress
+id heightH
 id heightToggle
+id heightValue
 id icCopy
 id icExNext
 id icExPrevious
@@ -513,6 +528,7 @@ id layoutToday
 id layoutWater
 id layoutloading
 id lbs
+id line
 id linearLayout
 id linearLayout2
 id linearLayout3
@@ -528,6 +544,8 @@ id llTop
 id loadingProgress
 id lowerBodyDesc
 id main
+id mainT
+id mainV
 id mainconstraint
 id manageSubscriptionBtn
 id materialCardView
@@ -808,13 +826,16 @@ id weekonedayoneBtn5
 id weekonedayoneBtn6
 id weekonedayoneBtn7
 id weekonedayoneBtn8
+id weightH
 id weightToggle
+id weightValue
 id wishIt
 id yearlyBtn
 id yearlytext
 layout activity_asking_age
 layout activity_asking_height
 layout activity_asking_weight
+layout activity_bmi
 layout activity_cup_capacity
 layout activity_display_quote
 layout activity_display_workouts
@@ -885,6 +906,7 @@ mipmap ic_launcher
 mipmap ic_launcher_background
 mipmap ic_launcher_foreground
 mipmap ic_launcher_round
+raw personalized_ani
 raw personalized_workouts
 raw task_complete
 string abs
@@ -909,6 +931,7 @@ string bed_time
 string beginner
 string being_active
 string belly
+string bmi
 string boosting_energy
 string boosting_immunity
 string calories

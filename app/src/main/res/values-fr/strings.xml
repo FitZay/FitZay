@@ -321,5 +321,6 @@
     <string name="language">langue</string>
     <string name="manage_subscriptions">Gérer les abonnements</string>
     <string name="personalized_des">Attendez pendant que votre entraîneur personnel élabore votre programme d\'exercices sur mesure</string>
+    <string name="bmi">IMC</string>
 
 </resources>

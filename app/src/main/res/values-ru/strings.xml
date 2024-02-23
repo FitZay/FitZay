@@ -295,5 +295,6 @@
     <string name="language">Язык</string>
     <string name="manage_subscriptions">Управление подписками</string>
     <string name="personalized_des">Подождите, пока ваш личный тренер составит для вас индивидуальную программу упражнений.</string>
+    <string name="bmi">ИМТ</string>
 
 </resources>

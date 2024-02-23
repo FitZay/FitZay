@@ -3958,6 +3958,7 @@ drawable arabic
 drawable arm_index
 drawable avd_hide_password
 drawable avd_show_password
+drawable bar_bg
 drawable baseline_cancel_24
 drawable baseline_keyboard_arrow_right_24
 drawable baseline_lock_24
@@ -3996,6 +3997,7 @@ drawable bg_watchad
 drawable bg_wheel_picker
 drawable blur_bg
 drawable blur_effect
+drawable bmi_loading
 drawable bottom_nav_selector
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
@@ -4383,6 +4385,8 @@ id add
 id addViewIcon
 id adjust_height
 id adjust_width
+id ageH
+id ageValue
 id alarmIc
 id alarmIcon
 id alarmLabel
@@ -4425,6 +4429,13 @@ id beginning
 id bestChoice
 id bgWeekdays
 id blocking
+id bmiExtreme
+id bmiLow
+id bmiNormal
+id bmiObese
+id bmiOverweight
+id bmiValue
+id bmiloader
 id body
 id bottom
 id bottomNavigation
@@ -4584,6 +4595,7 @@ id decor_content_parent
 id default_activity_button
 id deltaRelative
 id dependency_ordering
+id des
 id description
 id design_bottom_sheet
 id design_menu_item_action_area
@@ -4652,6 +4664,7 @@ id fill
 id fill_horizontal
 id fill_vertical
 id filled
+id finalVal
 id firstGuide
 id fitCenter
 id fitEnd
@@ -4696,7 +4709,9 @@ id groups
 id hardware
 id header_title
 id headline
+id heightH
 id heightToggle
+id heightValue
 id hide_ime_id
 id hide_in_inspector_tag
 id hideable
@@ -4831,6 +4846,7 @@ id left
 id leftToRight
 id legacy
 id light
+id line
 id line1
 id line3
 id linear
@@ -4855,6 +4871,8 @@ id lottie_layer_name
 id lowerBodyDesc
 id m3_side_sheet
 id main
+id mainT
+id mainV
 id mainconstraint
 id manageSubscriptionBtn
 id marquee
@@ -5400,7 +5418,9 @@ id weekonedayoneBtn5
 id weekonedayoneBtn6
 id weekonedayoneBtn7
 id weekonedayoneBtn8
+id weightH
 id weightToggle
+id weightValue
 id west
 id wheel_picker
 id wide
@@ -5537,6 +5557,7 @@ layout abc_tooltip
 layout activity_asking_age
 layout activity_asking_height
 layout activity_asking_weight
+layout activity_bmi
 layout activity_cup_capacity
 layout activity_display_quote
 layout activity_display_workouts
@@ -5732,6 +5753,7 @@ mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
 raw firebase_common_keep
+raw personalized_ani
 raw personalized_workouts
 raw task_complete
 string abc_action_bar_home_description
@@ -5785,6 +5807,7 @@ string bed_time
 string beginner
 string being_active
 string belly
+string bmi
 string boosting_energy
 string boosting_immunity
 string bottom_sheet_behavior

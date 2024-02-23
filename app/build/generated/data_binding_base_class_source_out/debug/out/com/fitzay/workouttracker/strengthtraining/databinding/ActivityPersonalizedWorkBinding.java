@@ -11,6 +11,7 @@ import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
+import com.airbnb.lottie.LottieAnimationView;
 import com.fitzay.workouttracker.strengthtraining.R;
 import com.google.android.material.button.MaterialButton;
 import java.lang.NullPointerException;
@@ -37,7 +38,7 @@ public final class ActivityPersonalizedWorkBinding implements ViewBinding {
   public final TextView pDec;
 
   @NonNull
-  public final ImageView perImg;
+  public final LottieAnimationView perImg;
 
   @NonNull
   public final TextView profile;
@@ -45,7 +46,7 @@ public final class ActivityPersonalizedWorkBinding implements ViewBinding {
   private ActivityPersonalizedWorkBinding(@NonNull ConstraintLayout rootView,
       @NonNull ImageView back, @NonNull MaterialButton btnNext,
       @NonNull ConstraintLayout clBottomNext, @NonNull ImageView main, @NonNull TextView pDec,
-      @NonNull ImageView perImg, @NonNull TextView profile) {
+      @NonNull LottieAnimationView perImg, @NonNull TextView profile) {
     this.rootView = rootView;
     this.back = back;
     this.btnNext = btnNext;
@@ -114,7 +115,7 @@ public final class ActivityPersonalizedWorkBinding implements ViewBinding {
       }
 
       id = R.id.perImg;
-      ImageView perImg = ViewBindings.findChildViewById(rootView, id);
+      LottieAnimationView perImg = ViewBindings.findChildViewById(rootView, id);
       if (perImg == null) {
         break missingId;
       }

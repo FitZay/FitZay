@@ -40,18 +40,29 @@
         android:theme="@style/Theme.FitnessApplication"
         tools:targetApi="31">
         <activity
-            android:name=".ui.activities.PersonalizedWorkAct"
+            android:name=".ui.activities.BmiAct"
             android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                         <intent-filter>
+                         <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+
+                         <category android:name="android.intent.category.LAUNCHER" />
+                         </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.PersonalizedWorkAct"
+            android:exported="true">
+
+<!--             <intent-filter>-->
+<!--             <action android:name="android.intent.action.MAIN" />-->
+
+
+<!--             <category android:name="android.intent.category.LAUNCHER" />-->
+<!--             </intent-filter>-->
         </activity>
         <activity
             android:name=".ui.activities.ProfileAct"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".ui.questions.start.PushUpsDoActivity"
             android:exported="false" />
@@ -60,9 +71,7 @@
             android:exported="false" />
         <activity
             android:name=".ui.activities.LanguageAct"
-            android:exported="false" >
-
-        </activity>
+            android:exported="false"></activity>
         <activity
             android:name=".ui.activities.FullbodyWorkoutActivity"
             android:exported="false" />
@@ -92,7 +101,11 @@
             android:name=".ui.activities.LoadingActivity"
             android:exported="true"
             android:screenOrientation="portrait">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
 
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
         </activity>
         <activity
             android:name=".ui.sleeptacker.SleepTrackerActivity"
@@ -145,9 +158,7 @@
         <activity
             android:name=".ui.questions.start.GenderActivity"
             android:exported="true"
-            android:screenOrientation="portrait">
-
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".ui.questions.start.AskingWeightActivity"
             android:exported="false"

@@ -320,6 +320,9 @@
 
     <string name="language">Language</string>
     <string name="manage_subscriptions">Manage Subscriptions</string>
+    <string name="bmi">bmi</string>
+
+
     <string-array name="age">
         <item>10</item>
         <item>11</item>

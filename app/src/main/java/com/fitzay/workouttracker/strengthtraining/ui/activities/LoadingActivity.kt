@@ -13,6 +13,7 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.fitzay.workouttracker.strengthtraining.R
+import com.fitzay.workouttracker.strengthtraining.core.AppController
 
 import com.fitzay.workouttracker.strengthtraining.core.utils.InAppPurchaseUtil
 import com.fitzay.workouttracker.strengthtraining.core.utils.checkForInternet
@@ -195,11 +196,15 @@ class LoadingActivity : AppCompatActivity() {
     private fun loadNext() {
         if (isStarted) {
             if (!Component.preference.isIntro) {
-                val intent = Intent(this@LoadingActivity, LanguageAct::class.java)
-                intent.putExtra("invisibleKey","invisible")
-                intent.flags = Intent.FLAG_ACTIVITY_SINGLE_TOP
-                startActivity(intent)
-                finish()
+                if (AppController.inappScenario == "1"){
+                    val intent = Intent(this@LoadingActivity, LanguageAct::class.java)
+                    intent.putExtra("invisibleKey","invisible")
+                    intent.flags = Intent.FLAG_ACTIVITY_SINGLE_TOP
+                    startActivity(intent)
+                    finish()
+                }
+
+
             } else {
                 val intent = Intent(this@LoadingActivity, MainActivity::class.java)
                 intent.flags = Intent.FLAG_ACTIVITY_SINGLE_TOP

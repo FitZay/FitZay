@@ -318,6 +318,7 @@
     <string name="language">لغة</string>
     <string name="manage_subscriptions">إدارة الاشتراكات</string>
     <string name="personalized_des">انتظر حتى يقوم مدربك الشخصي بإعداد روتين التمرين المخصص لك</string>
+    <string name="bmi">مؤشر كتلة الجسم</string>
 
 
 </resources>

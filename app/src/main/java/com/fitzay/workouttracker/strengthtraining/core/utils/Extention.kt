@@ -751,3 +751,11 @@ private fun updateResourcesLocaleLegacy(context: Context, locale: Locale): Conte
     resources.updateConfiguration(configuration, resources.displayMetrics)
     return context
 }
+
+ fun Context.calculateBMI(height: Int, weight: Int): Float {
+
+    val Height_in_metre = height.toFloat() / 100
+    val BMI = weight.toFloat() / (Height_in_metre * Height_in_metre)
+
+    return BMI
+}

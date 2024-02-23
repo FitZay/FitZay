@@ -3957,6 +3957,7 @@ int drawable arabic 0x7f080097
 int drawable arm_index 0x7f080098
 int drawable avd_hide_password 0x7f080099
 int drawable avd_show_password 0x7f08009a
+int drawable bar_bg 0x7f0801ee
 int drawable baseline_cancel_24 0x7f08009b
 int drawable baseline_keyboard_arrow_right_24 0x7f08009c
 int drawable baseline_lock_24 0x7f08009d
@@ -3995,6 +3996,7 @@ int drawable bg_watchad 0x7f0800bd
 int drawable bg_wheel_picker 0x7f0800be
 int drawable blur_bg 0x7f0800bf
 int drawable blur_effect 0x7f0800c0
+int drawable bmi_loading 0x7f0801ed
 int drawable bottom_nav_selector 0x7f0800c1
 int drawable btn_checkbox_checked_mtrl 0x7f0800c2
 int drawable btn_checkbox_checked_to_unchecked_mtrl_animation 0x7f0800c3
@@ -4382,6 +4384,8 @@ int id add 0x7f0a004d
 int id addViewIcon 0x7f0a004e
 int id adjust_height 0x7f0a004f
 int id adjust_width 0x7f0a0050
+int id ageH 0x7f0a0461
+int id ageValue 0x7f0a0462
 int id alarmIc 0x7f0a0051
 int id alarmIcon 0x7f0a0052
 int id alarmLabel 0x7f0a0053
@@ -4424,6 +4428,13 @@ int id beginning 0x7f0a0077
 int id bestChoice 0x7f0a0078
 int id bgWeekdays 0x7f0a0079
 int id blocking 0x7f0a007a
+int id bmiExtreme 0x7f0a0463
+int id bmiLow 0x7f0a0464
+int id bmiNormal 0x7f0a0465
+int id bmiObese 0x7f0a0466
+int id bmiOverweight 0x7f0a0467
+int id bmiValue 0x7f0a045d
+int id bmiloader 0x7f0a045e
 int id body 0x7f0a007b
 int id bottom 0x7f0a007c
 int id bottomNavigation 0x7f0a007d
@@ -4583,6 +4594,7 @@ int id decor_content_parent 0x7f0a0116
 int id default_activity_button 0x7f0a0117
 int id deltaRelative 0x7f0a0118
 int id dependency_ordering 0x7f0a0119
+int id des 0x7f0a0468
 int id description 0x7f0a011a
 int id design_bottom_sheet 0x7f0a011b
 int id design_menu_item_action_area 0x7f0a011c
@@ -4651,6 +4663,7 @@ int id fill 0x7f0a015a
 int id fill_horizontal 0x7f0a015b
 int id fill_vertical 0x7f0a015c
 int id filled 0x7f0a015d
+int id finalVal 0x7f0a0469
 int id firstGuide 0x7f0a015e
 int id fitCenter 0x7f0a015f
 int id fitEnd 0x7f0a0160
@@ -4695,7 +4708,9 @@ int id groups 0x7f0a0186
 int id hardware 0x7f0a0187
 int id header_title 0x7f0a0188
 int id headline 0x7f0a0189
+int id heightH 0x7f0a046a
 int id heightToggle 0x7f0a018a
+int id heightValue 0x7f0a046b
 int id hide_ime_id 0x7f0a018b
 int id hide_in_inspector_tag 0x7f0a018c
 int id hideable 0x7f0a018d
@@ -4830,6 +4845,7 @@ int id left 0x7f0a020d
 int id leftToRight 0x7f0a020e
 int id legacy 0x7f0a020f
 int id light 0x7f0a0210
+int id line 0x7f0a046c
 int id line1 0x7f0a0211
 int id line3 0x7f0a0212
 int id linear 0x7f0a0213
@@ -4854,6 +4870,8 @@ int id lottie_layer_name 0x7f0a0225
 int id lowerBodyDesc 0x7f0a0226
 int id m3_side_sheet 0x7f0a0227
 int id main 0x7f0a0228
+int id mainT 0x7f0a045f
+int id mainV 0x7f0a0460
 int id mainconstraint 0x7f0a0229
 int id manageSubscriptionBtn 0x7f0a022a
 int id marquee 0x7f0a022b
@@ -5399,7 +5417,9 @@ int id weekonedayoneBtn5 0x7f0a0446
 int id weekonedayoneBtn6 0x7f0a0447
 int id weekonedayoneBtn7 0x7f0a0448
 int id weekonedayoneBtn8 0x7f0a0449
+int id weightH 0x7f0a046d
 int id weightToggle 0x7f0a044a
+int id weightValue 0x7f0a046e
 int id west 0x7f0a044b
 int id wheel_picker 0x7f0a044c
 int id wide 0x7f0a044d
@@ -5536,6 +5556,7 @@ int layout abc_tooltip 0x7f0d001b
 int layout activity_asking_age 0x7f0d001c
 int layout activity_asking_height 0x7f0d001d
 int layout activity_asking_weight 0x7f0d001e
+int layout activity_bmi 0x7f0d00da
 int layout activity_cup_capacity 0x7f0d001f
 int layout activity_display_quote 0x7f0d0020
 int layout activity_display_workouts 0x7f0d0021
@@ -5731,6 +5752,7 @@ int mipmap ic_launcher_foreground 0x7f100002
 int mipmap ic_launcher_round 0x7f100003
 int plurals mtrl_badge_content_description 0x7f110000
 int raw firebase_common_keep 0x7f120000
+int raw personalized_ani 0x7f120003
 int raw personalized_workouts 0x7f120001
 int raw task_complete 0x7f120002
 int string abc_action_bar_home_description 0x7f130000
@@ -5784,6 +5806,7 @@ int string bed_time 0x7f13002f
 int string beginner 0x7f130030
 int string being_active 0x7f130031
 int string belly 0x7f130032
+int string bmi 0x7f1301f3
 int string boosting_energy 0x7f130033
 int string boosting_immunity 0x7f130034
 int string bottom_sheet_behavior 0x7f130035

@@ -268,6 +268,7 @@
     <string name="language">भाषा</string>
     <string name="manage_subscriptions">सदस्यता प्रबंधित करें</string>
     <string name="personalized_des">तब तक प्रतीक्षा करें जब तक आपका निजी प्रशिक्षक आपके अनुरूप व्यायाम की दिनचर्या बना रहा हो</string>
+    <string name="bmi">बीएमआई</string>
 
 
 </resources>
