@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">FitZay</string>
+    <string name="app_name">フィットザイ</string>
 
     <!--    Splash Screen Text Name-->
     <string name="wish_it">望む</string>
@@ -304,6 +304,9 @@
     <string name="delete_account"><u> アカウントを削除 </u></string>
     <string name="premium_features_details">プレミアム機能の詳細</string>
     <string name="sub_des">サブスクリプションは自動的に更新されます。現在の期間の終了前にキャンセルまたは解約しない限り、アカウントは現在のサブスクリプション期間の 24 時間前に更新料金が請求されます。</string>
+    <string name="language">言語</string>
+    <string name="manage_subscriptions">サブスクリプションの管理</string>
+    <string name="personalized_des">パーソナルトレーナーがあなたに合わせたエクササイズルーチンを作成するまでお待ちください</string>
 
 
 </resources>

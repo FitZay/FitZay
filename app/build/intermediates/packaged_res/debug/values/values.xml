@@ -241,7 +241,7 @@
     <string name="just_right">Just right</string>
     <string name="kg">kg</string>
     <string name="label">Label</string>
-    <string name="language">LANGUAGE</string>
+    <string name="language">Language</string>
     <string name="lbs">lbs</string>
     <string name="less_6_hours">Less than 6 hours</string>
     <string name="less_one_hour">Less than 1 hour</string>
@@ -249,6 +249,7 @@
     <string name="lower_body">Lower Body</string>
     <string name="make_right_nutrition_choices">Make the right nutrition choices</string>
     <string name="male">Male</string>
+    <string name="manage_subscriptions">Manage Subscriptions</string>
     <string name="month_of_membership">1 month of membership</string>
     <string name="monthly">MONTHLY AVERAGE</string>
     <string name="monthly_">Monthly </string>
@@ -278,7 +279,8 @@
     <string name="notification_title">FitZay-Step Counter</string>
     <string name="one_two_hours">1–2 hours</string>
     <string name="permission_toast">Allow Required Permission to Use Step Counter Feature.</string>
-    <string name="personalized_workouts">Personalized workouts</string>
+    <string name="personalized_des">Wait while your personal trainer is making your tailored exercise routine.</string>
+    <string name="personalized_workouts">Personalized workout</string>
     <string name="pick_training_days">Pick Training days!</string>
     <string name="plan">Plan</string>
     <string name="premium_features_details">Premium Features Details</string>

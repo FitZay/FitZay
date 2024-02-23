@@ -215,11 +215,13 @@ drawable just_right
 drawable just_right_dim
 drawable label_new_icon
 drawable label_new_icon_light
+drawable lang
 drawable leg_index
 drawable linear_foreground
 drawable lower_body
 drawable main_plan_image
 drawable mandarin_chinese
+drawable meter_s
 drawable next_date
 drawable parts_focus
 drawable portugal
@@ -264,6 +266,7 @@ id appBarHome
 id appBarLayout
 id appVersion
 id authorName
+id back
 id back_dialog
 id backpressBtn
 id bannerTypeTempalte
@@ -472,6 +475,7 @@ id l
 id label
 id label2
 id labelName
+id lang
 id langName
 id langTxt
 id languageRv
@@ -583,6 +587,8 @@ id notification_button
 id notification_icon
 id notification_subtitle
 id notification_title
+id p_dec
+id perImg
 id picker
 id plannerTemplate
 id plannerTemplateDown
@@ -590,6 +596,7 @@ id plannerTemplateUp
 id premiumBtn
 id previousDate
 id privacyPolicyBtn
+id profile
 id progressBar
 id progressFive
 id progressFour
@@ -821,8 +828,10 @@ layout activity_language
 layout activity_loading
 layout activity_main
 layout activity_part_should_focus
+layout activity_personalized_work
 layout activity_play_alarm
 layout activity_premium
+layout activity_profile
 layout activity_push_ups_do
 layout activity_qoutes_category
 layout activity_single_exercise
@@ -995,6 +1004,7 @@ string love_sugary_drinks
 string lower_body
 string make_right_nutrition_choices
 string male
+string manage_subscriptions
 string month_of_membership
 string monthly
 string monthly_
@@ -1024,6 +1034,7 @@ string notification_text
 string notification_title
 string one_two_hours
 string permission_toast
+string personalized_des
 string personalized_workouts
 string pick_training_days
 string plan

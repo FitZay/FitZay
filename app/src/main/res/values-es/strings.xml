@@ -20,15 +20,15 @@
     <!--    Weight Screen Text Name-->
     <string name="what_your_weight">¿Cuál es tu peso?</string>
     <string name="what_your_target_weight">Bien, ahora tu peso objetivo.</string>
-    <string name="lbs">lbs</string>
+    <string name="lbs">libras</string>
     <string name="kg">kg</string>
 
     <!--    Height Screen Text Name-->
     <string name="how_tall_you">¿Cuánto mides?</string>
-    <string name="feet">ft&amp;in</string>
+    <string name="feet">pie&amp;en</string>
     <string name="cm">cm</string>
-    <string name="ft">ft</string>
-    <string name="in">in</string>
+    <string name="ft">pie</string>
+    <string name="in">en</string>
 
     <!--    Age Screen Text Name-->
     <string name="how_old_you">¿Cuántos años tienes?</string>
@@ -309,5 +309,8 @@
     <string name="delete_account"><u>Eliminar cuenta</u></string>
     <string name="premium_features_details">Detalles de las funciones premium</string>
     <string name="sub_des">Las suscripciones se renuevan automáticamente a menos que las canceles o te desuscribas antes del final de tu período actual. Tu cuenta será cargada por la renovación dentro de las 24 horas previas al final del período de suscripción actual.</string>
+    <string name="language">Idioma</string>
+    <string name="manage_subscriptions">Gestionar suscripciones</string>
+    <string name="personalized_des">Espera mientras tu entrenador personal realiza tu rutina de ejercicios personalizada</string>
 
 </resources>

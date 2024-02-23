@@ -43,11 +43,14 @@ public final class CustomDrawerBinding implements ViewBinding {
   @NonNull
   public final LinearLayout ftShareApp;
 
+  @NonNull
+  public final LinearLayout lang;
+
   private CustomDrawerBinding(@NonNull LinearLayout rootView, @NonNull TextView appVersion,
       @NonNull LinearLayout customLayout, @NonNull LinearLayout fitMoreApps,
       @NonNull LinearLayout ftConsent, @NonNull LinearLayout ftHowToUse,
       @NonNull LinearLayout ftPrivacy, @NonNull LinearLayout ftRate,
-      @NonNull LinearLayout ftShareApp) {
+      @NonNull LinearLayout ftShareApp, @NonNull LinearLayout lang) {
     this.rootView = rootView;
     this.appVersion = appVersion;
     this.customLayout = customLayout;
@@ -57,6 +60,7 @@ public final class CustomDrawerBinding implements ViewBinding {
     this.ftPrivacy = ftPrivacy;
     this.ftRate = ftRate;
     this.ftShareApp = ftShareApp;
+    this.lang = lang;
   }
 
   @Override
@@ -130,8 +134,14 @@ public final class CustomDrawerBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.lang;
+      LinearLayout lang = ViewBindings.findChildViewById(rootView, id);
+      if (lang == null) {
+        break missingId;
+      }
+
       return new CustomDrawerBinding((LinearLayout) rootView, appVersion, customLayout, fitMoreApps,
-          ftConsent, ftHowToUse, ftPrivacy, ftRate, ftShareApp);
+          ftConsent, ftHowToUse, ftPrivacy, ftRate, ftShareApp, lang);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

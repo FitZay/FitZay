@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">FitZay</string>
+    <string name="app_name">フィットザイ</string>
 
     <!--    Splash Screen Text Name-->
     <string name="wish_it">希望它</string>
@@ -304,5 +304,8 @@
     <string name="delete_account"><u> 删除帐户 </u></string>
     <string name="premium_features_details">高级功能详情</string>
     <string name="sub_des">订阅将自动续订，除非您在当前周期结束之前取消或退订。您的帐户将在当前订阅周期结束前的 24 小时内收取续订费用。</string>
+    <string name="language">言語</string>
+    <string name="manage_subscriptions">管理订阅</string>
+    <string name="personalized_des">等待您的私人教练正在为您量身定制锻炼计划</string>
 
 </resources>

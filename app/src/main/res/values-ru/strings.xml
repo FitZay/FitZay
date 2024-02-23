@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">FitZay</string>
+    <string name="app_name">ФитЗай</string>
 
     <!--    Splash Screen Text Name-->
     <string name="wish_it">Желай это</string>
@@ -292,5 +292,8 @@
     <string name="delete_account"><u>Удалить аккаунт</u></string>
     <string name="premium_features_details">Детали премиум-функций</string>
     <string name="sub_des">Подписки продляются автоматически, если вы не отмените или не отпишетесь до окончания текущего периода. Ваш аккаунт будет списан за продление в течение 24 часов до окончания текущего периода подписки.</string>
+    <string name="language">Язык</string>
+    <string name="manage_subscriptions">Управление подписками</string>
+    <string name="personalized_des">Подождите, пока ваш личный тренер составит для вас индивидуальную программу упражнений.</string>
 
 </resources>

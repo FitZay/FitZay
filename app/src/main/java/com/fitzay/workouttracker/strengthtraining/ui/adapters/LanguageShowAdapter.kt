@@ -53,15 +53,6 @@ class LanguageShowAdapter(var context:Context, var list:ArrayList<LanguageM>,var
                 langName.text=model.languageName
                 flag.setImageResource(model.flag)
 
-//                if (model.selection) {
-//                    check.isChecked=true
-//
-//                } else {
-//                    check.isChecked=false
-//                }
-//
-//                listener.itemClick(position,model,check)
-
                 check.setOnCheckedChangeListener(null)
                 if (SharedPreferencesHelper(context).getPosition() == position) {
                     check.isChecked = true
@@ -69,19 +60,18 @@ class LanguageShowAdapter(var context:Context, var list:ArrayList<LanguageM>,var
                 } else {
                     check.isChecked = false
                 }
-//                if (check.isChecked) {
-//                    Log.i("TAG", "bind: "+model.languageName)
-//
-//                } else {
-//                    Log.i("TAG", "else: "+model.languageName)
-//
-//                }
+
 
                 check.setOnCheckedChangeListener { buttonView, isChecked ->
                     list[position].selection = !list[position].selection
 
                     listener.itemClick(position, model, check)
-//                    notifyDataSetChanged()
+                }
+
+                alarmView.setOnClickListener {
+                    list[position].selection = !list[position].selection
+
+                    listener.itemClick(position, model, check)
                 }
             }
 

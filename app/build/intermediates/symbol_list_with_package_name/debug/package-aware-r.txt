@@ -3942,6 +3942,7 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable abs_index
 drawable absbeginnercircular
+drawable add_image
 drawable admob_close_button_black_circle_white_cross
 drawable admob_close_button_white_circle_black_cross
 drawable alarm_new_bg
@@ -4010,6 +4011,7 @@ drawable btn_radio_on_to_off_mtrl_animation
 drawable card_bg
 drawable chest_index
 drawable circle_choice
+drawable coach_man
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -4046,6 +4048,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable edit
 drawable edittext_modified_states
 drawable english__usa_
 drawable fitzay_icon_splash
@@ -4182,6 +4185,7 @@ drawable just_right
 drawable just_right_dim
 drawable label_new_icon
 drawable label_new_icon_light
+drawable lang
 drawable leg_index
 drawable linear_foreground
 drawable lower_body
@@ -4209,6 +4213,7 @@ drawable material_ic_keyboard_arrow_previous_black_24dp
 drawable material_ic_keyboard_arrow_right_black_24dp
 drawable material_ic_menu_arrow_down_black_24dp
 drawable material_ic_menu_arrow_up_black_24dp
+drawable meter_s
 drawable mtrl_bottomsheet_drag_handle
 drawable mtrl_checkbox_button
 drawable mtrl_checkbox_button_checked_unchecked
@@ -4407,6 +4412,7 @@ id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
 id automatic
+id back
 id back_dialog
 id background
 id backpressBtn
@@ -4781,6 +4787,7 @@ id label
 id label2
 id labelName
 id labeled
+id lang
 id langName
 id langTxt
 id languageRv
@@ -5010,6 +5017,7 @@ id open_search_view_toolbar_container
 id outline
 id outward
 id overshoot
+id p_dec
 id packed
 id parallax
 id parent
@@ -5020,6 +5028,7 @@ id password_toggle
 id path
 id pathRelative
 id peekHeight
+id perImg
 id percent
 id picker
 id pin
@@ -5033,6 +5042,7 @@ id pressed
 id previousDate
 id primary
 id privacyPolicyBtn
+id profile
 id progressBar
 id progressFive
 id progressFour
@@ -5540,8 +5550,10 @@ layout activity_language
 layout activity_loading
 layout activity_main
 layout activity_part_should_focus
+layout activity_personalized_work
 layout activity_play_alarm
 layout activity_premium
+layout activity_profile
 layout activity_push_ups_do
 layout activity_qoutes_category
 layout activity_single_exercise
@@ -5940,6 +5952,7 @@ string m3_sys_motion_easing_standard_accelerate
 string m3_sys_motion_easing_standard_decelerate
 string make_right_nutrition_choices
 string male
+string manage_subscriptions
 string material_clock_display_divider
 string material_clock_toggle_content_description
 string material_hour_24h_suffix
@@ -6076,6 +6089,7 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string permission_toast
+string personalized_des
 string personalized_workouts
 string pick_training_days
 string plan
