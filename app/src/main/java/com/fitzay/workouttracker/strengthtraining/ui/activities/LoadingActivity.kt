@@ -4,6 +4,7 @@ import android.app.ActivityOptions
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
+import android.os.Build
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.os.Handler
@@ -30,6 +31,7 @@ import com.google.android.ump.ConsentDebugSettings
 import com.google.android.ump.ConsentInformation
 import com.google.android.ump.ConsentRequestParameters
 import com.google.android.ump.UserMessagingPlatform
+import java.util.Locale
 import java.util.concurrent.atomic.AtomicBoolean
 
 
@@ -184,9 +186,7 @@ class LoadingActivity : AppCompatActivity() {
             showLoading()
         }
         val sharedPref = applicationContext.getSharedPreferences("storeLan", Context.MODE_PRIVATE)
-        setLocale(this@LoadingActivity,sharedPref.getString("key", "en")!!)
-
-        Log.i("NEW-TAG-2", "onStart: "+sharedPref.getString("key", "en"))
+        setLocale(sharedPref.getString("key", "en")!!)
     }
 
 

@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"Navegar para a página inicial"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"Navegar para cima"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"Mais opções"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"Concluído"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"Ver tudo"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"Selecionar um app"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"DESATIVADO"</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"ATIVADO"</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"delete"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"enter"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Function+"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"espaço"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"Menu+"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"Pesquisar…"</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"Limpar consulta"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"Consulta de pesquisa"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"Pesquisar"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"Enviar consulta"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"Pesquisa por voz"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Compartilhar com"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Compartilhar com <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Recolher"</string>
+    <string name="abs">ABC</string>
+    <string name="abs_beginner">Iniciante em Abdômen</string>
+    <string name="abs_core">Abdômen e Core</string>
+    <string name="add">Adicionar</string>
+    <string name="advance">Avançado</string>
+    <string name="alarm">Alarme</string>
+    <string name="allow">Permitir</string>
+    <string name="allow_req_permissions">Permitir todas as permissões necessárias</string>
+    <string name="allow_required_permissions">Permissão necessária para salvar citações na galeria.</string>
+    <string name="am">AM</string>
+    <string name="any_bad_habits">Algum hábito ruim?</string>
+    <string name="any_previous_workout_experience">Alguma experiência anterior com exercícios?</string>
+    <string name="app_name">FitZay</string>
+    <string name="arms">Braços</string>
+    <string name="as_fast_as_possible">O mais rápido possível</string>
+    <string name="at_least_3_months">Pelo menos 3 meses</string>
+    <string name="at_least_month">Pelo menos um mês</string>
+    <string name="at_least_year">Pelo menos um ano</string>
+    <string name="awesome_choice">Escolha incrível!</string>
+    <string name="balanced_pace">Ritmo equilibrado</string>
+    <string name="be_premium">Seja Premium</string>
+    <string name="bed_time">Hora de Dormir</string>
+    <string name="beginner">Iniciante</string>
+    <string name="being_active">Ser ativo</string>
+    <string name="belly">Barriga</string>
+    <string name="bmi">IMC</string>
+    <string name="boosting_energy">Aumentar a energia</string>
+    <string name="boosting_immunity">Aumentar a imunidade</string>
+    <string msgid="881409763997275156" name="call_notification_answer_action">"Atender"</string>
+    <string msgid="8793775615905189152" name="call_notification_answer_video_action">"Vídeo"</string>
+    <string msgid="3229508546291798546" name="call_notification_decline_action">"Recusar"</string>
+    <string msgid="2659457946726154263" name="call_notification_hang_up_action">"Desligar"</string>
+    <string msgid="6107532579223922871" name="call_notification_incoming_text">"Chamada recebida"</string>
+    <string msgid="8623827134497363134" name="call_notification_ongoing_text">"Chamada em andamento"</string>
+    <string msgid="59049573811482460" name="call_notification_screening_text">"Filtrando uma ligação recebida"</string>
+    <string name="calories">"Calorias</string>
+    <string name="camera">Câmera</string>
+    <string name="cancel">Cancelar</string>
+    <string name="cancel_anytime">Cancelar a qualquer momento</string>
+    <string name="channel_description">Canal para exibição de notificações de contagem de passos</string>
+    <string name="channel_name">Canal do Contador de Passos</string>
+    <string name="chest">Peito</string>
+    <string msgid="406453423630273620" name="close_drawer">"Fechar menu de navegação"</string>
+    <string msgid="7573152094250666567" name="close_sheet">"Fechar planilha"</string>
+    <string name="cm">cm</string>
+    <string name="complete_ex">"Legal, você completou o exercício!</string>
+    <string msgid="3209159573327985035" name="copy">"Copiar"</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"Link copiado para a área de transferência"</string>
+    <string name="cup_capacity">Capacidade da Copo</string>
+    <string name="daily">MÉDIA DIÁRIA</string>
+    <string name="daily_">Diariamente </string>
+    <string name="daily_average">Média Diária</string>
+    <string name="daily_challenge">Desafio Diário</string>
+    <string name="daily_goal">Meta diária</string>
+    <string name="daily_motivation">Motivação Diária</string>
+    <string name="daily_step_goal">Meta diária de passos</string>
+    <string msgid="8038256446254964252" name="default_error_message">"Entrada inválida"</string>
+    <string msgid="6312721426453364202" name="default_popup_window_title">"Janela pop-up"</string>
+    <string name="delete_account"><u> Excluir Conta </u></string>
+    <string name="do_it">Faça isso</string>
+    <string name="do_relate_following_statement">Você se identifica com a seguinte afirmação?</string>
+    <string name="do_suffer_from_knee_pain">Você sofre de dor no joelho?</string>
+    <string name="do_you_feel">Como você se sente</string>
+    <string name="do_you_relate_following_statement">Você se identifica com a seguinte afirmação?</string>
+    <string name="done">Feito</string>
+    <string name="draw_allow">A permissão para Desenhar sobre outros apps é necessária para mostrar o alarme</string>
+    <string name="drinking_cap">Capacidade de beber</string>
+    <string name="eat_late_night">Como tarde da noite</string>
+    <string name="enjoy_fast_food">Gosto de fast food</string>
+    <string name="enter_here">Digite aqui...</string>
+    <string name="exercise">Exercício</string>
+    <string msgid="1234962710353108940" name="expand_button_title">"Avançado"</string>
+    <string name="facebook">Facebook</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Copiar link"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Abrir no navegador"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Compartilhar link"</string>
+    <string name="feel_tired_around_lunchtime">Sinto cansaço por volta da hora do almoço</string>
+    <string name="feeling_confident">Sentir-se confiante</string>
+    <string name="feeling_happier">Sentir-se mais feliz</string>
+    <string name="feet">pés&amp;pol</string>
+    <string name="female">Feminino</string>
+    <string name="few_times_week">Algumas vezes por semana</string>
+    <string name="fit">Estou em forma</string>
+    <string name="fitness">Fitness</string>
+    <string name="flabby">Fofinho</string>
+    <string name="food">Alimento</string>
+    <string name="friends_family">Amigos ou familiares</string>
+    <string name="ft">pés</string>
+    <string name="full_body">Corpo Inteiro</string>
+    <string name="gain_muscle">Ganhar músculo</string>
+    <string name="gallery">Galeria</string>
+    <string name="go_premium">Ir para Premium</string>
+    <string name="gold">Ouro</string>
+    <string name="google_play">Google Play</string>
+    <string name="google_search">Pesquisa no Google</string>
+    <string name="goto_settings">Abrir Configurações</string>
+    <string name="have_sweet_tooth">Tenho um dente doce</string>
+    <string name="heavier">Mais pesado</string>
+    <string name="hint_you_are_good_hands">No ano passado, 1.792.153 pessoas de todo o mundo escolheram ganhar músculos com fitness.</string>
+    <string name="home_mostly_inactive">Em casa, principalmente inativo</string>
+    <string name="how_energy_levels_during_day">Como são seus níveis de energia durante o dia?</string>
+    <string name="how_fit_are_you">Quão em forma você está?</string>
+    <string name="how_hear_about_fitness">Como você ouviu falar sobre fitness?</string>
+    <string name="how_long_ready_commit">Por quanto tempo você está pronto para se comprometer?</string>
+    <string name="how_many_pushups_you_do">Quantas flexões você consegue fazer?</string>
+    <string name="how_motivated_you_start">Quão motivado você está para começar?</string>
+    <string name="how_much_sleep_every_night">Quantas horas você dorme todas as noites?</string>
+    <string name="how_much_walk_daily">Quantas horas você caminha diariamente?</string>
+    <string name="how_often_feel_stressed">Com que frequência você se sente estressado?</string>
+    <string name="how_often_you_exercise">Com que frequência você se exercita?</string>
+    <string name="how_old_you">Quantos anos você tem?</string>
+    <string name="how_tall_you">Qual é sua altura?</string>
+    <string name="how_to_use">Como Usar</string>
+    <string name="ideal">Ideal</string>
+    <string name="improving_sleep">Melhorar o sono</string>
+    <string name="in">pol</string>
+    <string msgid="6827826412747255547" name="in_progress">"Em andamento"</string>
+    <string msgid="2486394087603402002" name="indeterminate">"Nem marcada nem desmarcada"</string>
+    <string name="instagram">Instagram</string>
+    <string name="intermediate">Intermediário</string>
+    <string name="item_not_found">Item não encontrado</string>
+    <string name="jumping_jack">Pulo com Polichinelo</string>
+    <string name="just_right">Na medida certa</string>
+    <string name="kg">kg</string>
+    <string name="know">Não sei como fazer isso</string>
+    <string name="label">Rótulo</string>
+    <string name="language">Linguagem</string>
+    <string name="lbs">lbs</string>
+    <string name="less_6_hours">Menos de 6 horas</string>
+    <string name="less_one_hour">Menos de 1 hora</string>
+    <string name="look">Apenas dê uma olhada</string>
+    <string name="love_sugary_drinks">Adoro bebidas açucaradas</string>
+    <string name="lower_body">Parte inferior do corpo</string>
+    <string name="make_right_nutrition_choices">Faça as escolhas nutricionais corretas</string>
+    <string name="male">Masculino</string>
+    <string name="manage_subscriptions">Gerenciar assinaturas</string>
+    <string name="message">Ao excluir a conta, todos os seus dados salvos serão removidos!</string>
+    <string name="miles">Milhas</string>
+    <string name="month_of_membership">1 mês de associação</string>
+    <string name="monthly">MÉDIA MENSAL</string>
+    <string name="monthly_">Mensalmente </string>
+    <string name="monthly_challenge">Desafio Mensal</string>
+    <string name="monthly_workout_plans">Planos de Treino Mensais</string>
+    <string name="more_6_glasses">Mais de 6 copos</string>
+    <string name="more_apps">Mais Aplicativos (Anúncio)</string>
+    <string name="more_than_8_hours">Mais de 8 horas</string>
+    <string name="more_than_two_hours">Mais de 2 horas</string>
+    <string name="more_than_workouts_week">Mais de 4 treinos por semana</string>
+    <string name="mostly_foot">Principalmente de pé</string>
+    <string name="mostly_seated">Principalmente sentado</string>
+    <string name="mostly_working_active">Principalmente trabalhando e ativo</string>
+    <string name="motivated">Estou motivado</string>
+    <string name="multiple_times_a_day">Várias vezes ao dia</string>
+    <string msgid="542007171693138492" name="navigation_menu">"Menu de navegação"</string>
+    <string name="need_nap_after_meals">Preciso de uma soneca após as refeições</string>
+    <string name="need_per_title">Esta permissão é necessária para usar esta função.</string>
+    <string name="need_permission">Permissão Necessária</string>
+    <string name="never">Nunca</string>
+    <string name="next">Próximo</string>
+    <string name="no">Não</string>
+    <string name="no_alarm">Sem alarme</string>
+    <string name="no_data">Sem dados</string>
+    <string name="no_have_any">Não, não tenho</string>
+    <string name="not_much_all">Não muito</string>
+    <string msgid="6610465462668679431" name="not_selected">"Não selecionado"</string>
+    <string msgid="478774118347071097" name="not_set">"Não definido"</string>
+    <string name="not_sleep_enough">Não durmo o suficiente</string>
+    <string name="not_so_much">Não muito</string>
+    <string name="not_very_fit">Não estou muito em forma</string>
+    <string name="notification_text">Total de passos hoje: %1$d</string>
+    <string name="notification_title">FitZay-Contador de Passos</string>
+    <string msgid="875452955155264703" name="off">"Desativado"</string>
+    <string msgid="8655164131929253426" name="on">"Ativado"</string>
+    <string name="one_two_hours">1–2 horas</string>
+    <string name="permission_toast">Permitir Permissão Necessária para Usar a Função de Contador de Passos.</string>
+    <string name="personalized_des">Espere enquanto seu personal trainer cria sua rotina de exercícios personalizada</string>
+    <string name="personalized_workouts">Treinos personalizados</string>
+    <string name="pick_training_days">Escolha os dias de treino!</string>
+    <string name="plan">Plano</string>
+    <string name="platinum">Platina</string>
+    <string name="pm">PM</string>
+    <string msgid="7961817945132860002" name="preference_copied">"\"<ns1:g id="SUMMARY">%1$s</ns1:g>\" copiado para a área de transferência."</string>
+    <string name="premium_features_details">Detalhes dos Recursos Premium</string>
+    <string name="privacy_policy">Política de Privacidade</string>
+    <string name="profile">Perfil</string>
+    <string name="purchase_cancel_by_user">Compra cancelada pelo usuário</string>
+    <string name="quit">Sair</string>
+    <string name="radio_podcast">Rádio ou podcast</string>
+    <string name="rate_us">Avalie-nos</string>
+    <string name="ready_to_go">Pronto para começar!</string>
+    <string name="recent_exercise">Exercício Recente</string>
+    <string name="relate_following_statement">Tenho medo de que fazer exercícios e planejar refeições tomem muito do meu tempo livre.</string>
+    <string name="reminders">Lembretes</string>
+    <string name="remove_ads">Remover Anúncios</string>
+    <string name="ringtone">Toque de chamada do sistema</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"Pesquisar"</string>
+    <string name="select_days">Selecionar dias</string>
+    <string msgid="6043586758067023" name="selected">"Selecionado"</string>
+    <string name="share_app">Compartilhar aplicativo</string>
+    <string name="silver">Prata</string>
+    <string name="skinny">Magro</string>
+    <string name="skip">Pular</string>
+    <string name="sleep">Sono</string>
+    <string name="sleep_tracker">Rastreador de sono</string>
+    <string name="slowly_steadily">Devagar, mas firmemente</string>
+    <string name="snooze">Soneca</string>
+    <string name="sound">Som</string>
+    <string name="stable_throughout_day">Estáveis ao longo do dia</string>
+    <string name="start">COMEÇAR</string>
+    <string name="stats">Estatísticas</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="step_counter">Contador de passos</string>
+    <string name="step_goal_runtime">/%1$s passos</string>
+    <string name="steps">Passos</string>
+    <string name="sub_des">As assinaturas são renovadas automaticamente, a menos que você cancele ou se desinscreva antes do final do seu período atual. Sua conta será cobrada pela renovação dentro de 24 horas antes do final do período de assinatura atual.</string>
+    <string name="subscribe">Inscrever-se</string>
+    <string name="summary">Resumo </string>
+    <string msgid="5190123168583152844" name="summary_collapsed_preference_list">"<ns1:g id="CURRENT_ITEMS">%1$s</ns1:g>, <ns1:g id="ADDED_ITEMS">%2$s</ns1:g>"</string>
+    <string msgid="1672349317127674378" name="tab">"Guia"</string>
+    <string name="take_a_rest">Faça um Descanso</string>
+    <string name="tap_hold">Toque e segure</string>
+    <string name="tap_hold_continue">Toque e segure o botão para continuar.</string>
+    <string name="thanks_for_sharing">Obrigado por compartilhar!</string>
+    <string name="thighs">Coxas</string>
+    <string name="time">Tempo</string>
+    <string name="time_in_bed">Tempo na cama</string>
+    <string name="today">Hoje</string>
+    <string name="tomorrow">Amanhã de manhã</string>
+    <string name="tonight">Hoje à noite</string>
+    <string name="too_easy">Muito fácil</string>
+    <string name="too_hard">Muito difícil</string>
+    <string name="tv">TV</string>
+    <string name="txt_15_29">15–29</string>
+    <string name="txt_1_2_workouts_week">1 a 2 treinos por semana</string>
+    <string name="txt_2_glasses">2 copos</string>
+    <string name="txt_30">30 ou mais</string>
+    <string name="txt_3_4_workouts_week">3 a 4 treinos por semana</string>
+    <string name="txt_3_6_glasses">3 a 6 copos</string>
+    <string name="txt_6_29">6–29</string>
+    <string name="txt_6_7_hours">6–7 horas</string>
+    <string name="txt_7_8_hours">7–8 horas</string>
+    <string name="txt_age">Idade</string>
+    <string name="txt_awesome_choice">Comprometer-se com pelo menos um ano é a maneira perfeita de desenvolver hábitos saudáveis e alcançar seus objetivos de fitness!</string>
+    <string name="txt_bed_time">Hora de dormir</string>
+    <string name="txt_cancel">Cancelar</string>
+    <string name="txt_edit_bed_time">Editar hora de dormir</string>
+    <string name="txt_full_name">Nome Completo</string>
+    <string name="txt_gender">Gênero</string>
+    <string name="txt_height">Altura</string>
+    <string name="txt_less_than_5">Menos de 5</string>
+    <string name="txt_only_drink_soda_coffee">Eu só bebo refrigerante ou café</string>
+    <string name="txt_personalized_workouts">Independentemente do seu nível de fitness, o Fitness sempre se adaptará às suas habilidades e expectativas para obter os melhores resultados!</string>
+    <string name="txt_pick_training_days">Ótimo! Com base em seus dados, recomendamos 4 treinos por semana.</string>
+    <string name="txt_profile">Perfil</string>
+    <string name="txt_reminders">Crie um hábito e nunca perca o dia do seu treino!</string>
+    <string name="txt_right_nutrition_choices">Uma ótima rotina de exercícios sem as escolhas alimentares corretas não vai adiantar muito. Nosso livro de receitas ajudará você a encontrar alternativas saudáveis para escolhas alimentares não tão boas.</string>
+    <string name="txt_save">Salvar</string>
+    <string name="txt_target_goal">Objetivo Alvo</string>
+    <string name="txt_target_weight">Peso Alvo</string>
+    <string name="txt_thanks_sharing">Existem fortes evidências científicas de que ser fisicamente ativo pode ajudá-lo a levar uma vida mais saudável e feliz.</string>
+    <string name="txt_weight">Peso</string>
+    <string name="txt_you_are_good_hands">E você não está sozinho(a)!</string>
+    <string name="txt_your_commitment">Decidi que estou pronto para ficar em forma e permanecer em forma. Vou trabalhar consistentemente para alcançar meus objetivos de fitness. Vou permanecer paciente comigo mesmo e com meu progresso.</string>
+    <string name="unfinish">Continuar o treino\ninacabado?</string>
+    <string name="unfinish_">Continuar</string>
+    <string name="unlimited_access">Acesso Ilimitado</string>
+    <string name="unlimited_workout_plans">Planos de Treino Ilimitados</string>
+    <string name="unlock_all_plans">Desbloquear Todos os Planos</string>
+    <string name="unlock_pri">DESBLOQUEAR TREINO\nPREMIUM</string>
+    <string name="unlock_pri_sub">Assista a um vídeo curto para desbloquear o\ntreino premium uma vez gratuitamente</string>
+    <string name="upper_body">Parte superior do corpo</string>
+    <string msgid="5138405918326871307" name="v7_preference_off">"DESATIVADO"</string>
+    <string msgid="27351710992731591" name="v7_preference_on">"ATIVADO"</string>
+    <string name="very_fit">Estou muito em forma</string>
+    <string name="very_motivated">Estou muito motivado!</string>
+    <string name="vibration">Vibração</string>
+    <string name="wake_time">Hora de Acordar</string>
+    <string name="walking_time">Tempo de caminhada</string>
+    <string name="want_it">Quero isso</string>
+    <string name="watch_ad">Assistir anúncio</string>
+    <string name="water_intake">Ingestão de Água</string>
+    <string name="water_reminder">Ingestão de água</string>
+    <string name="week_of_membership">1 semana de associação</string>
+    <string name="weekly">MÉDIA SEMANAL</string>
+    <string name="weekly_">Semanalmente </string>
+    <string name="weight_gain">Ganhar peso</string>
+    <string name="weight_lose">Perder peso</string>
+    <string name="weight_maintain">Manter o peso</string>
+    <string name="welcome_fitness">Bem-vindo ao FitZay</string>
+    <string name="what_daily_water_intake">Qual é a sua ingestão diária de água?</string>
+    <string name="what_does_your_typical_day">Como é um dia típico para você?</string>
+    <string name="what_gender">Qual é o seu sexo?</string>
+    <string name="what_motivates_you_most">O que mais te motiva?</string>
+    <string name="what_name">Qual é o seu nome?</string>
+    <string name="what_pace_prefer_your_plan">Qual ritmo você prefere em seu plano?</string>
+    <string name="what_your_body_type">Qual é o seu tipo de corpo?</string>
+    <string name="what_your_goal">Qual é o seu objetivo?</string>
+    <string name="what_your_target_weight">Agora, qual é o seu peso alvo?</string>
+    <string name="what_your_weight">Qual é o seu peso?</string>
+    <string name="which_parts_should_focus_on">Em quais partes devemos nos concentrar?</string>
+    <string name="wish_feel_confident_myself">Gostaria de me sentir mais confiante comigo mesmo(a).</string>
+    <string name="wish_it">Deseje isso</string>
+    <string name="workout">Exercício</string>
+    <string name="workout_categories">Categorias de Exercício</string>
+    <string name="workout_feedback">Seu feedback nos ajudará a fornecer treinos mais adequados para você</string>
+    <string name="year_of_membership">1 ano de associação</string>
+    <string name="yes">Sim</string>
+    <string name="yes_less_year_ago">Sim, menos de um ano atrás</string>
+    <string name="yes_more_year_ago">Sim, há mais de 1 ano</string>
+    <string name="yes_workout_regularly">Sim, faço exercícios regularmente</string>
+    <string name="you_are_good_hands">Você está em boas mãos</string>
+    <string name="your_commitment">Seu compromisso</string>
+</resources>

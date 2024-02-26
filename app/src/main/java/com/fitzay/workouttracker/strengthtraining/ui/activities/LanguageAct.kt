@@ -108,10 +108,11 @@ class LanguageAct : AppCompatActivity(),LanguageItemClick {
                     9 -> lang = "ja"
 
                 }
-                setLocale(this@LanguageAct,lang)
+                setLocale(lang)
                 val editor = sharedPref.edit()
                 editor.putString("key", lang)
                 editor.apply()
+                restartApp()
 
                 if (la=="invisible")
                 {
@@ -197,4 +198,13 @@ class LanguageAct : AppCompatActivity(),LanguageItemClick {
             }
         }
     }
+
+    private fun restartApp() {
+        val intent = baseContext.packageManager.getLaunchIntentForPackage(baseContext.packageName)
+        intent!!.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP)
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
+        startActivity(intent)
+    }
+
 }

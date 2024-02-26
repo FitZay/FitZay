@@ -37,6 +37,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
+        android:requestLegacyExternalStorage="true"
         android:theme="@style/Theme.FitnessApplication"
         tools:targetApi="31">
         <activity
@@ -98,6 +99,7 @@
         <activity
             android:name=".ui.activities.LanguageAct"
             android:screenOrientation="portrait"
+            android:configChanges="uiMode"
             android:exported="true" >
 <!--            <intent-filter>-->
 <!--                <action android:name="android.intent.action.MAIN" />-->

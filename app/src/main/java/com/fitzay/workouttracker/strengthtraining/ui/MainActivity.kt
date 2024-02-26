@@ -72,14 +72,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        val sharedPref = applicationContext.getSharedPreferences("storeLan", Context.MODE_PRIVATE)
-//        val lan = sharedPref.getString("key", "en")
-//        setLocale(this,lan!!)
+
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        Log.i("NEW-TAG-2", "main: "+sharedPref.getString("key", "en"))
 
 
         FitnessInterstitialAd.getInstance(this)!!.loadAdMobInterAd()
