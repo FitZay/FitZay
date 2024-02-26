@@ -17,20 +17,33 @@ class PremiumActivity : AppCompatActivity() {
     private var binding: ActivityPremiumBinding? = null
     private var selecteditem = "fitzay_weekly_premium"
 
+    companion object {
+        var activitytype = ""
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityPremiumBinding.inflate(layoutInflater)
         setContentView(binding?.root)
 
         binding?.closeBtn?.setOnClickListener {
-            startActivity(Intent(this@PremiumActivity,MainActivity::class.java))
-            finish()
+            if (activitytype == "splash"){
+                startActivity(Intent(this@PremiumActivity,MainActivity::class.java))
+                finish()
+            }
+            else{
+                finish()
+            }
         }
 
         binding?.cancelBtn?.setOnClickListener {
-            startActivity(Intent(this@PremiumActivity,MainActivity::class.java))
-            finish()
-
+            if (activitytype == "splash"){
+                startActivity(Intent(this@PremiumActivity,MainActivity::class.java))
+                finish()
+            }
+            else{
+                finish()
+            }
         }
 
         if (AppController.weeklyvalue != ""){
@@ -96,6 +109,16 @@ class PremiumActivity : AppCompatActivity() {
 
         binding?.submitBtn?.setOnClickListener {
             InAppPurchaseUtil.openPurchaseDialog(this, selecteditem)
+        }
+    }
+
+    override fun onBackPressed() {
+        if (activitytype == "splash"){
+            startActivity(Intent(this@PremiumActivity,MainActivity::class.java))
+            finish()
+        }
+        else{
+            finish()
         }
     }
 

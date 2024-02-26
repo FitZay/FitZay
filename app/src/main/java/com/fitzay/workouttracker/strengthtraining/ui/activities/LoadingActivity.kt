@@ -58,9 +58,6 @@ class LoadingActivity : AppCompatActivity() {
         binding = ActivityLoadingBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
-
-
         isStarted = true
         InAppPurchaseUtil.isPurchaseSubscribed(this)
         handlerLoading = Handler(Looper.getMainLooper())

@@ -48,6 +48,7 @@ class UnlockPremiumBottomFragment : BottomSheetDialogFragment() {
         }
 
         binding?.premiumBtn?.setOnClickListener {
+            PremiumActivity.activitytype = "main"
             startActivity(Intent(requireActivity() , PremiumActivity :: class.java))
         }
 

@@ -1,6 +1,7 @@
 package com.fitzay.workouttracker.strengthtraining.ui
 
 import android.content.ActivityNotFoundException
+import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
@@ -16,6 +17,7 @@ import com.fitzay.workouttracker.strengthtraining.R
 import com.fitzay.workouttracker.strengthtraining.core.AppController
 import com.fitzay.workouttracker.strengthtraining.core.ads.FitnessInterstitialAd
 import com.fitzay.workouttracker.strengthtraining.core.utils.getFitzayRemoteLong
+import com.fitzay.workouttracker.strengthtraining.core.utils.setLocale
 import com.fitzay.workouttracker.strengthtraining.databinding.ActivityMainBinding
 import com.fitzay.workouttracker.strengthtraining.ui.activities.LanguageAct
 import com.fitzay.workouttracker.strengthtraining.ui.activities.PremiumActivity
@@ -70,8 +72,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        val sharedPref = applicationContext.getSharedPreferences("myPrefs", Context.MODE_PRIVATE)
+        val lan = sharedPref.getString("key", "en")
+        setLocale(this,lan!!)
         super.onCreate(savedInstanceState)
-
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -91,6 +95,7 @@ class MainActivity : AppCompatActivity() {
 
             appBarHome.icPremium.setOnClickListener {
 //                AbsUnfinishBottomFragment.show(supportFragmentManager)
+                PremiumActivity.activitytype = "main"
                 startActivity(Intent(this@MainActivity , PremiumActivity :: class.java))
             }
 
@@ -205,6 +210,7 @@ class MainActivity : AppCompatActivity() {
                     intent.putExtra("invisibleKey","")
                     intent.flags = Intent.FLAG_ACTIVITY_SINGLE_TOP
                     startActivity(intent)
+                    finish()
                     drawerLayout.closeDrawer(GravityCompat.START)
                     drawerOpen = true
                 }

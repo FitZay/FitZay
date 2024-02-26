@@ -118,6 +118,7 @@ class LanguageAct : AppCompatActivity(),LanguageItemClick {
                         Intent.FLAG_ACTIVITY_SINGLE_TOP
                     }
                     startActivity(intent)
+                    finish()
                 }
                 else {
                     val intent = Intent(this@LanguageAct, MainActivity::class.java).apply {
@@ -138,6 +139,7 @@ class LanguageAct : AppCompatActivity(),LanguageItemClick {
 
     }
     }
+
     override fun itemClick(position: Int, model: LanguageM, check: RadioButton) {
 
         sharedPreferencesHelper.setPosition(position)

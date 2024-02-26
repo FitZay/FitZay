@@ -40,11 +40,13 @@ class PersonalizedWorkAct : AppCompatActivity() {
             Handler().postDelayed({
                 if (AppController.inappflow)
                 {
+                    PremiumActivity.activitytype = "splash"
                     Component.preference.isIntro = true
                     val intent = Intent(this@PersonalizedWorkAct, PremiumActivity::class.java).apply {
                         Intent.FLAG_ACTIVITY_SINGLE_TOP
                     }
                     startActivity(intent)
+                    finish()
 
                 }
                 else
@@ -55,15 +57,19 @@ class PersonalizedWorkAct : AppCompatActivity() {
                                 Intent.FLAG_ACTIVITY_SINGLE_TOP
                             }
                         startActivity(intent)
+                        finish()
                     }
                     else
                     {
                         if (AppController.inappflow)
                         {
+                            PremiumActivity.activitytype = "splash"
+                            Component.preference.isIntro = true
                             val intent = Intent(this@PersonalizedWorkAct, PremiumActivity::class.java).apply {
                                 Intent.FLAG_ACTIVITY_SINGLE_TOP
                             }
                             startActivity(intent)
+                            finish()
                         }
 
                         else {
@@ -72,6 +78,7 @@ class PersonalizedWorkAct : AppCompatActivity() {
                                     Intent.FLAG_ACTIVITY_SINGLE_TOP
                                 }
                             startActivity(intent)
+                            finish()
                         }
                     }
                 }
