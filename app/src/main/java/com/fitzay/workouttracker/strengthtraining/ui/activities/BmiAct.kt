@@ -9,6 +9,7 @@ import com.fitzay.workouttracker.strengthtraining.core.AppController
 import com.fitzay.workouttracker.strengthtraining.core.utils.calculateBMI
 import com.fitzay.workouttracker.strengthtraining.databinding.ActivityBmiBinding
 import com.fitzay.workouttracker.strengthtraining.di.Component
+import com.google.android.ads.nativetemplates.TemplateView
 import com.google.android.gms.ads.AdListener
 import com.google.android.gms.ads.AdLoader
 import com.google.android.gms.ads.AdRequest
@@ -19,6 +20,7 @@ class BmiAct : AppCompatActivity() {
     private lateinit var binding:ActivityBmiBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        TemplateView.ctacolor = AppController.fitzayModel?.FitzayNativeBMI?.ctacolor
         binding= ActivityBmiBinding.inflate(layoutInflater)
         setContentView(binding.root)
 

@@ -11,6 +11,7 @@ import com.fitzay.workouttracker.strengthtraining.core.AppController
 import com.fitzay.workouttracker.strengthtraining.databinding.ActivityPartShouldFocusBinding
 import com.fitzay.workouttracker.strengthtraining.databinding.ActivityPushUpsDoBinding
 import com.fitzay.workouttracker.strengthtraining.ui.activities.PersonalizedWorkAct
+import com.google.android.ads.nativetemplates.TemplateView
 import com.google.android.gms.ads.AdListener
 import com.google.android.gms.ads.AdLoader
 import com.google.android.gms.ads.AdRequest
@@ -23,13 +24,12 @@ class PushUpsDoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
+        TemplateView.ctacolor = AppController.fitzayModel?.FitzayNativePushUp?.ctacolor
         binding = ActivityPushUpsDoBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
-
         binding.apply {
-            if (AppController.fitzayModel != null && AppController.fitzayModel?.FitzayNativeName?.showAd == true) {
+            if (AppController.fitzayModel != null && AppController.fitzayModel?.FitzayNativePushUp?.showAd == true) {
                 clAds.visibility = View.VISIBLE
                 loadAdaptiveNative()
             } else {

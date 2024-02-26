@@ -309,7 +309,6 @@ public class TemplateView extends FrameLayout {
             }
 
         } else {
-
             backgroundColor = Color.WHITE;
         }
 

@@ -24,6 +24,7 @@ import com.fitzay.workouttracker.strengthtraining.ui.adapters.RingToneShowAdapte
 import com.fitzay.workouttracker.strengthtraining.ui.callback.LanguageItemClick
 import com.fitzay.workouttracker.strengthtraining.ui.questions.start.GenderActivity
 import com.fitzay.workouttracker.strengthtraining.ui.questions.start.PartShouldFocusActivity
+import com.google.android.ads.nativetemplates.TemplateView
 import com.google.android.gms.ads.AdListener
 import com.google.android.gms.ads.AdLoader
 import com.google.android.gms.ads.AdRequest
@@ -42,6 +43,7 @@ class LanguageAct : AppCompatActivity(),LanguageItemClick {
     var lang="English"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        TemplateView.ctacolor = AppController.fitzayModel?.FitzayNativeLanguage?.ctacolor
         binding = DataBindingUtil.setContentView(this, R.layout.activity_language)
 
         val sharedPref = getSharedPreferences("myPrefs", Context.MODE_PRIVATE)
@@ -62,7 +64,7 @@ class LanguageAct : AppCompatActivity(),LanguageItemClick {
 
         binding.apply {
 
-            if (AppController.fitzayModel != null && AppController.fitzayModel?.FitzayNativeName?.showAd == true) {
+            if (AppController.fitzayModel != null && AppController.fitzayModel?.FitzayNativeLanguage?.showAd == true) {
                 clAds.visibility = View.VISIBLE
                 loadAdaptiveNative()
             } else {
@@ -191,7 +193,5 @@ class LanguageAct : AppCompatActivity(),LanguageItemClick {
                 adLoader.loadAd(AdRequest.Builder().build())
             }
         }
-
     }
-
 }
