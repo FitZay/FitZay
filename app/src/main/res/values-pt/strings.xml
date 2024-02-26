@@ -310,5 +310,8 @@
     <string name="manage_subscriptions">Gerenciar assinaturas</string>
     <string name="personalized_des">Espere enquanto seu personal trainer cria sua rotina de exercícios personalizada</string>
     <string name="bmi">IMC</string>
+    <string name="silver">Prata</string>
+    <string name="gold">Ouro</string>
+    <string name="platinum">Platina</string>
 
 </resources>

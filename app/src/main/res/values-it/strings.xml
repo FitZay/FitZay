@@ -311,5 +311,8 @@
     <string name="manage_subscriptions">Gestisci abbonamenti</string>
     <string name="personalized_des">Attendi mentre il tuo personal trainer sta preparando la tua routine di esercizi su misura</string>
     <string name="bmi">bmi</string>
+    <string name="silver">Argento</string>
+    <string name="gold">Oro</string>
+    <string name="platinum">Platino</string>
 
 </resources>

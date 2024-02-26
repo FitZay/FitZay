@@ -91,9 +91,8 @@ com.fitzay.workouttracker.strengthtraining.app-pngs-89 E:\Rafaqat Mehmood\Fitnes
 com.fitzay.workouttracker.strengthtraining.app-resValues-90 E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\generated\res\resValues\debug
 com.fitzay.workouttracker.strengthtraining.app-packageDebugResources-91 E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\incremental\debug\packageDebugResources\merged.dir
 com.fitzay.workouttracker.strengthtraining.app-packageDebugResources-92 E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\incremental\debug\packageDebugResources\stripped.dir
-com.fitzay.workouttracker.strengthtraining.app-merged-not-compiled-resources-93 E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\merged-not-compiled-resources\debug
-com.fitzay.workouttracker.strengthtraining.app-merged_res-94 E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\merged_res\debug
-com.fitzay.workouttracker.strengthtraining.app-debug-95 E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\debug\res
-com.fitzay.workouttracker.strengthtraining.app-main-96 E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\res
-com.fitzay.workouttracker.strengthtraining.app-packaged_res-97 E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\nativetemplates\build\intermediates\packaged_res\debug
-com.fitzay.workouttracker.strengthtraining.app-packaged_res-98 E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\wheelpicker\build\intermediates\packaged_res\debug
+com.fitzay.workouttracker.strengthtraining.app-merged_res-93 E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\merged_res\debug
+com.fitzay.workouttracker.strengthtraining.app-debug-94 E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\debug\res
+com.fitzay.workouttracker.strengthtraining.app-main-95 E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\res
+com.fitzay.workouttracker.strengthtraining.app-packaged_res-96 E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\nativetemplates\build\intermediates\packaged_res\debug
+com.fitzay.workouttracker.strengthtraining.app-packaged_res-97 E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\wheelpicker\build\intermediates\packaged_res\debug

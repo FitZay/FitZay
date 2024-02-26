@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg_main"
     android:id="@+id/rootLayout"
+    android:layoutDirection="ltr"
     tools:context=".ui.questions.start.AskingHeightActivity">
 
     <com.google.android.material.appbar.MaterialToolbar

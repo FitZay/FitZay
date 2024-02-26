@@ -323,6 +323,11 @@
     <string name="bmi">bmi</string>
 
 
+    <string name="silver">Silver</string>
+    <string name="gold">Gold</string>
+    <string name="platinum">Platinum</string>
+
+
     <string-array name="age">
         <item>10</item>
         <item>11</item>

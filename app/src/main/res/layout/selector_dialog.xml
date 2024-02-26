@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="@dimen/_150sdp"
     android:layout_marginHorizontal="@dimen/_15sdp"
+    android:layoutDirection="ltr"
     app:cardCornerRadius="@dimen/_20sdp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
