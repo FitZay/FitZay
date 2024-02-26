@@ -18,7 +18,9 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.Window
+import android.widget.FrameLayout
 import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.app.ActivityCompat
@@ -28,6 +30,8 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.bitmap.CircleCrop
 import com.bumptech.glide.request.RequestOptions
 import com.fitzay.workouttracker.strengthtraining.R
+import com.fitzay.workouttracker.strengthtraining.core.AppController
+import com.fitzay.workouttracker.strengthtraining.core.ads.BannerAdsProvider
 import com.fitzay.workouttracker.strengthtraining.core.utils.showToast
 import com.fitzay.workouttracker.strengthtraining.core.utils.toCentimeters
 import com.fitzay.workouttracker.strengthtraining.core.utils.toKilograms
@@ -61,11 +65,17 @@ class ProfileAct : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.apply {
+
+            if (AppController.fitzayModel != null && AppController?.fitzayModel?.FitzayBannerProfile?.showAd == true && !LoadingActivity.ispurchased){
+                binding?.linearLayoutAds?.visibility = View.VISIBLE
+                AppController?.fitzayModel?.FitzayBannerProfile?.adID?.let { loadBannerAds(it) }
+            }
+            else {
+                binding?.linearLayoutAds?.visibility = View.GONE
+            }
+
             saveItems.setOnClickListener {
                 when {
-                    binding.tvFullName.text.isNullOrEmpty() -> {
-                        binding.tvFullName.error = "Name Must not be empty"
-                    }
 
                     binding.etGenderInput.text.isNullOrEmpty() -> {
                         binding.etGenderInput.error = "Gender Must not be empty"
@@ -94,6 +104,41 @@ class ProfileAct : AppCompatActivity() {
                         Component.preference.userName = binding.tvFullName.text.toString()
                         Component.preference.userAge = binding.etAgeInput.text.toString().toInt()
                         Component.preference.userGender = binding.etGenderInput.text.toString()
+                        Component.preference.userHeight = binding.etHeightInput.text.toString().toInt()
+                        Component.preference.userWeight = binding.etWeightInput.text.toString().toInt()
+                        Component.preference.userTargetWight = binding.etTargetWeightInput.text.toString().toInt()
+
+                    }
+                }
+            }
+
+            btnNext.setOnClickListener {
+                when {
+
+                    binding.etGenderInput.text.isNullOrEmpty() -> {
+                        binding.etGenderInput.error = "Gender Must not be empty"
+                    }
+
+                    binding.etAgeInput.text.isNullOrEmpty() -> {
+                        binding.etAgeInput.error = "Age Must not be empty"
+                    }
+
+                    binding.etHeightInput.text.isNullOrEmpty() -> {
+                        binding.etHeightInput.error = "Height Must not be empty"
+                    }
+
+                    binding.etWeightInput.text.isNullOrEmpty() -> {
+                        binding.etWeightInput.error = "Weight Must not be empty"
+                    }
+
+                    binding.etTargetWeightInput.text.isNullOrEmpty() -> {
+                        binding.etTargetWeightInput.error = "Target Wight Must not be empty"
+                    }
+
+                    else -> {
+                        Component.preference.userName = binding.tvFullName.text.toString()
+                        Component.preference.userAge = binding.etAgeInput.text.toString().toInt()
+                        Component.preference.userGender = binding.etGenderInput.text.toString()
                         Component.preference.userHeight =
                             binding.etHeightInput.text.toString().toInt()
                         Component.preference.userWeight =
@@ -101,19 +146,34 @@ class ProfileAct : AppCompatActivity() {
                         Component.preference.userTargetWight =
                             binding.etTargetWeightInput.text.toString().toInt()
 
+                        val intent = Intent(this@ProfileAct, BmiAct::class.java).apply {
+                            Intent.FLAG_ACTIVITY_SINGLE_TOP
+                        }
+                        startActivity(intent)
+                        //binding.saveItems.visibility = View.GONE
+
+
                     }
                 }
+
+
             }
 
-            btnNext.setOnClickListener {
-                val intent = Intent(this@ProfileAct, BmiAct::class.java).apply {
-                    Intent.FLAG_ACTIVITY_SINGLE_TOP
-                }
-                startActivity(intent)
+            if (Component.preference.userAge!=0  && Component.preference.userHeight!=0 && Component.preference.userWeight!=0 && Component.preference.userTargetWight!=0 )
+            {
+               etAgeInput.setText(Component.preference.userAge.toString())
+                etHeightInput.setText(Component.preference.userHeight.toString())
+                etWeightInput.setText(Component.preference.userWeight.toString())
+                etTargetWeightInput.setText(Component.preference.userTargetWight.toString())
+
+            }
+
+            back.setOnClickListener {
+                onBackPressed()
             }
         }
 
-        setDefaults()
+       // setDefaults()
 
     }
 
@@ -123,6 +183,14 @@ class ProfileAct : AppCompatActivity() {
 
         binding.apply {
             Log.e(TAG, "setDefaults: " + Component.preference.userHeight)
+
+            ivCamera.setOnClickListener {
+                showBothSelectorDialog()
+            }
+
+            ivProfile.setOnClickListener {
+                showBothSelectorDialog()
+            }
 
             if (Component.preference.userName != "empty") {
                 tvFullName.setText(Component.preference.userName)
@@ -258,7 +326,6 @@ class ProfileAct : AppCompatActivity() {
 
         }
 
-        //disableBtn()
 
 
     }
@@ -547,4 +614,18 @@ class ProfileAct : AppCompatActivity() {
             null
         }
     }
+
+    private fun loadBannerAds(adunit : String) {
+        val frameLayout: FrameLayout = binding.frameBannerContainer
+        val linearLayout: LinearLayout = binding.layoutShowBannerAds
+        val linearLayoutAds: LinearLayout = binding.linearLayoutAds
+        val loading: LinearLayout = binding.layoutloading
+        binding?.skeletonLayout?.startLoading()
+        val wifiBannerAds = BannerAdsProvider(
+            this@ProfileAct,
+            frameLayout, loading, linearLayout
+        )
+        wifiBannerAds.callBothBannerAds(adunit , "simple")
+    }
+
 }

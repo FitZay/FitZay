@@ -1,13 +1,17 @@
 package com.fitzay.workouttracker.strengthtraining.ui.questions.start
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
-import androidx.compose.ui.graphics.Color
+import android.text.TextUtils
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.fitzay.workouttracker.strengthtraining.R
 import com.fitzay.workouttracker.strengthtraining.databinding.ActivityHeightandWeightBinding
-import com.fitzay.workouttracker.strengthtraining.databinding.ActivityPartShouldFocusBinding
-import org.koin.android.ext.android.bind
+import com.fitzay.workouttracker.strengthtraining.di.Component
+import com.fitzay.workouttracker.strengthtraining.ui.activities.PersonalizedWorkAct
+import com.fitzay.workouttracker.strengthtraining.ui.activities.ProfileAct
+import kotlin.math.ceil
+import kotlin.math.floor
 
 class HeightandWeightAct : AppCompatActivity() {
 
@@ -15,64 +19,122 @@ class HeightandWeightAct : AppCompatActivity() {
     private var age = 0
     private var weight = 0
     private var targetweight = 0
+    private var height = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityHeightandWeightBinding.inflate(layoutInflater)
-        setContentView(binding?.root)
+        setContentView(binding.root)
 
-        binding?.ageplusBtn?.setOnClickListener {
-            age++
-            binding?.ageText?.text = age.toString()
-        }
 
-        binding?.ageminusBtn?.setOnClickListener {
-            if (age > 0){
-                age--
-                binding?.ageText?.text = age.toString()
+
+        binding.apply {
+            ivBack.setOnClickListener {
+                onBackPressed()
             }
-        }
 
+            ftBtn.setOnClickListener {
 
-        binding?.weightplusBtn?.setOnClickListener {
-            weight++
-            binding?.weightText?.text = weight.toString()
-        }
-
-        binding?.weightminlusBtn?.setOnClickListener {
-            if (weight > 0){
-                weight--
-                binding?.weightText?.text = weight.toString()
+                val feetAndInches = Pair(
+                    height.toInt(),
+                    height.toDouble()
+                )
             }
-        }
 
+            cmBtn.setOnClickListener {
 
-        binding?.targetweightplusBtn?.setOnClickListener {
-            targetweight++
-            binding?.targetweightText?.text = targetweight.toString()
-        }
-
-        binding?.targetweightminusBtn?.setOnClickListener {
-            if (targetweight > 0){
-                targetweight--
-                binding?.targetweightText?.text = targetweight.toString()
+                centimeterToFeet(height.toString())
             }
+            btnNext.setOnClickListener {
+                Component.preference.userAge=age
+                Component.preference.userWeight=weight
+                Component.preference.userHeight=height
+                Component.preference.userTargetWight=targetweight
+                startActivity(Intent(this@HeightandWeightAct, PersonalizedWorkAct::class.java))
+                finish()
+            }
+
+
+            ageplusBtn.setOnClickListener {
+                age++
+                ageText.text = age.toString()
+            }
+
+            ageminusBtn.setOnClickListener {
+                if (age > 0) {
+                    age--
+                    ageText.text = age.toString()
+                }
+            }
+
+
+            weightplusBtn?.setOnClickListener {
+                weight++
+                binding.weightText?.text = weight.toString()
+            }
+
+            weightminlusBtn.setOnClickListener {
+                if (weight > 0) {
+                    weight--
+                    weightText?.text = weight.toString()
+                }
+            }
+
+
+            targetweightplusBtn?.setOnClickListener {
+                targetweight++
+                targetweightText.text = targetweight.toString()
+            }
+
+            targetweightminusBtn?.setOnClickListener {
+                if (targetweight > 0) {
+                    targetweight--
+                    targetweightText.text = targetweight.toString()
+                }
+            }
+
+
+            heightPlusBtn.setOnClickListener {
+                height++
+                binding.valueText.text = height.toString()
+            }
+
+            heightminusBtn.setOnClickListener {
+                if (height > 0) {
+                    height--
+                    valueText.text = height.toString()
+                }
+            }
+
+
+            cmBtn.setOnClickListener {
+                cmBtn.setBackgroundColor(ContextCompat.getColor(this@HeightandWeightAct, R.color.green))
+                ftBtn.setBackgroundColor(ContextCompat.getColor(this@HeightandWeightAct, R.color.lightgrey))
+                cmText.setTextColor(ContextCompat.getColor(this@HeightandWeightAct, R.color.white))
+                ftText.setTextColor(ContextCompat.getColor(this@HeightandWeightAct, R.color.textcolor))
+            }
+
+
+            binding.ftBtn.setOnClickListener {
+                ftBtn.setBackgroundColor(ContextCompat.getColor(this@HeightandWeightAct, R.color.green))
+                cmBtn.setBackgroundColor(ContextCompat.getColor(this@HeightandWeightAct, R.color.lightgrey))
+                ftText.setTextColor(ContextCompat.getColor(this@HeightandWeightAct, R.color.white))
+                cmText.setTextColor(ContextCompat.getColor(this@HeightandWeightAct, R.color.textcolor))
+            }
+
         }
 
+    }
 
-        binding?.cmBtn?.setOnClickListener {
-            binding?.cmBtn?.setBackgroundColor(ContextCompat.getColor(this  ,R.color.green))
-            binding?.ftBtn?.setBackgroundColor(ContextCompat.getColor(this  ,R.color.lightgrey))
-            binding?.cmText?.setTextColor(ContextCompat.getColor(this  ,R.color.white))
-            binding?.ftText?.setTextColor(ContextCompat.getColor(this  ,R.color.textcolor))
+    fun centimeterToFeet(centemeter: String?): Pair<Int, Int> {
+        var feetPart = 0
+        var inchesPart = 0
+        if (!TextUtils.isEmpty(centemeter)) {
+            val dCentimeter = java.lang.Double.valueOf(centemeter)
+            feetPart = floor(dCentimeter / 2.54 / 12).toInt()
+            println(dCentimeter / 2.54 - feetPart * 12)
+            inchesPart = ceil(dCentimeter / 2.54 - feetPart * 12).toInt()
         }
-
-
-        binding?.ftBtn?.setOnClickListener {
-            binding?.ftBtn?.setBackgroundColor(ContextCompat.getColor(this  ,R.color.green))
-            binding?.cmBtn?.setBackgroundColor(ContextCompat.getColor(this  ,R.color.lightgrey))
-            binding?.ftText?.setTextColor(ContextCompat.getColor(this  ,R.color.white))
-            binding?.cmText?.setTextColor(ContextCompat.getColor(this  ,R.color.textcolor))
-        }
-
+        return Pair(feetPart, inchesPart)
+        //  return String.format("%d %d", feetPart, inchesPart)
     }
 }

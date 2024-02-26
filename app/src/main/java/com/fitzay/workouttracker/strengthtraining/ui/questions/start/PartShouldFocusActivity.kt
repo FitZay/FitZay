@@ -1,5 +1,6 @@
 package com.fitzay.workouttracker.strengthtraining.ui.questions.start
 
+import android.app.ActivityOptions
 import android.content.Intent
 import android.graphics.PorterDuff
 import android.os.Bundle
@@ -26,8 +27,14 @@ class PartShouldFocusActivity : AppCompatActivity() {
         val greytintColor = ContextCompat.getColor(this, R.color.outline_color)
 
         binding?.btnNext?.setOnClickListener {
-            startActivity(Intent(this , PushUpsDoActivity::class.java))
-            finish()
+            val intent = Intent(this@PartShouldFocusActivity, PushUpsDoActivity::class.java).apply {
+                Intent.FLAG_ACTIVITY_SINGLE_TOP
+            }
+            startActivity(intent)
+
+        }
+        binding.ivBack.setOnClickListener {
+            onBackPressed()
         }
 
         binding?.clArms?.setOnClickListener {

@@ -5,14 +5,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
-import co.xtrava.ruler.widget.ScrollingValuePicker;
 import com.fitzay.workouttracker.strengthtraining.R;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.button.MaterialButton;
@@ -62,16 +60,22 @@ public final class ActivityHeightandWeightBinding implements ViewBinding {
   public final ConstraintLayout constraintLayout22;
 
   @NonNull
+  public final ConstraintLayout constraintLayout23;
+
+  @NonNull
   public final ConstraintLayout ftBtn;
 
   @NonNull
   public final TextView ftText;
 
   @NonNull
-  public final ImageView ivBack;
+  public final View heightPlusBtn;
 
   @NonNull
-  public final LinearLayout linearLayout4;
+  public final View heightminusBtn;
+
+  @NonNull
+  public final ImageView ivBack;
 
   @NonNull
   public final MaterialCardView materialCardView15;
@@ -84,9 +88,6 @@ public final class ActivityHeightandWeightBinding implements ViewBinding {
 
   @NonNull
   public final MaterialCardView materialCardageminusBtn;
-
-  @NonNull
-  public final ScrollingValuePicker myScrollingValuePicker;
 
   @NonNull
   public final TextView targetweightText;
@@ -136,12 +137,12 @@ public final class ActivityHeightandWeightBinding implements ViewBinding {
       @NonNull ConstraintLayout cmBtn, @NonNull TextView cmText,
       @NonNull ConstraintLayout constraintLayout17, @NonNull ConstraintLayout constraintLayout18,
       @NonNull ConstraintLayout constraintLayout19, @NonNull ConstraintLayout constraintLayout20,
-      @NonNull ConstraintLayout constraintLayout22, @NonNull ConstraintLayout ftBtn,
-      @NonNull TextView ftText, @NonNull ImageView ivBack, @NonNull LinearLayout linearLayout4,
+      @NonNull ConstraintLayout constraintLayout22, @NonNull ConstraintLayout constraintLayout23,
+      @NonNull ConstraintLayout ftBtn, @NonNull TextView ftText, @NonNull View heightPlusBtn,
+      @NonNull View heightminusBtn, @NonNull ImageView ivBack,
       @NonNull MaterialCardView materialCardView15, @NonNull MaterialCardView materialCardView16,
       @NonNull MaterialCardView materialCardView29,
-      @NonNull MaterialCardView materialCardageminusBtn,
-      @NonNull ScrollingValuePicker myScrollingValuePicker, @NonNull TextView targetweightText,
+      @NonNull MaterialCardView materialCardageminusBtn, @NonNull TextView targetweightText,
       @NonNull View targetweightminusBtn, @NonNull View targetweightplusBtn,
       @NonNull TextView textView29, @NonNull TextView textView33, @NonNull TextView textView35,
       @NonNull TextView textView37, @NonNull TextView textView38, @NonNull MaterialToolbar toolbar,
@@ -160,15 +161,16 @@ public final class ActivityHeightandWeightBinding implements ViewBinding {
     this.constraintLayout19 = constraintLayout19;
     this.constraintLayout20 = constraintLayout20;
     this.constraintLayout22 = constraintLayout22;
+    this.constraintLayout23 = constraintLayout23;
     this.ftBtn = ftBtn;
     this.ftText = ftText;
+    this.heightPlusBtn = heightPlusBtn;
+    this.heightminusBtn = heightminusBtn;
     this.ivBack = ivBack;
-    this.linearLayout4 = linearLayout4;
     this.materialCardView15 = materialCardView15;
     this.materialCardView16 = materialCardView16;
     this.materialCardView29 = materialCardView29;
     this.materialCardageminusBtn = materialCardageminusBtn;
-    this.myScrollingValuePicker = myScrollingValuePicker;
     this.targetweightText = targetweightText;
     this.targetweightminusBtn = targetweightminusBtn;
     this.targetweightplusBtn = targetweightplusBtn;
@@ -284,6 +286,12 @@ public final class ActivityHeightandWeightBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.constraintLayout23;
+      ConstraintLayout constraintLayout23 = ViewBindings.findChildViewById(rootView, id);
+      if (constraintLayout23 == null) {
+        break missingId;
+      }
+
       id = R.id.ftBtn;
       ConstraintLayout ftBtn = ViewBindings.findChildViewById(rootView, id);
       if (ftBtn == null) {
@@ -296,15 +304,21 @@ public final class ActivityHeightandWeightBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.ivBack;
-      ImageView ivBack = ViewBindings.findChildViewById(rootView, id);
-      if (ivBack == null) {
+      id = R.id.heightPlusBtn;
+      View heightPlusBtn = ViewBindings.findChildViewById(rootView, id);
+      if (heightPlusBtn == null) {
         break missingId;
       }
 
-      id = R.id.linearLayout4;
-      LinearLayout linearLayout4 = ViewBindings.findChildViewById(rootView, id);
-      if (linearLayout4 == null) {
+      id = R.id.heightminusBtn;
+      View heightminusBtn = ViewBindings.findChildViewById(rootView, id);
+      if (heightminusBtn == null) {
+        break missingId;
+      }
+
+      id = R.id.ivBack;
+      ImageView ivBack = ViewBindings.findChildViewById(rootView, id);
+      if (ivBack == null) {
         break missingId;
       }
 
@@ -329,12 +343,6 @@ public final class ActivityHeightandWeightBinding implements ViewBinding {
       id = R.id.materialCardageminusBtn;
       MaterialCardView materialCardageminusBtn = ViewBindings.findChildViewById(rootView, id);
       if (materialCardageminusBtn == null) {
-        break missingId;
-      }
-
-      id = R.id.myScrollingValuePicker;
-      ScrollingValuePicker myScrollingValuePicker = ViewBindings.findChildViewById(rootView, id);
-      if (myScrollingValuePicker == null) {
         break missingId;
       }
 
@@ -424,9 +432,9 @@ public final class ActivityHeightandWeightBinding implements ViewBinding {
 
       return new ActivityHeightandWeightBinding((ConstraintLayout) rootView, ageText, ageminusBtn,
           ageplusBtn, btnNext, clBottomNext, cmBtn, cmText, constraintLayout17, constraintLayout18,
-          constraintLayout19, constraintLayout20, constraintLayout22, ftBtn, ftText, ivBack,
-          linearLayout4, materialCardView15, materialCardView16, materialCardView29,
-          materialCardageminusBtn, myScrollingValuePicker, targetweightText, targetweightminusBtn,
+          constraintLayout19, constraintLayout20, constraintLayout22, constraintLayout23, ftBtn,
+          ftText, heightPlusBtn, heightminusBtn, ivBack, materialCardView15, materialCardView16,
+          materialCardView29, materialCardageminusBtn, targetweightText, targetweightminusBtn,
           targetweightplusBtn, textView29, textView33, textView35, textView37, textView38, toolbar,
           tvQuestion, valueText, weightText, weightminlusBtn, weightplusBtn);
     }

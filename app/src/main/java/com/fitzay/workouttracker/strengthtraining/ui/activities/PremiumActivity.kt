@@ -9,6 +9,7 @@ import com.fitzay.workouttracker.strengthtraining.R
 import com.fitzay.workouttracker.strengthtraining.core.AppController
 import com.fitzay.workouttracker.strengthtraining.core.utils.InAppPurchaseUtil
 import com.fitzay.workouttracker.strengthtraining.databinding.ActivityPremiumBinding
+import com.fitzay.workouttracker.strengthtraining.ui.MainActivity
 
 
 class PremiumActivity : AppCompatActivity() {
@@ -22,7 +23,8 @@ class PremiumActivity : AppCompatActivity() {
         setContentView(binding?.root)
 
         binding?.closeBtn?.setOnClickListener {
-            onBackPressed()
+            startActivity(Intent(this@PremiumActivity,MainActivity::class.java))
+            finish()
         }
 
         binding?.cancelBtn?.setOnClickListener {

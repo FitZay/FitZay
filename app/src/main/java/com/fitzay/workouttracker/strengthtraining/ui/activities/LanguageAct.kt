@@ -13,6 +13,7 @@ import android.widget.RadioButton
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.fitzay.workouttracker.strengthtraining.R
+import com.fitzay.workouttracker.strengthtraining.core.AppController
 import com.fitzay.workouttracker.strengthtraining.core.utils.SharedPreferencesHelper
 import com.fitzay.workouttracker.strengthtraining.core.utils.setLocale
 import com.fitzay.workouttracker.strengthtraining.databinding.ActivityLanguageBinding
@@ -23,6 +24,11 @@ import com.fitzay.workouttracker.strengthtraining.ui.adapters.RingToneShowAdapte
 import com.fitzay.workouttracker.strengthtraining.ui.callback.LanguageItemClick
 import com.fitzay.workouttracker.strengthtraining.ui.questions.start.GenderActivity
 import com.fitzay.workouttracker.strengthtraining.ui.questions.start.PartShouldFocusActivity
+import com.google.android.gms.ads.AdListener
+import com.google.android.gms.ads.AdLoader
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.LoadAdError
+import com.google.android.gms.ads.nativead.NativeAdOptions
 import java.util.Locale
 
 class LanguageAct : AppCompatActivity(),LanguageItemClick {
@@ -55,6 +61,15 @@ class LanguageAct : AppCompatActivity(),LanguageItemClick {
 
 
         binding.apply {
+
+            if (AppController.fitzayModel != null && AppController.fitzayModel?.FitzayNativeName?.showAd == true) {
+                clAds.visibility = View.VISIBLE
+                loadAdaptiveNative()
+            } else {
+                clAds.visibility = View.GONE
+            }
+
+
             sharedPreferencesHelper = SharedPreferencesHelper(this@LanguageAct)
             var la=intent.getStringExtra("invisibleKey")
             if (la=="invisible")
@@ -129,6 +144,54 @@ class LanguageAct : AppCompatActivity(),LanguageItemClick {
 
         Log.i("TAG", "itemClick: "+model.languageName)
         lang=model.languageName
+    }
+
+    private fun loadAdaptiveNative() {
+
+        binding.apply {
+            layoutAd.visibility = View.GONE
+
+            val template = if (AppController.fitzayModel?.FitzayNativeLanguage?.ctalocation == "up") {
+                plannerTemplateDown.visibility = View.GONE
+                plannerTemplateUp.visibility = View.VISIBLE
+                plannerTemplateUp
+            } else {
+                plannerTemplateDown.visibility = View.VISIBLE
+                plannerTemplateUp.visibility = View.GONE
+                plannerTemplateDown
+            }
+
+            if (AppController.fitzayModel != null) {
+                val adLoader =
+                    AdLoader.Builder(
+                        this@LanguageAct,
+                        AppController.fitzayModel!!.FitzayNativeLanguage.adID
+                    )
+                        .forNativeAd { NativeAd: com.google.android.gms.ads.nativead.NativeAd ->
+                            template.setNativeAd(NativeAd)
+                            skeletonLayout.visibility = View.GONE
+                            clAds.visibility = View.VISIBLE
+                            layoutAd.visibility = View.VISIBLE
+
+                        }.withAdListener(object : AdListener() {
+                            override fun onAdFailedToLoad(loadAdError: LoadAdError) {
+                                super.onAdFailedToLoad(loadAdError)
+                                clAds.visibility = View.GONE
+                                layoutAd.visibility = View.GONE
+                            }
+                        })
+                        .withNativeAdOptions(
+                            NativeAdOptions.Builder()
+                                .setRequestCustomMuteThisAd(true)
+                                .setAdChoicesPlacement(NativeAdOptions.ADCHOICES_TOP_LEFT)
+                                .build()
+                        )
+                        .build()
+
+                adLoader.loadAd(AdRequest.Builder().build())
+            }
+        }
+
     }
 
 }

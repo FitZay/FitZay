@@ -333,7 +333,7 @@
 
     <TextView
         android:id="@+id/des"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:elevation="@dimen/_1sdp"
         android:paddingStart="@dimen/_5sdp"
@@ -342,6 +342,7 @@
         android:text="Healthy weight for the height:"
         android:textColor="@color/white"
         android:textSize="@dimen/_12ssp"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="@+id/mainV"
         app:layout_constraintEnd_toEndOf="@+id/mainV"
         app:layout_constraintHorizontal_bias="0.618"
@@ -361,8 +362,8 @@
         android:textColor="@color/green"
         android:textSize="@dimen/_10ssp"
         app:layout_constraintBottom_toBottomOf="@+id/mainV"
-        app:layout_constraintEnd_toEndOf="@+id/des"
-        app:layout_constraintStart_toStartOf="@+id/des"
+        app:layout_constraintEnd_toEndOf="@+id/mainV"
+        app:layout_constraintStart_toStartOf="@+id/mainV"
         app:layout_constraintTop_toBottomOf="@+id/des" />
 
 
@@ -370,8 +371,9 @@
         android:id="@+id/clBottomNext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/clAds"
         app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="@dimen/_10sdp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/main"
         app:layout_constraintVertical_bias="1.0">
@@ -409,6 +411,108 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:rippleColor="@color/ready_color" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clAds"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_90sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:background="@drawable/bg_selected_options"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+        <aglibs.loading.skeleton.layout.SkeletonRelativeLayout
+            android:id="@+id/skeletonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_2sdp"
+            app:clipToText="false"
+            app:customDuration="1000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shimmerBlurWidth="20dp"
+            app:shimmerStrokeWidth="100dp"
+            app:skeletonColor="#5A5A5A">
+
+            <ImageView
+                android:id="@+id/img001"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="0dp" />
+
+            <TextView
+                android:id="@+id/text001"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_toEndOf="@+id/img001"
+                android:text="Lorem Ipsum is simply dummy text" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text001"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_toEndOf="@+id/img001"
+                android:text="Lorem Ipsum Text" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/cta"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_28sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:background="@drawable/gnt_rounded_corners_shape"
+                android:lines="1"
+                android:textColor="@color/gnt_white"
+                android:textSize="@dimen/_10sdp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </aglibs.loading.skeleton.layout.SkeletonRelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutAd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.ads.nativetemplates.TemplateView
+                android:id="@+id/plannerTemplateUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:gnt_template_type="@layout/gnt_small_template_view" />
+
+
+            <com.google.android.ads.nativetemplates.TemplateView
+                android:id="@+id/plannerTemplateDown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:gnt_template_type="@layout/gnt_small_template_bottom" />
+
+        </RelativeLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

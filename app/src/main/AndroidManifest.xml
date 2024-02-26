@@ -40,30 +40,35 @@
         android:theme="@style/Theme.FitnessApplication"
         tools:targetApi="31">
         <activity
+            android:name=".ui.activities.VerticalRulerView"
+            android:exported="false" />
+        <activity
             android:name=".ui.activities.BmiAct"
             android:exported="true" />
 
-
-        <activity
-            android:name=".ui.activities.ProfileAct"
-            android:exported="true"></activity>
         <activity
             android:name=".ui.questions.start.HeightandWeightAct"
-            android:exported="true"></activity>
+            android:screenOrientation="portrait"
+            android:exported="true">
+<!--                        <intent-filter>-->
+<!--                            <action android:name="android.intent.action.MAIN" />-->
+<!--                            <category android:name="android.intent.category.LAUNCHER" />-->
+<!--                        </intent-filter>-->
+
+        </activity>
         <activity
             android:name=".ui.questions.start.PushUpsDoActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".ui.questions.start.PartShouldFocusActivity"
+            android:screenOrientation="portrait"
             android:exported="true">
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
 
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
         </activity>
         <activity
             android:name=".ui.activities.PersonalizedWorkAct"
+            android:screenOrientation="portrait"
             android:exported="true">
 
             <!--             <intent-filter>-->
@@ -76,14 +81,32 @@
         <activity
 
             android:name=".ui.activities.ProfileAct"
-            android:exported="true"></activity>
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:exported="true">
+
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+
 
 
         <activity
             android:name=".ui.activities.LanguageAct"
-            android:exported="false"></activity>
+            android:screenOrientation="portrait"
+            android:exported="true" >
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
         <activity
             android:name=".ui.activities.FullbodyWorkoutActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".ui.activities.ExitScreenActivity"
@@ -96,12 +119,15 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".ui.sleeptacker.SleepSummaryActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".ui.sleeptacker.SleepTrackerHomeScreen"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".ui.sleeptacker.PlayAlarmActivity"
+            android:screenOrientation="portrait"
             android:exported="true" />
         <activity
             android:name=".ui.activities.SingleExerciseActivity"
@@ -171,7 +197,7 @@
         <activity
             android:name=".ui.questions.start.GenderActivity"
             android:exported="true"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ui.questions.start.AskingWeightActivity"
             android:exported="false"

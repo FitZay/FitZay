@@ -20,7 +20,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintHorizontal_bias="0.05"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.03"
+            app:layout_constraintVertical_bias="0.01"
             android:textSize="@dimen/_18ssp"/>
 
         <TextView
@@ -38,7 +38,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.05"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.03"
+            app:layout_constraintVertical_bias="0.01"
             android:textSize="@dimen/_23ssp"/>
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -46,7 +46,7 @@
             android:layout_width="@dimen/_100sdp"
             android:layout_height="@dimen/_100sdp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginVertical="@dimen/_10sdp"
+            android:layout_marginVertical="@dimen/_1sdp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/profile">
@@ -100,7 +100,7 @@
             android:layout_height="0dp"
             android:layout_marginStart="@dimen/_6sdp"
             android:layout_marginEnd="@dimen/_6sdp"
-            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_3sdp"
             android:layout_marginBottom="@dimen/_10sdp"
             app:layout_constraintBottom_toTopOf="@+id/linearLayoutAds"
             app:layout_constraintEnd_toEndOf="parent"
@@ -118,7 +118,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:hint="@string/txt_gender"
+                    android:maxLength="6"
                     android:textColorHint="#A9A9AD"
+                    app:cursorColor="@color/white"
                     app:boxStrokeColor="@color/text_field_outline"
                     app:hintTextColor="?attr/colorSurface"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -142,7 +144,10 @@
                     android:layout_width="@dimen/_140sdp"
                     android:layout_height="wrap_content"
                     android:hint="@string/txt_age"
+                    android:maxLength="3"
+
                     android:textColorHint="#A9A9AD"
+                    app:cursorColor="@color/white"
                     app:boxStrokeColor="@color/text_field_outline"
                     app:hintTextColor="?attr/colorSurface"
                     app:layout_constraintBottom_toBottomOf="@+id/tvGender"
@@ -168,6 +173,7 @@
                     android:layout_width="@dimen/_140sdp"
                     android:layout_height="wrap_content"
                     android:hint="@string/txt_height"
+                    app:cursorColor="@color/white"
                     android:textColorHint="#A9A9AD"
                     app:boxStrokeColor="@color/text_field_outline"
                     app:hintTextColor="?attr/colorSurface"
@@ -182,7 +188,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="number"
-                        android:maxLength="19"
+                        android:maxLength="5"
                         android:paddingEnd="@dimen/_80sdp"
                         android:singleLine="true"
                         android:textColor="@color/white"
@@ -239,6 +245,7 @@
                     android:layout_height="wrap_content"
                     android:hint="@string/txt_weight"
                     android:textColorHint="#A9A9AD"
+                    app:cursorColor="@color/white"
                     app:boxStrokeColor="@color/text_field_outline"
                     app:hintTextColor="?attr/colorSurface"
                     app:layout_constraintBottom_toBottomOf="@+id/tvHeight"
@@ -251,7 +258,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:inputType="number"
-                        android:maxLength="19"
+                        android:maxLength="5"
                         android:paddingEnd="@dimen/_80sdp"
                         android:singleLine="true"
                         android:textColor="@color/white"
@@ -307,6 +314,8 @@
                     android:layout_marginTop="@dimen/_10sdp"
                     android:hint="@string/txt_target_weight"
                     android:textColorHint="#A9A9AD"
+                    app:cursorColor="@color/white"
+                    android:maxLength="3"
                     app:boxStrokeColor="@color/text_field_outline"
                     app:hintTextColor="?attr/colorSurface"
                     app:layout_constraintEnd_toEndOf="@+id/tvWeight"
@@ -389,7 +398,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/_10sdp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/linearLayoutAds"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
@@ -430,4 +439,76 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/linearLayoutAds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_selected_options"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/layoutloading"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:gravity="center"
+            android:minHeight="@dimen/_45sdp"
+            android:orientation="vertical">
+
+            <aglibs.loading.skeleton.layout.SkeletonRelativeLayout
+                android:id="@+id/skeletonLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_2sdp"
+                app:clipToText="false"
+                app:customDuration="1000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shimmerBlurWidth="20dp"
+                app:shimmerStrokeWidth="100dp"
+                app:skeletonColor="#5A5A5A">
+
+                <ImageView
+                    android:id="@+id/img001"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginVertical="@dimen/_4sdp"
+                    android:layout_marginStart="@dimen/_15sdp" />
+
+                <ImageView
+                    android:id="@+id/text001"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_toEndOf="@+id/img001" />
+            </aglibs.loading.skeleton.layout.SkeletonRelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutShowBannerAds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/frameBannerContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/values-lt/values-lt.xml",
+            "outputFile": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-91:/values-lt/values-lt.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Technest - Accounts\\.gradle\\caches\\transforms-3\\197429ee016b62132c777806148d8d13\\transformed\\jetified-play-services-base-18.0.1\\res\\values-lt\\values.xml",

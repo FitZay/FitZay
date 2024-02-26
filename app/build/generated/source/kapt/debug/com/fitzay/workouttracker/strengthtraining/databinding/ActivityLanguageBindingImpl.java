@@ -19,6 +19,14 @@ public class ActivityLanguageBindingImpl extends ActivityLanguageBinding  {
         sViewsWithIds.put(R.id.tick, 3);
         sViewsWithIds.put(R.id.langTxt, 4);
         sViewsWithIds.put(R.id.languageRv, 5);
+        sViewsWithIds.put(R.id.clAds, 6);
+        sViewsWithIds.put(R.id.skeletonLayout, 7);
+        sViewsWithIds.put(R.id.img001, 8);
+        sViewsWithIds.put(R.id.text001, 9);
+        sViewsWithIds.put(R.id.cta, 10);
+        sViewsWithIds.put(R.id.layoutAd, 11);
+        sViewsWithIds.put(R.id.plannerTemplateUp, 12);
+        sViewsWithIds.put(R.id.plannerTemplateDown, 13);
     }
     // views
     @NonNull
@@ -29,14 +37,22 @@ public class ActivityLanguageBindingImpl extends ActivityLanguageBinding  {
     // Inverse Binding Event Handlers
 
     public ActivityLanguageBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 6, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 14, sIncludes, sViewsWithIds));
     }
     private ActivityLanguageBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
+            , (androidx.constraintlayout.widget.ConstraintLayout) bindings[6]
+            , (androidx.appcompat.widget.AppCompatButton) bindings[10]
+            , (android.widget.ImageView) bindings[8]
             , (android.widget.ImageView) bindings[2]
             , (android.widget.TextView) bindings[4]
             , (androidx.recyclerview.widget.RecyclerView) bindings[5]
+            , (android.widget.RelativeLayout) bindings[11]
             , (android.view.View) bindings[1]
+            , (com.google.android.ads.nativetemplates.TemplateView) bindings[13]
+            , (com.google.android.ads.nativetemplates.TemplateView) bindings[12]
+            , (aglibs.loading.skeleton.layout.SkeletonRelativeLayout) bindings[7]
+            , (android.widget.TextView) bindings[9]
             , (android.widget.ImageView) bindings[3]
             );
         this.mboundView0 = (androidx.constraintlayout.widget.ConstraintLayout) bindings[0];

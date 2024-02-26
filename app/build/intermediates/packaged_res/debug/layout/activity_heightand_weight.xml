@@ -102,7 +102,7 @@
                         android:id="@+id/ageText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="22"
+                        android:text="0"
                         android:textColor="@color/white"
                         android:textSize="@dimen/_16sdp"
                         android:textStyle="bold"
@@ -218,7 +218,7 @@
                         android:id="@+id/weightText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="22"
+                        android:text="0"
                         android:textColor="@color/white"
                         android:textSize="@dimen/_16sdp"
                         android:textStyle="bold"
@@ -332,7 +332,7 @@
                         android:id="@+id/targetweightText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="22"
+                        android:text="0"
                         android:textColor="@color/white"
                         android:textSize="@dimen/_16sdp"
                         android:textStyle="bold"
@@ -442,45 +442,87 @@
                     android:layout_height="match_parent">
 
 
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/constraintLayout23"
+                        android:layout_width="@dimen/_45sdp"
+                        android:layout_height="0dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/value_text"
+                        app:layout_constraintTop_toTopOf="parent">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_2sdp"
+                            android:elevation="@dimen/_1sdp"
+                            android:text="+"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_18sdp"
+                            app:layout_constraintBottom_toBottomOf="@+id/heightPlusBtn"
+                            app:layout_constraintEnd_toEndOf="@+id/heightPlusBtn"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toStartOf="@+id/heightPlusBtn"
+                            app:layout_constraintTop_toTopOf="@+id/heightPlusBtn" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="-"
+                            android:layout_marginBottom="@dimen/_2sdp"
+                            android:textAlignment="center"
+                            android:elevation="@dimen/_1sdp"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_18sdp"
+                            app:layout_constraintBottom_toBottomOf="@+id/heightminusBtn"
+                            app:layout_constraintEnd_toEndOf="@+id/heightminusBtn"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toStartOf="@+id/heightminusBtn"
+                            app:layout_constraintTop_toTopOf="@+id/heightminusBtn" />
+
+
+                        <View
+                            android:id="@+id/heightPlusBtn"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:background="@drawable/roundview"
+                            app:layout_constraintBottom_toTopOf="@+id/heightminusBtn"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                        <View
+                            android:id="@+id/heightminusBtn"
+                            android:layout_width="@dimen/_30sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:background="@drawable/roundview"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/heightPlusBtn" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
                     <TextView
                         android:id="@+id/value_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/white"
                         android:textSize="32sp"
-                        android:layout_marginEnd="@dimen/_45sdp"
-                        app:layout_constraintBottom_toBottomOf="@+id/linearLayout4"
-                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/constraintLayout23"
+                        app:layout_constraintHorizontal_bias="0.5"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         tools:text="1" />
-
-                    <LinearLayout
-                        android:id="@+id/linearLayout4"
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:orientation="vertical"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintTop_toTopOf="@+id/materialCardView29"
-                        tools:context=".MainActivity">
-
-
-                        <co.xtrava.ruler.widget.ScrollingValuePicker
-                            android:id="@+id/myScrollingValuePicker"
-                            android:layout_width="wrap_content"
-                            android:layout_height="155dp"
-                            android:layout_marginTop="@dimen/_55sdp"
-                            android:rotation="90"
-                            app:rulerAccentColor="#50c4ae"
-                            app:rulerBackgroundColor="@color/transparent"
-                            app:rulerDigits="twelve"
-                            app:rulerMaxValue="1000"
-                            app:rulerPlaceValue="ones"
-                            app:rulerPointerBackgroundColor="@color/green"
-                            app:rulerPointerOutlineColor="@color/transparent"
-                            app:rulerPrimaryColor="#eaebec" />
-
-                    </LinearLayout>
 
 
                     <TextView
