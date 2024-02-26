@@ -286,5 +286,11 @@
     <string name="know">कैसे करें यह पता नहीं</string>
     <string name="daily_step_goal">दैनिक कदम लक्ष्य</string>
     <string name="select_days">दिनों का चयन करें</string>
+    <string name="draw_allow">अलार्म दिखाने के लिए अन्य ऐप्स पर ड्रा की अनुमति की आवश्यकता है</string>
+    <string name="allow">अनुमति</string>
+    <string name="drinking_cap">पीने की क्षमता</string>
+    <string name="no_alarm">कोई अलार्म नहीं</string>
+    <string name="tomorrow">कल सुबह</string>
+    <string name="no_data">कोई डेटा नहीं</string>
 
 </resources>

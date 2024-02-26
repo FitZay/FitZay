@@ -5,6 +5,7 @@
     <string name="abs_core">Abdômen e Core</string>
     <string name="advance">Avançado</string>
     <string name="alarm">Alarme</string>
+    <string name="allow">Permitir</string>
     <string name="allow_req_permissions">Permitir todas as permissões necessárias</string>
     <string name="allow_required_permissions">Permissão necessária para salvar citações na galeria.</string>
     <string name="am">AM</string>
@@ -49,6 +50,8 @@
     <string name="do_you_feel">Como você se sente</string>
     <string name="do_you_relate_following_statement">Você se identifica com a seguinte afirmação?</string>
     <string name="done">Feito</string>
+    <string name="draw_allow">A permissão para Desenhar sobre outros apps é necessária para mostrar o alarme</string>
+    <string name="drinking_cap">Capacidade de beber</string>
     <string name="eat_late_night">Como tarde da noite</string>
     <string name="enjoy_fast_food">Gosto de fast food</string>
     <string name="enter_here">Digite aqui...</string>
@@ -135,6 +138,8 @@
     <string name="never">Nunca</string>
     <string name="next">Próximo</string>
     <string name="no">Não</string>
+    <string name="no_alarm">Sem alarme</string>
+    <string name="no_data">Sem dados</string>
     <string name="no_have_any">Não, não tenho</string>
     <string name="not_much_all">Não muito</string>
     <string name="not_sleep_enough">Não durmo o suficiente</string>
@@ -190,6 +195,7 @@
     <string name="time">Tempo</string>
     <string name="time_in_bed">Tempo na cama</string>
     <string name="today">Hoje</string>
+    <string name="tomorrow">Amanhã de manhã</string>
     <string name="tonight">Hoje à noite</string>
     <string name="too_easy">Muito fácil</string>
     <string name="too_hard">Muito difícil</string>

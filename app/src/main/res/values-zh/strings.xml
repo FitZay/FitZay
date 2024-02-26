@@ -325,5 +325,11 @@
     <string name="know">不知道该怎么做</string>
     <string name="daily_step_goal">每日步数目标</string>
     <string name="select_days">选择日期</string>
+    <string name="draw_allow">需要绘制在其他应用程序上方的权限来显示闹钟</string>
+    <string name="allow">允许</string>
+    <string name="drinking_cap">饮水量</string>
+    <string name="no_alarm">アラームなし</string>
+    <string name="tomorrow">明日の朝</string>
+    <string name="no_data">没有数据</string>
 
 </resources>

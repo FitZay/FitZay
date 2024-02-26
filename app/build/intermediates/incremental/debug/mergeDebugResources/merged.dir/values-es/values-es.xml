@@ -36,6 +36,7 @@
     <string name="abs_core">Abdominales y Núcleo</string>
     <string name="advance">Avanzado</string>
     <string name="alarm">Alarma</string>
+    <string name="allow">Permitir</string>
     <string name="allow_req_permissions">Permitir todos los permisos requeridos</string>
     <string name="allow_required_permissions">Permiso necesario para guardar citas en la galería.</string>
     <string name="am">AM</string>
@@ -119,6 +120,8 @@
     <string name="do_you_feel">¿Cómo te sientes?</string>
     <string name="do_you_relate_following_statement">¿Te identificas con la siguiente afirmación?</string>
     <string name="done">Hecho</string>
+    <string name="draw_allow">Se requiere permiso de Dibujar sobre otras aplicaciones para mostrar la alarma</string>
+    <string name="drinking_cap">Capacidad de bebida</string>
     <string name="eat_late_night">Como tarde por la noche</string>
     <string name="enjoy_fast_food">Disfruto de la comida rápida</string>
     <string name="enter_here">Ingresa aquí...</string>
@@ -274,6 +277,8 @@
     <string name="never">Nunca</string>
     <string name="next">Siguiente</string>
     <string name="no">No</string>
+    <string name="no_alarm">Sin alarma</string>
+    <string name="no_data">Sin datos</string>
     <string name="no_have_any">No, no tengo ninguna</string>
     <string name="not_much_all">No mucho en absoluto</string>
     <string msgid="6610465462668679431" name="not_selected">"No seleccionado"</string>
@@ -358,6 +363,7 @@
     <string name="time">Tiempo</string>
     <string name="time_in_bed">Tiempo en la Cama</string>
     <string name="today">Hoy</string>
+    <string name="tomorrow">Mañana por la mañana</string>
     <string name="tonight">Esta noche</string>
     <string name="too_easy">Demasiado Fácil</string>
     <string name="too_hard">Demasiado Difícil</string>

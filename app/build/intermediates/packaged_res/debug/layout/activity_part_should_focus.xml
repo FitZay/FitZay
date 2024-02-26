@@ -127,7 +127,7 @@
                     android:fontFamily="@font/poppins_medium"
                     android:gravity="center_vertical"
                     android:text="@string/chest"
-                    android:textColor="@color/white"
+                    android:textColor="@color/outline_color"
                     android:textSize="@dimen/_13sdp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/ivChest"
@@ -144,7 +144,8 @@
                     android:src="@drawable/ic_tick"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="@color/outline_color" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -174,7 +175,7 @@
                     android:fontFamily="@font/poppins_medium"
                     android:gravity="center_vertical"
                     android:text="@string/belly"
-                    android:textColor="@color/white"
+                    android:textColor="@color/outline_color"
                     android:textSize="@dimen/_13sdp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/ivBelly"
@@ -191,7 +192,8 @@
                     android:src="@drawable/ic_tick"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="@color/outline_color" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -223,7 +225,7 @@
                     android:fontFamily="@font/poppins_medium"
                     android:gravity="center_vertical"
                     android:text="Leg"
-                    android:textColor="@color/white"
+                    android:textColor="@color/outline_color"
                     android:textSize="@dimen/_13sdp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/ivLeg"
@@ -240,7 +242,8 @@
                     android:src="@drawable/ic_tick"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="@color/outline_color" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

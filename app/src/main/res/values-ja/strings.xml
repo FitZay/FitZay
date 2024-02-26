@@ -328,7 +328,13 @@
     <string name="daily_step_goal">デイリーステップゴール</string>
     <string name="select_days">日を選択</string>
 
+    <string name="draw_allow">アラームを表示するために他のアプリケーションの上に描画する権限が必要です</string>
+    <string name="allow">許可</string>
+    <string name="drinking_cap">飲酒能力</string>
+    <string name="no_alarm">アラームなし</string>
+    <string name="tomorrow">明日の朝</string>
 
+    <string name="no_data">データなし</string>
 
 
 

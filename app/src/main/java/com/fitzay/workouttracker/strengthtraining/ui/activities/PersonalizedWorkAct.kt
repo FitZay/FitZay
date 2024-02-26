@@ -12,6 +12,7 @@ import com.fitzay.workouttracker.strengthtraining.databinding.ActivityPersonaliz
 import com.fitzay.workouttracker.strengthtraining.di.Component
 import com.fitzay.workouttracker.strengthtraining.ui.MainActivity
 import com.fitzay.workouttracker.strengthtraining.ui.questions.start.AskingHeightActivity
+import com.google.android.ads.nativetemplates.TemplateView
 import com.google.android.gms.ads.AdListener
 import com.google.android.gms.ads.AdLoader
 import com.google.android.gms.ads.AdRequest
@@ -23,6 +24,7 @@ class PersonalizedWorkAct : AppCompatActivity() {
     private lateinit var binding:ActivityPersonalizedWorkBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        TemplateView.ctacolor = AppController.fitzayModel?.FitzayNativePersonalized?.ctacolor
         binding = ActivityPersonalizedWorkBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -38,10 +40,12 @@ class PersonalizedWorkAct : AppCompatActivity() {
             Handler().postDelayed({
                 if (AppController.inappflow)
                 {
+                    Component.preference.isIntro = true
                     val intent = Intent(this@PersonalizedWorkAct, PremiumActivity::class.java).apply {
                         Intent.FLAG_ACTIVITY_SINGLE_TOP
                     }
                     startActivity(intent)
+
                 }
                 else
                 {
@@ -71,6 +75,7 @@ class PersonalizedWorkAct : AppCompatActivity() {
                         }
                     }
                 }
+                Component.preference.isIntro = true
             },2000)
 
         }

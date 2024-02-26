@@ -287,7 +287,7 @@ class WeeklyFragment : Fragment(), OnChartValueSelectedListener {
                         val (hours, minutes) = requireActivity().convertDecimalToHoursMinutes(avg)
 
                         if (avg.equals(0f)) {
-                            txtMiles.text = "No Data"
+                            txtMiles.text = getString(R.string.no_data)
 
                         } else {
                             txtMiles.text = "$hours hr $minutes min"

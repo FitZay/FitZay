@@ -28,7 +28,8 @@ class PremiumActivity : AppCompatActivity() {
         }
 
         binding?.cancelBtn?.setOnClickListener {
-            onBackPressed()
+            startActivity(Intent(this@PremiumActivity,MainActivity::class.java))
+            finish()
 
         }
 

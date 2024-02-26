@@ -36,6 +36,7 @@
     <string name="abs_core">Addominali e Core</string>
     <string name="advance">Avanzato</string>
     <string name="alarm">Sveglia</string>
+    <string name="allow">Consenti</string>
     <string name="allow_req_permissions">Consenti tutti i permessi richiesti</string>
     <string name="allow_required_permissions">Permesso richiesto per salvare le citazioni nella galleria.</string>
     <string name="am">AM</string>
@@ -119,6 +120,8 @@
     <string name="do_you_feel">Come ti senti</string>
     <string name="do_you_relate_following_statement">Ti rispecchi nella seguente affermazione?</string>
     <string name="done">Fatto</string>
+    <string name="draw_allow">È richiesto il permesso di Disegnare sopra le altre app per mostrare l\'allarme</string>
+    <string name="drinking_cap">Capacità di bere</string>
     <string name="eat_late_night">Mangio fino a tarda notte</string>
     <string name="enjoy_fast_food">Mi piace il fast food</string>
     <string name="enter_here">Inserisci qui...</string>
@@ -273,6 +276,8 @@
     <string name="need_permission">Permesso Richiesto</string>
     <string name="next">Prossimo</string>
     <string name="no">No</string>
+    <string name="no_alarm">Nessuna sveglia</string>
+    <string name="no_data">Nessun dato</string>
     <string name="no_have_any">No, non ne ho</string>
     <string name="not_much_all">Non molto per niente</string>
     <string msgid="6610465462668679431" name="not_selected">"Opzione non selezionata"</string>
@@ -357,6 +362,7 @@
     <string name="time">Tempo</string>
     <string name="time_in_bed">Tempo a Letto</string>
     <string name="today">Oggi</string>
+    <string name="tomorrow">Domani mattina</string>
     <string name="tonight">Stasera</string>
     <string name="too_easy">Troppo facile</string>
     <string name="too_hard">Troppo difficile</string>

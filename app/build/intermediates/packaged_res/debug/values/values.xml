@@ -139,6 +139,7 @@
     <string name="abs_core">Abs &amp; Core</string>
     <string name="advance">Advance</string>
     <string name="alarm">Alarm</string>
+    <string name="allow">Allow</string>
     <string name="allow_req_permissions">Allow all required permissions</string>
     <string name="allow_required_permissions">Permission required to save quotes in gallery.</string>
     <string name="am">AM</string>
@@ -184,6 +185,8 @@
     <string name="do_you_feel">How do you feel</string>
     <string name="do_you_relate_following_statement">Do you relate to the following statement?</string>
     <string name="done">Done</string>
+    <string name="draw_allow">Draw Over Other apps permission is required to show alarm</string>
+    <string name="drinking_cap">Drinking Capacity</string>
     <string name="eat_late_night">I eat late at night</string>
     <string name="enjoy_fast_food">I enjoy fast food</string>
     <string name="enter_here">Enter here...</string>
@@ -281,6 +284,8 @@
     <string name="never">Never</string>
     <string name="next">Next</string>
     <string name="no">No</string>
+    <string name="no_alarm">No Alarm</string>
+    <string name="no_data">No Data</string>
     <string name="no_have_any">No, I don\'t have any</string>
     <string name="not_much_all">Not much at all</string>
     <string name="not_sleep_enough">I don\'t sleep enough</string>
@@ -337,6 +342,7 @@
     <string name="time">Time</string>
     <string name="time_in_bed">Time in Bed</string>
     <string name="today">Today</string>
+    <string name="tomorrow">Tomorrow Morning</string>
     <string name="tonight">Tonight</string>
     <string name="too_easy">Too hard</string>
     <string name="too_hard">Too hard</string>
