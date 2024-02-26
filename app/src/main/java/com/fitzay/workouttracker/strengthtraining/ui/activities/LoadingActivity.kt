@@ -195,7 +195,6 @@ class LoadingActivity : AppCompatActivity() {
 
     private fun loadNext() {
         if (isStarted) {
-
             if (!Component.preference.isIntro) {
                 if (AppController.inappScenario == "1"){
                     val intent = Intent(this@LoadingActivity, GenderActivity::class.java)
@@ -235,6 +234,7 @@ class LoadingActivity : AppCompatActivity() {
                 startActivity(intent)
                 finish()
             }
+
         }
         else {
             val intent = Intent(this@LoadingActivity, MainActivity::class.java)
@@ -242,6 +242,7 @@ class LoadingActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+
     }
 
     override fun onResume() {
