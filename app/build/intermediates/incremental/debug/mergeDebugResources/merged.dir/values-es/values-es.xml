@@ -36,6 +36,7 @@
     <string name="abs_core">Abdominales y Núcleo</string>
     <string name="advance">Avanzado</string>
     <string name="alarm">Alarma</string>
+    <string name="allow">Permitir</string>
     <string name="allow_req_permissions">Permitir todos los permisos requeridos</string>
     <string name="allow_required_permissions">Permiso necesario para guardar citas en la galería.</string>
     <string name="am">AM</string>
@@ -119,6 +120,8 @@
     <string name="do_you_feel">¿Cómo te sientes?</string>
     <string name="do_you_relate_following_statement">¿Te identificas con la siguiente afirmación?</string>
     <string name="done">Hecho</string>
+    <string name="draw_allow">Se requiere permiso de Dibujar sobre otras aplicaciones para mostrar la alarma</string>
+    <string name="drinking_cap">Capacidad de bebida</string>
     <string name="eat_late_night">Como tarde por la noche</string>
     <string name="enjoy_fast_food">Disfruto de la comida rápida</string>
     <string name="enter_here">Ingresa aquí...</string>

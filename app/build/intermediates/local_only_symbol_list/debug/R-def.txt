@@ -949,6 +949,7 @@ string abs_beginner
 string abs_core
 string advance
 string alarm
+string allow
 string allow_req_permissions
 string allow_required_permissions
 string am
@@ -994,6 +995,8 @@ string do_suffer_from_knee_pain
 string do_you_feel
 string do_you_relate_following_statement
 string done
+string draw_allow
+string drinking_cap
 string eat_late_night
 string enjoy_fast_food
 string enter_here

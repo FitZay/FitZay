@@ -339,5 +339,8 @@
     <string name="know">Je ne sais pas comment faire</string>
     <string name="daily_step_goal">Objectif quotidien de pas</string>
     <string name="select_days">Sélectionner des jours</string>
+    <string name="draw_allow">L\'autorisation de dessiner sur d\'autres applications est nécessaire pour afficher l\'alarme</string>
+    <string name="allow">Autoriser</string>
+    <string name="drinking_cap">Capacité de boisson</string>
 
 </resources>

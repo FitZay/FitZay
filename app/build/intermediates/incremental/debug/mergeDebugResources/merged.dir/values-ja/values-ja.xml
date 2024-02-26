@@ -36,6 +36,7 @@
     <string name="abs_core">腹筋＆コア</string>
     <string name="advance">上級者</string>
     <string name="alarm">アラーム</string>
+    <string name="allow">許可</string>
     <string name="allow_req_permissions">すべての必要な権限を許可</string>
     <string name="allow_required_permissions">引用をギャラリーに保存するために権限が必要です。</string>
     <string name="am">午前</string>
@@ -119,6 +120,8 @@
     <string name="do_you_feel">気分はどうですか</string>
     <string name="do_you_relate_following_statement">以下の文に共感しますか？</string>
     <string name="done">完了</string>
+    <string name="draw_allow">アラームを表示するために他のアプリケーションの上に描画する権限が必要です</string>
+    <string name="drinking_cap">飲酒能力</string>
     <string name="eat_late_night">夜遅くに食事をします</string>
     <string name="enjoy_fast_food">ファーストフードを楽しんでいます</string>
     <string name="enter_here">ここに入力してください...</string>

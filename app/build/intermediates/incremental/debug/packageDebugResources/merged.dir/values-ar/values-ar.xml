@@ -5,6 +5,7 @@
     <string name="abs_core">البطن والأساس</string>
     <string name="advance">متقدم</string>
     <string name="alarm">المنبه</string>
+    <string name="allow">السماح</string>
     <string name="allow_req_permissions">السماح بجميع الأذونات المطلوبة</string>
     <string name="allow_required_permissions">الإذن المطلوب لحفظ الاقتباسات في المعرض.</string>
     <string name="am">صباحًا</string>
@@ -49,6 +50,8 @@
     <string name="do_you_feel">كيف تشعر</string>
     <string name="do_you_relate_following_statement">هل تتعلق بالبيان التالي؟</string>
     <string name="done">تم</string>
+    <string name="draw_allow">مطلوب إذن الرسم فوق التطبيقات الأخرى لعرض التنبيه</string>
+    <string name="drinking_cap">سعة الشرب</string>
     <string name="eat_late_night">أتناول الطعام في وقت متأخر من الليل</string>
     <string name="enjoy_fast_food">أستمتع بالطعام السريع</string>
     <string name="enter_here">أدخل هنا...</string>

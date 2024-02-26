@@ -38,6 +38,7 @@
     <string name="abs_core">Пресс и кора</string>
     <string name="advance">Продвинутый</string>
     <string name="alarm">Будильник</string>
+    <string name="allow">Разрешить</string>
     <string name="allow_req_permissions">Разрешить все необходимые разрешения</string>
     <string name="allow_required_permissions">Требуется разрешение для сохранения цитат в галерее.</string>
     <string name="am">AM</string>
@@ -121,6 +122,8 @@
     <string name="do_you_feel">Как вы себя чувствуете?</string>
     <string name="do_you_relate_following_statement">Относитесь ли вы к следующему утверждению?</string>
     <string name="done">Готово</string>
+    <string name="draw_allow">Требуется разрешение на рисование поверх других приложений для отображения будильника</string>
+    <string name="drinking_cap">Питьевая способность</string>
     <string name="eat_late_night">Я ем поздно ночью</string>
     <string name="enjoy_fast_food">Я люблю быструю еду</string>
     <string name="enter_here">Введите здесь...</string>

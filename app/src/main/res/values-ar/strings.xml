@@ -338,5 +338,8 @@
     <string name="know">لا أعرف كيف أفعل ذلك</string>
     <string name="daily_step_goal">هدف الخطوات اليومي</string>
     <string name="select_days">اختر الأيام</string>
+    <string name="draw_allow">مطلوب إذن الرسم فوق التطبيقات الأخرى لعرض التنبيه</string>
+    <string name="allow">السماح</string>
+    <string name="drinking_cap">سعة الشرب</string>
 
 </resources>

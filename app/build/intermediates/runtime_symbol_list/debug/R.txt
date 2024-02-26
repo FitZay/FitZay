@@ -5822,6 +5822,7 @@ int string abs_beginner 0x7f13001c
 int string abs_core 0x7f13001d
 int string advance 0x7f13001e
 int string alarm 0x7f13001f
+int string allow 0x7f130204
 int string allow_req_permissions 0x7f130020
 int string allow_required_permissions 0x7f130021
 int string am 0x7f130022
@@ -5910,6 +5911,8 @@ int string do_suffer_from_knee_pain 0x7f130074
 int string do_you_feel 0x7f130075
 int string do_you_relate_following_statement 0x7f130076
 int string done 0x7f130077
+int string draw_allow 0x7f130205
+int string drinking_cap 0x7f130206
 int string eat_late_night 0x7f130078
 int string enjoy_fast_food 0x7f130079
 int string enter_here 0x7f13007a

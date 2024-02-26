@@ -313,5 +313,8 @@
     <string name="know">Не знаю, как это сделать</string>
     <string name="daily_step_goal">Цель ежедневного количества шагов</string>
     <string name="select_days">Выберите дни</string>
+    <string name="draw_allow">Требуется разрешение на рисование поверх других приложений для отображения будильника</string>
+    <string name="allow">Разрешить</string>
+    <string name="drinking_cap">Питьевая способность</string>
 
 </resources>

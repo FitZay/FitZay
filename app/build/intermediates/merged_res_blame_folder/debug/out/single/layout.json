@@ -40,6 +40,10 @@
         "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\layout\\activity_single_exercise.xml"
     },
     {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/activity_heightand_weight.xml",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/activity_heightand_weight.xml"
+    },
+    {
         "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:\\layout\\activity_target_weight.xml",
         "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\layout\\activity_target_weight.xml"
     },
@@ -156,10 +160,6 @@
         "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\layout\\quotes_category_layout.xml"
     },
     {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/activity_sleep_tracker.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/activity_sleep_tracker.xml"
-    },
-    {
         "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:\\layout\\app_bar_layout.xml",
         "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\layout\\app_bar_layout.xml"
     },
@@ -234,6 +234,10 @@
     {
         "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:\\layout\\activity_profile.xml",
         "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\layout\\activity_profile.xml"
+    },
+    {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/dialog_water_capacity.xml",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/dialog_water_capacity.xml"
     },
     {
         "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:\\layout\\activity_fit_you.xml",

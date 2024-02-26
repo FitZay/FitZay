@@ -5,6 +5,7 @@
     <string name="abs_core">腹肌与核心</string>
     <string name="advance">高级</string>
     <string name="alarm">闹钟</string>
+    <string name="allow">允许</string>
     <string name="allow_req_permissions">允许所有必需权限</string>
     <string name="allow_required_permissions">需要权限以将引言保存到相册中。</string>
     <string name="am">上午</string>
@@ -49,6 +50,8 @@
     <string name="do_you_feel">你感觉如何</string>
     <string name="do_you_relate_following_statement">您是否认同以下说法？</string>
     <string name="done">完成</string>
+    <string name="draw_allow">需要绘制在其他应用程序上方的权限来显示闹钟</string>
+    <string name="drinking_cap">饮水量</string>
     <string name="eat_late_night">我晚上吃夜宵</string>
     <string name="enjoy_fast_food">我喜欢快餐</string>
     <string name="enter_here">在这里输入...</string>

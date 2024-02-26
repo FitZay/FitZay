@@ -5,6 +5,7 @@
     <string name="abs_core">Addominali e Core</string>
     <string name="advance">Avanzato</string>
     <string name="alarm">Sveglia</string>
+    <string name="allow">Consenti</string>
     <string name="allow_req_permissions">Consenti tutti i permessi richiesti</string>
     <string name="allow_required_permissions">Permesso richiesto per salvare le citazioni nella galleria.</string>
     <string name="am">AM</string>
@@ -49,6 +50,8 @@
     <string name="do_you_feel">Come ti senti</string>
     <string name="do_you_relate_following_statement">Ti rispecchi nella seguente affermazione?</string>
     <string name="done">Fatto</string>
+    <string name="draw_allow">È richiesto il permesso di Disegnare sopra le altre app per mostrare l\'allarme</string>
+    <string name="drinking_cap">Capacità di bere</string>
     <string name="eat_late_night">Mangio fino a tarda notte</string>
     <string name="enjoy_fast_food">Mi piace il fast food</string>
     <string name="enter_here">Inserisci qui...</string>

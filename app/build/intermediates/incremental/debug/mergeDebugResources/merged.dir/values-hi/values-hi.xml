@@ -36,6 +36,7 @@
     <string name="abs_core">पेट और कोर</string>
     <string name="advance">उन्नत</string>
     <string name="alarm">अलार्म</string>
+    <string name="allow">अनुमति</string>
     <string name="allow_req_permissions">सभी आवश्यक अनुमतियाँ दें</string>
     <string name="allow_required_permissions">गैलरी में कोट्स को सहेजने के लिए अनुमति आवश्यक है।</string>
     <string name="am">पूर्वाह्न</string>
@@ -119,6 +120,8 @@
     <string name="do_you_feel">आपको कैसा लग रहा है</string>
     <string name="do_you_relate_following_statement">क्या आप निम्नलिखित कथन से संबंधित महसूस करते हैं?</string>
     <string name="done">किया</string>
+    <string name="draw_allow">अलार्म दिखाने के लिए अन्य ऐप्स पर ड्रा की अनुमति की आवश्यकता है</string>
+    <string name="drinking_cap">पीने की क्षमता</string>
     <string name="eat_late_night">मैं रात में देर से खाता हूँ</string>
     <string name="enjoy_fast_food">मुझे फास्ट फ़ूड का आनंद है</string>
     <string name="enter_here">यहां दर्ज करें...</string>

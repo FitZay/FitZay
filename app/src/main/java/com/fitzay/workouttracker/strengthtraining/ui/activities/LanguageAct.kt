@@ -62,7 +62,7 @@ class LanguageAct : AppCompatActivity(),LanguageItemClick {
 
         binding.apply {
 
-            if (AppController.fitzayModel != null && AppController.fitzayModel?.FitzayNativeName?.showAd == true) {
+            if (AppController.fitzayModel != null && AppController.fitzayModel?.FitzayNativeLanguage?.showAd == true) {
                 clAds.visibility = View.VISIBLE
                 loadAdaptiveNative()
             } else {

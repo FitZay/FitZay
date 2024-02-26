@@ -329,5 +329,8 @@
     <string name="know">Não sei como fazer isso</string>
     <string name="daily_step_goal">Meta diária de passos</string>
     <string name="select_days">Selecionar dias</string>
+    <string name="draw_allow">A permissão para Desenhar sobre outros apps é necessária para mostrar o alarme</string>
+    <string name="allow">Permitir</string>
+    <string name="drinking_cap">Capacidade de beber</string>
 
 </resources>

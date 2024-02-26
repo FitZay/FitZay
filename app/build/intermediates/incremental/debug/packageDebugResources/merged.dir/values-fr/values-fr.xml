@@ -5,6 +5,7 @@
     <string name="abs_core">Abdominaux et Core</string>
     <string name="advance">Avancé</string>
     <string name="alarm">Réveil</string>
+    <string name="allow">Autoriser</string>
     <string name="allow_req_permissions">Autoriser toutes les permissions requises</string>
     <string name="allow_required_permissions">Permission requise pour enregistrer les citations dans la galerie.</string>
     <string name="am">AM</string>
@@ -49,6 +50,8 @@
     <string name="do_you_feel">Comment vous sentez-vous ?</string>
     <string name="do_you_relate_following_statement">Vous identifiez-vous à l\'affirmation suivante ?</string>
     <string name="done">Terminé</string>
+    <string name="draw_allow">L\'autorisation de dessiner sur d\'autres applications est nécessaire pour afficher l\'alarme</string>
+    <string name="drinking_cap">Capacité de boisson</string>
     <string name="eat_late_night">Je mange tard le soir</string>
     <string name="enjoy_fast_food">J\'apprécie la malbouffe</string>
     <string name="enter_here">Entrez ici...</string>

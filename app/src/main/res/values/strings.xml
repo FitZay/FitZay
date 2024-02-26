@@ -344,6 +344,10 @@
 
     <string name="daily_step_goal">Daily Step Goal</string>
     <string name="select_days">Select Days</string>
+    <string name="draw_allow">Draw Over Other apps permission is required to show alarm</string>
+    <string name="allow">Allow</string>
+
+    <string name="drinking_cap">Drinking Capacity</string>
 
 
     <string-array name="age">

@@ -176,11 +176,11 @@ class SleepTrackerActivity : AppCompatActivity(), ShowRingToneItemClick {
                         else
                         {
                             AlertDialog.Builder(this@SleepTrackerActivity)
-                                .setTitle("Permission Required")
-                                .setMessage("Draw Over Other apps permission is required to show alarm")
+                                .setTitle(getString(R.string.need_permission))
+                                .setMessage(getString(R.string.draw_allow))
                                 .setCancelable(false)
                                 .setPositiveButton(
-                                    "Allow"
+                                    getString(R.string.allow)
                                 ) { _, _ ->
                                     val intent = Intent(
                                         Settings.ACTION_MANAGE_OVERLAY_PERMISSION,

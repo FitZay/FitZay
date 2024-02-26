@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins"
         android:padding="@dimen/_5sdp"
-        android:text="Drinking Capacity"
+        android:text="@string/drinking_cap"
         android:textColor="@color/white"
         android:textSize="@dimen/_12sdp"
         app:fontFamily="@font/poppins"
