@@ -273,5 +273,18 @@
     <string name="gold">"सोना "</string>
     <string name="platinum">"प्लैटिनम "</string>
 
+    <string name="next">अगला</string>
+    <string name="tonight">आज रात</string>
+    <string name="message">खाता हटाने से आपके सभी सहेजे गए डेटा हटा दिया जाएगा!</string>
+    <string name="miles">मील</string>
+    <string name="walking_time">पैदल चलने का समय</string>
+    <string name="am">पूर्वाह्न</string>
+    <string name="pm">अपराह्न</string>
+    <string name="ringtone">सिस्टम रिंगटोन</string>
+    <string name="quit">बंद करें</string>
+    <string name="look">बस देखो</string>
+    <string name="know">कैसे करें यह पता नहीं</string>
+    <string name="daily_step_goal">दैनिक कदम लक्ष्य</string>
+    <string name="select_days">दिनों का चयन करें</string>
 
 </resources>

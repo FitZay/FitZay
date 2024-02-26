@@ -18,7 +18,7 @@
             android:id="@+id/textView26"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Quit"
+            android:text="@string/quit"
             android:textColor="@color/white"
             android:textSize="@dimen/_16sdp"
             app:layout_constraintStart_toStartOf="parent"
@@ -42,7 +42,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="@dimen/_15sdp"
-                android:text="Just take a look"
+                android:text="@string/look"
                 android:textColor="#8e8d92"
                 android:textSize="@dimen/_11sdp" />
 
@@ -65,7 +65,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="@dimen/_15sdp"
-                android:text="Too hard"
+                android:text="@string/too_hard"
                 android:textColor="#8e8d92"
                 android:textSize="@dimen/_11sdp" />
 
@@ -89,7 +89,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="@dimen/_15sdp"
-                android:text="Don't know how to do it"
+                android:text="@string/know"
                 android:textColor="#8e8d92"
                 android:textSize="@dimen/_11sdp" />
 
@@ -100,8 +100,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:text="Quit"
-            android:textAllCaps="true"
+            android:text="@string/quit"
+            android:textAllCaps="false"
             android:textColor="@color/green"
             android:textSize="@dimen/_10sdp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -113,8 +113,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_marginEnd="@dimen/_15sdp"
-            android:text="cancel"
-            android:textAllCaps="true"
+            android:text="@string/cancel"
+            android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="@dimen/_10sdp"
             app:layout_constraintBottom_toBottomOf="parent"

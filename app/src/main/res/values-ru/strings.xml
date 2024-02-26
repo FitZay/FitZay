@@ -299,5 +299,19 @@
     <string name="silver">"Серебро "</string>
     <string name="gold">"Золото "</string>
     <string name="platinum">"Платина "</string>
+    <string name="next">Следующий</string>
+    <string name="tonight">Сегодня вечером</string>
+    <string name="message">" При удалении учетной записи будут удалены все ваши сохраненные данные!"</string>
+    <string name="miles">Мили</string>
+    <string name="walking_time">Время ходьбы</string>
+    <string name="am">AM</string>
+    <string name="pm">PM</string>
+    <string name="ringtone">Звук системного вызова</string>
+
+    <string name="quit">Выйти</string>
+    <string name="look">Просто взгляни</string>
+    <string name="know">Не знаю, как это сделать</string>
+    <string name="daily_step_goal">Цель ежедневного количества шагов</string>
+    <string name="select_days">Выберите дни</string>
 
 </resources>

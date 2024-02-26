@@ -158,7 +158,7 @@
             android:background="@drawable/bg_selected"
             android:fontFamily="@font/poppins"
             android:gravity="center"
-            android:text="Daily"
+            android:text="@string/daily_"
             android:textColor="@color/white"
             android:textSize="@dimen/_12sdp" />
 
@@ -170,7 +170,7 @@
             android:layout_weight="1"
             android:fontFamily="@font/poppins"
             android:gravity="center"
-            android:text="Weekly"
+            android:text="@string/weekly_"
             android:textColor="@color/white"
             android:textSize="@dimen/_12sdp" />
 
@@ -182,7 +182,7 @@
             android:layout_weight="1"
             android:fontFamily="@font/poppins"
             android:gravity="center"
-            android:text="Monthly"
+            android:text="@string/monthly_"
             android:textColor="@color/white"
             android:textSize="@dimen/_12sdp" />
 

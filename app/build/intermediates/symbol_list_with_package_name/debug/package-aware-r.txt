@@ -5825,6 +5825,7 @@ string advance
 string alarm
 string allow_req_permissions
 string allow_required_permissions
+string am
 string androidx_startup
 string any_bad_habits
 string any_previous_workout_experience
@@ -5900,6 +5901,7 @@ string daily_
 string daily_average
 string daily_challenge
 string daily_motivation
+string daily_step_goal
 string default_error_message
 string default_popup_window_title
 string delete_account
@@ -5947,6 +5949,7 @@ string gain_muscle
 string gallery
 string gcm_defaultSenderId
 string go_premium
+string gold
 string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
@@ -5985,11 +5988,13 @@ string item_view_role_description
 string jumping_jack
 string just_right
 string kg
+string know
 string label
 string language
 string lbs
 string less_6_hours
 string less_one_hour
+string look
 string love_sugary_drinks
 string lower_body
 string m3_exceed_max_badge_text_suffix
@@ -6033,6 +6038,8 @@ string material_timepicker_minute
 string material_timepicker_pm
 string material_timepicker_select_time
 string material_timepicker_text_input_mode_description
+string message
+string miles
 string month_of_membership
 string monthly
 string monthly_
@@ -6118,6 +6125,7 @@ string need_nap_after_meals
 string need_per_title
 string need_permission
 string never
+string next
 string no
 string no_have_any
 string not_much_all
@@ -6151,12 +6159,15 @@ string personalized_des
 string personalized_workouts
 string pick_training_days
 string plan
+string platinum
+string pm
 string preference_copied
 string premium_features_details
 string privacy_policy
 string profile
 string project_id
 string purchase_cancel_by_user
+string quit
 string radio_podcast
 string rate_us
 string ready_to_go
@@ -6164,6 +6175,7 @@ string recent_exercise
 string relate_following_statement
 string reminders
 string remove_ads
+string ringtone
 string s1
 string s2
 string s3
@@ -6175,10 +6187,12 @@ string search_menu_title
 string searchbar_scrolling_view_behavior
 string searchview_clear_text_content_description
 string searchview_navigation_content_description
+string select_days
 string selected
 string share_app
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
+string silver
 string skinny
 string skip
 string sleep
@@ -6207,6 +6221,7 @@ string thighs
 string time
 string time_in_bed
 string today
+string tonight
 string too_easy
 string too_hard
 string tv
@@ -6256,6 +6271,7 @@ string very_motivated
 string vibration
 string view_name
 string wake_time
+string walking_time
 string want_it
 string watch_ad
 string water_intake

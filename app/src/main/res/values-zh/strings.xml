@@ -312,4 +312,18 @@
     <string name="gold">"金 "</string>
     <string name="platinum">铂金</string>
 
+    <string name="next">下一个</string>
+    <string name="tonight">今晚</string>
+    <string name="message">删除帐户将删除所有已保存的数据！</string>
+    <string name="miles">英里</string>
+    <string name="walking_time">步行时间</string>
+    <string name="am">上午</string>
+    <string name="pm">下午</string>
+    <string name="ringtone">系统铃声</string>
+    <string name="quit">退出</string>
+    <string name="look">只是看一看</string>
+    <string name="know">不知道该怎么做</string>
+    <string name="daily_step_goal">每日步数目标</string>
+    <string name="select_days">选择日期</string>
+
 </resources>

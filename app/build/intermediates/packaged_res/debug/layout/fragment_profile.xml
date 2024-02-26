@@ -329,7 +329,7 @@
                     android:layout_gravity="center"
                     android:fontFamily="@font/poppins_medium"
                     android:gravity="center"
-                    android:text="Save"
+                    android:text="@string/txt_save"
                     android:textColor="@color/white"
                     android:textSize="@dimen/_14sdp" />
 
