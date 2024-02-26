@@ -327,6 +327,24 @@
     <string name="gold">Gold</string>
     <string name="platinum">Platinum</string>
 
+    <string name="next">Next</string>
+    <string name="tonight">Tonight</string>
+
+    <string name="message">By deleting account all your saved data will be removed!</string>
+    <string name="miles">Miles</string>
+    <string name="walking_time">Walking Time</string>
+
+    <string name="am">AM</string>
+    <string name="pm">PM</string>
+
+    <string name="ringtone">System RingTone</string>
+    <string name="quit">Quit</string>
+    <string name="look">Just take a look</string>
+    <string name="know">Don\'t know how to do it</string>
+
+    <string name="daily_step_goal">Daily Step Goal</string>
+    <string name="select_days">Select Days</string>
+
 
     <string-array name="age">
         <item>10</item>

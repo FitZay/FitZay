@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins"
         android:padding="@dimen/_5sdp"
-        android:text="Daily Step Goal"
+        android:text="@string/daily_step_goal"
         android:textColor="@color/white"
         android:textSize="@dimen/_12sdp"
         app:fontFamily="@font/poppins"

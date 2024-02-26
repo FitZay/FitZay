@@ -95,14 +95,14 @@ class ProfileFragment : Fragment() {
 
             txtDeleteAccount.setOnClickListener {
                 androidx.appcompat.app.AlertDialog.Builder(requireContext())
-                    .setTitle("Delete Account")
-                    .setMessage("By deleting account all your saved data will be removed!")
+                    .setTitle(getString(R.string.delete_account))
+                    .setMessage(getString(R.string.message))
                     .setCancelable(false)
                     .setPositiveButton(
-                        "Delete"
+                        getString(R.string.delete_account)
                     ) { dialog, which ->
                         removeAllPrefs()
-                    }.setNegativeButton("Cancel") { dialog, which ->
+                    }.setNegativeButton(getString(R.string.cancel)) { dialog, which ->
                         dialog.dismiss()
                     }
                     .show()
@@ -137,7 +137,7 @@ class ProfileFragment : Fragment() {
                     }
 
                     else -> {
-                        Toast.makeText(requireContext(), "Saved Successfully", Toast.LENGTH_SHORT)
+                        Toast.makeText(requireContext(), getString(R.string.txt_save), Toast.LENGTH_SHORT)
                             .show()
                         binding.saveItems.visibility = View.GONE
                         Component.preference.userName = binding.etNameInput.text.toString()

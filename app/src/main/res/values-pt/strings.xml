@@ -314,4 +314,20 @@
     <string name="gold">Ouro</string>
     <string name="platinum">Platina</string>
 
+    <string name="next">Próximo</string>
+    <string name="tonight">Hoje à noite</string>
+    <string name="message">Ao excluir a conta, todos os seus dados salvos serão removidos!</string>
+    <string name="miles">Milhas</string>
+    <string name="walking_time">Tempo de caminhada</string>
+
+    <string name="am">AM</string>
+    <string name="pm">PM</string>
+    <string name="ringtone">Toque de chamada do sistema</string>
+
+    <string name="quit">Sair</string>
+    <string name="look">Apenas dê uma olhada</string>
+    <string name="know">Não sei como fazer isso</string>
+    <string name="daily_step_goal">Meta diária de passos</string>
+    <string name="select_days">Selecionar dias</string>
+
 </resources>

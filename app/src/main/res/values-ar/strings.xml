@@ -323,5 +323,20 @@
     <string name="gold">ذهب</string>
     <string name="platinum">بلاتين</string>
 
+    <string name="next">التالي</string>
+    <string name="tonight">الليلة</string>
+    <string name="message">عن طريق حذف الحساب سيتم حذف جميع البيانات المحفوظة الخاصة بك!</string>
+
+    <string name="miles">أميال</string>
+    <string name="walking_time">وقت المشي</string>
+
+    <string name="am">صباحًا</string>
+    <string name="pm">مساءً</string>
+    <string name="ringtone">نغمة رنين النظام</string>
+    <string name="quit">إنهاء</string>
+    <string name="look">فقط انظر</string>
+    <string name="know">لا أعرف كيف أفعل ذلك</string>
+    <string name="daily_step_goal">هدف الخطوات اليومي</string>
+    <string name="select_days">اختر الأيام</string>
 
 </resources>

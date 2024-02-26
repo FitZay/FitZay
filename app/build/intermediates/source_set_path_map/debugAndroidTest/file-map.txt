@@ -1,6 +1,0 @@
-com.fitzay.workouttracker.strengthtraining.test.app-jetified-annotation-experimental-1.3.0-0 C:\Users\Technest - Accounts\.gradle\caches\transforms-3\271ff6a381ec4dd980f969c6ed49a68d\transformed\jetified-annotation-experimental-1.3.0\res
-com.fitzay.workouttracker.strengthtraining.test.app-jetified-core-1.5.0-1 C:\Users\Technest - Accounts\.gradle\caches\transforms-3\ac2f6d8d85611682241c547de2f6e43e\transformed\jetified-core-1.5.0\res
-com.fitzay.workouttracker.strengthtraining.test.app-androidTest-2 E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\generated\res\resValues\androidTest\debug
-com.fitzay.workouttracker.strengthtraining.test.app-mergeDebugAndroidTestResources-3 E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
-com.fitzay.workouttracker.strengthtraining.test.app-mergeDebugAndroidTestResources-4 E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
-com.fitzay.workouttracker.strengthtraining.test.app-merged_res-5 E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\merged_res\debugAndroidTest
