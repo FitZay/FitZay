@@ -1094,6 +1094,8 @@ string need_permission
 string never
 string next
 string no
+string no_alarm
+string no_data
 string no_have_any
 string not_much_all
 string not_sleep_enough
@@ -1150,6 +1152,7 @@ string thighs
 string time
 string time_in_bed
 string today
+string tomorrow
 string tonight
 string too_easy
 string too_hard

@@ -268,7 +268,7 @@ class DailyFragment : Fragment(), OnChartValueSelectedListener {
             xAxis.textColor = android.graphics.Color.parseColor("#939292")
 
 
-            txtMiles.text = "No Data"
+            txtMiles.text = getString(R.string.no_data)
 
 
         }

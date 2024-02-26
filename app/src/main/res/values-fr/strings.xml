@@ -343,4 +343,8 @@
     <string name="allow">Autoriser</string>
     <string name="drinking_cap">Capacité de boisson</string>
 
+    <string name="no_alarm">Pas d\'alarme</string>
+    <string name="tomorrow">Demain matin</string>
+    <string name="no_data">Aucune donnée</string>
+
 </resources>

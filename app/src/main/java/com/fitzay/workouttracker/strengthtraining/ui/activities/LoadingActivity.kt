@@ -58,10 +58,7 @@ class LoadingActivity : AppCompatActivity() {
         binding = ActivityLoadingBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val sharedPref = applicationContext.getSharedPreferences("myPrefs", Context.MODE_PRIVATE)
-        val lan = sharedPref.getString("key", "en")
 
-        setLocale(this@LoadingActivity,lan!!)
 
 
         isStarted = true
@@ -189,7 +186,10 @@ class LoadingActivity : AppCompatActivity() {
         if (isConsentDone) {
             showLoading()
         }
+        val sharedPref = applicationContext.getSharedPreferences("myPrefs", Context.MODE_PRIVATE)
+        val lan = sharedPref.getString("key", "en")
 
+        setLocale(this@LoadingActivity,lan!!)
     }
 
 

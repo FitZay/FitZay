@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
+import com.fitzay.workouttracker.strengthtraining.R
 import com.fitzay.workouttracker.strengthtraining.core.utils.convertDateTime
 import com.fitzay.workouttracker.strengthtraining.core.utils.getDayOfWeek
 import com.fitzay.workouttracker.strengthtraining.core.utils.getLongDayName
@@ -55,10 +56,10 @@ class ScheduleAlarmShowAdapter(var context:Context, var list:ArrayList<AlarmEnti
 
                 if (model.label.equals("Test"))
                 {
-                    time.setText("No Alarm")
-                    wakeTime.setText("No Alarm")
-                    dayName.setText("Tomorrow Morning")
-                    dayName.setText("Tomorrow Morning")
+                    time.setText(context.getString(R.string.no_alarm))
+                    wakeTime.setText(context.getString(R.string.no_alarm))
+                    dayName.setText(context.getString(R.string.tomorrow))
+                    dayName.setText(context.getString(R.string.tomorrow))
                     amPm.visibility= View.INVISIBLE
                     wakeAmPm.visibility= View.INVISIBLE
                     swOnOff.visibility= View.INVISIBLE

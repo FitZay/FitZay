@@ -277,6 +277,8 @@
     <string name="never">一度もしない</string>
     <string name="next">次へ</string>
     <string name="no">いいえ</string>
+    <string name="no_alarm">アラームなし</string>
+    <string name="no_data">データなし</string>
     <string name="no_have_any">いいえ、ありません</string>
     <string name="not_much_all">ほとんど感じません</string>
     <string msgid="6610465462668679431" name="not_selected">"未選択"</string>
@@ -361,6 +363,7 @@
     <string name="time">時間</string>
     <string name="time_in_bed">ベッドでの時間</string>
     <string name="today">今日</string>
+    <string name="tomorrow">明日の朝</string>
     <string name="tonight">今夜</string>
     <string name="too_easy">簡単すぎる</string>
     <string name="too_hard">難しすぎる</string>

@@ -70,6 +70,8 @@ class AppController : Application() {
                 yearlyvalue = it
             }
         },1000)
+
+
     }
 
     private fun setupNetworkCallback() {

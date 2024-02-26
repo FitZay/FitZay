@@ -138,6 +138,8 @@
     <string name="never">Nunca</string>
     <string name="next">Siguiente</string>
     <string name="no">No</string>
+    <string name="no_alarm">Sin alarma</string>
+    <string name="no_data">Sin datos</string>
     <string name="no_have_any">No, no tengo ninguna</string>
     <string name="not_much_all">No mucho en absoluto</string>
     <string name="not_sleep_enough">No duermo lo suficiente</string>
@@ -193,6 +195,7 @@
     <string name="time">Tiempo</string>
     <string name="time_in_bed">Tiempo en la Cama</string>
     <string name="today">Hoy</string>
+    <string name="tomorrow">Mañana por la mañana</string>
     <string name="tonight">Esta noche</string>
     <string name="too_easy">Demasiado Fácil</string>
     <string name="too_hard">Demasiado Difícil</string>

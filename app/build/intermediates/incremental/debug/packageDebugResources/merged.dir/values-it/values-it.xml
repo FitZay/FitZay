@@ -137,6 +137,8 @@
     <string name="need_permission">Permesso Richiesto</string>
     <string name="next">Prossimo</string>
     <string name="no">No</string>
+    <string name="no_alarm">Nessuna sveglia</string>
+    <string name="no_data">Nessun dato</string>
     <string name="no_have_any">No, non ne ho</string>
     <string name="not_much_all">Non molto per niente</string>
     <string name="not_sleep_enough">Non dormo abbastanza</string>
@@ -192,6 +194,7 @@
     <string name="time">Tempo</string>
     <string name="time_in_bed">Tempo a Letto</string>
     <string name="today">Oggi</string>
+    <string name="tomorrow">Domani mattina</string>
     <string name="tonight">Stasera</string>
     <string name="too_easy">Troppo facile</string>
     <string name="too_hard">Troppo difficile</string>

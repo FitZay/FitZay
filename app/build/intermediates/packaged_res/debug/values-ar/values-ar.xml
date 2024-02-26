@@ -138,6 +138,8 @@
     <string name="never">أبداً</string>
     <string name="next">التالي</string>
     <string name="no">لا</string>
+    <string name="no_alarm">لا إنذار</string>
+    <string name="no_data">لا توجد بيانات</string>
     <string name="no_have_any">لا، ليس لدي أي تجربة</string>
     <string name="not_much_all">لا أشعر بالتوتر على الإطلاق</string>
     <string name="not_sleep_enough">أنام قليلاً</string>
@@ -193,6 +195,7 @@
     <string name="time">الوقت</string>
     <string name="time_in_bed">الوقت في السرير</string>
     <string name="today">اليوم</string>
+    <string name="tomorrow">صباح الغد</string>
     <string name="tonight">الليلة</string>
     <string name="too_easy">سهل جدًا</string>
     <string name="too_hard">صعب جدًا</string>

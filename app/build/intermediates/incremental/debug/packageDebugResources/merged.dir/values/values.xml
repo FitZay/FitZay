@@ -284,6 +284,8 @@
     <string name="never">Never</string>
     <string name="next">Next</string>
     <string name="no">No</string>
+    <string name="no_alarm">No Alarm</string>
+    <string name="no_data">No Data</string>
     <string name="no_have_any">No, I don\'t have any</string>
     <string name="not_much_all">Not much at all</string>
     <string name="not_sleep_enough">I don\'t sleep enough</string>
@@ -340,6 +342,7 @@
     <string name="time">Time</string>
     <string name="time_in_bed">Time in Bed</string>
     <string name="today">Today</string>
+    <string name="tomorrow">Tomorrow Morning</string>
     <string name="tonight">Tonight</string>
     <string name="too_easy">Too hard</string>
     <string name="too_hard">Too hard</string>

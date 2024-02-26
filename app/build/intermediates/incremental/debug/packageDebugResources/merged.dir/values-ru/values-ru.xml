@@ -134,6 +134,8 @@
     <string name="never">Никогда</string>
     <string name="next">Следующий</string>
     <string name="no">Нет</string>
+    <string name="no_alarm">Нет будильника</string>
+    <string name="no_data">Нет данных</string>
     <string name="no_have_any">Нет, у меня нет</string>
     <string name="not_much_all">Совсем немного</string>
     <string name="not_sleep_enough">Я недостаточно сплю</string>
@@ -189,6 +191,7 @@
     <string name="time">Время</string>
     <string name="time_in_bed">Время в постели</string>
     <string name="today">Сегодня</string>
+    <string name="tomorrow">Завтра утром</string>
     <string name="tonight">Сегодня вечером</string>
     <string name="too_easy">Слишком легко</string>
     <string name="too_hard">Слишком сложно</string>

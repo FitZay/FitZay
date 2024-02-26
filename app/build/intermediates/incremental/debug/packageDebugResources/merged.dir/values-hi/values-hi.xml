@@ -138,6 +138,8 @@
     <string name="never">कभी नहीं</string>
     <string name="next">अगला</string>
     <string name="no">नहीं</string>
+    <string name="no_alarm">कोई अलार्म नहीं</string>
+    <string name="no_data">कोई डेटा नहीं</string>
     <string name="no_have_any">नहीं, मेरे पास कोई नहीं है</string>
     <string name="not_much_all">बहुत कम</string>
     <string name="not_sleep_enough">मैं पर्याप्त नहीं सोता हूँ</string>
@@ -193,6 +195,7 @@
     <string name="time">समय</string>
     <string name="time_in_bed">बिस्तर में समय</string>
     <string name="today">आज</string>
+    <string name="tomorrow">कल सुबह</string>
     <string name="tonight">आज रात</string>
     <string name="too_easy">बहुत आसान</string>
     <string name="too_hard">बहुत कठिन</string>

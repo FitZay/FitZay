@@ -65,7 +65,7 @@ class StepSummeryActivity : AppCompatActivity(), OnChartValueSelectedListener {
         binding.layoutToday.visibility = View.VISIBLE
 //        dailyReport(1)
 
-        binding.txtAverage.text = "DAILY AVERAGE"
+        binding.txtAverage.text = getString(R.string.daily)
         binding.txtMiles.text = "" + (Component.preference.stepGoal * 100) / Component.preference.stepGoal + " Steps"
 
 
@@ -80,7 +80,7 @@ class StepSummeryActivity : AppCompatActivity(), OnChartValueSelectedListener {
                 unSelect()
                 txtDaily.setBackgroundResource(R.drawable.bg_selected)
                 typeClicked = "Daily"
-                txtAverage.text = "DAILY AVERAGE"
+                txtAverage.text = getString(R.string.daily)
                 txtMiles.text = "" + (Component.preference.stepGoal * 100) / Component.preference.stepGoal + " Steps"
                 imgStep.performClick()
 
@@ -92,7 +92,7 @@ class StepSummeryActivity : AppCompatActivity(), OnChartValueSelectedListener {
                 unSelect()
                 txtWeekly.setBackgroundResource(R.drawable.bg_selected)
                 typeClicked = "Weekly"
-                txtAverage.text = "WEEKLY AVERAGE"
+                txtAverage.text = getString(R.string.weekly)
                 imgStep.performClick()
 
                 supportFragmentManager.beginTransaction().replace(R.id.container, StepWeeklyFragment()).commit()
@@ -110,7 +110,7 @@ class StepSummeryActivity : AppCompatActivity(), OnChartValueSelectedListener {
             unSelect()
             binding.txtMonthly.setBackgroundResource(R.drawable.bg_selected)
             typeClicked = "Monthly"
-            binding.txtAverage.text = "MONTHLY AVERAGE"
+            binding.txtAverage.text = getString(R.string.monthly)
             binding.imgStep.performClick()
             supportFragmentManager.beginTransaction().replace(R.id.container, StepMonthlyFragment()).commit()
 

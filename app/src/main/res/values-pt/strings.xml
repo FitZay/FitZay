@@ -332,5 +332,8 @@
     <string name="draw_allow">A permissão para Desenhar sobre outros apps é necessária para mostrar o alarme</string>
     <string name="allow">Permitir</string>
     <string name="drinking_cap">Capacidade de beber</string>
+    <string name="no_alarm">Sem alarme</string>
+    <string name="tomorrow">Amanhã de manhã</string>
+    <string name="no_data">Sem dados</string>
 
 </resources>

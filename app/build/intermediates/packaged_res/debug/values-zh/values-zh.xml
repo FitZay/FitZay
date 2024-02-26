@@ -138,6 +138,8 @@
     <string name="never">从不</string>
     <string name="next">下一个</string>
     <string name="no">否</string>
+    <string name="no_alarm">アラームなし</string>
+    <string name="no_data">没有数据</string>
     <string name="no_have_any">没有，我没有任何经验</string>
     <string name="not_much_all">几乎没有</string>
     <string name="not_sleep_enough">我睡眠不足</string>
@@ -193,6 +195,7 @@
     <string name="time">时间</string>
     <string name="time_in_bed">入睡时间</string>
     <string name="today">今天</string>
+    <string name="tomorrow">明日の朝</string>
     <string name="tonight">今晚</string>
     <string name="too_easy">太简单了</string>
     <string name="too_hard">太难了</string>

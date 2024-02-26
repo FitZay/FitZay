@@ -316,5 +316,8 @@
     <string name="draw_allow">Требуется разрешение на рисование поверх других приложений для отображения будильника</string>
     <string name="allow">Разрешить</string>
     <string name="drinking_cap">Питьевая способность</string>
+    <string name="no_alarm">Нет будильника</string>
+    <string name="tomorrow">Завтра утром</string>
+    <string name="no_data">Нет данных</string>
 
 </resources>

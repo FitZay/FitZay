@@ -331,5 +331,8 @@
     <string name="draw_allow">È richiesto il permesso di Disegnare sopra le altre app per mostrare l\'allarme</string>
     <string name="allow">Consenti</string>
     <string name="drinking_cap">Capacità di bere</string>
+    <string name="no_alarm">Nessuna sveglia</string>
+    <string name="tomorrow">Domani mattina</string>
+    <string name="no_data">Nessun dato</string>
 
 </resources>

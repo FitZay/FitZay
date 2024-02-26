@@ -204,7 +204,7 @@ class MonthlyFragment : Fragment(),OnChartValueSelectedListener {
 
                         withContext(Dispatchers.Main)
                         {
-                            txtMiles.text ="No Data"
+                            txtMiles.text = getString(R.string.no_data)
 
                             val dataSet = BarDataSet(barEntriesArrayList, "")
 //                            dataSet.setColors(*ColorTemplate.MATERIAL_COLORS)
@@ -345,7 +345,7 @@ class MonthlyFragment : Fragment(),OnChartValueSelectedListener {
 
                         withContext(Dispatchers.Main)
                         {
-                            txtMiles.text ="No Data"
+                            txtMiles.text = getString(R.string.no_data)
 
                             val dataSet = BarDataSet(barEntriesArrayList, "")
 //                            dataSet.setColors(*ColorTemplate.MATERIAL_COLORS)

@@ -42,6 +42,7 @@ class PersonalizedWorkAct : AppCompatActivity() {
                         Intent.FLAG_ACTIVITY_SINGLE_TOP
                     }
                     startActivity(intent)
+
                 }
                 else
                 {
@@ -71,6 +72,7 @@ class PersonalizedWorkAct : AppCompatActivity() {
                         }
                     }
                 }
+                Component.preference.isIntro = true
             },2000)
 
         }
