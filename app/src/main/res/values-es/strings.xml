@@ -337,5 +337,6 @@
     <string name="tomorrow">Mañana por la mañana</string>
     <string name="no_data">Sin datos</string>
     <string name="daily_goal">Meta diaria</string>
+    <string name="add">Agregar</string>
 
 </resources>

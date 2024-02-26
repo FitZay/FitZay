@@ -3,6 +3,7 @@
     <string name="abs">ABC</string>
     <string name="abs_beginner">腹肌初学者</string>
     <string name="abs_core">腹肌与核心</string>
+    <string name="add">添加</string>
     <string name="advance">高级</string>
     <string name="alarm">闹钟</string>
     <string name="allow">允许</string>
@@ -41,7 +42,7 @@
     <string name="daily_">每日</string>
     <string name="daily_average">日均值</string>
     <string name="daily_challenge">每日挑战</string>
-    <string name="daily_goal">日次目標</string>
+    <string name="daily_goal">每日目标</string>
     <string name="daily_motivation">每日动力</string>
     <string name="daily_step_goal">每日步数目标</string>
     <string name="delete_account"><u> 删除帐户 </u></string>

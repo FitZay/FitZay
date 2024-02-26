@@ -332,5 +332,6 @@
     <string name="tomorrow">明日の朝</string>
     <string name="no_data">没有数据</string>
     <string name="daily_goal">每日目标</string>
+    <string name="add">添加</string>
 
 </resources>

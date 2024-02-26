@@ -947,6 +947,7 @@ raw task_complete
 string abs
 string abs_beginner
 string abs_core
+string add
 string advance
 string alarm
 string allow

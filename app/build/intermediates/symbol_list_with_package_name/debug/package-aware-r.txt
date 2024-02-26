@@ -5821,6 +5821,7 @@ string abc_toolbar_collapse_description
 string abs
 string abs_beginner
 string abs_core
+string add
 string advance
 string alarm
 string allow

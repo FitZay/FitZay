@@ -45,6 +45,7 @@ import java.io.FileOutputStream
 import java.util.Objects
 import kotlin.math.ceil
 import kotlin.math.floor
+import kotlin.math.round
 
 class ProfileAct : AppCompatActivity() {
 
@@ -59,6 +60,11 @@ class ProfileAct : AppCompatActivity() {
     var convertCentiToFtInch_2nd = 0
     var kgToP=0.0
     var pToKg = 0.0
+    var check=true
+    var check2=true
+
+    var check3=true
+    var check4=true
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityProfileBinding.inflate(layoutInflater)
@@ -171,177 +177,91 @@ class ProfileAct : AppCompatActivity() {
             back.setOnClickListener {
                 onBackPressed()
             }
-        }
-
-       // setDefaults()
-
-    }
-
-
-    private fun setDefaults() {
-
-
-        binding.apply {
-            Log.e(TAG, "setDefaults: " + Component.preference.userHeight)
-
-            ivCamera.setOnClickListener {
-                showBothSelectorDialog()
-            }
-
-            ivProfile.setOnClickListener {
-                showBothSelectorDialog()
-            }
-
-            if (Component.preference.userName != "empty") {
-                tvFullName.setText(Component.preference.userName)
-            }
-            if (Component.preference.userGender != "empty") {
-                etGenderInput.setText(Component.preference.userGender)
-            }
-            if (Component.preference.userAge != 0) {
-                etAgeInput.setText(Component.preference.userAge.toString())
-            }
-            if (Component.preference.userHeight != 0) {
-                etHeightInput.setText(Component.preference.userHeight.toString())
-                Log.i("TAG", "Height: " + Component.preference.userHeight.toString())
-            }
-            if (Component.preference.userWeight != 0) {
-                etWeightInput.setText(Component.preference.userWeight.toString())
-            }
-
-            if (Component.preference.userTargetWight != 0) {
-                etTargetWeightInput.setText(Component.preference.userTargetWight.toString())
-            }
-
-//        if (Component.preference.userTargetWight != 0) {
-//            binding.etTargetWeightInput.setText(Component.preference.userName)
-//        }
-
-            if (Component.preference.userProfilePath != "empty") {
-                ivCamera.visibility = View.GONE
-                Glide.with(this@ProfileAct)
-                    .load(Component.preference.userProfilePath)
-                    .apply(RequestOptions.bitmapTransform(CircleCrop()))
-                    .into(ivProfile)
-            } else {
-                ivCamera.visibility = View.VISIBLE
-            }
-
-
-            //Radio Button set If User set value ft or cm
-            if (Component.preference.userHeightType == "FT" && Component.preference.userHeightFt != 0) {
-                ft.isChecked = true
-                cm.isChecked = false
-                etHeightInput.setText(Component.preference.userHeightFt.toString() + "." + Component.preference.userHeightInch.toString())
-                val feetAndInches = Pair(
-                    Component.preference.userHeightFt.toInt(),
-                    Component.preference.userHeightInch.toDouble()
-                )
-                convertFtInchToCentiMeter = feetAndInches.toCentimeters()
-
-            } else {
-                ft.isChecked = false
-                cm.isChecked = true
-                etHeightInput.setText(Component.preference.userHeight.toString())
-
-                val centimeters = Component.preference.userHeight.toString().toDouble()
-                var cn = centimeterToFeet(centimeters.toString())
-
-                convertCentiToFtInch_1st = cn.first.toString().toInt()
-                convertCentiToFtInch_2nd = cn.second.toString().toInt()
-
-            }
-
-            //Radio Button set If User set value kg or lbs
-            if (Component.preference.userWeightType == "KG" && Component.preference.userWeight != 0) {
-                kg.isChecked = true
-                lbs.isChecked = false
-                etWeightInput.setText(Component.preference.userWeight.toString())
-
-                kgToP = Component.preference.userWeight!!.toDouble().toPounds()
-
-            } else {
-                kg.isChecked = false
-                lbs.isChecked = true
-                etWeightInput.setText(Component.preference.userWeight.toString())
-
-                pToKg = Component.preference.userWeight!!.toDouble().toKilograms()
-
-            }
 
             cm.setOnClickListener {
-                if (Component.preference.userHeightType == "FT" && Component.preference.userHeightFt != 0) {
-                    etHeightInput.setText(convertFtInchToCentiMeter.toString())
-                    Log.i(TAG, "setDefaults---FT: ")
-                } else {
-
-                    etHeightInput.setText(Component.preference.userHeight.toString())
-                    Log.i(TAG, "setDefaults---Not FT: ")
+                try {
+                    if (!etHeightInput.text.isNullOrEmpty())
+                    {
+                        if (check){
+                            check = false
+                            check2 = true
+                            val centimeters = etHeightInput.text.toString().toDouble()
+                            val cn =inchesToCm(centimeters)
+                            etHeightInput.setText(cn.toString())
+                        }
+                    }
+                    etHeightInput.requestFocus();
+                    etHeightInput.setSelection(etHeightInput.length())
+                }
+                catch (e:Exception){
+                    Log.i("TAG", "Error-Catch: "+e.message)
                 }
 
-
             }
-
             ft.setOnClickListener {
-
-                if (Component.preference.userHeightType == "FT" && Component.preference.userHeightFt != 0) {
-                    Log.i(TAG, "setDefaults--888-ft: ")
-                    etHeightInput.setText(Component.preference.userHeightFt.toString()+"."+Component.preference.userHeightInch.toString())
-
-
-                } else {
-                    Log.i(TAG, "setDefaults--99-ft: ")
-                    etHeightInput.setText(convertCentiToFtInch_1st.toString()+"."+convertCentiToFtInch_2nd.toString())
+                try {
+                    if (!etHeightInput.text.isNullOrEmpty()) {
+                        if (check2){
+                            check2 = false
+                            check = true
+                            val con = cmToInches(etHeightInput.text.toString().toDouble())
+                            etHeightInput.setText(con.toString())
+                        }
+                    }
+                    etHeightInput.requestFocus();
+                    etHeightInput.setSelection(etHeightInput.length())
                 }
-
-            }
-
-            kg.setOnClickListener {
-
-                if (Component.preference.userWeightType == "KG" && Component.preference.userWeight != 0) {
-                    etWeightInput.setText(Component.preference.userWeight.toString())
-                    Log.i(TAG, "setDefaults0-----if kg: ")
-                } else {
-                    etWeightInput.setText(pToKg.toString())
-                    Log.i(TAG, "setDefaults0-----if not kg: ")
+                catch (e:Exception){
+                    Log.i("TAG", "Error-Catch: "+e.message)
                 }
-
             }
 
 
             lbs.setOnClickListener {
-                if (Component.preference.userWeightType == "KG" && Component.preference.userWeight != 0) {
-
-                    etWeightInput.setText(kgToP.toString())
-                    Log.i(TAG, "setDefaults0-----if kg00000: ")
-
+                try {
+                    if (!etWeightInput.text.isNullOrEmpty())
+                    {
+                        if (check3){
+                            check3 = false
+                            check4 = true
+                            //val centimeters =
+                            etWeightInput.setText(lbsToKg(etWeightInput.text.toString().toDouble()).toString())
+                        }
+                    }
+                    etWeightInput.requestFocus();
+                    etWeightInput.setSelection(etWeightInput.length())
                 }
-                else
-                {
-                    etWeightInput.setText(Component.preference.userWeight.toString())
-
+                catch (e:Exception){
+                    Log.i("TAG", "Error-Catch: "+e.message)
                 }
 
             }
-
+            kg.setOnClickListener {
+                try {
+                    if (!etWeightInput.text.isNullOrEmpty()) {
+                        if (check4){
+                            check4 = false
+                            check3 = true
+                            etWeightInput.setText(kgToLbs(etWeightInput.text.toString().toDouble()).toString())
+                        }
+                    }
+                    etWeightInput.requestFocus();
+                    etWeightInput.setSelection(etWeightInput.length())
+                }
+                catch (e:Exception){
+                    Log.i("TAG", "Error-Catch: "+e.message)
+                }
+            }
         }
 
 
 
     }
 
-    fun centimeterToFeet(centemeter: String?): Pair<Int, Int> {
-        var feetPart = 0
-        var inchesPart = 0
-        if (!TextUtils.isEmpty(centemeter)) {
-            val dCentimeter = java.lang.Double.valueOf(centemeter)
-            feetPart = floor(dCentimeter / 2.54 / 12).toInt()
-            println(dCentimeter / 2.54 - feetPart * 12)
-            inchesPart = ceil(dCentimeter / 2.54 - feetPart * 12).toInt()
-        }
-        return Pair(feetPart, inchesPart)
-        //  return String.format("%d %d", feetPart, inchesPart)
-    }
+
+
+
+
 
     fun disableBtn() {
         binding.apply {
@@ -628,4 +548,23 @@ class ProfileAct : AppCompatActivity() {
         wifiBannerAds.callBothBannerAds(adunit , "simple")
     }
 
+    fun cmToInches(cm: Double): Double {
+        var result =  cm / 2.54
+        return round(result * 100.0) / 100.0
+    }
+
+    fun inchesToCm(inches: Double): Double {
+        val result = inches * 2.54
+        return round(result * 100.0) / 100.0
+    }
+
+
+    fun lbsToKg(lbs: Double): Double {
+        return lbs * 0.45359237
+    }
+
+    // Function to convert kilograms to pounds
+    fun kgToLbs(kg: Double): Double {
+        return kg * 2.2046226218
+    }
 }

@@ -85,9 +85,7 @@ class AskingHeightActivity : AppCompatActivity() {
 
                 }
                 etInputFeet.requestFocus();
-//                etInputInch.requestFocus();
                 etInputFeet.setSelection(etInputFeet.length())
-//                etInputInch.setSelection(etInputInch.length())
 
             }
             rbCm.setOnClickListener {

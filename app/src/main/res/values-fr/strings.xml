@@ -347,5 +347,6 @@
     <string name="tomorrow">Demain matin</string>
     <string name="no_data">Aucune donnée</string>
     <string name="daily_goal">Objectif quotidien</string>
+    <string name="add">Ajouter</string>
 
 </resources>

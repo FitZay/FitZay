@@ -15,6 +15,7 @@ import com.google.android.gms.ads.AdLoader
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.LoadAdError
 import com.google.android.gms.ads.nativead.NativeAdOptions
+import kotlin.math.round
 
 class QuotesCategoryActivity : AppCompatActivity() {
 
@@ -83,4 +84,6 @@ class QuotesCategoryActivity : AppCompatActivity() {
             adLoader.loadAd(AdRequest.Builder().build())
         }
     }
+
+
 }

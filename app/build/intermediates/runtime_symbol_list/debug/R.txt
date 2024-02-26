@@ -5820,6 +5820,7 @@ int string abc_toolbar_collapse_description 0x7f13001a
 int string abs 0x7f13001b
 int string abs_beginner 0x7f13001c
 int string abs_core 0x7f13001d
+int string add 0x7f13020b
 int string advance 0x7f13001e
 int string alarm 0x7f13001f
 int string allow 0x7f130020

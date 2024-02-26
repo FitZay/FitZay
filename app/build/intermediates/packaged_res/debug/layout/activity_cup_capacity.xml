@@ -216,7 +216,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_5sdp"
                     android:fontFamily="@font/poppins_medium"
-                    android:text="Add"
+                    android:text="@string/add"
                     android:textColor="@color/white"
                     android:textSize="@dimen/_12sdp" />
 
