@@ -5,6 +5,7 @@
     android:layout_height="wrap_content"
     android:layout_centerHorizontal="true"
     android:layout_gravity="center_horizontal"
+    android:layoutDirection="ltr"
     android:layout_marginTop="@dimen/_5sdp"
     app:cardCornerRadius="@dimen/_15sdp">
 

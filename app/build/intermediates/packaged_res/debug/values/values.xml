@@ -118,6 +118,7 @@
     <color name="dim_black">#191919</color>
     <color name="green">#9CB135</color>
     <color name="grey">#d7d7d7</color>
+    <color name="lightgrey">#656467</color>
     <color name="on_primary">#18171E</color>
     <color name="outline_color">#24242c</color>
     <color name="primary">#2A2931</color>
@@ -130,6 +131,7 @@
     <color name="tab_selected">#FFFFFFFF</color>
     <color name="text_color">#D0CFD1</color>
     <color name="text_gray">#939292</color>
+    <color name="textcolor">#929191</color>
     <color name="transparent">#00000000</color>
     <color name="white">#FFFFFFFF</color>
     <string name="abs">ABC</string>
@@ -154,6 +156,7 @@
     <string name="beginner">Beginner</string>
     <string name="being_active">Being active</string>
     <string name="belly">Belly</string>
+    <string name="bmi">bmi</string>
     <string name="boosting_energy">Boosting energy</string>
     <string name="boosting_immunity">Boosting immunity</string>
     <string name="calories">"Calorie</string>

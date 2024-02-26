@@ -312,5 +312,10 @@
     <string name="language">Idioma</string>
     <string name="manage_subscriptions">Gestionar suscripciones</string>
     <string name="personalized_des">Espera mientras tu entrenador personal realiza tu rutina de ejercicios personalizada</string>
+    <string name="bmi">IMC</string>
+    <string name="silver">Plata</string>
+    <string name="gold">Oro</string>
+    <string name="platinum">Platino</string>
+
 
 </resources>

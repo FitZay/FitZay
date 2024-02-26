@@ -307,6 +307,10 @@
     <string name="language">言語</string>
     <string name="manage_subscriptions">サブスクリプションの管理</string>
     <string name="personalized_des">パーソナルトレーナーがあなたに合わせたエクササイズルーチンを作成するまでお待ちください</string>
+    <string name="bmi">bmi</string>
+    <string name="silver">"銀 "</string>
+    <string name="gold">"金 "</string>
+    <string name="platinum">プラチナ</string>
 
 
 </resources>

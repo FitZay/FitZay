@@ -24,5 +24,7 @@
     <color name="ready_dark">#474F22</color>
     <color name="red">#B60000</color>
     <color name="green">#9CB135</color>
+    <color name="lightgrey">#656467</color>
+    <color name="textcolor">#929191</color>
 
 </resources>

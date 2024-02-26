@@ -67,10 +67,20 @@ class FitzayModel(
     @SerializedName("FitzayNativeStartExercise")
     var FitzayNativeStartExercise: FitzayCompareModel = FitzayCompareModel(""),
 
+    @SerializedName("FitzayNativeLanguage")
+    var FitzayNativeLanguage: FitzayCompareModel = FitzayCompareModel(""),
+
+    @SerializedName("FitzayNativeBMI")
+    var FitzayNativeBMI: FitzayCompareModel = FitzayCompareModel(""),
+
+    @SerializedName("FitzayNativePersonalized")
+    var FitzayNativePersonalized: FitzayCompareModel = FitzayCompareModel(""),
+
+    @SerializedName("FitzayNativePushUp")
+    var FitzayNativePushUp: FitzayCompareModel = FitzayCompareModel(""),
 
     @SerializedName("FitzayAppOpen")
     var FitzayAppOpen: FitzayCompareModel = FitzayCompareModel("")
-
 ) {
     override fun toString(): String {
         return ""

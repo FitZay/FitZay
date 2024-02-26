@@ -307,5 +307,9 @@
     <string name="language">言語</string>
     <string name="manage_subscriptions">管理订阅</string>
     <string name="personalized_des">等待您的私人教练正在为您量身定制锻炼计划</string>
+    <string name="bmi">体重指数</string>
+    <string name="silver">"银 "</string>
+    <string name="gold">"金 "</string>
+    <string name="platinum">铂金</string>
 
 </resources>

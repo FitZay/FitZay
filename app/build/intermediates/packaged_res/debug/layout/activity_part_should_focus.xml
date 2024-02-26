@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layoutDirection="ltr"
     android:background="@drawable/bg_main">
 
     <com.google.android.material.appbar.MaterialToolbar
@@ -50,197 +51,209 @@
         app:layout_constraintBottom_toTopOf="@+id/clBottomNext"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginHorizontal="@dimen/_15sdp"
-        app:layout_constraintHeight_percent="0.5"
+        app:layout_constraintHeight_percent="0.6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvQuestion">
 
-
-        <ImageView
-            android:id="@+id/imageView7"
-            android:layout_width="@dimen/_152sdp"
-            android:layout_height="@dimen/_50sdp"
-            android:elevation="@dimen/_1sdp"
-            android:src="@drawable/imgarms"
-            app:layout_constraintBottom_toBottomOf="@+id/clArms"
-            app:layout_constraintStart_toEndOf="@id/clArms"
-            app:layout_constraintTop_toBottomOf="@+id/clArms" />
-
-
-        <ImageView
-            android:layout_width="@dimen/_110sdp"
-            android:layout_height="@dimen/_43sdp"
-            android:layout_marginEnd="@dimen/_50sdp"
-            android:elevation="@dimen/_1sdp"
-            android:src="@drawable/imgchest"
-            app:layout_constraintBottom_toBottomOf="@+id/constraintLayout17"
-            app:layout_constraintEnd_toEndOf="@+id/imageView7"
-            app:layout_constraintStart_toEndOf="@+id/constraintLayout17"
-            app:layout_constraintTop_toBottomOf="@+id/imageView7" />
-
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <com.google.android.material.card.MaterialCardView
             android:id="@+id/clArms"
             android:layout_width="@dimen/_120sdp"
             android:layout_height="@dimen/_35sdp"
-            android:background="@drawable/bg_options"
+            app:cardBackgroundColor="@color/transparent"
+            app:strokeColor="@color/white"
             android:orientation="horizontal"
-            android:layout_marginTop="@dimen/_5sdp"
-            app:layout_constraintBottom_toTopOf="@+id/constraintLayout17"
+            app:strokeWidth="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_28sdp"
+            app:layout_constraintBottom_toTopOf="@+id/clChest"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <TextView
-                android:id="@+id/tvArms"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_medium"
-                android:gravity="center_vertical"
-                android:text="@string/arms"
-                android:textColor="@color/white"
-                android:textSize="@dimen/_13sdp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/ivArms"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
 
-            <ImageView
-                android:id="@+id/ivArms"
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_gravity="end"
-                android:layout_margin="@dimen/_3sdp"
-                android:padding="@dimen/_10sdp"
-                android:src="@drawable/ic_tick"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                <TextView
+                    android:id="@+id/tvArms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center_vertical"
+                    android:text="@string/arms"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/ivArms"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/ivArms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="end"
+                    android:layout_margin="@dimen/_3sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/ic_tick"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
 
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout17"
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/clChest"
             android:layout_width="@dimen/_120sdp"
             android:layout_height="@dimen/_35sdp"
-            android:background="@drawable/bg_options"
+            app:cardBackgroundColor="@color/transparent"
+            app:strokeColor="@color/outline_color"
             android:orientation="horizontal"
-            app:layout_constraintBottom_toTopOf="@+id/constraintLayout18"
+            app:strokeWidth="@dimen/_1sdp"
+            app:layout_constraintBottom_toTopOf="@+id/clBelly"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/clArms">
 
-            <TextView
-                android:id="@+id/tvChest"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_medium"
-                android:gravity="center_vertical"
-                android:text="@string/arms"
-                android:textColor="@color/white"
-                android:textSize="@dimen/_13sdp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/ivChest"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-            <ImageView
-                android:id="@+id/ivChest"
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_gravity="end"
-                android:layout_margin="@dimen/_3sdp"
-                android:padding="@dimen/_10sdp"
-                android:src="@drawable/ic_tick"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/tvChest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center_vertical"
+                    android:text="@string/chest"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/ivChest"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                <ImageView
+                    android:id="@+id/ivChest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="end"
+                    android:layout_margin="@dimen/_3sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/ic_tick"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
 
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout18"
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/clBelly"
             android:layout_width="@dimen/_120sdp"
             android:layout_height="@dimen/_35sdp"
-            android:background="@drawable/bg_options"
+            app:cardBackgroundColor="@color/transparent"
+            app:strokeColor="@color/outline_color"
             android:orientation="horizontal"
-            app:layout_constraintBottom_toTopOf="@+id/constraintLayout19"
+            app:strokeWidth="@dimen/_1sdp"
+            app:layout_constraintBottom_toTopOf="@+id/clLeg"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/constraintLayout17">
+            app:layout_constraintTop_toBottomOf="@+id/clChest">
 
-            <TextView
-                android:id="@+id/tvBelly"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_medium"
-                android:gravity="center_vertical"
-                android:text="@string/arms"
-                android:textColor="@color/white"
-                android:textSize="@dimen/_13sdp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/ivBelly"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-            <ImageView
-                android:id="@+id/ivBelly"
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_gravity="end"
-                android:layout_margin="@dimen/_3sdp"
-                android:padding="@dimen/_10sdp"
-                android:src="@drawable/ic_tick"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/tvBelly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center_vertical"
+                    android:text="@string/belly"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/ivBelly"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                <ImageView
+                    android:id="@+id/ivBelly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="end"
+                    android:layout_margin="@dimen/_3sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/ic_tick"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
 
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout19"
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/clLeg"
             android:layout_width="@dimen/_120sdp"
             android:layout_height="@dimen/_35sdp"
-            android:background="@drawable/bg_options"
+            app:cardBackgroundColor="@color/transparent"
+            app:strokeColor="@color/outline_color"
             android:orientation="horizontal"
-            android:layout_marginBottom="@dimen/_55sdp"
+            app:strokeWidth="@dimen/_1sdp"
+            android:layout_marginBottom="@dimen/_75sdp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/constraintLayout18">
+            app:layout_constraintTop_toBottomOf="@+id/clBelly">
 
-            <TextView
-                android:id="@+id/tvLeg"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins_medium"
-                android:gravity="center_vertical"
-                android:text="@string/arms"
-                android:textColor="@color/white"
-                android:textSize="@dimen/_13sdp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/ivLeg"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
 
-            <ImageView
-                android:id="@+id/ivLeg"
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_gravity="end"
-                android:layout_margin="@dimen/_3sdp"
-                android:padding="@dimen/_10sdp"
-                android:src="@drawable/ic_tick"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                <TextView
+                    android:id="@+id/tvLeg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center_vertical"
+                    android:text="Leg"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/ivLeg"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/ivLeg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="end"
+                    android:layout_margin="@dimen/_3sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/ic_tick"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="wrap_content"
+            android:layout_width="@dimen/_150sdp"
             android:layout_height="wrap_content"
-            android:src="@drawable/parts_focus"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bodytype"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/clBelly"
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

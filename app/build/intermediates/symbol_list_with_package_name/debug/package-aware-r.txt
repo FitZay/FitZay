@@ -1608,6 +1608,7 @@ color green
 color grey
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color lightgrey
 color m3_appbar_overlay_color
 color m3_assist_chip_icon_tint_color
 color m3_assist_chip_stroke_color
@@ -2269,6 +2270,7 @@ color tab_selected
 color text_color
 color text_field_outline
 color text_gray
+color textcolor
 color toggle_text_color
 color tooltip_background_dark
 color tooltip_background_light
@@ -3958,6 +3960,7 @@ drawable arabic
 drawable arm_index
 drawable avd_hide_password
 drawable avd_show_password
+drawable bar_bg
 drawable baseline_cancel_24
 drawable baseline_keyboard_arrow_right_24
 drawable baseline_lock_24
@@ -3996,6 +3999,8 @@ drawable bg_watchad
 drawable bg_wheel_picker
 drawable blur_bg
 drawable blur_effect
+drawable bmi_loading
+drawable bodytype
 drawable bottom_nav_selector
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
@@ -4272,6 +4277,7 @@ drawable preference_list_divider_material
 drawable premiumheader
 drawable progress_gradient
 drawable rounded_corners_shape_permission
+drawable roundview
 drawable russian
 drawable selected_bg
 drawable shoulder_index
@@ -4383,6 +4389,11 @@ id add
 id addViewIcon
 id adjust_height
 id adjust_width
+id ageH
+id ageText
+id ageValue
+id ageminusBtn
+id ageplusBtn
 id alarmIc
 id alarmIcon
 id alarmLabel
@@ -4425,6 +4436,13 @@ id beginning
 id bestChoice
 id bgWeekdays
 id blocking
+id bmiExtreme
+id bmiLow
+id bmiNormal
+id bmiObese
+id bmiOverweight
+id bmiValue
+id bmiloader
 id body
 id bottom
 id bottomNavigation
@@ -4498,13 +4516,16 @@ id cl30
 id cl629Week
 id clAds
 id clArms
+id clBelly
 id clBottomLayout
 id clBottomNext
+id clChest
 id clDailyMotivation
 id clFemale
 id clFit
 id clGenderSelection
 id clInput
+id clLeg
 id clLess5
 id clMale
 id clNotVeryFit
@@ -4519,6 +4540,8 @@ id clockwise
 id closeBtn
 id closest
 id cm
+id cmBtn
+id cmText
 id collapseActionView
 id collapsingToolbar
 id compose_view_saveable_id_tag
@@ -4537,7 +4560,10 @@ id constraintLayout17
 id constraintLayout18
 id constraintLayout19
 id constraintLayout2
+id constraintLayout20
 id constraintLayout21
+id constraintLayout22
+id constraintLayout23
 id constraintLayout29
 id constraintLayout3
 id constraintLayout30
@@ -4584,6 +4610,7 @@ id decor_content_parent
 id default_activity_button
 id deltaRelative
 id dependency_ordering
+id des
 id description
 id design_bottom_sheet
 id design_menu_item_action_area
@@ -4652,6 +4679,7 @@ id fill
 id fill_horizontal
 id fill_vertical
 id filled
+id finalVal
 id firstGuide
 id fitCenter
 id fitEnd
@@ -4671,11 +4699,13 @@ id frameBannerContainer
 id frameLayout
 id frost
 id ft
+id ftBtn
 id ftConsent
 id ftHowToUse
 id ftPrivacy
 id ftRate
 id ftShareApp
+id ftText
 id fullBodyDesc
 id fullbodychBtn
 id fullscreen_header
@@ -4696,7 +4726,11 @@ id groups
 id hardware
 id header_title
 id headline
+id heightH
+id heightPlusBtn
 id heightToggle
+id heightValue
+id heightminusBtn
 id hide_ime_id
 id hide_in_inspector_tag
 id hideable
@@ -4727,7 +4761,6 @@ id imageView2
 id imageView3
 id imageView4
 id imageView5
-id imageView7
 id img0001
 id img001
 id imgAlarm
@@ -4831,6 +4864,7 @@ id left
 id leftToRight
 id legacy
 id light
+id line
 id line1
 id line3
 id linear
@@ -4855,6 +4889,8 @@ id lottie_layer_name
 id lowerBodyDesc
 id m3_side_sheet
 id main
+id mainT
+id mainV
 id mainconstraint
 id manageSubscriptionBtn
 id marquee
@@ -4867,6 +4903,8 @@ id materialCardView11
 id materialCardView12
 id materialCardView13
 id materialCardView14
+id materialCardView15
+id materialCardView16
 id materialCardView2
 id materialCardView21
 id materialCardView22
@@ -4876,6 +4914,7 @@ id materialCardView25
 id materialCardView26
 id materialCardView27
 id materialCardView28
+id materialCardView29
 id materialCardView3
 id materialCardView31
 id materialCardView32
@@ -4890,6 +4929,7 @@ id materialCardView6
 id materialCardView7
 id materialCardView8
 id materialCardView9
+id materialCardageminusBtn
 id materialToolbar
 id material_clock_display
 id material_clock_display_and_toggle
@@ -5195,6 +5235,9 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
+id targetweightText
+id targetweightminusBtn
+id targetweightplusBtn
 id tenMinutes
 id text
 id text0001
@@ -5225,9 +5268,14 @@ id textView24
 id textView25
 id textView26
 id textView27
+id textView29
 id textView3
 id textView30
 id textView31
+id textView33
+id textView35
+id textView37
+id textView38
 id textView4
 id textView5
 id textView6
@@ -5368,6 +5416,7 @@ id userAge
 id userGoal
 id userSteps
 id v
+id value_text
 id vb
 id vb2
 id vertical_only
@@ -5400,7 +5449,12 @@ id weekonedayoneBtn5
 id weekonedayoneBtn6
 id weekonedayoneBtn7
 id weekonedayoneBtn8
+id weightH
+id weightText
 id weightToggle
+id weightValue
+id weightminlusBtn
+id weightplusBtn
 id west
 id wheel_picker
 id wide
@@ -5537,6 +5591,7 @@ layout abc_tooltip
 layout activity_asking_age
 layout activity_asking_height
 layout activity_asking_weight
+layout activity_bmi
 layout activity_cup_capacity
 layout activity_display_quote
 layout activity_display_workouts
@@ -5546,6 +5601,7 @@ layout activity_first_name
 layout activity_fit_you
 layout activity_fullbody_workout
 layout activity_gender
+layout activity_heightand_weight
 layout activity_language
 layout activity_loading
 layout activity_main
@@ -5732,6 +5788,7 @@ mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
 raw firebase_common_keep
+raw personalized_ani
 raw personalized_workouts
 raw task_complete
 string abc_action_bar_home_description
@@ -5785,6 +5842,7 @@ string bed_time
 string beginner
 string being_active
 string belly
+string bmi
 string boosting_energy
 string boosting_immunity
 string bottom_sheet_behavior

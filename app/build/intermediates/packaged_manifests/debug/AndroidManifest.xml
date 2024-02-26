@@ -88,31 +88,70 @@
         android:testOnly="true"
         android:theme="@style/Theme.FitnessApplication" >
         <activity
-            android:name="com.fitzay.workouttracker.strengthtraining.ui.activities.PersonalizedWorkAct"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:name="com.fitzay.workouttracker.strengthtraining.ui.activities.VerticalRulerView"
+            android:exported="false" />
         <activity
-            android:name="com.fitzay.workouttracker.strengthtraining.ui.activities.ProfileAct"
-            android:exported="true" >
+            android:name="com.fitzay.workouttracker.strengthtraining.ui.activities.BmiAct"
+            android:exported="true" />
+        <activity
+            android:name="com.fitzay.workouttracker.strengthtraining.ui.questions.start.HeightandWeightAct"
+            android:exported="true"
+            android:screenOrientation="portrait" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+
         </activity>
         <activity
             android:name="com.fitzay.workouttracker.strengthtraining.ui.questions.start.PushUpsDoActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.fitzay.workouttracker.strengthtraining.ui.questions.start.PartShouldFocusActivity"
-            android:exported="false" />
+            android:exported="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.fitzay.workouttracker.strengthtraining.ui.activities.PersonalizedWorkAct"
+            android:exported="true"
+            android:screenOrientation="portrait" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name="com.fitzay.workouttracker.strengthtraining.ui.activities.ProfileAct"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
         <activity
             android:name="com.fitzay.workouttracker.strengthtraining.ui.activities.LanguageAct"
-            android:exported="false" >
+            android:exported="true"
+            android:screenOrientation="portrait" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity
             android:name="com.fitzay.workouttracker.strengthtraining.ui.activities.FullbodyWorkoutActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.fitzay.workouttracker.strengthtraining.ui.activities.ExitScreenActivity"
             android:exported="false"
@@ -124,13 +163,16 @@
             android:screenOrientation="portrait" />
         <activity
             android:name="com.fitzay.workouttracker.strengthtraining.ui.sleeptacker.SleepSummaryActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.fitzay.workouttracker.strengthtraining.ui.sleeptacker.SleepTrackerHomeScreen"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.fitzay.workouttracker.strengthtraining.ui.sleeptacker.PlayAlarmActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.fitzay.workouttracker.strengthtraining.ui.activities.SingleExerciseActivity"
             android:exported="false"
@@ -139,6 +181,11 @@
             android:name="com.fitzay.workouttracker.strengthtraining.ui.activities.LoadingActivity"
             android:exported="true"
             android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name="com.fitzay.workouttracker.strengthtraining.ui.sleeptacker.SleepTrackerActivity"
@@ -191,8 +238,7 @@
         <activity
             android:name="com.fitzay.workouttracker.strengthtraining.ui.questions.start.GenderActivity"
             android:exported="true"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.fitzay.workouttracker.strengthtraining.ui.questions.start.AskingWeightActivity"
             android:exported="false"

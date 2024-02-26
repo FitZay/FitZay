@@ -318,6 +318,10 @@
     <string name="language">لغة</string>
     <string name="manage_subscriptions">إدارة الاشتراكات</string>
     <string name="personalized_des">انتظر حتى يقوم مدربك الشخصي بإعداد روتين التمرين المخصص لك</string>
+    <string name="bmi">مؤشر كتلة الجسم</string>
+    <string name="silver">فضة</string>
+    <string name="gold">ذهب</string>
+    <string name="platinum">بلاتين</string>
 
 
 </resources>

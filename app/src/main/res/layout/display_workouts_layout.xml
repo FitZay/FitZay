@@ -6,6 +6,7 @@
     android:layout_centerHorizontal="true"
     android:layout_gravity="center_horizontal"
     android:layout_margin="@dimen/_5sdp"
+    android:layoutDirection="ltr"
     android:background="@drawable/bg_plan_sub_menu"
     app:cardUseCompatPadding="true">
 

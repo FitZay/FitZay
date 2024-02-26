@@ -13,6 +13,7 @@
         android:layout_marginStart="@dimen/_8sdp"
         android:layout_marginEnd="@dimen/_5sdp"
         android:layout_marginTop="@dimen/_1sdp"
+        android:layoutDirection="ltr"
         android:layout_marginBottom="@dimen/_1sdp"
         android:background="@drawable/alarm_new_bg">
 

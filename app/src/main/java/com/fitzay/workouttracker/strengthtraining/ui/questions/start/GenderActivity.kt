@@ -45,7 +45,7 @@ class GenderActivity : AppCompatActivity() {
 
             //Skip Button Listener
             txtSkip.setOnClickListener {
-                val intent = Intent(this@GenderActivity, PartShouldFocusActivity::class.java).apply {
+                val intent = Intent(this@GenderActivity, FirstNameActivity::class.java).apply {
                     Intent.FLAG_ACTIVITY_SINGLE_TOP
                 }
                 val anim = ActivityOptions.makeCustomAnimation(this@GenderActivity, R.anim.slide_in_right, R.anim.slide_out_left).toBundle()
@@ -79,13 +79,22 @@ class GenderActivity : AppCompatActivity() {
                     Component.preference.userGender = "Female"
                 }
 
-
-
+                if (AppController.inappScenario == "3")
+            {
                 val intent = Intent(this@GenderActivity, PartShouldFocusActivity::class.java).apply {
                     Intent.FLAG_ACTIVITY_SINGLE_TOP
                 }
-                val anim = ActivityOptions.makeCustomAnimation(this@GenderActivity, R.anim.slide_in_right, R.anim.slide_out_left).toBundle()
                 startActivity(intent)
+            }
+                else
+                {
+                    val intent = Intent(this@GenderActivity, FirstNameActivity::class.java).apply {
+                        Intent.FLAG_ACTIVITY_SINGLE_TOP
+                    }
+                    startActivity(intent)
+                }
+
+
 
 
                 //var an=AnimationUtils.loadAnimation(this@GenderActivity, R.anim.slide_in_right_2)

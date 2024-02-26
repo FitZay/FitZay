@@ -14,6 +14,7 @@
         android:layout_marginEnd="@dimen/_10sdp"
         android:layout_marginTop="@dimen/_2sdp"
         android:layout_marginBottom="@dimen/_4sdp"
+        android:layoutDirection="ltr"
         android:background="@drawable/alarm_new_bg">
 
         <androidx.constraintlayout.widget.ConstraintLayout
