@@ -319,5 +319,6 @@
     <string name="no_alarm">Нет будильника</string>
     <string name="tomorrow">Завтра утром</string>
     <string name="no_data">Нет данных</string>
+    <string name="daily_goal">Ежедневная цель</string>
 
 </resources>

@@ -113,6 +113,7 @@
     <string name="daily_">يومي </string>
     <string name="daily_average">المتوسط اليومي</string>
     <string name="daily_challenge">التحدي اليومي</string>
+    <string name="daily_goal">الهدف اليومي</string>
     <string name="daily_motivation">تحفيز يومي</string>
     <string name="daily_step_goal">هدف الخطوات اليومي</string>
     <string msgid="8038256446254964252" name="default_error_message">"إدخال غير صالح"</string>

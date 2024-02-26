@@ -70,14 +70,17 @@ class StepCounterActivity : AppCompatActivity() {
 
 
         if ((Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q)) {
-            requestPermissionLauncher =
-                registerForActivityResult(ActivityResultContracts.RequestPermission()) { isGranted ->
+            requestPermissionLauncher = registerForActivityResult(ActivityResultContracts.RequestPermission()) { isGranted ->
                     if (isGranted) {
                         goService()
+                        Log.i("NEW-TAG", "onCreate--IF: ")
 
-                    } else {
+                    }
+                    else {
                         // Permission is denied, check if the user has denied multiple times
-                        requestPermission()
+
+                        Log.i("NEW-TAG", "onCreate--ELSE: ")
+
                         if (!ActivityCompat.shouldShowRequestPermissionRationale(this@StepCounterActivity, Manifest.permission.ACTIVITY_RECOGNITION)) {
                             Toast.makeText(
                                 this@StepCounterActivity,
@@ -85,22 +88,28 @@ class StepCounterActivity : AppCompatActivity() {
                                 Toast.LENGTH_SHORT
                             ).show()
                             navigateToAppSettings()
+                            //requestPermission()
+                            Log.i("NEW-TAG", "onCreate--ELSE-IF: ")
+
                         }
                     }
                 }
 
             val permission = Manifest.permission.ACTIVITY_RECOGNITION
-            if (ContextCompat.checkSelfPermission(
-                    this@StepCounterActivity,
-                    permission) != PackageManager.PERMISSION_GRANTED
-            ) {
+            if (ContextCompat.checkSelfPermission(this@StepCounterActivity, permission) != PackageManager.PERMISSION_GRANTED) {
                 // Permission is not granted, request it from the user
                 requestPermission()
+                Log.i("NEW-TAG", "onCreate--OUT-IF: ")
+
             } else {
                 goService()
+                Log.i("NEW-TAG", "onCreate--OUT-ELSE: ")
+
             }
         } else {
             goService()
+            Log.i("NEW-TAG", "onCreate--OUT++-ELSE: ")
+
         }
 
         defaultValues()

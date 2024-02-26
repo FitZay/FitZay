@@ -109,6 +109,7 @@
     <string name="daily_">Diario </string>
     <string name="daily_average">Promedio Diario</string>
     <string name="daily_challenge">Reto Diario</string>
+    <string name="daily_goal">Meta diaria</string>
     <string name="daily_motivation">Motivación Diaria</string>
     <string name="daily_step_goal">Objetivo diario de pasos</string>
     <string msgid="8038256446254964252" name="default_error_message">"Entrada no válida"</string>

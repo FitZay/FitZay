@@ -346,5 +346,6 @@
     <string name="no_alarm">Pas d\'alarme</string>
     <string name="tomorrow">Demain matin</string>
     <string name="no_data">Aucune donnée</string>
+    <string name="daily_goal">Objectif quotidien</string>
 
 </resources>

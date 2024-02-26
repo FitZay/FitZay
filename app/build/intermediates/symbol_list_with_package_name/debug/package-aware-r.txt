@@ -5901,6 +5901,7 @@ string daily
 string daily_
 string daily_average
 string daily_challenge
+string daily_goal
 string daily_motivation
 string daily_step_goal
 string default_error_message

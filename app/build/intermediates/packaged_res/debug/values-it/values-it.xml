@@ -41,6 +41,7 @@
     <string name="daily_">Giornaliero </string>
     <string name="daily_average">Media Giornaliera</string>
     <string name="daily_challenge">Sfida Quotidiana</string>
+    <string name="daily_goal">Obiettivo quotidiano</string>
     <string name="daily_motivation">Motivazione Quotidiana</string>
     <string name="daily_step_goal">Obiettivo giornaliero dei passi</string>
     <string name="delete_account"><u>Elimina Account</u></string>

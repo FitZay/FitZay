@@ -41,6 +41,7 @@
     <string name="daily_">Diario </string>
     <string name="daily_average">Promedio Diario</string>
     <string name="daily_challenge">Reto Diario</string>
+    <string name="daily_goal">Meta diaria</string>
     <string name="daily_motivation">Motivación Diaria</string>
     <string name="daily_step_goal">Objetivo diario de pasos</string>
     <string name="delete_account"><u>Eliminar cuenta</u></string>

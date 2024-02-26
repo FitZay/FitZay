@@ -352,6 +352,7 @@
     <string name="tomorrow">Tomorrow Morning</string>
 
     <string name="no_data">No Data</string>
+    <string name="daily_goal">Daily Goal</string>
 
 
     <string-array name="age">

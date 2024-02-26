@@ -5900,6 +5900,7 @@ int string daily 0x7f13006a
 int string daily_ 0x7f13006b
 int string daily_average 0x7f13006c
 int string daily_challenge 0x7f13006d
+int string daily_goal 0x7f13020a
 int string daily_motivation 0x7f13006e
 int string daily_step_goal 0x7f13006f
 int string default_error_message 0x7f130070

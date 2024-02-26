@@ -81,7 +81,7 @@ class WaterIntakeActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        binding.txtGoal.text = "Daily Goal :" + Component.preference.waterGoal + " ml"
+        binding.txtGoal.text = getString(R.string.daily_goal)+":"+ Component.preference.waterGoal + " ml"
         binding.currentML.text = Component.preference.cupCapacity.toString() + " ml"
     }
 

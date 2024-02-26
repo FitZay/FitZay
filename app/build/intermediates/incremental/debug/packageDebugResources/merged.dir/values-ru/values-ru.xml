@@ -41,6 +41,7 @@
     <string name="daily_">Ежедневно </string>
     <string name="daily_average">Среднее за день</string>
     <string name="daily_challenge">Ежедневный вызов</string>
+    <string name="daily_goal">Ежедневная цель</string>
     <string name="daily_motivation">Ежедневная мотивация</string>
     <string name="daily_step_goal">Цель ежедневного количества шагов</string>
     <string name="delete_account"><u>Удалить аккаунт</u></string>

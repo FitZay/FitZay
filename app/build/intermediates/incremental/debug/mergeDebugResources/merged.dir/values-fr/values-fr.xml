@@ -109,6 +109,7 @@
     <string name="daily_">Quotidienne </string>
     <string name="daily_average">Moyenne Quotidienne</string>
     <string name="daily_challenge">Défi Quotidien</string>
+    <string name="daily_goal">Objectif quotidien</string>
     <string name="daily_motivation">Motivation Quotidienne</string>
     <string name="daily_step_goal">Objectif quotidien de pas</string>
     <string msgid="8038256446254964252" name="default_error_message">"Données incorrectes"</string>

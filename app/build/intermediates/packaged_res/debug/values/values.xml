@@ -176,6 +176,7 @@
     <string name="daily_">Daily </string>
     <string name="daily_average">Daily Average</string>
     <string name="daily_challenge">Daily Challenge</string>
+    <string name="daily_goal">Daily Goal</string>
     <string name="daily_motivation">Daily Motivation</string>
     <string name="daily_step_goal">Daily Step Goal</string>
     <string name="delete_account"><u> Delete Account </u></string>
