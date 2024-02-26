@@ -46,8 +46,9 @@ class LanguageAct : AppCompatActivity(),LanguageItemClick {
         TemplateView.ctacolor = AppController.fitzayModel?.FitzayNativeLanguage?.ctacolor
         binding = DataBindingUtil.setContentView(this, R.layout.activity_language)
 
-        val sharedPref = getSharedPreferences("myPrefs", Context.MODE_PRIVATE)
+        val sharedPref = getSharedPreferences("storeLan", Context.MODE_PRIVATE)
 
+        Log.i("NEW-TAG-2", "cRlA: "+sharedPref.getString("key", "en"))
 
 
         list.add(LanguageM("English", R.drawable.english__usa_, false))
@@ -118,6 +119,7 @@ class LanguageAct : AppCompatActivity(),LanguageItemClick {
                         Intent.FLAG_ACTIVITY_SINGLE_TOP
                     }
                     startActivity(intent)
+                    finish()
                 }
                 else {
                     val intent = Intent(this@LanguageAct, MainActivity::class.java).apply {
@@ -138,6 +140,7 @@ class LanguageAct : AppCompatActivity(),LanguageItemClick {
 
     }
     }
+
     override fun itemClick(position: Int, model: LanguageM, check: RadioButton) {
 
         sharedPreferencesHelper.setPosition(position)

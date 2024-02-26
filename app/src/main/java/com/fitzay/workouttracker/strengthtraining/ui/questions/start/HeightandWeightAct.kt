@@ -14,6 +14,8 @@ import com.fitzay.workouttracker.strengthtraining.ui.activities.PersonalizedWork
 import com.fitzay.workouttracker.strengthtraining.ui.activities.ProfileAct
 import kotlin.math.ceil
 import kotlin.math.floor
+import kotlin.math.round
+import kotlin.math.roundToInt
 
 class HeightandWeightAct : AppCompatActivity() {
 
@@ -60,12 +62,16 @@ class HeightandWeightAct : AppCompatActivity() {
 
 
             ageplusBtn.setOnClickListener {
+                check=true
+                check2=true
                 age++
                 ageText.text = age.toString()
             }
 
             ageminusBtn.setOnClickListener {
                 if (age > 0) {
+                    check=true
+                    check2=true
                     age--
                     ageText.text = age.toString()
                 }
@@ -110,24 +116,16 @@ class HeightandWeightAct : AppCompatActivity() {
                 }
             }
 
-            var value=""
-            var value2=""
             cmBtn.setOnClickListener {
-
                 try {
                     if (!valueText.text.isNullOrEmpty())
                     {
-
-                        if (check) {
+                        if (check){
+                            check = false
+                            check2 = true
                             val centimeters = valueText.text.toString().toDouble()
-                            val cn = centimeterToFeet(centimeters.toString())
-                            value = cn.first.toString() + cn.second.toString()
-                            valueText.setText(value)
-                            check=false
-                        }
-                        else
-                        {
-                            valueText.setText(value)
+                            val cn =inchesToCm(centimeters)
+                            valueText.setText(cn.toString())
                         }
                     }
 
@@ -146,19 +144,11 @@ class HeightandWeightAct : AppCompatActivity() {
             ftBtn.setOnClickListener {
                 try {
                     if (!valueText.text.isNullOrEmpty()) {
-                        if (check2) {
-                            val feetAndInches = Pair(
-                                valueText.text.toString().toInt(),
-                                valueText.text.toString().toDouble()
-                            )
-
-                            val con = feetAndInches.toCentimeters()
-                            value2=con.toString()
-                            valueText.setText(value2)
-                            check2=false
-                        } else {
-                            valueText.setText(value2)
-
+                        if (check2){
+                            check2 = false
+                            check = true
+                            val con = cmToInches(valueText.text.toString().toDouble())
+                            valueText.setText(con.toString())
                         }
                     }
                     ftBtn.setBackgroundColor(
@@ -195,16 +185,15 @@ class HeightandWeightAct : AppCompatActivity() {
 
     }
 
-    fun centimeterToFeet(centemeter: String?): Pair<Int, Int> {
-        var feetPart = 0
-        var inchesPart = 0
-        if (!TextUtils.isEmpty(centemeter)) {
-            val dCentimeter = java.lang.Double.valueOf(centemeter)
-            feetPart = floor(dCentimeter / 2.54 / 12).toInt()
-            println(dCentimeter / 2.54 - feetPart * 12)
-            inchesPart = ceil(dCentimeter / 2.54 - feetPart * 12).toInt()
-        }
-        return Pair(feetPart, inchesPart)
-        //  return String.format("%d %d", feetPart, inchesPart)
+
+    fun cmToInches(cm: Double): Double {
+        var result =  cm / 2.54
+        return round(result * 100.0) / 100.0
     }
+
+    fun inchesToCm(inches: Double): Double {
+        val result = inches * 2.54
+        return round(result * 100.0) / 100.0
+    }
+
 }

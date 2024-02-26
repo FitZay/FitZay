@@ -58,9 +58,6 @@ class LoadingActivity : AppCompatActivity() {
         binding = ActivityLoadingBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
-
-
         isStarted = true
         InAppPurchaseUtil.isPurchaseSubscribed(this)
         handlerLoading = Handler(Looper.getMainLooper())
@@ -186,10 +183,10 @@ class LoadingActivity : AppCompatActivity() {
         if (isConsentDone) {
             showLoading()
         }
-        val sharedPref = applicationContext.getSharedPreferences("myPrefs", Context.MODE_PRIVATE)
-        val lan = sharedPref.getString("key", "en")
+        val sharedPref = applicationContext.getSharedPreferences("storeLan", Context.MODE_PRIVATE)
+        setLocale(this@LoadingActivity,sharedPref.getString("key", "en")!!)
 
-        setLocale(this@LoadingActivity,lan!!)
+        Log.i("NEW-TAG-2", "onStart: "+sharedPref.getString("key", "en"))
     }
 
 
