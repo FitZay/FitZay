@@ -7,6 +7,8 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.fitzay.workouttracker.strengthtraining.R
 import com.fitzay.workouttracker.strengthtraining.core.AppController
+import com.fitzay.workouttracker.strengthtraining.core.utils.AppUtil2
+import com.fitzay.workouttracker.strengthtraining.core.utils.LanguageManager
 import com.fitzay.workouttracker.strengthtraining.core.utils.getFitzayRemoteString
 import com.fitzay.workouttracker.strengthtraining.databinding.ActivityAskingAgeBinding
 import com.fitzay.workouttracker.strengthtraining.di.Component
@@ -18,7 +20,7 @@ import com.google.android.gms.ads.LoadAdError
 import com.google.android.gms.ads.nativead.NativeAdOptions
 
 
-class AskingAgeActivity : AppCompatActivity() {
+class AskingAgeActivity : AppUtil2() {
 
     private lateinit var binding: ActivityAskingAgeBinding
 
@@ -125,5 +127,6 @@ class AskingAgeActivity : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
         binding.userAge.setSelectedItem(Component.preference.userAge.toString())
+        LanguageManager(this@AskingAgeActivity)
     }
 }

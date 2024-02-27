@@ -2982,7 +2982,7 @@
     <string name="close_drawer">"Close navigation menu"</string>
     <string name="close_sheet">"Close sheet"</string>
     <string name="cm">cm</string>
-    <string name="com.google.firebase.crashlytics.mapping_file_id" ns1:ignore="UnusedResources,TypographyDashes" translatable="false">74c07d6085284d109519916320dd961f</string>
+    <string name="com.google.firebase.crashlytics.mapping_file_id" ns1:ignore="UnusedResources,TypographyDashes" translatable="false">8c1d6419341a4471bee537023a5975ef</string>
     <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Enable</string>
     <string msgid="227660514972886228" name="common_google_play_services_enable_text"><ns2:g id="app_name">%1$s</ns2:g> won\'t work unless you enable Google Play services.</string>
     <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Enable Google Play services</string>
@@ -3012,6 +3012,7 @@
     <string name="daily_goal">Daily Goal</string>
     <string name="daily_motivation">Daily Motivation</string>
     <string name="daily_step_goal">Daily Step Goal</string>
+    <string name="def">Default</string>
     <string name="default_error_message">"Invalid input"</string>
     <string name="default_popup_window_title" ns1:ignore="ExtraTranslation">"Pop-Up Window"</string>
     <string name="delete_account"><u> Delete Account </u></string>
@@ -3095,6 +3096,7 @@
     <string name="in">in</string>
     <string name="in_progress">In progress</string>
     <string name="indeterminate">Neither checked nor unchecked</string>
+    <string name="input">Input your data</string>
     <string name="instagram">Instagram</string>
     <string name="intermediate">Intermediate</string>
     <string name="item_not_found">Item not found</string>
@@ -3106,6 +3108,7 @@
     <string name="label">Label</string>
     <string name="language">Language</string>
     <string name="lbs">lbs</string>
+    <string name="leg">Leg</string>
     <string name="less_6_hours">Less than 6 hours</string>
     <string name="less_one_hour">Less than 1 hour</string>
     <string name="look">Just take a look</string>
@@ -3154,6 +3157,7 @@
     <string name="material_timepicker_text_input_mode_description">Switch to text input mode for the time input.</string>
     <string name="message">By deleting account all your saved data will be removed!</string>
     <string name="miles">Miles</string>
+    <string name="ml">ml</string>
     <string name="month_of_membership">1 month of membership</string>
     <string name="monthly">MONTHLY AVERAGE</string>
     <string name="monthly_">Monthly </string>
@@ -3363,6 +3367,7 @@
     <string name="time">Time</string>
     <string name="time_in_bed">Time in Bed</string>
     <string name="today">Today</string>
+    <string name="today_">Today</string>
     <string name="tomorrow">Tomorrow Morning</string>
     <string name="tonight">Tonight</string>
     <string name="too_easy">Too hard</string>

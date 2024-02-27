@@ -11,6 +11,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.animation.fadeOut
 import com.fitzay.workouttracker.strengthtraining.R
 import com.fitzay.workouttracker.strengthtraining.core.AppController
+import com.fitzay.workouttracker.strengthtraining.core.utils.AppUtil2
+import com.fitzay.workouttracker.strengthtraining.core.utils.LanguageManager
 import com.fitzay.workouttracker.strengthtraining.core.utils.getFitzayRemoteString
 import com.fitzay.workouttracker.strengthtraining.databinding.ActivityGenderBinding
 import com.fitzay.workouttracker.strengthtraining.di.Component
@@ -22,7 +24,7 @@ import com.google.android.gms.ads.LoadAdError
 import com.google.android.gms.ads.nativead.NativeAdOptions
 
 
-class GenderActivity : AppCompatActivity() {
+class GenderActivity : AppUtil2() {
 
     private lateinit var binding: ActivityGenderBinding
 
@@ -163,5 +165,10 @@ class GenderActivity : AppCompatActivity() {
             }
         }
 
+    }
+
+    override fun onStart() {
+        super.onStart()
+        LanguageManager(this@GenderActivity)
     }
 }

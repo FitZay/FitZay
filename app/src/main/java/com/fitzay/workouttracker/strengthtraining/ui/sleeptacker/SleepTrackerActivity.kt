@@ -29,6 +29,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.fitzay.workouttracker.strengthtraining.R
 import com.fitzay.workouttracker.strengthtraining.core.AppController
 import com.fitzay.workouttracker.strengthtraining.core.utils.AlarmReceiver
+import com.fitzay.workouttracker.strengthtraining.core.utils.AppUtil2
+import com.fitzay.workouttracker.strengthtraining.core.utils.LanguageManager
 import com.fitzay.workouttracker.strengthtraining.core.utils.convertDateTime
 import com.fitzay.workouttracker.strengthtraining.core.utils.convertTimeToMilliseconds
 import com.fitzay.workouttracker.strengthtraining.core.utils.convertTimeToMillisecondsHrAndMin
@@ -60,7 +62,7 @@ import java.util.*
 import kotlin.collections.ArrayList
 
 
-class SleepTrackerActivity : AppCompatActivity(), ShowRingToneItemClick {
+class SleepTrackerActivity : AppUtil2(), ShowRingToneItemClick {
     private lateinit var binding: ActivitySleepTrackerBinding
 
     private var ringToneAdapter: RingToneShowAdapter? = null
@@ -1804,7 +1806,7 @@ class SleepTrackerActivity : AppCompatActivity(), ShowRingToneItemClick {
         dialog.setCanceledOnTouchOutside(false)
         dialog.setCancelable(false)
 
-        labelBinding.tvTitle.text = "Label"
+        labelBinding.tvTitle.text = getString(R.string.label)
         labelBinding.tvStepGoal.inputType = InputType.TYPE_CLASS_TEXT
         labelBinding.btnSave.setOnClickListener {
             if (!labelBinding.tvStepGoal.text.isNullOrEmpty()) {
@@ -2106,4 +2108,8 @@ class SleepTrackerActivity : AppCompatActivity(), ShowRingToneItemClick {
 
     }
 
+    override fun onStart() {
+        super.onStart()
+        LanguageManager(this@SleepTrackerActivity)
+    }
 }

@@ -294,5 +294,16 @@
     <string name="no_data">कोई डेटा नहीं</string>
     <string name="daily_goal">दैनिक लक्ष्य</string>
     <string name="add">जोड़ें</string>
+    <string name="input">अपना डेटा दर्ज करें</string>
+    <string name="def">डिफ़ॉल्ट</string>
+    <string name="ml">मि</string>
+    <string name="today_">आज</string>
+    <string name="previous">पहले का</string>
+    <string name="leg">टांग</string>
+    <string name="goal">लक्ष्य</string>
+    <string name="distance">दूरी</string>
+    <string name="delete_alarm">अलार्म हटाएं</string>
+    <string name="ok_alarm">ठीक है</string>
+    <string name="alarm_mess">क्या आप वाकई हटाना चाहते हैं?</string>
 
 </resources>

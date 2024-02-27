@@ -8,6 +8,8 @@ import android.os.Handler
 import android.view.View
 import com.fitzay.workouttracker.strengthtraining.R
 import com.fitzay.workouttracker.strengthtraining.core.AppController
+import com.fitzay.workouttracker.strengthtraining.core.utils.AppUtil2
+import com.fitzay.workouttracker.strengthtraining.core.utils.LanguageManager
 import com.fitzay.workouttracker.strengthtraining.databinding.ActivityPersonalizedWorkBinding
 import com.fitzay.workouttracker.strengthtraining.di.Component
 import com.fitzay.workouttracker.strengthtraining.ui.MainActivity
@@ -19,7 +21,7 @@ import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.LoadAdError
 import com.google.android.gms.ads.nativead.NativeAdOptions
 
-class PersonalizedWorkAct : AppCompatActivity() {
+class PersonalizedWorkAct : AppUtil2() {
 
     private lateinit var binding:ActivityPersonalizedWorkBinding
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,7 +30,7 @@ class PersonalizedWorkAct : AppCompatActivity() {
         binding = ActivityPersonalizedWorkBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
+        LanguageManager(this@PersonalizedWorkAct)
         binding.apply {
             if (AppController.fitzayModel != null && AppController.fitzayModel?.FitzayNativePersonalized?.showAd == true) {
                 clAds.visibility = View.VISIBLE

@@ -12,6 +12,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.core.content.ContextCompat
 import com.fitzay.workouttracker.strengthtraining.R
 import com.fitzay.workouttracker.strengthtraining.core.AppController
+import com.fitzay.workouttracker.strengthtraining.core.utils.AppUtil2
+import com.fitzay.workouttracker.strengthtraining.core.utils.LanguageManager
 import com.fitzay.workouttracker.strengthtraining.databinding.ActivityExitScreenBinding
 import com.google.android.gms.ads.AdError
 import com.google.android.gms.ads.AdRequest
@@ -21,7 +23,7 @@ import com.google.android.gms.ads.interstitial.InterstitialAd
 import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
 import java.util.Objects
 
-class ExitScreenActivity : AppCompatActivity() {
+class ExitScreenActivity : AppUtil2() {
 
     private var binding : ActivityExitScreenBinding? = null
     private var waiting_dialog : Dialog? = null
@@ -34,7 +36,7 @@ class ExitScreenActivity : AppCompatActivity() {
         binding = ActivityExitScreenBinding.inflate(layoutInflater)
         setContentView(binding?.root)
 
-
+        LanguageManager(this@ExitScreenActivity)
         Log.d("ActivityCreation" , "oncreate")
 
         waiting_dialog = Dialog(this)

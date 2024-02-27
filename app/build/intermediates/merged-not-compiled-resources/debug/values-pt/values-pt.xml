@@ -83,6 +83,7 @@
     <string name="daily_goal">Meta diária</string>
     <string name="daily_motivation">Motivação Diária</string>
     <string name="daily_step_goal">Meta diária de passos</string>
+    <string name="def">Padrão</string>
     <string msgid="8038256446254964252" name="default_error_message">"Entrada inválida"</string>
     <string msgid="6312721426453364202" name="default_popup_window_title">"Janela pop-up"</string>
     <string name="delete_account"><u> Excluir Conta </u></string>
@@ -145,6 +146,7 @@
     <string name="in">pol</string>
     <string msgid="6827826412747255547" name="in_progress">"Em andamento"</string>
     <string msgid="2486394087603402002" name="indeterminate">"Nem marcada nem desmarcada"</string>
+    <string name="input">Digite seus dados</string>
     <string name="instagram">Instagram</string>
     <string name="intermediate">Intermediário</string>
     <string name="item_not_found">Item não encontrado</string>
@@ -155,6 +157,7 @@
     <string name="label">Rótulo</string>
     <string name="language">Linguagem</string>
     <string name="lbs">lbs</string>
+    <string name="leg">Perna</string>
     <string name="less_6_hours">Menos de 6 horas</string>
     <string name="less_one_hour">Menos de 1 hora</string>
     <string name="look">Apenas dê uma olhada</string>
@@ -165,6 +168,7 @@
     <string name="manage_subscriptions">Gerenciar assinaturas</string>
     <string name="message">Ao excluir a conta, todos os seus dados salvos serão removidos!</string>
     <string name="miles">Milhas</string>
+    <string name="ml">ml</string>
     <string name="month_of_membership">1 mês de associação</string>
     <string name="monthly">MÉDIA MENSAL</string>
     <string name="monthly_">Mensalmente </string>
@@ -254,6 +258,7 @@
     <string name="time">Tempo</string>
     <string name="time_in_bed">Tempo na cama</string>
     <string name="today">Hoje</string>
+    <string name="today_">Hoje</string>
     <string name="tomorrow">Amanhã de manhã</string>
     <string name="tonight">Hoje à noite</string>
     <string name="too_easy">Muito fácil</string>

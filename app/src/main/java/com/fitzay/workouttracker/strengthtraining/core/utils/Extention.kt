@@ -725,41 +725,41 @@ fun Context.getDate(milliSeconds: Long, dateFormat: String?): String {
     return formatter.format(calendar.time)
 }
 
-fun Context.setLocale(language: String){
-    val newLocale = Locale(language)
-    val configuration: Configuration = resources.configuration
-    configuration.setLocale(newLocale)
-    resources.updateConfiguration(configuration, resources.displayMetrics)
+//fun Context.setLocale(language: String){
+//    val newLocale = Locale(language)
+//    val configuration: Configuration = resources.configuration
+//    configuration.setLocale(newLocale)
+//    resources.updateConfiguration(configuration, resources.displayMetrics)
+//}
+
+
+fun Context.setLocale(context:Context?,lang: String) {
+    updateBaseContextLocale(context, lang)
+}
+private fun updateBaseContextLocale(context: Context?, language: String): Context {
+    val locale = Locale(language)
+    Locale.setDefault(locale)
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+        updateResourcesLocale(context!!, locale)
+        return updateResourcesLocaleLegacy(context, locale)
+    }
+    return updateResourcesLocaleLegacy(context!!, locale)
 }
 
-//
-//fun Context.setLocale(context:Context?,lang: String) {
-//    updateBaseContextLocale(context, lang)
-//}
-//private fun updateBaseContextLocale(context: Context?, language: String): Context {
-//    val locale = Locale(language)
-//    Locale.setDefault(locale)
-//    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-//        updateResourcesLocale(context!!, locale)
-//        return updateResourcesLocaleLegacy(context, locale)
-//    }
-//    return updateResourcesLocaleLegacy(context!!, locale)
-//}
-//
-//
-//private fun updateResourcesLocale(context: Context, locale: Locale): Context {
-//    val configuration = context.resources.configuration
-//    configuration.setLocale(locale)
-//    return context.createConfigurationContext(configuration)
-//}
-//
-//private fun updateResourcesLocaleLegacy(context: Context, locale: Locale): Context {
-//    val resources = context.resources
-//    val configuration = resources.configuration
-//    configuration.locale = locale
-//    resources.updateConfiguration(configuration, resources.displayMetrics)
-//    return context
-//}
+
+private fun updateResourcesLocale(context: Context, locale: Locale): Context {
+    val configuration = context.resources.configuration
+    configuration.setLocale(locale)
+    return context.createConfigurationContext(configuration)
+}
+
+private fun updateResourcesLocaleLegacy(context: Context, locale: Locale): Context {
+    val resources = context.resources
+    val configuration = resources.configuration
+    configuration.locale = locale
+    resources.updateConfiguration(configuration, resources.displayMetrics)
+    return context
+}
 
  fun Context.calculateBMI(height: Int, weight: Int): Float {
 
@@ -768,3 +768,5 @@ fun Context.setLocale(language: String){
 
      return "%.2f".format(bmi).toFloat()
 }
+
+

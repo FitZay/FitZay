@@ -950,6 +950,7 @@ string abs_core
 string add
 string advance
 string alarm
+string alarm_mess
 string allow
 string allow_req_permissions
 string allow_required_permissions
@@ -990,7 +991,10 @@ string daily_challenge
 string daily_goal
 string daily_motivation
 string daily_step_goal
+string def
 string delete_account
+string delete_alarm
+string distance
 string do_it
 string do_relate_following_statement
 string do_suffer_from_knee_pain
@@ -1027,6 +1031,7 @@ string gain_muscle
 string gallery
 string gcm_defaultSenderId
 string go_premium
+string goal
 string gold
 string google_api_key
 string google_app_id
@@ -1055,6 +1060,7 @@ string how_to_use
 string ideal
 string improving_sleep
 string in
+string input
 string instagram
 string intermediate
 string item_not_found
@@ -1065,6 +1071,7 @@ string know
 string label
 string language
 string lbs
+string leg
 string less_6_hours
 string less_one_hour
 string look
@@ -1075,6 +1082,7 @@ string male
 string manage_subscriptions
 string message
 string miles
+string ml
 string month_of_membership
 string monthly
 string monthly_
@@ -1105,6 +1113,7 @@ string not_so_much
 string not_very_fit
 string notification_text
 string notification_title
+string ok_alarm
 string one_two_hours
 string permission_toast
 string personalized_des
@@ -1114,6 +1123,7 @@ string plan
 string platinum
 string pm
 string premium_features_details
+string previous
 string privacy_policy
 string profile
 string project_id
@@ -1154,6 +1164,7 @@ string thighs
 string time
 string time_in_bed
 string today
+string today_
 string tomorrow
 string tonight
 string too_easy

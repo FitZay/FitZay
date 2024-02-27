@@ -45,7 +45,7 @@ import org.threeten.bp.temporal.TemporalAdjusters
 import java.text.SimpleDateFormat
 import java.util.*
 
-class StepCounterActivity : AppCompatActivity() {
+class StepCounterActivity : AppUtil2() {
 
     private lateinit var binding: ActivityStepCounterBinding
     private lateinit var requestPermissionLauncher: ActivityResultLauncher<String>
@@ -506,5 +506,10 @@ class StepCounterActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
 
+    }
+
+    override fun onStart() {
+        super.onStart()
+        LanguageManager(this@StepCounterActivity)
     }
 }

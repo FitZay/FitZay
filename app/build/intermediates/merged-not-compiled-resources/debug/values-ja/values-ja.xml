@@ -113,6 +113,7 @@
     <string name="daily_goal">日次目標</string>
     <string name="daily_motivation">デイリーモチベーション</string>
     <string name="daily_step_goal">デイリーステップゴール</string>
+    <string name="def">デフォルト</string>
     <string msgid="8038256446254964252" name="default_error_message">"入力値が無効です"</string>
     <string msgid="6312721426453364202" name="default_popup_window_title">"ポップアップウィンドウ"</string>
     <string name="delete_account"><u> アカウントを削除 </u></string>
@@ -178,6 +179,7 @@
     <string name="in">インチ</string>
     <string msgid="6827826412747255547" name="in_progress">"処理しています"</string>
     <string msgid="2486394087603402002" name="indeterminate">"オンでもオフでもありません"</string>
+    <string name="input">データを入力してください</string>
     <string name="instagram">Instagram</string>
     <string name="intermediate">中級者</string>
     <string name="item_not_found">アイテムが見つかりません</string>
@@ -189,6 +191,7 @@
     <string name="label">ラベル</string>
     <string name="language">言語</string>
     <string name="lbs">ポンド</string>
+    <string name="leg">足</string>
     <string name="less_6_hours">6時間未満</string>
     <string name="less_one_hour">1時間未満</string>
     <string name="look">ちょっと見てみる</string>
@@ -212,6 +215,7 @@
     <string name="material_timepicker_text_input_mode_description">時刻をテキストで入力するモードに切り替えます。</string>
     <string name="message">アカウントを削除すると、すべての保存されたデータが削除されます！</string>
     <string name="miles">マイル</string>
+    <string name="ml">ml</string>
     <string name="month_of_membership">1ヶ月のメンバーシップ</string>
     <string name="monthly">月間平均</string>
     <string name="monthly_">月間</string>
@@ -365,6 +369,7 @@
     <string name="time">時間</string>
     <string name="time_in_bed">ベッドでの時間</string>
     <string name="today">今日</string>
+    <string name="today_">今日</string>
     <string name="tomorrow">明日の朝</string>
     <string name="tonight">今夜</string>
     <string name="too_easy">簡単すぎる</string>

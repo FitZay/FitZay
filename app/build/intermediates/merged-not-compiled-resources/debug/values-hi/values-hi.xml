@@ -113,6 +113,7 @@
     <string name="daily_goal">दैनिक लक्ष्य</string>
     <string name="daily_motivation">दैनिक प्रेरणा</string>
     <string name="daily_step_goal">दैनिक कदम लक्ष्य</string>
+    <string name="def">डिफ़ॉल्ट</string>
     <string msgid="8038256446254964252" name="default_error_message">"अमान्य इनपुट"</string>
     <string msgid="6312721426453364202" name="default_popup_window_title">"पॉप-अप विंडो"</string>
     <string name="delete_account"><u> खाता हटाएं </u></string>
@@ -178,6 +179,7 @@
     <string name="in">इंच</string>
     <string msgid="6827826412747255547" name="in_progress">"जारी है"</string>
     <string msgid="2486394087603402002" name="indeterminate">"चेकबॉक्स पर न तो सही का निशान लगाया गया, न ही पहले से लगा सही का निशान हटाया गया"</string>
+    <string name="input">अपना डेटा दर्ज करें</string>
     <string name="instagram">इंस्टाग्राम</string>
     <string name="intermediate">इंटरमीडिएट</string>
     <string name="item_not_found">आइटम नहीं मिला</string>
@@ -212,6 +214,7 @@
     <string name="material_timepicker_text_input_mode_description">समय इनपुट के लिए लेख इनपुट मोड पर जाएं.</string>
     <string name="message">खाता हटाने से आपके सभी सहेजे गए डेटा हटा दिया जाएगा!</string>
     <string name="miles">मील</string>
+    <string name="ml">मि</string>
     <string name="month_of_membership">1 महीने की सदस्यता</string>
     <string name="monthly">मासिक औसत</string>
     <string name="monthly_">मासिक </string>
@@ -365,6 +368,7 @@
     <string name="time">समय</string>
     <string name="time_in_bed">बिस्तर में समय</string>
     <string name="today">आज</string>
+    <string name="today_">आज</string>
     <string name="tomorrow">कल सुबह</string>
     <string name="tonight">आज रात</string>
     <string name="too_easy">बहुत आसान</string>

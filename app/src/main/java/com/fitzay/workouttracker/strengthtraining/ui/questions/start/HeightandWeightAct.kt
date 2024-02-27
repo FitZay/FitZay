@@ -7,6 +7,8 @@ import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.fitzay.workouttracker.strengthtraining.R
+import com.fitzay.workouttracker.strengthtraining.core.utils.AppUtil2
+import com.fitzay.workouttracker.strengthtraining.core.utils.LanguageManager
 import com.fitzay.workouttracker.strengthtraining.core.utils.toCentimeters
 import com.fitzay.workouttracker.strengthtraining.databinding.ActivityHeightandWeightBinding
 import com.fitzay.workouttracker.strengthtraining.di.Component
@@ -17,7 +19,7 @@ import kotlin.math.floor
 import kotlin.math.round
 import kotlin.math.roundToInt
 
-class HeightandWeightAct : AppCompatActivity() {
+class HeightandWeightAct : AppUtil2() {
 
     private lateinit var binding: ActivityHeightandWeightBinding
     private var age = 0
@@ -196,4 +198,8 @@ class HeightandWeightAct : AppCompatActivity() {
         return round(result * 100.0) / 100.0
     }
 
+    override fun onStart() {
+        super.onStart()
+        LanguageManager(this@HeightandWeightAct)
+    }
 }

@@ -81,8 +81,8 @@ class WaterIntakeActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        binding.txtGoal.text = getString(R.string.daily_goal)+":"+ Component.preference.waterGoal + " ml"
-        binding.currentML.text = Component.preference.cupCapacity.toString() + " ml"
+        binding.txtGoal.text = getString(R.string.daily_goal)+":"+ Component.preference.waterGoal + getString(R.string.ml)
+        binding.currentML.text = Component.preference.cupCapacity.toString() + getString(R.string.ml)
     }
 
 
@@ -180,12 +180,12 @@ class WaterIntakeActivity : AppCompatActivity() {
         }
         dialog.setCanceledOnTouchOutside(false)
         dialog.setCancelable(false)
-        waterBinding.tvTitle.text = "Daily Goal"
+        waterBinding.tvTitle.text = getString(R.string.daily_goal)
         waterBinding.btnSave.setOnClickListener {
             if (waterBinding.tvCapacity.text.isNotEmpty()) {
                 Component.preference.waterGoal = waterBinding.tvCapacity.text.toString().toInt()
                 binding.txtGoal.text =
-                    "Daily Goal :" + waterBinding.tvCapacity.text.toString() + " ml"
+                    getString(R.string.daily_goal)+":" + waterBinding.tvCapacity.text.toString() + getString(R.string.ml)
                 dialog.dismiss()
             }
             else

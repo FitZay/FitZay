@@ -17,6 +17,8 @@ import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
 import com.fitzay.workouttracker.strengthtraining.R
 import com.fitzay.workouttracker.strengthtraining.core.AppController
+import com.fitzay.workouttracker.strengthtraining.core.utils.AppUtil2
+import com.fitzay.workouttracker.strengthtraining.core.utils.LanguageManager
 import com.fitzay.workouttracker.strengthtraining.core.utils.clickWithThrottle
 import com.fitzay.workouttracker.strengthtraining.databinding.ActivityExerciseBinding
 import com.fitzay.workouttracker.strengthtraining.di.Component
@@ -36,7 +38,7 @@ import java.util.Objects
 import java.util.concurrent.TimeUnit
 
 
-class ExerciseActivity : AppCompatActivity() {
+class ExerciseActivity : AppUtil2() {
 
     private lateinit var binding: ActivityExerciseBinding
     private lateinit var loadingHandler: Handler
@@ -72,7 +74,7 @@ class ExerciseActivity : AppCompatActivity() {
         setContentView(binding.root)
         quitdialog = Dialog(this)
         waiting_dialog = Dialog(this)
-
+        LanguageManager(this@ExerciseActivity)
 
         arr = ArrayList()
         loadingHandler = Handler(Looper.getMainLooper()!!)

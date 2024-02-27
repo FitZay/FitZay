@@ -4,6 +4,7 @@ import android.app.ActivityOptions
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
+import android.content.res.Configuration
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -14,6 +15,8 @@ import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.fitzay.workouttracker.strengthtraining.R
 import com.fitzay.workouttracker.strengthtraining.core.AppController
+import com.fitzay.workouttracker.strengthtraining.core.utils.AppUtil2
+import com.fitzay.workouttracker.strengthtraining.core.utils.LanguageManager
 import com.fitzay.workouttracker.strengthtraining.core.utils.SharedPreferencesHelper
 import com.fitzay.workouttracker.strengthtraining.core.utils.setLocale
 import com.fitzay.workouttracker.strengthtraining.databinding.ActivityLanguageBinding
@@ -32,23 +35,23 @@ import com.google.android.gms.ads.LoadAdError
 import com.google.android.gms.ads.nativead.NativeAdOptions
 import java.util.Locale
 
-class LanguageAct : AppCompatActivity(),LanguageItemClick {
+class LanguageAct : AppUtil2(),LanguageItemClick {
 
 
     private lateinit var binding:ActivityLanguageBinding
     private  var adapter:LanguageShowAdapter?=null
     private  var list=ArrayList<LanguageM>()
     lateinit var sharedPreferencesHelper:SharedPreferencesHelper
+    lateinit var languageManager:LanguageManager
 
-    var lang="English"
+    //var lang="English"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         TemplateView.ctacolor = AppController.fitzayModel?.FitzayNativeLanguage?.ctacolor
         binding = DataBindingUtil.setContentView(this, R.layout.activity_language)
 
-        val sharedPref = getSharedPreferences("storeLan", Context.MODE_PRIVATE)
-
-        Log.i("NEW-TAG-2", "cRlA: "+sharedPref.getString("key", "en"))
+        //val sharedPref = getSharedPreferences("storeLan", Context.MODE_PRIVATE)
+        languageManager = LanguageManager(this@LanguageAct)
 
 
         list.add(LanguageM("English", R.drawable.english__usa_, false))
@@ -108,11 +111,14 @@ class LanguageAct : AppCompatActivity(),LanguageItemClick {
                     9 -> lang = "ja"
 
                 }
-                setLocale(lang)
-                val editor = sharedPref.edit()
-                editor.putString("key", lang)
-                editor.apply()
+
+                val newLocale = Locale(lang)
+                val configuration: Configuration = resources.configuration
+                configuration.setLocale(newLocale)
+                resources.updateConfiguration(configuration, resources.displayMetrics)
+
                 restartApp()
+
 
                 if (la=="invisible")
                 {
@@ -135,7 +141,11 @@ class LanguageAct : AppCompatActivity(),LanguageItemClick {
             }
 
             ivBack.setOnClickListener {
-               onBackPressed()
+                val intent = Intent(this@LanguageAct, MainActivity::class.java).apply {
+                    Intent.FLAG_ACTIVITY_SINGLE_TOP
+                }
+                startActivity(intent)
+                finish()
             }
 
 
@@ -207,4 +217,12 @@ class LanguageAct : AppCompatActivity(),LanguageItemClick {
         startActivity(intent)
     }
 
+    override fun onBackPressed() {
+        super.onBackPressed()
+        val intent = Intent(this@LanguageAct, MainActivity::class.java).apply {
+            Intent.FLAG_ACTIVITY_SINGLE_TOP
+        }
+        startActivity(intent)
+        finish()
+    }
 }

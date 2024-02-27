@@ -24,7 +24,7 @@ import kotlin.math.ceil
 import kotlin.math.floor
 
 
-class AskingHeightActivity : AppCompatActivity() {
+class AskingHeightActivity : AppUtil2() {
 
     private lateinit var binding: ActivityAskingHeightBinding
     var isCM = true
@@ -353,6 +353,7 @@ class AskingHeightActivity : AppCompatActivity() {
 
     override fun onStart() {
         super.onStart()
+        LanguageManager(this@AskingHeightActivity)
         binding.apply {
         if (Component.preference.userHeight != 0 || Component.preference.userHeightFt != 0 || Component.preference.userHeightInch != 0) {
             //if (Component.preference.userHeightType == "CM") {

@@ -117,6 +117,7 @@
     <string name="daily_goal">الهدف اليومي</string>
     <string name="daily_motivation">تحفيز يومي</string>
     <string name="daily_step_goal">هدف الخطوات اليومي</string>
+    <string name="def">افتراضي</string>
     <string msgid="8038256446254964252" name="default_error_message">"إدخال غير صالح"</string>
     <string msgid="6312721426453364202" name="default_popup_window_title">"نافذة منبثقة"</string>
     <string name="delete_account"><u>حذف الحساب</u></string>
@@ -182,6 +183,7 @@
     <string name="in">بوصة</string>
     <string msgid="6827826412747255547" name="in_progress">"قيد التقدم"</string>
     <string msgid="2486394087603402002" name="indeterminate">"لم يتم وضع علامة أو إزالتها"</string>
+    <string name="input">أدخل بياناتك</string>
     <string name="instagram">إنستغرام</string>
     <string name="intermediate">متوسط</string>
     <string name="item_not_found">العنصر غير موجود</string>
@@ -193,6 +195,7 @@
     <string name="label">العلامة</string>
     <string name="language">لغة</string>
     <string name="lbs">رطل</string>
+    <string name="leg">ساق</string>
     <string name="less_6_hours">أقل من 6 ساعات</string>
     <string name="less_one_hour">أقل من ساعة</string>
     <string name="look">فقط انظر</string>
@@ -216,6 +219,7 @@
     <string name="material_timepicker_text_input_mode_description">يُرجى التبديل إلى وضع إدخال النص لإدخال الوقت.</string>
     <string name="message">عن طريق حذف الحساب سيتم حذف جميع البيانات المحفوظة الخاصة بك!</string>
     <string name="miles">أميال</string>
+    <string name="ml">مل</string>
     <string name="month_of_membership">شهر من العضوية</string>
     <string name="monthly">متوسط الشهري</string>
     <string name="monthly_">شهري </string>
@@ -369,6 +373,7 @@
     <string name="time">الوقت</string>
     <string name="time_in_bed">الوقت في السرير</string>
     <string name="today">اليوم</string>
+    <string name="today_">اليوم</string>
     <string name="tomorrow">صباح الغد</string>
     <string name="tonight">الليلة</string>
     <string name="too_easy">سهل جدًا</string>

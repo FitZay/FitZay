@@ -8,16 +8,21 @@ import android.util.Log
 import android.view.Window
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.fitzay.workouttracker.strengthtraining.core.utils.AppUtil2
+import com.fitzay.workouttracker.strengthtraining.core.utils.LanguageManager
 import com.fitzay.workouttracker.strengthtraining.databinding.ActivityCupCapacityBinding
 import com.fitzay.workouttracker.strengthtraining.databinding.DialogWaterCapacityBinding
 import com.fitzay.workouttracker.strengthtraining.di.Component
 
-class CupCapacityActivity : AppCompatActivity() {
+class CupCapacityActivity : AppUtil2() {
     private lateinit var binding: ActivityCupCapacityBinding
+    lateinit var languageManager: LanguageManager
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityCupCapacityBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        languageManager = LanguageManager(this@CupCapacityActivity)
 
         binding.ivBack.setOnClickListener {
             onBackPressed()

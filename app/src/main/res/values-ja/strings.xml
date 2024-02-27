@@ -339,11 +339,17 @@
     <string name="daily_goal">日次目標</string>
     <string name="add">追加</string>
 
-
-
-
-
-
+    <string name="input">データを入力してください</string>
+    <string name="leg">足</string>
+    <string name="def">デフォルト</string>
+    <string name="ml">ml</string>
+    <string name="today_">今日</string>
+    <string name="previous">前</string>
+    <string name="goal">目標</string>
+    <string name="distance">距離</string>
+    <string name="delete_alarm">アラームを削除</string>
+    <string name="ok_alarm">わかりました</string>
+    <string name="alarm_mess">本当に削除しますか？</string>
 
 
 </resources>

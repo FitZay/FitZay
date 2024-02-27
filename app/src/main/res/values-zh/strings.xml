@@ -333,5 +333,16 @@
     <string name="no_data">没有数据</string>
     <string name="daily_goal">每日目标</string>
     <string name="add">添加</string>
+    <string name="input">输入您的数据</string>
+    <string name="leg">腿</string>
+    <string name="def">默认</string>
+    <string name="ml">毫升</string>
+    <string name="today_">今天</string>
+    <string name="previous">上一個</string>
+    <string name="goal">目标</string>
+    <string name="distance">距离</string>
+    <string name="delete_alarm">删除闹钟</string>
+    <string name="ok_alarm">确定</string>
+    <string name="alarm_mess">确定要删除吗？</string>
 
 </resources>

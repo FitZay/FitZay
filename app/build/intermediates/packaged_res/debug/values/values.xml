@@ -140,6 +140,7 @@
     <string name="add">Add</string>
     <string name="advance">Advance</string>
     <string name="alarm">Alarm</string>
+    <string name="alarm_mess">Are you sure want to delete.?</string>
     <string name="allow">Allow</string>
     <string name="allow_req_permissions">Allow all required permissions</string>
     <string name="allow_required_permissions">Permission required to save quotes in gallery.</string>
@@ -170,7 +171,7 @@
     <string name="channel_name">Step Counter Channel</string>
     <string name="chest">Chest</string>
     <string name="cm">cm</string>
-    <string name="com.google.firebase.crashlytics.mapping_file_id" ns1:ignore="UnusedResources,TypographyDashes" translatable="false">74c07d6085284d109519916320dd961f</string>
+    <string name="com.google.firebase.crashlytics.mapping_file_id" ns1:ignore="UnusedResources,TypographyDashes" translatable="false">00000000000000000000000000000000</string>
     <string name="complete_ex">"Nice, you've completed exercise!</string>
     <string name="cup_capacity">Cup Capacity</string>
     <string name="daily">DAILY AVERAGE</string>
@@ -180,7 +181,10 @@
     <string name="daily_goal">Daily Goal</string>
     <string name="daily_motivation">Daily Motivation</string>
     <string name="daily_step_goal">Daily Step Goal</string>
+    <string name="def">Default</string>
     <string name="delete_account"><u> Delete Account </u></string>
+    <string name="delete_alarm">Delete Alarm</string>
+    <string name="distance">Distance</string>
     <string name="do_it">Do it</string>
     <string name="do_relate_following_statement">Do you relate to the following statement?</string>
     <string name="do_suffer_from_knee_pain">Do you suffer from knee pain?</string>
@@ -217,6 +221,7 @@
     <string name="gallery">Gallery</string>
     <string name="gcm_defaultSenderId" translatable="false">420887625958</string>
     <string name="go_premium">Go Premium</string>
+    <string name="goal">Goal</string>
     <string name="gold">Gold</string>
     <string name="google_api_key" translatable="false">AIzaSyA5anDbaVNJOFcvgiMX29faRZX13csSbMc</string>
     <string name="google_app_id" translatable="false">1:420887625958:android:ddee5c9d4bfe721d07fb27</string>
@@ -245,6 +250,7 @@
     <string name="ideal">Ideal</string>
     <string name="improving_sleep">Improving sleep</string>
     <string name="in">in</string>
+    <string name="input">Input your data</string>
     <string name="instagram">Instagram</string>
     <string name="intermediate">Intermediate</string>
     <string name="item_not_found">Item not found</string>
@@ -255,6 +261,7 @@
     <string name="label">Label</string>
     <string name="language">Language</string>
     <string name="lbs">lbs</string>
+    <string name="leg">Leg</string>
     <string name="less_6_hours">Less than 6 hours</string>
     <string name="less_one_hour">Less than 1 hour</string>
     <string name="look">Just take a look</string>
@@ -265,6 +272,7 @@
     <string name="manage_subscriptions">Manage Subscriptions</string>
     <string name="message">By deleting account all your saved data will be removed!</string>
     <string name="miles">Miles</string>
+    <string name="ml">ml</string>
     <string name="month_of_membership">1 month of membership</string>
     <string name="monthly">MONTHLY AVERAGE</string>
     <string name="monthly_">Monthly </string>
@@ -295,6 +303,7 @@
     <string name="not_very_fit">I\'m not very fit</string>
     <string name="notification_text">Total steps today: %1$d</string>
     <string name="notification_title">FitZay-Step Counter</string>
+    <string name="ok_alarm">OK</string>
     <string name="one_two_hours">1–2 hours</string>
     <string name="permission_toast">Allow Required Permission to Use Step Counter Feature.</string>
     <string name="personalized_des">Wait while your personal trainer is making your tailored exercise routine.</string>
@@ -304,6 +313,7 @@
     <string name="platinum">Platinum</string>
     <string name="pm">PM</string>
     <string name="premium_features_details">Premium Features Details</string>
+    <string name="previous">Previous</string>
     <string name="privacy_policy">Privacy Policy</string>
     <string name="profile">Profile</string>
     <string name="project_id" translatable="false">fitzay-88d64</string>
@@ -344,6 +354,7 @@
     <string name="time">Time</string>
     <string name="time_in_bed">Time in Bed</string>
     <string name="today">Today</string>
+    <string name="today_">Today</string>
     <string name="tomorrow">Tomorrow Morning</string>
     <string name="tonight">Tonight</string>
     <string name="too_easy">Too hard</string>

@@ -89,10 +89,10 @@ class StepDailyFragment : Fragment() {
                             it.data!!.forEach { it1 ->
                                 val progress = (it1.steps.toDouble() / it1.stepGoal.toDouble()) * 100
                                 binding.stepProgress.progress = progress.toInt()
-                                binding.typeName.text = "STEPS"
+                                binding.typeName.text = getString(R.string.steps)
                                 binding.userSteps.text = Component.preference.stepCount.toString()
                                 binding.userSteps.startAnimation(animZoomIn)
-                                binding.userGoal.text = "Goal :" + Component.preference.stepGoal.toString()
+                                binding.userGoal.text = getString(R.string.goal)+": " + Component.preference.stepGoal.toString()
                             }
                         }
 
@@ -100,11 +100,11 @@ class StepDailyFragment : Fragment() {
                             it.data!!.forEach { it1 ->
                                 val progress = (it1.distance / it1.distanceGoal) * 100
                                 binding.stepProgress.progress = progress.toInt()
-                                binding.typeName.text = "DISTANCE"
+                                binding.typeName.text = getString(R.string.distance)
                                 binding.userSteps.text = it1.distance.toString()
                                 binding.userSteps.startAnimation(animZoomIn)
                                 binding.userGoal.text =
-                                    "Goal: " + it1.distanceGoal.toString()
+                                    getString(R.string.goal)+": " + it1.distanceGoal.toString()
                             }
                         }
 
@@ -112,11 +112,11 @@ class StepDailyFragment : Fragment() {
                             it.data!!.forEach { it1 ->
                                 val progress = (it1.calories / it1.caloriesGoal) * 100
                                 binding.stepProgress.progress = progress.toInt()
-                                binding.typeName.text = "CALORIES"
+                                binding.typeName.text = getString(R.string.calories)
                                 binding.userSteps.text = it1.calories.toString()
                                 binding.userSteps.startAnimation(animZoomIn)
                                 binding.userGoal.text =
-                                    "Goal :" + it1.caloriesGoal.toString()
+                                    getString(R.string.goal)+": " + it1.caloriesGoal.toString()
                             }
                         }
 
@@ -126,10 +126,10 @@ class StepDailyFragment : Fragment() {
                                     .toDouble() / it1.timeGoal.convertTimeToSeconds()
                                     .toDouble()) * 100
                                 binding.stepProgress.progress = progress.toInt()
-                                binding.typeName.text = "TIME"
+                                binding.typeName.text = getString(R.string.time)
                                 binding.userSteps.text = it1.time.toString()
                                 binding.userSteps.startAnimation(animZoomIn)
-                                binding.userGoal.text = "Goal: " + it1.timeGoal.toString()
+                                binding.userGoal.text = getString(R.string.goal)+": " + it1.timeGoal.toString()
                             }
                         }
                     }

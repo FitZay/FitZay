@@ -354,8 +354,18 @@
     <string name="no_data">No Data</string>
     <string name="daily_goal">Daily Goal</string>
     <string name="add">Add</string>
+    <string name="input">Input your data</string>
+    <string name="leg">Leg</string>
+    <string name="def">Default</string>
+    <string name="ml">ml</string>
+    <string name="today_">Today</string>
+    <string name="previous">Previous</string>
+    <string name="goal">Goal</string>
+    <string name="distance">Distance</string>
 
-
+    <string name="delete_alarm">Delete Alarm</string>
+    <string name="ok_alarm">OK</string>
+    <string name="alarm_mess">Are you sure want to delete.?</string>
     <string-array name="age">
         <item>10</item>
         <item>11</item>

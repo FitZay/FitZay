@@ -7,12 +7,14 @@ import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import com.fitzay.workouttracker.strengthtraining.R
 import com.fitzay.workouttracker.strengthtraining.core.AppController
+import com.fitzay.workouttracker.strengthtraining.core.utils.AppUtil2
 import com.fitzay.workouttracker.strengthtraining.core.utils.InAppPurchaseUtil
+import com.fitzay.workouttracker.strengthtraining.core.utils.LanguageManager
 import com.fitzay.workouttracker.strengthtraining.databinding.ActivityPremiumBinding
 import com.fitzay.workouttracker.strengthtraining.ui.MainActivity
 
 
-class PremiumActivity : AppCompatActivity() {
+class PremiumActivity : AppUtil2() {
 
     private var binding: ActivityPremiumBinding? = null
     private var selecteditem = "fitzay_weekly_premium"
@@ -25,7 +27,7 @@ class PremiumActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityPremiumBinding.inflate(layoutInflater)
         setContentView(binding?.root)
-
+        LanguageManager(this@PremiumActivity)
         binding?.closeBtn?.setOnClickListener {
             if (activitytype == "splash"){
                 startActivity(Intent(this@PremiumActivity,MainActivity::class.java))

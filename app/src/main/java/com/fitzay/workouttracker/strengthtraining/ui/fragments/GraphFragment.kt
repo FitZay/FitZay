@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.fitzay.workouttracker.strengthtraining.R
 import com.fitzay.workouttracker.strengthtraining.core.AppController
 import com.fitzay.workouttracker.strengthtraining.core.utils.getDayOfWeek
 import com.fitzay.workouttracker.strengthtraining.core.utils.getSimpleDate
@@ -84,7 +85,7 @@ class GraphFragment : Fragment() {
                     } else {
                         withContext(Dispatchers.Main)
                         {
-                            todaySleep.text="Today"
+                            todaySleep.text=getString(R.string.today_)
                         }
 
                     }
@@ -94,7 +95,8 @@ class GraphFragment : Fragment() {
             }
 
 
-            stepCount.text = "${Component.preference.stepCount} Steps"
+//            stepCount.text = "${Component.preference.stepCount} Steps"
+            stepCount.setText(Component.preference.stepCount.toString()+" "+getString(R.string.steps))
             //// binding.stepGoal.text=" ${Component.preference.stepGoal.toString()}"
 
             layoutSleep.setOnClickListener {

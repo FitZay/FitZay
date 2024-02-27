@@ -6,6 +6,7 @@
     <string name="add">जोड़ें</string>
     <string name="advance">उन्नत</string>
     <string name="alarm">अलार्म</string>
+    <string name="alarm_mess">क्या आप वाकई हटाना चाहते हैं?</string>
     <string name="allow">अनुमति</string>
     <string name="allow_req_permissions">सभी आवश्यक अनुमतियाँ दें</string>
     <string name="allow_required_permissions">गैलरी में कोट्स को सहेजने के लिए अनुमति आवश्यक है।</string>
@@ -45,7 +46,10 @@
     <string name="daily_goal">दैनिक लक्ष्य</string>
     <string name="daily_motivation">दैनिक प्रेरणा</string>
     <string name="daily_step_goal">दैनिक कदम लक्ष्य</string>
+    <string name="def">डिफ़ॉल्ट</string>
     <string name="delete_account"><u> खाता हटाएं </u></string>
+    <string name="delete_alarm">अलार्म हटाएं</string>
+    <string name="distance">दूरी</string>
     <string name="do_it">यह करें</string>
     <string name="do_relate_following_statement">क्या आप निम्नलिखित कथन से संबंधित हैं?</string>
     <string name="do_suffer_from_knee_pain">क्या आप घुटने के दर्द से पीड़ित हैं?</string>
@@ -75,6 +79,7 @@
     <string name="gain_muscle">मसल्स बढ़ाएं</string>
     <string name="gallery">गैलरी</string>
     <string name="go_premium">प्रीमियम लें</string>
+    <string name="goal">लक्ष्य</string>
     <string name="gold">"सोना "</string>
     <string name="google_play">गूगल प्ले</string>
     <string name="google_search">गूगल खोज</string>
@@ -99,6 +104,7 @@
     <string name="ideal">आदर्श</string>
     <string name="improving_sleep">नींद सुधारना</string>
     <string name="in">इंच</string>
+    <string name="input">अपना डेटा दर्ज करें</string>
     <string name="instagram">इंस्टाग्राम</string>
     <string name="intermediate">इंटरमीडिएट</string>
     <string name="item_not_found">आइटम नहीं मिला</string>
@@ -109,6 +115,7 @@
     <string name="label">लेबल</string>
     <string name="language">भाषा</string>
     <string name="lbs">एलबीएस</string>
+    <string name="leg">टांग</string>
     <string name="less_6_hours">6 घंटे से कम</string>
     <string name="less_one_hour">1 घंटे से कम</string>
     <string name="look">बस देखो</string>
@@ -119,6 +126,7 @@
     <string name="manage_subscriptions">सदस्यता प्रबंधित करें</string>
     <string name="message">खाता हटाने से आपके सभी सहेजे गए डेटा हटा दिया जाएगा!</string>
     <string name="miles">मील</string>
+    <string name="ml">मि</string>
     <string name="month_of_membership">1 महीने की सदस्यता</string>
     <string name="monthly">मासिक औसत</string>
     <string name="monthly_">मासिक </string>
@@ -149,6 +157,7 @@
     <string name="not_very_fit">मैं बहुत फिट नहीं हूँ</string>
     <string name="notification_text">आज कुल कदम: %1$d</string>
     <string name="notification_title">FitZay-Step गिनती</string>
+    <string name="ok_alarm">ठीक है</string>
     <string name="one_two_hours">1–2 घंटे</string>
     <string name="permission_toast">कदम गणना सुविधा का उपयोग करने के लिए आवश्यक अनुमति दें।</string>
     <string name="personalized_des">तब तक प्रतीक्षा करें जब तक आपका निजी प्रशिक्षक आपके अनुरूप व्यायाम की दिनचर्या बना रहा हो</string>
@@ -158,6 +167,7 @@
     <string name="platinum">"प्लैटिनम "</string>
     <string name="pm">अपराह्न</string>
     <string name="premium_features_details">प्रीमियम सुविधाओं का विवरण</string>
+    <string name="previous">पहले का</string>
     <string name="privacy_policy">गोपनीयता नीति</string>
     <string name="profile">प्रोफ़ाइल</string>
     <string name="purchase_cancel_by_user">उपयोगकर्ता द्वारा खरीद रद्द</string>
@@ -197,6 +207,7 @@
     <string name="time">समय</string>
     <string name="time_in_bed">बिस्तर में समय</string>
     <string name="today">आज</string>
+    <string name="today_">आज</string>
     <string name="tomorrow">कल सुबह</string>
     <string name="tonight">आज रात</string>
     <string name="too_easy">बहुत आसान</string>

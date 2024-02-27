@@ -113,6 +113,7 @@
     <string name="daily_goal">Objectif quotidien</string>
     <string name="daily_motivation">Motivation Quotidienne</string>
     <string name="daily_step_goal">Objectif quotidien de pas</string>
+    <string name="def">Par défaut</string>
     <string msgid="8038256446254964252" name="default_error_message">"Données incorrectes"</string>
     <string msgid="6312721426453364202" name="default_popup_window_title">"Fenêtre pop-up"</string>
     <string name="delete_account"><u>Supprimer le compte</u></string>
@@ -178,6 +179,7 @@
     <string name="in">po</string>
     <string msgid="6827826412747255547" name="in_progress">"En cours"</string>
     <string msgid="2486394087603402002" name="indeterminate">"Ni cochée, ni décochée"</string>
+    <string name="input">Saisissez vos données</string>
     <string name="instagram">Instagram</string>
     <string name="intermediate">Intermédiaire</string>
     <string name="item_not_found">Élément non trouvé</string>
@@ -189,6 +191,7 @@
     <string name="label">Étiquette</string>
     <string name="language">langue</string>
     <string name="lbs">livres</string>
+    <string name="leg">Jambe</string>
     <string name="less_6_hours">Moins de 6 heures</string>
     <string name="less_one_hour">Moins d\'une heure</string>
     <string name="look">Jetez juste un coup d\'œil</string>
@@ -212,6 +215,7 @@
     <string name="material_timepicker_text_input_mode_description">Passer en mode saisie de texte pour la saisie de l\'heure.</string>
     <string name="message">En supprimant le compte, toutes vos données enregistrées seront supprimées !</string>
     <string name="miles">Miles</string>
+    <string name="ml">ml</string>
     <string name="month_of_membership">1 mois d\'adhésion</string>
     <string name="monthly">MOYENNE MENSUELLE</string>
     <string name="monthly_">Mensuelle </string>
@@ -365,6 +369,7 @@
     <string name="time">Temps</string>
     <string name="time_in_bed">Temps au lit</string>
     <string name="today">Aujourd\'hui</string>
+    <string name="today_">Aujourd\'hui</string>
     <string name="tomorrow">Demain matin</string>
     <string name="tonight">Ce soir</string>
     <string name="too_easy">Trop facile</string>

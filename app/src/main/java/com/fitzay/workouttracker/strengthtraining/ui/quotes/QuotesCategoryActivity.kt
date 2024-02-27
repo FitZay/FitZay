@@ -4,6 +4,8 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.fitzay.workouttracker.strengthtraining.core.AppController
+import com.fitzay.workouttracker.strengthtraining.core.utils.AppUtil2
+import com.fitzay.workouttracker.strengthtraining.core.utils.LanguageManager
 import com.fitzay.workouttracker.strengthtraining.core.utils.checkForInternet
 import com.fitzay.workouttracker.strengthtraining.core.utils.getFitzayRemoteString
 import com.fitzay.workouttracker.strengthtraining.databinding.ActivityQoutesCategoryBinding
@@ -17,7 +19,7 @@ import com.google.android.gms.ads.LoadAdError
 import com.google.android.gms.ads.nativead.NativeAdOptions
 import kotlin.math.round
 
-class QuotesCategoryActivity : AppCompatActivity() {
+class QuotesCategoryActivity : AppUtil2() {
 
 
     private lateinit var binding: ActivityQoutesCategoryBinding
@@ -85,5 +87,8 @@ class QuotesCategoryActivity : AppCompatActivity() {
         }
     }
 
-
+    override fun onStart() {
+        super.onStart()
+        LanguageManager(this@QuotesCategoryActivity)
+    }
 }

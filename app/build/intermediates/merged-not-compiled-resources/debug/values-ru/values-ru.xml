@@ -115,6 +115,7 @@
     <string name="daily_goal">Ежедневная цель</string>
     <string name="daily_motivation">Ежедневная мотивация</string>
     <string name="daily_step_goal">Цель ежедневного количества шагов</string>
+    <string name="def">По умолчанию</string>
     <string msgid="8038256446254964252" name="default_error_message">"Неправильный ввод"</string>
     <string msgid="6312721426453364202" name="default_popup_window_title">"Всплывающее окно"</string>
     <string name="delete_account"><u>Удалить аккаунт</u></string>
@@ -179,6 +180,7 @@
     <string name="in">дюйм</string>
     <string msgid="6827826412747255547" name="in_progress">"Выполняется"</string>
     <string msgid="2486394087603402002" name="indeterminate">"Флажок не установлен и не снят"</string>
+    <string name="input">Введите свои данные</string>
     <string name="instagram">Instagram</string>
     <string name="intermediate">Средний</string>
     <string name="item_not_found">Элемент не найден</string>
@@ -188,6 +190,7 @@
     <string name="know">Не знаю, как это сделать</string>
     <string name="label">Метка</string>
     <string name="language">Язык</string>
+    <string name="leg">Нога</string>
     <string name="less_6_hours">Менее 6 часов</string>
     <string name="less_one_hour">Менее 1 часа</string>
     <string name="look">Просто взгляни</string>
@@ -210,6 +213,7 @@
     <string name="material_timepicker_text_input_mode_description">Чтобы ввести время, перейдите в режим ввода текста.</string>
     <string name="message">" При удалении учетной записи будут удалены все ваши сохраненные данные!"</string>
     <string name="miles">Мили</string>
+    <string name="ml">мл</string>
     <string name="month_of_membership">1 месяц членства</string>
     <string name="monthly">СРЕДНЕЕ ЗА МЕСЯЦ</string>
     <string name="monthly_">Ежемесячно </string>
@@ -363,6 +367,7 @@
     <string name="time">Время</string>
     <string name="time_in_bed">Время в постели</string>
     <string name="today">Сегодня</string>
+    <string name="today_">Сегодня</string>
     <string name="tomorrow">Завтра утром</string>
     <string name="tonight">Сегодня вечером</string>
     <string name="too_easy">Слишком легко</string>

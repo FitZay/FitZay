@@ -321,5 +321,16 @@
     <string name="no_data">Нет данных</string>
     <string name="daily_goal">Ежедневная цель</string>
     <string name="add">Добавить</string>
+    <string name="input">Введите свои данные</string>
+    <string name="leg">Нога</string>
+    <string name="def">По умолчанию</string>
+    <string name="ml">мл</string>
+    <string name="today_">Сегодня</string>
+    <string name="previous">Предыдущий</string>
+    <string name="goal">Цель</string>
+    <string name="distance">Расстояние</string>
+    <string name="delete_alarm">Удалить будильник</string>
+    <string name="ok_alarm">OK</string>
+    <string name="alarm_mess">Вы уверены, что хотите удалить?</string>
 
 </resources>

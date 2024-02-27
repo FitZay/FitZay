@@ -32,6 +32,8 @@ import com.bumptech.glide.request.RequestOptions
 import com.fitzay.workouttracker.strengthtraining.R
 import com.fitzay.workouttracker.strengthtraining.core.AppController
 import com.fitzay.workouttracker.strengthtraining.core.ads.BannerAdsProvider
+import com.fitzay.workouttracker.strengthtraining.core.utils.AppUtil2
+import com.fitzay.workouttracker.strengthtraining.core.utils.LanguageManager
 import com.fitzay.workouttracker.strengthtraining.core.utils.showToast
 import com.fitzay.workouttracker.strengthtraining.core.utils.toCentimeters
 import com.fitzay.workouttracker.strengthtraining.core.utils.toKilograms
@@ -47,7 +49,7 @@ import kotlin.math.ceil
 import kotlin.math.floor
 import kotlin.math.round
 
-class ProfileAct : AppCompatActivity() {
+class ProfileAct : AppUtil2() {
 
     private lateinit var binding:ActivityProfileBinding
     private var imageBitmap: Bitmap? = null
@@ -69,7 +71,7 @@ class ProfileAct : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
+        LanguageManager(this@ProfileAct)
         binding.apply {
 
             if (AppController.fitzayModel != null && AppController?.fitzayModel?.FitzayBannerProfile?.showAd == true && !LoadingActivity.ispurchased){

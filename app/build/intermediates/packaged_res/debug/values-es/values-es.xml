@@ -6,6 +6,7 @@
     <string name="add">Agregar</string>
     <string name="advance">Avanzado</string>
     <string name="alarm">Alarma</string>
+    <string name="alarm_mess">¿Seguro que quieres eliminar?</string>
     <string name="allow">Permitir</string>
     <string name="allow_req_permissions">Permitir todos los permisos requeridos</string>
     <string name="allow_required_permissions">Permiso necesario para guardar citas en la galería.</string>
@@ -45,7 +46,10 @@
     <string name="daily_goal">Meta diaria</string>
     <string name="daily_motivation">Motivación Diaria</string>
     <string name="daily_step_goal">Objetivo diario de pasos</string>
+    <string name="def">Predeterminado</string>
     <string name="delete_account"><u>Eliminar cuenta</u></string>
+    <string name="delete_alarm">Eliminar alarma</string>
+    <string name="distance">Distancia</string>
     <string name="do_it">Hazlo</string>
     <string name="do_relate_following_statement">¿Te identificas con la siguiente afirmación?</string>
     <string name="do_suffer_from_knee_pain">¿Sufres de dolor de rodilla?</string>
@@ -75,6 +79,7 @@
     <string name="gain_muscle">Ganar músculo</string>
     <string name="gallery">Galería</string>
     <string name="go_premium">Ir a Premium</string>
+    <string name="goal">Meta</string>
     <string name="gold">Oro</string>
     <string name="google_play">Google Play</string>
     <string name="google_search">Búsqueda en Google</string>
@@ -99,6 +104,7 @@
     <string name="ideal">Ideal</string>
     <string name="improving_sleep">Mejorar mi sueño</string>
     <string name="in">en</string>
+    <string name="input">Ingrese sus datos</string>
     <string name="instagram">Instagram</string>
     <string name="intermediate">Intermedio</string>
     <string name="item_not_found">Elemento no encontrado</string>
@@ -109,6 +115,7 @@
     <string name="label">Etiqueta</string>
     <string name="language">Idioma</string>
     <string name="lbs">libras</string>
+    <string name="leg">Pierna</string>
     <string name="less_6_hours">Menos de 6 horas</string>
     <string name="less_one_hour">Menos de 1 hora</string>
     <string name="look">Solo echa un vistazo</string>
@@ -119,6 +126,7 @@
     <string name="manage_subscriptions">Gestionar suscripciones</string>
     <string name="message">" ¡Al eliminar la cuenta se eliminarán todos tus datos guardados!"</string>
     <string name="miles">Millas</string>
+    <string name="ml">ml</string>
     <string name="month_of_membership">1 mes de membresía</string>
     <string name="monthly">PROMEDIO MENSUAL</string>
     <string name="monthly_">Mensual </string>
@@ -149,6 +157,7 @@
     <string name="not_very_fit">No estoy muy en forma</string>
     <string name="notification_text">Pasos totales hoy: %1$d</string>
     <string name="notification_title">FitZay-Contador de pasos</string>
+    <string name="ok_alarm">Aceptar</string>
     <string name="one_two_hours">1–2 horas</string>
     <string name="permission_toast">Permitir permiso necesario para usar la función de contador de pasos.</string>
     <string name="personalized_des">Espera mientras tu entrenador personal realiza tu rutina de ejercicios personalizada</string>
@@ -158,6 +167,7 @@
     <string name="platinum">Platino</string>
     <string name="pm">PM</string>
     <string name="premium_features_details">Detalles de las funciones premium</string>
+    <string name="previous">Anterior</string>
     <string name="privacy_policy">Política de privacidad</string>
     <string name="profile">Perfil</string>
     <string name="purchase_cancel_by_user">Compra cancelada por el usuario</string>
@@ -197,6 +207,7 @@
     <string name="time">Tiempo</string>
     <string name="time_in_bed">Tiempo en la Cama</string>
     <string name="today">Hoy</string>
+    <string name="today_">Hoy</string>
     <string name="tomorrow">Mañana por la mañana</string>
     <string name="tonight">Esta noche</string>
     <string name="too_easy">Demasiado Fácil</string>

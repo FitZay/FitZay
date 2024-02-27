@@ -14,12 +14,14 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import com.fitzay.workouttracker.strengthtraining.R
+import com.fitzay.workouttracker.strengthtraining.core.utils.AppUtil2
+import com.fitzay.workouttracker.strengthtraining.core.utils.LanguageManager
 import com.fitzay.workouttracker.strengthtraining.databinding.ActivityDisplayQuoteBinding
 import com.fitzay.workouttracker.strengthtraining.di.Component
 import com.fitzay.workouttracker.strengthtraining.domain.models.QuotesModel
 import com.fitzay.workouttracker.strengthtraining.ui.adapters.DisplayQuotesAdapter
 
-class DisplayQuoteActivity : AppCompatActivity() {
+class DisplayQuoteActivity : AppUtil2() {
 
     private lateinit var binding: ActivityDisplayQuoteBinding
     var extraType =""
@@ -98,5 +100,10 @@ class DisplayQuoteActivity : AppCompatActivity() {
         val uri: Uri = Uri.fromParts("package", packageName, null)
         intent.data = uri
         startActivity(intent)
+    }
+
+    override fun onStart() {
+        super.onStart()
+        LanguageManager(this@DisplayQuoteActivity)
     }
 }

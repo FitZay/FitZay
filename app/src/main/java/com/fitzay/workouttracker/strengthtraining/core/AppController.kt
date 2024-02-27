@@ -10,6 +10,7 @@ import android.os.Looper
 import android.util.Log
 import com.fitzay.workouttracker.strengthtraining.BuildConfig
 import com.fitzay.workouttracker.strengthtraining.core.ads.OpenAd
+import com.fitzay.workouttracker.strengthtraining.core.utils.AppUtil2
 import com.fitzay.workouttracker.strengthtraining.core.utils.InAppPurchaseUtil
 import com.fitzay.workouttracker.strengthtraining.core.utils.getFitzayRemoteLong
 import com.fitzay.workouttracker.strengthtraining.core.utils.getFitzayRemoteString
@@ -71,7 +72,7 @@ class AppController : Application() {
             }
         },1000)
 
-
+        AppUtil2()
     }
 
     private fun setupNetworkCallback() {
