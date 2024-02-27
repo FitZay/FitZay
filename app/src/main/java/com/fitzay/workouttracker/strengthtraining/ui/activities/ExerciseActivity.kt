@@ -14,6 +14,8 @@ import android.view.Window
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.content.ContextCompat
 import com.bumptech.glide.Glide
 import com.fitzay.workouttracker.strengthtraining.R
 import com.fitzay.workouttracker.strengthtraining.core.AppController
@@ -34,6 +36,7 @@ import com.google.android.gms.ads.interstitial.InterstitialAd
 import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
 import com.google.android.gms.ads.nativead.NativeAd
 import com.google.android.gms.ads.nativead.NativeAdOptions
+import com.google.android.material.card.MaterialCardView
 import java.util.Objects
 import java.util.concurrent.TimeUnit
 
@@ -469,8 +472,7 @@ class ExerciseActivity : AppUtil2() {
 
 
     private fun showQuitDialog() {
-        Objects.requireNonNull<Window>(quitdialog?.window)
-            .setBackgroundDrawableResource(android.R.color.transparent)
+        Objects.requireNonNull<Window>(quitdialog?.window).setBackgroundDrawableResource(android.R.color.transparent)
         quitdialog?.setContentView(R.layout.quitdialog)
         quitdialog?.setCancelable(false)
         quitdialog?.show()
@@ -489,8 +491,34 @@ class ExerciseActivity : AppUtil2() {
         quitdialog?.findViewById<TextView>(R.id.cancelBtn)?.setOnClickListener {
             quitdialog?.dismiss()
         }
-    }
+        quitdialog?.findViewById<MaterialCardView>(R.id.materialCardView)!!.setOnClickListener {
+            reset()
+            quitdialog!!.findViewById<MaterialCardView>(R.id.materialCardView).setCardBackgroundColor(ContextCompat.getColor(this , R.color.green))
 
+
+        }
+        quitdialog?.findViewById<MaterialCardView>(R.id.materialCardView2)!!.setOnClickListener {
+            reset()
+            quitdialog!!.findViewById<MaterialCardView>(R.id.materialCardView2).setCardBackgroundColor(ContextCompat.getColor(this , R.color.green))
+
+        }
+        quitdialog?.findViewById<MaterialCardView>(R.id.materialCardView3)!!.setOnClickListener {
+            reset()
+            quitdialog!!.findViewById<MaterialCardView>(R.id.materialCardView3).setCardBackgroundColor(ContextCompat.getColor(this , R.color.green))
+
+        }
+
+
+
+    }
+    fun reset() {
+        binding.apply {
+            quitdialog!!.findViewById<MaterialCardView>(R.id.materialCardView)!!.setCardBackgroundColor(ContextCompat.getColor(this@ExerciseActivity , R.color.transparent))
+            quitdialog!!.findViewById<MaterialCardView>(R.id.materialCardView2)!!.setCardBackgroundColor(ContextCompat.getColor(this@ExerciseActivity , R.color.transparent))
+            quitdialog!!.findViewById<MaterialCardView>(R.id.materialCardView3)!!.setCardBackgroundColor(ContextCompat.getColor(this@ExerciseActivity , R.color.transparent))
+//            binding?.submitBtn?.setCardBackgroundColor(ContextCompat.getColor(this , R.color.blue))
+        }
+    }
 
     fun loadSplashInterstitialAd(adId: String) {
         if (mSplashInterstitial == null && !loadinginterstitial) {
@@ -557,8 +585,7 @@ class ExerciseActivity : AppUtil2() {
     }
 
     private fun showWaitingDialog() {
-        Objects.requireNonNull<Window>(waiting_dialog?.window)
-            .setBackgroundDrawableResource(android.R.color.transparent)
+        Objects.requireNonNull<Window>(waiting_dialog?.window).setBackgroundDrawableResource(android.R.color.transparent)
         waiting_dialog?.setContentView(R.layout.ad_loading_dialog)
         waiting_dialog?.setCancelable(false)
         waiting_dialog?.show()

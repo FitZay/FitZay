@@ -219,18 +219,18 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <com.google.android.material.progressindicator.CircularProgressIndicator
-            android:layout_width="@dimen/_60sdp"
-            android:layout_height="@dimen/_60sdp"
-            app:indicatorColor="@color/secondary"
-            app:trackColor="#D7D7D7"
-            app:indicatorSize="@dimen/_60sdp"
-            app:trackThickness="@dimen/_3sdp"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
             android:indeterminate="false"
-            android:progress="55"
+            android:progress="70"
+            app:indicatorColor="@color/white"
+            app:indicatorSize="@dimen/_60sdp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:trackColor="@color/secondary"
+            app:trackThickness="@dimen/_3sdp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnNext"

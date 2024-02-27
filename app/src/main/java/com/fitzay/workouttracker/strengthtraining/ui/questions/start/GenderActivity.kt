@@ -59,7 +59,7 @@ class GenderActivity : AppUtil2() {
                 unSelectBoth()
                 clFemale.background = resources.getDrawable(R.drawable.bg_selected_circle, null)
                 tvFemale.setTextColor(resources.getColor(R.color.white, null))
-
+                Component.preference.userGender = "Female"
             }
 
             //Male Button Listener
@@ -67,6 +67,8 @@ class GenderActivity : AppUtil2() {
                 unSelectBoth()
                 clMale.background = resources.getDrawable(R.drawable.bg_selected_circle, null)
                 tvMale.setTextColor(resources.getColor(R.color.white, null))
+
+                Component.preference.userGender = "Male"
             }
 
 
@@ -75,11 +77,12 @@ class GenderActivity : AppUtil2() {
             //Next Button Listener
             btnNext.setOnClickListener {
 
-                if (isMaleSelected) {
+                if (Component.preference.userGender.equals("")) {
                     Component.preference.userGender = "Male"
-                } else {
-                    Component.preference.userGender = "Female"
                 }
+//                } else {
+//                    Component.preference.userGender = "Female"
+//                }
 
                 if (AppController.inappScenario == "3")
             {

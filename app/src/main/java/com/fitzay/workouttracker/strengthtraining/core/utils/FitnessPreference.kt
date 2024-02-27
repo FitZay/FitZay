@@ -104,7 +104,7 @@ class FitnessPreference {
         set(value) = prefernece.edit { putString(USER_NAME, value).apply() }
 
     var userGender: String
-        get() = prefernece.getString(USER_GENDER, "empty") ?: "empty"
+        get() = prefernece.getString(USER_GENDER, "") ?: ""
         set(value) = prefernece.edit { putString(USER_GENDER, value).apply() }
 
     var userHeightType: String

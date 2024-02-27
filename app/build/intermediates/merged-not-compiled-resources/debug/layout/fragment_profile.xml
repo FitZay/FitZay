@@ -99,7 +99,6 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/etGenderInput"
-
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="@color/white"
@@ -185,7 +184,7 @@
                     android:background="@drawable/toggle_widget_background"
                     android:button="@null"
                     android:gravity="center"
-                    android:text="ft&amp;in"
+                    android:text="@string/feet"
                     android:textColor="@color/white" />
 
                 <RadioButton
@@ -197,7 +196,8 @@
                     android:background="@drawable/toggle_widget_background"
                     android:button="@null"
                     android:gravity="center"
-                    android:text="CM"
+                    android:text="@string/cm"
+                    android:textAllCaps="true"
                     android:textColor="@color/white" />
             </RadioGroup>
 
@@ -253,7 +253,8 @@
                     android:background="@drawable/toggle_widget_background"
                     android:button="@null"
                     android:gravity="center"
-                    android:text="LBS"
+                    android:text="@string/lbs"
+                    android:textAllCaps="true"
                     android:textColor="@color/white" />
 
                 <RadioButton
@@ -265,7 +266,8 @@
                     android:background="@drawable/toggle_widget_background"
                     android:button="@null"
                     android:gravity="center"
-                    android:text="KG"
+                    android:textAllCaps="true"
+                    android:text="@string/kg"
                     android:textColor="@color/white" />
             </RadioGroup>
 
