@@ -86,7 +86,6 @@
         android:label="@string/app_name"
         android:requestLegacyExternalStorage="true"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/Theme.FitnessApplication" >
         <activity
             android:name="com.fitzay.workouttracker.strengthtraining.ui.activities.VerticalRulerView"
@@ -219,8 +218,16 @@
             android:screenOrientation="portrait" />
         <activity
             android:name="com.fitzay.workouttracker.strengthtraining.ui.stepcounter.StepSummeryActivity"
-            android:exported="false"
-            android:screenOrientation="portrait" />
+            android:exported="true"
+            android:screenOrientation="portrait" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
         <activity
             android:name="com.fitzay.workouttracker.strengthtraining.ui.stepcounter.StepCounterActivity"
             android:exported="false"

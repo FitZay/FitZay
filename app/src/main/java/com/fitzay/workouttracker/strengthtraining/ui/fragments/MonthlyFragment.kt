@@ -134,15 +134,16 @@ class MonthlyFragment : Fragment(),OnChartValueSelectedListener {
 
                         sumOfFinalStrings += finalString
 
-
-                        barEntriesArrayList.add(BarEntry(dayOfMonth.toFloat()-1, finalString))
-
                         for (i in 1..maxDays) {
                             val dayOfMonth = i.toString()
                             if (!barEntriesArrayList.any { it.x == dayOfMonth.toFloat() }) {
                                 barEntriesArrayList.add(BarEntry(dayOfMonth.toFloat(), 0f))
                             }
                         }
+
+                        barEntriesArrayList.add(BarEntry(dayOfMonth.toFloat(), finalString))
+
+
 
 
 
@@ -190,8 +191,6 @@ class MonthlyFragment : Fragment(),OnChartValueSelectedListener {
 
                     if (alarmsForCurrentMonth.isEmpty()) {
 
-                        barEntriesArrayList.add(BarEntry(0f,0f))
-
                         for (i in 1..maxDays) {
                             val dayOfMonth = i.toString()
                             if (!barEntriesArrayList.any { it.x == dayOfMonth.toFloat() }) {
@@ -199,6 +198,10 @@ class MonthlyFragment : Fragment(),OnChartValueSelectedListener {
                             }
 
                         }
+
+                        barEntriesArrayList.add(BarEntry(0f,0f))
+
+
 
 
 
@@ -331,7 +334,7 @@ class MonthlyFragment : Fragment(),OnChartValueSelectedListener {
                       // If there are no data for the current month, update the UI accordingly
                     if (alarmsForCurrentMonth.isEmpty()) {
 
-                        barEntriesArrayList.add(BarEntry(0f,0f))
+
 
                         for (i in 1..maxDays) {
                             val dayOfMonth = i.toString()
@@ -340,7 +343,7 @@ class MonthlyFragment : Fragment(),OnChartValueSelectedListener {
                             }
 
                         }
-
+                        barEntriesArrayList.add(BarEntry(0f,0f))
 
 
                         withContext(Dispatchers.Main)
@@ -395,7 +398,7 @@ class MonthlyFragment : Fragment(),OnChartValueSelectedListener {
                             sumOfFinalStrings += finalString
 
 
-                            barEntriesArrayList.add(BarEntry(dayOfMonth.toFloat()-1, finalString))
+
 
                             for (i in 1..maxDays) {
                                 val dayOfMonth = i.toString()
@@ -404,6 +407,7 @@ class MonthlyFragment : Fragment(),OnChartValueSelectedListener {
                                 }
 
                             }
+                            barEntriesArrayList.add(BarEntry(dayOfMonth.toFloat(), finalString))
 
                             var aver=sumOfFinalStrings/30
                             Log.i("TAG", "updateUI: "+sumOfFinalStrings)

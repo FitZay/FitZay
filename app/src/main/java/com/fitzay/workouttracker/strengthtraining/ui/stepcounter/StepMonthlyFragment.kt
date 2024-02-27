@@ -207,16 +207,6 @@ class StepMonthlyFragment : Fragment(), OnChartValueSelectedListener {
 //
 //                        sumOfFinalStrings += finalString
 
-
-                        when(i){
-                            1->barEntriesArrayList.add(BarEntry(dayOfMonth.toFloat()-1, it.steps.toFloat()))
-                            2->barEntriesArrayList.add(BarEntry(dayOfMonth.toFloat()-1, it.distance.toFloat()))
-                            3->barEntriesArrayList.add(BarEntry(dayOfMonth.toFloat()-1, it.calories.toFloat()))
-                            4->barEntriesArrayList.add(BarEntry(dayOfMonth.toFloat()-1, it.time.convertTimeToSeconds().toFloat()))
-                        }
-
-
-
                         for (i in 1..maxDays) {
                             val dayOfMonth = i.toString()
                             if (!barEntriesArrayList.any { it.x == dayOfMonth.toFloat() }) {
@@ -226,50 +216,59 @@ class StepMonthlyFragment : Fragment(), OnChartValueSelectedListener {
 
                         }
 
+                        when(i){
+                            1->barEntriesArrayList.add(BarEntry(dayOfMonth.toFloat(), it.steps.toFloat()))
+                            2->barEntriesArrayList.add(BarEntry(dayOfMonth.toFloat(), it.distance.toFloat()))
+                            3->barEntriesArrayList.add(BarEntry(dayOfMonth.toFloat(), it.calories.toFloat()))
+                            4->barEntriesArrayList.add(BarEntry(dayOfMonth.toFloat(), it.time.convertTimeToSeconds().toFloat()))
+                        }
 
 
-                        withContext(Dispatchers.Main)
-                        {
-                            //txtMiles.text = it.totalSleepingHr!!
-                            val dataSet = BarDataSet(barEntriesArrayList, "")
+
+
+
+
+
+                    }
+                    withContext(Dispatchers.Main)
+                    {
+                        //txtMiles.text = it.totalSleepingHr!!
+                        val dataSet = BarDataSet(barEntriesArrayList, "")
 //                            dataSet.setColors(*ColorTemplate.MATERIAL_COLORS)
-                            dataSet.setColors(Color.parseColor("#9CB135"))
-                            // setting text color.
-                            dataSet.valueTextColor = Color.parseColor("#939292")
-                            dataSet.valueTextSize = 14f // Set text size if needed
-                            val xAxis = sleepChartMonthly.xAxis
-                            xAxis.position = XAxis.XAxisPosition.BOTTOM
-                            val formatter = IndexAxisValueFormatter(daysOfWeek)
-                            xAxis.valueFormatter = formatter
-                            val barData = BarData(dataSet)
-                            barData.setBarWidth(0.2f); // Adjust the width as needed
-                            xAxis.setDrawGridLines(false);
-                            sleepChartMonthly.axisLeft.isEnabled = true
-                            sleepChartMonthly.axisRight.isEnabled = false
-                            sleepChartMonthly.setScaleEnabled(false)
-                            sleepChartMonthly.setPinchZoom(false)
-                            dataSet.setDrawValues(false)
-                            sleepChartMonthly.axisLeft.axisMinimum = 0f
-                            sleepChartMonthly.setDrawBorders(false)   //All Line Remove
-                            sleepChartMonthly.axisLeft.textColor =
-                                Color.parseColor("#939292")
-                            xAxis.textColor = Color.parseColor("#939292")
+                        dataSet.setColors(Color.parseColor("#9CB135"))
+                        // setting text color.
+                        dataSet.valueTextColor = Color.parseColor("#939292")
+                        dataSet.valueTextSize = 14f // Set text size if needed
+                        val xAxis = sleepChartMonthly.xAxis
+                        xAxis.position = XAxis.XAxisPosition.BOTTOM
+                        val formatter = IndexAxisValueFormatter(daysOfWeek)
+                        xAxis.valueFormatter = formatter
+                        val barData = BarData(dataSet)
+                        barData.setBarWidth(0.2f); // Adjust the width as needed
+                        xAxis.setDrawGridLines(false);
+                        sleepChartMonthly.axisLeft.isEnabled = true
+                        sleepChartMonthly.axisRight.isEnabled = false
+                        sleepChartMonthly.setScaleEnabled(false)
+                        sleepChartMonthly.setPinchZoom(false)
+                        dataSet.setDrawValues(false)
+                        sleepChartMonthly.axisLeft.axisMinimum = 0f
+                        sleepChartMonthly.setDrawBorders(false)   //All Line Remove
+                        sleepChartMonthly.axisLeft.textColor =
+                            Color.parseColor("#939292")
+                        xAxis.textColor = Color.parseColor("#939292")
 
-                            sleepChartMonthly.getDescription().setEnabled(false);
-                            sleepChartMonthly.animateY(1000);
+                        sleepChartMonthly.getDescription().setEnabled(false);
+                        sleepChartMonthly.animateY(1000);
 
-                            barData.isHighlightEnabled=true
+                        barData.isHighlightEnabled=true
 
 // Set the color for the selected bar
 //                            barData.setH(Color.RED);
 
-                            sleepChartMonthly.data = barData
-                            sleepChartMonthly.notifyDataSetChanged();
-                            sleepChartMonthly.invalidate();
-                        }
-
+                        sleepChartMonthly.data = barData
+                        sleepChartMonthly.notifyDataSetChanged();
+                        sleepChartMonthly.invalidate();
                     }
-
                     if (alarmsForCurrentMonth.isEmpty()) {
 
                         barEntriesArrayList.add(BarEntry(0f,0f))
