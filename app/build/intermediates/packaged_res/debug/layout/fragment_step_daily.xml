@@ -11,11 +11,59 @@
 
 
     <LinearLayout
+        android:id="@+id/dateLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutChoice"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgDot"
+                android:layout_width="@dimen/_8sdp"
+                android:layout_height="@dimen/_8sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:src="@drawable/bg_circle_yellow" />
+
+            <TextView
+                android:id="@+id/txtAverage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:text="@string/daily"
+                android:textColor="@color/tab_not_selected"
+                android:textSize="@dimen/_11sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/imgDot"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txtMiles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/poppins"
+            android:text="0 Steps"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_marginVertical="@dimen/_10sdp"
         android:id="@+id/layoutCharts"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_280sdp"
-        android:layout_below="@id/layoutChoice"
+        android:layout_below="@id/dateLayout"
         android:layout_marginHorizontal="@dimen/_5sdp"
         android:gravity="center"
         android:orientation="vertical"

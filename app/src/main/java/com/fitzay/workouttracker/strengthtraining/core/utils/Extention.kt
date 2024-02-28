@@ -622,7 +622,11 @@ fun Context.getSimpleDate(): String {
     return dateFormat.format(Date())
 
 }
+fun Context.getSimpleDate2(): String {
+    val dateFormat = SimpleDateFormat("yyyy-MM-dd")
+    return dateFormat.format(Date())
 
+}
 fun Context.getDayOfWeek(dateString: String): String {
     val sdf = SimpleDateFormat("dd-MM-yyyy", Locale.getDefault())
     val date: Date = sdf.parse(dateString) ?: return "Invalid Date"

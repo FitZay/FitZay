@@ -93,6 +93,7 @@ class StepDailyFragment : Fragment() {
                                 binding.userSteps.text = Component.preference.stepCount.toString()
                                 binding.userSteps.startAnimation(animZoomIn)
                                 binding.userGoal.text = getString(R.string.goal)+": " + Component.preference.stepGoal.toString()
+                                binding.txtMiles.text=it1.steps.toString()+" "+ getString(R.string.steps)
                             }
                         }
 
@@ -105,6 +106,8 @@ class StepDailyFragment : Fragment() {
                                 binding.userSteps.startAnimation(animZoomIn)
                                 binding.userGoal.text =
                                     getString(R.string.goal)+": " + it1.distanceGoal.toString()
+                                binding.txtMiles.text=it1.distance.toString()+" "+ getString(R.string.distance)
+
                             }
                         }
 
@@ -117,6 +120,8 @@ class StepDailyFragment : Fragment() {
                                 binding.userSteps.startAnimation(animZoomIn)
                                 binding.userGoal.text =
                                     getString(R.string.goal)+": " + it1.caloriesGoal.toString()
+                                binding.txtMiles.text=it1.caloriesGoal.toString()+" "+ getString(R.string.calories)
+
                             }
                         }
 
@@ -130,6 +135,8 @@ class StepDailyFragment : Fragment() {
                                 binding.userSteps.text = it1.time.toString()
                                 binding.userSteps.startAnimation(animZoomIn)
                                 binding.userGoal.text = getString(R.string.goal)+": " + it1.timeGoal.toString()
+                                binding.txtMiles.text=it1.timeGoal.toString()+" "+ getString(R.string.time)
+
                             }
                         }
                     }

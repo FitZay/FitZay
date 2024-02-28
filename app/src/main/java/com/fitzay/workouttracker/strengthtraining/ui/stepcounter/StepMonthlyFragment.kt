@@ -196,7 +196,9 @@ class StepMonthlyFragment : Fragment(), OnChartValueSelectedListener {
                         "12", "13", "14", "15", "16", "17", "18", "19", "20", "21",
                         "22", "23", "24", "25", "26", "27", "28", "29", "30", "31"
                     )
-                    var sumOfFinalStrings = 0f
+                    var avg = 0
+                    var sumOfFinalStrings = 0
+
                     alarmsForCurrentMonth.forEach {
 
                         val dayOfMonth = SimpleDateFormat("dd", Locale.getDefault()).format(dateFormat.parse(it.date)!!)
@@ -217,10 +219,30 @@ class StepMonthlyFragment : Fragment(), OnChartValueSelectedListener {
                         }
 
                         when(i){
-                            1->barEntriesArrayList.add(BarEntry(dayOfMonth.toFloat(), it.steps.toFloat()))
-                            2->barEntriesArrayList.add(BarEntry(dayOfMonth.toFloat(), it.distance.toFloat()))
-                            3->barEntriesArrayList.add(BarEntry(dayOfMonth.toFloat(), it.calories.toFloat()))
-                            4->barEntriesArrayList.add(BarEntry(dayOfMonth.toFloat(), it.time.convertTimeToSeconds().toFloat()))
+                            1->
+                            {
+                                barEntriesArrayList.add(BarEntry(dayOfMonth.toFloat(), it.steps.toFloat()))
+                                sumOfFinalStrings += it.steps
+                                avg = sumOfFinalStrings / daysOfWeek.size
+                            }
+                            2->
+                                {
+                                    barEntriesArrayList.add(BarEntry(dayOfMonth.toFloat(), it.distance.toFloat()))
+                                    sumOfFinalStrings += it.distance.toInt()
+                                    avg = sumOfFinalStrings / daysOfWeek.size
+                                }
+                            3->
+                                {
+                                barEntriesArrayList.add(BarEntry(dayOfMonth.toFloat(), it.calories.toFloat()))
+                                    sumOfFinalStrings += it.calories.toInt()
+                                    avg = sumOfFinalStrings / daysOfWeek.size
+                                }
+                            4->
+                                {
+                                barEntriesArrayList.add(BarEntry(dayOfMonth.toFloat(), it.time.convertTimeToSeconds().toFloat()))
+                                    sumOfFinalStrings += it.time.convertTimeToSeconds()
+                                    avg = sumOfFinalStrings / daysOfWeek.size
+                            }
                         }
 
 
@@ -233,6 +255,30 @@ class StepMonthlyFragment : Fragment(), OnChartValueSelectedListener {
                     withContext(Dispatchers.Main)
                     {
                         //txtMiles.text = it.totalSleepingHr!!
+
+                        when(i)
+                        {
+                            1->
+                            {
+
+                                txtMiles.text=avg.toString()+" "+ getString(R.string.steps)
+                            }
+                            2->{
+
+                                txtMiles.text=avg.toString()+" "+ getString(R.string.distance)
+                            }
+                            3->
+                            {
+
+                                txtMiles.text=avg.toString()+" "+ getString(R.string.calories)
+                            }
+                            4->
+                            {
+
+                                txtMiles.text=avg.toString()+" "+ getString(R.string.time)
+                            }
+                        }
+
                         val dataSet = BarDataSet(barEntriesArrayList, "")
 //                            dataSet.setColors(*ColorTemplate.MATERIAL_COLORS)
                         dataSet.setColors(Color.parseColor("#9CB135"))
@@ -286,7 +332,28 @@ class StepMonthlyFragment : Fragment(), OnChartValueSelectedListener {
                         withContext(Dispatchers.Main)
                         {
                             //txtMiles.text ="No Data"
+                            when(i)
+                            {
+                                1->
+                                {
 
+                                    txtMiles.text=avg.toString()+" "+ getString(R.string.steps)
+                                }
+                                2->{
+
+                                    txtMiles.text=avg.toString()+" "+ getString(R.string.distance)
+                                }
+                                3->
+                                {
+
+                                    txtMiles.text=avg.toString()+" "+ getString(R.string.calories)
+                                }
+                                4->
+                                {
+
+                                    txtMiles.text=avg.toString()+" "+ getString(R.string.time)
+                                }
+                            }
                             val dataSet = BarDataSet(barEntriesArrayList, "")
 //                            dataSet.setColors(*ColorTemplate.MATERIAL_COLORS)
                             dataSet.setColors(Color.parseColor("#9CB135"))
@@ -373,7 +440,8 @@ class StepMonthlyFragment : Fragment(), OnChartValueSelectedListener {
                         "12", "13", "14", "15", "16", "17", "18", "19", "20", "21",
                         "22", "23", "24", "25", "26", "27", "28", "29", "30", "31"
                     )
-                    var sumOfFinalStrings = 0f
+                    var avg = 0
+                    var sumOfFinalStrings = 0
 
 
                     // If there are no data for the current month, update the UI accordingly
@@ -443,12 +511,31 @@ class StepMonthlyFragment : Fragment(), OnChartValueSelectedListener {
                             //sumOfFinalStrings += finalString
 
 
-                            when(i)
-                            {
-                                1->barEntriesArrayList.add(BarEntry(dayOfMonth.toFloat()-1, it.steps.toFloat()))
-                                2->barEntriesArrayList.add(BarEntry(dayOfMonth.toFloat()-1, it.distance.toFloat()))
-                                3->barEntriesArrayList.add(BarEntry(dayOfMonth.toFloat()-1, it.calories.toFloat()))
-                                4->barEntriesArrayList.add(BarEntry(dayOfMonth.toFloat()-1, it.time.convertTimeToSeconds().toFloat()))
+                            when(i){
+                                1->
+                                {
+                                    barEntriesArrayList.add(BarEntry(dayOfMonth.toFloat(), it.steps.toFloat()))
+                                    sumOfFinalStrings += it.steps
+                                    avg = sumOfFinalStrings / daysOfWeek.size
+                                }
+                                2->
+                                {
+                                    barEntriesArrayList.add(BarEntry(dayOfMonth.toFloat(), it.distance.toFloat()))
+                                    sumOfFinalStrings += it.distance.toInt()
+                                    avg = sumOfFinalStrings / daysOfWeek.size
+                                }
+                                3->
+                                {
+                                    barEntriesArrayList.add(BarEntry(dayOfMonth.toFloat(), it.calories.toFloat()))
+                                    sumOfFinalStrings += it.calories.toInt()
+                                    avg = sumOfFinalStrings / daysOfWeek.size
+                                }
+                                4->
+                                {
+                                    barEntriesArrayList.add(BarEntry(dayOfMonth.toFloat(), it.time.convertTimeToSeconds().toFloat()))
+                                    sumOfFinalStrings += it.time.convertTimeToSeconds()
+                                    avg = sumOfFinalStrings / daysOfWeek.size
+                                }
                             }
 
 
@@ -464,10 +551,31 @@ class StepMonthlyFragment : Fragment(), OnChartValueSelectedListener {
                             Log.i("TAG", "updateUI: "+sumOfFinalStrings)
                             withContext(Dispatchers.Main)
                             {
-                                val (hours, minutes) = requireActivity().convertDecimalToHoursMinutes(aver)
+//                                val (hours, minutes) = requireActivity().convertDecimalToHoursMinutes(aver)
 
                                 //txtMiles.text ="$hours hr $minutes min"
+                                when(i)
+                                {
+                                    1->
+                                    {
 
+                                        txtMiles.text=avg.toString()+" "+ getString(R.string.steps)
+                                    }
+                                    2->{
+
+                                        txtMiles.text=avg.toString()+" "+ getString(R.string.distance)
+                                    }
+                                    3->
+                                    {
+
+                                        txtMiles.text=avg.toString()+" "+ getString(R.string.calories)
+                                    }
+                                    4->
+                                    {
+
+                                        txtMiles.text=avg.toString()+" "+ getString(R.string.time)
+                                    }
+                                }
                                 val dataSet = BarDataSet(barEntriesArrayList, "")
 //                                dataSet.setColors(*ColorTemplate.MATERIAL_COLORS)
                                 dataSet.setColors(android.graphics.Color.parseColor("#9CB135"))

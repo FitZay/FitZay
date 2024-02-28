@@ -74,9 +74,6 @@ public final class ActivityStepSummeryBinding implements ViewBinding {
   public final TextView txtDaily;
 
   @NonNull
-  public final TextView txtDate;
-
-  @NonNull
   public final TextView txtMiles;
 
   @NonNull
@@ -104,9 +101,9 @@ public final class ActivityStepSummeryBinding implements ViewBinding {
       @NonNull LinearLayout layoutCharts, @NonNull LinearLayout layoutChoice,
       @NonNull RelativeLayout layoutToday, @NonNull MaterialToolbar materialToolbar,
       @NonNull CircularProgressIndicator stepProgress, @NonNull TextView txtAverage,
-      @NonNull TextView txtDaily, @NonNull TextView txtDate, @NonNull TextView txtMiles,
-      @NonNull TextView txtMonthly, @NonNull TextView txtToolbar, @NonNull TextView txtWeekly,
-      @NonNull TextView typeName, @NonNull TextView userGoal, @NonNull TextView userSteps) {
+      @NonNull TextView txtDaily, @NonNull TextView txtMiles, @NonNull TextView txtMonthly,
+      @NonNull TextView txtToolbar, @NonNull TextView txtWeekly, @NonNull TextView typeName,
+      @NonNull TextView userGoal, @NonNull TextView userSteps) {
     this.rootView = rootView;
     this.chart = chart;
     this.container = container;
@@ -124,7 +121,6 @@ public final class ActivityStepSummeryBinding implements ViewBinding {
     this.stepProgress = stepProgress;
     this.txtAverage = txtAverage;
     this.txtDaily = txtDaily;
-    this.txtDate = txtDate;
     this.txtMiles = txtMiles;
     this.txtMonthly = txtMonthly;
     this.txtToolbar = txtToolbar;
@@ -257,12 +253,6 @@ public final class ActivityStepSummeryBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.txtDate;
-      TextView txtDate = ViewBindings.findChildViewById(rootView, id);
-      if (txtDate == null) {
-        break missingId;
-      }
-
       id = R.id.txtMiles;
       TextView txtMiles = ViewBindings.findChildViewById(rootView, id);
       if (txtMiles == null) {
@@ -307,8 +297,8 @@ public final class ActivityStepSummeryBinding implements ViewBinding {
 
       return new ActivityStepSummeryBinding((RelativeLayout) rootView, chart, container, dateLayout,
           imgCalories, imgDot, imgLocation, imgStep, imgTime, ivBack, layoutCharts, layoutChoice,
-          layoutToday, materialToolbar, stepProgress, txtAverage, txtDaily, txtDate, txtMiles,
-          txtMonthly, txtToolbar, txtWeekly, typeName, userGoal, userSteps);
+          layoutToday, materialToolbar, stepProgress, txtAverage, txtDaily, txtMiles, txtMonthly,
+          txtToolbar, txtWeekly, typeName, userGoal, userSteps);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

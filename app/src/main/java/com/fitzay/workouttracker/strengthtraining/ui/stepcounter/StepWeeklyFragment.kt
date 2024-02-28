@@ -191,8 +191,6 @@ class StepWeeklyFragment : Fragment() , OnChartValueSelectedListener {
 
             setBarData(i,pattern, textView)
 
-            Log.i("TAG", "previousWeek: " + weekBackFormatStart)
-            Log.i("TAG", "previousWeek: " + weekBackFormatEnd)
 
         }
 
@@ -497,8 +495,8 @@ class StepWeeklyFragment : Fragment() , OnChartValueSelectedListener {
                             var barEntriesArrayList = ArrayList<BarEntry>()
                             val dateFormat = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
                             val formattedDates = allDatesOfWeek.map { pattern.format(it) }.toTypedArray()
-                            var avg = 0f
-                            var sumOfFinalStrings = 0f
+                            var avg = 0
+                            var sumOfFinalStrings = 0
                             allDatesOfWeek.forEachIndexed { index, date ->
                                 val dateFormatted = dateFormat.format(date)
                                 val dataForDate = result.find { it.date == dateFormatted }
@@ -514,11 +512,31 @@ class StepWeeklyFragment : Fragment() , OnChartValueSelectedListener {
 //                                    avg = sumOfFinalStrings / 7
                                     when(i)
                                     {
-                                        1->barEntriesArrayList.add(BarEntry(index.toFloat(), dataForDate.steps.toFloat()))
-                                        2->barEntriesArrayList.add(BarEntry(index.toFloat(), dataForDate.distance.toFloat()))
-                                        3->barEntriesArrayList.add(BarEntry(index.toFloat(), dataForDate.calories.toFloat()))
-                                        4->barEntriesArrayList.add(BarEntry(index.toFloat(), dataForDate.time.convertTimeToSeconds().toFloat()))
+                                        1->
+                                        {
+                                            barEntriesArrayList.add(BarEntry(index.toFloat(), dataForDate.steps.toFloat()))
+                                            sumOfFinalStrings += dataForDate.steps
+                                            avg = sumOfFinalStrings / 7
+                                        }
+                                        2->{
+                                            barEntriesArrayList.add(BarEntry(index.toFloat(), dataForDate.distance.toFloat()))
+                                            sumOfFinalStrings += dataForDate.distance.toInt()
+                                            avg = sumOfFinalStrings / 7
+                                        }
+                                        3->
+                                            {
+                                            barEntriesArrayList.add(BarEntry(index.toFloat(), dataForDate.calories.toFloat()))
+                                                sumOfFinalStrings += dataForDate.calories.toInt()
+                                                avg = sumOfFinalStrings / 7
+                                            }
+                                        4->
+                                            {
+                                            barEntriesArrayList.add(BarEntry(index.toFloat(), dataForDate.time.convertTimeToSeconds().toFloat()))
+                                                sumOfFinalStrings += dataForDate.time.convertTimeToSeconds()
+                                                avg = sumOfFinalStrings / 7
+                                            }
                                     }
+
 
                                 }
                                 else {
@@ -548,17 +566,38 @@ class StepWeeklyFragment : Fragment() , OnChartValueSelectedListener {
                             Log.i("TAG", "setBarData: " + result.size)
 
                             withContext(Dispatchers.Main) {
-                                val (hours, minutes) = requireActivity().convertDecimalToHoursMinutes(avg)
-
-                                if (avg.equals(0f)) {
-                                    //txtMiles.text = "No Data"
-
-                                } else {
-                                   // txtMiles.text = "$hours hr $minutes min"
-
-                                }
+//                                val (hours, minutes) = requireActivity().convertDecimalToHoursMinutes(avg)
+//
+//                                if (avg.equals(0f)) {
+//                                    //txtMiles.text = "No Data"
+//
+//                                } else {
+//                                   // txtMiles.text = "$hours hr $minutes min"
+//
+//                                }
                                 txt.text = startWeek + "," + endWeek
+                                when(i)
+                                {
+                                    1->
+                                    {
 
+                                        txtMiles.text=avg.toString()+" "+ getString(R.string.steps)
+                                    }
+                                    2->{
+
+                                        txtMiles.text=avg.toString()+" "+ getString(R.string.distance)
+                                    }
+                                    3->
+                                    {
+
+                                        txtMiles.text=avg.toString()+" "+ getString(R.string.calories)
+                                    }
+                                    4->
+                                    {
+
+                                        txtMiles.text=avg.toString()+" "+ getString(R.string.time)
+                                    }
+                                }
                                 val dataSet = BarDataSet(barEntriesArrayList, "")
 //                        dataSet.setColors(*ColorTemplate.MATERIAL_COLORS)
                                 dataSet.setColors(Color.parseColor("#9CB135"))

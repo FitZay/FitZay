@@ -12,6 +12,7 @@ import com.fitzay.workouttracker.strengthtraining.R
 import com.fitzay.workouttracker.strengthtraining.core.AppController
 import com.fitzay.workouttracker.strengthtraining.core.utils.getDayOfWeek
 import com.fitzay.workouttracker.strengthtraining.core.utils.getSimpleDate
+import com.fitzay.workouttracker.strengthtraining.core.utils.getSimpleDate2
 import com.fitzay.workouttracker.strengthtraining.databinding.FragmentGraphBinding
 import com.fitzay.workouttracker.strengthtraining.di.Component
 import com.fitzay.workouttracker.strengthtraining.ui.activities.LoadingActivity
@@ -92,11 +93,38 @@ class GraphFragment : Fragment() {
                 }
 
 
+                com.fitzay.workouttracker.strengthtraining.di.Component.stepModel.stepRepository.getAllRecordsF(
+                    1
+                ).collect { result ->
+
+                    if (result.isNotEmpty()) {
+
+                        for (i in result.listIterator().iterator()) {
+
+                            withContext(Dispatchers.Main) {
+                                if (i.date!!.equals(requireActivity().getSimpleDate2())) {
+
+//                                    val regex = Regex("\\d+")
+//                                    val matchResults = regex.findAll(i.totalSleepingHr!!)
+//                                    val numericValues = matchResults.map { it.value }.toList()
+//                                    val finalString = numericValues.joinToString(".").replace(" ", "").toFloat()
+
+                                    stepCount.text = i.steps.toString()+" "+getString(R.string.steps)
+
+                                } else {
+                                    Log.i("TAG", "Else: ")
+                                }
+                            }
+
+                        }
+
+                    }
+                }
             }
 
 
 //            stepCount.text = "${Component.preference.stepCount} Steps"
-            stepCount.setText(Component.preference.stepCount.toString()+" "+getString(R.string.steps))
+            //stepCount.setText(Component.preference.stepCount.toString()+" "+getString(R.string.steps))
             //// binding.stepGoal.text=" ${Component.preference.stepGoal.toString()}"
 
             layoutSleep.setOnClickListener {

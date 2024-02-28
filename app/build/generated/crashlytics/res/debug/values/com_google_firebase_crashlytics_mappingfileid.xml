@@ -6,5 +6,5 @@
 
   Do NOT modify or commit to source control!
 -->
-<string name="com.google.firebase.crashlytics.mapping_file_id" tools:ignore="UnusedResources,TypographyDashes" translatable="false">b80277af251d46e9a56edb207f1beb9d</string>
+<string name="com.google.firebase.crashlytics.mapping_file_id" tools:ignore="UnusedResources,TypographyDashes" translatable="false">00000000000000000000000000000000</string>
 </resources>

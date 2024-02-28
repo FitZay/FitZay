@@ -68,7 +68,7 @@ class StepSummeryActivity : AppUtil2(), OnChartValueSelectedListener {
 //        dailyReport(1)
 
         binding.txtAverage.text = getString(R.string.daily)
-        binding.txtMiles.text = "" + (Component.preference.stepGoal * 100) / Component.preference.stepGoal + getString(R.string.steps)
+       // binding.txtMiles.text = "" + (Component.preference.stepGoal * 100) / Component.preference.stepGoal +" "+ getString(R.string.steps)
 
 
         binding.apply {
@@ -83,7 +83,7 @@ class StepSummeryActivity : AppUtil2(), OnChartValueSelectedListener {
                 txtDaily.setBackgroundResource(R.drawable.bg_selected)
                 typeClicked = "Daily"
                 txtAverage.text = getString(R.string.daily)
-                txtMiles.text = "" + (Component.preference.stepGoal * 100) / Component.preference.stepGoal + getString(R.string.steps)
+                txtMiles.text = "" + (Component.preference.stepGoal * 100) / Component.preference.stepGoal+" "+ getString(R.string.steps)
                 imgStep.performClick()
 
                 supportFragmentManager.beginTransaction().replace(R.id.container, StepDailyFragment()).commit()

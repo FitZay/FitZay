@@ -23,7 +23,13 @@ public final class FragmentStepMonthlyBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
+  public final LinearLayout dateLayout;
+
+  @NonNull
   public final ImageView imgCalories;
+
+  @NonNull
+  public final ImageView imgDot;
 
   @NonNull
   public final ImageView imgLocation;
@@ -47,14 +53,24 @@ public final class FragmentStepMonthlyBinding implements ViewBinding {
   public final BarChart sleepChartMonthly;
 
   @NonNull
+  public final TextView txtAverage;
+
+  @NonNull
   public final TextView txtDate;
 
+  @NonNull
+  public final TextView txtMiles;
+
   private FragmentStepMonthlyBinding(@NonNull RelativeLayout rootView,
-      @NonNull ImageView imgCalories, @NonNull ImageView imgLocation, @NonNull ImageView imgStep,
-      @NonNull ImageView imgTime, @NonNull LinearLayout layoutCharts, @NonNull View nextDate,
-      @NonNull View previousDate, @NonNull BarChart sleepChartMonthly, @NonNull TextView txtDate) {
+      @NonNull LinearLayout dateLayout, @NonNull ImageView imgCalories, @NonNull ImageView imgDot,
+      @NonNull ImageView imgLocation, @NonNull ImageView imgStep, @NonNull ImageView imgTime,
+      @NonNull LinearLayout layoutCharts, @NonNull View nextDate, @NonNull View previousDate,
+      @NonNull BarChart sleepChartMonthly, @NonNull TextView txtAverage, @NonNull TextView txtDate,
+      @NonNull TextView txtMiles) {
     this.rootView = rootView;
+    this.dateLayout = dateLayout;
     this.imgCalories = imgCalories;
+    this.imgDot = imgDot;
     this.imgLocation = imgLocation;
     this.imgStep = imgStep;
     this.imgTime = imgTime;
@@ -62,7 +78,9 @@ public final class FragmentStepMonthlyBinding implements ViewBinding {
     this.nextDate = nextDate;
     this.previousDate = previousDate;
     this.sleepChartMonthly = sleepChartMonthly;
+    this.txtAverage = txtAverage;
     this.txtDate = txtDate;
+    this.txtMiles = txtMiles;
   }
 
   @Override
@@ -92,9 +110,21 @@ public final class FragmentStepMonthlyBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.dateLayout;
+      LinearLayout dateLayout = ViewBindings.findChildViewById(rootView, id);
+      if (dateLayout == null) {
+        break missingId;
+      }
+
       id = R.id.imgCalories;
       ImageView imgCalories = ViewBindings.findChildViewById(rootView, id);
       if (imgCalories == null) {
+        break missingId;
+      }
+
+      id = R.id.imgDot;
+      ImageView imgDot = ViewBindings.findChildViewById(rootView, id);
+      if (imgDot == null) {
         break missingId;
       }
 
@@ -140,14 +170,27 @@ public final class FragmentStepMonthlyBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.txtAverage;
+      TextView txtAverage = ViewBindings.findChildViewById(rootView, id);
+      if (txtAverage == null) {
+        break missingId;
+      }
+
       id = R.id.txtDate;
       TextView txtDate = ViewBindings.findChildViewById(rootView, id);
       if (txtDate == null) {
         break missingId;
       }
 
-      return new FragmentStepMonthlyBinding((RelativeLayout) rootView, imgCalories, imgLocation,
-          imgStep, imgTime, layoutCharts, nextDate, previousDate, sleepChartMonthly, txtDate);
+      id = R.id.txtMiles;
+      TextView txtMiles = ViewBindings.findChildViewById(rootView, id);
+      if (txtMiles == null) {
+        break missingId;
+      }
+
+      return new FragmentStepMonthlyBinding((RelativeLayout) rootView, dateLayout, imgCalories,
+          imgDot, imgLocation, imgStep, imgTime, layoutCharts, nextDate, previousDate,
+          sleepChartMonthly, txtAverage, txtDate, txtMiles);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

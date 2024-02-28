@@ -35,114 +35,13 @@
 
     </com.google.android.material.appbar.MaterialToolbar>
 
-    <LinearLayout
-        android:id="@+id/dateLayout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/materialToolbar"
-        android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <ImageView
-                android:id="@+id/imgDot"
-                android:layout_width="@dimen/_8sdp"
-                android:layout_height="@dimen/_8sdp"
-                android:layout_gravity="center_vertical"
-                android:layout_marginStart="@dimen/_10sdp"
-                android:src="@drawable/bg_circle_yellow" />
-
-            <TextView
-                android:id="@+id/txtAverage"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="@dimen/_5sdp"
-                android:text="@string/daily"
-                android:textColor="@color/tab_not_selected"
-                android:textSize="@dimen/_11sdp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@id/imgDot"
-                app:layout_constraintTop_toTopOf="parent" />
-
-        </LinearLayout>
-
-
-        <TextView
-            android:id="@+id/txtMiles"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="@dimen/_15sdp"
-            android:layout_marginTop="@dimen/_5sdp"
-            android:fontFamily="@font/poppins"
-            android:text="5000 Steps"
-            android:textColor="@color/white"
-            android:textSize="@dimen/_14sdp" />
-
-        <TextView
-            android:visibility="gone"
-            android:id="@+id/txtDate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="@dimen/_15sdp"
-            android:fontFamily="@font/poppins"
-            android:text="19-25 May 2023"
-            android:textColor="@color/tab_not_selected"
-            android:textSize="@dimen/_10sdp" />
-
-<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content">-->
-
-<!--            <View-->
-<!--                android:id="@+id/previousDate"-->
-<!--                android:layout_width="@dimen/_10sdp"-->
-<!--                android:layout_height="@dimen/_15sdp"-->
-<!--                app:layout_constraintStart_toStartOf="parent"-->
-<!--                app:layout_constraintTop_toTopOf="parent"-->
-<!--                app:layout_constraintEnd_toEndOf="parent"-->
-<!--                app:layout_constraintBottom_toBottomOf="parent"-->
-<!--                app:layout_constraintHorizontal_bias="0.0"-->
-<!--                android:background="@drawable/date_pre" />-->
-
-<!--            <TextView-->
-<!--                android:id="@+id/txtDate"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:fontFamily="@font/poppins"-->
-<!--                android:text="Jan 22-Jan 29"-->
-<!--                android:textColor="@color/tab_not_selected"-->
-<!--                android:textSize="@dimen/_10sdp"-->
-<!--                android:singleLine="true"-->
-<!--                app:layout_constraintHorizontal_bias="0.12"-->
-<!--                app:layout_constraintBottom_toBottomOf="parent"-->
-<!--                app:layout_constraintEnd_toStartOf="@+id/nextDate"-->
-<!--                app:layout_constraintStart_toEndOf="@id/previousDate"-->
-<!--                app:layout_constraintTop_toTopOf="parent" />-->
-
-<!--            <View-->
-<!--                android:id="@+id/nextDate"-->
-<!--                android:layout_width="@dimen/_20sdp"-->
-<!--                android:layout_height="@dimen/_25sdp"-->
-<!--                app:layout_constraintTop_toTopOf="parent"-->
-<!--                app:layout_constraintEnd_toEndOf="parent"-->
-<!--                android:layout_marginEnd="@dimen/_10sdp"-->
-<!--                android:visibility="gone"-->
-<!--                app:layout_constraintBottom_toBottomOf="parent"-->
-<!--                app:layout_constraintHorizontal_bias="0.0"-->
-<!--                android:background="@drawable/next_date" />-->
-
-<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
-
-
-    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/layoutChoice"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_30sdp"
-        android:layout_below="@id/dateLayout"
+        android:layout_below="@id/materialToolbar"
         android:layout_gravity="center"
         android:layout_marginHorizontal="@dimen/_15sdp"
         android:layout_marginTop="@dimen/_10sdp"
@@ -188,11 +87,58 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/dateLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutChoice"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:orientation="vertical">
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgDot"
+                android:layout_width="@dimen/_8sdp"
+                android:layout_height="@dimen/_8sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:src="@drawable/bg_circle_yellow" />
+
+            <TextView
+                android:id="@+id/txtAverage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:text="@string/daily"
+                android:textColor="@color/tab_not_selected"
+                android:textSize="@dimen/_11sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/imgDot"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txtMiles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/poppins"
+            android:text="0 Steps"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+    </LinearLayout>
     <FrameLayout
         android:id="@+id/container"
         android:layout_width="match_parent"
-        android:layout_below="@id/layoutChoice"
+        android:layout_below="@id/dateLayout"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="@dimen/_5sdp"
         android:layout_height="0dp">
