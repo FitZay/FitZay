@@ -98,7 +98,9 @@ Marking id:txtBeginner:2131362852 reachable: referenced from E:\Rafaqat Mehmood\
 Marking id:txtIntermediate:2131362859 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking id:txtRecent:2131362875 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking layout:fragment_workout:2131558504 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
+Marking id:dateLayout:2131362084 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking id:imgCalories:2131362250 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
+Marking id:imgDot:2131362251 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking id:imgLocation:2131362252 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking id:imgStep:2131362254 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking id:imgTime:2131362255 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
@@ -106,7 +108,9 @@ Marking id:layoutCharts:2131362317 reachable: referenced from E:\Rafaqat Mehmood
 Marking id:nextDate:2131362505 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking id:previousDate:2131362563 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking id:sleepChartMonthly:2131362657 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
+Marking id:txtAverage:2131362851 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking id:txtDate:2131362854 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
+Marking id:txtMiles:2131362862 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking layout:fragment_step_monthly:2131558500 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking color:green:2131099767 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking color:lightgrey:2131099771 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
@@ -310,14 +314,10 @@ Marking drawable:ic_step_pause:2131231078 reachable: referenced from E:\Rafaqat 
 Marking color:start_btn_color:2131100421 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking id:chart:2131361982 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking id:container:2131362057 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
-Marking id:dateLayout:2131362084 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
-Marking id:imgDot:2131362251 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking id:layoutChoice:2131362318 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking id:layoutToday:2131362340 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking id:stepProgress:2131362693 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
-Marking id:txtAverage:2131362851 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking id:txtDaily:2131362853 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
-Marking id:txtMiles:2131362862 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking id:txtMonthly:2131362864 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking id:txtWeekly:2131362887 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking id:typeName:2131362889 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
@@ -470,7 +470,6 @@ Marking id:weekonedayoneBtn7:2131362931 reachable: referenced from E:\Rafaqat Me
 Marking id:weekonedayoneBtn8:2131362932 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking layout:activity_fullbody_workout:2131558439 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking string:allow_required_permissions:2131951652 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
-Marking string:today_:2131952063 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking id:btnDay1:2131361941 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking id:btnDay2:2131361942 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking id:btnDay3:2131361943 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
@@ -678,6 +677,7 @@ Marking id:layoutHolder:2131362321 reachable: referenced from E:\Rafaqat Mehmood
 Marking layout:display_workouts_layout:2131558490 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking id:langName:2131362305 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking id:flag:2131362173 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
+Marking string:today_:2131952063 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking id:clFemale:2131362005 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking id:clGenderSelection:2131362007 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking id:clMale:2131362011 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
@@ -1899,12 +1899,12 @@ effective_ad_unit_id
 12
 onValueSelected
 13
-14
 D75
+14
 tryResumeImpl
 15
-16
 heightToggle
+16
 androidx/compose/runtime/snapshots/St...
 17
 18
@@ -1956,9 +1956,9 @@ clSleepTracker
 toMutableList
 30
 descriptor.builtIns.anyType
-31
 getEmptyThreadMap
 channelId
+31
 setSleepEntity
 /logScionEvent
 targetModule
@@ -3192,8 +3192,8 @@ calculateFraction
 getCanvas
 NOT_GENERATED
 getDeclaredField
-getRippleEndRadius
 Dec
+getRippleEndRadius
 _c
 _e
 user.dir
@@ -7624,8 +7624,8 @@ setStepProgress
 dailyGoal
 INITIALIZATION
 small_template
-Decal
 Jul
+Decal
 Jun
 L90
 ISOSpeedRatings
@@ -10122,8 +10122,8 @@ onModifierChanged
 gads:nonagon:request_timeout:seconds
 ULONGARRAY
 checkNextWasInvoked
-compileStatement
 Nov
+compileStatement
 makeOptions
 getInternalState$animation_core_release
 isListOrNullableList
@@ -10506,8 +10506,8 @@ XT1068
 CancellableContinuationWithOwner
 XT1069
 android.support.allowGeneratedReplies
-exId
 Oct
+exId
 $this$background
 kotlin.jvm.internal.SerializedIr
 com.google.firebase.messaging.default...
@@ -13064,6 +13064,7 @@ getTail$runtime_release
 setOldXValue
 build
 /jvm/internal/
+isCurrentMonth
 video/divx
 AES/GCM/NoPadding
 onServicePreSuperOnBind
@@ -16369,6 +16370,7 @@ global_position
 tilapia
 ERROR_TYPE
 isActive$annotations
+TAG66
 runtime_version
 serialized_proto_data
 binding
@@ -21304,6 +21306,7 @@ ensureMap
 endSection
 androidx/activity/result/contract/Act...
 KCallable
+getMonthName
 OMX.brcm.audio.mp3.decoder
 rootVisited
 updateCellReceiveSlow
@@ -46391,21 +46394,22 @@ Marking layout:fragment_workout:2131558504 used because it matches string pool c
     @color/white
     @dimen/_20sdp
     @string/summary
-    @drawable/bg_circle_yellow
-    @dimen/_8sdp
-    @dimen/_10sdp
-    @dimen/_11sdp
-    @color/tab_not_selected
-    @string/daily
-    @dimen/_15sdp
-    @font/poppins
-    @dimen/_14sdp
     @drawable/selected_bg
+    @dimen/_15sdp
     @dimen/_30sdp
+    @dimen/_10sdp
     @drawable/bg_selected
+    @font/poppins
     @string/daily_
     @string/weekly_
     @string/monthly_
+    @dimen/_2sdp
+    @drawable/bg_circle_yellow
+    @dimen/_8sdp
+    @dimen/_11sdp
+    @color/tab_not_selected
+    @string/daily
+    @dimen/_14sdp
     @dimen/_280sdp
     @dimen/_200sdp
     @color/bottom_nav_bg
@@ -46904,19 +46908,24 @@ Marking layout:fragment_workout:2131558504 used because it matches string pool c
     @dimen/_15sdp
 @layout/fragment_step_daily : reachable=true
     @drawable/bg_main
+    @dimen/_2sdp
+    @drawable/bg_circle_yellow
+    @dimen/_8sdp
     @dimen/_10sdp
     @dimen/_5sdp
+    @dimen/_11sdp
+    @color/tab_not_selected
+    @string/daily
+    @dimen/_15sdp
+    @font/poppins
+    @dimen/_14sdp
+    @color/white
     @dimen/_280sdp
     @dimen/_200sdp
     @color/bottom_nav_bg
     @dimen/_18sdp
     @color/start_btn_color
-    @font/poppins
     @dimen/_12sdp
-    @color/tab_not_selected
-    @dimen/_15sdp
-    @color/white
-    @dimen/_11sdp
     @style/Theme_Chart
     @drawable/selected_bg
     @dimen/_30sdp
@@ -46927,17 +46936,24 @@ Marking layout:fragment_workout:2131558504 used because it matches string pool c
     @drawable/ic_step_time_white
 @layout/fragment_step_monthly : reachable=true
     @drawable/bg_main
+    @dimen/_2sdp
+    @drawable/bg_circle_yellow
+    @dimen/_8sdp
     @dimen/_10sdp
     @dimen/_5sdp
-    @dimen/_280sdp
-    @drawable/date_pre
-    @dimen/_15sdp
-    @color/white
+    @dimen/_11sdp
     @color/tab_not_selected
+    @string/monthly
+    @dimen/_15sdp
     @font/poppins
+    @dimen/_14sdp
+    @color/white
+    @drawable/date_pre
     @drawable/next_date
     @dimen/_20sdp
     @dimen/_25sdp
+    @dimen/_1sdp
+    @dimen/_280sdp
     @style/Theme_Chart
     @drawable/selected_bg
     @dimen/_30sdp
@@ -46949,17 +46965,24 @@ Marking layout:fragment_workout:2131558504 used because it matches string pool c
     @drawable/ic_step_time_white
 @layout/fragment_step_weekly : reachable=true
     @drawable/bg_main
+    @dimen/_2sdp
+    @drawable/bg_circle_yellow
+    @dimen/_8sdp
     @dimen/_10sdp
     @dimen/_5sdp
-    @dimen/_280sdp
-    @drawable/date_pre
-    @dimen/_15sdp
-    @color/white
+    @dimen/_11sdp
     @color/tab_not_selected
+    @string/weekly
+    @dimen/_15sdp
     @font/poppins
+    @dimen/_14sdp
+    @color/white
+    @drawable/date_pre
     @drawable/next_date
     @dimen/_20sdp
     @dimen/_25sdp
+    @dimen/_1sdp
+    @dimen/_280sdp
     @style/Theme_Chart
     @drawable/selected_bg
     @dimen/_30sdp
@@ -64791,4 +64814,4 @@ The root reachable resources are:
  xml:image_share_filepaths:2132148228
 Unused resources are: 
  style:Platform_Widget_AppCompat_Spinner:2132017480
-Resource shrinking did not work (grew from 24734478 to 24750310); using original instead
+Resource shrinking did not work (grew from 24735982 to 24751814); using original instead

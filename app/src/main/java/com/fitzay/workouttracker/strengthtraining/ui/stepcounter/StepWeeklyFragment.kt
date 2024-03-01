@@ -94,6 +94,9 @@ class StepWeeklyFragment : Fragment() , OnChartValueSelectedListener {
 
             sleepChartWeekly.setOnChartValueSelectedListener(this@StepWeeklyFragment)
 
+            root.setOnClickListener {
+                dateLayout.visibility = View.VISIBLE
+            }
 
             calendar = Calendar.getInstance()
             calendar.add(Calendar.DAY_OF_YEAR, 6)
@@ -117,6 +120,7 @@ class StepWeeklyFragment : Fragment() , OnChartValueSelectedListener {
             //1st time or Current Data
             previousWeek(txtDate)
 
+
             previousDate.setOnClickListener {
                 previousWeek(txtDate)
                 nextDate.visibility = View.VISIBLE
@@ -131,25 +135,49 @@ class StepWeeklyFragment : Fragment() , OnChartValueSelectedListener {
                 unSelectSub()
                 imgStep.setBackgroundResource(R.drawable.bg_selected)
                 i=1
-                setBarData(i,SimpleDateFormat("dd-MMM", Locale.getDefault()), txtDate)
-
                 check="Step"
+                if (isCurrentMonth(this@StepWeeklyFragment.calendar)) {
+                    setBarData(i,SimpleDateFormat("EE", Locale.getDefault()), txtDate,isCurrentWeek(this@StepWeeklyFragment.calendar))
+
+                }
+                else
+                {
+                    setBarData(i,SimpleDateFormat("dd-MMM", Locale.getDefault()), txtDate,isCurrentWeek(this@StepWeeklyFragment.calendar))
+
+                }
+
             }
             binding.imgLocation.setOnClickListener {
                 unSelectSub()
                 imgLocation.setBackgroundResource(R.drawable.bg_selected)
                 i=2
-                setBarData(i,SimpleDateFormat("dd-MMM", Locale.getDefault()), txtDate)
                 check="Distance"
+                if (isCurrentMonth(this@StepWeeklyFragment.calendar)) {
+                    setBarData(i,SimpleDateFormat("EE", Locale.getDefault()), txtDate,isCurrentWeek(this@StepWeeklyFragment.calendar))
+
+                }
+                else
+                {
+                    setBarData(i,SimpleDateFormat("dd-MMM", Locale.getDefault()), txtDate,isCurrentWeek(this@StepWeeklyFragment.calendar))
+
+                }
 
             }
             binding.imgCalories.setOnClickListener {
                 unSelectSub()
-                i=3
                 imgCalories.setBackgroundResource(R.drawable.bg_selected)
-                setBarData(i,SimpleDateFormat("dd-MMM", Locale.getDefault()), txtDate)
-
+                i=3
                 check="Calories"
+                if (isCurrentMonth(this@StepWeeklyFragment.calendar)) {
+                    setBarData(i,SimpleDateFormat("EE", Locale.getDefault()), txtDate,isCurrentWeek(this@StepWeeklyFragment.calendar))
+
+                }
+                else
+                {
+                    setBarData(i,SimpleDateFormat("dd-MMM", Locale.getDefault()), txtDate,isCurrentWeek(this@StepWeeklyFragment.calendar))
+
+                }
+
 
 
             }
@@ -158,9 +186,19 @@ class StepWeeklyFragment : Fragment() , OnChartValueSelectedListener {
                 unSelectSub()
                 imgTime.setBackgroundResource(R.drawable.bg_selected)
                 i=4
-                setBarData(i,SimpleDateFormat("dd-MMM", Locale.getDefault()), txtDate)
-
                 check="Time"
+                if (isCurrentMonth(this@StepWeeklyFragment.calendar)) {
+                    setBarData(i,SimpleDateFormat("EE", Locale.getDefault()), txtDate,isCurrentWeek(this@StepWeeklyFragment.calendar))
+
+                }
+                else
+                {
+                    setBarData(i,SimpleDateFormat("dd-MMM", Locale.getDefault()), txtDate,isCurrentWeek(this@StepWeeklyFragment.calendar))
+
+                }
+
+
+
 
 
             }
@@ -171,9 +209,19 @@ class StepWeeklyFragment : Fragment() , OnChartValueSelectedListener {
 
     private fun previousWeek(textView: TextView) {
         binding.apply {
+            var pattern:SimpleDateFormat?=null
+            if (isCurrentMonth(this@StepWeeklyFragment.calendar)) {
+                pattern = SimpleDateFormat("EE", Locale.getDefault())
+
+                Log.i("TAG--", "previousWeek: "+pattern)
+            }
+            else
+            {
+                pattern = SimpleDateFormat("dd-MMM", Locale.getDefault())
+
+            }
 
 
-            val pattern = SimpleDateFormat("dd-MMM", Locale.getDefault())
             calendar.time = weekStart
             calendar.add(Calendar.DAY_OF_YEAR, -7) // Subtract 7 days to go back a week
             calendarCopy.add(Calendar.DAY_OF_YEAR, -7)
@@ -189,7 +237,10 @@ class StepWeeklyFragment : Fragment() , OnChartValueSelectedListener {
 
 //            textView.text = weekBackFormatStart + "," + weekBackFormatEnd
 
-            setBarData(i,pattern, textView)
+
+
+
+            setBarData(i,pattern, textView,isCurrentWeek(this@StepWeeklyFragment.calendar))
 
 
         }
@@ -197,9 +248,18 @@ class StepWeeklyFragment : Fragment() , OnChartValueSelectedListener {
 
     }
 
-
     private fun nextWeek(textView: TextView) {
-        val pattern = SimpleDateFormat("dd-MMM", Locale.getDefault())
+        var pattern:SimpleDateFormat?=null
+        if (isCurrentMonth(this@StepWeeklyFragment.calendar)) {
+            pattern = SimpleDateFormat("EE", Locale.getDefault())
+        }
+        else
+        {
+            pattern = SimpleDateFormat("dd-MMM", Locale.getDefault())
+
+        }
+
+//        val pattern = SimpleDateFormat("dd-MMM", Locale.getDefault())
         calendar.time = weekStart
         Log.i("TAG", "calendar.time: " + calendar.time)
         calendar.add(Calendar.DAY_OF_YEAR, 7) // Add 7 days to go next a week
@@ -234,23 +294,23 @@ class StepWeeklyFragment : Fragment() , OnChartValueSelectedListener {
         val currentDate = Calendar.getInstance()
         calendarCopy2.time = calendarCopy.time
 
-        textView.text = weekForwardFormatStart + "," + weekForwardFormatEnd
+        //textView.text = weekForwardFormatStart + "," + weekForwardFormatEnd
         if (calendarCopy.time <= currentDate.time) {
             calendarCopy.add(Calendar.DAY_OF_YEAR, 7)
             Log.i("TAG", "nextWeek--if: ")
 
-            setBarData(i,pattern, textView)
+            setBarData(i,pattern, textView,isCurrentWeek(this@StepWeeklyFragment.calendar))
         } else {
             binding.nextDate.visibility = View.GONE
             Log.i("TAG", "nextWeek--else: ")
 
         }
         calendarCopy2.add(Calendar.DAY_OF_YEAR, 7)
-        if (calendarCopy2.time > currentDate.time) {
+        if (calendarCopy2.time >= currentDate.time) {
             binding.nextDate.visibility = View.GONE
             Log.i("TAG", "nextWeek--iff: ")
-            textView.text = weekForwardFormatStart
-
+            //textView.text = weekForwardFormatStart
+            setBarData(i,pattern, textView,isCurrentWeek(this@StepWeeklyFragment.calendar))
         }
 
 
@@ -263,209 +323,7 @@ class StepWeeklyFragment : Fragment() , OnChartValueSelectedListener {
         binding.imgTime.setBackgroundResource(R.drawable.bg_unselected_options)
     }
 
-    private fun weekReport(isChoice: Int) {
-        val calendar = Calendar.getInstance()
-        val currentDate = Date()
-        calendar.time = currentDate
-        calendar.add(Calendar.DAY_OF_YEAR, 6)
-        var weekEnd = calendar.time
-
-        var weekStart = currentDate
-        val DbDateFormat = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
-        calendar.time = weekStart
-        calendar.add(Calendar.DAY_OF_YEAR, -7) // Subtract 7 days to go back a week
-        weekStart = calendar.time
-        val weekBackStart = DbDateFormat.format(weekStart)
-        calendar.time = weekEnd
-        calendar.add(Calendar.DAY_OF_YEAR, -7)
-        weekEnd = calendar.time
-        val weekBackEnd = DbDateFormat.format(weekEnd)
-
-        setLineChart()
-
-        Component.stepModel.getAverageStepsBetweenDates(weekBackStart, weekBackEnd).observe(requireActivity()) {
-            when (it.status) {
-                CurrentStatus.SUCCESS -> {
-                    //binding.txtMiles.text = it.data.toString() + " Steps"
-                    Log.i(TAG, "weekReport: "+it.data.toString())
-                }
-
-                CurrentStatus.ERROR -> {
-                    Log.e(TAG, "weekReport: Error To Find Weekly Average")
-                }
-            }
-        }
-
-
-
-
-        Component.stepModel.getWeeklyGoal(weekBackStart, weekBackEnd).observe(requireActivity()) {
-            when (it.status) {
-                CurrentStatus.SUCCESS -> {
-
-                    calendar.time = currentDate
-
-                    when (isChoice) {
-                        1 -> {
-                            val values: ArrayList<Entry> = ArrayList()
-                            var i = 0
-                            it.data!!.forEach { it1 ->
-                                val progress = (it1.steps.toDouble() / it1.stepGoal.toDouble()) * 100
-                                values.add(Entry(i.toFloat(), it1.steps.toFloat()))
-                                i++
-
-                                Log.i("TAG", "weekReport: "+it1.steps)
-                            }
-
-//                            var calendar = Calendar.getInstance().time
-//                            var dateFormat = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
-//                            var date = dateFormat.format(calendar)
-//
-////                            val dateFormat = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
-//                            val daysOfWeek = arrayOf("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun")
-//
-//
-//                            it.data!!.forEach {itt->
-//
-//
-//                                    var date = dateFormat.parse(date)
-//                                    val dayOfWeek = SimpleDateFormat("EE", Locale.getDefault()).format(date)
-//
-//                                    when (dayOfWeek) {
-//                                        "Mon" -> {
-//                                            values.add(BarEntry(0f, itt.steps.toFloat()))
-//                                            values.add(BarEntry(1f, null))
-//                                            values.add(BarEntry(2f, null))
-//                                            values.add(BarEntry(3f, null))
-//                                            values.add(BarEntry(4f, null))
-//                                            values.add(BarEntry(5f, null))
-//                                            values.add(BarEntry(6f, null))
-//                                        }
-//
-//                                        "Tue" -> {
-//                                            values.add(BarEntry(0f, null))
-//                                            values.add(BarEntry(1f, itt.steps.toFloat()))
-//                                            values.add(BarEntry(2f, null))
-//                                            values.add(BarEntry(3f, null))
-//                                            values.add(BarEntry(4f, null))
-//                                            values.add(BarEntry(5f, null))
-//                                            values.add(BarEntry(6f, null))
-//                                        }
-//
-//                                        "Wed" -> {
-//                                            values.add(BarEntry(0f, null))
-//                                            values.add(BarEntry(1f, null))
-//                                            values.add(BarEntry(2f, itt.steps.toFloat()))
-//                                            values.add(BarEntry(3f, null))
-//                                            values.add(BarEntry(4f, null))
-//                                            values.add(BarEntry(5f, null))
-//                                            values.add(BarEntry(6f, null))
-//                                        }
-//
-//                                        "Thu" -> {
-//                                            values.add(BarEntry(0f, null))
-//                                            values.add(BarEntry(1f, null))
-//                                            values.add(BarEntry(2f, null))
-//                                            values.add(BarEntry(3f, itt.steps.toFloat()))
-//                                            values.add(BarEntry(4f, null))
-//                                            values.add(BarEntry(5f, null))
-//                                            values.add(BarEntry(6f, null))
-//                                        }
-//
-//                                        "Fri" -> {
-//                                            values.add(BarEntry(0f, null))
-//                                            values.add(BarEntry(1f, null))
-//                                            values.add(BarEntry(2f, null))
-//                                            values.add(BarEntry(3f, null))
-//                                            values.add(BarEntry(4f, itt.steps.toFloat()))
-//                                            values.add(BarEntry(5f, null))
-//                                            values.add(BarEntry(6f, null))
-//                                        }
-//
-//                                        "Sat" -> {
-//                                            values.add(BarEntry(0f, null))
-//                                            values.add(BarEntry(1f, null))
-//                                            values.add(BarEntry(2f, null))
-//                                            values.add(BarEntry(3f, null))
-//                                            values.add(BarEntry(4f, null))
-//                                            values.add(BarEntry(5f, itt.steps.toFloat()))
-//                                            values.add(BarEntry(6f, null))
-//                                        }
-//
-//                                        "Sun" -> {
-//                                            values.add(BarEntry(0f, null))
-//                                            values.add(BarEntry(1f, null))
-//                                            values.add(BarEntry(2f, null))
-//                                            values.add(BarEntry(3f, null))
-//                                            values.add(BarEntry(4f, null))
-//                                            values.add(BarEntry(5f, null))
-//                                            values.add(BarEntry(6f, itt.steps.toFloat()))
-//                                        }
-//                                    }
-//
-//                                    Log.i("TAG", "weekReport: "+itt.date!!)
-//                                    setData(values)
-//
-//                                Log.i("TAG", "k: "+it.data.size)
-//                                Log.i("TAG", "k: "+it.data)
-//                            }
-
-                            setData(values)
-
-                        }
-                        2 -> {
-                            var i = 0
-                            val values: ArrayList<Entry> = ArrayList()
-                            it.data!!.forEach { it1 ->
-                                values.add(
-                                    Entry(
-                                        i.toFloat(),
-                                        it1.distance.toFloat()
-                                    )
-                                )
-                                i++
-                            }
-                            setData(values)
-                        }
-                        3 -> {
-                            var i = 0
-                            val values: ArrayList<Entry> = ArrayList()
-                            it.data!!.forEach { it1 ->
-                                values.add(
-                                    Entry(
-                                        i.toFloat(),
-                                        it1.calories.toFloat()
-                                    )
-                                )
-                                i++
-                            }
-                            setData(values)
-                        }
-                        4 -> {
-                            var i = 0
-                            val values: ArrayList<Entry> = ArrayList()
-                            it.data!!.forEach { it1 ->
-                                values.add(
-                                    Entry(
-                                        i.toFloat(),
-                                        it1.time.convertTimeToSeconds().toFloat()
-                                    )
-                                )
-                                i++
-                            }
-                            setData(values)
-
-                        }
-                    }
-                }
-
-                CurrentStatus.ERROR -> {
-                    Log.e(TAG, "weekReport: " + it.message)
-                }
-            }
-        }
-    }
-    private fun setBarData(i:Int,pattern: SimpleDateFormat, txt: TextView) {
+    private fun setBarData(i:Int,pattern: SimpleDateFormat, txt: TextView,displayAsWeekdays:Boolean) {
         binding.apply {
             CoroutineScope(Dispatchers.IO).launch {
 
@@ -494,7 +352,15 @@ class StepWeeklyFragment : Fragment() , OnChartValueSelectedListener {
                             Log.i("TAG", "NEW DATE: " + allDatesOfWeek)
                             var barEntriesArrayList = ArrayList<BarEntry>()
                             val dateFormat = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
-                            val formattedDates = allDatesOfWeek.map { pattern.format(it) }.toTypedArray()
+                            //val formattedDates = allDatesOfWeek.map { pattern.format(it) }.toTypedArray()
+                    val formattedDates = allDatesOfWeek.map {
+                        if (displayAsWeekdays) {
+                           // pattern.format(it)
+                            SimpleDateFormat("EEE", Locale.getDefault()).format(it)
+                        } else {
+                            SimpleDateFormat("dd-MMM", Locale.getDefault()).format(it)
+                        }
+                    }.toTypedArray()
                             var avg = 0
                             var sumOfFinalStrings = 0
                             allDatesOfWeek.forEachIndexed { index, date ->
@@ -558,8 +424,9 @@ class StepWeeklyFragment : Fragment() , OnChartValueSelectedListener {
                             val firstDate = allDatesOfWeek.first()
                             val lastDate = allDatesOfWeek.last()
 
-                            val startWeek = pattern.format(firstDate)
-                            val endWeek = pattern.format(lastDate)
+
+                            val startWeek = SimpleDateFormat("dd-MMM", Locale.getDefault()).format(firstDate)
+                            val endWeek =SimpleDateFormat("dd-MMM", Locale.getDefault()).format(lastDate)
 
 
 
@@ -639,207 +506,18 @@ class StepWeeklyFragment : Fragment() , OnChartValueSelectedListener {
         }
     }
 
-    private fun setData(values: ArrayList<Entry>) {
-
-        val set1: LineDataSet
-        if (binding.chart.data != null &&
-            binding.chart.data.dataSetCount > 0
-        ) {
-            set1 = binding.chart.data.getDataSetByIndex(0) as LineDataSet
-            set1.values = values
-            set1.notifyDataSetChanged()
-            binding.chart.data.notifyDataChanged()
-            binding.chart.notifyDataSetChanged()
-        } else {
-            // create a dataset and give it a type
-            set1 = LineDataSet(values, "DataSet 1")
-            set1.setDrawIcons(false)
-
-            set1.mode = LineDataSet.Mode.CUBIC_BEZIER
-            set1.color = Color.BLUE // Set the line color
-
-            // black lines and points
-            set1.color = Color.YELLOW
-            set1.setCircleColor(Color.WHITE)
-
-
-            ///  set1.color = Color.BLUE // Set line color
-            set1.valueTextColor = Color.WHITE // Set value (text) color
-            set1.valueTextSize = 12f // Set value text size
-
-
-            // line thickness and point size
-            set1.lineWidth = 1f
-            set1.circleRadius = 3f
-
-
-            // draw points as solid circles
-            set1.setDrawCircleHole(true)
-
-
-            // text size of values
-            set1.valueTextSize = 9f
-            set1.highLightColor = Color.WHITE
-
-
-            // set the filled area
-            set1.setDrawFilled(true)
-            set1.fillFormatter =
-                IFillFormatter { _, _ -> binding.chart.axisLeft.axisMinimum }
-
-            val drawable = ContextCompat.getDrawable(requireActivity(), R.drawable.bg_graph)
-            set1.fillDrawable = drawable
-
-
-            val dataSets: ArrayList<ILineDataSet> = ArrayList()
-            dataSets.add(set1) // add the data sets
-
-
-            // create a data object with the data sets
-            val data = LineData(dataSets)
-
-            binding.chart.invalidate()
-
-            setLineChart()
-
-            // set data
-            binding.chart.data = data
-
-
-        }
-    }
-
-    private fun setLineChart() {
-        binding.chart.highlightValues(null)
-        resetLineChart()
-
-        val typeface = ResourcesCompat.getFont(requireActivity(), R.font.eina_02_regular)
-
-        val xAxis = binding.chart.xAxis
-        xAxis.typeface = typeface
-        xAxis.textColor = ContextCompat.getColor(requireActivity(), R.color.tab_not_selected)
-        xAxis.textSize = 11f
-        xAxis.setDrawAxisLine(false)
-        xAxis.setDrawGridLines(false)
-        xAxis.position = XAxis.XAxisPosition.BOTTOM
-        xAxis.yOffset = 20f
-
-
-        val axisLeft = binding.chart.axisLeft
-        axisLeft.typeface = typeface
-        axisLeft.textColor = ContextCompat.getColor(requireActivity(), R.color.tab_not_selected)
-        axisLeft.setDrawAxisLine(false)
-        axisLeft.textSize = 11f
-        axisLeft.setDrawTopYLabelEntry(true)
-        axisLeft.xOffset = 20f
-        axisLeft.gridColor = ContextCompat.getColor(requireActivity(), R.color.dark_gray)
-        axisLeft.gridLineWidth = 1f
-
-        val axisRight = binding.chart.axisRight
-        axisRight?.setDrawAxisLine(false)
-        axisRight?.setDrawGridLines(false)
-        axisRight?.isEnabled = false
-
-
-        binding.chart.description?.isEnabled = false
-        binding.chart.setDrawBorders(false)
-        binding.chart.setBackgroundColor(Color.TRANSPARENT) //set whatever color you prefer
-        binding.chart.legend?.isEnabled = false
-        binding.chart.setDrawGridBackground(false)
-        binding.chart.setPinchZoom(false)
-        binding.chart.isDoubleTapToZoomEnabled = false
-
-
-        binding.chart.xAxis.granularity = 1f
-        binding.chart.extraBottomOffset = 10f
-        binding.chart.extraTopOffset = 30f
-        binding.chart.extraRightOffset = 30f
-        binding.chart.axisLeft.axisMinimum = 0f
-
-        binding.chart.isDragDecelerationEnabled = false
-        binding.chart.invalidate()
-    }
-
-    fun resetLineChart() {
-        binding.chart.fitScreen()
-        binding.chart.data?.clearValues()
-        binding.chart.xAxis.valueFormatter = null
-        binding.chart.notifyDataSetChanged()
-        binding.chart.clear()
-        binding.chart.invalidate()
-    }
-
-//    override fun onValueSelected(e: Entry?, h: Highlight?) {
-//        val lineSets = binding.chart.lineData?.dataSets
-//
-//        for (i in 0 until lineSets?.size!!) {
-//            for (j in 0 until lineSets[i].entryCount) {
-//                lineSets[i].getEntryForIndex(j).icon = null
-//            }
-//        }
-//
-//        val data = ArrayList<ChartHoverModel>()
-//        for (i in 0 until lineSets.size) {
-//            val chartHoverModel = ChartHoverModel()
-//            chartHoverModel.value = DecimalFormat("#0.00").format(lineSets[i].getEntryForIndex(e?.x!!.toInt()).y)
-//            chartHoverModel.name = lineSets[i].label
-//            chartHoverModel.yAxisLabel = getWeekDayWithDateA(e.x.toInt())
-//
-//            chartHoverModel.color = lineSets[i].color
-//            data.add(chartHoverModel)
-//
-//            val barColor = lineSets[i].color
-//            chartHoverModel.color = barColor
-//
-////            for (j in 0 until lineSets[i].entryCount) {
-////                if (e.x.toInt() == j) {
-////                    lineSets[i].getEntryForIndex(j).icon =
-////                       getDrawableUsingPosition(this, i)
-////                    Log.e("fkdlkfd",i.toString())
-////                }
-////            }
-//
-//        }
-//        requireActivity().window.decorView.performHapticFeedback(
-//            HapticFeedbackConstants.VIRTUAL_KEY,
-//            HapticFeedbackConstants.FLAG_IGNORE_GLOBAL_SETTING
-//        )
-//        binding.chart.invalidate()
-//
-//        val mv = CustomMarkerViewForLineChart(
-//            requireActivity(),
-//            R.layout.marker_view_line_chart,
-//            binding.chart.height,
-//            data
-//        )
-//
-//        // Set the marker to the chart
-//        mv.chartView = binding.chart
-//        binding.chart.markerView = mv
-//
-//    }
-//
-//
-//    override fun onNothingSelected() {
-//        val lineSets = binding.chart.lineData?.dataSets
-//
-//        for (i in 0 until lineSets?.size!!) {
-//            for (j in 0 until lineSets[i].entryCount) {
-//                lineSets[i].getEntryForIndex(j).icon = null
-//            }
-//        }
-//    }
 
     @SuppressLint("SetTextI18n")
     override fun onValueSelected(e: Entry?, h: Highlight?) {
         if (e != null) {
+            binding.dateLayout.visibility = View.INVISIBLE
+
             val value = e.y
             val xAxisLabel = binding.sleepChartWeekly.xAxis.valueFormatter.getFormattedValue(
                 e.x,
                 binding.sleepChartWeekly.xAxis
             )
 
-            val (hours, minutes) = requireActivity().convertDecimalToHoursMinutes(value)
 
             when(check)
             {
@@ -857,7 +535,7 @@ class StepWeeklyFragment : Fragment() , OnChartValueSelectedListener {
             // Calculate the Y position for the top center of the graph
 //            val yPos = binding.sleepChart.viewPortHandler.contentHeight()
 
-            val yOffset = 100 // Adjust as needed
+            val yOffset = 400 // Adjust as needed
             val yPos = binding.sleepChartWeekly.viewPortHandler.contentHeight() - yOffset
 
             popupWindow.showAtLocation(
@@ -878,7 +556,20 @@ class StepWeeklyFragment : Fragment() , OnChartValueSelectedListener {
         popupWindow.dismiss()
 
 //        barDataSet!!.color = android.graphics.Color.parseColor("#9CB135") // Assuming barDataSet is your BarDataSet variable
+        binding.dateLayout.visibility = View.VISIBLE
 
     }
 
+
+    private fun isCurrentMonth(calendar: Calendar): Boolean {
+        val currentCalendar = Calendar.getInstance()
+        return calendar.get(Calendar.MONTH) == currentCalendar.get(Calendar.MONTH)
+    }
+
+    private fun isCurrentWeek(calendar: Calendar): Boolean {
+        val today = Calendar.getInstance()
+        val currentWeek = today.get(Calendar.WEEK_OF_YEAR)
+        val givenWeek = calendar.get(Calendar.WEEK_OF_YEAR)
+        return currentWeek == givenWeek
+    }
 }

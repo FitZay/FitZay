@@ -118,8 +118,7 @@ class StepDailyFragment : Fragment() {
                                 binding.typeName.text = getString(R.string.calories)
                                 binding.userSteps.text = it1.calories.toString()
                                 binding.userSteps.startAnimation(animZoomIn)
-                                binding.userGoal.text =
-                                    getString(R.string.goal)+": " + it1.caloriesGoal.toString()
+                                binding.userGoal.text = getString(R.string.goal)+": " + it1.caloriesGoal.toString()
                                 binding.txtMiles.text=it1.caloriesGoal.toString()+" "+ getString(R.string.calories)
 
                             }

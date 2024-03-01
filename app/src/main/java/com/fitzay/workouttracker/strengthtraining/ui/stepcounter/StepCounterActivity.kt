@@ -205,7 +205,7 @@ class StepCounterActivity : AppUtil2() {
                     calendar.time = currentDate
 
                     it.data!!.forEach { it1 ->
-                        Log.e(TAG, "dailyAverageReport: $it1")
+                        Log.e(TAG, "dailyAverageReport: ${it1.steps}")
                         val progress = (it1.steps.toDouble() / it1.stepGoal.toDouble()) * 100
 
                         val date = LocalDate.parse(it1.date)

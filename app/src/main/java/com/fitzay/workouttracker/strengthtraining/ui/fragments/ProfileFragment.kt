@@ -573,12 +573,9 @@ class ProfileFragment : Fragment() {
     }
 
     private fun showBothSelectorDialog() {
-        val dialogView =
-            LayoutInflater.from(requireContext()).inflate(R.layout.selector_dialog, null)
-        val alertDialog = AlertDialog.Builder(requireContext())
-            .setView(dialogView).setCancelable(false).create()
-        Objects.requireNonNull<Window>(alertDialog.window)
-            .setBackgroundDrawableResource(android.R.color.transparent)
+        val dialogView = LayoutInflater.from(requireContext()).inflate(R.layout.selector_dialog, null)
+        val alertDialog = AlertDialog.Builder(requireContext()).setView(dialogView).setCancelable(false).create()
+        Objects.requireNonNull<Window>(alertDialog.window).setBackgroundDrawableResource(android.R.color.transparent)
         val cameraButton = dialogView.findViewById<ImageView>(R.id.iv_select_camera)
         val galleryButton = dialogView.findViewById<ImageView>(R.id.iv_select_gallery)
         val closeBtn = dialogView.findViewById<ImageView>(R.id.iv_close)

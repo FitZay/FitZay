@@ -55,19 +55,6 @@
             android:textColor="@color/white"
             android:textSize="@dimen/_14sdp" />
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_marginVertical="@dimen/_1sdp"
-        android:id="@+id/layoutCharts"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/_280sdp"
-        android:layout_below="@id/dateLayout"
-        android:layout_marginHorizontal="@dimen/_5sdp"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:visibility="visible">
-
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -81,7 +68,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintHorizontal_bias="0.02"
+                app:layout_constraintHorizontal_bias="0.1"
                 android:background="@drawable/date_pre" />
 
             <TextView
@@ -114,6 +101,20 @@
                 android:background="@drawable/next_date" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginVertical="@dimen/_1sdp"
+        android:id="@+id/layoutCharts"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_280sdp"
+        android:layout_below="@id/dateLayout"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
 
         <com.github.mikephil.charting.charts.LineChart
             android:id="@+id/chart"

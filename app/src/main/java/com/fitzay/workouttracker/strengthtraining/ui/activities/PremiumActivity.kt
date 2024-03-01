@@ -128,7 +128,6 @@ class PremiumActivity : AppUtil2() {
         binding?.radioBtnWeekly?.setImageResource(R.drawable.ic_radiobtn_unchecked)
         binding?.radioMonthly?.setImageResource(R.drawable.ic_radiobtn_unchecked)
         binding?.radioYearly?.setImageResource(R.drawable.ic_radiobtn_unchecked)
-
         view.setImageResource(R.drawable.ic_selectedbutton)
 
     }

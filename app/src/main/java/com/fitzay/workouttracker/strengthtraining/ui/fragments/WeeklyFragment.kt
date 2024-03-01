@@ -338,6 +338,8 @@ class WeeklyFragment : Fragment(), OnChartValueSelectedListener {
 
     override fun onValueSelected(e: Entry?, h: Highlight?) {
         if (e != null) {
+            binding.dateLayout.visibility = View.INVISIBLE
+
             val value = e.y
             val xAxisLabel = binding.sleepChartWeekly.xAxis.valueFormatter.
             getFormattedValue(e.x,
@@ -368,7 +370,6 @@ class WeeklyFragment : Fragment(), OnChartValueSelectedListener {
                 yPos.toInt()
             )
 
-            binding.dateLayout.visibility = View.INVISIBLE
 
 
         }
