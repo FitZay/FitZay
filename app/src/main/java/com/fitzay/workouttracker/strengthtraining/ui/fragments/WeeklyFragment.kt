@@ -79,6 +79,7 @@ class WeeklyFragment : Fragment(), OnChartValueSelectedListener {
             }
 
 
+
             calendar = Calendar.getInstance()
             calendar.add(Calendar.DAY_OF_YEAR, 6)
             weekStart = Date()   // Current Date
@@ -91,7 +92,11 @@ class WeeklyFragment : Fragment(), OnChartValueSelectedListener {
             val calendar = Calendar.getInstance().time
             val dateFormat = SimpleDateFormat("dd-MM-yyyy", Locale.getDefault())
             date = dateFormat.format(calendar)
-            txtDate.text = calendar.time.toString() + " " + weekEnd.time
+//            txtDate.text = calendar.time.toString() + " " + weekEnd.time
+            val currentDate = Date()
+            txtDate.text = this@WeeklyFragment.dateFormat.format(currentDate).toString()+" "+this@WeeklyFragment.dateFormat.format(weekEnd).toString()
+
+
 
             // Initialize the PopupWindow
             popupWindow = PopupWindow(
@@ -106,6 +111,8 @@ class WeeklyFragment : Fragment(), OnChartValueSelectedListener {
 
             //1st time or Current Data
             previousWeek(txtDate)
+
+
 
             binding.previousDate.setOnClickListener {
                 previousWeek(binding.txtDate)
@@ -163,6 +170,8 @@ class WeeklyFragment : Fragment(), OnChartValueSelectedListener {
 
     }
 
+
+
     private fun nextWeek(textView: TextView) {
         var pattern:SimpleDateFormat?=null
         if (isCurrentMonth(this@WeeklyFragment.calendar)) {
@@ -213,7 +222,7 @@ class WeeklyFragment : Fragment(), OnChartValueSelectedListener {
             Log.i("TAG", "nextWeek--if: ")
 
             if (isCurrentMonth(this@WeeklyFragment.calendar)) {
-                binding.nextDate.visibility = View.GONE
+                binding.nextDate.visibility = View.INVISIBLE
                 setBarData(pattern, textView,isCurrentWeek(this@WeeklyFragment.calendar))
             }
             else
@@ -224,13 +233,13 @@ class WeeklyFragment : Fragment(), OnChartValueSelectedListener {
 
         }
         else {
-            binding.nextDate.visibility = View.GONE
+            binding.nextDate.visibility = View.INVISIBLE
             Log.i("TAG", "nextWeek--else: ")
 
         }
         calendarCopy2.add(Calendar.DAY_OF_YEAR, 7)
         if (calendarCopy2.time >= currentDate.time) {
-            binding.nextDate.visibility = View.GONE
+            binding.nextDate.visibility = View.INVISIBLE
             Log.i("TAG", "nextWeek--iff: ")
             //textView.text = weekForwardFormatStart
             setBarData(pattern, textView,isCurrentWeek(this@WeeklyFragment.calendar))

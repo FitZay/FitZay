@@ -231,6 +231,7 @@ drawable next_date
 drawable parts_focus
 drawable portugal
 drawable premiumheader
+drawable progress_bar_background
 drawable progress_gradient
 drawable roundview
 drawable russian

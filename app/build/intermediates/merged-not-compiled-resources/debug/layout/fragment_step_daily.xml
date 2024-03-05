@@ -144,6 +144,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/_30sdp"
+
         android:layout_below="@id/layoutCharts"
         android:layout_gravity="center"
         android:layout_marginHorizontal="@dimen/_15sdp"

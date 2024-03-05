@@ -137,6 +137,7 @@
 -keep class com.android.billingclient.api.ProxyBillingActivity { <init>(); }
 -keep class com.fitzay.workouttracker.strengthtraining.core.AppController { <init>(); }
 -keep class com.fitzay.workouttracker.strengthtraining.core.utils.AlarmReceiver { <init>(); }
+-keep class com.fitzay.workouttracker.strengthtraining.core.utils.WaterIntakeNotificationReceiver { <init>(); }
 -keep class com.fitzay.workouttracker.strengthtraining.ui.MainActivity { <init>(); }
 -keep class com.fitzay.workouttracker.strengthtraining.ui.activities.BmiAct { <init>(); }
 -keep class com.fitzay.workouttracker.strengthtraining.ui.activities.DisplayWorkoutsActivity { <init>(); }

@@ -91,16 +91,16 @@ class WaterIntakeActivity : AppCompatActivity() {
         binding.currentML.text = Component.preference.cupCapacity.toString() + " ml"
 
 
-        val alarmManager = getSystemService(Context.ALARM_SERVICE) as AlarmManager
-        val notificationIntent = Intent(this, WaterIntakeNotificationReceiver::class.java)
-        val pendingIntent = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_MUTABLE)
-
-//        val intervalMillis = 2 * 60 * 60 * 1000 // 2 hours in milliseconds
-        val intervalMillis = 5000L // 2 hours in milliseconds
-        val triggerAtMillis = System.currentTimeMillis() + intervalMillis
-
-        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, triggerAtMillis,
-            intervalMillis, pendingIntent)
+//        val alarmManager = getSystemService(Context.ALARM_SERVICE) as AlarmManager
+//        val notificationIntent = Intent(this, WaterIntakeNotificationReceiver::class.java)
+//        val pendingIntent = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_MUTABLE)
+//
+////        val intervalMillis = 2 * 60 * 60 * 1000 // 2 hours in milliseconds
+//        val intervalMillis = 5000L // 2 hours in milliseconds
+//        val triggerAtMillis = System.currentTimeMillis() + intervalMillis
+//
+//        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, triggerAtMillis,
+//            intervalMillis, pendingIntent)
 
     }
 

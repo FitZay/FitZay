@@ -162,6 +162,7 @@ class ProfileFragment : Fragment() {
 
         setDefaults()
 
+        Log.i("Prof", "onCreateView: "+Component.preference.userHeightType+"-"+Component.preference.userHeightFt)
 
         return binding.root
 
@@ -241,6 +242,7 @@ class ProfileFragment : Fragment() {
                 )
                 convertFtInchToCentiMeter = feetAndInches.toCentimeters()
 
+                Log.i("0000", "setDefaults: "+Component.preference.userHeightType)
             } else {
                 ft.isChecked = false
                 cm.isChecked = true
@@ -251,6 +253,7 @@ class ProfileFragment : Fragment() {
 
                 convertCentiToFtInch_1st = cn.first.toString().toInt()
                 convertCentiToFtInch_2nd = cn.second.toString().toInt()
+                Log.i("0000", "12345: "+Component.preference.userHeightType)
 
             }
 

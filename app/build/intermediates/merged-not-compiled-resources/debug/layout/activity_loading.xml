@@ -75,6 +75,7 @@
 
     <!--    </RelativeLayout>-->
 
+
     <com.google.android.material.progressindicator.LinearProgressIndicator
         android:id="@+id/loadingProgress"
         android:layout_width="match_parent"

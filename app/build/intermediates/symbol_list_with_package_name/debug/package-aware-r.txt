@@ -4275,6 +4275,7 @@ drawable parts_focus
 drawable portugal
 drawable preference_list_divider_material
 drawable premiumheader
+drawable progress_bar_background
 drawable progress_gradient
 drawable rounded_corners_shape_permission
 drawable roundview
