@@ -256,19 +256,31 @@ class WeeklyFragment : Fragment(), OnChartValueSelectedListener {
                     }
 
 
-// Remove the first date from the list
-                    allDatesOfWeek.removeAt(0)
-
                     // Add the last date to the list
                     allDatesOfWeek.add(calendar.time)
 
-                    Log.i("TAG", "NEW DATE: " + calendar.time)
-                    Log.i("TAG", "NEW DATE: " + weekEnd)
-                    Log.i("TAG", "NEW DATE: " + weekStart)
-                    Log.i("TAG", "NEW DATE: " + allDatesOfWeek)
+// Remove the first date from the list
+                    allDatesOfWeek.removeAt(0)
+
+
+
+                    val weekdays = arrayOf("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun")
+
+                    // Sort the dates based on weekdays
+                    val sortedDates = allDatesOfWeek.sortedBy {
+                        if (displayAsWeekdays) {
+                            // pattern.format(it)
+                            weekdays.indexOf(SimpleDateFormat("EEE", Locale.getDefault()).format(it))
+                        }  else {
+                            weekdays.indexOf(SimpleDateFormat("dd-MMM", Locale.getDefault()).format(it))
+                        }
+
+
+                    }
+
                     var barEntriesArrayList = ArrayList<BarEntry>()
                     val dateFormat = SimpleDateFormat("dd-MM-yyyy", Locale.getDefault())
-                    val formattedDates = allDatesOfWeek.map {
+                    val formattedDates = sortedDates.map {
                         if (displayAsWeekdays) {
                             // pattern.format(it)
                             SimpleDateFormat("EEE", Locale.getDefault()).format(it)
@@ -279,7 +291,7 @@ class WeeklyFragment : Fragment(), OnChartValueSelectedListener {
 
                     var avg = 0f
                     var sumOfFinalStrings = 0f
-                    allDatesOfWeek.forEachIndexed { index, date ->
+                    sortedDates.forEachIndexed { index, date ->
                         val dateFormatted = dateFormat.format(date)
                         val dataForDate = result.find { it.date == dateFormatted }
 

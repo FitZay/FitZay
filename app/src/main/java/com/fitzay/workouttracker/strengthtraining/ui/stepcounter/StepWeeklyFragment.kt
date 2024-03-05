@@ -385,6 +385,7 @@ class StepWeeklyFragment : Fragment() , OnChartValueSelectedListener {
 
                             val calendar = Calendar.getInstance()
                             calendar.time = weekStart
+
                             val allDatesOfWeek = mutableListOf<Date>()
 
                             while (calendar.time <= weekEnd) {
@@ -398,32 +399,36 @@ class StepWeeklyFragment : Fragment() , OnChartValueSelectedListener {
                     // Remove the first date from the list
                     allDatesOfWeek.removeAt(0)
 
+                    val weekdays = arrayOf("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun")
+
+                    // Sort the dates based on weekdays
+                    val sortedDates = allDatesOfWeek.sortedBy {
+                        if (displayAsWeekdays) {
+                            // pattern.format(it)
+                            weekdays.indexOf(SimpleDateFormat("EEE", Locale.getDefault()).format(it))
+                        }  else {
+                            weekdays.indexOf(SimpleDateFormat("dd-MMM", Locale.getDefault()).format(it))
+                        }
 
 
+                    }
 
-
-
-                    Log.i("TAG", "NEW DATE: " + calendar.time)
-                            Log.i("TAG", "NEW DATE: " + weekEnd)
-                            Log.i("TAG", "NEW DATE: " + weekStart)
-                            Log.i("TAG", "NEW DATE: " + allDatesOfWeek)
                             var barEntriesArrayList = ArrayList<BarEntry>()
                             val dateFormat = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
 
 
-                    var formattedDates= arrayOf("Mon", "Tue", "Wed", "Thu", "Fri", "Sat","Sun")
-//                    val formattedDates = allDatesOfWeek.map {
-//                        if (displayAsWeekdays) {
-//                            // pattern.format(it)
-//                            SimpleDateFormat("EEE", Locale.getDefault()).format(it)
-//                        }  else {
-//                            SimpleDateFormat("dd-MMM", Locale.getDefault()).format(it)
-//                        }
-//                    }.toTypedArray()
+                    val formattedDates = sortedDates.map {
+                        if (displayAsWeekdays) {
+                            // pattern.format(it)
+                            SimpleDateFormat("EEE", Locale.getDefault()).format(it)
+                        }  else {
+                            SimpleDateFormat("dd-MMM", Locale.getDefault()).format(it)
+                        }
+                    }.toTypedArray()
 
                             var avg = 0
                             var sumOfFinalStrings = 0
-                            allDatesOfWeek.forEachIndexed { index, date ->
+                              sortedDates.forEachIndexed { index, date ->
                                 val dateFormatted = dateFormat.format(date)
                                 val dataForDate = result.find { it.date == dateFormatted }
                                 var name=requireActivity().getDayOfWeekName(date)
@@ -475,7 +480,11 @@ class StepWeeklyFragment : Fragment() , OnChartValueSelectedListener {
 
 
                             }
-                            // Get the first date
+
+
+
+
+                    // Get the first date
                             val firstDate = allDatesOfWeek.first()
                             val lastDate = allDatesOfWeek.last()
 
