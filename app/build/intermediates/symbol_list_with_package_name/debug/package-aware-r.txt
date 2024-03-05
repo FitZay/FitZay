@@ -5034,6 +5034,7 @@ id notification_icon
 id notification_main_column
 id notification_main_column_container
 id notification_subtitle
+id notification_text
 id notification_title
 id off
 id on
@@ -5780,6 +5781,7 @@ layout sp_example
 layout ssp_example
 layout support_simple_spinner_dropdown_item
 layout text_layout
+layout water_intake_notification_layout
 menu drawer_menu
 menu menu_main_bottom
 mipmap ic_launcher

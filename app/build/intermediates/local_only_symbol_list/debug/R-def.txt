@@ -626,6 +626,7 @@ id nextTitle
 id notification_button
 id notification_icon
 id notification_subtitle
+id notification_text
 id notification_title
 id p_dec
 id perImg
@@ -935,6 +936,7 @@ layout schedule_alarm_show_item_list
 layout selector_dialog
 layout snooze_dialog
 layout text_layout
+layout water_intake_notification_layout
 menu drawer_menu
 menu menu_main_bottom
 mipmap ic_launcher

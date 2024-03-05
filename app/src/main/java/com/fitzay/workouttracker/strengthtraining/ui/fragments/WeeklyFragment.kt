@@ -127,8 +127,17 @@ class WeeklyFragment : Fragment(), OnChartValueSelectedListener {
     private fun previousWeek(textView: TextView) {
         binding.apply {
 
+            var pattern:SimpleDateFormat?=null
+            if (isCurrentMonth(this@WeeklyFragment.calendar)) {
+                pattern = SimpleDateFormat("EE", Locale.getDefault())
 
-            val pattern = SimpleDateFormat("dd-MMM", Locale.getDefault())
+                Log.i("TAG--", "previousWeek: "+pattern)
+            }
+            else
+            {
+                pattern = SimpleDateFormat("dd-MMM", Locale.getDefault())
+
+            }
             calendar.time = weekStart
             calendar.add(Calendar.DAY_OF_YEAR, -7) // Subtract 7 days to go back a week
             calendarCopy.add(Calendar.DAY_OF_YEAR, -7)
@@ -144,7 +153,7 @@ class WeeklyFragment : Fragment(), OnChartValueSelectedListener {
 //            textView.text = weekBackFormatStart + "," + weekBackFormatEnd
 
 
-            setBarData(pattern, textView)
+            setBarData(pattern, textView,isCurrentWeek(this@WeeklyFragment.calendar))
 
             Log.i("TAG", "previousWeek: " + weekBackFormatStart)
             Log.i("TAG", "previousWeek: " + weekBackFormatEnd)
@@ -155,7 +164,15 @@ class WeeklyFragment : Fragment(), OnChartValueSelectedListener {
     }
 
     private fun nextWeek(textView: TextView) {
-        val pattern = SimpleDateFormat("dd-MMM", Locale.getDefault())
+        var pattern:SimpleDateFormat?=null
+        if (isCurrentMonth(this@WeeklyFragment.calendar)) {
+            pattern = SimpleDateFormat("EE", Locale.getDefault())
+        }
+        else
+        {
+            pattern = SimpleDateFormat("dd-MMM", Locale.getDefault())
+
+        }
         calendar.time = weekStart
         Log.i("TAG", "calendar.time: " + calendar.time)
         calendar.add(Calendar.DAY_OF_YEAR, 7) // Add 7 days to go next a week
@@ -195,25 +212,34 @@ class WeeklyFragment : Fragment(), OnChartValueSelectedListener {
             calendarCopy.add(Calendar.DAY_OF_YEAR, 7)
             Log.i("TAG", "nextWeek--if: ")
 
-            setBarData(pattern, textView)
-        } else {
+            if (isCurrentMonth(this@WeeklyFragment.calendar)) {
+                binding.nextDate.visibility = View.GONE
+                setBarData(pattern, textView,isCurrentWeek(this@WeeklyFragment.calendar))
+            }
+            else
+            {
+                binding.nextDate.visibility = View.VISIBLE
+                setBarData(pattern, textView,isCurrentWeek(this@WeeklyFragment.calendar))
+            }
+
+        }
+        else {
             binding.nextDate.visibility = View.GONE
             Log.i("TAG", "nextWeek--else: ")
 
         }
         calendarCopy2.add(Calendar.DAY_OF_YEAR, 7)
-        if (calendarCopy2.time > currentDate.time) {
+        if (calendarCopy2.time >= currentDate.time) {
             binding.nextDate.visibility = View.GONE
             Log.i("TAG", "nextWeek--iff: ")
-            textView.text = weekForwardFormatStart
-            // setBarData(pattern, weekForwardFormatStart, weekForwardFormatEnd)
-
+            //textView.text = weekForwardFormatStart
+            setBarData(pattern, textView,isCurrentWeek(this@WeeklyFragment.calendar))
         }
 
 
     }
 
-    private fun setBarData(pattern: SimpleDateFormat, txt: TextView) {
+    private fun setBarData(pattern: SimpleDateFormat, txt: TextView,displayAsWeekdays:Boolean) {
         binding.apply {
             CoroutineScope(Dispatchers.IO).launch {
                 com.fitzay.workouttracker.strengthtraining.di.Component.alarmViewModel.alarmRepository.getAlarms(
@@ -242,7 +268,15 @@ class WeeklyFragment : Fragment(), OnChartValueSelectedListener {
                     Log.i("TAG", "NEW DATE: " + allDatesOfWeek)
                     var barEntriesArrayList = ArrayList<BarEntry>()
                     val dateFormat = SimpleDateFormat("dd-MM-yyyy", Locale.getDefault())
-                    val formattedDates = allDatesOfWeek.map { pattern.format(it) }.toTypedArray()
+                    val formattedDates = allDatesOfWeek.map {
+                        if (displayAsWeekdays) {
+                            // pattern.format(it)
+                            SimpleDateFormat("EEE", Locale.getDefault()).format(it)
+                        }  else {
+                            SimpleDateFormat("dd-MMM", Locale.getDefault()).format(it)
+                        }
+                    }.toTypedArray()
+
                     var avg = 0f
                     var sumOfFinalStrings = 0f
                     allDatesOfWeek.forEachIndexed { index, date ->
@@ -276,8 +310,8 @@ class WeeklyFragment : Fragment(), OnChartValueSelectedListener {
                     val firstDate = allDatesOfWeek.first()
                     val lastDate = allDatesOfWeek.last()
 
-                    val startWeek = pattern.format(firstDate)
-                    val endWeek = pattern.format(lastDate)
+                    val startWeek = SimpleDateFormat("dd-MMM", Locale.getDefault()).format(firstDate)
+                    val endWeek =SimpleDateFormat("dd-MMM", Locale.getDefault()).format(lastDate)
 
 
 
@@ -382,5 +416,15 @@ class WeeklyFragment : Fragment(), OnChartValueSelectedListener {
 
     }
 
+    private fun isCurrentMonth(calendar: Calendar): Boolean {
+        val currentCalendar = Calendar.getInstance()
+        return calendar.get(Calendar.MONTH) == currentCalendar.get(Calendar.MONTH)
+    }
 
+    private fun isCurrentWeek(calendar: Calendar): Boolean {
+        val today = Calendar.getInstance()
+        val currentWeek = today.get(Calendar.WEEK_OF_YEAR)
+        val givenWeek = calendar.get(Calendar.WEEK_OF_YEAR)
+        return currentWeek == givenWeek
+    }
 }

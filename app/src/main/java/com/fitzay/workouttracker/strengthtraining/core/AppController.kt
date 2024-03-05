@@ -1,14 +1,23 @@
 package com.fitzay.workouttracker.strengthtraining.core
 
 import android.app.Application
+import android.app.Notification
+import android.app.NotificationChannel
+import android.app.NotificationManager
+import android.app.PendingIntent
 import android.content.Context
+import android.content.Intent
 import android.net.ConnectivityManager
 import android.net.Network
 import android.net.NetworkRequest
+import android.os.Build
 import android.os.Handler
 import android.os.Looper
 import android.util.Log
+import android.widget.RemoteViews
+import androidx.core.app.NotificationCompat
 import com.fitzay.workouttracker.strengthtraining.BuildConfig
+import com.fitzay.workouttracker.strengthtraining.R
 import com.fitzay.workouttracker.strengthtraining.core.ads.OpenAd
 import com.fitzay.workouttracker.strengthtraining.core.utils.AppUtil2
 import com.fitzay.workouttracker.strengthtraining.core.utils.InAppPurchaseUtil
@@ -19,6 +28,7 @@ import com.fitzay.workouttracker.strengthtraining.di.fitnessRepository
 import com.fitzay.workouttracker.strengthtraining.di.fitnessViewModelModule
 import com.fitzay.workouttracker.strengthtraining.domain.remote.FitzayModel
 import com.fitzay.workouttracker.strengthtraining.domain.remote.FitzayRemote
+import com.fitzay.workouttracker.strengthtraining.ui.MainActivity
 import com.google.android.ads.nativetemplates.TemplateView.ctacolor
 import com.google.firebase.FirebaseApp
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig
@@ -73,7 +83,45 @@ class AppController : Application() {
         },1000)
 
         AppUtil2()
+
+        //buildNotification(this)
     }
+
+//    private fun createNotificationChannel(context: Context) {
+//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+//            val channelId = "water_reminder_channel"
+//            val channelName = "Water Reminder"
+//            val importance = NotificationManager.IMPORTANCE_DEFAULT
+//            val channel = NotificationChannel(channelId, channelName, importance).apply {
+//                description = "Reminds you to drink water"
+//            }
+//            val notificationManager: NotificationManager = context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+//            notificationManager.createNotificationChannel(channel)
+//        }
+//    }
+//
+//
+//    fun buildNotification(context: Context): Notification {
+//        createNotificationChannel(context)
+//        val channelId = "water_reminder_channel"
+//
+//        // Create an intent that opens the MainActivity when the notification is clicked
+//        val intent = Intent(context, MainActivity::class.java)
+//        val pendingIntent = PendingIntent.getActivity(context, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT)
+//
+//        // Inflate the custom layout for the notification
+//        val contentView = RemoteViews(context.packageName, R.layout.water_intake_notification_layout)
+//        contentView.setTextViewText(R.id.notification_text, "Don't forget to drink water!")
+//
+//        // Build the notification using NotificationCompat.Builder
+//        return NotificationCompat.Builder(context, channelId)
+//            .setSmallIcon(R.drawable.ic_notification)
+//            .setCustomContentView(contentView)
+//            .setContentIntent(pendingIntent)
+//            .setAutoCancel(true)  // Auto cancel the notification when clicked
+//            .build()
+//    }
+
 
     private fun setupNetworkCallback() {
         val connectivityManager =

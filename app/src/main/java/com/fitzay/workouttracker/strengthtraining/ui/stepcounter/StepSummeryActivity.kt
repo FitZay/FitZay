@@ -85,9 +85,10 @@ class StepSummeryActivity : AppUtil2(), OnChartValueSelectedListener {
                 txtAverage.text = getString(R.string.daily)
                 txtMiles.text = "" + (Component.preference.stepGoal * 100) / Component.preference.stepGoal+" "+ getString(R.string.steps)
                 imgStep.performClick()
-
                 supportFragmentManager.beginTransaction().replace(R.id.container, StepDailyFragment()).commit()
-
+                txtMonthly.isEnabled=true
+                txtDaily.isEnabled=false
+                txtWeekly.isEnabled=true
             }
 
             txtWeekly.setOnClickListener {
@@ -98,9 +99,25 @@ class StepSummeryActivity : AppUtil2(), OnChartValueSelectedListener {
                 imgStep.performClick()
 
                 supportFragmentManager.beginTransaction().replace(R.id.container, StepWeeklyFragment()).commit()
-
+                txtMonthly.isEnabled=true
+                txtDaily.isEnabled=true
+                txtWeekly.isEnabled=false
             }
 
+            txtMonthly.setOnClickListener {
+                unSelect()
+                binding.txtMonthly.setBackgroundResource(R.drawable.bg_selected)
+                typeClicked = "Monthly"
+                binding.txtAverage.text = getString(R.string.monthly)
+                binding.imgStep.performClick()
+                supportFragmentManager.beginTransaction().replace(R.id.container, StepMonthlyFragment()).commit()
+
+                txtMonthly.isEnabled=false
+                txtDaily.isEnabled=true
+                txtWeekly.isEnabled=true
+            }
+
+
         }
 
 
@@ -108,37 +125,8 @@ class StepSummeryActivity : AppUtil2(), OnChartValueSelectedListener {
 
 
 
-        binding.txtMonthly.setOnClickListener {
-            unSelect()
-            binding.txtMonthly.setBackgroundResource(R.drawable.bg_selected)
-            typeClicked = "Monthly"
-            binding.txtAverage.text = getString(R.string.monthly)
-            binding.imgStep.performClick()
-            supportFragmentManager.beginTransaction().replace(R.id.container, StepMonthlyFragment()).commit()
 
-        }
 
-//        binding.imgStep.setOnClickListener {
-//            unSelectSub()
-//            binding.imgStep.setBackgroundResource(R.drawable.bg_selected)
-//            clickedButton(1)
-//        }
-//        binding.imgLocation.setOnClickListener {
-//            unSelectSub()
-//            binding.imgLocation.setBackgroundResource(R.drawable.bg_selected)
-//            clickedButton(2)
-//        }
-//        binding.imgCalories.setOnClickListener {
-//            unSelectSub()
-//            binding.imgCalories.setBackgroundResource(R.drawable.bg_selected)
-//            clickedButton(3)
-//        }
-//
-//        binding.imgTime.setOnClickListener {
-//            unSelectSub()
-//            binding.imgTime.setBackgroundResource(R.drawable.bg_selected)
-//            clickedButton(4)
-//        }
 
     }
 

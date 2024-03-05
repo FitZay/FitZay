@@ -19,6 +19,9 @@ import java.util.Locale
 class StepDailyFragment : Fragment() {
 
 
+    companion object{
+        var btnCheck="Step"
+    }
     private lateinit var binding:FragmentStepDailyBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,34 +34,67 @@ class StepDailyFragment : Fragment() {
         binding= FragmentStepDailyBinding.inflate(inflater, container, false)
 
 
-        //Not Selected By Default 1 Show
-        dailyReport(1)
+
+
+
 
         binding.apply {
+            //Not Selected By Default 1 Show
+           // dailyReport(1)
+
+            when (btnCheck)
+            {
+                "Step" -> {
+                    unSelectSub()
+                    imgStep.setBackgroundResource(R.drawable.bg_selected)
+                    dailyReport(1)
+                    btnCheck="Step"
+                }
+                "Location" -> {
+                    unSelectSub()
+                    imgLocation.setBackgroundResource(R.drawable.bg_selected)
+                    dailyReport(2)
+                    btnCheck="Location"
+                }
+                "Calories" -> {
+                    unSelectSub()
+                    imgCalories.setBackgroundResource(R.drawable.bg_selected)
+                    dailyReport(3)
+                    btnCheck="Calories"
+                }
+                "Time" -> {
+                    unSelectSub()
+                    imgTime.setBackgroundResource(R.drawable.bg_selected)
+                    dailyReport(4)
+                    btnCheck="Time"
+                }
+
+            }
+
             imgStep.setOnClickListener {
                 unSelectSub()
                 imgStep.setBackgroundResource(R.drawable.bg_selected)
                 dailyReport(1)
-
+                btnCheck="Step"
             }
             binding.imgLocation.setOnClickListener {
                 unSelectSub()
                 imgLocation.setBackgroundResource(R.drawable.bg_selected)
                 dailyReport(2)
-
+                btnCheck="Location"
             }
             binding.imgCalories.setOnClickListener {
                 unSelectSub()
                imgCalories.setBackgroundResource(R.drawable.bg_selected)
                 dailyReport(3)
-
+                btnCheck="Calories"
             }
 
             binding.imgTime.setOnClickListener {
                 unSelectSub()
                 imgTime.setBackgroundResource(R.drawable.bg_selected)
                 dailyReport(4)
-
+                btnCheck="Time"
             }
         }
 

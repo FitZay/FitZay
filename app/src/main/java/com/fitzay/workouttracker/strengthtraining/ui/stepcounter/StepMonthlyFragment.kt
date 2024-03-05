@@ -67,11 +67,50 @@ class StepMonthlyFragment : Fragment(), OnChartValueSelectedListener {
             tooltipView = layoutInflater.inflate(R.layout.custom_tooltip, null)
             tvValue = tooltipView.findViewById(R.id.tvValue)
 
+
+
             root.setOnClickListener {
                 dateLayout.visibility = View.VISIBLE
             }
 
+            when (StepDailyFragment.btnCheck)
+            {
+                "Step" -> {
+                    unSelectSub()
+                    imgStep.setBackgroundResource(R.drawable.bg_selected)
+                    setBarData(1)
 
+                    check="Step"
+                    StepDailyFragment.btnCheck="Step"
+                }
+                "Location" -> {
+                    unSelectSub()
+                    imgLocation.setBackgroundResource(R.drawable.bg_selected)
+
+
+                    setBarData(2)
+                    check="Distance"
+                    StepDailyFragment.btnCheck="Location"
+                }
+                "Calories" -> {
+                    unSelectSub()
+                    imgCalories.setBackgroundResource(R.drawable.bg_selected)
+
+
+                    setBarData(3)
+                    check="Calories"
+                    StepDailyFragment.btnCheck="Calories"
+                }
+                "Time" -> {
+
+                    unSelectSub()
+                    imgTime.setBackgroundResource(R.drawable.bg_selected)
+                    setBarData(4)
+                    check="Time"
+                    StepDailyFragment.btnCheck="Time"
+                }
+
+            }
             calendar = Calendar.getInstance()
             calendar_2 = Calendar.getInstance()
             calendarCopy = Calendar.getInstance()
@@ -89,15 +128,15 @@ class StepMonthlyFragment : Fragment(), OnChartValueSelectedListener {
             popupWindow.isOutsideTouchable = true
 
             sleepChartMonthly.setOnChartValueSelectedListener(this@StepMonthlyFragment)
-            setBarData(i)
+            //setBarData(i)
 
             imgStep.setOnClickListener {
                 unSelectSub()
                 imgStep.setBackgroundResource(R.drawable.bg_selected)
                 i=1
                 setBarData(i)
-
                 check="Step"
+                StepDailyFragment.btnCheck="Step"
             }
             binding.imgLocation.setOnClickListener {
                 unSelectSub()
@@ -105,6 +144,7 @@ class StepMonthlyFragment : Fragment(), OnChartValueSelectedListener {
                 i=2
                 setBarData(i)
                 check="Distance"
+                StepDailyFragment.btnCheck="Location"
 
             }
             binding.imgCalories.setOnClickListener {
@@ -114,6 +154,7 @@ class StepMonthlyFragment : Fragment(), OnChartValueSelectedListener {
                 setBarData(i)
 
                 check="Calories"
+                StepDailyFragment.btnCheck="Calories"
 
 
             }
@@ -125,6 +166,7 @@ class StepMonthlyFragment : Fragment(), OnChartValueSelectedListener {
                setBarData(i)
 
                 check="Time"
+                StepDailyFragment.btnCheck="Time"
 
 
             }
@@ -665,7 +707,7 @@ class StepMonthlyFragment : Fragment(), OnChartValueSelectedListener {
             // Calculate the Y position for the top center of the graph
 //            val yPos = binding.sleepChart.viewPortHandler.contentHeight()
 
-            val yOffset = 400 // Adjust as needed
+            val yOffset = 270 // Adjust as needed
             val yPos = binding.sleepChartMonthly.viewPortHandler.contentHeight() - yOffset
 
             popupWindow.showAtLocation(

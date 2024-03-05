@@ -18,6 +18,9 @@ import com.fitzay.workouttracker.strengthtraining.R
 import com.fitzay.workouttracker.strengthtraining.core.utils.CurrentStatus
 import com.fitzay.workouttracker.strengthtraining.core.utils.convertDecimalToHoursMinutes
 import com.fitzay.workouttracker.strengthtraining.core.utils.convertTimeToSeconds
+import com.fitzay.workouttracker.strengthtraining.core.utils.getDayOfWeek
+import com.fitzay.workouttracker.strengthtraining.core.utils.getDayOfWeekName
+import com.fitzay.workouttracker.strengthtraining.core.utils.getShortDayName
 import com.fitzay.workouttracker.strengthtraining.core.utils.getWeekDayWithDateA
 import com.fitzay.workouttracker.strengthtraining.databinding.FragmentStepWeeklyBinding
 import com.fitzay.workouttracker.strengthtraining.di.Component
@@ -114,11 +117,47 @@ class StepWeeklyFragment : Fragment() , OnChartValueSelectedListener {
             val currentDate = Date()
             txtDate.text = this@StepWeeklyFragment.dateFormat.format(currentDate).toString()+" "+this@StepWeeklyFragment.dateFormat.format(weekEnd).toString()
 
-            //Not Selected By Default 1 Show
-            //weekReport(1)
 
-            //1st time or Current Data
-            previousWeek(txtDate)
+
+            when (StepDailyFragment.btnCheck)
+            {
+                "Step" -> {
+                    i=1
+                    unSelectSub()
+                    imgStep.setBackgroundResource(R.drawable.bg_selected)
+                    previousWeek(txtDate)
+                    check="Step"
+                    StepDailyFragment.btnCheck="Step"
+
+                }
+                "Location" -> {
+                    i=2
+                    unSelectSub()
+                    imgLocation.setBackgroundResource(R.drawable.bg_selected)
+                    check="Distance"
+                    previousWeek(txtDate)
+                    StepDailyFragment.btnCheck="Location"
+
+                }
+                "Calories" -> {
+                    i=3
+                    unSelectSub()
+                    imgCalories.setBackgroundResource(R.drawable.bg_selected)
+                    check="Calories"
+                    previousWeek(txtDate)
+                    StepDailyFragment.btnCheck="Calories"
+                }
+                "Time" -> {
+                    i=4
+                    check="Time"
+                    unSelectSub()
+                    imgTime.setBackgroundResource(R.drawable.bg_selected)
+                    previousWeek(txtDate)
+                    StepDailyFragment.btnCheck="Time"
+                }
+
+            }
+
 
 
             previousDate.setOnClickListener {
@@ -146,6 +185,9 @@ class StepWeeklyFragment : Fragment() , OnChartValueSelectedListener {
 
                 }
 
+                StepDailyFragment.btnCheck="Step"
+
+
             }
             binding.imgLocation.setOnClickListener {
                 unSelectSub()
@@ -161,7 +203,7 @@ class StepWeeklyFragment : Fragment() , OnChartValueSelectedListener {
                     setBarData(i,SimpleDateFormat("dd-MMM", Locale.getDefault()), txtDate,isCurrentWeek(this@StepWeeklyFragment.calendar))
 
                 }
-
+                StepDailyFragment.btnCheck="Location"
             }
             binding.imgCalories.setOnClickListener {
                 unSelectSub()
@@ -178,6 +220,7 @@ class StepWeeklyFragment : Fragment() , OnChartValueSelectedListener {
 
                 }
 
+                StepDailyFragment.btnCheck="Calories"
 
 
             }
@@ -196,6 +239,7 @@ class StepWeeklyFragment : Fragment() , OnChartValueSelectedListener {
                     setBarData(i,SimpleDateFormat("dd-MMM", Locale.getDefault()), txtDate,isCurrentWeek(this@StepWeeklyFragment.calendar))
 
                 }
+                StepDailyFragment.btnCheck="Time"
 
 
 
@@ -299,8 +343,18 @@ class StepWeeklyFragment : Fragment() , OnChartValueSelectedListener {
             calendarCopy.add(Calendar.DAY_OF_YEAR, 7)
             Log.i("TAG", "nextWeek--if: ")
 
-            setBarData(i,pattern, textView,isCurrentWeek(this@StepWeeklyFragment.calendar))
-        } else {
+            if (isCurrentMonth(this@StepWeeklyFragment.calendar)) {
+                binding.nextDate.visibility = View.GONE
+                setBarData(i,pattern, textView,isCurrentWeek(this@StepWeeklyFragment.calendar))
+            }
+            else
+            {
+                binding.nextDate.visibility = View.VISIBLE
+                setBarData(i,pattern, textView,isCurrentWeek(this@StepWeeklyFragment.calendar))
+            }
+
+        }
+        else {
             binding.nextDate.visibility = View.GONE
             Log.i("TAG", "nextWeek--else: ")
 
@@ -329,7 +383,6 @@ class StepWeeklyFragment : Fragment() , OnChartValueSelectedListener {
 
                 Component.stepModel.stepRepository.getAllRecordsF(1).collect{result->
 
-
                             val calendar = Calendar.getInstance()
                             calendar.time = weekStart
                             val allDatesOfWeek = mutableListOf<Date>()
@@ -339,47 +392,50 @@ class StepWeeklyFragment : Fragment() , OnChartValueSelectedListener {
                                 calendar.add(Calendar.DAY_OF_YEAR, 1)
                             }
 
-
-// Remove the first date from the list
-                            allDatesOfWeek.removeAt(0)
-
                             // Add the last date to the list
                             allDatesOfWeek.add(calendar.time)
 
-                            Log.i("TAG", "NEW DATE: " + calendar.time)
+                    // Remove the first date from the list
+                    allDatesOfWeek.removeAt(0)
+
+
+
+
+
+
+                    Log.i("TAG", "NEW DATE: " + calendar.time)
                             Log.i("TAG", "NEW DATE: " + weekEnd)
                             Log.i("TAG", "NEW DATE: " + weekStart)
                             Log.i("TAG", "NEW DATE: " + allDatesOfWeek)
                             var barEntriesArrayList = ArrayList<BarEntry>()
                             val dateFormat = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
-                            //val formattedDates = allDatesOfWeek.map { pattern.format(it) }.toTypedArray()
-                    val formattedDates = allDatesOfWeek.map {
-                        if (displayAsWeekdays) {
-                           // pattern.format(it)
-                            SimpleDateFormat("EEE", Locale.getDefault()).format(it)
-                        } else {
-                            SimpleDateFormat("dd-MMM", Locale.getDefault()).format(it)
-                        }
-                    }.toTypedArray()
+
+
+                    var formattedDates= arrayOf("Mon", "Tue", "Wed", "Thu", "Fri", "Sat","Sun")
+//                    val formattedDates = allDatesOfWeek.map {
+//                        if (displayAsWeekdays) {
+//                            // pattern.format(it)
+//                            SimpleDateFormat("EEE", Locale.getDefault()).format(it)
+//                        }  else {
+//                            SimpleDateFormat("dd-MMM", Locale.getDefault()).format(it)
+//                        }
+//                    }.toTypedArray()
+
                             var avg = 0
                             var sumOfFinalStrings = 0
                             allDatesOfWeek.forEachIndexed { index, date ->
                                 val dateFormatted = dateFormat.format(date)
                                 val dataForDate = result.find { it.date == dateFormatted }
-                                Log.i(TAG, "setBarData999: "+dateFormatted)
+                                var name=requireActivity().getDayOfWeekName(date)
+                                Log.i("8976--", "setBarData999: "+index+"-"+name)
 
                                 if (dataForDate != null) {
-                                    // Data exists for this date, process it
-//                                    val regex = Regex("\\d+")
-//                                    val matchResults = regex.findAll(dataForDate.totalSleepingHr!!)
-//                                    val numericValues = matchResults.map { it.value }.toList()
-//                                    val finalValue = numericValues.joinToString(".").replace(" ", "").toFloat()
-//                                    sumOfFinalStrings += finalValue
-//                                    avg = sumOfFinalStrings / 7
+
                                     when(i)
                                     {
                                         1->
                                         {
+
                                             barEntriesArrayList.add(BarEntry(index.toFloat(), dataForDate.steps.toFloat()))
                                             sumOfFinalStrings += dataForDate.steps
                                             avg = sumOfFinalStrings / 7
@@ -406,8 +462,7 @@ class StepWeeklyFragment : Fragment() , OnChartValueSelectedListener {
 
                                 }
                                 else {
-                                    // Data does not exist for this date, handle accordingly
-                                    // For example, you could add a default value or leave the bar empty
+
                                     barEntriesArrayList.add(
                                         BarEntry(
                                             index.toFloat(),
@@ -433,15 +488,7 @@ class StepWeeklyFragment : Fragment() , OnChartValueSelectedListener {
                             Log.i("TAG", "setBarData: " + result.size)
 
                             withContext(Dispatchers.Main) {
-//                                val (hours, minutes) = requireActivity().convertDecimalToHoursMinutes(avg)
-//
-//                                if (avg.equals(0f)) {
-//                                    //txtMiles.text = "No Data"
-//
-//                                } else {
-//                                   // txtMiles.text = "$hours hr $minutes min"
-//
-//                                }
+
                                 txt.text = startWeek + "," + endWeek
                                 when(i)
                                 {
@@ -466,7 +513,6 @@ class StepWeeklyFragment : Fragment() , OnChartValueSelectedListener {
                                     }
                                 }
                                 val dataSet = BarDataSet(barEntriesArrayList, "")
-//                        dataSet.setColors(*ColorTemplate.MATERIAL_COLORS)
                                 dataSet.setColors(Color.parseColor("#9CB135"))
 
 
@@ -535,7 +581,7 @@ class StepWeeklyFragment : Fragment() , OnChartValueSelectedListener {
             // Calculate the Y position for the top center of the graph
 //            val yPos = binding.sleepChart.viewPortHandler.contentHeight()
 
-            val yOffset = 400 // Adjust as needed
+            val yOffset = 270 // Adjust as needed
             val yPos = binding.sleepChartWeekly.viewPortHandler.contentHeight() - yOffset
 
             popupWindow.showAtLocation(
@@ -571,5 +617,35 @@ class StepWeeklyFragment : Fragment() , OnChartValueSelectedListener {
         val currentWeek = today.get(Calendar.WEEK_OF_YEAR)
         val givenWeek = calendar.get(Calendar.WEEK_OF_YEAR)
         return currentWeek == givenWeek
+    }
+
+    private fun getDayPosition(day: String): Int {
+        // You can implement your logic here to map days to positions.
+        // For example, if your days are represented as strings like "Monday", "Tuesday", etc.,
+        // you can use a map or a when statement to determine the position.
+        return when (day.toLowerCase()) {
+            "mon" -> 0
+            "tue" -> 1
+            "wed" -> 2
+            "thu" -> 3
+            "fri" -> 4
+            "sat" -> 5
+            "sun" -> 6
+            else -> 9 // Handle unknown days
+        }
+    }
+
+
+    private fun common(i:Int,txtDate: TextView){
+
+        if (isCurrentMonth(this@StepWeeklyFragment.calendar)) {
+            setBarData(i,SimpleDateFormat("EE", Locale.getDefault()), txtDate,isCurrentWeek(this@StepWeeklyFragment.calendar))
+
+        }
+        else
+        {
+            setBarData(i,SimpleDateFormat("dd-MMM", Locale.getDefault()), txtDate,isCurrentWeek(this@StepWeeklyFragment.calendar))
+
+        }
     }
 }

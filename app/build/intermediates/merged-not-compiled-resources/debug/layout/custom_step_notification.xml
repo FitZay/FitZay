@@ -9,6 +9,7 @@
         android:layout_toStartOf="@id/btOpen"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:id="@+id/mainV"
         android:layout_marginHorizontal="@dimen/_10sdp"
         android:layout_marginVertical="@dimen/_3sdp">
 
@@ -146,6 +147,7 @@
     <ImageView
         android:layout_marginEnd="@dimen/_10sdp"
         android:id="@+id/btOpen"
+        android:visibility="invisible"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"

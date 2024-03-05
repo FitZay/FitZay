@@ -98,6 +98,7 @@ class MonthlyFragment : Fragment(),OnChartValueSelectedListener {
             CoroutineScope(Dispatchers.IO).launch {
                 val currentMonth = Calendar.getInstance().get(Calendar.MONTH) + 1 // Adding 1 because months are zero-based
 
+
                 com.fitzay.workouttracker.strengthtraining.di.Component.alarmViewModel.alarmRepository.getAlarms(
                     1
                 ).collect { result ->
@@ -119,9 +120,12 @@ class MonthlyFragment : Fragment(),OnChartValueSelectedListener {
                     var barEntriesArrayList = ArrayList<BarEntry>()
                     val dateFormat = SimpleDateFormat("dd-MM-yyyy", Locale.getDefault())
                     val daysOfWeek = arrayOf(
-                        "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11",
-                        "12", "13", "14", "15", "16", "17", "18", "19", "20", "21",
-                        "22", "23", "24", "25", "26", "27", "28", "29", "30", "31"
+                        "1"+"-"+getMonthName(currentMonth), "2"+"-"+getMonthName(currentMonth), "3"+"-"+getMonthName(currentMonth), "4"+"-"+getMonthName(currentMonth), "5"+"-"+getMonthName(currentMonth),
+                        "6"+"-"+getMonthName(currentMonth), "7"+"-"+getMonthName(currentMonth), "8"+"-"+getMonthName(currentMonth), "9"+"-"+getMonthName(currentMonth), "10"+"-"+getMonthName(currentMonth), "11"+"-"+getMonthName(currentMonth),
+                        "12"+"-"+getMonthName(currentMonth), "13"+"-"+getMonthName(currentMonth), "14"+"-"+getMonthName(currentMonth), "15"+"-"+getMonthName(currentMonth), "16"+"-"+getMonthName(currentMonth), "17"+"-"+getMonthName(currentMonth),
+                        "18"+"-"+getMonthName(currentMonth), "19"+"-"+getMonthName(currentMonth), "20"+"-"+getMonthName(currentMonth), "21"+"-"+getMonthName(currentMonth), "22"+"-"+getMonthName(currentMonth), "23"+"-"+getMonthName(currentMonth),
+                        "24"+"-"+getMonthName(currentMonth), "25"+"-"+getMonthName(currentMonth), "26"+"-"+getMonthName(currentMonth), "27"+"-"+getMonthName(currentMonth), "28"+"-"+getMonthName(currentMonth), "29"+"-"+getMonthName(currentMonth), "30"+"-"+getMonthName(currentMonth),
+                        "31"+"-"+getMonthName(currentMonth)
                     )
                     var sumOfFinalStrings = 0f
                     alarmsForCurrentMonth.forEach {
@@ -324,9 +328,12 @@ class MonthlyFragment : Fragment(),OnChartValueSelectedListener {
                     var barEntriesArrayList = ArrayList<BarEntry>()
                     val dateFormat = SimpleDateFormat("dd-MM-yyyy", Locale.getDefault())
                     val daysOfWeek = arrayOf(
-                        "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11",
-                        "12", "13", "14", "15", "16", "17", "18", "19", "20", "21",
-                        "22", "23", "24", "25", "26", "27", "28", "29", "30", "31"
+                        "1"+"-"+currentMonth, "2"+"-"+currentMonth, "3"+"-"+currentMonth, "4"+"-"+currentMonth, "5"+"-"+currentMonth,
+                        "6"+"-"+currentMonth, "7"+"-"+currentMonth, "8"+"-"+currentMonth, "9"+"-"+currentMonth, "10"+"-"+currentMonth, "11"+"-"+currentMonth,
+                        "12"+"-"+currentMonth, "13"+"-"+currentMonth, "14"+"-"+currentMonth, "15"+"-"+currentMonth, "16"+"-"+currentMonth, "17"+"-"+currentMonth,
+                        "18"+"-"+currentMonth, "19"+"-"+currentMonth, "20"+"-"+currentMonth, "21"+"-"+currentMonth, "22"+"-"+currentMonth, "23"+"-"+currentMonth,
+                        "24"+"-"+currentMonth, "25"+"-"+currentMonth, "26"+"-"+currentMonth, "27"+"-"+currentMonth, "28"+"-"+currentMonth, "29"+"-"+currentMonth, "30"+"-"+currentMonth,
+                        "31"+"-"+currentMonth
                     )
                     var sumOfFinalStrings = 0f
 
@@ -511,5 +518,16 @@ class MonthlyFragment : Fragment(),OnChartValueSelectedListener {
         binding.dateLayout.visibility = View.VISIBLE
 
     }
-
+    fun getMonthName(month: Int): String {
+        val months = listOf(
+            "Jan", "Feb", "Mar", "Apr",
+            "May", "Jun", "Jul", "Aug", "Sep",
+            "Oct", "Nov", "Dec"
+        )
+        return if (month in 1..12) {
+            months[month - 1]
+        } else {
+            "Invalid month number"
+        }
+    }
 }

@@ -555,7 +555,7 @@ Marking layout:schedule_alarm_show_item_list:2131558609 reachable: referenced fr
 Marking string:channel_name:2131951692 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking string:channel_description:2131951691 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking layout:custom_step_notification:2131558469 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
-Marking id:btOpen:2131361939 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
+Marking id:mainV:2131362374 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking mipmap:ic_launcher_foreground:2131755010 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking id:steps:2131362695 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking id:timePicker:2131362781 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
@@ -582,7 +582,6 @@ Marking id:heightH:2131362210 reachable: referenced from E:\Rafaqat Mehmood\Fitn
 Marking id:heightValue:2131362213 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking id:line:2131362348 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking id:mainT:2131362373 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
-Marking id:mainV:2131362374 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking id:weightH:2131362933 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking id:weightValue:2131362936 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking layout:activity_bmi:2131558431 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
@@ -1989,6 +1988,7 @@ getOnDragStopped
 hue2rgb
 numbers
 isReturnTypeMoreSpecific
+DrawableDelegate
 ACTION_CANCEL_WORK
 getInType
 clickToExpandAllowed
@@ -2319,6 +2319,7 @@ typeAliasExpansion
 BM
 BN
 Chip
+VectorDrawableCompat
 BO
 C1
 BQ
@@ -3132,6 +3133,7 @@ deleted_messages
 LINE_SEPARATOR
 AlternRock
 registerIn
+EEE
 setOutType
 containsKey
 measurement.dma_consent.service_gcs_v2
@@ -3698,6 +3700,7 @@ manual_install
 pn
 sourceUnit
 pp
+valueTo
 region.bounds
 commitCorrection
 pt
@@ -4801,6 +4804,7 @@ Dream
 classProto.constructorList
 Freestyle
 java.vendor.url
+propertyValuesHolder
 _absentArguments
 layoutChildren$ui_release
 migrationStartAndEndVersions
@@ -5161,8 +5165,8 @@ setList
 alarmSnoozeTime
 functionDescriptor
 jvmType.primitiveType
-oldest
 propertyName
+oldest
 getModuleData
 WorkProgress
 rowIndex
@@ -5618,6 +5622,7 @@ _clockTickColor$delegate
 androidx.compose.material.SwipeableSt...
 custom_close
 location_id
+addLikelySubtags
 number
 getCaller
 newPending
@@ -5741,6 +5746,7 @@ gads:safe_browsing:api_key
 GIONEE_WBL5708
 propagated.returnType
 ERAS
+OP_POST_NOTIFICATION
 sendBroadcast
 getMutableIterator
 registerWebSource
@@ -7870,6 +7876,7 @@ millis
 getYAxisLabel
 UNDISPATCHED
 emitter
+objectAnimator
 LambdaLast
 UNRESOLVED_DECLARATION
 getSliderWidth
@@ -7934,6 +7941,7 @@ CLOCK_HOUR_OF_DAY
 patch
 positionInRoot
 sizes
+valueType
 $this$connect
 migrationNotRequiredFrom
 height
@@ -8214,6 +8222,7 @@ noBackupDirectory
 androidx.core.view.inputmethod.Editor...
 kotlin/text/StringsKt___StringsKt
 statistic_name
+AnimatedVDCompat
 parent_ad_config
 LTE
 requestUptimeMs
@@ -9431,6 +9440,7 @@ correctPrev
 Mon
 View
 Dispatchers.Main.immediate
+valueFrom
 invalidatedTablesIds
 enqueue
 completed_requests
@@ -9657,6 +9667,7 @@ optional
 com.google.android.gms.ads.internal.m...
 gads:content_vertical_fingerprint_bits
 ad_event_id
+keyframe
 currentValue$delegate
 app_last_background_time_ms
 mapNotNull
@@ -9863,6 +9874,7 @@ getCollectToFun$kotlinx_coroutines_core
 httpTimeoutMillis
 bindDouble
 requireIndexInRange
+ICUCompat
 com.google.android.c2dm.intent.RECEIVE
 Phantom6
 createRootScopeDefinition$koin_core
@@ -10104,6 +10116,7 @@ gads:get_request_signals_cld:enabled
 _closeCause
 .vtt
 createProgram
+AvdcInflateDelegate
 gads:pause_time_update_when_video_com...
 onRewardedAdClosed
 CctTransportBackend
@@ -10371,6 +10384,7 @@ setShadowElevation
 getValueClassPropertyType
 cancellation
 originalTimeoutMillis
+interpolator
 requestLayout
 isAntiAlias
 androidx/compose/ui/graphics/colorspa...
@@ -10597,6 +10611,7 @@ EmojiCompat.MetadataRepo.create
 layout/activity_sleep_summary_0
 TransitionAnimationState
 gads:afs:csa:experiment_id
+AsldcInflateDelegate
 onClick
 instance
 setGraphicsDensity$ui_release
@@ -12365,6 +12380,7 @@ getMainAxisMax
 _scopes.values
 get_source$annotations
 extra_time_goal
+libcore.icu.ICU
 ScrollBy
 Screen
 /ByteArray
@@ -12421,6 +12437,7 @@ _typeParameters
 Infinite
 doneComposing
 tel
+setBase
 request_info_keys
 SDK
 com.google.firebase.common.prefs:
@@ -12486,6 +12503,7 @@ getSessionIndex
 val$foregroundFuture
 resolve
 setSliderRangeGradientStartRes
+propertyXName
 mergedReadObserver
 isAnonymousFunction
 click_urls
@@ -13450,6 +13468,7 @@ setStrokeWidth
 getDelegate$kotlinx_coroutines_core
 kotlin/reflect/jvm/internal/impl/desc...
 long
+isCurrentWeek
 timeProvider
 TXT
 .com.google.firebase.crashlytics
@@ -14169,6 +14188,7 @@ google.afma.config.fetchAppSettings
 getBottomBorder
 dialogInterface
 getEnd$annotations
+startOffset
 includeReplacedSemantics
 mediaview_graphics_matrix
 getFinishRequested
@@ -15361,6 +15381,7 @@ TypefaceCompatApi24Impl
 getByteType
 PRETTY
 toWrap
+0_resource_name_obfuscated
 Unreachable
 RewardedAdLoader.onFailure
 onFrame
@@ -15562,6 +15583,7 @@ stopTrackingTable
 setRemoveOnCancelPolicy
 subList
 pool_key
+checkOpNoThrow
 HMACSHA384
 getMinDimension$annotations
 onInvalidateRipple
@@ -16339,6 +16361,7 @@ getParentLayoutDirection
 isSetOrNullableSet
 fitAdTotal
 setClipToScreenEnabled
+getMaxAvailableHeight
 Pair
 native_media_orientation
 DEVELOPER
@@ -17148,6 +17171,7 @@ realValueParams
 vectorSize
 personFamilyName
 coroutines
+VdcInflateDelegate
 MainContent
 ZIP
 adapter_init_started
@@ -17164,6 +17188,7 @@ layout_constraintEnd_toStartOf
 allocateList
 createEnumValueOfMethod
 NO_UNSUPPORTED_DRM
+propertyYName
 finishComposingText
 e_id
 InvalidNullConversion
@@ -18186,6 +18211,7 @@ video_start_urls
 onZSortedChildrenInvalidated
 loadModules
 preferred_ad_choices_position
+displayAsWeekdays
 fillPlaceholder
 StreamEncoder
 ImageShader
@@ -20055,6 +20081,7 @@ velRingCounter
 common_google_play_services_resolutio...
 video/webm
 etWeightInput
+ordering
 setBuiltInsModule
 MAX_VALUE
 shouldBeRegistered
@@ -37126,6 +37153,7 @@ Marking id:skeletonLayout:2131362651 used because it matches string pool constan
 Marking id:skeletonLayout1:2131362652 used because it matches string pool constant skeletonLayout
 Marking id:etWeightInput:2131362147 used because it matches string pool constant etWeightInput
 Marking id:etWeightInput:2131362147 used because it matches string pool constant etWeightInput
+Marking attr:orderingFromXml:2130969494 used because it matches string pool constant ordering
 Marking attr:counterEnabled:2130968932 used because it matches string pool constant counter
 Marking attr:counterMaxLength:2130968933 used because it matches string pool constant counter
 Marking attr:counterOverflowTextAppearance:2130968934 used because it matches string pool constant counter
@@ -64814,4 +64842,4 @@ The root reachable resources are:
  xml:image_share_filepaths:2132148228
 Unused resources are: 
  style:Platform_Widget_AppCompat_Spinner:2132017480
-Resource shrinking did not work (grew from 24735982 to 24751814); using original instead
+Resource shrinking did not work (grew from 24736015 to 24751847); using original instead

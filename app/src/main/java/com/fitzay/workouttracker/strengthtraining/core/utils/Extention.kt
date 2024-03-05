@@ -648,6 +648,25 @@ fun Context.getDayOfWeek(dateString: String): String {
     return dayOfWeek
 }
 
+fun Context.getDayOfWeekName(date: Date): String {
+    val calendar = Calendar.getInstance()
+    calendar.time = date
+    val dayOfWeek = calendar.get(Calendar.DAY_OF_WEEK)
+    val dayOfWeekString = when (dayOfWeek) {
+        Calendar.SUNDAY -> "Sun"
+        Calendar.MONDAY -> "Mon"
+        Calendar.TUESDAY -> "Tue"
+        Calendar.WEDNESDAY -> "Wed"
+        Calendar.THURSDAY -> "Thu"
+        Calendar.FRIDAY -> "Fri"
+        Calendar.SATURDAY -> "Sat"
+        else -> ""
+    }
+    return dayOfWeekString
+}
+
+
+
 fun Context.convertDecimalToHoursMinutes(decimalHours: Float): Pair<Int, Int> {
     val hours = decimalHours.toInt() // Extract integer part as hours
     val minutesDecimal = decimalHours - hours // Extract fractional part as minutes

@@ -1,11 +1,20 @@
 package com.fitzay.workouttracker.strengthtraining.ui.waterintake
 
+import android.annotation.SuppressLint
+import android.app.AlarmManager
 import android.app.Dialog
+import android.app.Notification
+import android.app.NotificationChannel
+import android.app.NotificationManager
+import android.app.PendingIntent
+import android.content.Context
 import android.content.Intent
 import android.graphics.drawable.ColorDrawable
+import android.os.Build
 import android.os.Bundle
 import android.util.Log
 import android.view.Window
+import android.widget.RemoteViews
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.foundation.layout.fillMaxSize
@@ -16,13 +25,16 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.ComposeView
+import androidx.core.app.NotificationCompat
 import androidx.datastore.preferences.protobuf.StringValue
 import androidx.lifecycle.ViewModelProvider
 import com.fitzay.workouttracker.strengthtraining.R
+import com.fitzay.workouttracker.strengthtraining.core.utils.WaterIntakeNotificationReceiver
 import com.fitzay.workouttracker.strengthtraining.core.utils.WavesLoadingIndicator
 import com.fitzay.workouttracker.strengthtraining.databinding.ActivityWaterIntakeBinding
 import com.fitzay.workouttracker.strengthtraining.databinding.DialogWaterCapacityBinding
 import com.fitzay.workouttracker.strengthtraining.di.Component
+import com.fitzay.workouttracker.strengthtraining.ui.MainActivity
 import com.fitzay.workouttracker.strengthtraining.ui.viewmodels.SharedViewModel
 import java.text.SimpleDateFormat
 import java.util.*
@@ -34,6 +46,7 @@ class WaterIntakeActivity : AppCompatActivity() {
     var a = 0f
     val TAG = "WaterIntake"
 
+    @SuppressLint("ServiceCast")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityWaterIntakeBinding.inflate(layoutInflater)
@@ -77,7 +90,20 @@ class WaterIntakeActivity : AppCompatActivity() {
         }
         binding.currentML.text = Component.preference.cupCapacity.toString() + " ml"
 
+
+        val alarmManager = getSystemService(Context.ALARM_SERVICE) as AlarmManager
+        val notificationIntent = Intent(this, WaterIntakeNotificationReceiver::class.java)
+        val pendingIntent = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_MUTABLE)
+
+//        val intervalMillis = 2 * 60 * 60 * 1000 // 2 hours in milliseconds
+        val intervalMillis = 5000L // 2 hours in milliseconds
+        val triggerAtMillis = System.currentTimeMillis() + intervalMillis
+
+        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, triggerAtMillis,
+            intervalMillis, pendingIntent)
+
     }
+
 
     override fun onResume() {
         super.onResume()
