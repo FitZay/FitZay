@@ -156,12 +156,14 @@ class WaterIntakeActivity : AppCompatActivity() {
 //            counter -= 0.02f
 //            Component.preference.saveWater = counter
 //
-//        }
 
+
+//        }
+        var i=0
         binding.layoutSub.setOnClickListener {
             val cupCapacity = Component.preference.cupCapacity
             val waterGoal = Component.preference.waterGoal
-            var i=0
+
 
             if (Component.preference.totalDrink >= cupCapacity) {
                 Component.preference.totalDrink -= cupCapacity
@@ -181,6 +183,15 @@ class WaterIntakeActivity : AppCompatActivity() {
                     Log.i("TAG", "if: " + Component.preference.saveWater.toString() + "-" + counter)
                 }
             }
+            else
+            {
+                Log.i("TAG", "ELSE-out: " + Component.preference.saveWater.toString() + "-" + counter+"-"+cupCapacity)
+                counter=0f
+                Component.preference.currentProgress = counter
+                Component.preference.saveWater=counter
+                binding.txtDrink.setText(counter.toInt().toString())
+            }
+
 
 
         }
