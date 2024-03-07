@@ -53,6 +53,7 @@ import com.google.android.gms.ads.LoadAdError
 import com.google.android.gms.ads.nativead.NativeAdOptions
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -103,6 +104,7 @@ class SleepTrackerActivity : AppUtil2(), ShowRingToneItemClick {
     var permissionSave=false
 
 
+    var test=0L
     companion object {
         var ringToneUri: Uri? = null
         var ringToneName: String = ""
@@ -567,9 +569,26 @@ class SleepTrackerActivity : AppUtil2(), ShowRingToneItemClick {
                                                 list[i].toString()
                                             )
 
+
                                         if (ringToneUri != null) {
 
-                                            if (alarmForASelectedDay.isEmpty()) {
+                                            alreadySet=false
+                                            alarmForASelectedDay.forEach { d->
+
+                                                storeDays.forEach { dd->
+
+                                                    if (d.date==dd)
+                                                    {
+
+                                                        alreadySet=true
+                                                    }
+
+
+                                                }
+
+                                            }
+
+                                            if (!alreadySet) {
                                                 if (!default) {
                                                     default = true
                                                     Component.sleepViewModel.createSleep(time, "HI")
@@ -605,6 +624,7 @@ class SleepTrackerActivity : AppUtil2(), ShowRingToneItemClick {
                                                             Toast.LENGTH_SHORT
                                                         ).show()
                                                     }
+
                                                 }
 
 
@@ -613,10 +633,27 @@ class SleepTrackerActivity : AppUtil2(), ShowRingToneItemClick {
 
                                         } else {
 
-                                            if (alarmForASelectedDay.isEmpty()) {
+                                            alreadySet=false
+                                            alarmForASelectedDay.forEach { d->
+                                                storeDays.forEach { dd->
+
+                                                    if (d.date==dd)
+                                                    {
+
+                                                        alreadySet=true
+
+                                                    }
+
+
+                                                }
+
+                                            }
+
+                                            if (!alreadySet) {
                                                 if (!default) {
                                                     default = true
                                                     Component.sleepViewModel.createSleep(time, "HI")
+
                                                 }
 
                                                 Handler(Looper.getMainLooper()).postDelayed({
@@ -642,9 +679,9 @@ class SleepTrackerActivity : AppUtil2(), ShowRingToneItemClick {
                                                 }, 1200)
 
 
-                                            } else {
-                                                if (!alreadySet) {
-                                                    alreadySet = true
+                                            }
+                                            else {
+
                                                     withContext(Dispatchers.Main) {
                                                         Toast.makeText(
                                                             this@SleepTrackerActivity,
@@ -652,7 +689,8 @@ class SleepTrackerActivity : AppUtil2(), ShowRingToneItemClick {
                                                             Toast.LENGTH_SHORT
                                                         ).show()
                                                     }
-                                                }
+
+
 
 
                                             }

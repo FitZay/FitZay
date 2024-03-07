@@ -22,7 +22,7 @@ import kotlin.math.roundToInt
 class HeightandWeightAct : AppUtil2() {
 
     private lateinit var binding: ActivityHeightandWeightBinding
-    private var age = 0
+    private var age = 5
     private var weight = 0
     private var targetweight = 0
     private var height = 0
@@ -56,6 +56,7 @@ class HeightandWeightAct : AppUtil2() {
 //            }
             btnNext.setOnClickListener {
                 try {
+
                 Component.preference.userAge = age
                 Component.preference.userWeight = weight
                 Component.preference.userTargetWight = targetweight
@@ -73,24 +74,36 @@ class HeightandWeightAct : AppUtil2() {
                 }
                 startActivity(Intent(this@HeightandWeightAct, PersonalizedWorkAct::class.java))
                 finish()
+
+                    Log.i("TAG---", "onCreate: "+age)
             }
                 catch (e:Exception){}
             }
 
+            //userAge.setSelectedItemPosition(Component.preference.userAge)
+            Log.i("TAG---", "onCreate: "+Component.preference.userAge)
 
             ageplusBtn.setOnClickListener {
                 check=true
                 check2=true
-                age++
-                ageText.text = age.toString()
+//                age++
+//                ageText.text = age.toString()
+                age=userAge.getCurrentSelectedItemPosition()
+                userAge.setSelectedItemPosition(age + 1)
+                age=userAge.getCurrentSelectedItem()!!.toInt()
             }
 
             ageminusBtn.setOnClickListener {
-                if (age > 0) {
+               // if (age > 0) {
                     check=true
                     check2=true
-                    age--
-                    ageText.text = age.toString()
+//                    age--
+//                    ageText.text = age.toString()
+               // }
+                age = userAge.getCurrentSelectedItemPosition()
+                if (age > 0) {
+                    userAge.setSelectedItemPosition(age - 1)
+                    age = userAge.getCurrentSelectedItem()!!.toInt()
                 }
             }
 

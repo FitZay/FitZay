@@ -111,11 +111,18 @@ class WaterIntakeActivity : AppCompatActivity() {
         binding.currentML.text = Component.preference.cupCapacity.toString() + getString(R.string.ml)
     }
 
+    override fun onStart() {
+        super.onStart()
+        binding.txtDrink.text = Component.preference.totalDrink.toString()
+    }
+
+    companion object {
+        var counter by mutableStateOf(Component.preference.saveWater)
+    }
 
     @Composable
     fun Greeting() {
 
-        var counter by remember { mutableStateOf(Component.preference.saveWater) }
         WavesLoadingIndicator(
             modifier = Modifier.fillMaxSize(),
             color = lightThemeColors.secondaryVariant,

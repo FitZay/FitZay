@@ -154,7 +154,7 @@ class FitnessPreference {
 
 
     var cupCapacity: Int
-        get() = prefernece.getInt(CUP_CAPACITY, 100)
+        get() = prefernece.getInt(CUP_CAPACITY, 0)
         set(cupCapacity) {
             editor.putInt(CUP_CAPACITY, cupCapacity)
             editor.apply()

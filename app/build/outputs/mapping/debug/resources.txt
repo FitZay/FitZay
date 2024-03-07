@@ -1635,6 +1635,7 @@ TranslateZ
 TranslateY
 classModality
 TranslateX
+$i
 getGreen$annotations
 Industrial
 DelayedBannerAd.onFailure
@@ -3230,6 +3231,7 @@ getCurrentRecomposeScope
 fastJoinToString
 b5
 delayedApply
+0000
 primaryType
 .DYNAMIC_RECEIVER_NOT_EXPORTED_PERMIS...
 getMultiplier
@@ -5302,6 +5304,7 @@ ALIGN_TOP
 getDisableAnimation
 com.google.android.gms.ads.formats.Na...
 gammaMinus
+Prof
 firebase_sessions_cache_updated_time
 FROM_BACKEND
 B3EEABB8EE11C2BE770B684D95219ECB
@@ -16160,6 +16163,7 @@ NeverEqualPolicy
 androidx.compose.material.DrawerKt$Mo...
 $A$:
 findJvmNameAnnotation
+valueText.text
 Jpop
 BrdcstRcvrCnstrntTrckr
 SIGNALS
@@ -31324,6 +31328,19 @@ Marking drawable:$avd_hide_password__2:2131230722 used because it matches string
 Marking drawable:$avd_show_password__0:2131230723 used because it matches string pool constant $a
 Marking drawable:$avd_show_password__1:2131230724 used because it matches string pool constant $a
 Marking drawable:$avd_show_password__2:2131230725 used because it matches string pool constant $a
+Marking drawable:$ic_forward__0:2131230726 used because it matches string pool constant $i
+Marking drawable:$ic_glass_change__0:2131230727 used because it matches string pool constant $i
+Marking drawable:$ic_launcher_foreground__0:2131230728 used because it matches string pool constant $i
+Marking drawable:$ic_premium__0:2131230729 used because it matches string pool constant $i
+Marking drawable:$ic_premium__1:2131230730 used because it matches string pool constant $i
+Marking drawable:$ic_premium__2:2131230731 used because it matches string pool constant $i
+Marking drawable:$ic_premium__3:2131230732 used because it matches string pool constant $i
+Marking drawable:$ic_premium__4:2131230733 used because it matches string pool constant $i
+Marking drawable:$ic_premiumicon__0:2131230734 used because it matches string pool constant $i
+Marking drawable:$ic_premiumicon__1:2131230735 used because it matches string pool constant $i
+Marking drawable:$ic_premiumicon__2:2131230736 used because it matches string pool constant $i
+Marking drawable:$ic_premiumicon__3:2131230737 used because it matches string pool constant $i
+Marking drawable:$ic_premiumicon__4:2131230738 used because it matches string pool constant $i
 Marking id:back:2131361907 used because it matches string pool constant back
 Marking attr:backHandlingEnabled:2130968655 used because it matches string pool constant back
 Marking attr:background:2130968656 used because it matches string pool constant back
@@ -47037,9 +47054,8 @@ Marking layout:fragment_workout:2131558504 used because it matches string pool c
     @drawable/date_pre
     @dimen/_10sdp
     @dimen/_15sdp
-    @dimen/_1sdp
-    @drawable/next_date
     @dimen/_30sdp
+    @drawable/next_date
     @dimen/_190sdp
 @layout/fragment_workout : reachable=true
     @drawable/bg_main
@@ -64825,4 +64841,4 @@ The root reachable resources are:
  xml:image_share_filepaths:2132148228
 Unused resources are: 
  style:Platform_Widget_AppCompat_Spinner:2132017480
-Resource shrinking did not work (grew from 24737271 to 24753135); using original instead
+Resource shrinking did not work (grew from 14240630 to 14256494); using original instead

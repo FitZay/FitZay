@@ -11,6 +11,7 @@ import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
+import com.fitzay.wheelpicker.WheelPicker;
 import com.fitzay.workouttracker.strengthtraining.R;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.button.MaterialButton;
@@ -120,6 +121,9 @@ public final class ActivityHeightandWeightBinding implements ViewBinding {
   public final TextView tvQuestion;
 
   @NonNull
+  public final WheelPicker userAge;
+
+  @NonNull
   public final TextView valueText;
 
   @NonNull
@@ -146,8 +150,8 @@ public final class ActivityHeightandWeightBinding implements ViewBinding {
       @NonNull View targetweightminusBtn, @NonNull View targetweightplusBtn,
       @NonNull TextView textView29, @NonNull TextView textView33, @NonNull TextView textView35,
       @NonNull TextView textView37, @NonNull TextView textView38, @NonNull MaterialToolbar toolbar,
-      @NonNull TextView tvQuestion, @NonNull TextView valueText, @NonNull TextView weightText,
-      @NonNull View weightminlusBtn, @NonNull View weightplusBtn) {
+      @NonNull TextView tvQuestion, @NonNull WheelPicker userAge, @NonNull TextView valueText,
+      @NonNull TextView weightText, @NonNull View weightminlusBtn, @NonNull View weightplusBtn) {
     this.rootView = rootView;
     this.ageText = ageText;
     this.ageminusBtn = ageminusBtn;
@@ -181,6 +185,7 @@ public final class ActivityHeightandWeightBinding implements ViewBinding {
     this.textView38 = textView38;
     this.toolbar = toolbar;
     this.tvQuestion = tvQuestion;
+    this.userAge = userAge;
     this.valueText = valueText;
     this.weightText = weightText;
     this.weightminlusBtn = weightminlusBtn;
@@ -406,6 +411,12 @@ public final class ActivityHeightandWeightBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.userAge;
+      WheelPicker userAge = ViewBindings.findChildViewById(rootView, id);
+      if (userAge == null) {
+        break missingId;
+      }
+
       id = R.id.value_text;
       TextView valueText = ViewBindings.findChildViewById(rootView, id);
       if (valueText == null) {
@@ -436,7 +447,7 @@ public final class ActivityHeightandWeightBinding implements ViewBinding {
           ftText, heightPlusBtn, heightminusBtn, ivBack, materialCardView15, materialCardView16,
           materialCardView29, materialCardageminusBtn, targetweightText, targetweightminusBtn,
           targetweightplusBtn, textView29, textView33, textView35, textView37, textView38, toolbar,
-          tvQuestion, valueText, weightText, weightminlusBtn, weightplusBtn);
+          tvQuestion, userAge, valueText, weightText, weightminlusBtn, weightplusBtn);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

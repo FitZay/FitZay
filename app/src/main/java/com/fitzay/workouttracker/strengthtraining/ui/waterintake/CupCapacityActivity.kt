@@ -30,22 +30,41 @@ class CupCapacityActivity : AppUtil2() {
 
         binding.cup50.setOnClickListener {
             Component.preference.cupCapacity = 50
+            Component.preference.totalDrink=0
+            Component.preference.currentProgress = 0f
+            Component.preference.saveWater=0f
+            WaterIntakeActivity.counter=0f
             finish()
         }
         binding.cup100.setOnClickListener {
             Component.preference.cupCapacity = 100
+            Component.preference.totalDrink=0
+            Component.preference.currentProgress = 0f
+            Component.preference.saveWater=0f
+            WaterIntakeActivity.counter=0f
             finish()
         }
         binding.cup200.setOnClickListener {
             Component.preference.cupCapacity = 200
+            Component.preference.totalDrink=0
+            Component.preference.currentProgress = 0f
+            Component.preference.saveWater=0f
+            WaterIntakeActivity.counter=0f
             finish()
         }
         binding.cup300.setOnClickListener {
             Component.preference.cupCapacity = 300
+            Component.preference.totalDrink=0
+            Component.preference.currentProgress = 0f
+            Component.preference.saveWater=0f
             finish()
         }
         binding.cup500.setOnClickListener {
             Component.preference.cupCapacity = 500
+            Component.preference.totalDrink=0
+            Component.preference.currentProgress = 0f
+            Component.preference.saveWater=0f
+            WaterIntakeActivity.counter=0f
             finish()
         }
         binding.cupAdd.setOnClickListener { addWater() }
@@ -68,6 +87,9 @@ class CupCapacityActivity : AppUtil2() {
         waterBinding.btnSave.setOnClickListener {
             if (!waterBinding.tvCapacity.text.isEmpty()) {
                 Component.preference.cupCapacity = waterBinding.tvCapacity.text.toString().toInt()
+                Component.preference.totalDrink=0
+                Component.preference.currentProgress = 0f
+                Component.preference.saveWater=0f
                 dialog.dismiss()
                 finishAfterTransition()
             }

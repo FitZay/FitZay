@@ -100,11 +100,37 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
 
+                    <com.fitzay.wheelpicker.WheelPicker
+                        android:id="@+id/userAge"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:fontFamily="@font/poppins"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView29"
+                        app:wheelPickerBgColor="@color/transparent"
+                        app:wheelPickerDefaultSelectedItemPos="5"
+                        app:wheelPickerDividerColor="@android:color/transparent"
+                        app:wheelPickerItemSelectedBgColor="@color/secondary"
+                        app:wheelPickerItemUnselectedBgColor="@color/transparent"
+                        app:wheelPickerItemUnselectedTextColor="#939292"
+                        app:wheelPickerItems="@array/age"
+                        app:wheelPickerItemsTextBold="true"
+                        app:wheelPickerItemsTextItalic="true"
+                        app:wheelPickerItemsTextSize="@dimen/_4sdp"
+                        app:wheelPickerItemsUnselectedTextAlpha="0.7"
+                        app:wheelPickerOrientationVertical="true"
+                        app:wheelPickerScaleDownEnabled="true" />
+
+
                     <TextView
                         android:id="@+id/ageText"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="0"
+                        android:visibility="invisible"
                         android:textColor="@color/white"
                         android:textSize="@dimen/_16sdp"
                         android:textStyle="bold"
@@ -121,16 +147,17 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintVertical_bias="0.6"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/ageText">
+                        app:layout_constraintTop_toTopOf="@id/userAge">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="-"
                             android:layout_marginBottom="@dimen/_2sdp"
-                            android:textAlignment="center"
                             android:elevation="@dimen/_1sdp"
+                            android:text="-"
+                            android:textAlignment="center"
                             android:textColor="@color/white"
                             android:textSize="@dimen/_18sdp"
                             app:layout_constraintBottom_toBottomOf="@+id/ageminusBtn"
@@ -155,17 +182,17 @@
                             app:layout_constraintStart_toStartOf="@+id/ageplusBtn"
                             app:layout_constraintTop_toTopOf="@+id/ageminusBtn" />
 
+
                         <View
                             android:id="@+id/ageminusBtn"
                             android:layout_width="@dimen/_25sdp"
                             android:layout_height="@dimen/_25sdp"
+                            android:layout_marginStart="16dp"
                             android:background="@drawable/roundview"
                             app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toStartOf="@+id/ageplusBtn"
-                            app:layout_constraintHorizontal_bias="0.5"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.0" />
 
                         <View
                             android:id="@+id/ageplusBtn"
@@ -174,9 +201,10 @@
                             android:background="@drawable/roundview"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintHorizontal_bias="0.862"
                             app:layout_constraintStart_toEndOf="@+id/ageminusBtn"
-                            app:layout_constraintTop_toTopOf="parent" />
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.0" />
 
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
