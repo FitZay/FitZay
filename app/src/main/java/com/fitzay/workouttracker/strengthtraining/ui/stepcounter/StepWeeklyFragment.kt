@@ -3,6 +3,8 @@ package com.fitzay.workouttracker.strengthtraining.ui.stepcounter
 import android.annotation.SuppressLint
 import android.graphics.Color
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.util.Log
 import android.view.Gravity
 import android.view.HapticFeedbackConstants
@@ -573,7 +575,6 @@ class StepWeeklyFragment : Fragment() , OnChartValueSelectedListener {
                 binding.sleepChartWeekly.xAxis
             )
 
-
             when(check)
             {
                 "Step"-> tvValue.text = "${value.toInt()} Steps $xAxisLabel"
@@ -582,13 +583,11 @@ class StepWeeklyFragment : Fragment() , OnChartValueSelectedListener {
                 "Time"-> tvValue.text = "${value.toInt()} Time $xAxisLabel"
             }
 
-
-
             val transformer = binding.sleepChartWeekly.getTransformer(binding.sleepChartWeekly.data.getDataSetByIndex(0).axisDependency)
-            val xPos = transformer.getPixelForValues(e.x, e.y).x - tooltipView.width / 2
+            val xPos = (transformer.getPixelForValues(e.x, e.y).x)/1.25f
 
-            // Calculate the Y position for the top center of the graph
-//            val yPos = binding.sleepChart.viewPortHandler.contentHeight()
+
+            Log.i("NEW-tag", "onValueSelected: "+xPos)
 
             val yOffset = 270 // Adjust as needed
             val yPos = binding.sleepChartWeekly.viewPortHandler.contentHeight() - yOffset

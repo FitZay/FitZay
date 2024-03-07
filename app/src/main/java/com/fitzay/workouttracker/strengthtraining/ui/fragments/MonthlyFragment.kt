@@ -491,7 +491,8 @@ class MonthlyFragment : Fragment(),OnChartValueSelectedListener {
 
 
             val transformer = binding.sleepChartMonthly.getTransformer(binding.sleepChartMonthly.data.getDataSetByIndex(0).axisDependency)
-            val xPos = transformer.getPixelForValues(e.x, e.y).x - tooltipView.width / 2
+            val xPos = (transformer.getPixelForValues(e.x, e.y).x)/1.25f
+
 
 
             val yOffset = 80 // Adjust as needed

@@ -409,7 +409,8 @@ class WeeklyFragment : Fragment(), OnChartValueSelectedListener {
             val transformer = binding.sleepChartWeekly.getTransformer(
                 binding.sleepChartWeekly.data.getDataSetByIndex(0).axisDependency
             )
-            val xPos = transformer.getPixelForValues(e.x, e.y).x - tooltipView.width / 2
+            val xPos = (transformer.getPixelForValues(e.x, e.y).x)/1.25f
+
 
             // Calculate the Y position for the top center of the graph
 //            val yPos = binding.sleepChartWeekly.viewPortHandler.contentHeight()
