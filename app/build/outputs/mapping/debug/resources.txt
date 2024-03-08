@@ -530,6 +530,7 @@ Marking id:textView33:2131362758 reachable: referenced from E:\Rafaqat Mehmood\F
 Marking id:textView35:2131362759 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking id:textView37:2131362760 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking id:textView38:2131362761 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
+Marking id:userAge:2131362898 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking id:value_text:2131362902 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking id:weightText:2131362936 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking id:weightminlusBtn:2131362939 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
@@ -597,7 +598,6 @@ Marking string:daily:2131951724 reachable: referenced from E:\Rafaqat Mehmood\Fi
 Marking string:weekly:2131952122 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking string:monthly:2131951879 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking layout:marker_view_line_chart:2131558522 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
-Marking id:userAge:2131362898 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking layout:activity_asking_age:2131558428 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking id:fragmentContainer:2131362177 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
 Marking id:clDailyMotivation:2131362004 reachable: referenced from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\intermediates\dex\debug\minifyDebugWithR8\classes.dex
@@ -1978,6 +1978,7 @@ getOnDragStopped
 hue2rgb
 numbers
 isReturnTypeMoreSpecific
+DrawableDelegate
 ACTION_CANCEL_WORK
 getInType
 clickToExpandAllowed
@@ -2308,6 +2309,7 @@ typeAliasExpansion
 BM
 BN
 Chip
+VectorDrawableCompat
 BO
 C1
 BQ
@@ -3690,6 +3692,7 @@ manual_install
 pn
 sourceUnit
 pp
+valueTo
 region.bounds
 commitCorrection
 pt
@@ -4793,6 +4796,7 @@ Dream
 classProto.constructorList
 Freestyle
 java.vendor.url
+propertyValuesHolder
 _absentArguments
 layoutChildren$ui_release
 migrationStartAndEndVersions
@@ -5153,8 +5157,8 @@ setList
 alarmSnoozeTime
 functionDescriptor
 jvmType.primitiveType
-oldest
 propertyName
+oldest
 getModuleData
 WorkProgress
 rowIndex
@@ -5611,6 +5615,7 @@ _clockTickColor$delegate
 androidx.compose.material.SwipeableSt...
 custom_close
 location_id
+addLikelySubtags
 number
 getCaller
 newPending
@@ -5734,6 +5739,7 @@ gads:safe_browsing:api_key
 GIONEE_WBL5708
 propagated.returnType
 ERAS
+OP_POST_NOTIFICATION
 sendBroadcast
 getMutableIterator
 registerWebSource
@@ -5894,7 +5900,6 @@ ConstraintSet
 getTouchY
 defaultElevation
 sync
-$counter$delegate
 setElementLazy
 FULL
 BOTTOM_UP
@@ -7863,6 +7868,7 @@ millis
 getYAxisLabel
 UNDISPATCHED
 emitter
+objectAnimator
 LambdaLast
 UNRESOLVED_DECLARATION
 getSliderWidth
@@ -7927,6 +7933,7 @@ CLOCK_HOUR_OF_DAY
 patch
 positionInRoot
 sizes
+valueType
 $this$connect
 migrationNotRequiredFrom
 height
@@ -8207,6 +8214,7 @@ noBackupDirectory
 androidx.core.view.inputmethod.Editor...
 kotlin/text/StringsKt___StringsKt
 statistic_name
+AnimatedVDCompat
 parent_ad_config
 LTE
 requestUptimeMs
@@ -9424,6 +9432,7 @@ correctPrev
 Mon
 View
 Dispatchers.Main.immediate
+valueFrom
 invalidatedTablesIds
 enqueue
 completed_requests
@@ -9650,6 +9659,7 @@ optional
 com.google.android.gms.ads.internal.m...
 gads:content_vertical_fingerprint_bits
 ad_event_id
+keyframe
 currentValue$delegate
 app_last_background_time_ms
 mapNotNull
@@ -9856,6 +9866,7 @@ getCollectToFun$kotlinx_coroutines_core
 httpTimeoutMillis
 bindDouble
 requireIndexInRange
+ICUCompat
 com.google.android.c2dm.intent.RECEIVE
 Phantom6
 createRootScopeDefinition$koin_core
@@ -10097,6 +10108,7 @@ gads:get_request_signals_cld:enabled
 _closeCause
 .vtt
 createProgram
+AvdcInflateDelegate
 gads:pause_time_update_when_video_com...
 onRewardedAdClosed
 CctTransportBackend
@@ -10364,6 +10376,7 @@ setShadowElevation
 getValueClassPropertyType
 cancellation
 originalTimeoutMillis
+interpolator
 requestLayout
 isAntiAlias
 androidx/compose/ui/graphics/colorspa...
@@ -10590,6 +10603,7 @@ EmojiCompat.MetadataRepo.create
 layout/activity_sleep_summary_0
 TransitionAnimationState
 gads:afs:csa:experiment_id
+AsldcInflateDelegate
 onClick
 instance
 setGraphicsDensity$ui_release
@@ -12359,6 +12373,7 @@ getMainAxisMax
 _scopes.values
 get_source$annotations
 extra_time_goal
+libcore.icu.ICU
 ScrollBy
 Screen
 /ByteArray
@@ -12415,6 +12430,7 @@ _typeParameters
 Infinite
 doneComposing
 tel
+setBase
 request_info_keys
 SDK
 com.google.firebase.common.prefs:
@@ -12480,6 +12496,7 @@ getSessionIndex
 val$foregroundFuture
 resolve
 setSliderRangeGradientStartRes
+propertyXName
 mergedReadObserver
 isAnonymousFunction
 click_urls
@@ -14164,6 +14181,7 @@ google.afma.config.fetchAppSettings
 getBottomBorder
 dialogInterface
 getEnd$annotations
+startOffset
 includeReplacedSemantics
 mediaview_graphics_matrix
 getFinishRequested
@@ -15356,6 +15374,7 @@ TypefaceCompatApi24Impl
 getByteType
 PRETTY
 toWrap
+0_resource_name_obfuscated
 Unreachable
 RewardedAdLoader.onFailure
 onFrame
@@ -15557,6 +15576,7 @@ stopTrackingTable
 setRemoveOnCancelPolicy
 subList
 pool_key
+checkOpNoThrow
 HMACSHA384
 getMinDimension$annotations
 onInvalidateRipple
@@ -16335,6 +16355,7 @@ getParentLayoutDirection
 isSetOrNullableSet
 fitAdTotal
 setClipToScreenEnabled
+getMaxAvailableHeight
 Pair
 native_media_orientation
 DEVELOPER
@@ -17144,6 +17165,7 @@ realValueParams
 vectorSize
 personFamilyName
 coroutines
+VdcInflateDelegate
 MainContent
 ZIP
 adapter_init_started
@@ -17160,6 +17182,7 @@ layout_constraintEnd_toStartOf
 allocateList
 createEnumValueOfMethod
 NO_UNSUPPORTED_DRM
+propertyYName
 finishComposingText
 e_id
 InvalidNullConversion
@@ -19538,6 +19561,7 @@ androidx.compose.foundation.gestures....
 3008
 3007
 sliderRangeGradientEndRes
+counter$delegate
 3006
 walkBottomUp
 3005
@@ -20054,6 +20078,7 @@ velRingCounter
 common_google_play_services_resolutio...
 video/webm
 etWeightInput
+ordering
 setBuiltInsModule
 MAX_VALUE
 shouldBeRegistered
@@ -37149,6 +37174,7 @@ Marking id:skeletonLayout:2131362653 used because it matches string pool constan
 Marking id:skeletonLayout1:2131362654 used because it matches string pool constant skeletonLayout
 Marking id:etWeightInput:2131362147 used because it matches string pool constant etWeightInput
 Marking id:etWeightInput:2131362147 used because it matches string pool constant etWeightInput
+Marking attr:orderingFromXml:2130969494 used because it matches string pool constant ordering
 Marking attr:counterEnabled:2130968932 used because it matches string pool constant counter
 Marking attr:counterMaxLength:2130968933 used because it matches string pool constant counter
 Marking attr:counterOverflowTextAppearance:2130968934 used because it matches string pool constant counter
@@ -45927,6 +45953,12 @@ Marking layout:fragment_workout:2131558504 used because it matches string pool c
     @dimen/_15sdp
     @dimen/_6sdp
     @string/txt_age
+    @dimen/_40sdp
+    @color/secondary
+    @dimen/_4sdp
+    @color/transparent
+    @array/age
+    @font/poppins
     @dimen/_16sdp
     @dimen/_1sdp
     @dimen/_2sdp
@@ -45941,8 +45973,6 @@ Marking layout:fragment_workout:2131558504 used because it matches string pool c
     @dimen/_70sdp
     @color/green
     @dimen/_60sdp
-    @dimen/_40sdp
-    @color/secondary
     @dimen/_3sdp
     @color/ready_color
     @dimen/_50sdp
@@ -64841,4 +64871,4 @@ The root reachable resources are:
  xml:image_share_filepaths:2132148228
 Unused resources are: 
  style:Platform_Widget_AppCompat_Spinner:2132017480
-Resource shrinking did not work (grew from 14240630 to 14256494); using original instead
+Resource shrinking did not work (grew from 14241274 to 14257138); using original instead

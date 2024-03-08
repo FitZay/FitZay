@@ -586,7 +586,6 @@ class StepWeeklyFragment : Fragment() , OnChartValueSelectedListener {
             val transformer = binding.sleepChartWeekly.getTransformer(binding.sleepChartWeekly.data.getDataSetByIndex(0).axisDependency)
             val xPos = (transformer.getPixelForValues(e.x, e.y).x)/1.25f
 
-
             Log.i("NEW-tag", "onValueSelected: "+xPos)
 
             val yOffset = 270 // Adjust as needed

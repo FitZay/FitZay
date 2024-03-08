@@ -44,6 +44,10 @@
         "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\layout\\water_intake_notification_layout.xml"
     },
     {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/activity_heightand_weight.xml",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/activity_heightand_weight.xml"
+    },
+    {
         "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:\\layout\\activity_target_weight.xml",
         "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\layout\\activity_target_weight.xml"
     },
@@ -90,10 +94,6 @@
     {
         "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:\\layout\\activity_first_name.xml",
         "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\layout\\activity_first_name.xml"
-    },
-    {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:/layout/activity_asking_age.xml",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/activity_asking_age.xml"
     },
     {
         "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:\\layout\\activity_personalized_work.xml",

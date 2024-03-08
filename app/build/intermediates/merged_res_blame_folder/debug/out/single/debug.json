@@ -8,40 +8,40 @@
         "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\layout\\text_layout.xml"
     },
     {
-        "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-merged_res-93:\\drawable-ldpi_ic_quote_save_selected.png.flat",
-        "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-pngs-89:\\drawable-ldpi\\ic_quote_save_selected.png"
-    },
-    {
         "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-merged_res-93:\\layout_navigation_header_view.xml.flat",
         "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\layout\\navigation_header_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-merged_res-93:\\drawable-ldpi_ic_quote_save_selected.png.flat",
+        "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-pngs-89:\\drawable-ldpi\\ic_quote_save_selected.png"
     },
     {
         "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-merged_res-93:\\drawable_height_weight_outline.xml.flat",
         "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\drawable\\height_weight_outline.xml"
     },
     {
-        "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-merged_res-93:\\drawable-hdpi_italy__it__1.png.flat",
-        "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-pngs-89:\\drawable-hdpi\\italy__it__1.png"
-    },
-    {
         "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-merged_res-93:\\drawable-xhdpi_arm_index.webp.flat",
         "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\drawable-xhdpi\\arm_index.webp"
     },
     {
-        "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-merged_res-93:\\drawable_ic_not_checked_days.xml.flat",
-        "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\drawable\\ic_not_checked_days.xml"
+        "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-merged_res-93:\\drawable-hdpi_italy__it__1.png.flat",
+        "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-pngs-89:\\drawable-hdpi\\italy__it__1.png"
     },
     {
-        "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-merged_res-93:\\drawable_ic_step_cal_white.xml.flat",
-        "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\drawable\\ic_step_cal_white.xml"
+        "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-merged_res-93:\\drawable_to_easy_dim.xml.flat",
+        "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\drawable\\to_easy_dim.xml"
     },
     {
         "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-merged_res-93:\\drawable-ldpi_absbeginnercircular.webp.flat",
         "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\drawable-ldpi\\absbeginnercircular.webp"
     },
     {
-        "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-merged_res-93:\\drawable_to_easy_dim.xml.flat",
-        "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\drawable\\to_easy_dim.xml"
+        "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-merged_res-93:\\drawable_ic_step_cal_white.xml.flat",
+        "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\drawable\\ic_step_cal_white.xml"
+    },
+    {
+        "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-merged_res-93:\\drawable_ic_not_checked_days.xml.flat",
+        "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\drawable\\ic_not_checked_days.xml"
     },
     {
         "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-merged_res-93:\\layout_fragment_step_monthly.xml.flat",
@@ -52,16 +52,16 @@
         "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-merged_res-93:\\drawable-ldpi_arm_index.webp.flat",
-        "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\drawable-ldpi\\arm_index.webp"
+        "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-merged_res-93:\\drawable-xxhdpi_lower_body.webp.flat",
+        "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\drawable-xxhdpi\\lower_body.webp"
     },
     {
         "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-merged_res-93:\\font_bebas_neue.ttf.flat",
         "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\font\\bebas_neue.ttf"
     },
     {
-        "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-merged_res-93:\\drawable-xxhdpi_lower_body.webp.flat",
-        "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\drawable-xxhdpi\\lower_body.webp"
+        "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-merged_res-93:\\drawable-ldpi_arm_index.webp.flat",
+        "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\drawable-ldpi\\arm_index.webp"
     },
     {
         "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-merged_res-93:\\drawable-hdpi_ic_quote_copy.png.flat",
@@ -136,12 +136,12 @@
         "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\drawable\\ic_moon_white.xml"
     },
     {
-        "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-merged_res-93:\\drawable-ldpi_parts_focus.webp.flat",
-        "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\drawable-ldpi\\parts_focus.webp"
-    },
-    {
         "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-merged_res-93:\\drawable-xxhdpi_italy__it__1.png.flat",
         "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-pngs-89:\\drawable-xxhdpi\\italy__it__1.png"
+    },
+    {
+        "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-merged_res-93:\\drawable-ldpi_parts_focus.webp.flat",
+        "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\drawable-ldpi\\parts_focus.webp"
     },
     {
         "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-merged_res-93:\\drawable_baseline_keyboard_arrow_right_24.xml.flat",
@@ -336,12 +336,12 @@
         "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\mipmap-hdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-merged_res-93:\\drawable-anydpi-v24_water_cup_500_ml.xml.flat",
-        "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-pngs-89:\\drawable-anydpi-v24\\water_cup_500_ml.xml"
-    },
-    {
         "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-merged_res-93:\\drawable-mdpi_shoulder_index.webp.flat",
         "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\drawable-mdpi\\shoulder_index.webp"
+    },
+    {
+        "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-merged_res-93:\\drawable-anydpi-v24_water_cup_500_ml.xml.flat",
+        "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-pngs-89:\\drawable-anydpi-v24\\water_cup_500_ml.xml"
     },
     {
         "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-merged_res-93:\\drawable_bg_premiumbtn.xml.flat",
@@ -352,12 +352,12 @@
         "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-pngs-89:\\drawable-xhdpi\\water_cup_500_ml.png"
     },
     {
-        "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-merged_res-93:\\drawable_ic_menu_rate_us.xml.flat",
-        "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\drawable\\ic_menu_rate_us.xml"
-    },
-    {
         "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-merged_res-93:\\mipmap-xhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-merged_res-93:\\drawable_ic_menu_rate_us.xml.flat",
+        "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\drawable\\ic_menu_rate_us.xml"
     },
     {
         "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-merged_res-93:\\drawable-mdpi_ic_premium.png.flat",
@@ -408,12 +408,12 @@
         "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\drawable\\ic_nav_share_app.xml"
     },
     {
-        "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-merged_res-93:\\mipmap-xxhdpi_ic_launcher_background.png.flat",
-        "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\mipmap-xxhdpi\\ic_launcher_background.png"
-    },
-    {
         "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-merged_res-93:\\drawable_bg_plan_menu.xml.flat",
         "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\drawable\\bg_plan_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-merged_res-93:\\mipmap-xxhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\mipmap-xxhdpi\\ic_launcher_background.png"
     },
     {
         "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-merged_res-93:\\drawable_ic_close.xml.flat",
@@ -432,12 +432,12 @@
         "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\drawable\\bg_options.xml"
     },
     {
-        "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-merged_res-93:\\drawable-xxhdpi_water_cup_100_ml.png.flat",
-        "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-pngs-89:\\drawable-xxhdpi\\water_cup_100_ml.png"
-    },
-    {
         "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-merged_res-93:\\drawable_alarm_sound_new_icon.xml.flat",
         "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\drawable\\alarm_sound_new_icon.xml"
+    },
+    {
+        "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-merged_res-93:\\drawable-xxhdpi_water_cup_100_ml.png.flat",
+        "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-pngs-89:\\drawable-xxhdpi\\water_cup_100_ml.png"
     },
     {
         "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-merged_res-93:\\layout_activity_heightand_weight.xml.flat",
@@ -460,16 +460,16 @@
         "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\layout\\activity_display_quote.xml"
     },
     {
-        "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-merged_res-93:\\drawable_custom_thumb_on.xml.flat",
-        "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\drawable\\custom_thumb_on.xml"
+        "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-merged_res-93:\\layout_marker_view_line_chart.xml.flat",
+        "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\layout\\marker_view_line_chart.xml"
     },
     {
         "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-merged_res-93:\\drawable-xxhdpi_japanese.png.flat",
         "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-pngs-89:\\drawable-xxhdpi\\japanese.png"
     },
     {
-        "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-merged_res-93:\\layout_marker_view_line_chart.xml.flat",
-        "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\layout\\marker_view_line_chart.xml"
+        "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-merged_res-93:\\drawable_custom_thumb_on.xml.flat",
+        "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\drawable\\custom_thumb_on.xml"
     },
     {
         "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-merged_res-93:\\drawable_bg_square.xml.flat",
@@ -662,10 +662,6 @@
     {
         "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-merged_res-93:\\drawable_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\drawable\\ic_launcher_round.webp"
-    },
-    {
-        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/layout_activity_asking_age.xml.flat",
-        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/activity_asking_age.xml"
     },
     {
         "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-merged_res-93:\\drawable_baseline_lock_24.xml.flat",
@@ -906,6 +902,10 @@
     {
         "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-merged_res-93:\\drawable-anydpi-v24_ic_drop_down.xml.flat",
         "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-pngs-89:\\drawable-anydpi-v24\\ic_drop_down.xml"
+    },
+    {
+        "merged": "com.fitzay.workouttracker.strengthtraining.app-merged_res-93:/layout_activity_heightand_weight.xml.flat",
+        "source": "com.fitzay.workouttracker.strengthtraining.app-main-95:/layout/activity_heightand_weight.xml"
     },
     {
         "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-merged_res-93:\\drawable_ic_nav_rate_us.xml.flat",

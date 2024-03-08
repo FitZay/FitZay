@@ -23,8 +23,8 @@ class HeightandWeightAct : AppUtil2() {
 
     private lateinit var binding: ActivityHeightandWeightBinding
     private var age = 5
-    private var weight = 0
-    private var targetweight = 0
+    private var weight = 25
+    private var targetweight = 50
     private var height = 0
 
     var check=true
@@ -109,27 +109,45 @@ class HeightandWeightAct : AppUtil2() {
 
 
             weightplusBtn?.setOnClickListener {
-                weight++
-                binding.weightText?.text = weight.toString()
+//                weight++
+//                binding.weightText?.text = weight.toString()
+
+                weight=weightWh.getCurrentSelectedItemPosition()
+                weightWh.setSelectedItemPosition(weight + 1)
+                weight=weightWh.getCurrentSelectedItem()!!.toInt()
             }
 
             weightminlusBtn.setOnClickListener {
+//                if (weight > 0) {
+//                    weight--
+//                    weightText?.text = weight.toString()
+//                }
+                weight = weightWh.getCurrentSelectedItemPosition()
                 if (weight > 0) {
-                    weight--
-                    weightText?.text = weight.toString()
+                    weightWh.setSelectedItemPosition(weight - 1)
+                    weight = weightWh.getCurrentSelectedItem()!!.toInt()
                 }
             }
 
 
             targetweightplusBtn?.setOnClickListener {
-                targetweight++
-                targetweightText.text = targetweight.toString()
+//                targetweight++
+//                targetweightText.text = targetweight.toString()
+
+                targetweight=targetWeight.getCurrentSelectedItemPosition()
+                targetWeight.setSelectedItemPosition(targetweight + 1)
+                targetweight=targetWeight.getCurrentSelectedItem()!!.toInt()
             }
 
             targetweightminusBtn?.setOnClickListener {
+//                if (targetweight > 0) {
+//                    targetweight--
+//                    targetweightText.text = targetweight.toString()
+//                }
+                targetweight = targetWeight.getCurrentSelectedItemPosition()
                 if (targetweight > 0) {
-                    targetweight--
-                    targetweightText.text = targetweight.toString()
+                    targetWeight.setSelectedItemPosition(targetweight - 1)
+                    targetweight = targetWeight.getCurrentSelectedItem()!!.toInt()
                 }
             }
 

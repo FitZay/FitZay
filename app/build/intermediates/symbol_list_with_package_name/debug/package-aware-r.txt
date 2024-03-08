@@ -89,6 +89,7 @@ array com_google_android_gms_fonts_certs
 array com_google_android_gms_fonts_certs_dev
 array com_google_android_gms_fonts_certs_prod
 array preloaded_fonts
+array weight
 attr SharedValue
 attr SharedValueId
 attr SkeletonView
@@ -5238,6 +5239,7 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
+id target_weight
 id targetweightText
 id targetweightminusBtn
 id targetweightplusBtn
@@ -5456,6 +5458,7 @@ id weightH
 id weightText
 id weightToggle
 id weightValue
+id weight_wh
 id weightminlusBtn
 id weightplusBtn
 id west

@@ -154,7 +154,7 @@ class FitnessPreference {
 
 
     var cupCapacity: Int
-        get() = prefernece.getInt(CUP_CAPACITY, 0)
+        get() = prefernece.getInt(CUP_CAPACITY, 100)
         set(cupCapacity) {
             editor.putInt(CUP_CAPACITY, cupCapacity)
             editor.apply()
@@ -168,7 +168,7 @@ class FitnessPreference {
         }
 
     var currentProgress: Float
-        get() = prefernece.getFloat(CURRENT_PROGRESS, 0.1f)
+        get() = prefernece.getFloat(CURRENT_PROGRESS, 0f)
         set(currentProgress) {
             editor.putFloat(CURRENT_PROGRESS, currentProgress)
             editor.apply()

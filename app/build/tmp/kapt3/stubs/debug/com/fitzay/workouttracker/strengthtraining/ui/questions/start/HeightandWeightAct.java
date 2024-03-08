@@ -6,8 +6,8 @@ import java.lang.System;
 public final class HeightandWeightAct extends com.fitzay.workouttracker.strengthtraining.core.utils.AppUtil2 {
     private com.fitzay.workouttracker.strengthtraining.databinding.ActivityHeightandWeightBinding binding;
     private int age = 5;
-    private int weight = 0;
-    private int targetweight = 0;
+    private int weight = 25;
+    private int targetweight = 50;
     private int height = 0;
     private boolean check = true;
     private boolean check2 = true;

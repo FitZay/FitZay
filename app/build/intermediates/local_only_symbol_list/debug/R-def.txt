@@ -12,6 +12,7 @@ array com_google_android_gms_fonts_certs
 array com_google_android_gms_fonts_certs_dev
 array com_google_android_gms_fonts_certs_prod
 array preloaded_fonts
+array weight
 color bg_navigation
 color black
 color bottom_nav_bg
@@ -691,6 +692,7 @@ id steps
 id submitBtn
 id swOnOff
 id swOnOff2
+id target_weight
 id targetweightText
 id targetweightminusBtn
 id targetweightplusBtn
@@ -864,6 +866,7 @@ id weightH
 id weightText
 id weightToggle
 id weightValue
+id weight_wh
 id weightminlusBtn
 id weightplusBtn
 id wishIt
