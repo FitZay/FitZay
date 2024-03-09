@@ -23,6 +23,7 @@ color grey
 color lightgrey
 color on_primary
 color outline_color
+color pink
 color primary
 color ready_color
 color ready_dark

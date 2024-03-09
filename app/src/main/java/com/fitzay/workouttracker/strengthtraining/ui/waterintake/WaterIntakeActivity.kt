@@ -197,6 +197,8 @@ class WaterIntakeActivity : AppCompatActivity() {
                 Component.preference.currentProgress = counter
                 Component.preference.saveWater=counter
                 binding.txtDrink.setText(counter.toInt().toString())
+                Component.preference.totalDrink=0
+
             }
 
 

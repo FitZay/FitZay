@@ -411,7 +411,7 @@
             android:layout_width="@dimen/_60sdp"
             android:layout_height="@dimen/_60sdp"
             android:indeterminate="false"
-            android:progress="50"
+            android:progress="0"
             app:indicatorColor="@color/white"
             app:indicatorSize="@dimen/_60sdp"
             app:layout_constraintBottom_toBottomOf="parent"

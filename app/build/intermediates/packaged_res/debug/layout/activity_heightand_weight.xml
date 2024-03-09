@@ -116,6 +116,7 @@
                         app:wheelPickerItemSelectedBgColor="@color/secondary"
                         app:wheelPickerItemUnselectedBgColor="@color/transparent"
                         app:wheelPickerItemUnselectedTextColor="#939292"
+
                         app:wheelPickerItems="@array/age"
                         app:wheelPickerItemsTextBold="true"
                         app:wheelPickerItemsTextItalic="true"

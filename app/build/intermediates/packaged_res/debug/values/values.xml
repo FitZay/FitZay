@@ -614,6 +614,7 @@
     <color name="lightgrey">#656467</color>
     <color name="on_primary">#18171E</color>
     <color name="outline_color">#24242c</color>
+    <color name="pink">#ff00e6</color>
     <color name="primary">#2A2931</color>
     <color name="ready_color">#D8FF37</color>
     <color name="ready_dark">#474F22</color>
@@ -850,7 +851,7 @@
     <string name="today_">Today</string>
     <string name="tomorrow">Tomorrow Morning</string>
     <string name="tonight">Tonight</string>
-    <string name="too_easy">Too hard</string>
+    <string name="too_easy">Too Easy</string>
     <string name="too_hard">Too hard</string>
     <string name="tv">Tv</string>
     <string name="txt_15_29">15–29</string>

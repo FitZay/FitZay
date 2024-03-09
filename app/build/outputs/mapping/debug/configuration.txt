@@ -177,6 +177,7 @@
 -keep class com.google.android.gms.ads.AdActivity { <init>(); }
 -keep class com.google.android.gms.ads.AdService { <init>(); }
 -keep class com.google.android.gms.ads.MobileAdsInitProvider { <init>(); }
+-keep class com.google.android.gms.ads.NotificationHandlerActivity { <init>(); }
 -keep class com.google.android.gms.ads.OutOfContextTestingActivity { <init>(); }
 -keep class com.google.android.gms.common.api.GoogleApiActivity { <init>(); }
 -keep class com.google.android.gms.measurement.AppMeasurementJobService { <init>(); }
@@ -395,7 +396,7 @@
 
 
 # End of content from C:\Users\Technest - Accounts\.gradle\caches\transforms-3\67941510f0d2af6cfaf0aadce02b42e2\transformed\material-1.10.0\proguard.txt
-# The proguard configuration file for the following section is C:\Users\Technest - Accounts\.gradle\caches\transforms-3\6fc4fb8e5d4addce77a8587535dd0e0b\transformed\jetified-play-services-ads-22.5.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Technest - Accounts\.gradle\caches\transforms-3\20f56cbfe2f608bcd3727fa1b9008877\transformed\jetified-play-services-ads-23.0.0\proguard.txt
 -keep public class com.google.android.gms.ads.internal.ClientApi {
   <init>();
 }
@@ -463,7 +464,7 @@
 # We keep all fields for every generated proto file as the runtime uses
 # reflection over them that ProGuard cannot detect. Without this keep
 # rule, fields may be removed that would cause runtime failures.
--keepclassmembers class * extends com.google.android.gms.internal.ads.zzgtz {
+-keepclassmembers class * extends com.google.android.gms.internal.ads.zzgzu {
   <fields>;
 }
 
@@ -471,8 +472,8 @@
 -dontwarn com.google.android.gms.ads.internal.util.zzy
 
 
-# End of content from C:\Users\Technest - Accounts\.gradle\caches\transforms-3\6fc4fb8e5d4addce77a8587535dd0e0b\transformed\jetified-play-services-ads-22.5.0\proguard.txt
-# The proguard configuration file for the following section is C:\Users\Technest - Accounts\.gradle\caches\transforms-3\e2d4d3c3093e2fd43ae9a352414a6dd1\transformed\jetified-play-services-ads-lite-22.5.0\proguard.txt
+# End of content from C:\Users\Technest - Accounts\.gradle\caches\transforms-3\20f56cbfe2f608bcd3727fa1b9008877\transformed\jetified-play-services-ads-23.0.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Technest - Accounts\.gradle\caches\transforms-3\28e25ee58150fb92ca1b78536980527b\transformed\jetified-play-services-ads-lite-23.0.0\proguard.txt
 # Keep implementations of the AdMob mediation adapter interfaces. Adapters for
 # third party ad networks implement these interfaces and are invoked by the
 # AdMob SDK via reflection.
@@ -522,11 +523,11 @@
 # We keep all fields for every generated proto file as the runtime uses
 # reflection over them that ProGuard cannot detect. Without this keep
 # rule, fields may be removed that would cause runtime failures.
--keepclassmembers class * extends com.google.android.gms.internal.ads.zzgtz {
+-keepclassmembers class * extends com.google.android.gms.internal.ads.zzgzu {
   <fields>;
 }
 
-# End of content from C:\Users\Technest - Accounts\.gradle\caches\transforms-3\e2d4d3c3093e2fd43ae9a352414a6dd1\transformed\jetified-play-services-ads-lite-22.5.0\proguard.txt
+# End of content from C:\Users\Technest - Accounts\.gradle\caches\transforms-3\28e25ee58150fb92ca1b78536980527b\transformed\jetified-play-services-ads-lite-23.0.0\proguard.txt
 # The proguard configuration file for the following section is C:\Users\Technest - Accounts\.gradle\caches\transforms-3\2e1ba98f89524df4d38adb9ef7ab0151\transformed\work-runtime-2.7.0\proguard.txt
 -keep class * extends androidx.work.Worker
 -keep class * extends androidx.work.InputMerger
