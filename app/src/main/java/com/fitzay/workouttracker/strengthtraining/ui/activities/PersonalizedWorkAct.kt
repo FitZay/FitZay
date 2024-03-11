@@ -85,7 +85,7 @@ class PersonalizedWorkAct : AppUtil2() {
                     }
                 }
                 Component.preference.isIntro = true
-            },2000)
+            },7000)
 
         }
     }

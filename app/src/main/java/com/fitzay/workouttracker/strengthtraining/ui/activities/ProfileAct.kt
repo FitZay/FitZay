@@ -21,6 +21,8 @@ import android.view.Window
 import android.widget.FrameLayout
 import android.widget.ImageView
 import android.widget.LinearLayout
+import android.widget.RadioButton
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.app.ActivityCompat
@@ -82,12 +84,18 @@ class ProfileAct : AppUtil2() {
                 binding?.linearLayoutAds?.visibility = View.GONE
             }
 
+
+            ft.isChecked=true
+            kg.isChecked=true
+            tvGender.setOnClickListener {
+                showMaleDialog()
+            }
             saveItems.setOnClickListener {
                 when {
 
-                    binding.etGenderInput.text.isNullOrEmpty() -> {
-                        binding.etGenderInput.error = "Gender Must not be empty"
-                    }
+//                    binding.etGenderInput.text.isNullOrEmpty() -> {
+//                        binding.etGenderInput.error = "Gender Must not be empty"
+//                    }
 
                     binding.etAgeInput.text.isNullOrEmpty() -> {
                         binding.etAgeInput.error = "Age Must not be empty"
@@ -111,7 +119,7 @@ class ProfileAct : AppUtil2() {
                         //binding.saveItems.visibility = View.GONE
                         Component.preference.userName = binding.tvFullName.text.toString()
                         Component.preference.userAge = binding.etAgeInput.text.toString().toInt()
-                        Component.preference.userGender = binding.etGenderInput.text.toString()
+//                        Component.preference.userGender = binding.etGenderInput.text.toString()
                         Component.preference.userHeight = binding.etHeightInput.text.toString().toInt()
                         Component.preference.userWeight = binding.etWeightInput.text.toString().toInt()
                         Component.preference.userTargetWight = binding.etTargetWeightInput.text.toString().toInt()
@@ -123,9 +131,9 @@ class ProfileAct : AppUtil2() {
             btnNext.setOnClickListener {
                 when {
 
-                    binding.etGenderInput.text.isNullOrEmpty() -> {
-                        binding.etGenderInput.error = "Gender Must not be empty"
-                    }
+//                    binding.etGenderInput.text.isNullOrEmpty() -> {
+//                        binding.etGenderInput.error = "Gender Must not be empty"
+//                    }
 
                     binding.etAgeInput.text.isNullOrEmpty() -> {
                         binding.etAgeInput.error = "Age Must not be empty"
@@ -146,7 +154,7 @@ class ProfileAct : AppUtil2() {
                     else -> {
                         Component.preference.userName = binding.tvFullName.text.toString()
                         Component.preference.userAge = binding.etAgeInput.text.toString().toInt()
-                        Component.preference.userGender = binding.etGenderInput.text.toString()
+//                        Component.preference.userGender = binding.etGenderInput.text.toString()
                         Component.preference.userHeight =
                             binding.etHeightInput.text.toString().toInt()
                         Component.preference.userWeight =
@@ -263,7 +271,38 @@ class ProfileAct : AppUtil2() {
 
 
 
+    private fun showMaleDialog() {
+        val dialogBuilder = AlertDialog.Builder(this@ProfileAct)
+        val inflater = layoutInflater
+        val dialogView = inflater.inflate(R.layout.male_female_dialog, null)
+        dialogBuilder.setView(dialogView)
 
+        val alertDialog = dialogBuilder.create()
+        alertDialog.window?.setBackgroundDrawableResource(android.R.color.transparent)
+
+        dialogView.findViewById<TextView>(R.id.cancelBtn).setOnClickListener {
+            alertDialog.dismiss()
+        }
+        dialogView.findViewById<TextView>(R.id.quitBtn).setOnClickListener {
+            val selectedGender = if (dialogView.findViewById<RadioButton>(R.id.radioButtonMale).isChecked) {
+                "Male"
+                binding.tvGender.setText("Male")
+                Component.preference.userGender = binding.tvGender.text.toString()
+
+            } else {
+                "Female"
+                binding.tvGender.setText("Female")
+                Component.preference.userGender = binding.tvGender.text.toString()
+
+
+            }
+            alertDialog.dismiss()
+        }
+
+
+
+        alertDialog.show()
+    }
 
     fun disableBtn() {
         binding.apply {

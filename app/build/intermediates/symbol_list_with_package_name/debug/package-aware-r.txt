@@ -3121,6 +3121,8 @@ dimen abc_text_size_subhead_material
 dimen abc_text_size_subtitle_material_toolbar
 dimen abc_text_size_title_material
 dimen abc_text_size_title_material_toolbar
+dimen activity_horizontal_margin
+dimen activity_vertical_margin
 dimen appcompat_dialog_background_inset
 dimen browser_actions_context_menu_max_width
 dimen browser_actions_context_menu_min_padding
@@ -3846,10 +3848,14 @@ dimen preference_icon_minWidth
 dimen preference_seekbar_padding_horizontal
 dimen preference_seekbar_padding_vertical
 dimen preference_seekbar_value_minWidth
+dimen scale_line_large
+dimen scale_line_medium
+dimen scale_line_small
 dimen subtitle_corner_radius
 dimen subtitle_outline_width
 dimen subtitle_shadow_offset
 dimen subtitle_shadow_radius
+dimen text_start_point
 dimen tooltip_corner_radius
 dimen tooltip_horizontal_padding
 dimen tooltip_margin
@@ -3858,6 +3864,7 @@ dimen tooltip_precise_anchor_threshold
 dimen tooltip_vertical_padding
 dimen tooltip_y_offset_non_touch
 dimen tooltip_y_offset_touch
+dimen txt_size
 dimen wp_divider_height
 dimen wp_h_padding
 dimen wp_item_height
@@ -3865,6 +3872,7 @@ dimen wp_item_margin
 dimen wp_min_height
 dimen wp_txt_size
 dimen wp_v_padding
+dimen yellow_line_stroke_width
 drawable abc_ab_share_pack_mtrl_alpha
 drawable abc_action_bar_item_background_material
 drawable abc_btn_borderless_material
@@ -4064,6 +4072,7 @@ drawable french
 drawable full_body
 drawable full_body_workout
 drawable full_bodyexit
+drawable gender_box
 drawable gnt_outline_shape
 drawable gnt_rounded_corners_shape
 drawable gnt_rounded_corners_shape_white
@@ -5010,6 +5019,8 @@ id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
 id my_composable
+id my_scale_cm
+id my_scale_ft
 id native_ad_view
 id nav_consent_form
 id nav_how_to_use
@@ -5107,6 +5118,9 @@ id progress_horizontal
 id quitBtn
 id radio
 id radioBtnWeekly
+id radioButtonFemale
+id radioButtonMale
+id radioGroupGender
 id radioMonthly
 id radioYearly
 id rating_bar
@@ -5416,6 +5430,8 @@ id txtTwelve
 id txtWakeSleep
 id txtWednesday
 id txtWeekly
+id txt_height_cm
+id txt_height_ft
 id txtmin
 id typeName
 id unchecked
@@ -5695,6 +5711,7 @@ layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
 layout m3_auto_complete_simple_item
 layout m3_side_sheet_dialog
+layout male_female_dialog
 layout marker_view_line_chart
 layout material_chip_input_combo
 layout material_clock_display

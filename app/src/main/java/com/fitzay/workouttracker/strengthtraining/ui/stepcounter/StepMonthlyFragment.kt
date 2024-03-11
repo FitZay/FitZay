@@ -215,6 +215,7 @@ class StepMonthlyFragment : Fragment(), OnChartValueSelectedListener {
         return binding.root
     }
     private fun setBarData(i:Int) {
+        resetGraph()
         binding.apply {
             CoroutineScope(Dispatchers.IO).launch {
                 val currentMonth = Calendar.getInstance().get(Calendar.MONTH) + 1 // Adding 1 because months are zero-based
@@ -462,6 +463,7 @@ class StepMonthlyFragment : Fragment(), OnChartValueSelectedListener {
         textView.text = currentMonth
 
         binding.apply {
+            resetGraph()
             CoroutineScope(Dispatchers.IO).launch {
                 //  val currentMonth = Calendar.getInstance().get(Calendar.MONTH) + 1 // Adding 1 because months are zero-based
 
@@ -694,9 +696,18 @@ class StepMonthlyFragment : Fragment(), OnChartValueSelectedListener {
             when(check)
             {
                 "Step"-> tvValue.text = "${value.toInt()} Steps $xAxisLabel"
-                "Distance"-> tvValue.text = "${value.toInt()} Distance $xAxisLabel"
+                "Distance"-> tvValue.text = "${value.toInt()} Miles $xAxisLabel"
                 "Calories"-> tvValue.text = "${value.toInt()} Calories $xAxisLabel"
-                "Time"-> tvValue.text = "${value.toInt()} Time $xAxisLabel"
+                "Time"->
+                {
+                    val hours = value.toInt() / 3600
+                    val minutes = (value.toInt() % 3600) / 60
+                    val seconds = value.toInt() % 60
+                    val reconstructedTime = String.format("%02d Hr %02d Min %02d Sec", hours, minutes, seconds)
+                    tvValue.text = "${reconstructedTime}"
+
+
+                }
             }
 
 
@@ -742,6 +753,16 @@ class StepMonthlyFragment : Fragment(), OnChartValueSelectedListener {
             months[month - 1]
         } else {
             "Invalid month number"
+        }
+    }
+
+    private fun resetGraph() {
+        binding.sleepChartMonthly.apply {
+            clear()
+            setOnClickListener(null)
+            setOnLongClickListener(null)
+            popupWindow.dismiss()
+            binding.dateLayout.visibility = View.VISIBLE
         }
     }
 }

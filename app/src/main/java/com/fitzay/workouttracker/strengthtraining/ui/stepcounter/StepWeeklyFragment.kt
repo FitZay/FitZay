@@ -173,6 +173,7 @@ class StepWeeklyFragment : Fragment() , OnChartValueSelectedListener {
             }
 
             imgStep.setOnClickListener {
+
                 unSelectSub()
                 imgStep.setBackgroundResource(R.drawable.bg_selected)
                 i=1
@@ -192,6 +193,7 @@ class StepWeeklyFragment : Fragment() , OnChartValueSelectedListener {
 
             }
             binding.imgLocation.setOnClickListener {
+
                 unSelectSub()
                 imgLocation.setBackgroundResource(R.drawable.bg_selected)
                 i=2
@@ -380,6 +382,7 @@ class StepWeeklyFragment : Fragment() , OnChartValueSelectedListener {
     }
 
     private fun setBarData(i:Int,pattern: SimpleDateFormat, txt: TextView,displayAsWeekdays:Boolean) {
+      resetGraph()
         binding.apply {
             CoroutineScope(Dispatchers.IO).launch {
 
@@ -416,6 +419,7 @@ class StepWeeklyFragment : Fragment() , OnChartValueSelectedListener {
                     }
 
                             var barEntriesArrayList = ArrayList<BarEntry>()
+
                             val dateFormat = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
 
 
@@ -460,9 +464,11 @@ class StepWeeklyFragment : Fragment() , OnChartValueSelectedListener {
                                             }
                                         4->
                                             {
-                                            barEntriesArrayList.add(BarEntry(index.toFloat(), dataForDate.time.convertTimeToSeconds().toFloat()))
+                                            barEntriesArrayList.add(BarEntry(index.toFloat(), dataForDate.time!!.convertTimeToSeconds().toFloat()))
                                                 sumOfFinalStrings += dataForDate.time.convertTimeToSeconds()
                                                 avg = sumOfFinalStrings / 7
+
+                                                Log.i(TAG, "setBarData: "+dataForDate.time+"--"+dataForDate.time.convertTimeToSeconds())
                                             }
                                     }
 
@@ -496,7 +502,6 @@ class StepWeeklyFragment : Fragment() , OnChartValueSelectedListener {
 
 
 
-                            Log.i("TAG", "setBarData: " + result.size)
 
                             withContext(Dispatchers.Main) {
 
@@ -575,12 +580,24 @@ class StepWeeklyFragment : Fragment() , OnChartValueSelectedListener {
                 binding.sleepChartWeekly.xAxis
             )
 
+
+
+            Log.i("67895", "onValueSelected: "+value)
             when(check)
             {
                 "Step"-> tvValue.text = "${value.toInt()} Steps $xAxisLabel"
-                "Distance"-> tvValue.text = "${value.toInt()} Distance $xAxisLabel"
+                "Distance"-> tvValue.text = "${value.toInt()} Miles $xAxisLabel"
                 "Calories"-> tvValue.text = "${value.toInt()} Calories $xAxisLabel"
-                "Time"-> tvValue.text = "${value.toInt()} Time $xAxisLabel"
+                "Time"->
+                {
+                    val hours = value.toInt() / 3600
+                    val minutes = (value.toInt() % 3600) / 60
+                    val seconds = value.toInt() % 60
+                    val reconstructedTime = String.format("%02d Hr %02d Min %02d Sec", hours, minutes, seconds)
+                                    tvValue.text = "${reconstructedTime}"
+
+
+                }
             }
 
             val transformer = binding.sleepChartWeekly.getTransformer(binding.sleepChartWeekly.data.getDataSetByIndex(0).axisDependency)
@@ -653,6 +670,16 @@ class StepWeeklyFragment : Fragment() , OnChartValueSelectedListener {
         {
             setBarData(i,SimpleDateFormat("dd-MMM", Locale.getDefault()), txtDate,isCurrentWeek(this@StepWeeklyFragment.calendar))
 
+        }
+    }
+
+    private fun resetGraph() {
+        binding.sleepChartWeekly.apply {
+            clear()
+            setOnClickListener(null)
+            setOnLongClickListener(null)
+            popupWindow.dismiss()
+            binding.dateLayout.visibility = View.VISIBLE
         }
     }
 }

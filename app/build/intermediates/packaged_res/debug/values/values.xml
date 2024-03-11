@@ -628,6 +628,14 @@
     <color name="textcolor">#929191</color>
     <color name="transparent">#00000000</color>
     <color name="white">#FFFFFFFF</color>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="scale_line_large">50dp</dimen>
+    <dimen name="scale_line_medium">25dp</dimen>
+    <dimen name="scale_line_small">10dp</dimen>
+    <dimen name="text_start_point">15sp</dimen>
+    <dimen name="txt_size">0sp</dimen>
+    <dimen name="yellow_line_stroke_width">6dp</dimen>
     <string name="abs">ABC</string>
     <string name="abs_beginner">Abs Beginner</string>
     <string name="abs_core">Abs &amp; Core</string>
@@ -812,7 +820,7 @@
     <string name="profile">Profile</string>
     <string name="project_id" translatable="false">fitzay-88d64</string>
     <string name="purchase_cancel_by_user">Purchase Cancel by user</string>
-    <string name="quit">Quit</string>
+    <string name="quit">QUIT</string>
     <string name="radio_podcast">Radio or podcast</string>
     <string name="rate_us">Rate Us</string>
     <string name="ready_to_go">Ready to go!</string>

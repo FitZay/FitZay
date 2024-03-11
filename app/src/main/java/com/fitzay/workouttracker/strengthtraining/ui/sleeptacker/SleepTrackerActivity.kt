@@ -1620,10 +1620,7 @@ class SleepTrackerActivity : AppUtil2(), ShowRingToneItemClick {
 
             list.add(dayOfWeek)
             storeDays.add(dateL[dayOfWeek])
-            Log.i(
-                "ifffffffffffffffff",
-                "toggleDaySelection: " + dayOfWeek + "=======" + list + "00000" + storeDays
-            )
+
 
             dayView.setBackgroundResource(R.drawable.bg_circle_yellow) // Set selected background
             dayView.setTextColor(
@@ -1633,25 +1630,32 @@ class SleepTrackerActivity : AppUtil2(), ShowRingToneItemClick {
                 )
             ) // Use color resource
         } else {
-            Log.i("ifffffffffffffffff", "toggleDaySelectionelseeeeeeee: " + dayOfWeek)
+
 
             list.remove(dayOfWeek)
             storeDays.remove(dateL[dayOfWeek])
-            dayView.setBackgroundResource(0)
-            if (dayOfWeek == 7) {
+
+            if (dayOfWeek == 6) {
                 dayView.setTextColor(
                     ContextCompat.getColor(
                         this,
                         R.color.red
                     )
                 ) // Use color resource
+                Log.i("ifffffffffffffffff", "toggleDaySelectionelseeeeeeee: " + dayOfWeek)
             }
-            dayView.setTextColor(
-                ContextCompat.getColor(
-                    this,
-                    R.color.tab_not_selected
-                )
-            ) // Use color resource
+            else {
+
+                dayView.setTextColor(
+                    ContextCompat.getColor(
+                        this,
+                        R.color.tab_not_selected
+                    )
+                ) // Use color resource
+                Log.i("ifffffffffffffffff", "-----: " + dayOfWeek)
+            }
+            dayView.setBackgroundResource(0)
+
         }
 
     }

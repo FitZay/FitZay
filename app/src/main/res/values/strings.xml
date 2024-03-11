@@ -293,7 +293,7 @@
     <string name="txt_gender">Gender</string>
     <string name="txt_age">Age</string>
     <string name="txt_height">Height</string>
-    <string name="txt_weight">Weight</string>
+    <string name="txt_weight">Weight (Kg)</string>
     <string name="txt_target_weight">Target weight</string>
     <string name="txt_target_goal">Target goal</string>
     <string name="txt_edit_bed_time">Edit bed time</string>
@@ -338,7 +338,7 @@
     <string name="pm">PM</string>
 
     <string name="ringtone">System RingTone</string>
-    <string name="quit">Quit</string>
+    <string name="quit">QUIT</string>
     <string name="look">Just take a look</string>
     <string name="know">Don\'t know how to do it</string>
 

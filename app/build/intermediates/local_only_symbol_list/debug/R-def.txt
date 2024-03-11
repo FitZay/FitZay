@@ -39,6 +39,14 @@ color textcolor
 color toggle_text_color
 color transparent
 color white
+dimen activity_horizontal_margin
+dimen activity_vertical_margin
+dimen scale_line_large
+dimen scale_line_medium
+dimen scale_line_small
+dimen text_start_point
+dimen txt_size
+dimen yellow_line_stroke_width
 drawable abs_index
 drawable absbeginnercircular
 drawable alarm_new_bg
@@ -119,6 +127,7 @@ drawable french
 drawable full_body
 drawable full_body_workout
 drawable full_bodyexit
+drawable gender_box
 drawable height_weight_outline
 drawable height_weight_selected_box
 drawable ic_ad_video
@@ -618,6 +627,8 @@ id miles
 id monthlytext
 id montlyBtn
 id my_composable
+id my_scale_cm
+id my_scale_ft
 id nav_consent_form
 id nav_how_to_use
 id nav_more_apps
@@ -652,6 +663,9 @@ id progressThree
 id progressTwo
 id quitBtn
 id radioBtnWeekly
+id radioButtonFemale
+id radioButtonMale
+id radioGroupGender
 id radioMonthly
 id radioYearly
 id rbCm
@@ -832,6 +846,8 @@ id txtTwelve
 id txtWakeSleep
 id txtWednesday
 id txtWeekly
+id txt_height_cm
+id txt_height_ft
 id txtmin
 id typeName
 id updateStepGoal
@@ -931,6 +947,7 @@ layout fragment_weekly
 layout fragment_workout
 layout language_show_list
 layout layout_weekdays
+layout male_female_dialog
 layout marker_view_line_chart
 layout navigation_header_view
 layout quitdialog

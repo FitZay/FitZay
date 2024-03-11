@@ -2,22 +2,18 @@ package com.fitzay.workouttracker.strengthtraining.ui.questions.start
 
 import android.content.Intent
 import android.os.Bundle
-import android.text.TextUtils
 import android.util.Log
-import androidx.appcompat.app.AppCompatActivity
+import android.view.View
+import android.widget.TextView
 import androidx.core.content.ContextCompat
 import com.fitzay.workouttracker.strengthtraining.R
 import com.fitzay.workouttracker.strengthtraining.core.utils.AppUtil2
 import com.fitzay.workouttracker.strengthtraining.core.utils.LanguageManager
-import com.fitzay.workouttracker.strengthtraining.core.utils.toCentimeters
 import com.fitzay.workouttracker.strengthtraining.databinding.ActivityHeightandWeightBinding
 import com.fitzay.workouttracker.strengthtraining.di.Component
 import com.fitzay.workouttracker.strengthtraining.ui.activities.PersonalizedWorkAct
-import com.fitzay.workouttracker.strengthtraining.ui.activities.ProfileAct
-import kotlin.math.ceil
-import kotlin.math.floor
 import kotlin.math.round
-import kotlin.math.roundToInt
+
 
 class HeightandWeightAct : AppUtil2() {
 
@@ -42,18 +38,19 @@ class HeightandWeightAct : AppUtil2() {
                 onBackPressed()
             }
 
-//            ftBtn.setOnClickListener {
+
+
+           // myScale.setStartingPoint(2f)
+
+//            myScaleFt.setUpdateListener(object : com.fitzay.workouttracker.strengthtraining.core.utils.onViewUpdateListener {
 //
-//                val feetAndInches = Pair(
-//                    height.toInt(),
-//                    height.toDouble()
-//                )
-//            }
-//
-//            cmBtn.setOnClickListener {
-//
-//                centimeterToFeet(height.toString())
-//            }
+//                override fun onViewUpdate(result: Float) {
+//                    val value = Math.round(result * 10f).toFloat() / 10f
+//                    txtHeightFt.setText("$value Ft")
+//                }
+//            })
+
+
             btnNext.setOnClickListener {
                 try {
 
@@ -177,6 +174,18 @@ class HeightandWeightAct : AppUtil2() {
                             cn =inchesToCm(centimeters)
                             valueText.setText(cn.toString())
                             Component.preference.userHeight = cn.toInt()
+
+//                            myScaleCm.setUpdateListener(object : com.fitzay.workouttracker.strengthtraining.core.utils.onViewUpdateListener {
+//
+//                                override fun onViewUpdate(result: Float) {
+//                                    val value = Math.round(result * 10f).toFloat() / 10f
+//
+//                                    val centimeters = txtHeightCm.text.toString().toDouble()
+//                                    cn =inchesToCm(centimeters)
+//                                    valueText.setText(cn.toString())
+//                                    Component.preference.userHeight = cn.toInt()
+//                                }
+//                            })
 
 
                         }
