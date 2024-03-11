@@ -9,6 +9,7 @@ import android.app.NotificationManager
 import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
+import android.content.IntentFilter
 import android.graphics.drawable.ColorDrawable
 import android.os.Build
 import android.os.Bundle
@@ -26,6 +27,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.ComposeView
 import androidx.core.app.NotificationCompat
+import androidx.core.app.NotificationManagerCompat
 import androidx.datastore.preferences.protobuf.StringValue
 import androidx.lifecycle.ViewModelProvider
 import com.fitzay.workouttracker.strengthtraining.R
@@ -41,16 +43,23 @@ import java.util.*
 
 
 class WaterIntakeActivity : AppCompatActivity() {
+
     private lateinit var binding: ActivityWaterIntakeBinding
     private lateinit var model: SharedViewModel
     var a = 0f
     val TAG = "WaterIntake"
+    // Notification channel ID.
+//    private val INTERVAL_MILLIS = 5 * 60 * 1000 // 5 minutes in milliseconds
+    private val INTERVAL_MILLIS = 5*1000
 
     @SuppressLint("ServiceCast")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityWaterIntakeBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        // Create the notification channel.
+        createNotificationChannel()
 
         binding.ivBack.setOnClickListener {
             onBackPressed()
@@ -79,6 +88,8 @@ class WaterIntakeActivity : AppCompatActivity() {
             }
         }
 
+
+
         binding.layoutChange.setOnClickListener {
             val intent =
                 Intent(
@@ -87,9 +98,10 @@ class WaterIntakeActivity : AppCompatActivity() {
                 )
             intent.flags = Intent.FLAG_ACTIVITY_SINGLE_TOP
             startActivity(intent)
+
         }
         binding.currentML.text = Component.preference.cupCapacity.toString() + " ml"
-
+        scheduleNotification()
 
 //        val alarmManager = getSystemService(Context.ALARM_SERVICE) as AlarmManager
 //        val notificationIntent = Intent(this, WaterIntakeNotificationReceiver::class.java)
@@ -102,9 +114,66 @@ class WaterIntakeActivity : AppCompatActivity() {
 //        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, triggerAtMillis,
 //            intervalMillis, pendingIntent)
 
+
+
+
+
+    }
+    private fun createNotificationChannel() {
+        // Create the NotificationChannel, but only on API 26+ because
+        // the NotificationChannel class is new and not in the support library.
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            val name = getString(R.string.channel_name)
+            val descriptionText = getString(R.string.channel_description)
+            val importance = NotificationManager.IMPORTANCE_DEFAULT
+            val channel = NotificationChannel(CHANNEL_ID, name, importance).apply {
+                description = descriptionText
+                enableLights(true)
+                lightColor = getColor(R.color.green)
+            }
+            // Register the channel with the system
+            val notificationManager: NotificationManager =
+                getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+            notificationManager.createNotificationChannel(channel)
+        }
     }
 
+    private fun scheduleNotification() {
+        val alarmManager = getSystemService(Context.ALARM_SERVICE) as AlarmManager
+        val intent = Intent(this, WaterIntakeNotificationReceiver::class.java)
+        val pendingIntent = PendingIntent.getBroadcast(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT)
 
+        // Set repeating alarm with a 5-minute interval
+        val calendar = Calendar.getInstance().apply {
+            timeInMillis = System.currentTimeMillis()
+            add(Calendar.SECOND, 5)
+        }
+
+        alarmManager.setRepeating(
+            AlarmManager.RTC_WAKEUP,
+            calendar.timeInMillis,
+            INTERVAL_MILLIS.toLong(),
+            pendingIntent
+        )
+    }
+    private fun showNotification() {
+        val intent = Intent(this, MainActivity::class.java).apply {
+            flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+        }
+        val pendingIntent: PendingIntent = PendingIntent.getActivity(this, 0, intent, 0)
+
+        val builder = NotificationCompat.Builder(this, CHANNEL_ID)
+            .setSmallIcon(R.drawable.app_icon)
+            .setContentTitle("Water Intake Reminder")
+            .setPriority(NotificationCompat.PRIORITY_DEFAULT)
+            .setContentIntent(pendingIntent)
+            .setAutoCancel(true)
+
+        with(NotificationManagerCompat.from(this)) {
+            // notificationId is a unique int for each notification that you must define
+            notify(0, builder.build())
+        }
+    }
     override fun onResume() {
         super.onResume()
         binding.txtGoal.text = getString(R.string.daily_goal)+":"+ Component.preference.waterGoal + getString(R.string.ml)
@@ -118,6 +187,8 @@ class WaterIntakeActivity : AppCompatActivity() {
 
     companion object {
         var counter by mutableStateOf(Component.preference.saveWater)
+        val CHANNEL_ID = "Water-Intake Notification"
+
     }
 
     @Composable

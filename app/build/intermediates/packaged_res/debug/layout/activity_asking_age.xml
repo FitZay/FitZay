@@ -181,7 +181,7 @@
         app:wheelPickerItems="@array/age"
         app:wheelPickerItemsTextBold="true"
         app:wheelPickerItemsTextItalic="true"
-        app:wheelPickerItemsTextSize="@dimen/_9sdp"
+        app:wheelPickerItemsTextSize="@dimen/_6sdp"
         app:wheelPickerItemsUnselectedTextAlpha="0.7"
         app:wheelPickerOrientationVertical="true"
         app:wheelPickerScaleDownEnabled="true" />
