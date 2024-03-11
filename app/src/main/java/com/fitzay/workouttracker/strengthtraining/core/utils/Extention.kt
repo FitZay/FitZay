@@ -4,6 +4,7 @@ import android.Manifest
 import android.annotation.SuppressLint
 import android.content.Context
 import android.content.pm.PackageManager
+import android.content.res.Configuration
 import android.media.MediaPlayer
 import android.media.RingtoneManager
 import android.net.ConnectivityManager
@@ -621,7 +622,11 @@ fun Context.getSimpleDate(): String {
     return dateFormat.format(Date())
 
 }
+fun Context.getSimpleDate2(): String {
+    val dateFormat = SimpleDateFormat("yyyy-MM-dd")
+    return dateFormat.format(Date())
 
+}
 fun Context.getDayOfWeek(dateString: String): String {
     val sdf = SimpleDateFormat("dd-MM-yyyy", Locale.getDefault())
     val date: Date = sdf.parse(dateString) ?: return "Invalid Date"
@@ -642,6 +647,25 @@ fun Context.getDayOfWeek(dateString: String): String {
 
     return dayOfWeek
 }
+
+fun Context.getDayOfWeekName(date: Date): String {
+    val calendar = Calendar.getInstance()
+    calendar.time = date
+    val dayOfWeek = calendar.get(Calendar.DAY_OF_WEEK)
+    val dayOfWeekString = when (dayOfWeek) {
+        Calendar.SUNDAY -> "Sun"
+        Calendar.MONDAY -> "Mon"
+        Calendar.TUESDAY -> "Tue"
+        Calendar.WEDNESDAY -> "Wed"
+        Calendar.THURSDAY -> "Thu"
+        Calendar.FRIDAY -> "Fri"
+        Calendar.SATURDAY -> "Sat"
+        else -> ""
+    }
+    return dayOfWeekString
+}
+
+
 
 fun Context.convertDecimalToHoursMinutes(decimalHours: Float): Pair<Int, Int> {
     val hours = decimalHours.toInt() // Extract integer part as hours
@@ -724,6 +748,14 @@ fun Context.getDate(milliSeconds: Long, dateFormat: String?): String {
     return formatter.format(calendar.time)
 }
 
+//fun Context.setLocale(language: String){
+//    val newLocale = Locale(language)
+//    val configuration: Configuration = resources.configuration
+//    configuration.setLocale(newLocale)
+//    resources.updateConfiguration(configuration, resources.displayMetrics)
+//}
+
+
 fun Context.setLocale(context:Context?,lang: String) {
     updateBaseContextLocale(context, lang)
 }
@@ -759,3 +791,5 @@ private fun updateResourcesLocaleLegacy(context: Context, locale: Locale): Conte
 
      return "%.2f".format(bmi).toFloat()
 }
+
+

@@ -14,6 +14,8 @@ import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.fitzay.workouttracker.strengthtraining.R
+import com.fitzay.workouttracker.strengthtraining.core.utils.AppUtil2
+import com.fitzay.workouttracker.strengthtraining.core.utils.LanguageManager
 import com.fitzay.workouttracker.strengthtraining.core.utils.getDayOfWeek
 import com.fitzay.workouttracker.strengthtraining.databinding.ActivitySleepTrackerHomeScreenBinding
 import com.fitzay.workouttracker.strengthtraining.di.Component
@@ -26,7 +28,7 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
 
-class SleepTrackerHomeScreen : AppCompatActivity(), ShowAlarmItemClick {
+class SleepTrackerHomeScreen : AppUtil2(), ShowAlarmItemClick {
 
     private lateinit var binding: ActivitySleepTrackerHomeScreenBinding
     private lateinit var adapter: AlarmShowAdapter
@@ -129,7 +131,7 @@ class SleepTrackerHomeScreen : AppCompatActivity(), ShowAlarmItemClick {
         switch: SwitchCompat,
     ) {
 
-        if (time.text == "No Alarm") {
+        if (time.text == getString(R.string.no_alarm)) {
             val intent = Intent(this@SleepTrackerHomeScreen, SleepTrackerActivity::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_SINGLE_TOP
             intent.putExtra("key", "newAlarmSet")
@@ -181,9 +183,9 @@ class SleepTrackerHomeScreen : AppCompatActivity(), ShowAlarmItemClick {
     ) {
 
         val builder = AlertDialog.Builder(this)
-        builder.setTitle("Delete Alarm")
-        builder.setMessage("Are you sure want to delete.?")
-        builder.setPositiveButton("OK") { dialog, which ->
+        builder.setTitle(getString(R.string.delete_alarm))
+        builder.setMessage(getString(R.string.alarm_mess))
+        builder.setPositiveButton(getString(R.string.ok_alarm)) { dialog, which ->
             binding.apply {
 
                 var model = AlarmEntity(0L,1L, 1L, "Test", false, false, "", null, 1L, "", 1L, "0", "")
@@ -208,11 +210,16 @@ class SleepTrackerHomeScreen : AppCompatActivity(), ShowAlarmItemClick {
             dialog.dismiss()
         }
 
-        builder.setNegativeButton("Cancel") { dialog, which ->
+        builder.setNegativeButton(getString(R.string.cancel)) { dialog, which ->
             dialog.dismiss()
         }
         val dialog = builder.create()
         dialog.show()
 
+    }
+
+    override fun onStart() {
+        super.onStart()
+        LanguageManager(this@SleepTrackerHomeScreen)
     }
 }

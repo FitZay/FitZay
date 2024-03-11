@@ -104,7 +104,7 @@ class FitnessPreference {
         set(value) = prefernece.edit { putString(USER_NAME, value).apply() }
 
     var userGender: String
-        get() = prefernece.getString(USER_GENDER, "empty") ?: "empty"
+        get() = prefernece.getString(USER_GENDER, "") ?: ""
         set(value) = prefernece.edit { putString(USER_GENDER, value).apply() }
 
     var userHeightType: String
@@ -168,7 +168,7 @@ class FitnessPreference {
         }
 
     var currentProgress: Float
-        get() = prefernece.getFloat(CURRENT_PROGRESS, 0.1f)
+        get() = prefernece.getFloat(CURRENT_PROGRESS, 0f)
         set(currentProgress) {
             editor.putFloat(CURRENT_PROGRESS, currentProgress)
             editor.apply()

@@ -19,6 +19,9 @@ import java.util.Locale
 class StepDailyFragment : Fragment() {
 
 
+    companion object{
+        var btnCheck="Step"
+    }
     private lateinit var binding:FragmentStepDailyBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,34 +34,67 @@ class StepDailyFragment : Fragment() {
         binding= FragmentStepDailyBinding.inflate(inflater, container, false)
 
 
-        //Not Selected By Default 1 Show
-        dailyReport(1)
+
+
+
 
         binding.apply {
+            //Not Selected By Default 1 Show
+           // dailyReport(1)
+
+            when (btnCheck)
+            {
+                "Step" -> {
+                    unSelectSub()
+                    imgStep.setBackgroundResource(R.drawable.bg_selected)
+                    dailyReport(1)
+                    btnCheck="Step"
+                }
+                "Location" -> {
+                    unSelectSub()
+                    imgLocation.setBackgroundResource(R.drawable.bg_selected)
+                    dailyReport(2)
+                    btnCheck="Location"
+                }
+                "Calories" -> {
+                    unSelectSub()
+                    imgCalories.setBackgroundResource(R.drawable.bg_selected)
+                    dailyReport(3)
+                    btnCheck="Calories"
+                }
+                "Time" -> {
+                    unSelectSub()
+                    imgTime.setBackgroundResource(R.drawable.bg_selected)
+                    dailyReport(4)
+                    btnCheck="Time"
+                }
+
+            }
+
             imgStep.setOnClickListener {
                 unSelectSub()
                 imgStep.setBackgroundResource(R.drawable.bg_selected)
                 dailyReport(1)
-
+                btnCheck="Step"
             }
             binding.imgLocation.setOnClickListener {
                 unSelectSub()
                 imgLocation.setBackgroundResource(R.drawable.bg_selected)
                 dailyReport(2)
-
+                btnCheck="Location"
             }
             binding.imgCalories.setOnClickListener {
                 unSelectSub()
                imgCalories.setBackgroundResource(R.drawable.bg_selected)
                 dailyReport(3)
-
+                btnCheck="Calories"
             }
 
             binding.imgTime.setOnClickListener {
                 unSelectSub()
                 imgTime.setBackgroundResource(R.drawable.bg_selected)
                 dailyReport(4)
-
+                btnCheck="Time"
             }
         }
 
@@ -89,10 +125,11 @@ class StepDailyFragment : Fragment() {
                             it.data!!.forEach { it1 ->
                                 val progress = (it1.steps.toDouble() / it1.stepGoal.toDouble()) * 100
                                 binding.stepProgress.progress = progress.toInt()
-                                binding.typeName.text = "STEPS"
+                                binding.typeName.text = getString(R.string.steps)
                                 binding.userSteps.text = Component.preference.stepCount.toString()
                                 binding.userSteps.startAnimation(animZoomIn)
-                                binding.userGoal.text = "Goal :" + Component.preference.stepGoal.toString()
+                                binding.userGoal.text = getString(R.string.goal)+": " + Component.preference.stepGoal.toString()
+                                binding.txtMiles.text=it1.steps.toString()+" "+ getString(R.string.steps)
                             }
                         }
 
@@ -100,11 +137,13 @@ class StepDailyFragment : Fragment() {
                             it.data!!.forEach { it1 ->
                                 val progress = (it1.distance / it1.distanceGoal) * 100
                                 binding.stepProgress.progress = progress.toInt()
-                                binding.typeName.text = "DISTANCE"
+                                binding.typeName.text = getString(R.string.distance)
                                 binding.userSteps.text = it1.distance.toString()
                                 binding.userSteps.startAnimation(animZoomIn)
                                 binding.userGoal.text =
-                                    "Goal: " + it1.distanceGoal.toString()
+                                    getString(R.string.goal)+": " + it1.distanceGoal.toString()
+                                binding.txtMiles.text=it1.distance.toString()+" "+ getString(R.string.distance)
+
                             }
                         }
 
@@ -112,11 +151,12 @@ class StepDailyFragment : Fragment() {
                             it.data!!.forEach { it1 ->
                                 val progress = (it1.calories / it1.caloriesGoal) * 100
                                 binding.stepProgress.progress = progress.toInt()
-                                binding.typeName.text = "CALORIES"
+                                binding.typeName.text = getString(R.string.calories)
                                 binding.userSteps.text = it1.calories.toString()
                                 binding.userSteps.startAnimation(animZoomIn)
-                                binding.userGoal.text =
-                                    "Goal :" + it1.caloriesGoal.toString()
+                                binding.userGoal.text = getString(R.string.goal)+": " + it1.caloriesGoal.toString()
+                                binding.txtMiles.text=it1.caloriesGoal.toString()+" "+ getString(R.string.calories)
+
                             }
                         }
 
@@ -126,10 +166,12 @@ class StepDailyFragment : Fragment() {
                                     .toDouble() / it1.timeGoal.convertTimeToSeconds()
                                     .toDouble()) * 100
                                 binding.stepProgress.progress = progress.toInt()
-                                binding.typeName.text = "TIME"
+                                binding.typeName.text = getString(R.string.time)
                                 binding.userSteps.text = it1.time.toString()
                                 binding.userSteps.startAnimation(animZoomIn)
-                                binding.userGoal.text = "Goal: " + it1.timeGoal.toString()
+                                binding.userGoal.text = getString(R.string.goal)+": " + it1.timeGoal.toString()
+                                binding.txtMiles.text=it1.timeGoal.toString()+" "+ getString(R.string.time)
+
                             }
                         }
                     }

@@ -7,9 +7,11 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.fitzay.workouttracker.strengthtraining.R
+import com.fitzay.workouttracker.strengthtraining.core.utils.AppUtil2
+import com.fitzay.workouttracker.strengthtraining.core.utils.LanguageManager
 import com.fitzay.workouttracker.strengthtraining.databinding.ActivityPartShouldFocusBinding
 
-class PartShouldFocusActivity : AppCompatActivity() {
+class PartShouldFocusActivity : AppUtil2() {
 
     private lateinit var binding: ActivityPartShouldFocusBinding
 
@@ -102,5 +104,9 @@ class PartShouldFocusActivity : AppCompatActivity() {
         }
     }
 
+    override fun onStart() {
+        super.onStart()
+        LanguageManager(this@PartShouldFocusActivity)
+    }
 
 }

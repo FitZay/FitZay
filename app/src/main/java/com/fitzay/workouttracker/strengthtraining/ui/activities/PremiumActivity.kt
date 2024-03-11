@@ -7,15 +7,17 @@ import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import com.fitzay.workouttracker.strengthtraining.R
 import com.fitzay.workouttracker.strengthtraining.core.AppController
+import com.fitzay.workouttracker.strengthtraining.core.utils.AppUtil2
 import com.fitzay.workouttracker.strengthtraining.core.utils.InAppPurchaseUtil
+import com.fitzay.workouttracker.strengthtraining.core.utils.LanguageManager
 import com.fitzay.workouttracker.strengthtraining.databinding.ActivityPremiumBinding
 import com.fitzay.workouttracker.strengthtraining.ui.MainActivity
 
 
-class PremiumActivity : AppCompatActivity() {
+class PremiumActivity : AppUtil2() {
 
     private var binding: ActivityPremiumBinding? = null
-    private var selecteditem = "fitzay_weekly_premium"
+    private var selecteditem = "fitzay_yearly_premium"
 
     companion object {
         var activitytype = ""
@@ -25,7 +27,7 @@ class PremiumActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityPremiumBinding.inflate(layoutInflater)
         setContentView(binding?.root)
-
+        LanguageManager(this@PremiumActivity)
         binding?.closeBtn?.setOnClickListener {
             if (activitytype == "splash"){
                 startActivity(Intent(this@PremiumActivity,MainActivity::class.java))
@@ -95,16 +97,19 @@ class PremiumActivity : AppCompatActivity() {
         binding?.weeklyBtn?.setOnClickListener {
             selecteditem = "fitzay_weekly_premium"
             binding?.radioBtnWeekly?.let { it1 -> selectAnOption(it1) }
+            InAppPurchaseUtil.openPurchaseDialog(this, selecteditem)
         }
 
         binding?.montlyBtn?.setOnClickListener {
             selecteditem = "fitzay_monthly_premium"
             binding?.radioMonthly?.let { it1 -> selectAnOption(it1) }
+            InAppPurchaseUtil.openPurchaseDialog(this, selecteditem)
         }
 
         binding?.yearlyBtn?.setOnClickListener {
             selecteditem = "fitzay_yearly_premium"
             binding?.radioYearly?.let { it1 -> selectAnOption(it1) }
+            InAppPurchaseUtil.openPurchaseDialog(this, selecteditem)
         }
 
         binding?.submitBtn?.setOnClickListener {
@@ -126,7 +131,6 @@ class PremiumActivity : AppCompatActivity() {
         binding?.radioBtnWeekly?.setImageResource(R.drawable.ic_radiobtn_unchecked)
         binding?.radioMonthly?.setImageResource(R.drawable.ic_radiobtn_unchecked)
         binding?.radioYearly?.setImageResource(R.drawable.ic_radiobtn_unchecked)
-
         view.setImageResource(R.drawable.ic_selectedbutton)
 
     }

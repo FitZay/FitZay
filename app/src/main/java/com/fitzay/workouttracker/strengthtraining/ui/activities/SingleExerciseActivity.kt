@@ -8,11 +8,13 @@ import android.util.Log
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
+import com.fitzay.workouttracker.strengthtraining.core.utils.AppUtil2
+import com.fitzay.workouttracker.strengthtraining.core.utils.LanguageManager
 import com.fitzay.workouttracker.strengthtraining.databinding.ActivitySingleExerciseBinding
 import com.fitzay.workouttracker.strengthtraining.di.Component
 import com.fitzay.workouttracker.strengthtraining.domain.models.WorkOutModel
 
-class SingleExerciseActivity : AppCompatActivity() {
+class SingleExerciseActivity : AppUtil2() {
     private lateinit var binding: ActivitySingleExerciseBinding
 
     private lateinit var loadingHandler: Handler
@@ -28,7 +30,7 @@ class SingleExerciseActivity : AppCompatActivity() {
         binding = ActivitySingleExerciseBinding.inflate(layoutInflater)
         setContentView(binding.root)
         loadingHandler = Handler(Looper.getMainLooper()!!)
-
+        LanguageManager(this@SingleExerciseActivity)
         val id = intent.getIntExtra("EXTRA_ID", 0)
         arr = Component.workOutViewModel.getWorkoutWithID(
             this@SingleExerciseActivity,

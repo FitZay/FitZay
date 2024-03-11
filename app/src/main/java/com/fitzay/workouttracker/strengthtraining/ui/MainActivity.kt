@@ -3,6 +3,7 @@ package com.fitzay.workouttracker.strengthtraining.ui
 import android.content.ActivityNotFoundException
 import android.content.Context
 import android.content.Intent
+import android.content.res.Configuration
 import android.net.Uri
 import android.os.Bundle
 import android.os.Handler
@@ -16,6 +17,9 @@ import androidx.core.view.GravityCompat
 import com.fitzay.workouttracker.strengthtraining.R
 import com.fitzay.workouttracker.strengthtraining.core.AppController
 import com.fitzay.workouttracker.strengthtraining.core.ads.FitnessInterstitialAd
+import com.fitzay.workouttracker.strengthtraining.core.utils.AppUtil2
+import com.fitzay.workouttracker.strengthtraining.core.utils.LanguageManager
+import com.fitzay.workouttracker.strengthtraining.core.utils.SharedPreferencesHelper
 import com.fitzay.workouttracker.strengthtraining.core.utils.getFitzayRemoteLong
 import com.fitzay.workouttracker.strengthtraining.core.utils.setLocale
 import com.fitzay.workouttracker.strengthtraining.databinding.ActivityMainBinding
@@ -30,8 +34,9 @@ import com.google.android.gms.ads.FullScreenContentCallback
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.ump.ConsentInformation
 import com.google.android.ump.UserMessagingPlatform
+import java.util.Locale
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppUtil2() {
 
     private lateinit var binding: ActivityMainBinding
     var backToExitPressedOnce = false
@@ -72,12 +77,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        val sharedPref = applicationContext.getSharedPreferences("myPrefs", Context.MODE_PRIVATE)
-        val lan = sharedPref.getString("key", "en")
-        setLocale(this,lan!!)
+
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+
 
         FitnessInterstitialAd.getInstance(this)!!.loadAdMobInterAd()
         navClicks()
@@ -246,6 +251,8 @@ class MainActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         isClicked = false
+        LanguageManager(this@MainActivity)
+
     }
 
     private fun interCallback(position: Int) {

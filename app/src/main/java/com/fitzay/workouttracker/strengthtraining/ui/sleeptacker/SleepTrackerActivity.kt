@@ -29,6 +29,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.fitzay.workouttracker.strengthtraining.R
 import com.fitzay.workouttracker.strengthtraining.core.AppController
 import com.fitzay.workouttracker.strengthtraining.core.utils.AlarmReceiver
+import com.fitzay.workouttracker.strengthtraining.core.utils.AppUtil2
+import com.fitzay.workouttracker.strengthtraining.core.utils.LanguageManager
 import com.fitzay.workouttracker.strengthtraining.core.utils.convertDateTime
 import com.fitzay.workouttracker.strengthtraining.core.utils.convertTimeToMilliseconds
 import com.fitzay.workouttracker.strengthtraining.core.utils.convertTimeToMillisecondsHrAndMin
@@ -51,6 +53,7 @@ import com.google.android.gms.ads.LoadAdError
 import com.google.android.gms.ads.nativead.NativeAdOptions
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -60,7 +63,7 @@ import java.util.*
 import kotlin.collections.ArrayList
 
 
-class SleepTrackerActivity : AppCompatActivity(), ShowRingToneItemClick {
+class SleepTrackerActivity : AppUtil2(), ShowRingToneItemClick {
     private lateinit var binding: ActivitySleepTrackerBinding
 
     private var ringToneAdapter: RingToneShowAdapter? = null
@@ -101,6 +104,7 @@ class SleepTrackerActivity : AppCompatActivity(), ShowRingToneItemClick {
     var permissionSave=false
 
 
+    var test=0L
     companion object {
         var ringToneUri: Uri? = null
         var ringToneName: String = ""
@@ -565,9 +569,26 @@ class SleepTrackerActivity : AppCompatActivity(), ShowRingToneItemClick {
                                                 list[i].toString()
                                             )
 
+
                                         if (ringToneUri != null) {
 
-                                            if (alarmForASelectedDay.isEmpty()) {
+                                            alreadySet=false
+                                            alarmForASelectedDay.forEach { d->
+
+                                                storeDays.forEach { dd->
+
+                                                    if (d.date==dd)
+                                                    {
+
+                                                        alreadySet=true
+                                                    }
+
+
+                                                }
+
+                                            }
+
+                                            if (!alreadySet) {
                                                 if (!default) {
                                                     default = true
                                                     Component.sleepViewModel.createSleep(time, "HI")
@@ -603,6 +624,7 @@ class SleepTrackerActivity : AppCompatActivity(), ShowRingToneItemClick {
                                                             Toast.LENGTH_SHORT
                                                         ).show()
                                                     }
+
                                                 }
 
 
@@ -611,10 +633,27 @@ class SleepTrackerActivity : AppCompatActivity(), ShowRingToneItemClick {
 
                                         } else {
 
-                                            if (alarmForASelectedDay.isEmpty()) {
+                                            alreadySet=false
+                                            alarmForASelectedDay.forEach { d->
+                                                storeDays.forEach { dd->
+
+                                                    if (d.date==dd)
+                                                    {
+
+                                                        alreadySet=true
+
+                                                    }
+
+
+                                                }
+
+                                            }
+
+                                            if (!alreadySet) {
                                                 if (!default) {
                                                     default = true
                                                     Component.sleepViewModel.createSleep(time, "HI")
+
                                                 }
 
                                                 Handler(Looper.getMainLooper()).postDelayed({
@@ -640,9 +679,9 @@ class SleepTrackerActivity : AppCompatActivity(), ShowRingToneItemClick {
                                                 }, 1200)
 
 
-                                            } else {
-                                                if (!alreadySet) {
-                                                    alreadySet = true
+                                            }
+                                            else {
+
                                                     withContext(Dispatchers.Main) {
                                                         Toast.makeText(
                                                             this@SleepTrackerActivity,
@@ -650,7 +689,8 @@ class SleepTrackerActivity : AppCompatActivity(), ShowRingToneItemClick {
                                                             Toast.LENGTH_SHORT
                                                         ).show()
                                                     }
-                                                }
+
+
 
 
                                             }
@@ -1580,10 +1620,7 @@ class SleepTrackerActivity : AppCompatActivity(), ShowRingToneItemClick {
 
             list.add(dayOfWeek)
             storeDays.add(dateL[dayOfWeek])
-            Log.i(
-                "ifffffffffffffffff",
-                "toggleDaySelection: " + dayOfWeek + "=======" + list + "00000" + storeDays
-            )
+
 
             dayView.setBackgroundResource(R.drawable.bg_circle_yellow) // Set selected background
             dayView.setTextColor(
@@ -1593,25 +1630,32 @@ class SleepTrackerActivity : AppCompatActivity(), ShowRingToneItemClick {
                 )
             ) // Use color resource
         } else {
-            Log.i("ifffffffffffffffff", "toggleDaySelectionelseeeeeeee: " + dayOfWeek)
+
 
             list.remove(dayOfWeek)
             storeDays.remove(dateL[dayOfWeek])
-            dayView.setBackgroundResource(0)
-            if (dayOfWeek == 7) {
+
+            if (dayOfWeek == 6) {
                 dayView.setTextColor(
                     ContextCompat.getColor(
                         this,
                         R.color.red
                     )
                 ) // Use color resource
+                Log.i("ifffffffffffffffff", "toggleDaySelectionelseeeeeeee: " + dayOfWeek)
             }
-            dayView.setTextColor(
-                ContextCompat.getColor(
-                    this,
-                    R.color.tab_not_selected
-                )
-            ) // Use color resource
+            else {
+
+                dayView.setTextColor(
+                    ContextCompat.getColor(
+                        this,
+                        R.color.tab_not_selected
+                    )
+                ) // Use color resource
+                Log.i("ifffffffffffffffff", "-----: " + dayOfWeek)
+            }
+            dayView.setBackgroundResource(0)
+
         }
 
     }
@@ -1804,7 +1848,7 @@ class SleepTrackerActivity : AppCompatActivity(), ShowRingToneItemClick {
         dialog.setCanceledOnTouchOutside(false)
         dialog.setCancelable(false)
 
-        labelBinding.tvTitle.text = "Label"
+        labelBinding.tvTitle.text = getString(R.string.label)
         labelBinding.tvStepGoal.inputType = InputType.TYPE_CLASS_TEXT
         labelBinding.btnSave.setOnClickListener {
             if (!labelBinding.tvStepGoal.text.isNullOrEmpty()) {
@@ -2106,4 +2150,8 @@ class SleepTrackerActivity : AppCompatActivity(), ShowRingToneItemClick {
 
     }
 
+    override fun onStart() {
+        super.onStart()
+        LanguageManager(this@SleepTrackerActivity)
+    }
 }

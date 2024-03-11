@@ -27,7 +27,13 @@ public final class FragmentStepDailyBinding implements ViewBinding {
   public final LineChart chart;
 
   @NonNull
+  public final LinearLayout dateLayout;
+
+  @NonNull
   public final ImageView imgCalories;
+
+  @NonNull
+  public final ImageView imgDot;
 
   @NonNull
   public final ImageView imgLocation;
@@ -48,6 +54,12 @@ public final class FragmentStepDailyBinding implements ViewBinding {
   public final CircularProgressIndicator stepProgress;
 
   @NonNull
+  public final TextView txtAverage;
+
+  @NonNull
+  public final TextView txtMiles;
+
+  @NonNull
   public final TextView typeName;
 
   @NonNull
@@ -57,19 +69,25 @@ public final class FragmentStepDailyBinding implements ViewBinding {
   public final TextView userSteps;
 
   private FragmentStepDailyBinding(@NonNull RelativeLayout rootView, @NonNull LineChart chart,
-      @NonNull ImageView imgCalories, @NonNull ImageView imgLocation, @NonNull ImageView imgStep,
-      @NonNull ImageView imgTime, @NonNull LinearLayout layoutCharts,
-      @NonNull RelativeLayout layoutToday, @NonNull CircularProgressIndicator stepProgress,
-      @NonNull TextView typeName, @NonNull TextView userGoal, @NonNull TextView userSteps) {
+      @NonNull LinearLayout dateLayout, @NonNull ImageView imgCalories, @NonNull ImageView imgDot,
+      @NonNull ImageView imgLocation, @NonNull ImageView imgStep, @NonNull ImageView imgTime,
+      @NonNull LinearLayout layoutCharts, @NonNull RelativeLayout layoutToday,
+      @NonNull CircularProgressIndicator stepProgress, @NonNull TextView txtAverage,
+      @NonNull TextView txtMiles, @NonNull TextView typeName, @NonNull TextView userGoal,
+      @NonNull TextView userSteps) {
     this.rootView = rootView;
     this.chart = chart;
+    this.dateLayout = dateLayout;
     this.imgCalories = imgCalories;
+    this.imgDot = imgDot;
     this.imgLocation = imgLocation;
     this.imgStep = imgStep;
     this.imgTime = imgTime;
     this.layoutCharts = layoutCharts;
     this.layoutToday = layoutToday;
     this.stepProgress = stepProgress;
+    this.txtAverage = txtAverage;
+    this.txtMiles = txtMiles;
     this.typeName = typeName;
     this.userGoal = userGoal;
     this.userSteps = userSteps;
@@ -108,9 +126,21 @@ public final class FragmentStepDailyBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.dateLayout;
+      LinearLayout dateLayout = ViewBindings.findChildViewById(rootView, id);
+      if (dateLayout == null) {
+        break missingId;
+      }
+
       id = R.id.imgCalories;
       ImageView imgCalories = ViewBindings.findChildViewById(rootView, id);
       if (imgCalories == null) {
+        break missingId;
+      }
+
+      id = R.id.imgDot;
+      ImageView imgDot = ViewBindings.findChildViewById(rootView, id);
+      if (imgDot == null) {
         break missingId;
       }
 
@@ -150,6 +180,18 @@ public final class FragmentStepDailyBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.txtAverage;
+      TextView txtAverage = ViewBindings.findChildViewById(rootView, id);
+      if (txtAverage == null) {
+        break missingId;
+      }
+
+      id = R.id.txtMiles;
+      TextView txtMiles = ViewBindings.findChildViewById(rootView, id);
+      if (txtMiles == null) {
+        break missingId;
+      }
+
       id = R.id.typeName;
       TextView typeName = ViewBindings.findChildViewById(rootView, id);
       if (typeName == null) {
@@ -168,9 +210,9 @@ public final class FragmentStepDailyBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentStepDailyBinding((RelativeLayout) rootView, chart, imgCalories,
-          imgLocation, imgStep, imgTime, layoutCharts, layoutToday, stepProgress, typeName,
-          userGoal, userSteps);
+      return new FragmentStepDailyBinding((RelativeLayout) rootView, chart, dateLayout, imgCalories,
+          imgDot, imgLocation, imgStep, imgTime, layoutCharts, layoutToday, stepProgress,
+          txtAverage, txtMiles, typeName, userGoal, userSteps);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -14,9 +14,13 @@ import android.view.Window
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.content.ContextCompat
 import com.bumptech.glide.Glide
 import com.fitzay.workouttracker.strengthtraining.R
 import com.fitzay.workouttracker.strengthtraining.core.AppController
+import com.fitzay.workouttracker.strengthtraining.core.utils.AppUtil2
+import com.fitzay.workouttracker.strengthtraining.core.utils.LanguageManager
 import com.fitzay.workouttracker.strengthtraining.core.utils.clickWithThrottle
 import com.fitzay.workouttracker.strengthtraining.databinding.ActivityExerciseBinding
 import com.fitzay.workouttracker.strengthtraining.di.Component
@@ -32,11 +36,12 @@ import com.google.android.gms.ads.interstitial.InterstitialAd
 import com.google.android.gms.ads.interstitial.InterstitialAdLoadCallback
 import com.google.android.gms.ads.nativead.NativeAd
 import com.google.android.gms.ads.nativead.NativeAdOptions
+import com.google.android.material.card.MaterialCardView
 import java.util.Objects
 import java.util.concurrent.TimeUnit
 
 
-class ExerciseActivity : AppCompatActivity() {
+class ExerciseActivity : AppUtil2() {
 
     private lateinit var binding: ActivityExerciseBinding
     private lateinit var loadingHandler: Handler
@@ -72,7 +77,7 @@ class ExerciseActivity : AppCompatActivity() {
         setContentView(binding.root)
         quitdialog = Dialog(this)
         waiting_dialog = Dialog(this)
-
+        LanguageManager(this@ExerciseActivity)
 
         arr = ArrayList()
         loadingHandler = Handler(Looper.getMainLooper()!!)
@@ -467,8 +472,7 @@ class ExerciseActivity : AppCompatActivity() {
 
 
     private fun showQuitDialog() {
-        Objects.requireNonNull<Window>(quitdialog?.window)
-            .setBackgroundDrawableResource(android.R.color.transparent)
+        Objects.requireNonNull<Window>(quitdialog?.window).setBackgroundDrawableResource(android.R.color.transparent)
         quitdialog?.setContentView(R.layout.quitdialog)
         quitdialog?.setCancelable(false)
         quitdialog?.show()
@@ -487,8 +491,34 @@ class ExerciseActivity : AppCompatActivity() {
         quitdialog?.findViewById<TextView>(R.id.cancelBtn)?.setOnClickListener {
             quitdialog?.dismiss()
         }
-    }
+        quitdialog?.findViewById<MaterialCardView>(R.id.materialCardView)!!.setOnClickListener {
+            reset()
+            quitdialog!!.findViewById<MaterialCardView>(R.id.materialCardView).setCardBackgroundColor(ContextCompat.getColor(this , R.color.green))
 
+
+        }
+        quitdialog?.findViewById<MaterialCardView>(R.id.materialCardView2)!!.setOnClickListener {
+            reset()
+            quitdialog!!.findViewById<MaterialCardView>(R.id.materialCardView2).setCardBackgroundColor(ContextCompat.getColor(this , R.color.green))
+
+        }
+        quitdialog?.findViewById<MaterialCardView>(R.id.materialCardView3)!!.setOnClickListener {
+            reset()
+            quitdialog!!.findViewById<MaterialCardView>(R.id.materialCardView3).setCardBackgroundColor(ContextCompat.getColor(this , R.color.green))
+
+        }
+
+
+
+    }
+    fun reset() {
+        binding.apply {
+            quitdialog!!.findViewById<MaterialCardView>(R.id.materialCardView)!!.setCardBackgroundColor(ContextCompat.getColor(this@ExerciseActivity , R.color.transparent))
+            quitdialog!!.findViewById<MaterialCardView>(R.id.materialCardView2)!!.setCardBackgroundColor(ContextCompat.getColor(this@ExerciseActivity , R.color.transparent))
+            quitdialog!!.findViewById<MaterialCardView>(R.id.materialCardView3)!!.setCardBackgroundColor(ContextCompat.getColor(this@ExerciseActivity , R.color.transparent))
+//            binding?.submitBtn?.setCardBackgroundColor(ContextCompat.getColor(this , R.color.blue))
+        }
+    }
 
     fun loadSplashInterstitialAd(adId: String) {
         if (mSplashInterstitial == null && !loadinginterstitial) {
@@ -555,8 +585,7 @@ class ExerciseActivity : AppCompatActivity() {
     }
 
     private fun showWaitingDialog() {
-        Objects.requireNonNull<Window>(waiting_dialog?.window)
-            .setBackgroundDrawableResource(android.R.color.transparent)
+        Objects.requireNonNull<Window>(waiting_dialog?.window).setBackgroundDrawableResource(android.R.color.transparent)
         waiting_dialog?.setContentView(R.layout.ad_loading_dialog)
         waiting_dialog?.setCancelable(false)
         waiting_dialog?.show()

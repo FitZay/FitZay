@@ -19,7 +19,7 @@ import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.LoadAdError
 import com.google.android.gms.ads.nativead.NativeAdOptions
 
-class TargetWeightActivity : AppCompatActivity() {
+class TargetWeightActivity : AppUtil2() {
 
     private lateinit var binding: ActivityTargetWeightBinding
     var lb = false
@@ -180,6 +180,7 @@ override fun onStart() {
             }
         }
     }
+    LanguageManager(this@TargetWeightActivity)
 
 }
 }

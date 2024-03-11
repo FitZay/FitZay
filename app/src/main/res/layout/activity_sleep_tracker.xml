@@ -554,7 +554,7 @@
                             android:layout_marginStart="4dp"
                             android:layout_marginTop="@dimen/_3sdp"
                             android:fontFamily="@font/poppins"
-                            android:text="Sound"
+                            android:text="@string/sound"
                             android:textColor="@color/ready_color"
                             android:textSize="@dimen/_14sdp"
                             app:layout_constraintBottom_toBottomOf="parent"
@@ -828,7 +828,7 @@
                                 android:layout_marginStart="4dp"
                                 android:layout_marginTop="@dimen/_3sdp"
                                 android:fontFamily="@font/poppins"
-                                android:text="Default"
+                                android:text="@string/def"
                                 android:textColor="#80FFFFFF"
                                 android:textSize="@dimen/_12sdp" />
 

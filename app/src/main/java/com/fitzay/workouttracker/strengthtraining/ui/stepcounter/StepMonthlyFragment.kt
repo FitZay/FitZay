@@ -29,6 +29,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import java.text.SimpleDateFormat
+import java.time.Month
 import java.util.Calendar
 import java.util.Date
 import java.util.Locale
@@ -67,6 +68,49 @@ class StepMonthlyFragment : Fragment(), OnChartValueSelectedListener {
             tvValue = tooltipView.findViewById(R.id.tvValue)
 
 
+
+            root.setOnClickListener {
+                dateLayout.visibility = View.VISIBLE
+            }
+
+            when (StepDailyFragment.btnCheck)
+            {
+                "Step" -> {
+                    unSelectSub()
+                    imgStep.setBackgroundResource(R.drawable.bg_selected)
+                    setBarData(1)
+
+                    check="Step"
+                    StepDailyFragment.btnCheck="Step"
+                }
+                "Location" -> {
+                    unSelectSub()
+                    imgLocation.setBackgroundResource(R.drawable.bg_selected)
+
+
+                    setBarData(2)
+                    check="Distance"
+                    StepDailyFragment.btnCheck="Location"
+                }
+                "Calories" -> {
+                    unSelectSub()
+                    imgCalories.setBackgroundResource(R.drawable.bg_selected)
+
+
+                    setBarData(3)
+                    check="Calories"
+                    StepDailyFragment.btnCheck="Calories"
+                }
+                "Time" -> {
+
+                    unSelectSub()
+                    imgTime.setBackgroundResource(R.drawable.bg_selected)
+                    setBarData(4)
+                    check="Time"
+                    StepDailyFragment.btnCheck="Time"
+                }
+
+            }
             calendar = Calendar.getInstance()
             calendar_2 = Calendar.getInstance()
             calendarCopy = Calendar.getInstance()
@@ -84,15 +128,15 @@ class StepMonthlyFragment : Fragment(), OnChartValueSelectedListener {
             popupWindow.isOutsideTouchable = true
 
             sleepChartMonthly.setOnChartValueSelectedListener(this@StepMonthlyFragment)
-            setBarData(i)
+            //setBarData(i)
 
             imgStep.setOnClickListener {
                 unSelectSub()
                 imgStep.setBackgroundResource(R.drawable.bg_selected)
                 i=1
                 setBarData(i)
-
                 check="Step"
+                StepDailyFragment.btnCheck="Step"
             }
             binding.imgLocation.setOnClickListener {
                 unSelectSub()
@@ -100,6 +144,7 @@ class StepMonthlyFragment : Fragment(), OnChartValueSelectedListener {
                 i=2
                 setBarData(i)
                 check="Distance"
+                StepDailyFragment.btnCheck="Location"
 
             }
             binding.imgCalories.setOnClickListener {
@@ -109,6 +154,7 @@ class StepMonthlyFragment : Fragment(), OnChartValueSelectedListener {
                 setBarData(i)
 
                 check="Calories"
+                StepDailyFragment.btnCheck="Calories"
 
 
             }
@@ -120,6 +166,7 @@ class StepMonthlyFragment : Fragment(), OnChartValueSelectedListener {
                setBarData(i)
 
                 check="Time"
+                StepDailyFragment.btnCheck="Time"
 
 
             }
@@ -168,6 +215,7 @@ class StepMonthlyFragment : Fragment(), OnChartValueSelectedListener {
         return binding.root
     }
     private fun setBarData(i:Int) {
+        resetGraph()
         binding.apply {
             CoroutineScope(Dispatchers.IO).launch {
                 val currentMonth = Calendar.getInstance().get(Calendar.MONTH) + 1 // Adding 1 because months are zero-based
@@ -188,15 +236,20 @@ class StepMonthlyFragment : Fragment(), OnChartValueSelectedListener {
                     val calendar = Calendar.getInstance()
                     calendar.set(Calendar.DAY_OF_MONTH, 1);
                     val maxDays = calendar.getActualMaximum(Calendar.DAY_OF_MONTH)
-                    Log.i("TAG", "da: " + maxDays)
+                    Log.i("TAG66", "da: " + currentMonth)
                     var barEntriesArrayList = ArrayList<BarEntry>()
                     val dateFormat = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
                     val daysOfWeek = arrayOf(
-                        "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11",
-                        "12", "13", "14", "15", "16", "17", "18", "19", "20", "21",
-                        "22", "23", "24", "25", "26", "27", "28", "29", "30", "31"
+                        "1"+"-"+getMonthName(currentMonth), "2"+"-"+getMonthName(currentMonth), "3"+"-"+getMonthName(currentMonth), "4"+"-"+getMonthName(currentMonth), "5"+"-"+getMonthName(currentMonth),
+                        "6"+"-"+getMonthName(currentMonth), "7"+"-"+getMonthName(currentMonth), "8"+"-"+getMonthName(currentMonth), "9"+"-"+getMonthName(currentMonth), "10"+"-"+getMonthName(currentMonth), "11"+"-"+getMonthName(currentMonth),
+                        "12"+"-"+getMonthName(currentMonth), "13"+"-"+getMonthName(currentMonth), "14"+"-"+getMonthName(currentMonth), "15"+"-"+getMonthName(currentMonth), "16"+"-"+getMonthName(currentMonth), "17"+"-"+getMonthName(currentMonth),
+                        "18"+"-"+getMonthName(currentMonth), "19"+"-"+getMonthName(currentMonth), "20"+"-"+getMonthName(currentMonth), "21"+"-"+getMonthName(currentMonth), "22"+"-"+getMonthName(currentMonth), "23"+"-"+getMonthName(currentMonth),
+                        "24"+"-"+getMonthName(currentMonth), "25"+"-"+getMonthName(currentMonth), "26"+"-"+getMonthName(currentMonth), "27"+"-"+getMonthName(currentMonth), "28"+"-"+getMonthName(currentMonth), "29"+"-"+getMonthName(currentMonth), "30"+"-"+getMonthName(currentMonth),
+                        "31"+"-"+getMonthName(currentMonth)
                     )
-                    var sumOfFinalStrings = 0f
+                    var avg = 0
+                    var sumOfFinalStrings = 0
+
                     alarmsForCurrentMonth.forEach {
 
                         val dayOfMonth = SimpleDateFormat("dd", Locale.getDefault()).format(dateFormat.parse(it.date)!!)
@@ -207,16 +260,6 @@ class StepMonthlyFragment : Fragment(), OnChartValueSelectedListener {
 //
 //                        sumOfFinalStrings += finalString
 
-
-                        when(i){
-                            1->barEntriesArrayList.add(BarEntry(dayOfMonth.toFloat()-1, it.steps.toFloat()))
-                            2->barEntriesArrayList.add(BarEntry(dayOfMonth.toFloat()-1, it.distance.toFloat()))
-                            3->barEntriesArrayList.add(BarEntry(dayOfMonth.toFloat()-1, it.calories.toFloat()))
-                            4->barEntriesArrayList.add(BarEntry(dayOfMonth.toFloat()-1, it.time.convertTimeToSeconds().toFloat()))
-                        }
-
-
-
                         for (i in 1..maxDays) {
                             val dayOfMonth = i.toString()
                             if (!barEntriesArrayList.any { it.x == dayOfMonth.toFloat() }) {
@@ -226,50 +269,103 @@ class StepMonthlyFragment : Fragment(), OnChartValueSelectedListener {
 
                         }
 
+                        when(i){
+                            1->
+                            {
+                                barEntriesArrayList.add(BarEntry(dayOfMonth.toFloat(), it.steps.toFloat()))
+                                sumOfFinalStrings += it.steps
+                                avg = sumOfFinalStrings / daysOfWeek.size
+                            }
+                            2->
+                                {
+                                    barEntriesArrayList.add(BarEntry(dayOfMonth.toFloat(), it.distance.toFloat()))
+                                    sumOfFinalStrings += it.distance.toInt()
+                                    avg = sumOfFinalStrings / daysOfWeek.size
+                                }
+                            3->
+                                {
+                                barEntriesArrayList.add(BarEntry(dayOfMonth.toFloat(), it.calories.toFloat()))
+                                    sumOfFinalStrings += it.calories.toInt()
+                                    avg = sumOfFinalStrings / daysOfWeek.size
+                                }
+                            4->
+                                {
+                                barEntriesArrayList.add(BarEntry(dayOfMonth.toFloat(), it.time.convertTimeToSeconds().toFloat()))
+                                    sumOfFinalStrings += it.time.convertTimeToSeconds()
+                                    avg = sumOfFinalStrings / daysOfWeek.size
+                            }
+                        }
 
 
-                        withContext(Dispatchers.Main)
+
+
+
+
+
+                    }
+                    withContext(Dispatchers.Main)
+                    {
+                        //txtMiles.text = it.totalSleepingHr!!
+
+                        when(i)
                         {
-                            //txtMiles.text = it.totalSleepingHr!!
-                            val dataSet = BarDataSet(barEntriesArrayList, "")
+                            1->
+                            {
+
+                                txtMiles.text=avg.toString()+" "+ getString(R.string.steps)
+                            }
+                            2->{
+
+                                txtMiles.text=avg.toString()+" "+ getString(R.string.distance)
+                            }
+                            3->
+                            {
+
+                                txtMiles.text=avg.toString()+" "+ getString(R.string.calories)
+                            }
+                            4->
+                            {
+
+                                txtMiles.text=avg.toString()+" "+ getString(R.string.time)
+                            }
+                        }
+
+                        val dataSet = BarDataSet(barEntriesArrayList, "")
 //                            dataSet.setColors(*ColorTemplate.MATERIAL_COLORS)
-                            dataSet.setColors(Color.parseColor("#9CB135"))
-                            // setting text color.
-                            dataSet.valueTextColor = Color.parseColor("#939292")
-                            dataSet.valueTextSize = 14f // Set text size if needed
-                            val xAxis = sleepChartMonthly.xAxis
-                            xAxis.position = XAxis.XAxisPosition.BOTTOM
-                            val formatter = IndexAxisValueFormatter(daysOfWeek)
-                            xAxis.valueFormatter = formatter
-                            val barData = BarData(dataSet)
-                            barData.setBarWidth(0.2f); // Adjust the width as needed
-                            xAxis.setDrawGridLines(false);
-                            sleepChartMonthly.axisLeft.isEnabled = true
-                            sleepChartMonthly.axisRight.isEnabled = false
-                            sleepChartMonthly.setScaleEnabled(false)
-                            sleepChartMonthly.setPinchZoom(false)
-                            dataSet.setDrawValues(false)
-                            sleepChartMonthly.axisLeft.axisMinimum = 0f
-                            sleepChartMonthly.setDrawBorders(false)   //All Line Remove
-                            sleepChartMonthly.axisLeft.textColor =
-                                Color.parseColor("#939292")
-                            xAxis.textColor = Color.parseColor("#939292")
+                        dataSet.setColors(Color.parseColor("#9CB135"))
+                        // setting text color.
+                        dataSet.valueTextColor = Color.parseColor("#939292")
+                        dataSet.valueTextSize = 14f // Set text size if needed
+                        val xAxis = sleepChartMonthly.xAxis
+                        xAxis.position = XAxis.XAxisPosition.BOTTOM
+                        val formatter = IndexAxisValueFormatter(daysOfWeek)
+                        xAxis.valueFormatter = formatter
+                        val barData = BarData(dataSet)
+                        barData.setBarWidth(0.2f); // Adjust the width as needed
+                        xAxis.setDrawGridLines(false);
+                        sleepChartMonthly.axisLeft.isEnabled = true
+                        sleepChartMonthly.axisRight.isEnabled = false
+                        sleepChartMonthly.setScaleEnabled(false)
+                        sleepChartMonthly.setPinchZoom(false)
+                        dataSet.setDrawValues(false)
+                        sleepChartMonthly.axisLeft.axisMinimum = 0f
+                        sleepChartMonthly.setDrawBorders(false)   //All Line Remove
+                        sleepChartMonthly.axisLeft.textColor =
+                            Color.parseColor("#939292")
+                        xAxis.textColor = Color.parseColor("#939292")
 
-                            sleepChartMonthly.getDescription().setEnabled(false);
-                            sleepChartMonthly.animateY(1000);
+                        sleepChartMonthly.getDescription().setEnabled(false);
+                        sleepChartMonthly.animateY(1000);
 
-                            barData.isHighlightEnabled=true
+                        barData.isHighlightEnabled=true
 
 // Set the color for the selected bar
 //                            barData.setH(Color.RED);
 
-                            sleepChartMonthly.data = barData
-                            sleepChartMonthly.notifyDataSetChanged();
-                            sleepChartMonthly.invalidate();
-                        }
-
+                        sleepChartMonthly.data = barData
+                        sleepChartMonthly.notifyDataSetChanged();
+                        sleepChartMonthly.invalidate();
                     }
-
                     if (alarmsForCurrentMonth.isEmpty()) {
 
                         barEntriesArrayList.add(BarEntry(0f,0f))
@@ -287,7 +383,28 @@ class StepMonthlyFragment : Fragment(), OnChartValueSelectedListener {
                         withContext(Dispatchers.Main)
                         {
                             //txtMiles.text ="No Data"
+                            when(i)
+                            {
+                                1->
+                                {
 
+                                    txtMiles.text=avg.toString()+" "+ getString(R.string.steps)
+                                }
+                                2->{
+
+                                    txtMiles.text=avg.toString()+" "+ getString(R.string.distance)
+                                }
+                                3->
+                                {
+
+                                    txtMiles.text=avg.toString()+" "+ getString(R.string.calories)
+                                }
+                                4->
+                                {
+
+                                    txtMiles.text=avg.toString()+" "+ getString(R.string.time)
+                                }
+                            }
                             val dataSet = BarDataSet(barEntriesArrayList, "")
 //                            dataSet.setColors(*ColorTemplate.MATERIAL_COLORS)
                             dataSet.setColors(Color.parseColor("#9CB135"))
@@ -346,6 +463,7 @@ class StepMonthlyFragment : Fragment(), OnChartValueSelectedListener {
         textView.text = currentMonth
 
         binding.apply {
+            resetGraph()
             CoroutineScope(Dispatchers.IO).launch {
                 //  val currentMonth = Calendar.getInstance().get(Calendar.MONTH) + 1 // Adding 1 because months are zero-based
 
@@ -370,11 +488,15 @@ class StepMonthlyFragment : Fragment(), OnChartValueSelectedListener {
                     var barEntriesArrayList = ArrayList<BarEntry>()
                     val dateFormat = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
                     val daysOfWeek = arrayOf(
-                        "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11",
-                        "12", "13", "14", "15", "16", "17", "18", "19", "20", "21",
-                        "22", "23", "24", "25", "26", "27", "28", "29", "30", "31"
+                        "1"+"-"+currentMonth, "2"+"-"+currentMonth, "3"+"-"+currentMonth, "4"+"-"+currentMonth, "5"+"-"+currentMonth,
+                        "6"+"-"+currentMonth, "7"+"-"+currentMonth, "8"+"-"+currentMonth, "9"+"-"+currentMonth, "10"+"-"+currentMonth, "11"+"-"+currentMonth,
+                        "12"+"-"+currentMonth, "13"+"-"+currentMonth, "14"+"-"+currentMonth, "15"+"-"+currentMonth, "16"+"-"+currentMonth, "17"+"-"+currentMonth,
+                        "18"+"-"+currentMonth, "19"+"-"+currentMonth, "20"+"-"+currentMonth, "21"+"-"+currentMonth, "22"+"-"+currentMonth, "23"+"-"+currentMonth,
+                        "24"+"-"+currentMonth, "25"+"-"+currentMonth, "26"+"-"+currentMonth, "27"+"-"+currentMonth, "28"+"-"+currentMonth, "29"+"-"+currentMonth, "30"+"-"+currentMonth,
+                        "31"+"-"+currentMonth
                     )
-                    var sumOfFinalStrings = 0f
+                    var avg = 0
+                    var sumOfFinalStrings = 0
 
 
                     // If there are no data for the current month, update the UI accordingly
@@ -444,12 +566,31 @@ class StepMonthlyFragment : Fragment(), OnChartValueSelectedListener {
                             //sumOfFinalStrings += finalString
 
 
-                            when(i)
-                            {
-                                1->barEntriesArrayList.add(BarEntry(dayOfMonth.toFloat()-1, it.steps.toFloat()))
-                                2->barEntriesArrayList.add(BarEntry(dayOfMonth.toFloat()-1, it.distance.toFloat()))
-                                3->barEntriesArrayList.add(BarEntry(dayOfMonth.toFloat()-1, it.calories.toFloat()))
-                                4->barEntriesArrayList.add(BarEntry(dayOfMonth.toFloat()-1, it.time.convertTimeToSeconds().toFloat()))
+                            when(i){
+                                1->
+                                {
+                                    barEntriesArrayList.add(BarEntry(dayOfMonth.toFloat(), it.steps.toFloat()))
+                                    sumOfFinalStrings += it.steps
+                                    avg = sumOfFinalStrings / daysOfWeek.size
+                                }
+                                2->
+                                {
+                                    barEntriesArrayList.add(BarEntry(dayOfMonth.toFloat(), it.distance.toFloat()))
+                                    sumOfFinalStrings += it.distance.toInt()
+                                    avg = sumOfFinalStrings / daysOfWeek.size
+                                }
+                                3->
+                                {
+                                    barEntriesArrayList.add(BarEntry(dayOfMonth.toFloat(), it.calories.toFloat()))
+                                    sumOfFinalStrings += it.calories.toInt()
+                                    avg = sumOfFinalStrings / daysOfWeek.size
+                                }
+                                4->
+                                {
+                                    barEntriesArrayList.add(BarEntry(dayOfMonth.toFloat(), it.time.convertTimeToSeconds().toFloat()))
+                                    sumOfFinalStrings += it.time.convertTimeToSeconds()
+                                    avg = sumOfFinalStrings / daysOfWeek.size
+                                }
                             }
 
 
@@ -465,10 +606,31 @@ class StepMonthlyFragment : Fragment(), OnChartValueSelectedListener {
                             Log.i("TAG", "updateUI: "+sumOfFinalStrings)
                             withContext(Dispatchers.Main)
                             {
-                                val (hours, minutes) = requireActivity().convertDecimalToHoursMinutes(aver)
+//                                val (hours, minutes) = requireActivity().convertDecimalToHoursMinutes(aver)
 
                                 //txtMiles.text ="$hours hr $minutes min"
+                                when(i)
+                                {
+                                    1->
+                                    {
 
+                                        txtMiles.text=avg.toString()+" "+ getString(R.string.steps)
+                                    }
+                                    2->{
+
+                                        txtMiles.text=avg.toString()+" "+ getString(R.string.distance)
+                                    }
+                                    3->
+                                    {
+
+                                        txtMiles.text=avg.toString()+" "+ getString(R.string.calories)
+                                    }
+                                    4->
+                                    {
+
+                                        txtMiles.text=avg.toString()+" "+ getString(R.string.time)
+                                    }
+                                }
                                 val dataSet = BarDataSet(barEntriesArrayList, "")
 //                                dataSet.setColors(*ColorTemplate.MATERIAL_COLORS)
                                 dataSet.setColors(android.graphics.Color.parseColor("#9CB135"))
@@ -522,31 +684,41 @@ class StepMonthlyFragment : Fragment(), OnChartValueSelectedListener {
     @SuppressLint("SetTextI18n")
     override fun onValueSelected(e: Entry?, h: Highlight?) {
         if (e != null) {
+            binding.dateLayout.visibility = View.INVISIBLE
+
             val value = e.y
             val xAxisLabel = binding.sleepChartMonthly.xAxis.valueFormatter.getFormattedValue(
                 e.x,
                 binding.sleepChartMonthly.xAxis
             )
 
-            val (hours, minutes) = requireActivity().convertDecimalToHoursMinutes(value)
 
             when(check)
             {
                 "Step"-> tvValue.text = "${value.toInt()} Steps $xAxisLabel"
-                "Distance"-> tvValue.text = "${value.toInt()} Distance $xAxisLabel"
+                "Distance"-> tvValue.text = "${value.toInt()} Miles $xAxisLabel"
                 "Calories"-> tvValue.text = "${value.toInt()} Calories $xAxisLabel"
-                "Time"-> tvValue.text = "${value.toInt()} Time $xAxisLabel"
+                "Time"->
+                {
+                    val hours = value.toInt() / 3600
+                    val minutes = (value.toInt() % 3600) / 60
+                    val seconds = value.toInt() % 60
+                    val reconstructedTime = String.format("%02d Hr %02d Min %02d Sec", hours, minutes, seconds)
+                    tvValue.text = "${reconstructedTime}"
+
+
+                }
             }
 
 
 
             val transformer = binding.sleepChartMonthly.getTransformer(binding.sleepChartMonthly.data.getDataSetByIndex(0).axisDependency)
-            val xPos = transformer.getPixelForValues(e.x, e.y).x - tooltipView.width / 2
+            val xPos = (transformer.getPixelForValues(e.x, e.y).x)/1.25f
 
             // Calculate the Y position for the top center of the graph
 //            val yPos = binding.sleepChart.viewPortHandler.contentHeight()
 
-            val yOffset = 100 // Adjust as needed
+            val yOffset = 270 // Adjust as needed
             val yPos = binding.sleepChartMonthly.viewPortHandler.contentHeight() - yOffset
 
             popupWindow.showAtLocation(
@@ -567,6 +739,30 @@ class StepMonthlyFragment : Fragment(), OnChartValueSelectedListener {
         popupWindow.dismiss()
 
 //        barDataSet!!.color = android.graphics.Color.parseColor("#9CB135") // Assuming barDataSet is your BarDataSet variable
+        binding.dateLayout.visibility = View.VISIBLE
 
+    }
+
+    fun getMonthName(month: Int): String {
+        val months = listOf(
+            "Jan", "Feb", "Mar", "Apr",
+            "May", "Jun", "Jul", "Aug", "Sep",
+            "Oct", "Nov", "Dec"
+        )
+        return if (month in 1..12) {
+            months[month - 1]
+        } else {
+            "Invalid month number"
+        }
+    }
+
+    private fun resetGraph() {
+        binding.sleepChartMonthly.apply {
+            clear()
+            setOnClickListener(null)
+            setOnLongClickListener(null)
+            popupWindow.dismiss()
+            binding.dateLayout.visibility = View.VISIBLE
+        }
     }
 }

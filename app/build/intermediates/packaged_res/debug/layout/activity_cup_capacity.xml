@@ -67,7 +67,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_5sdp"
                     android:fontFamily="@font/poppins_medium"
-                    android:text="50 ml"
+                    android:text="50"
                     android:textColor="@color/white"
                     android:textSize="@dimen/_12sdp" />
 
@@ -95,7 +95,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_5sdp"
                     android:fontFamily="@font/poppins_medium"
-                    android:text="100 ml"
+                    android:text="100"
                     android:textColor="@color/white"
                     android:textSize="@dimen/_12sdp" />
 
@@ -123,7 +123,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_5sdp"
                     android:fontFamily="@font/poppins_medium"
-                    android:text="200 ml"
+                    android:text="200"
                     android:textColor="@color/white"
                     android:textSize="@dimen/_12sdp" />
 
@@ -160,7 +160,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_5sdp"
                     android:fontFamily="@font/poppins_medium"
-                    android:text="300 ml"
+                    android:text="300"
                     android:textColor="@color/white"
                     android:textSize="@dimen/_12sdp" />
 
@@ -188,7 +188,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_5sdp"
                     android:fontFamily="@font/poppins_medium"
-                    android:text="500 ml"
+                    android:text="500"
                     android:textColor="@color/white"
                     android:textSize="@dimen/_12sdp" />
 
@@ -216,7 +216,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_5sdp"
                     android:fontFamily="@font/poppins_medium"
-                    android:text="Add"
+                    android:text="@string/add"
                     android:textColor="@color/white"
                     android:textSize="@dimen/_12sdp" />
 

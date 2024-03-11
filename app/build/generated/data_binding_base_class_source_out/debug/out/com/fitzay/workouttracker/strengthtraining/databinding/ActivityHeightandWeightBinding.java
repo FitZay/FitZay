@@ -11,7 +11,9 @@ import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
+import com.fitzay.wheelpicker.WheelPicker;
 import com.fitzay.workouttracker.strengthtraining.R;
+import com.fitzay.workouttracker.strengthtraining.core.utils.MyScaleView;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.card.MaterialCardView;
@@ -43,6 +45,9 @@ public final class ActivityHeightandWeightBinding implements ViewBinding {
 
   @NonNull
   public final TextView cmText;
+
+  @NonNull
+  public final WheelPicker cmWheel;
 
   @NonNull
   public final ConstraintLayout constraintLayout17;
@@ -90,6 +95,15 @@ public final class ActivityHeightandWeightBinding implements ViewBinding {
   public final MaterialCardView materialCardageminusBtn;
 
   @NonNull
+  public final MyScaleView myScaleCm;
+
+  @NonNull
+  public final MyScaleView myScaleFt;
+
+  @NonNull
+  public final WheelPicker targetWeight;
+
+  @NonNull
   public final TextView targetweightText;
 
   @NonNull
@@ -120,10 +134,22 @@ public final class ActivityHeightandWeightBinding implements ViewBinding {
   public final TextView tvQuestion;
 
   @NonNull
+  public final TextView txtHeightCm;
+
+  @NonNull
+  public final TextView txtHeightFt;
+
+  @NonNull
+  public final WheelPicker userAge;
+
+  @NonNull
   public final TextView valueText;
 
   @NonNull
   public final TextView weightText;
+
+  @NonNull
+  public final WheelPicker weightWh;
 
   @NonNull
   public final View weightminlusBtn;
@@ -134,7 +160,7 @@ public final class ActivityHeightandWeightBinding implements ViewBinding {
   private ActivityHeightandWeightBinding(@NonNull ConstraintLayout rootView,
       @NonNull TextView ageText, @NonNull View ageminusBtn, @NonNull View ageplusBtn,
       @NonNull MaterialButton btnNext, @NonNull ConstraintLayout clBottomNext,
-      @NonNull ConstraintLayout cmBtn, @NonNull TextView cmText,
+      @NonNull ConstraintLayout cmBtn, @NonNull TextView cmText, @NonNull WheelPicker cmWheel,
       @NonNull ConstraintLayout constraintLayout17, @NonNull ConstraintLayout constraintLayout18,
       @NonNull ConstraintLayout constraintLayout19, @NonNull ConstraintLayout constraintLayout20,
       @NonNull ConstraintLayout constraintLayout22, @NonNull ConstraintLayout constraintLayout23,
@@ -142,12 +168,15 @@ public final class ActivityHeightandWeightBinding implements ViewBinding {
       @NonNull View heightminusBtn, @NonNull ImageView ivBack,
       @NonNull MaterialCardView materialCardView15, @NonNull MaterialCardView materialCardView16,
       @NonNull MaterialCardView materialCardView29,
-      @NonNull MaterialCardView materialCardageminusBtn, @NonNull TextView targetweightText,
-      @NonNull View targetweightminusBtn, @NonNull View targetweightplusBtn,
-      @NonNull TextView textView29, @NonNull TextView textView33, @NonNull TextView textView35,
-      @NonNull TextView textView37, @NonNull TextView textView38, @NonNull MaterialToolbar toolbar,
-      @NonNull TextView tvQuestion, @NonNull TextView valueText, @NonNull TextView weightText,
-      @NonNull View weightminlusBtn, @NonNull View weightplusBtn) {
+      @NonNull MaterialCardView materialCardageminusBtn, @NonNull MyScaleView myScaleCm,
+      @NonNull MyScaleView myScaleFt, @NonNull WheelPicker targetWeight,
+      @NonNull TextView targetweightText, @NonNull View targetweightminusBtn,
+      @NonNull View targetweightplusBtn, @NonNull TextView textView29, @NonNull TextView textView33,
+      @NonNull TextView textView35, @NonNull TextView textView37, @NonNull TextView textView38,
+      @NonNull MaterialToolbar toolbar, @NonNull TextView tvQuestion, @NonNull TextView txtHeightCm,
+      @NonNull TextView txtHeightFt, @NonNull WheelPicker userAge, @NonNull TextView valueText,
+      @NonNull TextView weightText, @NonNull WheelPicker weightWh, @NonNull View weightminlusBtn,
+      @NonNull View weightplusBtn) {
     this.rootView = rootView;
     this.ageText = ageText;
     this.ageminusBtn = ageminusBtn;
@@ -156,6 +185,7 @@ public final class ActivityHeightandWeightBinding implements ViewBinding {
     this.clBottomNext = clBottomNext;
     this.cmBtn = cmBtn;
     this.cmText = cmText;
+    this.cmWheel = cmWheel;
     this.constraintLayout17 = constraintLayout17;
     this.constraintLayout18 = constraintLayout18;
     this.constraintLayout19 = constraintLayout19;
@@ -171,6 +201,9 @@ public final class ActivityHeightandWeightBinding implements ViewBinding {
     this.materialCardView16 = materialCardView16;
     this.materialCardView29 = materialCardView29;
     this.materialCardageminusBtn = materialCardageminusBtn;
+    this.myScaleCm = myScaleCm;
+    this.myScaleFt = myScaleFt;
+    this.targetWeight = targetWeight;
     this.targetweightText = targetweightText;
     this.targetweightminusBtn = targetweightminusBtn;
     this.targetweightplusBtn = targetweightplusBtn;
@@ -181,8 +214,12 @@ public final class ActivityHeightandWeightBinding implements ViewBinding {
     this.textView38 = textView38;
     this.toolbar = toolbar;
     this.tvQuestion = tvQuestion;
+    this.txtHeightCm = txtHeightCm;
+    this.txtHeightFt = txtHeightFt;
+    this.userAge = userAge;
     this.valueText = valueText;
     this.weightText = weightText;
+    this.weightWh = weightWh;
     this.weightminlusBtn = weightminlusBtn;
     this.weightplusBtn = weightplusBtn;
   }
@@ -253,6 +290,12 @@ public final class ActivityHeightandWeightBinding implements ViewBinding {
       id = R.id.cmText;
       TextView cmText = ViewBindings.findChildViewById(rootView, id);
       if (cmText == null) {
+        break missingId;
+      }
+
+      id = R.id.cm_wheel;
+      WheelPicker cmWheel = ViewBindings.findChildViewById(rootView, id);
+      if (cmWheel == null) {
         break missingId;
       }
 
@@ -346,6 +389,24 @@ public final class ActivityHeightandWeightBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.my_scale_cm;
+      MyScaleView myScaleCm = ViewBindings.findChildViewById(rootView, id);
+      if (myScaleCm == null) {
+        break missingId;
+      }
+
+      id = R.id.my_scale_ft;
+      MyScaleView myScaleFt = ViewBindings.findChildViewById(rootView, id);
+      if (myScaleFt == null) {
+        break missingId;
+      }
+
+      id = R.id.target_weight;
+      WheelPicker targetWeight = ViewBindings.findChildViewById(rootView, id);
+      if (targetWeight == null) {
+        break missingId;
+      }
+
       id = R.id.targetweightText;
       TextView targetweightText = ViewBindings.findChildViewById(rootView, id);
       if (targetweightText == null) {
@@ -406,6 +467,24 @@ public final class ActivityHeightandWeightBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.txt_height_cm;
+      TextView txtHeightCm = ViewBindings.findChildViewById(rootView, id);
+      if (txtHeightCm == null) {
+        break missingId;
+      }
+
+      id = R.id.txt_height_ft;
+      TextView txtHeightFt = ViewBindings.findChildViewById(rootView, id);
+      if (txtHeightFt == null) {
+        break missingId;
+      }
+
+      id = R.id.userAge;
+      WheelPicker userAge = ViewBindings.findChildViewById(rootView, id);
+      if (userAge == null) {
+        break missingId;
+      }
+
       id = R.id.value_text;
       TextView valueText = ViewBindings.findChildViewById(rootView, id);
       if (valueText == null) {
@@ -415,6 +494,12 @@ public final class ActivityHeightandWeightBinding implements ViewBinding {
       id = R.id.weightText;
       TextView weightText = ViewBindings.findChildViewById(rootView, id);
       if (weightText == null) {
+        break missingId;
+      }
+
+      id = R.id.weight_wh;
+      WheelPicker weightWh = ViewBindings.findChildViewById(rootView, id);
+      if (weightWh == null) {
         break missingId;
       }
 
@@ -431,12 +516,14 @@ public final class ActivityHeightandWeightBinding implements ViewBinding {
       }
 
       return new ActivityHeightandWeightBinding((ConstraintLayout) rootView, ageText, ageminusBtn,
-          ageplusBtn, btnNext, clBottomNext, cmBtn, cmText, constraintLayout17, constraintLayout18,
-          constraintLayout19, constraintLayout20, constraintLayout22, constraintLayout23, ftBtn,
-          ftText, heightPlusBtn, heightminusBtn, ivBack, materialCardView15, materialCardView16,
-          materialCardView29, materialCardageminusBtn, targetweightText, targetweightminusBtn,
+          ageplusBtn, btnNext, clBottomNext, cmBtn, cmText, cmWheel, constraintLayout17,
+          constraintLayout18, constraintLayout19, constraintLayout20, constraintLayout22,
+          constraintLayout23, ftBtn, ftText, heightPlusBtn, heightminusBtn, ivBack,
+          materialCardView15, materialCardView16, materialCardView29, materialCardageminusBtn,
+          myScaleCm, myScaleFt, targetWeight, targetweightText, targetweightminusBtn,
           targetweightplusBtn, textView29, textView33, textView35, textView37, textView38, toolbar,
-          tvQuestion, valueText, weightText, weightminlusBtn, weightplusBtn);
+          tvQuestion, txtHeightCm, txtHeightFt, userAge, valueText, weightText, weightWh,
+          weightminlusBtn, weightplusBtn);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

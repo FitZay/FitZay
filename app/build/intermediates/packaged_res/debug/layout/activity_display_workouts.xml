@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -44,21 +44,26 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="@dimen/_60sdp"
+        android:layout_height="0dp"
+        android:layout_above="@+id/lv"
+        android:layout_below="@id/appBarLayout"
         android:orientation="vertical"
         android:scrollbars="vertical"
         android:visibility="visible"
+        android:layout_marginBottom="@dimen/_1sdp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         app:spanCount="1"
+        tools:itemCount="3"
         tools:listitem="@layout/display_workouts_layout" />
 
     <LinearLayout
+        android:id="@+id/lv"
         app:layout_anchorGravity="bottom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
         android:orientation="vertical">
 
         <RelativeLayout
@@ -85,8 +90,8 @@
             android:id="@+id/clAds"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_60sdp"
-            android:background="@drawable/bg_selected_options"
             android:visibility="gone"
+            android:background="@drawable/bg_selected_options"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvWelcome">
@@ -115,4 +120,4 @@
 
     </LinearLayout>
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</RelativeLayout>

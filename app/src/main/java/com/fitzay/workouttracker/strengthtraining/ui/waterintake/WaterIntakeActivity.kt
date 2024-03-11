@@ -1,11 +1,21 @@
 package com.fitzay.workouttracker.strengthtraining.ui.waterintake
 
+import android.annotation.SuppressLint
+import android.app.AlarmManager
 import android.app.Dialog
+import android.app.Notification
+import android.app.NotificationChannel
+import android.app.NotificationManager
+import android.app.PendingIntent
+import android.content.Context
 import android.content.Intent
+import android.content.IntentFilter
 import android.graphics.drawable.ColorDrawable
+import android.os.Build
 import android.os.Bundle
 import android.util.Log
 import android.view.Window
+import android.widget.RemoteViews
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.foundation.layout.fillMaxSize
@@ -16,28 +26,40 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.ComposeView
+import androidx.core.app.NotificationCompat
+import androidx.core.app.NotificationManagerCompat
 import androidx.datastore.preferences.protobuf.StringValue
 import androidx.lifecycle.ViewModelProvider
 import com.fitzay.workouttracker.strengthtraining.R
+import com.fitzay.workouttracker.strengthtraining.core.utils.WaterIntakeNotificationReceiver
 import com.fitzay.workouttracker.strengthtraining.core.utils.WavesLoadingIndicator
 import com.fitzay.workouttracker.strengthtraining.databinding.ActivityWaterIntakeBinding
 import com.fitzay.workouttracker.strengthtraining.databinding.DialogWaterCapacityBinding
 import com.fitzay.workouttracker.strengthtraining.di.Component
+import com.fitzay.workouttracker.strengthtraining.ui.MainActivity
 import com.fitzay.workouttracker.strengthtraining.ui.viewmodels.SharedViewModel
 import java.text.SimpleDateFormat
 import java.util.*
 
 
 class WaterIntakeActivity : AppCompatActivity() {
+
     private lateinit var binding: ActivityWaterIntakeBinding
     private lateinit var model: SharedViewModel
     var a = 0f
     val TAG = "WaterIntake"
+    // Notification channel ID.
+//    private val INTERVAL_MILLIS = 5 * 60 * 1000 // 5 minutes in milliseconds
+    private val INTERVAL_MILLIS = 5*1000
 
+    @SuppressLint("ServiceCast")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityWaterIntakeBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        // Create the notification channel.
+        createNotificationChannel()
 
         binding.ivBack.setOnClickListener {
             onBackPressed()
@@ -66,6 +88,8 @@ class WaterIntakeActivity : AppCompatActivity() {
             }
         }
 
+
+
         binding.layoutChange.setOnClickListener {
             val intent =
                 Intent(
@@ -74,22 +98,102 @@ class WaterIntakeActivity : AppCompatActivity() {
                 )
             intent.flags = Intent.FLAG_ACTIVITY_SINGLE_TOP
             startActivity(intent)
+
         }
         binding.currentML.text = Component.preference.cupCapacity.toString() + " ml"
+        scheduleNotification()
+
+//        val alarmManager = getSystemService(Context.ALARM_SERVICE) as AlarmManager
+//        val notificationIntent = Intent(this, WaterIntakeNotificationReceiver::class.java)
+//        val pendingIntent = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_MUTABLE)
+//
+////        val intervalMillis = 2 * 60 * 60 * 1000 // 2 hours in milliseconds
+//        val intervalMillis = 5000L // 2 hours in milliseconds
+//        val triggerAtMillis = System.currentTimeMillis() + intervalMillis
+//
+//        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, triggerAtMillis,
+//            intervalMillis, pendingIntent)
+
+
+
+
 
     }
+    private fun createNotificationChannel() {
+        // Create the NotificationChannel, but only on API 26+ because
+        // the NotificationChannel class is new and not in the support library.
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            val name = getString(R.string.channel_name)
+            val descriptionText = getString(R.string.channel_description)
+            val importance = NotificationManager.IMPORTANCE_DEFAULT
+            val channel = NotificationChannel(CHANNEL_ID, name, importance).apply {
+                description = descriptionText
+                enableLights(true)
+                lightColor = getColor(R.color.green)
+            }
+            // Register the channel with the system
+            val notificationManager: NotificationManager =
+                getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+            notificationManager.createNotificationChannel(channel)
+        }
+    }
 
+    private fun scheduleNotification() {
+        val alarmManager = getSystemService(Context.ALARM_SERVICE) as AlarmManager
+        val intent = Intent(this, WaterIntakeNotificationReceiver::class.java)
+        val pendingIntent = PendingIntent.getBroadcast(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT)
+
+        // Set repeating alarm with a 5-minute interval
+        val calendar = Calendar.getInstance().apply {
+            timeInMillis = System.currentTimeMillis()
+            add(Calendar.SECOND, 5)
+        }
+
+        alarmManager.setRepeating(
+            AlarmManager.RTC_WAKEUP,
+            calendar.timeInMillis,
+            INTERVAL_MILLIS.toLong(),
+            pendingIntent
+        )
+    }
+    private fun showNotification() {
+        val intent = Intent(this, MainActivity::class.java).apply {
+            flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+        }
+        val pendingIntent: PendingIntent = PendingIntent.getActivity(this, 0, intent, 0)
+
+        val builder = NotificationCompat.Builder(this, CHANNEL_ID)
+            .setSmallIcon(R.drawable.app_icon)
+            .setContentTitle("Water Intake Reminder")
+            .setPriority(NotificationCompat.PRIORITY_DEFAULT)
+            .setContentIntent(pendingIntent)
+            .setAutoCancel(true)
+
+        with(NotificationManagerCompat.from(this)) {
+            // notificationId is a unique int for each notification that you must define
+            notify(0, builder.build())
+        }
+    }
     override fun onResume() {
         super.onResume()
-        binding.txtGoal.text = "Daily Goal :" + Component.preference.waterGoal + " ml"
-        binding.currentML.text = Component.preference.cupCapacity.toString() + " ml"
+        binding.txtGoal.text = getString(R.string.daily_goal)+":"+ Component.preference.waterGoal + getString(R.string.ml)
+        binding.currentML.text = Component.preference.cupCapacity.toString() + getString(R.string.ml)
     }
 
+    override fun onStart() {
+        super.onStart()
+        binding.txtDrink.text = Component.preference.totalDrink.toString()
+    }
+
+    companion object {
+        var counter by mutableStateOf(Component.preference.saveWater)
+        val CHANNEL_ID = "Water-Intake Notification"
+
+    }
 
     @Composable
     fun Greeting() {
 
-        var counter by remember { mutableStateOf(Component.preference.saveWater) }
         WavesLoadingIndicator(
             modifier = Modifier.fillMaxSize(),
             color = lightThemeColors.secondaryVariant,
@@ -130,12 +234,14 @@ class WaterIntakeActivity : AppCompatActivity() {
 //            counter -= 0.02f
 //            Component.preference.saveWater = counter
 //
-//        }
 
+
+//        }
+        var i=0
         binding.layoutSub.setOnClickListener {
             val cupCapacity = Component.preference.cupCapacity
             val waterGoal = Component.preference.waterGoal
-            var i=0
+
 
             if (Component.preference.totalDrink >= cupCapacity) {
                 Component.preference.totalDrink -= cupCapacity
@@ -155,6 +261,17 @@ class WaterIntakeActivity : AppCompatActivity() {
                     Log.i("TAG", "if: " + Component.preference.saveWater.toString() + "-" + counter)
                 }
             }
+            else
+            {
+                Log.i("TAG", "ELSE-out: " + Component.preference.saveWater.toString() + "-" + counter+"-"+cupCapacity)
+                counter=0f
+                Component.preference.currentProgress = counter
+                Component.preference.saveWater=counter
+                binding.txtDrink.setText(counter.toInt().toString())
+                Component.preference.totalDrink=0
+
+            }
+
 
 
         }
@@ -180,12 +297,12 @@ class WaterIntakeActivity : AppCompatActivity() {
         }
         dialog.setCanceledOnTouchOutside(false)
         dialog.setCancelable(false)
-        waterBinding.tvTitle.text = "Daily Goal"
+        waterBinding.tvTitle.text = getString(R.string.daily_goal)
         waterBinding.btnSave.setOnClickListener {
             if (waterBinding.tvCapacity.text.isNotEmpty()) {
                 Component.preference.waterGoal = waterBinding.tvCapacity.text.toString().toInt()
                 binding.txtGoal.text =
-                    "Daily Goal :" + waterBinding.tvCapacity.text.toString() + " ml"
+                    getString(R.string.daily_goal)+":" + waterBinding.tvCapacity.text.toString() + getString(R.string.ml)
                 dialog.dismiss()
             }
             else

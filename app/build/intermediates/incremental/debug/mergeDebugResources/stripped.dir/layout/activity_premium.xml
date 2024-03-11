@@ -48,6 +48,7 @@
                     android:layout_width="@dimen/_25sdp"
                     android:layout_height="@dimen/_25sdp"
                     android:layout_marginEnd="@dimen/_15sdp"
+                    android:visibility="gone"
                     android:layout_marginTop="@dimen/_15sdp"
                     android:src="@drawable/ic_close"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -70,9 +71,10 @@
                     android:textColor="@color/white"
                     android:textSize="@dimen/_16sdp"
                     android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView2"
                     app:layout_constraintEnd_toStartOf="@+id/closeBtn"
-                    app:layout_constraintStart_toEndOf="@+id/imageView2"
-                    app:layout_constraintTop_toTopOf="@+id/closeBtn" />
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView2" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -116,10 +118,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#18171E"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
                 android:paddingStart="@dimen/_15sdp"
                 android:paddingEnd="@dimen/_15sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
 
@@ -128,10 +130,10 @@
                     android:id="@+id/constraintLayout4"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_75sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
                     android:layout_marginTop="@dimen/_5sdp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHeight_percent="0.17"
-                    android:layout_marginStart="@dimen/_3sdp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
 
@@ -139,27 +141,27 @@
                         android:id="@+id/linearLayout"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:orientation="horizontal"
                         android:gravity="center_vertical"
+                        android:orientation="horizontal"
                         app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.5"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" >
+                        app:layout_constraintTop_toTopOf="parent">
 
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/ic_check"/>
+                            android:src="@drawable/ic_check" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/remove_ads"
-                            android:textStyle="bold"
-                            android:textSize="@dimen/_11sdp"
                             android:layout_marginStart="@dimen/_15sdp"
-                            android:textColor="#939292"/>
+                            android:text="@string/remove_ads"
+                            android:textColor="#939292"
+                            android:textSize="@dimen/_11sdp"
+                            android:textStyle="bold" />
 
                     </LinearLayout>
 
@@ -167,26 +169,27 @@
                         android:id="@+id/linearLayout2"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
+                        android:gravity="center_vertical"
                         android:orientation="horizontal"
                         app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
                         app:layout_constraintEnd_toEndOf="parent"
-                        android:gravity="center_vertical"
                         app:layout_constraintHorizontal_bias="0.5"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/linearLayout" >
+                        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/ic_check"/>
+                            android:src="@drawable/ic_check" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/unlimited_workout_plans"
-                            android:textSize="@dimen/_11sdp"
-                            android:textStyle="bold"
                             android:layout_marginStart="@dimen/_15sdp"
-                            android:textColor="#939292"/>
+                            android:text="@string/unlimited_workout_plans"
+                            android:textColor="#939292"
+                            android:textSize="@dimen/_11sdp"
+                            android:textStyle="bold" />
 
                     </LinearLayout>
 
@@ -194,27 +197,27 @@
                         android:id="@+id/linearLayout3"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
-                        android:orientation="horizontal"
                         android:gravity="center_vertical"
+                        android:orientation="horizontal"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.5"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" >
+                        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:src="@drawable/ic_check"/>
+                            android:src="@drawable/ic_check" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/unlock_all_plans"
-                            android:textSize="@dimen/_11sdp"
-                            android:textStyle="bold"
                             android:layout_marginStart="@dimen/_15sdp"
-                            android:textColor="#939292"/>
+                            android:text="@string/unlock_all_plans"
+                            android:textColor="#939292"
+                            android:textSize="@dimen/_11sdp"
+                            android:textStyle="bold" />
 
                     </LinearLayout>
 
@@ -225,9 +228,9 @@
                     android:id="@+id/weeklyBtn"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_55sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
                     app:cardBackgroundColor="#24242C"
                     app:cardCornerRadius="@dimen/_8sdp"
-                    android:layout_marginTop="@dimen/_10sdp"
                     app:cardElevation="0dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHeight_percent="0.145"
@@ -247,7 +250,7 @@
                             android:layout_width="@dimen/_16sdp"
                             android:layout_height="@dimen/_16sdp"
                             android:layout_marginStart="@dimen/_12sdp"
-                            android:src="@drawable/ic_selectedbutton"
+                            android:src="@drawable/ic_radiobtn_unchecked"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
@@ -257,8 +260,8 @@
                             android:layout_width="@dimen/_125sdp"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="@dimen/_13sdp"
-                            android:lines="1"
                             android:layout_marginTop="@dimen/_2sdp"
+                            android:lines="1"
                             android:text="@string/week_of_membership"
                             android:textColor="#939292"
                             android:textSize="@dimen/_11sdp"
@@ -307,16 +310,16 @@
                     android:id="@+id/montlyBtn"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_55sdp"
-                    app:cardBackgroundColor="#24242C"
-                    app:strokeColor="#24242C"
-                    app:cardElevation="0dp"
-                    app:cardCornerRadius="@dimen/_8sdp"
-                    app:strokeWidth="@dimen/_1sdp"
                     android:layout_marginTop="@dimen/_8sdp"
+                    app:cardBackgroundColor="#24242C"
+                    app:cardCornerRadius="@dimen/_8sdp"
+                    app:cardElevation="0dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHeight_percent="0.145"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/weeklyBtn">
+                    app:layout_constraintTop_toBottomOf="@+id/weeklyBtn"
+                    app:strokeColor="#24242C"
+                    app:strokeWidth="@dimen/_1sdp">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
@@ -337,11 +340,11 @@
                             android:id="@+id/cancelBtn6"
                             android:layout_width="@dimen/_125sdp"
                             android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2sdp"
                             android:lines="1"
                             android:text="@string/month_of_membership"
                             android:textColor="#939292"
                             android:textSize="@dimen/_11sdp"
-                            android:layout_marginTop="@dimen/_2sdp"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="@+id/cancelBtn5"
                             app:layout_constraintTop_toBottomOf="@+id/cancelBtn5" />
@@ -407,7 +410,7 @@
                             android:layout_width="@dimen/_16sdp"
                             android:layout_height="@dimen/_16sdp"
                             android:layout_marginStart="@dimen/_12sdp"
-                            android:src="@drawable/ic_radiobtn_unchecked"
+                            android:src="@drawable/ic_selectedbutton"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
@@ -416,10 +419,10 @@
                             android:id="@+id/cancelBtn8"
                             android:layout_width="@dimen/_125sdp"
                             android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_2sdp"
                             android:lines="1"
                             android:text="@string/year_of_membership"
                             android:textColor="#939292"
-                            android:layout_marginTop="@dimen/_2sdp"
                             android:textSize="@dimen/_11sdp"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="@+id/cancelBtn7"
@@ -429,9 +432,9 @@
                             android:id="@+id/cancelBtn7"
                             android:layout_width="@dimen/_125sdp"
                             android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_13sdp"
                             android:lines="1"
                             android:text="@string/platinum"
-                            android:layout_marginStart="@dimen/_13sdp"
                             android:textColor="@color/white"
                             android:textSize="@dimen/_11sdp"
                             android:textStyle="bold"
@@ -469,8 +472,8 @@
                     app:cardBackgroundColor="@color/green"
                     app:cardCornerRadius="@dimen/_8sdp"
                     app:cardElevation="0dp"
-                    app:layout_constraintHeight_percent="0.1"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHeight_percent="0.1"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/yearlyBtn">
 
@@ -479,9 +482,9 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:text="@string/subscribe"
+                        android:textColor="@color/white"
                         android:textSize="@dimen/_11sdp"
-                        android:textStyle="bold"
-                        android:textColor="@color/white" />
+                        android:textStyle="bold" />
 
                 </com.google.android.material.card.MaterialCardView>
 
@@ -490,13 +493,28 @@
                     android:id="@+id/cancelBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/cancel_anytime"
-                    android:textColor="#939292"
                     android:layout_marginTop="@dimen/_12sdp"
-                    android:textSize="@dimen/_12sdp"
-                    app:layout_constraintEnd_toEndOf="parent"
+                    android:text="@string/or_continue_with_ads"
+                    android:textColor="#939292"
+                    android:textSize="@dimen/_11sdp"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView6"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintHorizontal_chainStyle="packed"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/submitBtn" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_marginStart="@dimen/_2sdp"
+                    android:src="@drawable/baseline_arrow_forward_24"
+                    android:tint="#939292"
+                    app:layout_constraintBottom_toBottomOf="@+id/cancelBtn"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/cancelBtn"
+                    app:layout_constraintTop_toTopOf="@+id/cancelBtn" />
 
 
                 <androidx.constraintlayout.widget.ConstraintLayout

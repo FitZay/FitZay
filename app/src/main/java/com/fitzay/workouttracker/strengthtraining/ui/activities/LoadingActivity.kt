@@ -4,18 +4,25 @@ import android.app.ActivityOptions
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
+import android.content.res.Configuration
+import android.graphics.drawable.GradientDrawable
+import android.os.Build
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.os.Handler
 import android.os.Looper
 import android.util.Log
 import android.view.View
+import android.widget.FrameLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.fitzay.workouttracker.strengthtraining.R
 import com.fitzay.workouttracker.strengthtraining.core.AppController
+import com.fitzay.workouttracker.strengthtraining.core.utils.AppUtil2
 
 import com.fitzay.workouttracker.strengthtraining.core.utils.InAppPurchaseUtil
+import com.fitzay.workouttracker.strengthtraining.core.utils.LanguageManager
+import com.fitzay.workouttracker.strengthtraining.core.utils.SharedPreferencesHelper
 import com.fitzay.workouttracker.strengthtraining.core.utils.checkForInternet
 import com.fitzay.workouttracker.strengthtraining.core.utils.setLocale
 import com.fitzay.workouttracker.strengthtraining.databinding.ActivityLoadingBinding
@@ -30,10 +37,11 @@ import com.google.android.ump.ConsentDebugSettings
 import com.google.android.ump.ConsentInformation
 import com.google.android.ump.ConsentRequestParameters
 import com.google.android.ump.UserMessagingPlatform
+import java.util.Locale
 import java.util.concurrent.atomic.AtomicBoolean
 
 
-class LoadingActivity : AppCompatActivity() {
+class LoadingActivity : AppUtil2() {
 
     var mInterstitialAd: InterstitialAd? = null
     var isStarted = false
@@ -48,15 +56,20 @@ class LoadingActivity : AppCompatActivity() {
     companion object {
         var ispurchased = false
     }
+   // var lang="en"
 
 
     val TAG = "LoadingActivity"
     private lateinit var binding: ActivityLoadingBinding
-
+    lateinit var languageManager:LanguageManager
     override fun onCreate(savedInstanceState: Bundle?) {
+
+
         super.onCreate(savedInstanceState)
         binding = ActivityLoadingBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        languageManager = LanguageManager(this@LoadingActivity)
 
         isStarted = true
         InAppPurchaseUtil.isPurchaseSubscribed(this)
@@ -68,6 +81,7 @@ class LoadingActivity : AppCompatActivity() {
         }
 
     }
+
 
 //    private fun loadAdaptiveNative() {
 //
@@ -183,10 +197,8 @@ class LoadingActivity : AppCompatActivity() {
         if (isConsentDone) {
             showLoading()
         }
-        val sharedPref = applicationContext.getSharedPreferences("myPrefs", Context.MODE_PRIVATE)
-        val lan = sharedPref.getString("key", "en")
+        languageManager = LanguageManager(this@LoadingActivity)
 
-        setLocale(this@LoadingActivity,lan!!)
     }
 
 
@@ -244,6 +256,9 @@ class LoadingActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
+
+//        val sharedPref = applicationContext.getSharedPreferences("storeLan", Context.MODE_PRIVATE)
+//        setLocale(this@LoadingActivity,sharedPref.getString("key", "en")!!)
         isStarted = true
         if (::handlerLoading.isInitialized) {
             try {
@@ -451,5 +466,6 @@ class LoadingActivity : AppCompatActivity() {
             }
         },1500)
     }
+
 
 }

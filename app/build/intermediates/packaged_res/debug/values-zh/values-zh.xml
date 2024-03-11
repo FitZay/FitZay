@@ -3,8 +3,10 @@
     <string name="abs">ABC</string>
     <string name="abs_beginner">腹肌初学者</string>
     <string name="abs_core">腹肌与核心</string>
+    <string name="add">添加</string>
     <string name="advance">高级</string>
     <string name="alarm">闹钟</string>
+    <string name="alarm_mess">确定要删除吗？</string>
     <string name="allow">允许</string>
     <string name="allow_req_permissions">允许所有必需权限</string>
     <string name="allow_required_permissions">需要权限以将引言保存到相册中。</string>
@@ -41,9 +43,13 @@
     <string name="daily_">每日</string>
     <string name="daily_average">日均值</string>
     <string name="daily_challenge">每日挑战</string>
+    <string name="daily_goal">每日目标</string>
     <string name="daily_motivation">每日动力</string>
     <string name="daily_step_goal">每日步数目标</string>
+    <string name="def">默认</string>
     <string name="delete_account"><u> 删除帐户 </u></string>
+    <string name="delete_alarm">删除闹钟</string>
+    <string name="distance">距离</string>
     <string name="do_it">做它</string>
     <string name="do_relate_following_statement">您是否认同以下说法？</string>
     <string name="do_suffer_from_knee_pain">你是否患有膝盖疼痛？</string>
@@ -73,6 +79,7 @@
     <string name="gain_muscle">增肌</string>
     <string name="gallery">相册</string>
     <string name="go_premium">去高级版</string>
+    <string name="goal">目标</string>
     <string name="gold">"金 "</string>
     <string name="google_play">Google Play</string>
     <string name="google_search">Google搜索</string>
@@ -97,6 +104,7 @@
     <string name="ideal">理想</string>
     <string name="improving_sleep">改善睡眠</string>
     <string name="in">英寸</string>
+    <string name="input">输入您的数据</string>
     <string name="instagram">Instagram</string>
     <string name="intermediate">中级</string>
     <string name="item_not_found">未找到项目</string>
@@ -107,6 +115,7 @@
     <string name="label">标签</string>
     <string name="language">言語</string>
     <string name="lbs">磅</string>
+    <string name="leg">腿</string>
     <string name="less_6_hours">少于6小时</string>
     <string name="less_one_hour">少于1小时</string>
     <string name="look">只是看一看</string>
@@ -117,6 +126,7 @@
     <string name="manage_subscriptions">管理订阅</string>
     <string name="message">删除帐户将删除所有已保存的数据！</string>
     <string name="miles">英里</string>
+    <string name="ml">毫升</string>
     <string name="month_of_membership">1个月会员资格</string>
     <string name="monthly">月均</string>
     <string name="monthly_">每月</string>
@@ -147,6 +157,7 @@
     <string name="not_very_fit">我不太健康</string>
     <string name="notification_text">今天的总步数：%1$d</string>
     <string name="notification_title">FitZay-计步器</string>
+    <string name="ok_alarm">确定</string>
     <string name="one_two_hours">1-2小时</string>
     <string name="permission_toast">允许所需权限以使用计步器功能。</string>
     <string name="personalized_des">等待您的私人教练正在为您量身定制锻炼计划</string>
@@ -156,6 +167,7 @@
     <string name="platinum">铂金</string>
     <string name="pm">下午</string>
     <string name="premium_features_details">高级功能详情</string>
+    <string name="previous">上一個</string>
     <string name="privacy_policy">隐私政策</string>
     <string name="profile">个人资料</string>
     <string name="purchase_cancel_by_user">用户取消购买</string>
@@ -195,6 +207,7 @@
     <string name="time">时间</string>
     <string name="time_in_bed">入睡时间</string>
     <string name="today">今天</string>
+    <string name="today_">今天</string>
     <string name="tomorrow">明日の朝</string>
     <string name="tonight">今晚</string>
     <string name="too_easy">太简单了</string>

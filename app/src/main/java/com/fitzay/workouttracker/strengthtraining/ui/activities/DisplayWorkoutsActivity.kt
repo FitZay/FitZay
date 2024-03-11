@@ -11,6 +11,8 @@ import com.bumptech.glide.Glide
 import com.fitzay.workouttracker.strengthtraining.R
 import com.fitzay.workouttracker.strengthtraining.core.AppController
 import com.fitzay.workouttracker.strengthtraining.core.ads.FitnessInterstitialAd
+import com.fitzay.workouttracker.strengthtraining.core.utils.AppUtil2
+import com.fitzay.workouttracker.strengthtraining.core.utils.LanguageManager
 import com.fitzay.workouttracker.strengthtraining.core.utils.checkForInternet
 import com.fitzay.workouttracker.strengthtraining.core.utils.getFitzayRemoteString
 import com.fitzay.workouttracker.strengthtraining.databinding.ActivityDisplayWorkoutsBinding
@@ -22,7 +24,7 @@ import com.google.android.ads.nativetemplates.TemplateView
 import com.google.android.gms.ads.*
 import com.google.android.gms.ads.nativead.NativeAdOptions
 
-class DisplayWorkoutsActivity : AppCompatActivity() {
+class DisplayWorkoutsActivity : AppUtil2() {
 
     private lateinit var binding: ActivityDisplayWorkoutsBinding
     private var TAG = "_displayactivity"
@@ -36,7 +38,7 @@ class DisplayWorkoutsActivity : AppCompatActivity() {
         TemplateView.ctacolor = AppController.fitzayModel?.FitzayNativeStartExercise?.ctacolor
         binding = ActivityDisplayWorkoutsBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
+        LanguageManager(this@DisplayWorkoutsActivity)
         val activitytype = intent.getStringExtra("EXTRA_Activity")
         val name = intent.getStringExtra("EXTRA_NAME")!!
         val id = intent.getStringExtra("EXTRA_ID")

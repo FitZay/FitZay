@@ -335,5 +335,18 @@
     <string name="no_alarm">Sem alarme</string>
     <string name="tomorrow">Amanhã de manhã</string>
     <string name="no_data">Sem dados</string>
+    <string name="daily_goal">Meta diária</string>
+    <string name="add">Adicionar</string>
+    <string name="input">Digite seus dados</string>
+    <string name="leg">Perna</string>
+    <string name="def">Padrão</string>
+    <string name="ml">ml</string>
+    <string name="today_">Hoje</string>
+    <string name="previous">Anterior</string>
+    <string name="goal">Meta</string>
+    <string name="distance">Distância</string>
+    <string name="delete_alarm">Excluir alarme</string>
+    <string name="ok_alarm">OK</string>
+    <string name="alarm_mess">Tem certeza de que deseja excluir?</string>
 
 </resources>

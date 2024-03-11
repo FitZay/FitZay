@@ -1,13 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
     android:layoutDirection="ltr"
-    tools:context=".ui.questions.start.HeightandWeightAct"
-    android:background="@drawable/bg_main">
-
+    tools:context=".ui.questions.start.HeightandWeightAct">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/toolbar"
@@ -26,9 +24,7 @@
             android:paddingEnd="@dimen/_5sdp"
             android:paddingBottom="@dimen/_5sdp"
             android:src="@drawable/ic_back" />
-
     </com.google.android.material.appbar.MaterialToolbar>
-
 
     <TextView
         android:id="@+id/tvQuestion"
@@ -39,13 +35,12 @@
         android:paddingTop="@dimen/_8sdp"
         android:paddingEnd="@dimen/_12sdp"
         android:paddingBottom="@dimen/_8sdp"
-        android:text="Input your data"
+        android:text="@string/input"
         android:textAllCaps="true"
         android:textColor="@color/white"
         android:textSize="@dimen/_23sdp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
-
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -55,7 +50,6 @@
         app:layout_constraintHeight_percent="0.6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvQuestion">
-
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout17"
@@ -67,29 +61,27 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-
             <com.google.android.material.card.MaterialCardView
                 android:id="@+id/materialCardageminusBtn"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                app:cardCornerRadius="@dimen/_6sdp"
                 app:cardBackgroundColor="#24242c"
+                app:cardCornerRadius="@dimen/_6sdp"
                 app:layout_constraintBottom_toTopOf="@+id/materialCardView15"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" >
+                app:layout_constraintTop_toTopOf="parent">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-
                     <TextView
                         android:id="@+id/textView29"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Age"
+                        android:text="@string/txt_age"
                         android:textColor="#656467"
                         android:textSize="@dimen/_12sdp"
                         android:textStyle="bold"
@@ -99,6 +91,29 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
+                    <com.fitzay.wheelpicker.WheelPicker
+                        android:id="@+id/userAge"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:fontFamily="@font/poppins"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView29"
+                        app:wheelPickerBgColor="@color/transparent"
+                        app:wheelPickerDefaultSelectedItemPos="8"
+                        app:wheelPickerDividerColor="@android:color/transparent"
+                        app:wheelPickerItemSelectedBgColor="@color/secondary"
+                        app:wheelPickerItemUnselectedBgColor="@color/transparent"
+                        app:wheelPickerItemUnselectedTextColor="#939292"
+                        app:wheelPickerItems="@array/age"
+                        app:wheelPickerItemsTextBold="true"
+                        app:wheelPickerItemsTextItalic="true"
+                        app:wheelPickerItemsTextSize="@dimen/_6sdp"
+                        app:wheelPickerItemsUnselectedTextAlpha="0.7"
+                        app:wheelPickerOrientationVertical="true"
+                        app:wheelPickerScaleDownEnabled="true" />
 
                     <TextView
                         android:id="@+id/ageText"
@@ -108,6 +123,7 @@
                         android:textColor="@color/white"
                         android:textSize="@dimen/_16sdp"
                         android:textStyle="bold"
+                        android:visibility="invisible"
                         app:layout_constraintBottom_toTopOf="@+id/constraintLayout19"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.5"
@@ -118,27 +134,27 @@
                         android:id="@+id/constraintLayout19"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintBottom_toBottomOf="@id/userAge"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.5"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/ageText">
+                        app:layout_constraintTop_toTopOf="@id/userAge"
+                        app:layout_constraintVertical_bias="0.5">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="-"
                             android:layout_marginBottom="@dimen/_2sdp"
-                            android:textAlignment="center"
                             android:elevation="@dimen/_1sdp"
+                            android:text="-"
+                            android:textAlignment="center"
                             android:textColor="@color/white"
-                            android:textSize="@dimen/_18sdp"
+                            android:textSize="@dimen/_20ssp"
                             app:layout_constraintBottom_toBottomOf="@+id/ageminusBtn"
                             app:layout_constraintEnd_toEndOf="@+id/ageminusBtn"
                             app:layout_constraintHorizontal_bias="0.5"
                             app:layout_constraintStart_toStartOf="@+id/ageminusBtn"
                             app:layout_constraintTop_toTopOf="@+id/ageminusBtn" />
-
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -159,13 +175,12 @@
                             android:id="@+id/ageminusBtn"
                             android:layout_width="@dimen/_25sdp"
                             android:layout_height="@dimen/_25sdp"
+                            android:layout_marginStart="@dimen/_12sdp"
                             android:background="@drawable/roundview"
                             app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toStartOf="@+id/ageplusBtn"
-                            app:layout_constraintHorizontal_bias="0.5"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.0" />
 
                         <View
                             android:id="@+id/ageplusBtn"
@@ -174,13 +189,11 @@
                             android:background="@drawable/roundview"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintHorizontal_bias="0.862"
                             app:layout_constraintStart_toEndOf="@+id/ageminusBtn"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.0" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
-
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </com.google.android.material.card.MaterialCardView>
 
@@ -188,14 +201,14 @@
                 android:id="@+id/materialCardView15"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                app:cardCornerRadius="@dimen/_6sdp"
+                android:layout_marginVertical="@dimen/_8sdp"
                 app:cardBackgroundColor="#24242c"
+                app:cardCornerRadius="@dimen/_6sdp"
                 app:layout_constraintBottom_toTopOf="@+id/materialCardView16"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginVertical="@dimen/_8sdp"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/materialCardageminusBtn" >
+                app:layout_constraintTop_toBottomOf="@+id/materialCardageminusBtn">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -205,7 +218,7 @@
                         android:id="@+id/textView33"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Weight (Kg)"
+                        android:text="@string/txt_weight"
                         android:textColor="#656467"
                         android:textSize="@dimen/_12sdp"
                         android:textStyle="bold"
@@ -215,7 +228,6 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
-
                     <TextView
                         android:id="@+id/weightText"
                         android:layout_width="wrap_content"
@@ -224,37 +236,62 @@
                         android:textColor="@color/white"
                         android:textSize="@dimen/_16sdp"
                         android:textStyle="bold"
+                        android:visibility="invisible"
                         app:layout_constraintBottom_toTopOf="@+id/constraintLayout20"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.5"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView33" />
 
+                    <com.fitzay.wheelpicker.WheelPicker
+                        android:id="@+id/weight_wh"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:fontFamily="@font/poppins"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView33"
+                        app:wheelPickerBgColor="@color/transparent"
+                        app:wheelPickerDefaultSelectedItemPos="50"
+                        app:wheelPickerDividerColor="@android:color/transparent"
+                        app:wheelPickerItemSelectedBgColor="@color/secondary"
+                        app:wheelPickerItemUnselectedBgColor="@color/transparent"
+                        app:wheelPickerItemUnselectedTextColor="#939292"
+                        app:wheelPickerItems="@array/weight"
+                        app:wheelPickerItemsTextBold="true"
+                        app:wheelPickerItemsTextItalic="true"
+                        app:wheelPickerItemsTextSize="@dimen/_6sdp"
+                        app:wheelPickerItemsUnselectedTextAlpha="0.7"
+                        app:wheelPickerOrientationVertical="true"
+                        app:wheelPickerScaleDownEnabled="true" />
+
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:id="@+id/constraintLayout20"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintBottom_toBottomOf="@id/weight_wh"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.5"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/weightText">
+                        app:layout_constraintTop_toTopOf="@id/weight_wh"
+                        app:layout_constraintVertical_bias="0.5">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="-"
                             android:layout_marginBottom="@dimen/_2sdp"
-                            android:textAlignment="center"
                             android:elevation="@dimen/_1sdp"
+                            android:text="-"
+                            android:textAlignment="center"
                             android:textColor="@color/white"
-                            android:textSize="@dimen/_18sdp"
+                            android:textSize="@dimen/_20ssp"
                             app:layout_constraintBottom_toBottomOf="@+id/weightminlusBtn"
                             app:layout_constraintEnd_toEndOf="@+id/weightminlusBtn"
                             app:layout_constraintHorizontal_bias="0.5"
                             app:layout_constraintStart_toStartOf="@+id/weightminlusBtn"
                             app:layout_constraintTop_toTopOf="@+id/weightminlusBtn" />
-
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -275,13 +312,11 @@
                             android:id="@+id/weightminlusBtn"
                             android:layout_width="@dimen/_25sdp"
                             android:layout_height="@dimen/_25sdp"
+                            android:layout_marginStart="@dimen/_12sdp"
                             android:background="@drawable/roundview"
                             app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toStartOf="@+id/weightplusBtn"
-                            app:layout_constraintHorizontal_bias="0.5"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
-
 
                         <View
                             android:id="@+id/weightplusBtn"
@@ -290,12 +325,10 @@
                             android:background="@drawable/roundview"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintHorizontal_bias="0.862"
                             app:layout_constraintStart_toEndOf="@+id/weightminlusBtn"
                             app:layout_constraintTop_toTopOf="parent" />
-
                     </androidx.constraintlayout.widget.ConstraintLayout>
-
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </com.google.android.material.card.MaterialCardView>
 
@@ -303,8 +336,8 @@
                 android:id="@+id/materialCardView16"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                app:cardCornerRadius="@dimen/_6sdp"
                 app:cardBackgroundColor="#24242c"
+                app:cardCornerRadius="@dimen/_6sdp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -319,7 +352,7 @@
                         android:id="@+id/textView35"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Target Weight (Kg)"
+                        android:text="@string/txt_target_weight"
                         android:textColor="#656467"
                         android:textSize="@dimen/_12sdp"
                         android:textStyle="bold"
@@ -329,7 +362,6 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
-
                     <TextView
                         android:id="@+id/targetweightText"
                         android:layout_width="wrap_content"
@@ -338,38 +370,62 @@
                         android:textColor="@color/white"
                         android:textSize="@dimen/_16sdp"
                         android:textStyle="bold"
+                        android:visibility="invisible"
                         app:layout_constraintBottom_toTopOf="@+id/constraintLayout22"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.5"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/textView35" />
 
+                    <com.fitzay.wheelpicker.WheelPicker
+                        android:id="@+id/target_weight"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="@dimen/_1sdp"
+                        android:fontFamily="@font/poppins"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView35"
+                        app:wheelPickerBgColor="@color/transparent"
+                        app:wheelPickerDefaultSelectedItemPos="65"
+                        app:wheelPickerDividerColor="@android:color/transparent"
+                        app:wheelPickerItemSelectedBgColor="@color/secondary"
+                        app:wheelPickerItemUnselectedBgColor="@color/transparent"
+                        app:wheelPickerItemUnselectedTextColor="#939292"
+                        app:wheelPickerItems="@array/weight"
+                        app:wheelPickerItemsTextBold="true"
+                        app:wheelPickerItemsTextItalic="true"
+                        app:wheelPickerItemsTextSize="@dimen/_6sdp"
+                        app:wheelPickerItemsUnselectedTextAlpha="0.7"
+                        app:wheelPickerOrientationVertical="true"
+                        app:wheelPickerScaleDownEnabled="true" />
+
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:id="@+id/constraintLayout22"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintBottom_toBottomOf="@id/target_weight"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.5"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/targetweightText">
-
+                        app:layout_constraintTop_toTopOf="@id/target_weight"
+                        app:layout_constraintVertical_bias="0.5">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="-"
                             android:layout_marginBottom="@dimen/_2sdp"
-                            android:textAlignment="center"
                             android:elevation="@dimen/_1sdp"
+                            android:text="-"
+                            android:textAlignment="center"
                             android:textColor="@color/white"
-                            android:textSize="@dimen/_18sdp"
+                            android:textSize="@dimen/_20ssp"
                             app:layout_constraintBottom_toBottomOf="@+id/targetweightminusBtn"
                             app:layout_constraintEnd_toEndOf="@+id/targetweightminusBtn"
                             app:layout_constraintHorizontal_bias="0.5"
                             app:layout_constraintStart_toStartOf="@+id/targetweightminusBtn"
                             app:layout_constraintTop_toTopOf="@+id/targetweightminusBtn" />
-
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -390,13 +446,11 @@
                             android:id="@+id/targetweightminusBtn"
                             android:layout_width="@dimen/_25sdp"
                             android:layout_height="@dimen/_25sdp"
+                            android:layout_marginStart="@dimen/_12sdp"
                             android:background="@drawable/roundview"
                             app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toStartOf="@+id/targetweightplusBtn"
-                            app:layout_constraintHorizontal_bias="0.5"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
-
 
                         <View
                             android:id="@+id/targetweightplusBtn"
@@ -405,17 +459,14 @@
                             android:background="@drawable/roundview"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.5"
+                            app:layout_constraintHorizontal_bias="0.862"
                             app:layout_constraintStart_toEndOf="@+id/targetweightminusBtn"
-                            app:layout_constraintTop_toTopOf="parent" />
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.4" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
-
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </com.google.android.material.card.MaterialCardView>
-
-
         </androidx.constraintlayout.widget.ConstraintLayout>
-
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout18"
@@ -431,18 +482,17 @@
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                app:cardCornerRadius="@dimen/_6sdp"
                 app:cardBackgroundColor="#24242c"
+                app:cardCornerRadius="@dimen/_6sdp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" >
+                app:layout_constraintTop_toTopOf="parent">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
-
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:id="@+id/constraintLayout23"
@@ -452,66 +502,32 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.5"
                         app:layout_constraintStart_toEndOf="@+id/value_text"
-                        app:layout_constraintTop_toTopOf="parent">
+                        app:layout_constraintTop_toTopOf="parent"></androidx.constraintlayout.widget.ConstraintLayout>
 
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="@dimen/_2sdp"
-                            android:elevation="@dimen/_1sdp"
-                            android:text="+"
-                            android:textAlignment="center"
-                            android:textColor="@color/white"
-                            android:textSize="@dimen/_18sdp"
-                            app:layout_constraintBottom_toBottomOf="@+id/heightPlusBtn"
-                            app:layout_constraintEnd_toEndOf="@+id/heightPlusBtn"
-                            app:layout_constraintHorizontal_bias="0.5"
-                            app:layout_constraintStart_toStartOf="@+id/heightPlusBtn"
-                            app:layout_constraintTop_toTopOf="@+id/heightPlusBtn" />
-
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="-"
-                            android:layout_marginBottom="@dimen/_2sdp"
-                            android:textAlignment="center"
-                            android:elevation="@dimen/_1sdp"
-                            android:textColor="@color/white"
-                            android:textSize="@dimen/_18sdp"
-                            app:layout_constraintBottom_toBottomOf="@+id/heightminusBtn"
-                            app:layout_constraintEnd_toEndOf="@+id/heightminusBtn"
-                            app:layout_constraintHorizontal_bias="0.5"
-                            app:layout_constraintStart_toStartOf="@+id/heightminusBtn"
-                            app:layout_constraintTop_toTopOf="@+id/heightminusBtn" />
-
-
-                        <View
-                            android:id="@+id/heightPlusBtn"
-                            android:layout_width="@dimen/_30sdp"
-                            android:layout_height="@dimen/_30sdp"
-                            android:background="@drawable/roundview"
-                            app:layout_constraintBottom_toTopOf="@+id/heightminusBtn"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.5"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-
-                        <View
-                            android:id="@+id/heightminusBtn"
-                            android:layout_width="@dimen/_30sdp"
-                            android:layout_height="@dimen/_30sdp"
-                            android:background="@drawable/roundview"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.5"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/heightPlusBtn" />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
+                    <com.fitzay.wheelpicker.WheelPicker
+                        android:id="@+id/cm_wheel"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:fontFamily="@font/poppins"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/materialCardView29"
+                        app:wheelPickerBgColor="@color/transparent"
+                        app:wheelPickerDefaultSelectedItemPos="5"
+                        app:wheelPickerDividerColor="@android:color/transparent"
+                        app:wheelPickerItemSelectedBgColor="@color/secondary"
+                        app:wheelPickerItemUnselectedBgColor="@color/transparent"
+                        app:wheelPickerItemUnselectedTextColor="#939292"
+                        app:wheelPickerItems="@array/cm"
+                        app:wheelPickerItemsTextBold="true"
+                        app:wheelPickerItemsTextItalic="true"
+                        app:wheelPickerItemsTextSize="@dimen/_6sdp"
+                        app:wheelPickerItemsUnselectedTextAlpha="0.7"
+                        app:wheelPickerOrientationVertical="true"
+                        app:wheelPickerScaleDownEnabled="true" />
 
                     <TextView
                         android:id="@+id/value_text"
@@ -519,13 +535,13 @@
                         android:layout_height="wrap_content"
                         android:textColor="@color/white"
                         android:textSize="32sp"
+                        android:visibility="gone"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/constraintLayout23"
                         app:layout_constraintHorizontal_bias="0.5"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         tools:text="1" />
-
 
                     <TextView
                         android:id="@+id/textView37"
@@ -537,7 +553,7 @@
                         android:textSize="@dimen/_12sdp"
                         android:textStyle="bold"
                         app:layout_constraintEnd_toStartOf="@+id/textView38"
-                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintHorizontal_bias="0.7"
                         app:layout_constraintHorizontal_chainStyle="packed"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
@@ -551,11 +567,11 @@
                         android:textColor="#656467"
                         android:textSize="@dimen/_12sdp"
                         android:textStyle="bold"
+                        android:visibility="invisible"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.5"
                         app:layout_constraintStart_toEndOf="@+id/textView37"
                         app:layout_constraintTop_toTopOf="parent" />
-
 
                     <com.google.android.material.card.MaterialCardView
                         android:id="@+id/materialCardView29"
@@ -569,16 +585,15 @@
                         app:layout_constraintTop_toBottomOf="@id/textView38"
                         app:strokeWidth="0dp">
 
-
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
-
 
                             <androidx.constraintlayout.widget.ConstraintLayout
                                 android:id="@+id/ftBtn"
                                 android:layout_width="0dp"
                                 android:layout_height="0dp"
+                                android:visibility="gone"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toStartOf="@+id/cmBtn"
                                 app:layout_constraintHorizontal_bias="0.5"
@@ -596,8 +611,6 @@
                                     app:layout_constraintEnd_toEndOf="parent"
                                     app:layout_constraintStart_toStartOf="parent"
                                     app:layout_constraintTop_toTopOf="parent" />
-
-
                             </androidx.constraintlayout.widget.ConstraintLayout>
 
                             <androidx.constraintlayout.widget.ConstraintLayout
@@ -622,23 +635,125 @@
                                     app:layout_constraintEnd_toEndOf="parent"
                                     app:layout_constraintStart_toStartOf="parent"
                                     app:layout_constraintTop_toTopOf="parent" />
-
                             </androidx.constraintlayout.widget.ConstraintLayout>
-
                         </androidx.constraintlayout.widget.ConstraintLayout>
-
                     </com.google.android.material.card.MaterialCardView>
 
+                    <TextView
+                        android:id="@+id/txt_height_cm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/_15ssp"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="@id/my_scale_cm"
+                        app:layout_constraintEnd_toStartOf="@id/my_scale_cm"
+                        app:layout_constraintHorizontal_bias="0.29"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/my_scale_cm"
+                        app:layout_constraintVertical_bias="0.495" />
 
+                    <com.fitzay.workouttracker.strengthtraining.core.utils.MyScaleView
+                        android:id="@+id/my_scale_cm"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="#24242c"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.747"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/materialCardView29"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <TextView
+                        android:id="@+id/txt_height_ft"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/_15ssp"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="@id/my_scale_ft"
+                        app:layout_constraintEnd_toStartOf="@id/my_scale_ft"
+                        app:layout_constraintHorizontal_bias="0.29"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/my_scale_ft"
+                        app:layout_constraintVertical_bias="0.495" />
+
+                    <com.fitzay.workouttracker.strengthtraining.core.utils.MyScaleView
+                        android:id="@+id/my_scale_ft"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="#24242c"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.747"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/materialCardView29"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:elevation="@dimen/_1sdp"
+                        android:text="+"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_18sdp"
+                        app:layout_constraintBottom_toBottomOf="@+id/heightPlusBtn"
+                        app:layout_constraintEnd_toEndOf="@+id/heightPlusBtn"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="@+id/heightPlusBtn"
+                        app:layout_constraintTop_toTopOf="@+id/heightPlusBtn" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:elevation="@dimen/_1sdp"
+                        android:text="-"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_18sdp"
+                        app:layout_constraintBottom_toBottomOf="@+id/heightminusBtn"
+                        app:layout_constraintEnd_toEndOf="@+id/heightminusBtn"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="@+id/heightminusBtn"
+                        app:layout_constraintTop_toTopOf="@+id/heightminusBtn" />
+
+                    <View
+                        android:id="@+id/heightPlusBtn"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:background="@drawable/roundview"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.9"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:id="@+id/heightminusBtn"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:background="@drawable/roundview"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.05"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </com.google.android.material.card.MaterialCardView>
-
         </androidx.constraintlayout.widget.ConstraintLayout>
-
-
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/clBottomNext"
@@ -653,7 +768,7 @@
             android:layout_width="@dimen/_40sdp"
             android:layout_height="@dimen/_40sdp"
             android:indeterminate="false"
-            android:progress="20"
+            android:progress="100"
             app:indicatorColor="@color/white"
             app:indicatorSize="@dimen/_60sdp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -661,7 +776,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:trackColor="@color/secondary"
-
             app:trackThickness="@dimen/_3sdp" />
 
         <com.google.android.material.button.MaterialButton
@@ -684,5 +798,4 @@
             app:layout_constraintTop_toTopOf="parent"
             app:rippleColor="@color/ready_color" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

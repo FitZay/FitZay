@@ -19,7 +19,7 @@ import com.google.android.gms.ads.LoadAdError
 import com.google.android.gms.ads.nativead.NativeAdOptions
 
 
-class AskingWeightActivity : AppCompatActivity() {
+class AskingWeightActivity : AppUtil2() {
 
     private lateinit var binding: ActivityAskingWeightBinding
     var lb = false
@@ -179,6 +179,6 @@ class AskingWeightActivity : AppCompatActivity() {
                 }
             }
         }
-
+        LanguageManager(this@AskingWeightActivity)
     }
 }

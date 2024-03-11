@@ -3,8 +3,10 @@
     <string name="abs">ABC</string>
     <string name="abs_beginner">بداية للبطن</string>
     <string name="abs_core">البطن والأساس</string>
+    <string name="add">إضافة</string>
     <string name="advance">متقدم</string>
     <string name="alarm">المنبه</string>
+    <string name="alarm_mess">هل أنت متأكد أنك تريد الحذف؟</string>
     <string name="allow">السماح</string>
     <string name="allow_req_permissions">السماح بجميع الأذونات المطلوبة</string>
     <string name="allow_required_permissions">الإذن المطلوب لحفظ الاقتباسات في المعرض.</string>
@@ -41,9 +43,13 @@
     <string name="daily_">يومي </string>
     <string name="daily_average">المتوسط اليومي</string>
     <string name="daily_challenge">التحدي اليومي</string>
+    <string name="daily_goal">الهدف اليومي</string>
     <string name="daily_motivation">تحفيز يومي</string>
     <string name="daily_step_goal">هدف الخطوات اليومي</string>
+    <string name="def">افتراضي</string>
     <string name="delete_account"><u>حذف الحساب</u></string>
+    <string name="delete_alarm">حذف التنبيه</string>
+    <string name="distance">المسافة</string>
     <string name="do_it">افعلها</string>
     <string name="do_relate_following_statement">هل تتعلق بالبيان التالي؟</string>
     <string name="do_suffer_from_knee_pain">هل تعاني من آلام في الركبة؟</string>
@@ -73,6 +79,7 @@
     <string name="gain_muscle">بناء العضلات</string>
     <string name="gallery">المعرض</string>
     <string name="go_premium">اشتراك بريميوم</string>
+    <string name="goal">الهدف</string>
     <string name="gold">ذهب</string>
     <string name="google_play">متجر Google Play</string>
     <string name="google_search">بحث Google</string>
@@ -97,6 +104,7 @@
     <string name="ideal">مثالي</string>
     <string name="improving_sleep">تحسين النوم</string>
     <string name="in">بوصة</string>
+    <string name="input">أدخل بياناتك</string>
     <string name="instagram">إنستغرام</string>
     <string name="intermediate">متوسط</string>
     <string name="item_not_found">العنصر غير موجود</string>
@@ -107,6 +115,7 @@
     <string name="label">العلامة</string>
     <string name="language">لغة</string>
     <string name="lbs">رطل</string>
+    <string name="leg">ساق</string>
     <string name="less_6_hours">أقل من 6 ساعات</string>
     <string name="less_one_hour">أقل من ساعة</string>
     <string name="look">فقط انظر</string>
@@ -117,6 +126,7 @@
     <string name="manage_subscriptions">إدارة الاشتراكات</string>
     <string name="message">عن طريق حذف الحساب سيتم حذف جميع البيانات المحفوظة الخاصة بك!</string>
     <string name="miles">أميال</string>
+    <string name="ml">مل</string>
     <string name="month_of_membership">شهر من العضوية</string>
     <string name="monthly">متوسط الشهري</string>
     <string name="monthly_">شهري </string>
@@ -147,6 +157,7 @@
     <string name="not_very_fit">أنا ليس في حالة جيدة جداً</string>
     <string name="notification_text">مجموع الخطوات اليوم: %1$d</string>
     <string name="notification_title">تعداد الخطوات في FitZay</string>
+    <string name="ok_alarm">حسنا</string>
     <string name="one_two_hours">ساعة إلى ساعتين</string>
     <string name="permission_toast">السماح بالإذن المطلوب لاستخدام ميزة عداد الخطوات.</string>
     <string name="personalized_des">انتظر حتى يقوم مدربك الشخصي بإعداد روتين التمرين المخصص لك</string>
@@ -156,6 +167,7 @@
     <string name="platinum">بلاتين</string>
     <string name="pm">مساءً</string>
     <string name="premium_features_details">تفاصيل الميزات الرئيسية</string>
+    <string name="previous">السابق</string>
     <string name="privacy_policy">سياسة الخصوصية</string>
     <string name="profile">الملف الشخصي</string>
     <string name="purchase_cancel_by_user">تم إلغاء الشراء بواسطة المستخدم</string>
@@ -195,6 +207,7 @@
     <string name="time">الوقت</string>
     <string name="time_in_bed">الوقت في السرير</string>
     <string name="today">اليوم</string>
+    <string name="today_">اليوم</string>
     <string name="tomorrow">صباح الغد</string>
     <string name="tonight">الليلة</string>
     <string name="too_easy">سهل جدًا</string>

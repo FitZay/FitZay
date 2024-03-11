@@ -12,7 +12,7 @@
 
     <LinearLayout
         android:id="@+id/dateLayout"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/_150sdp"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -83,7 +83,8 @@
                 android:textColor="@color/tab_not_selected"
                 android:textSize="@dimen/_10sdp"
                 android:singleLine="true"
-                app:layout_constraintHorizontal_bias="0.12"
+                android:layout_marginStart="@dimen/_5sdp"
+                app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/nextDate"
                 app:layout_constraintStart_toEndOf="@id/previousDate"
@@ -91,13 +92,13 @@
 
             <View
                 android:id="@+id/nextDate"
-                android:layout_width="@dimen/_20sdp"
-                android:layout_height="@dimen/_25sdp"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                android:layout_marginEnd="@dimen/_10sdp"
-                android:visibility="gone"
+                android:layout_marginEnd="@dimen/_30sdp"
                 android:backgroundTint="@color/white"
+                android:visibility="invisible"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 android:background="@drawable/next_date" />
