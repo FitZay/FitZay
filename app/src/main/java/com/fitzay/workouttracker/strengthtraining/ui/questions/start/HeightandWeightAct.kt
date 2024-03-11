@@ -22,6 +22,7 @@ class HeightandWeightAct : AppUtil2() {
     private var weight = 25
     private var targetweight = 50
     private var height = 0
+    private var cm = 5
 
     var check=true
     var check2=true
@@ -57,7 +58,9 @@ class HeightandWeightAct : AppUtil2() {
                 Component.preference.userAge = age
                 Component.preference.userWeight = weight
                 Component.preference.userTargetWight = targetweight
-                if (type == "CM" && valueText.text.isNotEmpty() && valueText.text != "") {
+                    Component.preference.userHeight = cm
+
+                    if (type == "CM" && valueText.text.isNotEmpty() && valueText.text != "") {
                     Component.preference.userHeightType = type
                     Component.preference.userHeight = valueText.text.toString().toDouble().toInt()
                 } else {
@@ -149,86 +152,96 @@ class HeightandWeightAct : AppUtil2() {
             }
 
 
+
             heightPlusBtn.setOnClickListener {
-                height++
-                binding.valueText.text = height.toString()
+//                height++
+//                binding.valueText.text = height.toString()
+                cm=cmWheel.getCurrentSelectedItemPosition()
+                cmWheel.setSelectedItemPosition(cm + 1)
+                cm=cmWheel.getCurrentSelectedItem()!!.toInt()
             }
 
             heightminusBtn.setOnClickListener {
-                if (height > 0) {
-                    height--
-                    valueText.text = height.toString()
+//                if (height > 0) {
+//                    height--
+//                    valueText.text = height.toString()
+//                }
+
+                cm = cmWheel.getCurrentSelectedItemPosition()
+                if (targetweight > 0) {
+                    cmWheel.setSelectedItemPosition(cm - 1)
+                    cm = cmWheel.getCurrentSelectedItem()!!.toInt()
                 }
             }
 
-            cmBtn.setOnClickListener {
-                try {
-                    var cn=0.0
-                    if (!valueText.text.isNullOrEmpty())
-                    {
-                        if (check){
-                            type="CM"
-                            check = false
-                            check2 = true
-                            val centimeters = valueText.text.toString().toDouble()
-                            cn =inchesToCm(centimeters)
-                            valueText.setText(cn.toString())
-                            Component.preference.userHeight = cn.toInt()
-
-//                            myScaleCm.setUpdateListener(object : com.fitzay.workouttracker.strengthtraining.core.utils.onViewUpdateListener {
+//            cmBtn.setOnClickListener {
+//                try {
+//                    var cn=0.0
+//                    if (!valueText.text.isNullOrEmpty())
+//                    {
+//                        if (check){
+//                            type="CM"
+//                            check = false
+//                            check2 = true
+//                            val centimeters = valueText.text.toString().toDouble()
+//                            cn =inchesToCm(centimeters)
+//                            valueText.setText(cn.toString())
+//                            Component.preference.userHeight = cn.toInt()
 //
-//                                override fun onViewUpdate(result: Float) {
-//                                    val value = Math.round(result * 10f).toFloat() / 10f
+////                            myScaleCm.setUpdateListener(object : com.fitzay.workouttracker.strengthtraining.core.utils.onViewUpdateListener {
+////
+////                                override fun onViewUpdate(result: Float) {
+////                                    val value = Math.round(result * 10f).toFloat() / 10f
+////
+////                                    val centimeters = txtHeightCm.text.toString().toDouble()
+////                                    cn =inchesToCm(centimeters)
+////                                    valueText.setText(cn.toString())
+////                                    Component.preference.userHeight = cn.toInt()
+////                                }
+////                            })
 //
-//                                    val centimeters = txtHeightCm.text.toString().toDouble()
-//                                    cn =inchesToCm(centimeters)
-//                                    valueText.setText(cn.toString())
-//                                    Component.preference.userHeight = cn.toInt()
-//                                }
-//                            })
-
-
-                        }
-
-                    }
-
-                    cmBtn.setBackgroundColor(ContextCompat.getColor(this@HeightandWeightAct, R.color.green))
-                    ftBtn.setBackgroundColor(ContextCompat.getColor(this@HeightandWeightAct, R.color.lightgrey))
-                    cmText.setTextColor(ContextCompat.getColor(this@HeightandWeightAct, R.color.white))
-                    ftText.setTextColor(ContextCompat.getColor(this@HeightandWeightAct, R.color.textcolor))
-
-                }
-                catch (e:Exception){
-                    Log.i("TAG", "Error-Catch: "+e.message)
-                }
-
-            }
-
-
-            ftBtn.setOnClickListener {
-                var con=0.0
-                try {
-                    if (!valueText.text.isNullOrEmpty()) {
-                        if (check2){
-                            type="FT"
-
-                            check2 = false
-                            check = true
-                            con = cmToInches(valueText.text.toString().toDouble())
-                            valueText.setText(con.toString())
-                            Component.preference.userHeight = con.toInt()
-
-                        }
-                    }
-                    ftBtn.setBackgroundColor(ContextCompat.getColor(this@HeightandWeightAct, R.color.green))
-                    cmBtn.setBackgroundColor(ContextCompat.getColor(this@HeightandWeightAct, R.color.lightgrey))
-                    ftText.setTextColor(ContextCompat.getColor(this@HeightandWeightAct, R.color.white))
-                    cmText.setTextColor(ContextCompat.getColor(this@HeightandWeightAct, R.color.textcolor))
-                }
-                catch (e:Exception){
-                    Log.i("TAG", "Error-Catch: "+e.message)
-                }
-            }
+//
+//                        }
+//
+//                    }
+//
+//                    cmBtn.setBackgroundColor(ContextCompat.getColor(this@HeightandWeightAct, R.color.green))
+//                    ftBtn.setBackgroundColor(ContextCompat.getColor(this@HeightandWeightAct, R.color.lightgrey))
+//                    cmText.setTextColor(ContextCompat.getColor(this@HeightandWeightAct, R.color.white))
+//                    ftText.setTextColor(ContextCompat.getColor(this@HeightandWeightAct, R.color.textcolor))
+//
+//                }
+//                catch (e:Exception){
+//                    Log.i("TAG", "Error-Catch: "+e.message)
+//                }
+//
+//            }
+//
+//
+//            ftBtn.setOnClickListener {
+//                var con=0.0
+//                try {
+//                    if (!valueText.text.isNullOrEmpty()) {
+//                        if (check2){
+//                            type="FT"
+//
+//                            check2 = false
+//                            check = true
+//                            con = cmToInches(valueText.text.toString().toDouble())
+//                            valueText.setText(con.toString())
+//                            Component.preference.userHeight = con.toInt()
+//
+//                        }
+//                    }
+//                    ftBtn.setBackgroundColor(ContextCompat.getColor(this@HeightandWeightAct, R.color.green))
+//                    cmBtn.setBackgroundColor(ContextCompat.getColor(this@HeightandWeightAct, R.color.lightgrey))
+//                    ftText.setTextColor(ContextCompat.getColor(this@HeightandWeightAct, R.color.white))
+//                    cmText.setTextColor(ContextCompat.getColor(this@HeightandWeightAct, R.color.textcolor))
+//                }
+//                catch (e:Exception){
+//                    Log.i("TAG", "Error-Catch: "+e.message)
+//                }
+//            }
 
         }
 

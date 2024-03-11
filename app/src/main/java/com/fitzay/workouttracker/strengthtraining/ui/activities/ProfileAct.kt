@@ -129,47 +129,58 @@ class ProfileAct : AppUtil2() {
             }
 
             btnNext.setOnClickListener {
-                when {
+                try {
+
+                    when {
 
 //                    binding.etGenderInput.text.isNullOrEmpty() -> {
 //                        binding.etGenderInput.error = "Gender Must not be empty"
 //                    }
 
-                    binding.etAgeInput.text.isNullOrEmpty() -> {
-                        binding.etAgeInput.error = "Age Must not be empty"
-                    }
-
-                    binding.etHeightInput.text.isNullOrEmpty() -> {
-                        binding.etHeightInput.error = "Height Must not be empty"
-                    }
-
-                    binding.etWeightInput.text.isNullOrEmpty() -> {
-                        binding.etWeightInput.error = "Weight Must not be empty"
-                    }
-
-                    binding.etTargetWeightInput.text.isNullOrEmpty() -> {
-                        binding.etTargetWeightInput.error = "Target Wight Must not be empty"
-                    }
-
-                    else -> {
-                        Component.preference.userName = binding.tvFullName.text.toString()
-                        Component.preference.userAge = binding.etAgeInput.text.toString().toInt()
-//                        Component.preference.userGender = binding.etGenderInput.text.toString()
-                        Component.preference.userHeight =
-                            binding.etHeightInput.text.toString().toInt()
-                        Component.preference.userWeight =
-                            binding.etWeightInput.text.toString().toInt()
-                        Component.preference.userTargetWight =
-                            binding.etTargetWeightInput.text.toString().toInt()
-
-                        val intent = Intent(this@ProfileAct, BmiAct::class.java).apply {
-                            Intent.FLAG_ACTIVITY_SINGLE_TOP
+                        binding.etAgeInput.text.isNullOrEmpty() -> {
+                            binding.etAgeInput.error = "Age Must not be empty"
                         }
-                        startActivity(intent)
-                        //binding.saveItems.visibility = View.GONE
+
+                        binding.etHeightInput.text.isNullOrEmpty() -> {
+                            binding.etHeightInput.error = "Height Must not be empty"
+                        }
+
+                        binding.etWeightInput.text.isNullOrEmpty() -> {
+                            binding.etWeightInput.error = "Weight Must not be empty"
+                        }
+
+                        binding.etTargetWeightInput.text.isNullOrEmpty() -> {
+                            binding.etTargetWeightInput.error = "Target Wight Must not be empty"
+                        }
+
+                        else -> {
+                            Component.preference.userName = binding.tvFullName.text.toString()
+                            Component.preference.userAge =
+                                binding.etAgeInput.text.toString().toInt()
+//                        Component.preference.userGender = binding.etGenderInput.text.toString()
+                            Component.preference.userHeight =
+                                binding.etHeightInput.text.toString().toFloat().toInt()
+                            Component.preference.userWeight =
+                                binding.etWeightInput.text.toString().toFloat().toInt()
+                            Component.preference.userTargetWight =
+                                binding.etTargetWeightInput.text.toString().toFloat().toInt()
+
+                            val intent = Intent(this@ProfileAct, BmiAct::class.java).apply {
+                                Intent.FLAG_ACTIVITY_SINGLE_TOP
+                            }
+                            startActivity(intent)
+                            //binding.saveItems.visibility = View.GONE
 
 
+                        }
                     }
+                }
+                catch (e:Exception){
+                    Log.i("TAG", "onCreate: "+e.message)
+                    val intent = Intent(this@ProfileAct, BmiAct::class.java).apply {
+                        Intent.FLAG_ACTIVITY_SINGLE_TOP
+                    }
+                    startActivity(intent)
                 }
 
 

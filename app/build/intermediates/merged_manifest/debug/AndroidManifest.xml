@@ -98,11 +98,12 @@
             android:name="com.fitzay.workouttracker.strengthtraining.ui.questions.start.HeightandWeightAct"
             android:exported="true"
             android:screenOrientation="portrait" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+
         </activity>
         <activity
             android:name="com.fitzay.workouttracker.strengthtraining.ui.questions.start.PushUpsDoActivity"
@@ -182,13 +183,11 @@
             android:name="com.fitzay.workouttracker.strengthtraining.ui.activities.LoadingActivity"
             android:exported="true"
             android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-
-
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name="com.fitzay.workouttracker.strengthtraining.ui.sleeptacker.SleepTrackerActivity"

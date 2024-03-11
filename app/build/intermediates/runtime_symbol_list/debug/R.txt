@@ -84,6 +84,7 @@ int animator mtrl_fab_show_motion_spec 0x7f02001f
 int animator mtrl_fab_transformation_sheet_collapse_spec 0x7f020020
 int animator mtrl_fab_transformation_sheet_expand_spec 0x7f020021
 int array age 0x7f030000
+int array cm 0x7f030006
 int array com_google_android_gms_fonts_certs 0x7f030001
 int array com_google_android_gms_fonts_certs_dev 0x7f030002
 int array com_google_android_gms_fonts_certs_prod 0x7f030003
@@ -4556,6 +4557,7 @@ int id closest 0x7f0a00e6
 int id cm 0x7f0a00e7
 int id cmBtn 0x7f0a00e8
 int id cmText 0x7f0a00e9
+int id cm_wheel 0x7f0a049b
 int id collapseActionView 0x7f0a00ea
 int id collapsingToolbar 0x7f0a00eb
 int id compose_view_saveable_id_tag 0x7f0a00ec

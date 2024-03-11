@@ -418,16 +418,6 @@ ADDED from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src
 		ADDED from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:53:13-36
 	android:name
 		ADDED from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:51:13-66
-intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:54:25-57:41
-action#android.intent.action.MAIN
-ADDED from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:55:29-81
-	android:name
-		ADDED from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:55:37-78
-category#android.intent.category.LAUNCHER
-ADDED from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:56:29-89
-	android:name
-		ADDED from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:56:39-86
 activity#com.fitzay.workouttracker.strengthtraining.ui.questions.start.PushUpsDoActivity
 ADDED from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:60:9-63:40
 	android:screenOrientation
@@ -538,6 +528,16 @@ ADDED from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src
 		ADDED from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:140:13-36
 	android:name
 		ADDED from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:139:13-58
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:143:25-147:41
+action#android.intent.action.MAIN
+ADDED from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:144:29-81
+	android:name
+		ADDED from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:144:37-78
+category#android.intent.category.LAUNCHER
+ADDED from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:146:29-89
+	android:name
+		ADDED from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:146:39-86
 activity#com.fitzay.workouttracker.strengthtraining.ui.sleeptacker.SleepTrackerActivity
 ADDED from E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\src\main\AndroidManifest.xml:151:9-162:20
 	android:screenOrientation

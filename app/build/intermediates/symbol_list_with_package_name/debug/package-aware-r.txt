@@ -85,6 +85,7 @@ animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
 array age
+array cm
 array com_google_android_gms_fonts_certs
 array com_google_android_gms_fonts_certs_dev
 array com_google_android_gms_fonts_certs_prod
@@ -4557,6 +4558,7 @@ id closest
 id cm
 id cmBtn
 id cmText
+id cm_wheel
 id collapseActionView
 id collapsingToolbar
 id compose_view_saveable_id_tag

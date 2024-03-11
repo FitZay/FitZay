@@ -8,6 +8,7 @@ anim slide_out_right
 anim zoom_in
 anim zoom_out
 array age
+array cm
 array com_google_android_gms_fonts_certs
 array com_google_android_gms_fonts_certs_dev
 array com_google_android_gms_fonts_certs_prod
@@ -367,6 +368,7 @@ id closeBtn
 id cm
 id cmBtn
 id cmText
+id cm_wheel
 id collapsingToolbar
 id constraintLayout
 id constraintLayout10

@@ -92,6 +92,17 @@
         <item>98</item>
         <item>99</item>
     </string-array>
+    <string-array name="cm">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
     <array name="com_google_android_gms_fonts_certs">
         <item>@array/com_google_android_gms_fonts_certs_dev</item>
         <item>@array/com_google_android_gms_fonts_certs_prod</item>
@@ -890,7 +901,7 @@
     <string name="txt_target_goal">Target goal</string>
     <string name="txt_target_weight">Target weight</string>
     <string name="txt_thanks_sharing">There\'s strong scientific evidence that being physically active can help you lead a healthier and happier life.</string>
-    <string name="txt_weight">Weight</string>
+    <string name="txt_weight">Weight (Kg)</string>
     <string name="txt_you_are_good_hands">And you are not alone!</string>
     <string name="txt_your_commitment">I have decided I am ready to get fit and stay fit. \n \nI will work consistently towards reaching my fitness goals. I will remain patient with myself and my progress.</string>
     <string name="unfinish">Continue the unfinished\nworkout?</string>

@@ -47,6 +47,9 @@ public final class ActivityHeightandWeightBinding implements ViewBinding {
   public final TextView cmText;
 
   @NonNull
+  public final WheelPicker cmWheel;
+
+  @NonNull
   public final ConstraintLayout constraintLayout17;
 
   @NonNull
@@ -157,7 +160,7 @@ public final class ActivityHeightandWeightBinding implements ViewBinding {
   private ActivityHeightandWeightBinding(@NonNull ConstraintLayout rootView,
       @NonNull TextView ageText, @NonNull View ageminusBtn, @NonNull View ageplusBtn,
       @NonNull MaterialButton btnNext, @NonNull ConstraintLayout clBottomNext,
-      @NonNull ConstraintLayout cmBtn, @NonNull TextView cmText,
+      @NonNull ConstraintLayout cmBtn, @NonNull TextView cmText, @NonNull WheelPicker cmWheel,
       @NonNull ConstraintLayout constraintLayout17, @NonNull ConstraintLayout constraintLayout18,
       @NonNull ConstraintLayout constraintLayout19, @NonNull ConstraintLayout constraintLayout20,
       @NonNull ConstraintLayout constraintLayout22, @NonNull ConstraintLayout constraintLayout23,
@@ -182,6 +185,7 @@ public final class ActivityHeightandWeightBinding implements ViewBinding {
     this.clBottomNext = clBottomNext;
     this.cmBtn = cmBtn;
     this.cmText = cmText;
+    this.cmWheel = cmWheel;
     this.constraintLayout17 = constraintLayout17;
     this.constraintLayout18 = constraintLayout18;
     this.constraintLayout19 = constraintLayout19;
@@ -286,6 +290,12 @@ public final class ActivityHeightandWeightBinding implements ViewBinding {
       id = R.id.cmText;
       TextView cmText = ViewBindings.findChildViewById(rootView, id);
       if (cmText == null) {
+        break missingId;
+      }
+
+      id = R.id.cm_wheel;
+      WheelPicker cmWheel = ViewBindings.findChildViewById(rootView, id);
+      if (cmWheel == null) {
         break missingId;
       }
 
@@ -506,13 +516,14 @@ public final class ActivityHeightandWeightBinding implements ViewBinding {
       }
 
       return new ActivityHeightandWeightBinding((ConstraintLayout) rootView, ageText, ageminusBtn,
-          ageplusBtn, btnNext, clBottomNext, cmBtn, cmText, constraintLayout17, constraintLayout18,
-          constraintLayout19, constraintLayout20, constraintLayout22, constraintLayout23, ftBtn,
-          ftText, heightPlusBtn, heightminusBtn, ivBack, materialCardView15, materialCardView16,
-          materialCardView29, materialCardageminusBtn, myScaleCm, myScaleFt, targetWeight,
-          targetweightText, targetweightminusBtn, targetweightplusBtn, textView29, textView33,
-          textView35, textView37, textView38, toolbar, tvQuestion, txtHeightCm, txtHeightFt,
-          userAge, valueText, weightText, weightWh, weightminlusBtn, weightplusBtn);
+          ageplusBtn, btnNext, clBottomNext, cmBtn, cmText, cmWheel, constraintLayout17,
+          constraintLayout18, constraintLayout19, constraintLayout20, constraintLayout22,
+          constraintLayout23, ftBtn, ftText, heightPlusBtn, heightminusBtn, ivBack,
+          materialCardView15, materialCardView16, materialCardView29, materialCardageminusBtn,
+          myScaleCm, myScaleFt, targetWeight, targetweightText, targetweightminusBtn,
+          targetweightplusBtn, textView29, textView33, textView35, textView37, textView38, toolbar,
+          tvQuestion, txtHeightCm, txtHeightFt, userAge, valueText, weightText, weightWh,
+          weightminlusBtn, weightplusBtn);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

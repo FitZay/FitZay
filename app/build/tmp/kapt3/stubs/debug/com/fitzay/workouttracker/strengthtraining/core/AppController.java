@@ -21,7 +21,7 @@ public final class AppController extends android.app.Application {
     @org.jetbrains.annotations.NotNull
     private static java.lang.String yearlyvalue = "";
     @org.jetbrains.annotations.NotNull
-    private static java.lang.String inappScenario = "1";
+    private static java.lang.String inappScenario = "3";
     private static boolean inappflow = false;
     
     public AppController() {
