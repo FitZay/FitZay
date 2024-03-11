@@ -8,6 +8,8 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.constraintlayout.widget.ConstraintSet.Constraint
 import com.fitzay.workouttracker.strengthtraining.R
 import com.fitzay.workouttracker.strengthtraining.core.AppController
+import com.fitzay.workouttracker.strengthtraining.core.utils.AppUtil2
+import com.fitzay.workouttracker.strengthtraining.core.utils.LanguageManager
 import com.fitzay.workouttracker.strengthtraining.databinding.ActivityPartShouldFocusBinding
 import com.fitzay.workouttracker.strengthtraining.databinding.ActivityPushUpsDoBinding
 import com.fitzay.workouttracker.strengthtraining.ui.activities.PersonalizedWorkAct
@@ -18,7 +20,7 @@ import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.LoadAdError
 import com.google.android.gms.ads.nativead.NativeAdOptions
 
-class PushUpsDoActivity : AppCompatActivity() {
+class PushUpsDoActivity : AppUtil2() {
 
     private lateinit var binding: ActivityPushUpsDoBinding
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -128,5 +130,10 @@ class PushUpsDoActivity : AppCompatActivity() {
             }
         }
 
+    }
+
+    override fun onStart() {
+        super.onStart()
+        LanguageManager(this@PushUpsDoActivity)
     }
 }

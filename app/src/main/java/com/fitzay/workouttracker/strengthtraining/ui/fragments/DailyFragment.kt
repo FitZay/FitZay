@@ -313,7 +313,7 @@ class DailyFragment : Fragment(), OnChartValueSelectedListener {
 
 
             val transformer = binding.sleepChart.getTransformer(binding.sleepChart.data.getDataSetByIndex(0).axisDependency)
-            val xPos = transformer.getPixelForValues(e.x, e.y).x - tooltipView.width / 2
+            val xPos = (transformer.getPixelForValues(e.x, e.y).x)/1.25f
 
             // Calculate the Y position for the top center of the graph
 //            val yPos = binding.sleepChart.viewPortHandler.contentHeight()

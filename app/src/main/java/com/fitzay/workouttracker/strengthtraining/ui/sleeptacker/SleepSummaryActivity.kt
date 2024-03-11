@@ -1,5 +1,6 @@
 package com.fitzay.workouttracker.strengthtraining.ui.sleeptacker
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
@@ -10,8 +11,11 @@ import androidx.appcompat.widget.SwitchCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.fitzay.workouttracker.strengthtraining.R
 import com.fitzay.workouttracker.strengthtraining.core.AppController
+import com.fitzay.workouttracker.strengthtraining.core.utils.AppUtil2
+import com.fitzay.workouttracker.strengthtraining.core.utils.LanguageManager
 import com.fitzay.workouttracker.strengthtraining.core.utils.getDayOfWeek
 import com.fitzay.workouttracker.strengthtraining.core.utils.getFitzayRemoteString
+import com.fitzay.workouttracker.strengthtraining.core.utils.setLocale
 import com.fitzay.workouttracker.strengthtraining.databinding.ActivitySleepSummaryBinding
 import com.fitzay.workouttracker.strengthtraining.di.Component
 import com.fitzay.workouttracker.strengthtraining.domain.entities.AlarmEntity
@@ -32,7 +36,7 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
 
-class SleepSummaryActivity : AppCompatActivity(), ShowAlarmItemClick {
+class SleepSummaryActivity : AppUtil2(), ShowAlarmItemClick {
 
     private lateinit var binding: ActivitySleepSummaryBinding
     var typeClicked = "Daily"
@@ -244,5 +248,9 @@ class SleepSummaryActivity : AppCompatActivity(), ShowAlarmItemClick {
         }
     }
 
+    override fun onStart() {
+        super.onStart()
+        LanguageManager(this@SleepSummaryActivity)
+    }
 }
 

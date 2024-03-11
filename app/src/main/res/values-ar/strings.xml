@@ -344,5 +344,20 @@
     <string name="no_alarm">لا إنذار</string>
     <string name="tomorrow">صباح الغد</string>
     <string name="no_data">لا توجد بيانات</string>
+    <string name="daily_goal">الهدف اليومي</string>
+
+    <string name="add">إضافة</string>
+    <string name="input">أدخل بياناتك</string>
+    <string name="leg">ساق</string>
+    <string name="def">افتراضي</string>
+    <string name="ml">مل</string>
+    <string name="today_">اليوم</string>
+    <string name="previous">السابق</string>
+    <string name="goal">الهدف</string>
+    <string name="distance">المسافة</string>
+
+    <string name="delete_alarm">حذف التنبيه</string>
+    <string name="ok_alarm">حسنا</string>
+    <string name="alarm_mess">هل أنت متأكد أنك تريد الحذف؟</string>
 
 </resources>

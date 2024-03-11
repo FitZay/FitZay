@@ -54,10 +54,7 @@ class WorkoutFragment : Fragment() {
         binding.apply {
             txtBeginner.setBackgroundResource(R.drawable.bg_selected_options_tab)
             val adapter = CategoriesAdapter(
-                Component.workOutViewModel.getCat(
-                    requireContext(),
-                    "BEGINNER"
-                ) as ArrayList<CategoriesModel> , "BEGINNER"
+                Component.workOutViewModel.getCat(requireContext(), "BEGINNER") as ArrayList<CategoriesModel> , "BEGINNER"
             )
             recyclerview.adapter = adapter
 

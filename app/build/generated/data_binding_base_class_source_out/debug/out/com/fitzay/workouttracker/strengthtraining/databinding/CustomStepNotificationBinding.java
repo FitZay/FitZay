@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -33,6 +34,9 @@ public final class CustomStepNotificationBinding implements ViewBinding {
   public final TextView kcal;
 
   @NonNull
+  public final LinearLayout mainV;
+
+  @NonNull
   public final TextView miles;
 
   @NonNull
@@ -43,12 +47,14 @@ public final class CustomStepNotificationBinding implements ViewBinding {
 
   private CustomStepNotificationBinding(@NonNull RelativeLayout rootView, @NonNull ImageView btOpen,
       @NonNull TextView estTime, @NonNull ImageView icTime, @NonNull TextView kcal,
-      @NonNull TextView miles, @NonNull TextView steps, @NonNull TextView txtmin) {
+      @NonNull LinearLayout mainV, @NonNull TextView miles, @NonNull TextView steps,
+      @NonNull TextView txtmin) {
     this.rootView = rootView;
     this.btOpen = btOpen;
     this.estTime = estTime;
     this.icTime = icTime;
     this.kcal = kcal;
+    this.mainV = mainV;
     this.miles = miles;
     this.steps = steps;
     this.txtmin = txtmin;
@@ -105,6 +111,12 @@ public final class CustomStepNotificationBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.mainV;
+      LinearLayout mainV = ViewBindings.findChildViewById(rootView, id);
+      if (mainV == null) {
+        break missingId;
+      }
+
       id = R.id.miles;
       TextView miles = ViewBindings.findChildViewById(rootView, id);
       if (miles == null) {
@@ -124,7 +136,7 @@ public final class CustomStepNotificationBinding implements ViewBinding {
       }
 
       return new CustomStepNotificationBinding((RelativeLayout) rootView, btOpen, estTime, icTime,
-          kcal, miles, steps, txtmin);
+          kcal, mainV, miles, steps, txtmin);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

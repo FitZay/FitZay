@@ -59,8 +59,7 @@ class StepCounterSensor : Service(), SensorEventListener, LocationListener {
     override fun onCreate() {
         super.onCreate()
 
-        mNotificationManager =
-            getSystemService(Context.NOTIFICATION_SERVICE) as? NotificationManager
+        mNotificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as? NotificationManager
                 ?: throw IllegalStateException("could not get notification service")
         mBuilder = NotificationCompat.Builder(this, NOTIFICATION_CHANNEL_ID)
             .setStyle(NotificationCompat.DecoratedCustomViewStyle())
@@ -358,7 +357,7 @@ class StepCounterSensor : Service(), SensorEventListener, LocationListener {
                 PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
             )
 
-        remoteViews!!.setOnClickPendingIntent(R.id.btOpen, homePendingIntent)
+        remoteViews!!.setOnClickPendingIntent(R.id.mainV, homePendingIntent)
 
         createNotificationChannel()
 

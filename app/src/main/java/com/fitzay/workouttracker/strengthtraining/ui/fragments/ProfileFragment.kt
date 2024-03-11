@@ -111,46 +111,50 @@ class ProfileFragment : Fragment() {
 
 
             saveItems.setOnClickListener {
-                when {
-                    binding.etNameInput.text.isNullOrEmpty() -> {
-                        binding.etNameInput.error = "Name Must not be empty"
-                    }
+                try {
+                    when {
+                        binding.etNameInput.text.isNullOrEmpty() -> {
+                            binding.etNameInput.error = "Name Must not be empty"
+                        }
 
-                    binding.etGenderInput.text.isNullOrEmpty() -> {
-                        binding.etGenderInput.error = "Gender Must not be empty"
-                    }
+                        binding.etGenderInput.text.isNullOrEmpty() -> {
+                            binding.etGenderInput.error = "Gender Must not be empty"
+                        }
 
-                    binding.etAgeInput.text.isNullOrEmpty() -> {
-                        binding.etAgeInput.error = "Age Must not be empty"
-                    }
+                        binding.etAgeInput.text.isNullOrEmpty() -> {
+                            binding.etAgeInput.error = "Age Must not be empty"
+                        }
 
-                    binding.etHeightInput.text.isNullOrEmpty() -> {
-                        binding.etHeightInput.error = "Height Must not be empty"
-                    }
+                        binding.etHeightInput.text.isNullOrEmpty() -> {
+                            binding.etHeightInput.error = "Height Must not be empty"
+                        }
 
-                    binding.etWeightInput.text.isNullOrEmpty() -> {
-                        binding.etWeightInput.error = "Weight Must not be empty"
-                    }
+                        binding.etWeightInput.text.isNullOrEmpty() -> {
+                            binding.etWeightInput.error = "Weight Must not be empty"
+                        }
 
-                    binding.etTargetWeightInput.text.isNullOrEmpty() -> {
-                        binding.etTargetWeightInput.error = "Target Wight Must not be empty"
-                    }
+                        binding.etTargetWeightInput.text.isNullOrEmpty() -> {
+                            binding.etTargetWeightInput.error = "Target Wight Must not be empty"
+                        }
 
-                    else -> {
-                        Toast.makeText(requireContext(), getString(R.string.txt_save), Toast.LENGTH_SHORT)
-                            .show()
-                        binding.saveItems.visibility = View.GONE
-                        Component.preference.userName = binding.etNameInput.text.toString()
-                        Component.preference.userAge = binding.etAgeInput.text.toString().toInt()
-                        Component.preference.userGender = binding.etGenderInput.text.toString()
-                        Component.preference.userHeight =
-                            binding.etHeightInput.text.toString().toInt()
-                        Component.preference.userWeight =
-                            binding.etWeightInput.text.toString().toInt()
-                        Component.preference.userTargetWight =
-                            binding.etTargetWeightInput.text.toString().toInt()
+                        else -> {
+                            Toast.makeText(
+                                requireContext(),
+                                getString(R.string.txt_save),
+                                Toast.LENGTH_SHORT
+                            ).show()
+                            binding.saveItems.visibility = View.GONE
+                            Component.preference.userName = binding.etNameInput.text.toString()
+                            Component.preference.userAge = binding.etAgeInput.text.toString().toInt()
+                            Component.preference.userGender = binding.etGenderInput.text.toString()
+                            Component.preference.userHeight = binding.etHeightInput.text.toString().toInt()
+                            Component.preference.userWeight = binding.etWeightInput.text.toString().toInt()
+                            Component.preference.userTargetWight = binding.etTargetWeightInput.text.toString().toInt()
 
+                        }
                     }
+                }catch (e:Exception){
+                    Log.i("TAG", "Catch_Error: "+e.message)
                 }
             }
         }
@@ -158,6 +162,7 @@ class ProfileFragment : Fragment() {
 
         setDefaults()
 
+        Log.i("Prof", "onCreateView: "+Component.preference.userHeightType+"-"+Component.preference.userHeightFt)
 
         return binding.root
 
@@ -166,17 +171,19 @@ class ProfileFragment : Fragment() {
     private fun removeAllPrefs() {
 
         Component.preference.userName = "empty"
-        Component.preference.userGender = "empty"
+        Component.preference.userGender = ""
         Component.preference.userAge = 0
         Component.preference.userHeight = 0
         Component.preference.userTargetWight = 0
         Component.preference.userProfilePath="empty"
         requireActivity().finishAffinity()
+        requireActivity().cacheDir.deleteRecursively()
 
         val intent = Intent(requireContext(), GenderActivity::class.java).apply {
             Intent.FLAG_ACTIVITY_SINGLE_TOP
         }
         startActivity(intent)
+
 
     }
 
@@ -184,14 +191,14 @@ class ProfileFragment : Fragment() {
 
 
         binding.apply {
-            Log.e(TAG, "setDefaults: " + Component.preference.userHeight)
+            Log.e(TAG, "setDefaults: " + Component.preference.userGender)
 
 
 
             if (Component.preference.userName != "empty") {
                 etNameInput.setText(Component.preference.userName)
             }
-            if (Component.preference.userGender != "empty") {
+            if (Component.preference.userGender != "") {
                 etGenderInput.setText(Component.preference.userGender)
             }
             if (Component.preference.userAge != 0) {
@@ -235,6 +242,7 @@ class ProfileFragment : Fragment() {
                 )
                 convertFtInchToCentiMeter = feetAndInches.toCentimeters()
 
+                Log.i("0000", "setDefaults: "+Component.preference.userHeightType)
             } else {
                 ft.isChecked = false
                 cm.isChecked = true
@@ -245,6 +253,7 @@ class ProfileFragment : Fragment() {
 
                 convertCentiToFtInch_1st = cn.first.toString().toInt()
                 convertCentiToFtInch_2nd = cn.second.toString().toInt()
+                Log.i("0000", "12345: "+Component.preference.userHeightType)
 
             }
 
@@ -567,12 +576,9 @@ class ProfileFragment : Fragment() {
     }
 
     private fun showBothSelectorDialog() {
-        val dialogView =
-            LayoutInflater.from(requireContext()).inflate(R.layout.selector_dialog, null)
-        val alertDialog = AlertDialog.Builder(requireContext())
-            .setView(dialogView).setCancelable(false).create()
-        Objects.requireNonNull<Window>(alertDialog.window)
-            .setBackgroundDrawableResource(android.R.color.transparent)
+        val dialogView = LayoutInflater.from(requireContext()).inflate(R.layout.selector_dialog, null)
+        val alertDialog = AlertDialog.Builder(requireContext()).setView(dialogView).setCancelable(false).create()
+        Objects.requireNonNull<Window>(alertDialog.window).setBackgroundDrawableResource(android.R.color.transparent)
         val cameraButton = dialogView.findViewById<ImageView>(R.id.iv_select_camera)
         val galleryButton = dialogView.findViewById<ImageView>(R.id.iv_select_gallery)
         val closeBtn = dialogView.findViewById<ImageView>(R.id.iv_close)

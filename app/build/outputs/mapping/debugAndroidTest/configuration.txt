@@ -1,0 +1,68 @@
+# The proguard configuration file for the following section is C:\Users\Technest - Accounts\.gradle\caches\transforms-3\c9a2da44b30809779890d0a6a6dcf056\transformed\espresso-core-3.5.1\proguard.txt
+# Common proguard flags for all the espresso libraries.
+
+# ignore 'cannot find java.beans and mockito integration' warnings
+-dontwarn org.hamcrest.**
+
+# ignore 'can't find referenced class sun.misc.Unsafe' from guava
+-dontwarn androidx.test.espresso.core.deps.guava.**
+
+# ignore 'can't find referenced class javax.lang.model.element.Modifier'
+-dontwarn com.squareup.javawriter.JavaWriter
+
+# ignore 'can't find referenced class sun.misc.Unsafe, libcore.io.Memory' from protobuf
+-dontwarn androidx.test.espresso.core.deps.protobuf.**
+
+# ignore 'can't find referenced method android.app.Instrumentation' from android.jar
+-dontwarn androidx.test.runner.MonitoringInstrumentation
+
+# End of content from C:\Users\Technest - Accounts\.gradle\caches\transforms-3\c9a2da44b30809779890d0a6a6dcf056\transformed\espresso-core-3.5.1\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Technest - Accounts\.gradle\caches\transforms-3\e81a57adc6b270235ae8d98075f0bbb0\transformed\runner-1.5.2\proguard.txt
+# Proguard flags for the AndroidJUnitRunner library.
+
+# avoid obfuscation of the instrumentation runners and orchestrator
+-keepnames class androidx.test.**
+
+# Annotation classes accessed via reflection
+-keep class androidx.test.annotation.** { *; }
+
+# for 'can't find referenced method 'android.app.Instrumentation$ActivityResult execStartActivity' etc
+-dontwarn androidx.test.runner.MonitoringInstrumentation
+
+# for 'library class android.test.* extends or implements program class'
+-dontwarn android.test.**
+
+# for 'can't find referenced class java.lang.management.RuntimeMXBean'
+-dontwarn org.junit.rules.DisableOnDebug
+
+# for 'can't find referenced class java.lang.management.ThreadMXBean'
+-dontwarn org.junit.internal.runners.statements.FailOnTimeout
+
+# for 'can't find referenced class java.beans.**, easymock, etc
+-dontwarn org.hamcrest.**
+# End of content from C:\Users\Technest - Accounts\.gradle\caches\transforms-3\e81a57adc6b270235ae8d98075f0bbb0\transformed\runner-1.5.2\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Technest - Accounts\.gradle\caches\transforms-3\2749ac3a00803855fc202b4aa54bafbe\transformed\monitor-1.6.1\proguard.txt
+# Proguard flags for the AndroidJUnitRunner library.
+
+# avoid obfuscation of the instrumentation runners and orchestrator
+-keepnames class androidx.test.**
+
+# Annotation classes accessed via reflection
+-keep class androidx.test.annotation.** { *; }
+
+# for 'can't find referenced method 'android.app.Instrumentation$ActivityResult execStartActivity' etc
+-dontwarn androidx.test.runner.MonitoringInstrumentation
+
+# for class com.google.errorprone.annotations.InlineMe is not in the runtime classpath
+-dontwarn com.google.errorprone.annotations.InlineMe
+# End of content from C:\Users\Technest - Accounts\.gradle\caches\transforms-3\2749ac3a00803855fc202b4aa54bafbe\transformed\monitor-1.6.1\proguard.txt
+# The proguard configuration file for the following section is <unknown>
+-dontoptimize
+-keep class * {*;}
+-keep interface * {*;}
+-keep enum * {*;}
+-keepattributes *
+# End of content from <unknown>
+# The proguard configuration file for the following section is <unknown>
+-applymapping "E:\Rafaqat Mehmood\FitnessApp\16-02-2024 Final Release\Fitzay\app\build\outputs\mapping\debug\mapping.txt"
+# End of content from <unknown>

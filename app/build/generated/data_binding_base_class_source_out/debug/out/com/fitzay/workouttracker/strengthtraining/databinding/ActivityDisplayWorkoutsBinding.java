@@ -5,11 +5,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
@@ -24,7 +24,7 @@ import java.lang.String;
 
 public final class ActivityDisplayWorkoutsBinding implements ViewBinding {
   @NonNull
-  private final CoordinatorLayout rootView;
+  private final RelativeLayout rootView;
 
   @NonNull
   public final AppBarLayout appBarLayout;
@@ -45,6 +45,9 @@ public final class ActivityDisplayWorkoutsBinding implements ViewBinding {
   public final RelativeLayout layoutAd;
 
   @NonNull
+  public final LinearLayout lv;
+
+  @NonNull
   public final RecyclerView recyclerview;
 
   @NonNull
@@ -53,11 +56,11 @@ public final class ActivityDisplayWorkoutsBinding implements ViewBinding {
   @NonNull
   public final MaterialTextView tvSleepEnough;
 
-  private ActivityDisplayWorkoutsBinding(@NonNull CoordinatorLayout rootView,
+  private ActivityDisplayWorkoutsBinding(@NonNull RelativeLayout rootView,
       @NonNull AppBarLayout appBarLayout, @NonNull TemplateView bannerTypeTempalte,
       @NonNull RelativeLayout cardStart, @NonNull ConstraintLayout clAds,
       @NonNull CollapsingToolbarLayout collapsingToolbar, @NonNull RelativeLayout layoutAd,
-      @NonNull RecyclerView recyclerview, @NonNull ImageView toolBarImage,
+      @NonNull LinearLayout lv, @NonNull RecyclerView recyclerview, @NonNull ImageView toolBarImage,
       @NonNull MaterialTextView tvSleepEnough) {
     this.rootView = rootView;
     this.appBarLayout = appBarLayout;
@@ -66,6 +69,7 @@ public final class ActivityDisplayWorkoutsBinding implements ViewBinding {
     this.clAds = clAds;
     this.collapsingToolbar = collapsingToolbar;
     this.layoutAd = layoutAd;
+    this.lv = lv;
     this.recyclerview = recyclerview;
     this.toolBarImage = toolBarImage;
     this.tvSleepEnough = tvSleepEnough;
@@ -73,7 +77,7 @@ public final class ActivityDisplayWorkoutsBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public CoordinatorLayout getRoot() {
+  public RelativeLayout getRoot() {
     return rootView;
   }
 
@@ -134,6 +138,12 @@ public final class ActivityDisplayWorkoutsBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.lv;
+      LinearLayout lv = ViewBindings.findChildViewById(rootView, id);
+      if (lv == null) {
+        break missingId;
+      }
+
       id = R.id.recyclerview;
       RecyclerView recyclerview = ViewBindings.findChildViewById(rootView, id);
       if (recyclerview == null) {
@@ -152,8 +162,8 @@ public final class ActivityDisplayWorkoutsBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityDisplayWorkoutsBinding((CoordinatorLayout) rootView, appBarLayout,
-          bannerTypeTempalte, cardStart, clAds, collapsingToolbar, layoutAd, recyclerview,
+      return new ActivityDisplayWorkoutsBinding((RelativeLayout) rootView, appBarLayout,
+          bannerTypeTempalte, cardStart, clAds, collapsingToolbar, layoutAd, lv, recyclerview,
           toolBarImage, tvSleepEnough);
     }
     String missingId = rootView.getResources().getResourceName(id);

@@ -3,8 +3,10 @@
     <string name="abs">ABC</string>
     <string name="abs_beginner">Abdos débutants</string>
     <string name="abs_core">Abdominaux et Core</string>
+    <string name="add">Ajouter</string>
     <string name="advance">Avancé</string>
     <string name="alarm">Réveil</string>
+    <string name="alarm_mess">Êtes-vous sûr de vouloir supprimer?</string>
     <string name="allow">Autoriser</string>
     <string name="allow_req_permissions">Autoriser toutes les permissions requises</string>
     <string name="allow_required_permissions">Permission requise pour enregistrer les citations dans la galerie.</string>
@@ -41,9 +43,13 @@
     <string name="daily_">Quotidienne </string>
     <string name="daily_average">Moyenne Quotidienne</string>
     <string name="daily_challenge">Défi Quotidien</string>
+    <string name="daily_goal">Objectif quotidien</string>
     <string name="daily_motivation">Motivation Quotidienne</string>
     <string name="daily_step_goal">Objectif quotidien de pas</string>
+    <string name="def">Par défaut</string>
     <string name="delete_account"><u>Supprimer le compte</u></string>
+    <string name="delete_alarm">Supprimer l\'alarme</string>
+    <string name="distance">Distance</string>
     <string name="do_it">Faites-le</string>
     <string name="do_relate_following_statement">Vous identifiez-vous à l\'affirmation suivante ?</string>
     <string name="do_suffer_from_knee_pain">Souffrez-vous de douleurs aux genoux ?</string>
@@ -73,6 +79,7 @@
     <string name="gain_muscle">Gagner du muscle</string>
     <string name="gallery">Galerie</string>
     <string name="go_premium">Devenir Premium</string>
+    <string name="goal">Objectif</string>
     <string name="gold">Or</string>
     <string name="google_play">Google Play</string>
     <string name="google_search">Recherche Google</string>
@@ -97,6 +104,7 @@
     <string name="ideal">Idéal</string>
     <string name="improving_sleep">Améliorer le sommeil</string>
     <string name="in">po</string>
+    <string name="input">Saisissez vos données</string>
     <string name="instagram">Instagram</string>
     <string name="intermediate">Intermédiaire</string>
     <string name="item_not_found">Élément non trouvé</string>
@@ -107,6 +115,7 @@
     <string name="label">Étiquette</string>
     <string name="language">langue</string>
     <string name="lbs">livres</string>
+    <string name="leg">Jambe</string>
     <string name="less_6_hours">Moins de 6 heures</string>
     <string name="less_one_hour">Moins d\'une heure</string>
     <string name="look">Jetez juste un coup d\'œil</string>
@@ -117,6 +126,7 @@
     <string name="manage_subscriptions">Gérer les abonnements</string>
     <string name="message">En supprimant le compte, toutes vos données enregistrées seront supprimées !</string>
     <string name="miles">Miles</string>
+    <string name="ml">ml</string>
     <string name="month_of_membership">1 mois d\'adhésion</string>
     <string name="monthly">MOYENNE MENSUELLE</string>
     <string name="monthly_">Mensuelle </string>
@@ -147,6 +157,7 @@
     <string name="not_very_fit">Je ne suis pas très en forme</string>
     <string name="notification_text">Nombre total de pas aujourd\'hui : %1$d</string>
     <string name="notification_title">FitZay-Compteur de pas</string>
+    <string name="ok_alarm">OK</string>
     <string name="one_two_hours">1 à 2 heures</string>
     <string name="permission_toast">Autoriser la permission requise pour utiliser la fonction de compteur de pas.</string>
     <string name="personalized_des">Attendez pendant que votre entraîneur personnel élabore votre programme d\'exercices sur mesure</string>
@@ -156,6 +167,7 @@
     <string name="platinum">Platine</string>
     <string name="pm">PM</string>
     <string name="premium_features_details">Détails des fonctionnalités Premium</string>
+    <string name="previous">Précédent</string>
     <string name="privacy_policy">Politique de Confidentialité</string>
     <string name="profile">Profil</string>
     <string name="purchase_cancel_by_user">Achat annulé par l\'utilisateur</string>
@@ -195,6 +207,7 @@
     <string name="time">Temps</string>
     <string name="time_in_bed">Temps au lit</string>
     <string name="today">Aujourd\'hui</string>
+    <string name="today_">Aujourd\'hui</string>
     <string name="tomorrow">Demain matin</string>
     <string name="tonight">Ce soir</string>
     <string name="too_easy">Trop facile</string>

@@ -6,6 +6,8 @@ import android.os.Bundle
 import android.view.View
 import com.fitzay.workouttracker.strengthtraining.R
 import com.fitzay.workouttracker.strengthtraining.core.AppController
+import com.fitzay.workouttracker.strengthtraining.core.utils.AppUtil2
+import com.fitzay.workouttracker.strengthtraining.core.utils.LanguageManager
 import com.fitzay.workouttracker.strengthtraining.core.utils.calculateBMI
 import com.fitzay.workouttracker.strengthtraining.databinding.ActivityBmiBinding
 import com.fitzay.workouttracker.strengthtraining.di.Component
@@ -16,7 +18,7 @@ import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.LoadAdError
 import com.google.android.gms.ads.nativead.NativeAdOptions
 
-class BmiAct : AppCompatActivity() {
+class BmiAct : AppUtil2() {
     private lateinit var binding:ActivityBmiBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,6 +26,7 @@ class BmiAct : AppCompatActivity() {
         binding= ActivityBmiBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        LanguageManager(this@BmiAct)
 
         binding.apply {
 

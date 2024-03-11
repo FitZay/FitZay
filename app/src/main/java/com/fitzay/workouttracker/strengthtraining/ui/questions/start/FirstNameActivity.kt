@@ -8,6 +8,8 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.fitzay.workouttracker.strengthtraining.R
 import com.fitzay.workouttracker.strengthtraining.core.AppController
+import com.fitzay.workouttracker.strengthtraining.core.utils.AppUtil2
+import com.fitzay.workouttracker.strengthtraining.core.utils.LanguageManager
 import com.fitzay.workouttracker.strengthtraining.core.utils.getFitzayRemoteString
 
 import com.fitzay.workouttracker.strengthtraining.core.utils.showToast
@@ -20,7 +22,7 @@ import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.LoadAdError
 import com.google.android.gms.ads.nativead.NativeAdOptions
 
-class FirstNameActivity : AppCompatActivity() {
+class FirstNameActivity : AppUtil2() {
 
     private lateinit var binding: ActivityFirstNameBinding
 
@@ -100,7 +102,7 @@ class FirstNameActivity : AppCompatActivity() {
                 etName.setSelection(etName.length());
             }
         }
-
+        LanguageManager(this@FirstNameActivity)
     }
 
     private fun loadAdaptiveNative() {

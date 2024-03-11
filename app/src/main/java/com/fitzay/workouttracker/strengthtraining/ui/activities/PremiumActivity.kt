@@ -7,30 +7,45 @@ import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import com.fitzay.workouttracker.strengthtraining.R
 import com.fitzay.workouttracker.strengthtraining.core.AppController
+import com.fitzay.workouttracker.strengthtraining.core.utils.AppUtil2
 import com.fitzay.workouttracker.strengthtraining.core.utils.InAppPurchaseUtil
+import com.fitzay.workouttracker.strengthtraining.core.utils.LanguageManager
 import com.fitzay.workouttracker.strengthtraining.databinding.ActivityPremiumBinding
 import com.fitzay.workouttracker.strengthtraining.ui.MainActivity
 
 
-class PremiumActivity : AppCompatActivity() {
+class PremiumActivity : AppUtil2() {
 
     private var binding: ActivityPremiumBinding? = null
     private var selecteditem = "fitzay_weekly_premium"
+
+    companion object {
+        var activitytype = ""
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityPremiumBinding.inflate(layoutInflater)
         setContentView(binding?.root)
-
+        LanguageManager(this@PremiumActivity)
         binding?.closeBtn?.setOnClickListener {
-            startActivity(Intent(this@PremiumActivity,MainActivity::class.java))
-            finish()
+            if (activitytype == "splash"){
+                startActivity(Intent(this@PremiumActivity,MainActivity::class.java))
+                finish()
+            }
+            else{
+                finish()
+            }
         }
 
         binding?.cancelBtn?.setOnClickListener {
-            startActivity(Intent(this@PremiumActivity,MainActivity::class.java))
-            finish()
-
+            if (activitytype == "splash"){
+                startActivity(Intent(this@PremiumActivity,MainActivity::class.java))
+                finish()
+            }
+            else{
+                finish()
+            }
         }
 
         if (AppController.weeklyvalue != ""){
@@ -99,11 +114,20 @@ class PremiumActivity : AppCompatActivity() {
         }
     }
 
+    override fun onBackPressed() {
+        if (activitytype == "splash"){
+            startActivity(Intent(this@PremiumActivity,MainActivity::class.java))
+            finish()
+        }
+        else{
+            finish()
+        }
+    }
+
     fun selectAnOption(view: ImageView) {
         binding?.radioBtnWeekly?.setImageResource(R.drawable.ic_radiobtn_unchecked)
         binding?.radioMonthly?.setImageResource(R.drawable.ic_radiobtn_unchecked)
         binding?.radioYearly?.setImageResource(R.drawable.ic_radiobtn_unchecked)
-
         view.setImageResource(R.drawable.ic_selectedbutton)
 
     }

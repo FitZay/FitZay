@@ -5,12 +5,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import com.fitzay.workouttracker.strengthtraining.R
+import com.fitzay.workouttracker.strengthtraining.core.utils.AppUtil2
+import com.fitzay.workouttracker.strengthtraining.core.utils.LanguageManager
 import com.fitzay.workouttracker.strengthtraining.databinding.ActivityFullbodyWorkoutBinding
 import com.fitzay.workouttracker.strengthtraining.di.Component
 import com.fitzay.workouttracker.strengthtraining.domain.models.CategoriesModel
 import com.fitzay.workouttracker.strengthtraining.domain.models.FullbodyCategoriesModel
 
-class FullbodyWorkoutActivity : AppCompatActivity() {
+class FullbodyWorkoutActivity : AppUtil2() {
 
     private var binding : ActivityFullbodyWorkoutBinding? = null
 
@@ -26,7 +28,7 @@ class FullbodyWorkoutActivity : AppCompatActivity() {
 //        binding?.backpressBtn?.setOnClickListener {
 //            finish()
 //        }
-
+        LanguageManager(this@FullbodyWorkoutActivity)
         listoffullbodies = Component.workOutViewModel.fullbodygetCat(
             this,
             "1",

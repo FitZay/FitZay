@@ -24,7 +24,7 @@ import kotlin.math.ceil
 import kotlin.math.floor
 
 
-class AskingHeightActivity : AppCompatActivity() {
+class AskingHeightActivity : AppUtil2() {
 
     private lateinit var binding: ActivityAskingHeightBinding
     var isCM = true
@@ -82,12 +82,9 @@ class AskingHeightActivity : AppCompatActivity() {
                 else
                 {
                     Log.i("TAG", "5555555555: ")
-
                 }
                 etInputFeet.requestFocus();
-//                etInputInch.requestFocus();
                 etInputFeet.setSelection(etInputFeet.length())
-//                etInputInch.setSelection(etInputInch.length())
 
             }
             rbCm.setOnClickListener {
@@ -177,18 +174,26 @@ class AskingHeightActivity : AppCompatActivity() {
 
                         Component.preference.userHeightType = checkType
                     }
-                    else
+                    else if (checkType=="FT" && !etInputFeet.text.isNullOrEmpty())
                     {
                         Component.preference.userHeightType = checkType
-
                         ft = etInputFeet.text.toString().toInt()
-                        inch = etInputInch.text.toString().toDouble()
+
+
+                        if (etInputInch.text.toString().isEmpty())
+                        {
+                            etInputInch.setText("0").toString().toDouble()
+                        }
+                        else
+                        {
+                            inch = etInputInch.text.toString().toDouble()
+                        }
 
                         Component.preference.userHeightFt = ft
                         Component.preference.userHeightInch = inch.toInt()
 
                         Log.i("TAG", "onCreate: "+ft)
-                        Log.i("TAG", "onCreate: "+inch)
+                        Log.i("TAG", "onCreate: "+etInputInch.text.toString())
                         val intent = Intent(this@AskingHeightActivity, AskingWeightActivity::class.java).apply {
                             Intent.FLAG_ACTIVITY_SINGLE_TOP
                         }
@@ -198,8 +203,15 @@ class AskingHeightActivity : AppCompatActivity() {
                 }
                 catch (e: NumberFormatException){
                     Log.e("Exception", "onCreate: "+e.message )
+                    Log.i("TAG", "onCreate: "+etInputInch.text.toString())
+                    if (etInputInch.text.toString().isEmpty())
+                    {
+                        etInputInch.setText("0").toString().toDouble()
+                    }
+
                     Toast.makeText(this@AskingHeightActivity, "Enter a valid number", Toast.LENGTH_SHORT).show()
                     e.printStackTrace()
+
                 }
 //                try {
 //                    if (isCM && !etInputCm.text.isNullOrEmpty()) {
@@ -355,6 +367,7 @@ class AskingHeightActivity : AppCompatActivity() {
 
     override fun onStart() {
         super.onStart()
+        LanguageManager(this@AskingHeightActivity)
         binding.apply {
         if (Component.preference.userHeight != 0 || Component.preference.userHeightFt != 0 || Component.preference.userHeightInch != 0) {
             //if (Component.preference.userHeightType == "CM") {

@@ -12,6 +12,7 @@ array com_google_android_gms_fonts_certs
 array com_google_android_gms_fonts_certs_dev
 array com_google_android_gms_fonts_certs_prod
 array preloaded_fonts
+array weight
 color bg_navigation
 color black
 color bottom_nav_bg
@@ -22,6 +23,7 @@ color grey
 color lightgrey
 color on_primary
 color outline_color
+color pink
 color primary
 color ready_color
 color ready_dark
@@ -37,6 +39,14 @@ color textcolor
 color toggle_text_color
 color transparent
 color white
+dimen activity_horizontal_margin
+dimen activity_vertical_margin
+dimen scale_line_large
+dimen scale_line_medium
+dimen scale_line_small
+dimen text_start_point
+dimen txt_size
+dimen yellow_line_stroke_width
 drawable abs_index
 drawable absbeginnercircular
 drawable alarm_new_bg
@@ -117,6 +127,7 @@ drawable french
 drawable full_body
 drawable full_body_workout
 drawable full_bodyexit
+drawable gender_box
 drawable height_weight_outline
 drawable height_weight_selected_box
 drawable ic_ad_video
@@ -231,6 +242,7 @@ drawable next_date
 drawable parts_focus
 drawable portugal
 drawable premiumheader
+drawable progress_bar_background
 drawable progress_gradient
 drawable roundview
 drawable russian
@@ -561,6 +573,7 @@ id llMale
 id llTop
 id loadingProgress
 id lowerBodyDesc
+id lv
 id main
 id mainT
 id mainV
@@ -614,6 +627,8 @@ id miles
 id monthlytext
 id montlyBtn
 id my_composable
+id my_scale_cm
+id my_scale_ft
 id nav_consent_form
 id nav_how_to_use
 id nav_more_apps
@@ -626,6 +641,7 @@ id nextTitle
 id notification_button
 id notification_icon
 id notification_subtitle
+id notification_text
 id notification_title
 id p_dec
 id perImg
@@ -647,6 +663,9 @@ id progressThree
 id progressTwo
 id quitBtn
 id radioBtnWeekly
+id radioButtonFemale
+id radioButtonMale
+id radioGroupGender
 id radioMonthly
 id radioYearly
 id rbCm
@@ -688,6 +707,7 @@ id steps
 id submitBtn
 id swOnOff
 id swOnOff2
+id target_weight
 id targetweightText
 id targetweightminusBtn
 id targetweightplusBtn
@@ -826,6 +846,8 @@ id txtTwelve
 id txtWakeSleep
 id txtWednesday
 id txtWeekly
+id txt_height_cm
+id txt_height_ft
 id txtmin
 id typeName
 id updateStepGoal
@@ -861,6 +883,7 @@ id weightH
 id weightText
 id weightToggle
 id weightValue
+id weight_wh
 id weightminlusBtn
 id weightplusBtn
 id wishIt
@@ -924,6 +947,7 @@ layout fragment_weekly
 layout fragment_workout
 layout language_show_list
 layout layout_weekdays
+layout male_female_dialog
 layout marker_view_line_chart
 layout navigation_header_view
 layout quitdialog
@@ -935,6 +959,7 @@ layout schedule_alarm_show_item_list
 layout selector_dialog
 layout snooze_dialog
 layout text_layout
+layout water_intake_notification_layout
 menu drawer_menu
 menu menu_main_bottom
 mipmap ic_launcher
@@ -947,8 +972,10 @@ raw task_complete
 string abs
 string abs_beginner
 string abs_core
+string add
 string advance
 string alarm
+string alarm_mess
 string allow
 string allow_req_permissions
 string allow_required_permissions
@@ -986,9 +1013,13 @@ string daily
 string daily_
 string daily_average
 string daily_challenge
+string daily_goal
 string daily_motivation
 string daily_step_goal
+string def
 string delete_account
+string delete_alarm
+string distance
 string do_it
 string do_relate_following_statement
 string do_suffer_from_knee_pain
@@ -1025,6 +1056,7 @@ string gain_muscle
 string gallery
 string gcm_defaultSenderId
 string go_premium
+string goal
 string gold
 string google_api_key
 string google_app_id
@@ -1053,6 +1085,7 @@ string how_to_use
 string ideal
 string improving_sleep
 string in
+string input
 string instagram
 string intermediate
 string item_not_found
@@ -1063,6 +1096,7 @@ string know
 string label
 string language
 string lbs
+string leg
 string less_6_hours
 string less_one_hour
 string look
@@ -1073,6 +1107,7 @@ string male
 string manage_subscriptions
 string message
 string miles
+string ml
 string month_of_membership
 string monthly
 string monthly_
@@ -1103,6 +1138,7 @@ string not_so_much
 string not_very_fit
 string notification_text
 string notification_title
+string ok_alarm
 string one_two_hours
 string permission_toast
 string personalized_des
@@ -1112,6 +1148,7 @@ string plan
 string platinum
 string pm
 string premium_features_details
+string previous
 string privacy_policy
 string profile
 string project_id
@@ -1152,6 +1189,7 @@ string thighs
 string time
 string time_in_bed
 string today
+string today_
 string tomorrow
 string tonight
 string too_easy

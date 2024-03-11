@@ -3,8 +3,10 @@
     <string name="abs">ABS</string>
     <string name="abs_beginner">Начинающий пресс</string>
     <string name="abs_core">Пресс и кора</string>
+    <string name="add">Добавить</string>
     <string name="advance">Продвинутый</string>
     <string name="alarm">Будильник</string>
+    <string name="alarm_mess">Вы уверены, что хотите удалить?</string>
     <string name="allow">Разрешить</string>
     <string name="allow_req_permissions">Разрешить все необходимые разрешения</string>
     <string name="allow_required_permissions">Требуется разрешение для сохранения цитат в галерее.</string>
@@ -41,9 +43,13 @@
     <string name="daily_">Ежедневно </string>
     <string name="daily_average">Среднее за день</string>
     <string name="daily_challenge">Ежедневный вызов</string>
+    <string name="daily_goal">Ежедневная цель</string>
     <string name="daily_motivation">Ежедневная мотивация</string>
     <string name="daily_step_goal">Цель ежедневного количества шагов</string>
+    <string name="def">По умолчанию</string>
     <string name="delete_account"><u>Удалить аккаунт</u></string>
+    <string name="delete_alarm">Удалить будильник</string>
+    <string name="distance">Расстояние</string>
     <string name="do_it">Делай это</string>
     <string name="do_relate_following_statement">Вы согласны с следующим утверждением?</string>
     <string name="do_suffer_from_knee_pain">Страдаете ли вы от болей в коленях?</string>
@@ -72,6 +78,7 @@
     <string name="gain_muscle">Набор мышечной массы</string>
     <string name="gallery">Галерея</string>
     <string name="go_premium">Стать премиум</string>
+    <string name="goal">Цель</string>
     <string name="gold">"Золото "</string>
     <string name="google_play">Google Play</string>
     <string name="google_search">Поиск в Google</string>
@@ -96,6 +103,7 @@
     <string name="ideal">Идеальный</string>
     <string name="improving_sleep">Улучшение сна</string>
     <string name="in">дюйм</string>
+    <string name="input">Введите свои данные</string>
     <string name="instagram">Instagram</string>
     <string name="intermediate">Средний</string>
     <string name="item_not_found">Элемент не найден</string>
@@ -104,6 +112,7 @@
     <string name="know">Не знаю, как это сделать</string>
     <string name="label">Метка</string>
     <string name="language">Язык</string>
+    <string name="leg">Нога</string>
     <string name="less_6_hours">Менее 6 часов</string>
     <string name="less_one_hour">Менее 1 часа</string>
     <string name="look">Просто взгляни</string>
@@ -113,6 +122,7 @@
     <string name="manage_subscriptions">Управление подписками</string>
     <string name="message">" При удалении учетной записи будут удалены все ваши сохраненные данные!"</string>
     <string name="miles">Мили</string>
+    <string name="ml">мл</string>
     <string name="month_of_membership">1 месяц членства</string>
     <string name="monthly">СРЕДНЕЕ ЗА МЕСЯЦ</string>
     <string name="monthly_">Ежемесячно </string>
@@ -143,6 +153,7 @@
     <string name="not_very_fit">Я не очень в хорошей форме</string>
     <string name="notification_text">Всего шагов сегодня: %1$d</string>
     <string name="notification_title">FitZay-Счетчик шагов</string>
+    <string name="ok_alarm">OK</string>
     <string name="one_two_hours">1–2 часа</string>
     <string name="permission_toast">Разрешите необходимое разрешение для использования функции счетчика шагов.</string>
     <string name="personalized_des">Подождите, пока ваш личный тренер составит для вас индивидуальную программу упражнений.</string>
@@ -152,6 +163,7 @@
     <string name="platinum">"Платина "</string>
     <string name="pm">PM</string>
     <string name="premium_features_details">Детали премиум-функций</string>
+    <string name="previous">Предыдущий</string>
     <string name="privacy_policy">Политика конфиденциальности</string>
     <string name="profile">Профиль</string>
     <string name="purchase_cancel_by_user">Покупка отменена пользователем</string>
@@ -191,6 +203,7 @@
     <string name="time">Время</string>
     <string name="time_in_bed">Время в постели</string>
     <string name="today">Сегодня</string>
+    <string name="today_">Сегодня</string>
     <string name="tomorrow">Завтра утром</string>
     <string name="tonight">Сегодня вечером</string>
     <string name="too_easy">Слишком легко</string>
