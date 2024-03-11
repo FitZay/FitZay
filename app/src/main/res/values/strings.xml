@@ -366,6 +366,7 @@
     <string name="delete_alarm">Delete Alarm</string>
     <string name="ok_alarm">OK</string>
     <string name="alarm_mess">Are you sure want to delete.?</string>
+    <string name="or_continue_with_ads">Or continue with Ads</string>
     <string-array name="age">
         <item>10</item>
         <item>11</item>

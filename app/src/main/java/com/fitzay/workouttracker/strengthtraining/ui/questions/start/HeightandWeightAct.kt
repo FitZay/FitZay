@@ -40,8 +40,7 @@ class HeightandWeightAct : AppUtil2() {
             }
 
 
-
-           // myScale.setStartingPoint(2f)
+            // myScale.setStartingPoint(2f)
 
 //            myScaleFt.setUpdateListener(object : com.fitzay.workouttracker.strengthtraining.core.utils.onViewUpdateListener {
 //
@@ -55,124 +54,145 @@ class HeightandWeightAct : AppUtil2() {
             btnNext.setOnClickListener {
                 try {
 
-                Component.preference.userAge = age
-                Component.preference.userWeight = weight
-                Component.preference.userTargetWight = targetweight
+                    Component.preference.userAge = age
+                    Component.preference.userWeight = weight
+                    Component.preference.userTargetWight = targetweight
                     Component.preference.userHeight = cm
 
                     if (type == "CM" && valueText.text.isNotEmpty() && valueText.text != "") {
-                    Component.preference.userHeightType = type
-                    Component.preference.userHeight = valueText.text.toString().toDouble().toInt()
-                } else {
-                    if (type == "FT" && valueText.text.isNotEmpty() && valueText.text != "") {
-                        Component.preference.userHeightFt = valueText.text.toString().toDouble().toInt()
+                        Component.preference.userHeightType = type
+                        Component.preference.userHeight =
+                            valueText.text.toString().toDouble().toInt()
                     } else {
+                        if (type == "FT" && valueText.text.isNotEmpty() && valueText.text != "") {
+                            Component.preference.userHeightFt =
+                                valueText.text.toString().toDouble().toInt()
+                        } else {
+                            Component.preference.userAge = age
+                            Component.preference.userWeight = weight
+                            Component.preference.userTargetWight = targetweight
+                            Component.preference.userHeight = cm
 
-                        Component.preference.userHeight = 0
+
+                            if (type == "CM" && valueText.text.isNotEmpty() && valueText.text != "") {
+                                Component.preference.userHeightType = type
+                                Component.preference.userHeight =
+                                    valueText.text.toString().toDouble().toInt()
+                            } else {
+                                if (type == "FT" && valueText.text.isNotEmpty() && valueText.text != "") {
+                                    Component.preference.userHeightFt =
+                                        valueText.text.toString().toDouble().toInt()
+                                } else {
+
+                                    Component.preference.userHeight = 0
+                                }
+                                Component.preference.userHeightType = type
+                            }
+                            startActivity(
+                                Intent(
+                                    this@HeightandWeightAct,
+                                    PersonalizedWorkAct::class.java
+                                )
+                            )
+                            finish()
+
+                            Log.i("TAG---", "onCreate: " + age)
+                        }
                     }
-                    Component.preference.userHeightType = type
-                }
-                startActivity(Intent(this@HeightandWeightAct, PersonalizedWorkAct::class.java))
-                finish()
 
-                    Log.i("TAG---", "onCreate: "+age)
-            }
-                catch (e:Exception){}
-            }
+                    //userAge.setSelectedItemPosition(Component.preference.userAge)
+                    Log.i("TAG---", "onCreate: " + Component.preference.userAge)
 
-            //userAge.setSelectedItemPosition(Component.preference.userAge)
-            Log.i("TAG---", "onCreate: "+Component.preference.userAge)
-
-            ageplusBtn.setOnClickListener {
-                check=true
-                check2=true
+                    ageplusBtn.setOnClickListener {
+                        check = true
+                        check2 = true
 //                age++
 //                ageText.text = age.toString()
-                age=userAge.getCurrentSelectedItemPosition()
-                userAge.setSelectedItemPosition(age + 1)
-                age=userAge.getCurrentSelectedItem()!!.toInt()
-            }
+                        age = userAge.getCurrentSelectedItemPosition()
+                        userAge.setSelectedItemPosition(age + 1)
+                        age = userAge.getCurrentSelectedItem()!!.toInt()
+                    }
 
-            ageminusBtn.setOnClickListener {
-               // if (age > 0) {
-                    check=true
-                    check2=true
+                    ageminusBtn.setOnClickListener {
+                        // if (age > 0) {
+                        check = true
+                        check2 = true
 //                    age--
 //                    ageText.text = age.toString()
-               // }
-                age = userAge.getCurrentSelectedItemPosition()
-                if (age > 0) {
-                    userAge.setSelectedItemPosition(age - 1)
-                    age = userAge.getCurrentSelectedItem()!!.toInt()
-                }
-            }
+                        // }
+                        age = userAge.getCurrentSelectedItemPosition()
+                        if (age > 0) {
+                            userAge.setSelectedItemPosition(age - 1)
+                            age = userAge.getCurrentSelectedItem()!!.toInt()
+                        }
+                    }
 
 
-            weightplusBtn?.setOnClickListener {
+                    weightplusBtn?.setOnClickListener {
 //                weight++
 //                binding.weightText?.text = weight.toString()
 
-                weight=weightWh.getCurrentSelectedItemPosition()
-                weightWh.setSelectedItemPosition(weight + 1)
-                weight=weightWh.getCurrentSelectedItem()!!.toInt()
-            }
+                        weight = weightWh.getCurrentSelectedItemPosition()
+                        weightWh.setSelectedItemPosition(weight + 1)
+                        weight = weightWh.getCurrentSelectedItem()!!.toInt()
+                    }
 
-            weightminlusBtn.setOnClickListener {
+                    weightminlusBtn.setOnClickListener {
 //                if (weight > 0) {
 //                    weight--
 //                    weightText?.text = weight.toString()
 //                }
-                weight = weightWh.getCurrentSelectedItemPosition()
-                if (weight > 0) {
-                    weightWh.setSelectedItemPosition(weight - 1)
-                    weight = weightWh.getCurrentSelectedItem()!!.toInt()
-                }
-            }
+                        weight = weightWh.getCurrentSelectedItemPosition()
+                        if (weight > 0) {
+                            weightWh.setSelectedItemPosition(weight - 1)
+                            weight = weightWh.getCurrentSelectedItem()!!.toInt()
+                        }
+                    }
 
 
-            targetweightplusBtn?.setOnClickListener {
+                    targetweightplusBtn?.setOnClickListener {
 //                targetweight++
 //                targetweightText.text = targetweight.toString()
 
-                targetweight=targetWeight.getCurrentSelectedItemPosition()
-                targetWeight.setSelectedItemPosition(targetweight + 1)
-                targetweight=targetWeight.getCurrentSelectedItem()!!.toInt()
-            }
+                        targetweight = targetWeight.getCurrentSelectedItemPosition()
+                        targetWeight.setSelectedItemPosition(targetweight + 1)
+                        targetweight = targetWeight.getCurrentSelectedItem()!!.toInt()
+                    }
 
-            targetweightminusBtn?.setOnClickListener {
+                    targetweightminusBtn?.setOnClickListener {
 //                if (targetweight > 0) {
 //                    targetweight--
 //                    targetweightText.text = targetweight.toString()
 //                }
-                targetweight = targetWeight.getCurrentSelectedItemPosition()
-                if (targetweight > 0) {
-                    targetWeight.setSelectedItemPosition(targetweight - 1)
-                    targetweight = targetWeight.getCurrentSelectedItem()!!.toInt()
-                }
-            }
+                        targetweight = targetWeight.getCurrentSelectedItemPosition()
+                        if (targetweight > 0) {
+                            targetWeight.setSelectedItemPosition(targetweight - 1)
+                            targetweight = targetWeight.getCurrentSelectedItem()!!.toInt()
+                        }
+                    }
 
 
 
-            heightPlusBtn.setOnClickListener {
+                    heightPlusBtn.setOnClickListener {
 //                height++
 //                binding.valueText.text = height.toString()
-                cm=cmWheel.getCurrentSelectedItemPosition()
-                cmWheel.setSelectedItemPosition(cm + 1)
-                cm=cmWheel.getCurrentSelectedItem()!!.toInt()
-            }
+                        cm = cmWheel.getCurrentSelectedItemPosition()
+                        cmWheel.setSelectedItemPosition(cm + 1)
+                        cm = cmWheel.getCurrentSelectedItem()!!.toInt()
+                    }
 
-            heightminusBtn.setOnClickListener {
+                    heightminusBtn.setOnClickListener {
 //                if (height > 0) {
 //                    height--
 //                    valueText.text = height.toString()
 //                }
 
-                cm = cmWheel.getCurrentSelectedItemPosition()
-                if (targetweight > 0) {
-                    cmWheel.setSelectedItemPosition(cm - 1)
-                    cm = cmWheel.getCurrentSelectedItem()!!.toInt()
-                }
-            }
+                        cm = cmWheel.getCurrentSelectedItemPosition()
+                        if (targetweight > 0) {
+                            cmWheel.setSelectedItemPosition(cm - 1)
+                            cm = cmWheel.getCurrentSelectedItem()!!.toInt()
+                        }
+                    }
 
 //            cmBtn.setOnClickListener {
 //                try {
@@ -243,10 +263,13 @@ class HeightandWeightAct : AppUtil2() {
 //                }
 //            }
 
+                } catch (e: Exception) {
+                    Log.i("TAG", "onCreate: " + e.message)
+
+                }
+            }
         }
-
     }
-
 
     fun cmToInches(cm: Double): Double {
         var result =  cm / 2.54

@@ -3973,6 +3973,7 @@ drawable arm_index
 drawable avd_hide_password
 drawable avd_show_password
 drawable bar_bg
+drawable baseline_arrow_forward_24
 drawable baseline_cancel_24
 drawable baseline_keyboard_arrow_right_24
 drawable baseline_lock_24
@@ -4778,6 +4779,7 @@ id imageView2
 id imageView3
 id imageView4
 id imageView5
+id imageView6
 id img0001
 id img001
 id imgAlarm
@@ -6199,6 +6201,7 @@ string offline_opt_in_title
 string ok_alarm
 string on
 string one_two_hours
+string or_continue_with_ads
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through

@@ -17,7 +17,7 @@ import com.fitzay.workouttracker.strengthtraining.ui.MainActivity
 class PremiumActivity : AppUtil2() {
 
     private var binding: ActivityPremiumBinding? = null
-    private var selecteditem = "fitzay_weekly_premium"
+    private var selecteditem = "fitzay_yearly_premium"
 
     companion object {
         var activitytype = ""
@@ -97,16 +97,19 @@ class PremiumActivity : AppUtil2() {
         binding?.weeklyBtn?.setOnClickListener {
             selecteditem = "fitzay_weekly_premium"
             binding?.radioBtnWeekly?.let { it1 -> selectAnOption(it1) }
+            InAppPurchaseUtil.openPurchaseDialog(this, selecteditem)
         }
 
         binding?.montlyBtn?.setOnClickListener {
             selecteditem = "fitzay_monthly_premium"
             binding?.radioMonthly?.let { it1 -> selectAnOption(it1) }
+            InAppPurchaseUtil.openPurchaseDialog(this, selecteditem)
         }
 
         binding?.yearlyBtn?.setOnClickListener {
             selecteditem = "fitzay_yearly_premium"
             binding?.radioYearly?.let { it1 -> selectAnOption(it1) }
+            InAppPurchaseUtil.openPurchaseDialog(this, selecteditem)
         }
 
         binding?.submitBtn?.setOnClickListener {

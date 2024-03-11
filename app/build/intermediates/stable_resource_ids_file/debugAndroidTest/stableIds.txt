@@ -1,8 +1,0 @@
-com.fitzay.workouttracker.strengthtraining.test:style/WhiteBackgroundTheme = 0x7f020001
-com.fitzay.workouttracker.strengthtraining.test:style/WhiteBackgroundDialogTheme = 0x7f020000
-com.fitzay.workouttracker.strengthtraining.test:string/fitzay_native_splash = 0x7f010005
-com.fitzay.workouttracker.strengthtraining.test:string/fitzay_app_id = 0x7f010000
-com.fitzay.workouttracker.strengthtraining.test:string/fitzay_inter_splash = 0x7f010003
-com.fitzay.workouttracker.strengthtraining.test:string/fitzay_app_open = 0x7f010001
-com.fitzay.workouttracker.strengthtraining.test:string/fitzay_native_planner = 0x7f010004
-com.fitzay.workouttracker.strengthtraining.test:string/fitzay_inter_ex_start = 0x7f010002
