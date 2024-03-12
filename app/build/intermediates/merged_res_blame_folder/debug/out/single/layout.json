@@ -12,12 +12,12 @@
         "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\layout\\activity_gender.xml"
     },
     {
-        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:\\layout\\ringtone_show_list.xml",
-        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\layout\\ringtone_show_list.xml"
-    },
-    {
         "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:\\layout\\activity_asking_weight.xml",
         "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\layout\\activity_asking_weight.xml"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:\\layout\\ringtone_show_list.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\layout\\ringtone_show_list.xml"
     },
     {
         "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:\\layout\\fragment_weekly.xml",

@@ -472,6 +472,7 @@
                     app:cardBackgroundColor="@color/green"
                     app:cardCornerRadius="@dimen/_8sdp"
                     app:cardElevation="0dp"
+                    app:rippleColor="#D4FF00"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHeight_percent="0.1"
                     app:layout_constraintStart_toStartOf="parent"
