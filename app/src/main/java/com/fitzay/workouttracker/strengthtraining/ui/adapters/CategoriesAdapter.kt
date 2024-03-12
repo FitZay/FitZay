@@ -42,27 +42,70 @@ class CategoriesAdapter(
         val holder = holder1 as ViewHolder
         holder.cat.text = mData[position].catName + " " + mData[position].catType
 
-        binding.apply {
-            when(mData[position].catName){
-                "ABS" ->{
-                    layoutImg.setBackgroundResource(R.drawable.abs_index)
+        if (mData[position].catType?.lowercase() == "beginner"){
+            binding.apply {
+                when(mData[position].catName){
+                    "ABS" ->{
+                        layoutImg.setBackgroundResource(R.drawable.high_angle_arm)
+                    }
+                    "CHEST" ->{
+                        layoutImg.setBackgroundResource(R.drawable.muscular_man)
+                    }
+                    "ARM" ->{
+                        layoutImg.setBackgroundResource(R.drawable.young_adult)
+                    }
+                    "LEG" ->{
+                        layoutImg.setBackgroundResource(R.drawable.man_exercising)
+                    }
+                    "SHOULDER & BACK" ->{
+                        layoutImg.setBackgroundResource(R.drawable.backview_image)
+                    }
                 }
-                "CHEST" ->{
-                    layoutImg.setBackgroundResource(R.drawable.chest_index)
-                }
-                "ARM" ->{
-                    layoutImg.setBackgroundResource(R.drawable.arm_index)
-                }
-                "LEG" ->{
-                    layoutImg.setBackgroundResource(R.drawable.leg_index)
-                }
-                "SHOULDER & BACK" ->{
-                    layoutImg.setBackgroundResource(R.drawable.shoulder_index)
+            }
+        }
+        else if (mData[position].catType?.lowercase() == "intermediate"){
+            binding.apply {
+                when(mData[position].catName){
+                    "ABS" ->{
+                        layoutImg.setBackgroundResource(R.drawable.abs_intermediate)
+                    }
+                    "CHEST" ->{
+                        layoutImg.setBackgroundResource(R.drawable.chest_intermediate)
+                    }
+                    "ARM" ->{
+                        layoutImg.setBackgroundResource(R.drawable.arm_ntermediate)
+                    }
+                    "LEG" ->{
+                        layoutImg.setBackgroundResource(R.drawable.leg_intermediate)
+                    }
+                    "SHOULDER & BACK" ->{
+                        layoutImg.setBackgroundResource(R.drawable.shoulder_intermediate)
+                    }
                 }
             }
         }
 
-
+        else if (mData[position].catType?.lowercase() == "advance"){
+            binding.apply {
+                when(mData[position].catName){
+                    "ABS" ->{
+                        layoutImg.setBackgroundResource(R.drawable.abs_advanced)
+                    }
+                    "CHEST" ->{
+                        layoutImg.setBackgroundResource(R.drawable.chest_advanced)
+                    }
+                    "ARM" ->{
+                        layoutImg.setBackgroundResource(R.drawable.arm_advanced)
+                    }
+                    "LEG" ->{
+                        layoutImg.setBackgroundResource(R.drawable.leg_advanced)
+                    }
+                    "SHOULDER & BACK" ->{
+                        layoutImg.setBackgroundResource(R.drawable.shoulder_advanced)
+                    }
+                }
+            }
+        }
 
         holder.itemView.setOnClickListener {
             val intent =

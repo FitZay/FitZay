@@ -1012,10 +1012,7 @@
     <string name="fitness">Fitness</string>
     <string name="fitzay_app_id" translatable="false">"ca-app-pub-3940256099942544~3347511713"</string>
     <string name="fitzay_app_open" translatable="false">"ca-app-pub-3940256099942544/3419835294"</string>
-    <string name="fitzay_inter_ex_start" translatable="false">"ca-app-pub-3940256099942544/1033173712"</string>
     <string name="fitzay_inter_splash" translatable="false">"ca-app-pub-3940256099942544/1033173712"</string>
-    <string name="fitzay_native_planner" translatable="false">"ca-app-pub-3940256099942544/2247696110"</string>
-    <string name="fitzay_native_splash" translatable="false">"ca-app-pub-3940256099942544/2247696110"</string>
     <string name="flabby">Flabby</string>
     <string name="food">Food</string>
     <string name="friends_family">Friends or family</string>

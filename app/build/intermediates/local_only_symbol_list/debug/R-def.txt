@@ -48,7 +48,9 @@ dimen scale_line_small
 dimen text_start_point
 dimen txt_size
 dimen yellow_line_stroke_width
+drawable abs_advanced
 drawable abs_index
+drawable abs_intermediate
 drawable absbeginnercircular
 drawable alarm_new_bg
 drawable alarm_new_bg_2
@@ -60,7 +62,10 @@ drawable alarm_sound_new_icon
 drawable app_icon
 drawable app_icon_for
 drawable arabic
+drawable arm_advanced
 drawable arm_index
+drawable arm_ntermediate
+drawable backview_image
 drawable bar_bg
 drawable baseline_arrow_forward_24
 drawable baseline_cancel_24
@@ -108,7 +113,9 @@ drawable btn_next_circle_bg
 drawable btn_next_press
 drawable btn_next_unpress
 drawable card_bg
+drawable chest_advanced
 drawable chest_index
+drawable chest_intermediate
 drawable circle_choice
 drawable constant
 drawable cursor_color
@@ -132,6 +139,7 @@ drawable full_bodyexit
 drawable gender_box
 drawable height_weight_outline
 drawable height_weight_selected_box
+drawable high_angle_arm
 drawable ic_ad_video
 drawable ic_add_water
 drawable ic_add_water_white
@@ -234,12 +242,16 @@ drawable just_right_dim
 drawable label_new_icon
 drawable label_new_icon_light
 drawable lang
+drawable leg_advanced
 drawable leg_index
+drawable leg_intermediate
 drawable linear_foreground
 drawable lower_body
 drawable main_plan_image
+drawable man_exercising
 drawable mandarin_chinese
 drawable meter_s
+drawable muscular_man
 drawable next_date
 drawable parts_focus
 drawable portugal
@@ -249,7 +261,9 @@ drawable progress_gradient
 drawable roundview
 drawable russian
 drawable selected_bg
+drawable shoulder_advanced
 drawable shoulder_index
+drawable shoulder_intermediate
 drawable snooze_new_icon
 drawable snooze_new_icon_light
 drawable spanish
@@ -268,6 +282,7 @@ drawable water_cup_200_ml
 drawable water_cup_300_ml
 drawable water_cup_500_ml
 drawable water_cup_50_ml
+drawable young_adult
 font bebas_neue
 font digital_dismay
 font eina_02_regular
@@ -1043,10 +1058,7 @@ string fit
 string fitness
 string fitzay_app_id
 string fitzay_app_open
-string fitzay_inter_ex_start
 string fitzay_inter_splash
-string fitzay_native_planner
-string fitzay_native_splash
 string flabby
 string food
 string friends_family

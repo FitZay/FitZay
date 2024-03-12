@@ -4,7 +4,6 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.widget.ImageView
-import androidx.appcompat.app.AppCompatActivity
 import com.fitzay.workouttracker.strengthtraining.R
 import com.fitzay.workouttracker.strengthtraining.core.AppController
 import com.fitzay.workouttracker.strengthtraining.core.utils.AppUtil2
@@ -29,49 +28,87 @@ class PremiumActivity : AppUtil2() {
         setContentView(binding?.root)
         LanguageManager(this@PremiumActivity)
         binding?.closeBtn?.setOnClickListener {
-            if (activitytype == "splash"){
-                startActivity(Intent(this@PremiumActivity,MainActivity::class.java))
+            if (activitytype == "splash") {
+                startActivity(Intent(this@PremiumActivity, MainActivity::class.java))
                 finish()
-            }
-            else{
+            } else {
                 finish()
             }
         }
 
         binding?.cancelBtn?.setOnClickListener {
-            if (activitytype == "splash"){
-                startActivity(Intent(this@PremiumActivity,MainActivity::class.java))
+            if (activitytype == "splash") {
+                startActivity(Intent(this@PremiumActivity, MainActivity::class.java))
                 finish()
-            }
-            else{
+            } else {
                 finish()
             }
         }
 
-        if (AppController.weeklyvalue != ""){
+        if (AppController.weeklyvalue != "") {
             binding?.weeklytext?.text = AppController.weeklyvalue
-        }
-        else {
+        } else {
             InAppPurchaseUtil.onlygetPrice(this@PremiumActivity, "fitzay_weekly_premium") {
                 binding?.weeklytext?.text = it
             }
         }
 
-        if (AppController.monthlyvalue != ""){
-            binding?.monthlytext?.text = AppController.monthlyvalue
-        }
-        else {
-            InAppPurchaseUtil.onlygetPrice(this@PremiumActivity, "fitzay_monthly_premium") {
-                binding?.monthlytext?.text = it
+        if (AppController.monthlyvalue != "") {
+            try {
+                val currencySymbol = extractCurrencySymbol(AppController.monthlyvalue)
+                val numericalPart =
+                    AppController.monthlyvalue.substring(3).replace(",", "").toDouble()
+                val result = numericalPart / 4.2
+                val formattedResult = "%s %.0f".format(currencySymbol, result)
+                binding?.monthlytext?.text = "$formattedResult/week"
+            } catch (e: Exception) {
+                binding?.monthlytext?.text = AppController.monthlyvalue
+            }
+
+        } else {
+            InAppPurchaseUtil.onlygetPrice(
+                this@PremiumActivity,
+                "fitzay_monthly_premium"
+            ) { price ->
+                try {
+                    val currencySymbol = extractCurrencySymbol(price)
+                    val numericalPart = price.substring(3).replace(",", "").toDouble()
+                    val result = numericalPart / 4.2
+                    val formattedResult = "%s %.0f".format(currencySymbol, result)
+                    binding?.monthlytext?.text = "$formattedResult/week"
+                } catch (e: Exception) {
+                    binding?.monthlytext?.text = price
+                }
+
             }
         }
 
-        if (AppController.yearlyvalue != ""){
-            binding?.yearlytext?.text = AppController.yearlyvalue
-        }
-        else {
+
+        if (AppController.yearlyvalue != "") {
+            try {
+                val currencySymbol = extractCurrencySymbol(AppController.yearlyvalue)
+                val numericalPart =
+                    AppController.yearlyvalue.substring(3).replace(",", "").toDouble()
+                val result = numericalPart / 52.2
+                val formattedResult = "%s %.0f".format(currencySymbol, result)
+                binding?.yearlytext?.text = "$formattedResult/week"
+            } catch (e: Exception) {
+                binding?.yearlytext?.text = AppController.yearlyvalue
+            }
+
+        } else {
             InAppPurchaseUtil.onlygetPrice(this@PremiumActivity, "fitzay_yearly_premium") {
-                binding?.yearlytext?.text = it
+                try {
+                    val currencySymbol = extractCurrencySymbol(it)
+                    val numericalPart = it.substring(3).replace(",", "").toDouble()
+                    val result = numericalPart / 52.2
+                    val formattedResult = "%s %.0f".format(currencySymbol, result)
+                    binding?.yearlytext?.text = "$formattedResult/week"
+                } catch (e: Exception) {
+                    binding?.yearlytext?.text = it
+                }
+
+
             }
         }
 
@@ -117,12 +154,19 @@ class PremiumActivity : AppUtil2() {
         }
     }
 
+    fun extractCurrencySymbol(input: String): String {
+        val regex =
+            Regex("^\\D+") // Matches any non-digit characters at the beginning of the string
+        val matchResult = regex.find(input)
+        return matchResult?.value
+            ?: "" // Returns the matched currency symbol or an empty string if not found
+    }
+
     override fun onBackPressed() {
-        if (activitytype == "splash"){
-            startActivity(Intent(this@PremiumActivity,MainActivity::class.java))
+        if (activitytype == "splash") {
+            startActivity(Intent(this@PremiumActivity, MainActivity::class.java))
             finish()
-        }
-        else{
+        } else {
             finish()
         }
     }

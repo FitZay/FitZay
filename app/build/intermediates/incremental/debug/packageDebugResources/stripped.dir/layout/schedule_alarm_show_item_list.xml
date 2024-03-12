@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+           
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_1sdp"
+        android:background="@drawable/alarm_new_bg"
+        android:layoutDirection="ltr" android:tag="layout/schedule_alarm_show_item_list_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <View
+                android:id="@+id/alarmView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_60sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/changeBtn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </View>
+
+            <ImageView
+                android:id="@+id/swOnOff"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:src="@drawable/baseline_keyboard_arrow_right_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/alarmView"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.9" />
+
+            <TextView
+                android:id="@+id/nextTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/next"
+                android:textColor="@color/green"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintBottom_toBottomOf="@id/alarmView"
+                app:layout_constraintEnd_toEndOf="@id/alarmView"
+                app:layout_constraintHorizontal_bias="0.05"
+                app:layout_constraintStart_toStartOf="@id/alarmView"
+                app:layout_constraintTop_toTopOf="@id/alarmView"
+                app:layout_constraintVertical_bias="0.1" />
+
+            <ImageView
+                android:id="@+id/bedIcon"
+                android:layout_width="@dimen/_13sdp"
+                android:layout_height="@dimen/_13sdp"
+                android:src="@drawable/bed_time_new_icon"
+                app:layout_constraintBottom_toBottomOf="@id/alarmView"
+                app:layout_constraintEnd_toEndOf="@id/nextTitle"
+                app:layout_constraintHorizontal_bias="0.05"
+                app:layout_constraintStart_toStartOf="@id/nextTitle"
+                app:layout_constraintTop_toBottomOf="@id/nextTitle"
+                app:layout_constraintVertical_bias="0.3" />
+
+            <TextView
+                android:id="@+id/labelName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/bed_time"
+                android:textColor="#939292"
+                android:textSize="@dimen/_9ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/bedIcon"
+                app:layout_constraintEnd_toEndOf="@+id/alarmView"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/bedIcon"
+                app:layout_constraintTop_toTopOf="@+id/bedIcon" />
+
+
+            <ImageView
+                android:id="@+id/alarmIcon"
+                android:layout_width="@dimen/_13sdp"
+                android:layout_height="@dimen/_13sdp"
+                android:src="@drawable/wake_up_icon"
+                android:layout_marginStart="@dimen/_5sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/labelName"
+                app:layout_constraintEnd_toEndOf="@+id/alarmView"
+                app:layout_constraintHorizontal_bias="0.391"
+                app:layout_constraintStart_toEndOf="@+id/labelName"
+                app:layout_constraintTop_toTopOf="@+id/labelName"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/wakeLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/wake_time"
+                android:textColor="#939292"
+                android:textSize="@dimen/_9ssp"
+                android:paddingStart="@dimen/_2sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/alarmIcon"
+                app:layout_constraintEnd_toEndOf="@+id/alarmView"
+                app:layout_constraintHorizontal_bias="0.08"
+                app:layout_constraintStart_toEndOf="@+id/alarmIcon"
+                app:layout_constraintTop_toTopOf="@+id/alarmIcon"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/wakeTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="11:23"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15ssp"
+                app:layout_constraintBottom_toBottomOf="@id/alarmView"
+                app:layout_constraintEnd_toEndOf="@id/alarmView"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@id/alarmIcon"
+                app:layout_constraintTop_toBottomOf="@id/alarmIcon"
+                app:layout_constraintVertical_bias="0.1" />
+
+            <TextView
+                android:id="@+id/wake_am_pm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/pm"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_9ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/wakeTime"
+                app:layout_constraintEnd_toEndOf="@+id/alarmView"
+                app:layout_constraintHorizontal_bias="0.04"
+                app:layout_constraintStart_toEndOf="@+id/wakeTime"
+                app:layout_constraintTop_toTopOf="@+id/wakeTime"
+                app:layout_constraintVertical_bias="0.7" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="11:23"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15ssp"
+                app:layout_constraintBottom_toBottomOf="@id/alarmView"
+                app:layout_constraintEnd_toEndOf="@id/alarmView"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/bedIcon"
+                app:layout_constraintTop_toBottomOf="@id/bedIcon"
+                app:layout_constraintVertical_bias="0.1" />
+
+            <TextView
+                android:id="@+id/am_pm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/am"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_9ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/time"
+                app:layout_constraintEnd_toEndOf="@+id/alarmView"
+                app:layout_constraintHorizontal_bias="0.02"
+                app:layout_constraintStart_toEndOf="@+id/time"
+                app:layout_constraintTop_toTopOf="@+id/time"
+                app:layout_constraintVertical_bias="0.7" />
+
+            <TextView
+                android:id="@+id/dayName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/tonight"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_8ssp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toTopOf="@+id/bedIcon"
+                app:layout_constraintEnd_toEndOf="@+id/alarmView"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/nextTitle"
+                app:layout_constraintTop_toBottomOf="@+id/nextTitle" />
+
+            <TextView
+                android:id="@+id/changeBtn"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:background="@drawable/alarm_new_bg_2"
+                android:gravity="center"
+                android:text="CHANGE"
+                android:textColor="#9CB135"
+                android:textSize="@dimen/_10ssp"
+                android:textStyle="normal"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/alarmView"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/ss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+            </androidx.appcompat.widget.SwitchCompat>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+         

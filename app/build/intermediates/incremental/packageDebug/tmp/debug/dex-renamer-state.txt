@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-#Tue Mar 12 10:21:58 PKT 2024
+#Tue Mar 12 12:22:28 PKT 2024
 base.0=D\:\\Izhar\\Fitzay\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=D\:\\Izhar\\Fitzay\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\10\\classes.dex
 base.10=D\:\\Izhar\\Fitzay\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\7\\classes.dex
@@ -31,40 +30,6 @@ base.6=D\:\\Izhar\\Fitzay\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDeb
 base.7=D\:\\Izhar\\Fitzay\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\1\\classes.dex
 base.8=D\:\\Izhar\\Fitzay\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\2\\classes.dex
 base.9=D\:\\Izhar\\Fitzay\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\3\\classes.dex
-=======
-#Tue Mar 12 10:33:17 PKT 2024
-base.0=E\:\\Rafaqat Mehmood\\FitnessApp\\16-02-2024 Final Release\\Fitzay\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
-base.1=E\:\\Rafaqat Mehmood\\FitnessApp\\16-02-2024 Final Release\\Fitzay\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\10\\classes.dex
-base.10=E\:\\Rafaqat Mehmood\\FitnessApp\\16-02-2024 Final Release\\Fitzay\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\7\\classes.dex
-base.11=E\:\\Rafaqat Mehmood\\FitnessApp\\16-02-2024 Final Release\\Fitzay\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\8\\classes.dex
-base.12=E\:\\Rafaqat Mehmood\\FitnessApp\\16-02-2024 Final Release\\Fitzay\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\9\\classes.dex
-base.13=E\:\\Rafaqat Mehmood\\FitnessApp\\16-02-2024 Final Release\\Fitzay\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.14=E\:\\Rafaqat Mehmood\\FitnessApp\\16-02-2024 Final Release\\Fitzay\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\10\\classes.dex
-base.15=E\:\\Rafaqat Mehmood\\FitnessApp\\16-02-2024 Final Release\\Fitzay\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\11\\classes.dex
-base.16=E\:\\Rafaqat Mehmood\\FitnessApp\\16-02-2024 Final Release\\Fitzay\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\12\\classes.dex
-base.17=E\:\\Rafaqat Mehmood\\FitnessApp\\16-02-2024 Final Release\\Fitzay\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\13\\classes.dex
-base.18=E\:\\Rafaqat Mehmood\\FitnessApp\\16-02-2024 Final Release\\Fitzay\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\14\\classes.dex
-base.19=E\:\\Rafaqat Mehmood\\FitnessApp\\16-02-2024 Final Release\\Fitzay\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\15\\classes.dex
-base.2=E\:\\Rafaqat Mehmood\\FitnessApp\\16-02-2024 Final Release\\Fitzay\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\11\\classes.dex
-base.20=E\:\\Rafaqat Mehmood\\FitnessApp\\16-02-2024 Final Release\\Fitzay\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
-base.21=E\:\\Rafaqat Mehmood\\FitnessApp\\16-02-2024 Final Release\\Fitzay\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\2\\classes.dex
-base.22=E\:\\Rafaqat Mehmood\\FitnessApp\\16-02-2024 Final Release\\Fitzay\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\3\\classes.dex
-base.23=E\:\\Rafaqat Mehmood\\FitnessApp\\16-02-2024 Final Release\\Fitzay\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\5\\classes.dex
-base.24=E\:\\Rafaqat Mehmood\\FitnessApp\\16-02-2024 Final Release\\Fitzay\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex
-base.25=E\:\\Rafaqat Mehmood\\FitnessApp\\16-02-2024 Final Release\\Fitzay\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\7\\classes.dex
-base.26=E\:\\Rafaqat Mehmood\\FitnessApp\\16-02-2024 Final Release\\Fitzay\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\8\\classes.dex
-base.27=E\:\\Rafaqat Mehmood\\FitnessApp\\16-02-2024 Final Release\\Fitzay\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\9\\classes.dex
-base.28=E\:\\Rafaqat Mehmood\\FitnessApp\\16-02-2024 Final Release\\Fitzay\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
-base.29=E\:\\Rafaqat Mehmood\\FitnessApp\\16-02-2024 Final Release\\Fitzay\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes3.dex
-base.3=E\:\\Rafaqat Mehmood\\FitnessApp\\16-02-2024 Final Release\\Fitzay\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\12\\classes.dex
-base.30=E\:\\Rafaqat Mehmood\\FitnessApp\\16-02-2024 Final Release\\Fitzay\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes4.dex
-base.4=E\:\\Rafaqat Mehmood\\FitnessApp\\16-02-2024 Final Release\\Fitzay\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\13\\classes.dex
-base.5=E\:\\Rafaqat Mehmood\\FitnessApp\\16-02-2024 Final Release\\Fitzay\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\14\\classes.dex
-base.6=E\:\\Rafaqat Mehmood\\FitnessApp\\16-02-2024 Final Release\\Fitzay\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\15\\classes.dex
-base.7=E\:\\Rafaqat Mehmood\\FitnessApp\\16-02-2024 Final Release\\Fitzay\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\1\\classes.dex
-base.8=E\:\\Rafaqat Mehmood\\FitnessApp\\16-02-2024 Final Release\\Fitzay\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\2\\classes.dex
-base.9=E\:\\Rafaqat Mehmood\\FitnessApp\\16-02-2024 Final Release\\Fitzay\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\3\\classes.dex
->>>>>>> dfcc482694ffbd376cdf4710a6c3bda54595c34e
 path.0=classes.dex
 path.1=10/classes.dex
 path.10=7/classes.dex
