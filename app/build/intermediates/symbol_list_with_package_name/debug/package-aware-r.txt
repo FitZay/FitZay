@@ -85,6 +85,7 @@ animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
 array age
+array cm
 array com_google_android_gms_fonts_certs
 array com_google_android_gms_fonts_certs_dev
 array com_google_android_gms_fonts_certs_prod
@@ -3972,6 +3973,7 @@ drawable arm_index
 drawable avd_hide_password
 drawable avd_show_password
 drawable bar_bg
+drawable baseline_arrow_forward_24
 drawable baseline_cancel_24
 drawable baseline_keyboard_arrow_right_24
 drawable baseline_lock_24
@@ -4557,6 +4559,7 @@ id closest
 id cm
 id cmBtn
 id cmText
+id cm_wheel
 id collapseActionView
 id collapsingToolbar
 id compose_view_saveable_id_tag
@@ -4776,6 +4779,7 @@ id imageView2
 id imageView3
 id imageView4
 id imageView5
+id imageView6
 id img0001
 id img001
 id imgAlarm
@@ -5019,8 +5023,6 @@ id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
 id my_composable
-id my_scale_cm
-id my_scale_ft
 id native_ad_view
 id nav_consent_form
 id nav_how_to_use
@@ -5430,8 +5432,6 @@ id txtTwelve
 id txtWakeSleep
 id txtWednesday
 id txtWeekly
-id txt_height_cm
-id txt_height_ft
 id txtmin
 id typeName
 id unchecked
@@ -6197,6 +6197,7 @@ string offline_opt_in_title
 string ok_alarm
 string on
 string one_two_hours
+string or_continue_with_ads
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through

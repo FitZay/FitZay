@@ -329,7 +329,13 @@
             android:exported="false"
             android:theme="@style/AdTheme" />
 
-        <receiver android:name="com.fitzay.workouttracker.strengthtraining.core.utils.WaterIntakeNotificationReceiver" />
+        <receiver
+            android:name="com.fitzay.workouttracker.strengthtraining.core.utils.WaterIntakeNotificationReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="WaterIntake" />
+            </intent-filter>
+        </receiver>
 
         <service
             android:name="com.google.firebase.components.ComponentDiscoveryService"

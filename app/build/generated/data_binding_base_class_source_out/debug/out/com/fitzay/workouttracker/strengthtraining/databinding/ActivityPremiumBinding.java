@@ -62,6 +62,9 @@ public final class ActivityPremiumBinding implements ViewBinding {
   public final ImageView imageView2;
 
   @NonNull
+  public final ImageView imageView6;
+
+  @NonNull
   public final LinearLayout linearLayout;
 
   @NonNull
@@ -124,15 +127,16 @@ public final class ActivityPremiumBinding implements ViewBinding {
       @NonNull ImageView closeBtn, @NonNull ConstraintLayout constraintLayout2,
       @NonNull ConstraintLayout constraintLayout3, @NonNull ConstraintLayout constraintLayout4,
       @NonNull ConstraintLayout constraintLayout5, @NonNull ImageView imageView2,
-      @NonNull LinearLayout linearLayout, @NonNull LinearLayout linearLayout2,
-      @NonNull LinearLayout linearLayout3, @NonNull ConstraintLayout mainconstraint,
-      @NonNull TextView manageSubscriptionBtn, @NonNull TextView monthlytext,
-      @NonNull MaterialCardView montlyBtn, @NonNull TextView privacyPolicyBtn,
-      @NonNull ImageView radioBtnWeekly, @NonNull ImageView radioMonthly,
-      @NonNull ImageView radioYearly, @NonNull MaterialCardView submitBtn,
-      @NonNull TextView textView, @NonNull TextView textView10, @NonNull TextView textView3,
-      @NonNull MaterialCardView weeklyBtn, @NonNull TextView weeklytext,
-      @NonNull MaterialCardView yearlyBtn, @NonNull TextView yearlytext) {
+      @NonNull ImageView imageView6, @NonNull LinearLayout linearLayout,
+      @NonNull LinearLayout linearLayout2, @NonNull LinearLayout linearLayout3,
+      @NonNull ConstraintLayout mainconstraint, @NonNull TextView manageSubscriptionBtn,
+      @NonNull TextView monthlytext, @NonNull MaterialCardView montlyBtn,
+      @NonNull TextView privacyPolicyBtn, @NonNull ImageView radioBtnWeekly,
+      @NonNull ImageView radioMonthly, @NonNull ImageView radioYearly,
+      @NonNull MaterialCardView submitBtn, @NonNull TextView textView, @NonNull TextView textView10,
+      @NonNull TextView textView3, @NonNull MaterialCardView weeklyBtn,
+      @NonNull TextView weeklytext, @NonNull MaterialCardView yearlyBtn,
+      @NonNull TextView yearlytext) {
     this.rootView = rootView;
     this.cancelBtn = cancelBtn;
     this.cancelBtn3 = cancelBtn3;
@@ -147,6 +151,7 @@ public final class ActivityPremiumBinding implements ViewBinding {
     this.constraintLayout4 = constraintLayout4;
     this.constraintLayout5 = constraintLayout5;
     this.imageView2 = imageView2;
+    this.imageView6 = imageView6;
     this.linearLayout = linearLayout;
     this.linearLayout2 = linearLayout2;
     this.linearLayout3 = linearLayout3;
@@ -273,6 +278,12 @@ public final class ActivityPremiumBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.imageView6;
+      ImageView imageView6 = ViewBindings.findChildViewById(rootView, id);
+      if (imageView6 == null) {
+        break missingId;
+      }
+
       id = R.id.linearLayout;
       LinearLayout linearLayout = ViewBindings.findChildViewById(rootView, id);
       if (linearLayout == null) {
@@ -389,10 +400,10 @@ public final class ActivityPremiumBinding implements ViewBinding {
 
       return new ActivityPremiumBinding((ConstraintLayout) rootView, cancelBtn, cancelBtn3,
           cancelBtn4, cancelBtn5, cancelBtn6, cancelBtn7, cancelBtn8, closeBtn, constraintLayout2,
-          constraintLayout3, constraintLayout4, constraintLayout5, imageView2, linearLayout,
-          linearLayout2, linearLayout3, mainconstraint, manageSubscriptionBtn, monthlytext,
-          montlyBtn, privacyPolicyBtn, radioBtnWeekly, radioMonthly, radioYearly, submitBtn,
-          textView, textView10, textView3, weeklyBtn, weeklytext, yearlyBtn, yearlytext);
+          constraintLayout3, constraintLayout4, constraintLayout5, imageView2, imageView6,
+          linearLayout, linearLayout2, linearLayout3, mainconstraint, manageSubscriptionBtn,
+          monthlytext, montlyBtn, privacyPolicyBtn, radioBtnWeekly, radioMonthly, radioYearly,
+          submitBtn, textView, textView10, textView3, weeklyBtn, weeklytext, yearlyBtn, yearlytext);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
