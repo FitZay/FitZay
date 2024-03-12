@@ -695,9 +695,9 @@ class StepMonthlyFragment : Fragment(), OnChartValueSelectedListener {
 
             when(check)
             {
-                "Step"-> tvValue.text = "${value.toInt()} Steps $xAxisLabel"
-                "Distance"-> tvValue.text = "${value.toInt()} Miles $xAxisLabel"
-                "Calories"-> tvValue.text = "${value.toInt()} Calories $xAxisLabel"
+                "Step"-> tvValue.text = "${value.toInt()} Steps, $xAxisLabel"
+                "Distance"-> tvValue.text = "${value.toInt()} Miles, $xAxisLabel"
+                "Calories"-> tvValue.text = "${value.toInt()} Calories, $xAxisLabel"
                 "Time"->
                 {
                     val hours = value.toInt() / 3600
@@ -761,7 +761,6 @@ class StepMonthlyFragment : Fragment(), OnChartValueSelectedListener {
             clear()
             setOnClickListener(null)
             setOnLongClickListener(null)
-            popupWindow.dismiss()
             binding.dateLayout.visibility = View.VISIBLE
         }
     }

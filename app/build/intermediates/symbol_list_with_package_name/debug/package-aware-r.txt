@@ -5023,8 +5023,6 @@ id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
 id my_composable
-id my_scale_cm
-id my_scale_ft
 id native_ad_view
 id nav_consent_form
 id nav_how_to_use
@@ -5434,8 +5432,6 @@ id txtTwelve
 id txtWakeSleep
 id txtWednesday
 id txtWeekly
-id txt_height_cm
-id txt_height_ft
 id txtmin
 id typeName
 id unchecked

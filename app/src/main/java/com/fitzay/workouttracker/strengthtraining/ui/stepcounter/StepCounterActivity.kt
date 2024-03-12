@@ -1,9 +1,11 @@
 package com.fitzay.workouttracker.strengthtraining.ui.stepcounter
 
 import android.Manifest
+import android.app.AlertDialog
 import android.app.Dialog
 import android.content.BroadcastReceiver
 import android.content.Context
+import android.content.DialogInterface
 import android.content.Intent
 import android.content.IntentFilter
 import android.content.pm.PackageManager
@@ -20,7 +22,6 @@ import android.widget.Toast
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.annotation.RequiresApi
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.localbroadcastmanager.content.LocalBroadcastManager
@@ -44,6 +45,7 @@ import org.threeten.bp.LocalDate
 import org.threeten.bp.temporal.TemporalAdjusters
 import java.text.SimpleDateFormat
 import java.util.*
+
 
 class StepCounterActivity : AppUtil2() {
 
@@ -82,11 +84,11 @@ class StepCounterActivity : AppUtil2() {
                         Log.i("NEW-TAG", "onCreate--ELSE: ")
 
                         if (!ActivityCompat.shouldShowRequestPermissionRationale(this@StepCounterActivity, Manifest.permission.ACTIVITY_RECOGNITION)) {
-                            Toast.makeText(
-                                this@StepCounterActivity,
-                                getString(R.string.permission_toast),
-                                Toast.LENGTH_SHORT
-                            ).show()
+//                            Toast.makeText(
+//                                this@StepCounterActivity,
+//                                getString(R.string.permission_toast),
+//                                Toast.LENGTH_SHORT
+//                            ).show()
                             navigateToAppSettings()
                             //requestPermission()
                             Log.i("NEW-TAG", "onCreate--ELSE-IF: ")
@@ -137,7 +139,7 @@ class StepCounterActivity : AppUtil2() {
                 pauseIntent.action = FITNESS_ACTION_PAUSE_STEP_COUNTING
 
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                    startForegroundService(pauseIntent,)
+                    startForegroundService(pauseIntent)
                 }else{
                     startService(pauseIntent)
                 }
@@ -403,10 +405,37 @@ class StepCounterActivity : AppUtil2() {
     }
 
     private fun navigateToAppSettings() {
-        val intent = Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS)
-        val uri = Uri.fromParts("package", packageName, null)
-        intent.data = uri
-        startActivity(intent)
+
+        if (Build.VERSION.SDK_INT>=Build.VERSION_CODES.UPSIDE_DOWN_CAKE)
+        {
+            val builder1: AlertDialog.Builder = AlertDialog.Builder(this@StepCounterActivity)
+            builder1.setMessage("Allow FitZay to access your physical activity?")
+            builder1.setCancelable(true)
+
+            builder1.setPositiveButton(
+                "Allow",
+                DialogInterface.OnClickListener {
+                                                dialog, id -> dialog.cancel()
+                    val intent = Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS)
+                    val uri = Uri.fromParts("package", packageName, null)
+                    intent.data = uri
+                    startActivity(intent)
+                }
+            )
+
+            builder1.setNegativeButton(
+                "Don't allow",
+                DialogInterface.OnClickListener { dialog, id -> dialog.cancel() })
+
+            val alert11: AlertDialog = builder1.create()
+            alert11.show()
+        }
+        else {
+            val intent = Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS)
+            val uri = Uri.fromParts("package", packageName, null)
+            intent.data = uri
+            startActivity(intent)
+        }
     }
 
     override fun onDestroy() {

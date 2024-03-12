@@ -24,6 +24,8 @@ import androidx.compose.material.Surface
 import androidx.compose.material.lightColors
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.ComposeView
 import androidx.core.app.NotificationCompat
@@ -82,7 +84,9 @@ class WaterIntakeActivity : AppCompatActivity() {
 
         findViewById<ComposeView>(R.id.my_composable).setContent {
             MaterialTheme {
-                Surface {
+                Surface(
+                    color = Color(0xff080612)
+                ) {
                     Greeting()
                 }
             }
@@ -101,7 +105,7 @@ class WaterIntakeActivity : AppCompatActivity() {
 
         }
         binding.currentML.text = Component.preference.cupCapacity.toString() + " ml"
-        scheduleNotification()
+       // scheduleNotification()
 
 //        val alarmManager = getSystemService(Context.ALARM_SERVICE) as AlarmManager
 //        val notificationIntent = Intent(this, WaterIntakeNotificationReceiver::class.java)
@@ -141,7 +145,7 @@ class WaterIntakeActivity : AppCompatActivity() {
     private fun scheduleNotification() {
         val alarmManager = getSystemService(Context.ALARM_SERVICE) as AlarmManager
         val intent = Intent(this, WaterIntakeNotificationReceiver::class.java)
-        val pendingIntent = PendingIntent.getBroadcast(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT)
+        val pendingIntent = PendingIntent.getBroadcast(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE)
 
         // Set repeating alarm with a 5-minute interval
         val calendar = Calendar.getInstance().apply {
@@ -176,7 +180,7 @@ class WaterIntakeActivity : AppCompatActivity() {
     }
     override fun onResume() {
         super.onResume()
-        binding.txtGoal.text = getString(R.string.daily_goal)+":"+ Component.preference.waterGoal + getString(R.string.ml)
+        binding.txtGoal.text = getString(R.string.daily_goal)+": "+ Component.preference.waterGoal + getString(R.string.ml)
         binding.currentML.text = Component.preference.cupCapacity.toString() + getString(R.string.ml)
     }
 
@@ -196,7 +200,7 @@ class WaterIntakeActivity : AppCompatActivity() {
 
         WavesLoadingIndicator(
             modifier = Modifier.fillMaxSize(),
-            color = lightThemeColors.secondaryVariant,
+            color = lightThemeColors.secondaryVariant, // wave color
             progress = counter
         )
 
@@ -282,9 +286,11 @@ class WaterIntakeActivity : AppCompatActivity() {
     val lightThemeColors = lightColors(
         primary = Color(0xFF855446),
         primaryVariant = Color(0xFF9C684B),
-        secondary = Color(0xFF03DAC5),
-        secondaryVariant = Color(0xFFA6D7EE)
+        secondary = Color(0xFF08A6CA),
+        secondaryVariant = Color(0xFF006ABF)
     )
+
+
 
     private fun addWater() {
 
@@ -302,7 +308,7 @@ class WaterIntakeActivity : AppCompatActivity() {
             if (waterBinding.tvCapacity.text.isNotEmpty()) {
                 Component.preference.waterGoal = waterBinding.tvCapacity.text.toString().toInt()
                 binding.txtGoal.text =
-                    getString(R.string.daily_goal)+":" + waterBinding.tvCapacity.text.toString() + getString(R.string.ml)
+                    getString(R.string.daily_goal)+": " + waterBinding.tvCapacity.text.toString() + getString(R.string.ml)
                 dialog.dismiss()
             }
             else
