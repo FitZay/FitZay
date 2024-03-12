@@ -409,6 +409,7 @@ id customDrawer
 id customLayout
 id dailyAverage
 id dailyContainer
+id data
 id dateLayout
 id dayName
 id daysLayout
@@ -737,6 +738,7 @@ id textView24
 id textView25
 id textView26
 id textView27
+id textView28
 id textView29
 id textView3
 id textView30

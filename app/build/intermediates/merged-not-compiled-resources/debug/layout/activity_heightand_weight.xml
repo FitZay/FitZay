@@ -243,6 +243,37 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_16sdp"
+                        android:elevation="0dp"
+                        app:cardBackgroundColor="@color/green"
+                        app:layout_constraintBottom_toBottomOf="@id/textView33"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.2"
+                        app:layout_constraintStart_toEndOf="@id/textView33"
+                        app:layout_constraintTop_toTopOf="@id/textView33"
+                        app:strokeWidth="0dp">
+
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                            <TextView
+                                android:layout_width="@dimen/_20sdp"
+                                android:layout_height="wrap_content"
+                                android:text="@string/kg"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"/>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+
 
                     <TextView
                         android:id="@+id/weightText"
@@ -549,7 +580,7 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/materialCardView29"
                         app:wheelPickerBgColor="@color/transparent"
-                        app:wheelPickerDefaultSelectedItemPos="5"
+                        app:wheelPickerDefaultSelectedItemPos="164"
                         app:wheelPickerDividerColor="@android:color/transparent"
                         app:wheelPickerItemSelectedBgColor="@color/secondary"
                         app:wheelPickerItemUnselectedBgColor="@color/transparent"
@@ -611,7 +642,7 @@
 
                     <com.google.android.material.card.MaterialCardView
                         android:id="@+id/materialCardView29"
-                        android:layout_width="@dimen/_70sdp"
+                        android:layout_width="@dimen/_30sdp"
                         android:layout_height="@dimen/_23sdp"
                         android:layout_marginTop="@dimen/_10sdp"
                         android:elevation="0dp"
@@ -683,67 +714,6 @@
                     </com.google.android.material.card.MaterialCardView>
 
 
-                    <TextView
-                        android:id="@+id/txt_height_cm"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:textColor="@android:color/white"
-                        android:textSize="@dimen/_15ssp"
-                        android:visibility="gone"
-                        app:layout_constraintBottom_toBottomOf="@id/my_scale_cm"
-                        app:layout_constraintEnd_toStartOf="@id/my_scale_cm"
-                        app:layout_constraintHorizontal_bias="0.29"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="@id/my_scale_cm"
-                        app:layout_constraintVertical_bias="0.495" />
-
-                    <com.fitzay.workouttracker.strengthtraining.core.utils.MyScaleView
-                        android:id="@+id/my_scale_cm"
-                        android:layout_width="@dimen/_50sdp"
-                        android:layout_height="0dp"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="@dimen/_5sdp"
-                        android:background="#24242c"
-                        android:visibility="gone"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.747"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/materialCardView29"
-                        app:layout_constraintVertical_bias="0.0" />
-
-                    <TextView
-                        android:id="@+id/txt_height_ft"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textAppearance="?android:attr/textAppearanceLarge"
-                        android:textColor="@android:color/white"
-                        android:textSize="@dimen/_15ssp"
-                        android:visibility="gone"
-                        app:layout_constraintBottom_toBottomOf="@id/my_scale_ft"
-                        app:layout_constraintEnd_toStartOf="@id/my_scale_ft"
-                        app:layout_constraintHorizontal_bias="0.29"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="@id/my_scale_ft"
-                        app:layout_constraintVertical_bias="0.495" />
-
-                    <com.fitzay.workouttracker.strengthtraining.core.utils.MyScaleView
-                        android:id="@+id/my_scale_ft"
-                        android:layout_width="@dimen/_50sdp"
-                        android:layout_height="0dp"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="@dimen/_5sdp"
-                        android:background="#24242c"
-                        android:visibility="gone"
-
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.747"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@id/materialCardView29"
-                        app:layout_constraintVertical_bias="0.0" />
-
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -762,6 +732,7 @@
 
 
                     <TextView
+                        android:id="@+id/textView28"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="@dimen/_2sdp"
@@ -782,12 +753,11 @@
                         android:layout_width="@dimen/_30sdp"
                         android:layout_height="@dimen/_30sdp"
                         android:background="@drawable/roundview"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView28"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.9"
+                        app:layout_constraintHorizontal_bias="0.886"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
+                        app:layout_constraintTop_toTopOf="@+id/textView28" />
 
                     <View
                         android:id="@+id/heightminusBtn"
@@ -796,9 +766,10 @@
                         android:background="@drawable/roundview"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.049"
+                        app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintHorizontal_bias="0.05"
-                        app:layout_constraintStart_toStartOf="parent" />
+                        app:layout_constraintVertical_bias="0.6" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 

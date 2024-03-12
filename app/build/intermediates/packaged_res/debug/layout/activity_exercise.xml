@@ -124,7 +124,7 @@
                     android:layout_width="@dimen/_50sdp"
                     android:layout_height="@dimen/_50sdp"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="@dimen/_20sdp">
+                    android:layout_marginTop="@dimen/_7sdp">
 
                     <View
                         android:id="@+id/btnNext"
@@ -218,7 +218,7 @@
                     android:fontFamily="@font/poppins_medium"
                     android:text="Start with your feet together and your arms by your sides, then jump up with your feet apart and your hands overhead."
                     android:textColor="@color/tab_not_selected"
-                    android:textSize="@dimen/_10sdp" />
+                    android:textSize="@dimen/_8sdp" />
 
 
                 <RelativeLayout

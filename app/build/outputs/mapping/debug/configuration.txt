@@ -264,8 +264,6 @@
 
 -keep class com.fitzay.wheelpicker.WheelPicker { <init>(android.content.Context, android.util.AttributeSet); }
 
--keep class com.fitzay.workouttracker.strengthtraining.core.utils.MyScaleView { <init>(android.content.Context, android.util.AttributeSet); }
-
 -keep class com.github.mikephil.charting.charts.BarChart { <init>(android.content.Context, android.util.AttributeSet); }
 
 -keep class com.github.mikephil.charting.charts.LineChart { <init>(android.content.Context, android.util.AttributeSet); }
