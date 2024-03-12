@@ -12,6 +12,18 @@
         "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\layout\\marker_view_line_chart.xml"
     },
     {
+<<<<<<< HEAD
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:\\layout\\activity_asking_weight.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\layout\\activity_asking_weight.xml"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:\\layout\\ringtone_show_list.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\layout\\ringtone_show_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:\\layout\\fragment_weekly.xml",
+        "source": "C:\\Users\\DELL\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\layout\\fragment_weekly.xml"
+=======
         "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:\\layout\\fragment_weekly.xml",
         "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\layout\\fragment_weekly.xml"
     },
@@ -22,6 +34,7 @@
     {
         "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:\\layout\\fragment_step_monthly.xml",
         "source": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-main-95:\\layout\\fragment_step_monthly.xml"
+>>>>>>> dfcc482694ffbd376cdf4710a6c3bda54595c34e
     },
     {
         "merged": "C:\\Users\\Technest - Accounts\\.gradle\\daemon\\8.2\\com.fitzay.workouttracker.strengthtraining.app-mergeDebugResources-92:\\layout\\fragment_plan.xml",
