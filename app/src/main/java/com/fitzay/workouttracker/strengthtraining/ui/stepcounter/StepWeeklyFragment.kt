@@ -585,9 +585,9 @@ class StepWeeklyFragment : Fragment() , OnChartValueSelectedListener {
             Log.i("67895", "onValueSelected: "+value)
             when(check)
             {
-                "Step"-> tvValue.text = "${value.toInt()} Steps $xAxisLabel"
-                "Distance"-> tvValue.text = "${value.toInt()} Miles $xAxisLabel"
-                "Calories"-> tvValue.text = "${value.toInt()} Calories $xAxisLabel"
+                "Step"-> tvValue.text = "${value.toInt()} Steps, $xAxisLabel"
+                "Distance"-> tvValue.text = "${value.toInt()} Mile, $xAxisLabel"
+                "Calories"-> tvValue.text = "${value.toInt()} Kcl, $xAxisLabel"
                 "Time"->
                 {
                     val hours = value.toInt() / 3600
@@ -605,7 +605,7 @@ class StepWeeklyFragment : Fragment() , OnChartValueSelectedListener {
 
             Log.i("NEW-tag", "onValueSelected: "+xPos)
 
-            val yOffset = 270 // Adjust as needed
+            val yOffset = 220 // Adjust as needed
             val yPos = binding.sleepChartWeekly.viewPortHandler.contentHeight() - yOffset
 
             popupWindow.showAtLocation(

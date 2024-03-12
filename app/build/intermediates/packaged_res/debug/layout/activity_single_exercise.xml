@@ -67,8 +67,9 @@
                 android:id="@+id/layoutReady"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:visibility="gone"
                 android:orientation="vertical"
-                android:visibility="gone">
+                >
 
                 <TextView
                     android:id="@+id/txtReadyToGo"
@@ -141,7 +142,7 @@
                     android:layout_width="@dimen/_50sdp"
                     android:layout_height="@dimen/_50sdp"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="@dimen/_20sdp">
+                    android:layout_marginTop="@dimen/_10sdp">
 
                     <View
                         android:id="@+id/btnNext"
@@ -233,7 +234,7 @@
                     android:layout_marginVertical="@dimen/_5sdp"
                     android:fontFamily="@font/poppins_medium"
                      android:textColor="@color/tab_not_selected"
-                    android:textSize="@dimen/_10sdp" />
+                    android:textSize="@dimen/_8sdp" />
 
                 <RelativeLayout
                     android:id="@+id/cardFinish"

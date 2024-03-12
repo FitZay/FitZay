@@ -106,6 +106,9 @@ public final class ActivityHeightandWeightBinding implements ViewBinding {
   public final View targetweightplusBtn;
 
   @NonNull
+  public final TextView textView28;
+
+  @NonNull
   public final TextView textView29;
 
   @NonNull
@@ -157,11 +160,11 @@ public final class ActivityHeightandWeightBinding implements ViewBinding {
       @NonNull MaterialCardView materialCardView29,
       @NonNull MaterialCardView materialCardageminusBtn, @NonNull WheelPicker targetWeight,
       @NonNull TextView targetweightText, @NonNull View targetweightminusBtn,
-      @NonNull View targetweightplusBtn, @NonNull TextView textView29, @NonNull TextView textView33,
-      @NonNull TextView textView35, @NonNull TextView textView37, @NonNull TextView textView38,
-      @NonNull MaterialToolbar toolbar, @NonNull TextView tvQuestion, @NonNull WheelPicker userAge,
-      @NonNull TextView valueText, @NonNull TextView weightText, @NonNull WheelPicker weightWh,
-      @NonNull View weightminlusBtn, @NonNull View weightplusBtn) {
+      @NonNull View targetweightplusBtn, @NonNull TextView textView28, @NonNull TextView textView29,
+      @NonNull TextView textView33, @NonNull TextView textView35, @NonNull TextView textView37,
+      @NonNull TextView textView38, @NonNull MaterialToolbar toolbar, @NonNull TextView tvQuestion,
+      @NonNull WheelPicker userAge, @NonNull TextView valueText, @NonNull TextView weightText,
+      @NonNull WheelPicker weightWh, @NonNull View weightminlusBtn, @NonNull View weightplusBtn) {
     this.rootView = rootView;
     this.ageText = ageText;
     this.ageminusBtn = ageminusBtn;
@@ -190,6 +193,7 @@ public final class ActivityHeightandWeightBinding implements ViewBinding {
     this.targetweightText = targetweightText;
     this.targetweightminusBtn = targetweightminusBtn;
     this.targetweightplusBtn = targetweightplusBtn;
+    this.textView28 = textView28;
     this.textView29 = textView29;
     this.textView33 = textView33;
     this.textView35 = textView35;
@@ -394,6 +398,12 @@ public final class ActivityHeightandWeightBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.textView28;
+      TextView textView28 = ViewBindings.findChildViewById(rootView, id);
+      if (textView28 == null) {
+        break missingId;
+      }
+
       id = R.id.textView29;
       TextView textView29 = ViewBindings.findChildViewById(rootView, id);
       if (textView29 == null) {
@@ -477,9 +487,9 @@ public final class ActivityHeightandWeightBinding implements ViewBinding {
           constraintLayout18, constraintLayout19, constraintLayout20, constraintLayout22,
           constraintLayout23, ftBtn, ftText, heightPlusBtn, heightminusBtn, ivBack,
           materialCardView15, materialCardView16, materialCardView29, materialCardageminusBtn,
-          targetWeight, targetweightText, targetweightminusBtn, targetweightplusBtn, textView29,
-          textView33, textView35, textView37, textView38, toolbar, tvQuestion, userAge, valueText,
-          weightText, weightWh, weightminlusBtn, weightplusBtn);
+          targetWeight, targetweightText, targetweightminusBtn, targetweightplusBtn, textView28,
+          textView29, textView33, textView35, textView37, textView38, toolbar, tvQuestion, userAge,
+          valueText, weightText, weightWh, weightminlusBtn, weightplusBtn);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
