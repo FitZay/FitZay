@@ -107,7 +107,7 @@
         android:layout_marginVertical="@dimen/_1sdp"
         android:id="@+id/layoutCharts"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_280sdp"
+        android:layout_height="@dimen/_240sdp"
         android:layout_below="@id/dateLayout"
         android:layout_marginHorizontal="@dimen/_5sdp"
         android:gravity="center"

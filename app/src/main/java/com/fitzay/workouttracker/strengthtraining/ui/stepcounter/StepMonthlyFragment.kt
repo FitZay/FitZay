@@ -696,8 +696,8 @@ class StepMonthlyFragment : Fragment(), OnChartValueSelectedListener {
             when(check)
             {
                 "Step"-> tvValue.text = "${value.toInt()} Steps, $xAxisLabel"
-                "Distance"-> tvValue.text = "${value.toInt()} Miles, $xAxisLabel"
-                "Calories"-> tvValue.text = "${value.toInt()} Calories, $xAxisLabel"
+                "Distance"-> tvValue.text = "${value.toInt()} Mile, $xAxisLabel"
+                "Calories"-> tvValue.text = "${value.toInt()} Kcl, $xAxisLabel"
                 "Time"->
                 {
                     val hours = value.toInt() / 3600
@@ -718,7 +718,7 @@ class StepMonthlyFragment : Fragment(), OnChartValueSelectedListener {
             // Calculate the Y position for the top center of the graph
 //            val yPos = binding.sleepChart.viewPortHandler.contentHeight()
 
-            val yOffset = 270 // Adjust as needed
+            val yOffset = 220 // Adjust as needed
             val yPos = binding.sleepChartMonthly.viewPortHandler.contentHeight() - yOffset
 
             popupWindow.showAtLocation(

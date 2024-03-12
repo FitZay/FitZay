@@ -293,7 +293,7 @@
     <string name="txt_gender">Gender</string>
     <string name="txt_age">Age</string>
     <string name="txt_height">Height</string>
-    <string name="txt_weight">Weight (Kg)</string>
+    <string name="txt_weight">Weight</string>
     <string name="txt_target_weight">Target weight</string>
     <string name="txt_target_goal">Target goal</string>
     <string name="txt_edit_bed_time">Edit bed time</string>
@@ -331,8 +331,8 @@
     <string name="tonight">Tonight</string>
 
     <string name="message">By deleting account all your saved data will be removed!</string>
-    <string name="miles">Miles</string>
-    <string name="walking_time">Walking Time</string>
+    <string name="miles">Mile</string>
+    <string name="walking_time">Min</string>
 
     <string name="am">AM</string>
     <string name="pm">PM</string>

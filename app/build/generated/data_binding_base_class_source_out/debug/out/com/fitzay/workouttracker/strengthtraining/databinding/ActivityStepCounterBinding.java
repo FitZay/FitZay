@@ -38,6 +38,9 @@ public final class ActivityStepCounterBinding implements ViewBinding {
   public final TextView dailyAverage;
 
   @NonNull
+  public final RelativeLayout data;
+
+  @NonNull
   public final TextView estTime;
 
   @NonNull
@@ -144,13 +147,13 @@ public final class ActivityStepCounterBinding implements ViewBinding {
 
   private ActivityStepCounterBinding(@NonNull RelativeLayout rootView,
       @NonNull ConstraintLayout clAds, @NonNull AppCompatButton cta, @NonNull TextView dailyAverage,
-      @NonNull TextView estTime, @NonNull LinearProgressIndicator goalProgress,
-      @NonNull ImageView icPause, @NonNull ImageView icShoes, @NonNull ImageView icTime,
-      @NonNull ImageView img001, @NonNull ImageView ivBack, @NonNull TextView kcal,
-      @NonNull RelativeLayout layoutAd, @NonNull LinearLayout layoutPedometer,
-      @NonNull MaterialToolbar materialToolbar, @NonNull TextView miles,
-      @NonNull TemplateView plannerTemplateDown, @NonNull TemplateView plannerTemplateUp,
-      @NonNull CircularProgressIndicator progressFive,
+      @NonNull RelativeLayout data, @NonNull TextView estTime,
+      @NonNull LinearProgressIndicator goalProgress, @NonNull ImageView icPause,
+      @NonNull ImageView icShoes, @NonNull ImageView icTime, @NonNull ImageView img001,
+      @NonNull ImageView ivBack, @NonNull TextView kcal, @NonNull RelativeLayout layoutAd,
+      @NonNull LinearLayout layoutPedometer, @NonNull MaterialToolbar materialToolbar,
+      @NonNull TextView miles, @NonNull TemplateView plannerTemplateDown,
+      @NonNull TemplateView plannerTemplateUp, @NonNull CircularProgressIndicator progressFive,
       @NonNull CircularProgressIndicator progressFour,
       @NonNull CircularProgressIndicator progressOne,
       @NonNull CircularProgressIndicator progressSeven,
@@ -167,6 +170,7 @@ public final class ActivityStepCounterBinding implements ViewBinding {
     this.clAds = clAds;
     this.cta = cta;
     this.dailyAverage = dailyAverage;
+    this.data = data;
     this.estTime = estTime;
     this.goalProgress = goalProgress;
     this.icPause = icPause;
@@ -246,6 +250,12 @@ public final class ActivityStepCounterBinding implements ViewBinding {
       id = R.id.dailyAverage;
       TextView dailyAverage = ViewBindings.findChildViewById(rootView, id);
       if (dailyAverage == null) {
+        break missingId;
+      }
+
+      id = R.id.data;
+      RelativeLayout data = ViewBindings.findChildViewById(rootView, id);
+      if (data == null) {
         break missingId;
       }
 
@@ -460,7 +470,7 @@ public final class ActivityStepCounterBinding implements ViewBinding {
       }
 
       return new ActivityStepCounterBinding((RelativeLayout) rootView, clAds, cta, dailyAverage,
-          estTime, goalProgress, icPause, icShoes, icTime, img001, ivBack, kcal, layoutAd,
+          data, estTime, goalProgress, icPause, icShoes, icTime, img001, ivBack, kcal, layoutAd,
           layoutPedometer, materialToolbar, miles, plannerTemplateDown, plannerTemplateUp,
           progressFive, progressFour, progressOne, progressSeven, progressSix, progressThree,
           progressTwo, skeletonLayout, stepTaken, text001, totalsteps, txtProgressFive,

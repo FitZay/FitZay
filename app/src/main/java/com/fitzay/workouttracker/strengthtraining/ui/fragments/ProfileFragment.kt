@@ -113,29 +113,29 @@ class ProfileFragment : Fragment() {
             saveItems.setOnClickListener {
                 try {
                     when {
-                        binding.etNameInput.text.isNullOrEmpty() -> {
-                            binding.etNameInput.error = "Name Must not be empty"
-                        }
-
-                        binding.etGenderInput.text.isNullOrEmpty() -> {
-                            binding.etGenderInput.error = "Gender Must not be empty"
-                        }
-
-                        binding.etAgeInput.text.isNullOrEmpty() -> {
-                            binding.etAgeInput.error = "Age Must not be empty"
-                        }
-
-                        binding.etHeightInput.text.isNullOrEmpty() -> {
-                            binding.etHeightInput.error = "Height Must not be empty"
-                        }
-
-                        binding.etWeightInput.text.isNullOrEmpty() -> {
-                            binding.etWeightInput.error = "Weight Must not be empty"
-                        }
-
-                        binding.etTargetWeightInput.text.isNullOrEmpty() -> {
-                            binding.etTargetWeightInput.error = "Target Wight Must not be empty"
-                        }
+//                        binding.etNameInput.text.isNullOrEmpty() -> {
+//                            binding.etNameInput.error = "Name Must not be empty"
+//                        }
+//
+//                        binding.etGenderInput.text.isNullOrEmpty() -> {
+//                            binding.etGenderInput.error = "Gender Must not be empty"
+//                        }
+//
+//                        binding.etAgeInput.text.isNullOrEmpty() -> {
+//                            binding.etAgeInput.error = "Age Must not be empty"
+//                        }
+//
+//                        binding.etHeightInput.text.isNullOrEmpty() -> {
+//                            binding.etHeightInput.error = "Height Must not be empty"
+//                        }
+//
+//                        binding.etWeightInput.text.isNullOrEmpty() -> {
+//                            binding.etWeightInput.error = "Weight Must not be empty"
+//                        }
+//
+//                        binding.etTargetWeightInput.text.isNullOrEmpty() -> {
+//                            binding.etTargetWeightInput.error = "Target Wight Must not be empty"
+//                        }
 
                         else -> {
                             Toast.makeText(
