@@ -1,0 +1,9 @@
+com.fitzay.workouttracker.strengthtraining.test
+string fitzay_app_id
+string fitzay_app_open
+string fitzay_inter_ex_start
+string fitzay_inter_splash
+string fitzay_native_planner
+string fitzay_native_splash
+style WhiteBackgroundDialogTheme
+style WhiteBackgroundTheme

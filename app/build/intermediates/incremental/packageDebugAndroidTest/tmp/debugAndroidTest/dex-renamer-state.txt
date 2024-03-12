@@ -1,0 +1,4 @@
+#Mon Mar 11 18:21:32 PKT 2024
+base.0=E\:\\Rafaqat Mehmood\\FitnessApp\\16-02-2024 Final Release\\Fitzay\\app\\build\\intermediates\\dex\\debugAndroidTest\\minifyDebugAndroidTestWithR8\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

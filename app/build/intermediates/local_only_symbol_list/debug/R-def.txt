@@ -631,8 +631,6 @@ id miles
 id monthlytext
 id montlyBtn
 id my_composable
-id my_scale_cm
-id my_scale_ft
 id nav_consent_form
 id nav_how_to_use
 id nav_more_apps
@@ -850,8 +848,6 @@ id txtTwelve
 id txtWakeSleep
 id txtWednesday
 id txtWeekly
-id txt_height_cm
-id txt_height_ft
 id txtmin
 id typeName
 id updateStepGoal

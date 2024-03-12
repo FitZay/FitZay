@@ -40,15 +40,7 @@ class HeightandWeightAct : AppUtil2() {
             }
 
 
-            // myScale.setStartingPoint(2f)
 
-//            myScaleFt.setUpdateListener(object : com.fitzay.workouttracker.strengthtraining.core.utils.onViewUpdateListener {
-//
-//                override fun onViewUpdate(result: Float) {
-//                    val value = Math.round(result * 10f).toFloat() / 10f
-//                    txtHeightFt.setText("$value Ft")
-//                }
-//            })
 
 
             btnNext.setOnClickListener {
@@ -103,96 +95,7 @@ class HeightandWeightAct : AppUtil2() {
                     //userAge.setSelectedItemPosition(Component.preference.userAge)
                     Log.i("TAG---", "onCreate: " + Component.preference.userAge)
 
-                    ageplusBtn.setOnClickListener {
-                        check = true
-                        check2 = true
-//                age++
-//                ageText.text = age.toString()
-                        age = userAge.getCurrentSelectedItemPosition()
-                        userAge.setSelectedItemPosition(age + 1)
-                        age = userAge.getCurrentSelectedItem()!!.toInt()
-                    }
 
-                    ageminusBtn.setOnClickListener {
-                        // if (age > 0) {
-                        check = true
-                        check2 = true
-//                    age--
-//                    ageText.text = age.toString()
-                        // }
-                        age = userAge.getCurrentSelectedItemPosition()
-                        if (age > 0) {
-                            userAge.setSelectedItemPosition(age - 1)
-                            age = userAge.getCurrentSelectedItem()!!.toInt()
-                        }
-                    }
-
-
-                    weightplusBtn?.setOnClickListener {
-//                weight++
-//                binding.weightText?.text = weight.toString()
-
-                        weight = weightWh.getCurrentSelectedItemPosition()
-                        weightWh.setSelectedItemPosition(weight + 1)
-                        weight = weightWh.getCurrentSelectedItem()!!.toInt()
-                    }
-
-                    weightminlusBtn.setOnClickListener {
-//                if (weight > 0) {
-//                    weight--
-//                    weightText?.text = weight.toString()
-//                }
-                        weight = weightWh.getCurrentSelectedItemPosition()
-                        if (weight > 0) {
-                            weightWh.setSelectedItemPosition(weight - 1)
-                            weight = weightWh.getCurrentSelectedItem()!!.toInt()
-                        }
-                    }
-
-
-                    targetweightplusBtn?.setOnClickListener {
-//                targetweight++
-//                targetweightText.text = targetweight.toString()
-
-                        targetweight = targetWeight.getCurrentSelectedItemPosition()
-                        targetWeight.setSelectedItemPosition(targetweight + 1)
-                        targetweight = targetWeight.getCurrentSelectedItem()!!.toInt()
-                    }
-
-                    targetweightminusBtn?.setOnClickListener {
-//                if (targetweight > 0) {
-//                    targetweight--
-//                    targetweightText.text = targetweight.toString()
-//                }
-                        targetweight = targetWeight.getCurrentSelectedItemPosition()
-                        if (targetweight > 0) {
-                            targetWeight.setSelectedItemPosition(targetweight - 1)
-                            targetweight = targetWeight.getCurrentSelectedItem()!!.toInt()
-                        }
-                    }
-
-
-
-                    heightPlusBtn.setOnClickListener {
-//                height++
-//                binding.valueText.text = height.toString()
-                        cm = cmWheel.getCurrentSelectedItemPosition()
-                        cmWheel.setSelectedItemPosition(cm + 1)
-                        cm = cmWheel.getCurrentSelectedItem()!!.toInt()
-                    }
-
-                    heightminusBtn.setOnClickListener {
-//                if (height > 0) {
-//                    height--
-//                    valueText.text = height.toString()
-//                }
-
-                        cm = cmWheel.getCurrentSelectedItemPosition()
-                        if (targetweight > 0) {
-                            cmWheel.setSelectedItemPosition(cm - 1)
-                            cm = cmWheel.getCurrentSelectedItem()!!.toInt()
-                        }
-                    }
 
 //            cmBtn.setOnClickListener {
 //                try {
@@ -267,6 +170,98 @@ class HeightandWeightAct : AppUtil2() {
                     Log.i("TAG", "onCreate: " + e.message)
 
                 }
+            }
+
+            ageplusBtn.setOnClickListener {
+                check = true
+                check2 = true
+//                age++
+//                ageText.text = age.toString()
+                age = userAge.getCurrentSelectedItemPosition()
+                userAge.setSelectedItemPosition(age + 1)
+                age = userAge.getCurrentSelectedItem()!!.toInt()
+            }
+
+            ageminusBtn.setOnClickListener {
+                // if (age > 0) {
+                check = true
+                check2 = true
+//                    age--
+//                    ageText.text = age.toString()
+                // }
+                age = userAge.getCurrentSelectedItemPosition()
+                if (age > 0) {
+                    userAge.setSelectedItemPosition(age - 1)
+                    age = userAge.getCurrentSelectedItem()!!.toInt()
+                }
+            }
+
+
+            weightplusBtn?.setOnClickListener {
+//                weight++
+//                binding.weightText?.text = weight.toString()
+
+                weight = weightWh.getCurrentSelectedItemPosition()
+                weightWh.setSelectedItemPosition(weight + 1)
+                weight = weightWh.getCurrentSelectedItem()!!.toInt()
+            }
+
+            weightminlusBtn.setOnClickListener {
+//                if (weight > 0) {
+//                    weight--
+//                    weightText?.text = weight.toString()
+//                }
+                weight = weightWh.getCurrentSelectedItemPosition()
+                if (weight > 0) {
+                    weightWh.setSelectedItemPosition(weight - 1)
+                    weight = weightWh.getCurrentSelectedItem()!!.toInt()
+                }
+            }
+
+
+            targetweightplusBtn?.setOnClickListener {
+//                targetweight++
+//                targetweightText.text = targetweight.toString()
+
+                targetweight = targetWeight.getCurrentSelectedItemPosition()
+                targetWeight.setSelectedItemPosition(targetweight + 1)
+                targetweight = targetWeight.getCurrentSelectedItem()!!.toInt()
+            }
+
+            targetweightminusBtn?.setOnClickListener {
+//                if (targetweight > 0) {
+//                    targetweight--
+//                    targetweightText.text = targetweight.toString()
+//                }
+                targetweight = targetWeight.getCurrentSelectedItemPosition()
+                if (targetweight > 0) {
+                    targetWeight.setSelectedItemPosition(targetweight - 1)
+                    targetweight = targetWeight.getCurrentSelectedItem()!!.toInt()
+                }
+            }
+
+
+
+            heightPlusBtn.setOnClickListener {
+//                height++
+//                binding.valueText.text = height.toString()
+                cm = cmWheel.getCurrentSelectedItemPosition()
+                cmWheel.setSelectedItemPosition(cm + 1)
+                cm = cmWheel.getCurrentSelectedItem()!!.toInt()
+            }
+
+            heightminusBtn.setOnClickListener {
+//                if (height > 0) {
+//                    height--
+//                    valueText.text = height.toString()
+//                }
+
+                cm = cmWheel.getCurrentSelectedItemPosition()
+                if (targetweight > 0) {
+                    cmWheel.setSelectedItemPosition(cm - 1)
+                    cm = cmWheel.getCurrentSelectedItem()!!.toInt()
+                }
+
             }
         }
     }

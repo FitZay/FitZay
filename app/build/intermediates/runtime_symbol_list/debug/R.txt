@@ -5022,8 +5022,6 @@ int id mtrl_picker_title_text 0x7f0a02b6
 int id mtrl_view_tag_bottom_padding 0x7f0a02b7
 int id multiply 0x7f0a02b8
 int id my_composable 0x7f0a02b9
-int id my_scale_cm 0x7f0a02ba
-int id my_scale_ft 0x7f0a02bb
 int id native_ad_view 0x7f0a02bc
 int id nav_consent_form 0x7f0a02bd
 int id nav_how_to_use 0x7f0a02be
@@ -5433,8 +5431,6 @@ int id txtTwelve 0x7f0a0451
 int id txtWakeSleep 0x7f0a0452
 int id txtWednesday 0x7f0a0453
 int id txtWeekly 0x7f0a0454
-int id txt_height_cm 0x7f0a0455
-int id txt_height_ft 0x7f0a0456
 int id txtmin 0x7f0a0457
 int id typeName 0x7f0a0458
 int id unchecked 0x7f0a0459

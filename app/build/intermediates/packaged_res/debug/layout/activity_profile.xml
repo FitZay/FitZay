@@ -112,11 +112,12 @@
 
             <TextView
                 android:id="@+id/tvGender"
-                android:layout_width="@dimen/_140sdp"
+                android:layout_width="0dp"
                 android:layout_height="@dimen/_40sdp"
                 android:layout_marginTop="@dimen/_10sdp"
                 android:hint="@string/txt_gender"
-                android:gravity="center"
+                android:gravity="center|start"
+                android:paddingStart="@dimen/_13sdp"
                 android:maxLength="6"
                 android:background="@drawable/gender_box"
                 android:textColorHint="#A9A9AD"
@@ -159,7 +160,7 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/tvAge"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="@dimen/_140sdp"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:hint="@string/txt_age"
                 android:maxLength="3"
@@ -167,18 +168,20 @@
                 app:boxStrokeColor="@color/text_field_outline"
                 app:cursorColor="@color/white"
                 app:hintTextColor="?attr/colorSurface"
-                app:layout_constraintBottom_toBottomOf="@+id/tvGender"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/tvGender"
-                app:layout_constraintTop_toTopOf="@+id/tvGender">
+                app:layout_constraintVertical_bias="0.05"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/tvGender"
+                app:layout_constraintStart_toStartOf="@+id/tvGender"
+                app:layout_constraintTop_toBottomOf="@+id/tvGender">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/etAgeInput"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
+                    android:gravity="center|start"
                     android:inputType="number"
                     android:maxLength="2"
+                    android:paddingStart="@dimen/_13sdp"
                     android:singleLine="true"
                     android:textColor="@color/white"
                     android:textSize="@dimen/_14sdp" />
@@ -188,7 +191,7 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/tvHeight"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="@dimen/_140sdp"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:hint="@string/txt_height"
                 android:textColorHint="#A9A9AD"
@@ -196,10 +199,10 @@
                 app:cursorColor="@color/white"
                 app:hintTextColor="?attr/colorSurface"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/tvGender"
-                app:layout_constraintStart_toStartOf="@+id/tvGender"
-                app:layout_constraintTop_toBottomOf="@+id/tvGender"
-                app:layout_constraintVertical_bias="0.3">
+                app:layout_constraintEnd_toEndOf="@+id/tvAge"
+                app:layout_constraintStart_toStartOf="@+id/tvAge"
+                app:layout_constraintTop_toBottomOf="@+id/tvAge"
+                app:layout_constraintVertical_bias="0.05">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/etHeightInput"
@@ -219,14 +222,14 @@
             <RadioGroup
 
                 android:id="@+id/heightToggle"
-                android:layout_width="@dimen/_70sdp"
+                android:layout_width="@dimen/_90sdp"
                 android:layout_height="@dimen/_30sdp"
                 android:layout_marginLeft="@dimen/_1sdp"
                 android:background="@drawable/height_weight_outline"
                 android:orientation="horizontal"
                 app:layout_constraintBottom_toBottomOf="@id/tvHeight"
                 app:layout_constraintEnd_toEndOf="@id/tvHeight"
-                app:layout_constraintHorizontal_bias="0.9"
+                app:layout_constraintHorizontal_bias="0.95"
                 app:layout_constraintStart_toStartOf="@id/tvHeight"
                 app:layout_constraintTop_toTopOf="@id/tvHeight"
                 app:layout_constraintVertical_bias="0.65">
@@ -260,17 +263,18 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/tvWeight"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="@dimen/_140sdp"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:hint="@string/txt_weight"
                 android:textColorHint="#A9A9AD"
                 app:boxStrokeColor="@color/text_field_outline"
                 app:cursorColor="@color/white"
                 app:hintTextColor="?attr/colorSurface"
-                app:layout_constraintBottom_toBottomOf="@+id/tvHeight"
-                app:layout_constraintEnd_toEndOf="@+id/tvAge"
-                app:layout_constraintStart_toStartOf="@+id/tvAge"
-                app:layout_constraintTop_toTopOf="@+id/tvHeight">
+                app:layout_constraintVertical_bias="0.1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/tvHeight"
+                app:layout_constraintStart_toStartOf="@+id/tvHeight"
+                app:layout_constraintTop_toBottomOf="@+id/tvHeight">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/etWeightInput"
@@ -289,13 +293,13 @@
             <!--            Radio Button Add For LBS And KG-->
             <RadioGroup
                 android:id="@+id/weightToggle"
-                android:layout_width="@dimen/_70sdp"
+                android:layout_width="@dimen/_90sdp"
                 android:layout_height="@dimen/_30sdp"
                 android:background="@drawable/height_weight_outline"
                 android:orientation="horizontal"
                 app:layout_constraintBottom_toBottomOf="@id/tvWeight"
                 app:layout_constraintEnd_toEndOf="@id/tvWeight"
-                app:layout_constraintHorizontal_bias="0.9"
+                app:layout_constraintHorizontal_bias="0.95"
                 app:layout_constraintStart_toStartOf="@id/tvWeight"
                 app:layout_constraintTop_toTopOf="@id/tvWeight"
                 app:layout_constraintVertical_bias="0.65">
@@ -332,7 +336,6 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_30sdp"
                 android:hint="@string/txt_target_weight"
                 android:maxLength="3"
                 android:textColorHint="#A9A9AD"
@@ -340,7 +343,10 @@
                 app:cursorColor="@color/white"
                 app:hintTextColor="?attr/colorSurface"
                 app:layout_constraintEnd_toEndOf="@+id/tvWeight"
-                app:layout_constraintStart_toStartOf="@+id/tvHeight"
+                app:layout_constraintStart_toStartOf="@+id/tvWeight"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0.2"
+                android:layout_marginTop="@dimen/_5sdp"
                 app:layout_constraintTop_toBottomOf="@+id/tvWeight">
 
                 <com.google.android.material.textfield.TextInputEditText

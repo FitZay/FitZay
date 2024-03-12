@@ -761,7 +761,6 @@ class StepMonthlyFragment : Fragment(), OnChartValueSelectedListener {
             clear()
             setOnClickListener(null)
             setOnLongClickListener(null)
-            popupWindow.dismiss()
             binding.dateLayout.visibility = View.VISIBLE
         }
     }
