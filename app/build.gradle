@@ -26,9 +26,6 @@ android {
             shrinkResources true
             resValue 'string', 'fitzay_app_id', '"ca-app-pub-1286371018386376~1214718244"'
             resValue 'string', 'fitzay_inter_splash', '"ca-app-pub-1286371018386376/2328746529"'
-            resValue 'string', 'fitzay_inter_ex_start', '"ca-app-pub-1286371018386376/6631239024"'
-            resValue 'string', 'fitzay_native_planner', '"ca-app-pub-1286371018386376/4700840566"'
-            resValue 'string', 'fitzay_native_splash', '"ca-app-pub-1286371018386376/5660491024"'
             resValue 'string', 'fitzay_app_open', '"ca-app-pub-1286371018386376/6782001000"'
 
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
@@ -39,9 +36,6 @@ android {
 
             resValue 'string', 'fitzay_app_id', '"ca-app-pub-3940256099942544~3347511713"'
             resValue 'string', 'fitzay_inter_splash', '"ca-app-pub-3940256099942544/1033173712"'
-            resValue 'string', 'fitzay_inter_ex_start', '"ca-app-pub-3940256099942544/1033173712"'
-            resValue 'string', 'fitzay_native_planner', '"ca-app-pub-3940256099942544/2247696110"'
-            resValue 'string', 'fitzay_native_splash', '"ca-app-pub-3940256099942544/2247696110"'
             resValue 'string', 'fitzay_app_open', '"ca-app-pub-3940256099942544/3419835294"'
 
 //            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'

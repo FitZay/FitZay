@@ -1,6 +1,6 @@
-#Tue Mar 12 12:12:15 PKT 2024
-base.0=E\:\\Rafaqat Mehmood\\FitnessApp\\16-02-2024 Final Release\\Fitzay\\app\\build\\intermediates\\dex\\debug\\minifyDebugWithR8\\classes.dex
-base.1=E\:\\Rafaqat Mehmood\\FitnessApp\\16-02-2024 Final Release\\Fitzay\\app\\build\\intermediates\\dex\\debug\\minifyDebugWithR8\\classes2.dex
+#Tue Mar 12 12:32:45 PKT 2024
+base.0=D\:\\Izhar\\Fitzay\\app\\build\\intermediates\\dex\\debug\\minifyDebugWithR8\\classes.dex
+base.1=D\:\\Izhar\\Fitzay\\app\\build\\intermediates\\dex\\debug\\minifyDebugWithR8\\classes2.dex
 path.0=classes.dex
 path.1=classes2.dex
 renamed.0=classes.dex

@@ -8,12 +8,6 @@
     <!-- Value from build type: debug -->
     <string name="fitzay_app_open" translatable="false">"ca-app-pub-3940256099942544/3419835294"</string>
     <!-- Value from build type: debug -->
-    <string name="fitzay_inter_ex_start" translatable="false">"ca-app-pub-3940256099942544/1033173712"</string>
-    <!-- Value from build type: debug -->
     <string name="fitzay_inter_splash" translatable="false">"ca-app-pub-3940256099942544/1033173712"</string>
-    <!-- Value from build type: debug -->
-    <string name="fitzay_native_planner" translatable="false">"ca-app-pub-3940256099942544/2247696110"</string>
-    <!-- Value from build type: debug -->
-    <string name="fitzay_native_splash" translatable="false">"ca-app-pub-3940256099942544/2247696110"</string>
 
 </resources>
