@@ -36,6 +36,10 @@ import com.google.firebase.remoteconfig.FirebaseRemoteConfigSettings
 import com.google.gson.Gson
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
+import java.io.BufferedReader
+import java.io.InputStreamReader
+import java.net.HttpURLConnection
+import java.net.URL
 
 class AppController : Application() {
 
@@ -144,6 +148,7 @@ class AppController : Application() {
     private fun fetchAndActivate() {
         val buildKey = if (BuildConfig.DEBUG) "fitzay_new_debug" else "fitzay_new_release"
 
+
         val remoteConfigTime = if (BuildConfig.DEBUG) {
             10
         } else {
@@ -174,7 +179,7 @@ class AppController : Application() {
                                 inappScenario = remoteFitzayConfig?.getString("inapp_flow").toString()
                                 inappflow = remoteFitzayConfig?.getBoolean("FitZay_contries_for_inapp") == true
 
-                                Log.i(TAG, "fetchAndActivate: "+inappflow)
+                                Log.i(TAG, "fetchAndActivate: "+inappScenario)
                                 Log.e(
                                     TAG,
                                     "Fitzay Count: " + getFitzayRemoteLong("fitzay_ad_count")
@@ -184,6 +189,7 @@ class AppController : Application() {
                                     "Fitzay Color Code: " + getFitzayRemoteString("fitzay_cta_color")
                                 )
                                 Log.e(TAG, "Fitzay Location : " + getFitzayRemoteString("fitzay_cta_location"))
+                                Log.e(TAG, "Fitzay Location : " + fitzayModel!!.FitzayNativePushUp.ctacolor)
 
                             } ?: Log.e(TAG, "RemoteFail")
                         }
@@ -196,3 +202,4 @@ class AppController : Application() {
             }
     }
 }
+

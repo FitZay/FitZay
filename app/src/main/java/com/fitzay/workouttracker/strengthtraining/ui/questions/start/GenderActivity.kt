@@ -16,6 +16,7 @@ import com.fitzay.workouttracker.strengthtraining.core.utils.LanguageManager
 import com.fitzay.workouttracker.strengthtraining.core.utils.getFitzayRemoteString
 import com.fitzay.workouttracker.strengthtraining.databinding.ActivityGenderBinding
 import com.fitzay.workouttracker.strengthtraining.di.Component
+import com.fitzay.workouttracker.strengthtraining.ui.MainActivity
 import com.google.android.ads.nativetemplates.TemplateView
 import com.google.android.gms.ads.AdListener
 import com.google.android.gms.ads.AdLoader
@@ -47,11 +48,25 @@ class GenderActivity : AppUtil2() {
 
             //Skip Button Listener
             txtSkip.setOnClickListener {
-                val intent = Intent(this@GenderActivity, FirstNameActivity::class.java).apply {
-                    Intent.FLAG_ACTIVITY_SINGLE_TOP
+                if (AppController.inappScenario=="3") {
+                    val intent =
+                        Intent(this@GenderActivity, PartShouldFocusActivity::class.java).apply {
+                            Intent.FLAG_ACTIVITY_SINGLE_TOP
+                        }
+                    startActivity(intent)
+                    finish()
                 }
-                val anim = ActivityOptions.makeCustomAnimation(this@GenderActivity, R.anim.slide_in_right, R.anim.slide_out_left).toBundle()
-                startActivity(intent)
+                else
+                {
+
+                    val intent = Intent(this@GenderActivity, FirstNameActivity::class.java).apply {
+                        Intent.FLAG_ACTIVITY_SINGLE_TOP
+                    }
+                    val anim = ActivityOptions.makeCustomAnimation(this@GenderActivity, R.anim.slide_in_right, R.anim.slide_out_left).toBundle()
+                    startActivity(intent)
+                }
+
+
             }
 
             //Female Button Listener

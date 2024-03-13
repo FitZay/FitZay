@@ -975,7 +975,7 @@
     <string name="channel_name">Step Counter Channel</string>
     <string name="chest">Chest</string>
     <string name="cm">cm</string>
-    <string name="com.google.firebase.crashlytics.mapping_file_id" ns1:ignore="UnusedResources,TypographyDashes" translatable="false">36c9d48544fe4688b86b9df71390fb6e</string>
+    <string name="com.google.firebase.crashlytics.mapping_file_id" ns1:ignore="UnusedResources,TypographyDashes" translatable="false">00000000000000000000000000000000</string>
     <string name="complete_ex">"Nice, you've completed exercise!</string>
     <string name="cup_capacity">Cup Capacity</string>
     <string name="daily">DAILY AVERAGE</string>
@@ -1146,7 +1146,7 @@
     <string name="step_goal_runtime">/%1$s steps</string>
     <string name="steps">Steps</string>
     <string name="sub_des">Subscriptions renew automatically unless you cancel or unsubscribe before the end of your current period. Your account will be charged for renewal within 24 hours prior to the end of current subscription period.</string>
-    <string name="subscribe">Subscribe</string>
+    <string name="subscribe">Get My Plan</string>
     <string name="summary">Summary </string>
     <string name="take_a_rest">Take A Rest</string>
     <string name="tap_hold">Tap hold</string>

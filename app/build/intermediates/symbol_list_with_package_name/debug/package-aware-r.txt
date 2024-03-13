@@ -5264,6 +5264,8 @@ id supportScrollUp
 id swOnOff
 id swOnOff2
 id switchWidget
+id t_kg
+id t_lbs
 id tabMode
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
@@ -5278,6 +5280,7 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
+id targetWeightToggle
 id target_weight
 id targetweightText
 id targetweightminusBtn

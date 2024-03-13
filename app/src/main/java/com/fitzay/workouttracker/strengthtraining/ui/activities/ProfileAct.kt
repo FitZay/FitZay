@@ -13,7 +13,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
 import android.provider.Settings
+import android.text.Editable
 import android.text.TextUtils
+import android.text.TextWatcher
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -36,6 +38,8 @@ import com.fitzay.workouttracker.strengthtraining.core.AppController
 import com.fitzay.workouttracker.strengthtraining.core.ads.BannerAdsProvider
 import com.fitzay.workouttracker.strengthtraining.core.utils.AppUtil2
 import com.fitzay.workouttracker.strengthtraining.core.utils.LanguageManager
+import com.fitzay.workouttracker.strengthtraining.core.utils.convertStringToDouble
+import com.fitzay.workouttracker.strengthtraining.core.utils.roundToNearestWhole
 import com.fitzay.workouttracker.strengthtraining.core.utils.showToast
 import com.fitzay.workouttracker.strengthtraining.core.utils.toCentimeters
 import com.fitzay.workouttracker.strengthtraining.core.utils.toKilograms
@@ -46,6 +50,7 @@ import com.fitzay.workouttracker.strengthtraining.databinding.FragmentProfileBin
 import com.fitzay.workouttracker.strengthtraining.di.Component
 import java.io.File
 import java.io.FileOutputStream
+import java.text.DecimalFormat
 import java.util.Objects
 import kotlin.math.ceil
 import kotlin.math.floor
@@ -58,17 +63,12 @@ class ProfileAct : AppUtil2() {
     private lateinit var selectedImageUri: Uri
     private var choicer: Int = -1
 
-    private val TAG = "Profile"
-    var convertFtInchToCentiMeter = 0.0
-    var convertCentiToFtInch_1st = 0
-    var convertCentiToFtInch_2nd = 0
-    var kgToP=0.0
-    var pToKg = 0.0
     var check=true
-    var check2=true
 
-    var check3=true
-    var check4=true
+    var checkType="CM"
+    var checkType_2="KG"
+    var checkType_3="KG"
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityProfileBinding.inflate(layoutInflater)
@@ -87,6 +87,7 @@ class ProfileAct : AppUtil2() {
 
             ft.isChecked=true
             kg.isChecked=true
+            tKg.isChecked=true
             tvGender.setOnClickListener {
                 showMaleDialog()
             }
@@ -201,78 +202,182 @@ class ProfileAct : AppUtil2() {
 
             cm.setOnClickListener {
                 try {
-                    if (!etHeightInput.text.isNullOrEmpty())
-                    {
-                        if (check){
-                            check = false
-                            check2 = true
-                            val centimeters = etHeightInput.text.toString().toDouble()
-                            val cn =inchesToCm(centimeters)
-                            etHeightInput.setText(cn.toString())
-                        }
-                    }
-                    etHeightInput.requestFocus();
-                    etHeightInput.setSelection(etHeightInput.length())
+                llFeetInch.visibility=View.INVISIBLE
+                llCm.visibility=View.VISIBLE
+                checkType = "CM"
+
+                if (checkType == "CM" && !etInputFeet.text.isNullOrEmpty() && !etInputFeet.text.isNullOrEmpty()) {
+                    val feetAndInches = Pair(
+                        etInputFeet.text.toString().toInt(),
+                        etInputInch.text.toString().toDouble()
+                    )
+                    val con = feetAndInches.toCentimeters()
+                    etInputCm.setText(con.toString())
+                    Log.i("TAG", "onCreateCON: " + con)
+
+                } else {
+                    Log.i("TAG", "888888888: ")
+
                 }
-                catch (e:Exception){
-                    Log.i("TAG", "Error-Catch: "+e.message)
-                }
+            } catch (e:Exception)
+            {
+                Log.i("TAG", "onCreate: "+e.message)
+            }
 
             }
             ft.setOnClickListener {
-                try {
-                    if (!etHeightInput.text.isNullOrEmpty()) {
-                        if (check2){
-                            check2 = false
-                            check = true
-                            val con = cmToInches(etHeightInput.text.toString().toDouble())
-                            etHeightInput.setText(con.toString())
-                        }
-                    }
-                    etHeightInput.requestFocus();
-                    etHeightInput.setSelection(etHeightInput.length())
+                checkType="FT"
+                llFeetInch.visibility=View.VISIBLE
+                llCm.visibility=View.INVISIBLE
+
+                if (checkType=="FT" && !etInputCm.text.isNullOrEmpty())
+                {
+                    val centimeters = etInputCm.text.toString().toDouble()
+                    val cn = centimeterToFeet(centimeters.toString())
+                    etInputFeet.setText(cn.first.toString())
+                    etInputInch.setText(cn.second.toString())
+
+
                 }
-                catch (e:Exception){
-                    Log.i("TAG", "Error-Catch: "+e.message)
+                else
+                {
+                    Log.i("TAG", "5555555555: ")
                 }
+                etInputFeet.requestFocus();
+                etInputFeet.setSelection(etInputFeet.length())
+
             }
 
+            var lastConvertedValue: Double? = null
+            var lastConvertedValue_2: Double? = null
 
             lbs.setOnClickListener {
-                try {
-                    if (!etWeightInput.text.isNullOrEmpty())
-                    {
-                        if (check3){
-                            check3 = false
-                            check4 = true
-                            //val centimeters =
-                            etWeightInput.setText(lbsToKg(etWeightInput.text.toString().toDouble()).toString())
-                        }
-                    }
-                    etWeightInput.requestFocus();
-                    etWeightInput.setSelection(etWeightInput.length())
-                }
-                catch (e:Exception){
-                    Log.i("TAG", "Error-Catch: "+e.message)
-                }
 
+                try {
+
+
+                    if (checkType_2 != "LBS") {
+                        val doubleValue = etWeightInput.text.toString().convertStringToDouble ()
+                        doubleValue?.let {
+                            if (it != lastConvertedValue) { // Check if the value has changed
+                                val kilogramsToPounds = it.toPounds()
+                                Log.e("Pounds", "Kg to pound: $kilogramsToPounds")
+                                val df = DecimalFormat("#.##")
+                                etWeightInput.setText(df.format(kilogramsToPounds))
+                                lastConvertedValue = it // Update the last converted value
+                            }
+                        }
+
+
+                    } else {
+                        Log.i("TAG", "888888888: ")
+
+                    }
+                    checkType_2 = "LBS"
+
+                } catch (e:Exception)
+                {
+                    Log.i("TAG", "onCreate: "+e.message)
+                }
+                etWeightInput.requestFocus();
+                etWeightInput.setSelection(etWeightInput.length())
             }
             kg.setOnClickListener {
                 try {
-                    if (!etWeightInput.text.isNullOrEmpty()) {
-                        if (check4){
-                            check4 = false
-                            check3 = true
-                            etWeightInput.setText(kgToLbs(etWeightInput.text.toString().toDouble()).toString())
+
+
+                    if (checkType_2 != "KG") {
+                        val doubleValue = etWeightInput.text.toString().convertStringToDouble ()
+
+                        doubleValue?.let {
+                            if (it != lastConvertedValue) { // Check if the value has changed
+                                val poundsToKilograms = it.toKilograms()
+                                Log.e("Pounds", "pound to kg: $poundsToKilograms")
+                                val df = DecimalFormat("#.##")
+                                etWeightInput.setText(df.format(poundsToKilograms))
+                                lastConvertedValue = it // Update the last converted value
+                            }
                         }
+
+                    } else {
+                        Log.i("TAG", "888888888: ")
+
                     }
-                    etWeightInput.requestFocus();
-                    etWeightInput.setSelection(etWeightInput.length())
+                    checkType_2 = "KG"
+
+                } catch (e:Exception)
+                {
+                    Log.i("TAG", "onCreate: "+e.message)
                 }
-                catch (e:Exception){
-                    Log.i("TAG", "Error-Catch: "+e.message)
-                }
+
+                etWeightInput.requestFocus();
+                etWeightInput.setSelection(etWeightInput.length())
             }
+
+            tLbs.setOnClickListener {
+
+                try {
+
+
+                    if (checkType_3 != "LBS") {
+                        val doubleValue = etTargetWeightInput.text.toString().convertStringToDouble ()
+                        doubleValue?.let {
+                            if (it != lastConvertedValue_2) { // Check if the value has changed
+                                val kilogramsToPounds = it.toPounds()
+                                Log.e("Pounds", "Kg to pound: $kilogramsToPounds")
+                                val df = DecimalFormat("#.##")
+                                etTargetWeightInput.setText(df.format(kilogramsToPounds))
+                                lastConvertedValue_2 = it // Update the last converted value
+                            }
+                        }
+
+
+                    } else {
+                        Log.i("TAG", "888888888: ")
+
+                    }
+                    checkType_3 = "LBS"
+
+                } catch (e:Exception)
+                {
+                    Log.i("TAG", "onCreate: "+e.message)
+                }
+                etTargetWeightInput.requestFocus();
+                etTargetWeightInput.setSelection(etTargetWeightInput.length())
+            }
+            tKg.setOnClickListener {
+                try {
+
+
+                    if (checkType_3 != "KG") {
+                        val doubleValue = etTargetWeightInput.text.toString().convertStringToDouble ()
+
+                        doubleValue?.let {
+                            if (it != lastConvertedValue_2) { // Check if the value has changed
+                                val poundsToKilograms = it.toKilograms()
+                                Log.e("Pounds", "pound to kg: $poundsToKilograms")
+                                val df = DecimalFormat("#.##")
+                                etTargetWeightInput.setText(df.format(poundsToKilograms))
+                                lastConvertedValue_2 = it // Update the last converted value
+                            }
+                        }
+
+                    } else {
+                        Log.i("TAG", "888888888: ")
+
+                    }
+                    checkType_3 = "KG"
+
+                } catch (e:Exception)
+                {
+                    Log.i("TAG", "onCreate: "+e.message)
+                }
+
+                etTargetWeightInput.requestFocus();
+                etTargetWeightInput.setSelection(etTargetWeightInput.length())
+            }
+
+
         }
 
 
@@ -618,5 +723,18 @@ class ProfileAct : AppUtil2() {
     // Function to convert kilograms to pounds
     fun kgToLbs(kg: Double): Double {
         return kg * 2.2046226218
+    }
+
+    fun centimeterToFeet(centemeter: String?): Pair<Int, Int> {
+        var feetPart = 0
+        var inchesPart = 0
+        if (!TextUtils.isEmpty(centemeter)) {
+            val dCentimeter = java.lang.Double.valueOf(centemeter)
+            feetPart = floor(dCentimeter / 2.54 / 12).toInt()
+            println(dCentimeter / 2.54 - feetPart * 12)
+            inchesPart = ceil(dCentimeter / 2.54 - feetPart * 12).toInt()
+        }
+        return Pair(feetPart, inchesPart)
+        //  return String.format("%d %d", feetPart, inchesPart)
     }
 }

@@ -5263,6 +5263,8 @@ int id supportScrollUp 0x7f0a0398
 int id swOnOff 0x7f0a0399
 int id swOnOff2 0x7f0a039a
 int id switchWidget 0x7f0a039b
+int id t_kg 0x7f0a049b
+int id t_lbs 0x7f0a049c
 int id tabMode 0x7f0a039c
 int id tag_accessibility_actions 0x7f0a039d
 int id tag_accessibility_clickable_spans 0x7f0a039e
@@ -5277,6 +5279,7 @@ int id tag_transition_group 0x7f0a03a6
 int id tag_unhandled_key_event_manager 0x7f0a03a7
 int id tag_unhandled_key_listeners 0x7f0a03a8
 int id tag_window_insets_animation_callback 0x7f0a03a9
+int id targetWeightToggle 0x7f0a049d
 int id target_weight 0x7f0a03aa
 int id targetweightText 0x7f0a03ab
 int id targetweightminusBtn 0x7f0a03ac

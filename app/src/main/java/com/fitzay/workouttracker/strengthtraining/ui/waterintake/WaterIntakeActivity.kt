@@ -264,6 +264,19 @@ class WaterIntakeActivity : AppCompatActivity() {
                     Component.preference.saveWater=counter
                     Log.i("TAG", "if: " + Component.preference.saveWater.toString() + "-" + counter)
                 }
+                else
+                {
+                    Log.i("TAG", "else if: " + Component.preference.saveWater.toString() + "-" + counter)
+                    if (counter==0f)
+                    {
+                        counter=0f
+                        binding.txtDrink.setText(counter.toInt().toString())
+                        Component.preference.saveWater=counter
+                        Component.preference.totalDrink=0
+
+
+                    }
+                }
             }
             else
             {

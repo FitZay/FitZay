@@ -725,6 +725,9 @@ id steps
 id submitBtn
 id swOnOff
 id swOnOff2
+id t_kg
+id t_lbs
+id targetWeightToggle
 id target_weight
 id targetweightText
 id targetweightminusBtn

@@ -29,6 +29,7 @@ android:layout_height="@dimen/_100sdp">
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/green"
+            android:buttonTint="#9CB135"
             android:text="Male"
             android:checked="true"/>
 
@@ -37,6 +38,7 @@ android:layout_height="@dimen/_100sdp">
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/green"
+            android:buttonTint="#9CB135"
             android:text="Female"/>
 
     </RadioGroup>

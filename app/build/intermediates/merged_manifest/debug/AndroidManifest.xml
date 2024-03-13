@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.fitzay.workouttracker.strengthtraining"
-    android:versionCode="10"
-    android:versionName="1.1.0" >
+    android:versionCode="12"
+    android:versionName="1.1.2" >
 
     <uses-sdk
         android:minSdkVersion="23"
@@ -183,11 +183,13 @@
             android:name="com.fitzay.workouttracker.strengthtraining.ui.activities.LoadingActivity"
             android:exported="true"
             android:screenOrientation="portrait" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity
             android:name="com.fitzay.workouttracker.strengthtraining.ui.sleeptacker.SleepTrackerActivity"
@@ -248,7 +250,15 @@
         <activity
             android:name="com.fitzay.workouttracker.strengthtraining.ui.questions.start.GenderActivity"
             android:exported="true"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
         <activity
             android:name="com.fitzay.workouttracker.strengthtraining.ui.questions.start.AskingWeightActivity"
             android:exported="false"
@@ -294,13 +304,11 @@
             android:name="com.fitzay.workouttracker.strengthtraining.ui.MainActivity"
             android:exported="true"
             android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-
-
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
         <meta-data

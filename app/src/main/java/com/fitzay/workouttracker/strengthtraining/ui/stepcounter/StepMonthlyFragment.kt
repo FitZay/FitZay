@@ -697,7 +697,7 @@ class StepMonthlyFragment : Fragment(), OnChartValueSelectedListener {
             {
                 "Step"-> tvValue.text = "${value.toInt()} Steps, $xAxisLabel"
                 "Distance"-> tvValue.text = "${value.toInt()} Mile, $xAxisLabel"
-                "Calories"-> tvValue.text = "${value.toInt()} Kcl, $xAxisLabel"
+                "Calories"-> tvValue.text = "${value.toInt()} Kcal, $xAxisLabel"
                 "Time"->
                 {
                     val hours = value.toInt() / 3600

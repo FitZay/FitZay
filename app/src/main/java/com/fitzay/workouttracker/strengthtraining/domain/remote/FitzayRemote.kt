@@ -39,10 +39,10 @@ data class FitzayCompareModel(
     val showAd: Boolean = false,
 
     @SerializedName("fitzay_ctacolor")
-    val ctacolor: String = "",
+    val ctacolor: String = "#9CB135",
 
     @SerializedName("fitzay_ctalocation")
-    val ctalocation: String = ""
+    val ctalocation: String = "down"
 ) {
     override fun toString(): String {
         return "(value : $adID value : $showAd value : $ctacolor value : $ctalocation)"

@@ -324,6 +324,7 @@
                 android:layout_marginBottom="@dimen/_10sdp"
                 android:background="@drawable/bg_square_yellow"
                 app:cardCornerRadius="@dimen/_10sdp"
+                android:visibility="gone"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

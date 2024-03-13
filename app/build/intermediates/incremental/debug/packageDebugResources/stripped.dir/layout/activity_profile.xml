@@ -197,6 +197,7 @@
                 android:textColorHint="#A9A9AD"
                 app:boxStrokeColor="@color/text_field_outline"
                 app:cursorColor="@color/white"
+                android:visibility="invisible"
                 app:hintTextColor="?attr/colorSurface"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/tvAge"
@@ -217,6 +218,128 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@drawable/gender_box"
+                android:padding="@dimen/_6sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/tvAge"
+                app:layout_constraintStart_toStartOf="@+id/tvAge"
+                app:layout_constraintTop_toBottomOf="@+id/tvAge"
+                app:layout_constraintVertical_bias="0.05">
+
+                <LinearLayout
+                    android:id="@+id/llFeetInch"
+                    android:layout_width="@dimen/_190sdp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/_30sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <EditText
+                        android:id="@+id/etInputFeet"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:maxLength="1"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:backgroundTint="@color/white"
+                        android:padding="@dimen/_6sdp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textCursorDrawable="@drawable/cursor_color"
+                        android:textSize="@dimen/_15sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="@dimen/_6sdp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/_6sdp"
+                        android:paddingBottom="@dimen/_6sdp"
+                        android:text="@string/ft"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <TextView
+                        android:layout_width="@dimen/_1sdp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:layout_marginBottom="@dimen/_6sdp"
+                        android:visibility="invisible"
+                        android:background="@color/white" />
+
+                    <EditText
+                        android:id="@+id/etInputInch"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="2"
+                        android:padding="@dimen/_6sdp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:backgroundTint="@color/white"
+                        android:textCursorDrawable="@drawable/cursor_color"
+                        android:textSize="@dimen/_15sdp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="center"
+                        android:paddingTop="@dimen/_6sdp"
+                        android:paddingBottom="@dimen/_6sdp"
+                        android:text="@string/in"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12sdp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llCm"
+                    android:layout_width="@dimen/_190sdp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintHorizontal_bias="0.05"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <EditText
+                        android:id="@+id/etInputCm"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:padding="@dimen/_6sdp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textCursorDrawable="@drawable/cursor_color"
+                        app:layout_constraintVertical_bias="0.05"
+                        android:textSize="@dimen/_15sdp" />
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 
             <!--            Radio Button Add For CM And FT-->
             <RadioGroup
@@ -232,7 +355,7 @@
                 app:layout_constraintHorizontal_bias="0.95"
                 app:layout_constraintStart_toStartOf="@id/tvHeight"
                 app:layout_constraintTop_toTopOf="@id/tvHeight"
-                app:layout_constraintVertical_bias="0.65">
+                app:layout_constraintVertical_bias="0.99">
 
                 <RadioButton
                     android:id="@+id/ft"
@@ -281,7 +404,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="number"
-                    android:maxLength="3"
+                    android:maxLength="6"
                     android:paddingEnd="@dimen/_80sdp"
                     android:singleLine="true"
                     android:textColor="@color/white"
@@ -355,12 +478,53 @@
                     android:layout_height="wrap_content"
                     android:inputType="number"
                     android:singleLine="true"
-                    android:maxLength="3"
+                    android:maxLength="6"
                     android:textColor="@color/white"
                     android:textSize="@dimen/_14sdp" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
+
+            <!--            Radio Button Add For LBS And KG-->
+            <RadioGroup
+                android:id="@+id/targetWeightToggle"
+                android:layout_width="@dimen/_90sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@drawable/height_weight_outline"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="@id/tvTargetWeight"
+                app:layout_constraintEnd_toEndOf="@id/tvTargetWeight"
+                app:layout_constraintHorizontal_bias="0.95"
+                app:layout_constraintStart_toStartOf="@id/tvTargetWeight"
+                app:layout_constraintTop_toTopOf="@id/tvTargetWeight"
+                app:layout_constraintVertical_bias="0.65">
+
+                <RadioButton
+                    android:id="@+id/t_lbs"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/toggle_widget_background"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/lbs"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white" />
+
+                <RadioButton
+                    android:id="@+id/t_kg"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/toggle_widget_background"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/kg"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white" />
+            </RadioGroup>
 
             <RelativeLayout
                 android:id="@+id/saveItems"
